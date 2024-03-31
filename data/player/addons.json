@@ -9,7 +9,7 @@
                 ],
         "class_id": "cl_stalwart",
         "job_id": "jb_bastion",
-        "parent_id": {"type": "ability", "id": "ab_endlessbattlement"},
+        "parent_id": {"tag_name": "ability", "val": "ab_endlessbattlement"},
         "name": "Heroic Intervention",
         "description":  [
                         {
