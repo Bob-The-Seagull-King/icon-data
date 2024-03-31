@@ -13,6 +13,7 @@
         "class_id": "cl_stalwart",
         "name": "Heracule",
         "job_id": "jb_bastion",
+        "attachments": [],
         "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
         "description":  [{
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -71,6 +72,7 @@
         "class_id": "cl_stalwart",
         "name": "Battering Ram",
         "job_id": "jb_bastion",
+        "attachments": [],
         "blurb": "Use your shield, weapon, or armored fist and send your target flying",
         "description":  [
                         {
@@ -109,6 +111,7 @@
         "class_id": "cl_stalwart",
         "name": "Land Waster",
         "job_id": "jb_bastion",
+        "attachments": [],
         "blurb": "Crash your greatshield or weapon into the earth, sending up devestating shockwaves.",
         "description":  [
                         {
@@ -176,6 +179,7 @@
         "class_id": "cl_stalwart",
         "name": "Valiant",
         "job_id": "jb_bastion",
+        "attachments": [],
         "blurb": "Stride forth, with your shield held before you, battering aside foes.",
         "description": [
             {
@@ -211,6 +215,7 @@
         "class_id": "cl_stalwart",
         "name": "Endless Battlement",
         "job_id": "jb_bastion",
+        "attachments": [{"tag_name": "addons", "val": "ad_heroicintervention"}],
         "blurb": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there.",
         "description": [
                         {
@@ -248,6 +253,7 @@
         "class_id": "cl_stalwart",
         "name": "Catapult",
         "job_id": "jb_bastion",
+        "attachments": [],
         "blurb": "Use your body as a springboard to set up ally maneuvers or to deflect projectiles.",
         "description":  [
                         {
