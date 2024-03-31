@@ -105,7 +105,7 @@
                 {"tag_name": "blast_distance", "val": "close"},
                 {"tag_name": "inflict", "val": "gl_shove"}
                 ],
-        "chapter": 0,
+        "chapter": 1,
         "class_id": "cl_stalwart",
         "name": "Land Waster",
         "job_id": "jb_bastion",

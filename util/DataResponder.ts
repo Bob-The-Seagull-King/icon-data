@@ -81,8 +81,6 @@ class DataResponder {
     public static ValidateComplexSearch(term: IDataRequestSearchParam, data: any) {
         let isvalid = false;
         let i = 0;
-
-        console.log(data)
         
         for (i = 0; i < term.terms.length; i++) {
             const isSearch = DataResponder.ValidateBySearch(term.terms[i], data)
@@ -135,7 +133,7 @@ class DataResponder {
                         return (term.equals == true)
                     }
                 }
-                return false;
+                return (term.equals == false);
             } else {
                 
                 let i = 0;
