@@ -41,6 +41,7 @@ interface IDataRequestSearchTerm {
     item: string, // The string name of the key being checked
     value: any, // The desired value of the key
     equals: boolean, // true -> check if item == value, false -> check if item != value
+    strict: boolean, // true -> exact match of value, false -> item includes value
     istag?: boolean, // true -> checks if a tag with tag_name=value has tagvalue
     tagvalue?: any, // if left blank, just checks if tag_name exists
 }
@@ -191,18 +192,30 @@ class DataResponder {
     public static ValidateBySearch(term: IDataRequestSearchTerm, data: any) {
         if (!term.istag) {
             const dynamicKey = term.item as keyof (typeof data);
-            if (term.equals) {
-                return (data[dynamicKey] == term.value)
+            let isvalid = false;
+            if (term.strict) {
+                isvalid = data[dynamicKey].toString().toLowerCase() == term.value.toString().toLowerCase()
             } else {
-                return (data[dynamicKey] != term.value)
+                isvalid = data[dynamicKey].toString().toLowerCase().includes(term.value.toString().toLowerCase())
+            }
+            if (term.equals) {
+                return (isvalid)
+            } else {
+                return (!isvalid)
             }
         } else {
             const dynamicKey = term.item as keyof (typeof data);
             if (term.tagvalue == "") {
                 let i = 0;
                 for (i = 0; i < data[dynamicKey].length; i++) {
-                    if (data[dynamicKey][i].tag_name == term.value) {
-                        return (term.equals == true)
+                    if (term.strict) {
+                        if (data[dynamicKey][i].tag_name.toString().toLowerCase() == term.value.toString().toLowerCase()) {
+                            return (term.equals == true)
+                        }
+                    } else {
+                        if (data[dynamicKey][i].tag_name.toString().toLowerCase().includes( term.value.toString().toLowerCase())) {
+                            return (term.equals == true)
+                        }
                     }
                 }
                 return (term.equals == false);
@@ -211,8 +224,14 @@ class DataResponder {
                 let i = 0;
                 for (i = 0; i < data[dynamicKey].length; i++) {
                     if (data[dynamicKey][i].tag_name == term.value) {
-                        if (data[dynamicKey][i].val == term.tagvalue) {
-                            return (term.equals == true)
+                        if (term.strict) {
+                            if (data[dynamicKey][i].val.toString().toLowerCase() == term.tagvalue.toString().toLowerCase()) {
+                                return (term.equals == true)
+                            }
+                        } else {
+                            if (data[dynamicKey][i].val.toString().toLowerCase().includes(term.tagvalue.toString().toLowerCase())) {
+                                return (term.equals == true)
+                            }
                         }
                     }
                 }
