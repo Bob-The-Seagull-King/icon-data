@@ -17,7 +17,7 @@
         "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
         "description":  [{
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Attack",
+                            "content": "Attack:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
                                                 "content": "On Hit:",
@@ -35,12 +35,11 @@
                                                                     "content": "Fray",
                                                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                                                 }]
-                                            }],
-                            "glossary": [{"val": "Attack", "id": "gl_attack"}]
+                                            }]
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Effect",
+                            "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Your attack target and one (4+) two (6+) all targets in range are shoved 1.",
@@ -49,7 +48,7 @@
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Overdrive",
+                            "content": "Overdrive:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Increase shove to 3",
@@ -77,7 +76,7 @@
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Effect",
+                            "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "An adjacent character is shoved 2 spaces",
@@ -86,7 +85,7 @@
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Impact",
+                            "content": "Impact:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Colliding foes are dazed. If a colliding foe is already dazed, refund the action cost of this ability.",
@@ -116,7 +115,7 @@
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Attack",
+                            "content": "Attack:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
                                                 "content": "On Hit:",
@@ -134,12 +133,11 @@
                                                                     "content": "Fray",
                                                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                                                 }]
-                                            }],
-                            "glossary": [{"val": "Attack", "id": "gl_attack"}]
+                                            }]
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Area Effect",
+                            "content": "Area Effect:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Foes take fray damage.",
@@ -149,7 +147,7 @@
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Effect",
+                            "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Shove all other characters than you in the area 1 space away from your attack target, then shove your target 1.",
@@ -158,7 +156,7 @@
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Overdrive",
+                            "content": "Overdrive:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Becomes a close large blast",
@@ -184,7 +182,7 @@
         "description": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                "content": "Effect",
+                "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                     "content": "Dash 1, then dash 1, then dash 1. Before each dash, shove all adjacent characters 1.",
@@ -193,7 +191,7 @@
             },
             {
                 "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                "content": "Overdrive",
+                "content": "Overdrive:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                     "content": "Valiant is a free action"
@@ -220,7 +218,7 @@
         "description": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Stance",
+                            "content": "Stance:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "When you enter this stance, or when it refreshes, choose an ally in range. Gain the following interrupt:"
@@ -233,7 +231,7 @@
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Refresh",
+                            "content": "Refresh:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Refresh this stance at the start of your turn."
@@ -258,7 +256,7 @@
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Trigger",
+                            "content": "Trigger:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "An ally ends a movement in an adjacent space."
@@ -266,7 +264,7 @@
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Effect",
+                            "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Shove that ally 2.",
@@ -275,7 +273,7 @@
                         },
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
-                            "content": "Impact",
+                            "content": "Impact:",
                             "subcontent":   [{
                                                 "tags": [{"tag_name": "desc_type", "val": "desc"}],
                                                 "content": "Shove ally 1 again in any direction. If they collided with a foe, that foe takes 2 damage.",

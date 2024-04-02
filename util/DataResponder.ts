@@ -2,6 +2,7 @@
 // Data File Imports -----------------------------------
 import abilitiesdata from '../data/player/abilities.json'
 import addonsdata from '../data/player/addons.json'
+import glossarydata from '../data/general/glossary.json'
 // -----------------------------------------------------
 
 /**
@@ -64,6 +65,10 @@ class DataResponder {
             }
             case "addons": {
                 return addonsdata
+                break;
+            }
+            case "glossary": {
+                return glossarydata
                 break;
             }
             default: {
