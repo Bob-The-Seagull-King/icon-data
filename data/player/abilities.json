@@ -7,7 +7,8 @@
                 {"tag_name": "action", "val": 1},
                 {"tag_name": "type", "val": "attack"},
                 {"tag_name": "range", "val": 3},
-                {"tag_name": "inflict", "val": "gl_shove"}
+                {"tag_name": "inflict", "val": "gl_shove"},
+                {"tag_name": "attack", "val": ""}
                 ],
         "chapter": 1,
         "class_id": "cl_stalwart",
@@ -104,7 +105,8 @@
                 {"tag_name": "type", "val": "attack"},
                 {"tag_name": "blast_size", "val": "medium"},
                 {"tag_name": "blast_distance", "val": "close"},
-                {"tag_name": "inflict", "val": "gl_shove"}
+                {"tag_name": "inflict", "val": "gl_shove"},
+                {"tag_name": "attack", "val": ""}
                 ],
         "chapter": 1,
         "class_id": "cl_stalwart",

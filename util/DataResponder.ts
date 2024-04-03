@@ -112,13 +112,39 @@ class DataResponder {
      */
     public static GetAllOfKeyInData(request: IDataRequestID) {
         const dataSet = DataResponder.GetDataType(request.type)
-        const valueSet = []
+        const valueSet: any = []
 
         let i = 0;
         for (i = 0; i < dataSet.length; i++) {
             const data = dataSet[i];
             const dynamicKey = request.id as keyof (typeof data);
-            valueSet.push(data[dynamicKey])
+            if (!valueSet.includes(data[dynamicKey])) {
+                valueSet.push(data[dynamicKey])
+            }
+        }
+
+        return valueSet;
+    }
+
+    /**
+     * Grab all the different types of tag found in a given file
+     * @param request The file to search the tags of
+     * @returns Array of string names of tags
+     */
+    public static GetAllTagsInData(request: IDataRequest) {
+        const dataSet = DataResponder.GetDataType(request.type)
+        const valueSet: any = []
+
+        let i = 0;
+        for (i = 0; i < dataSet.length; i++) {
+
+            let j = 0;
+            for (j = 0; j < dataSet[i].tags.length; j++) {
+                if (!valueSet.includes(dataSet[i].tags[j].tag_name)) {
+                    valueSet.push(dataSet[i].tags[j].tag_name.toString())
+                }
+            }
+
         }
 
         return valueSet;
