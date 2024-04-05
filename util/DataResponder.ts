@@ -266,7 +266,7 @@ class DataResponder {
                         }
                     }
                 }
-                return false;
+                return (term.equals == false);
             }
         }
     }
