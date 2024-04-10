@@ -21,7 +21,7 @@ description : []
 ```
 
 - **id** - The identifying value of the ability, all abilities start their id with "ab_".
-- **type** - Used for broad categorization, all glossary rules have the type "Ability".
+- **type** - Used for broad categorization, all abilities have the type "Ability".
 - **source** - Where the ability comes from. Currently, it's expected all abilities will have the source "core".
 - **tags** - A series of tags which identify what kind of ability something is, see [Tags](../Tags.md) for more information.
 - **chapter** - The chapter at which an ability can be unlocked.
@@ -30,7 +30,7 @@ description : []
 - **job_id** - The *id* value of the job that an ability belongs to.
 - **attachments** - Array of tags that contain all other data objects that are included in the ability, such as infusions, interrupts, summons, etc.
 - **blurb** - The flavour text of the ability.
-- **description** - Specially formatted array of information included in the rule, see [Description](../Description.md) for more informaiton.
+- **description** - Specially formatted array of information included in the ability, see [Description](../Description.md) for more informaiton.
 
 ## Example
 
@@ -75,7 +75,9 @@ description : []
         "subcontent":   [{
             "tags": [{"tag_name": "desc_type", "val": "desc"}],
             "content": "[D] + fray",
-            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            "glossary": [
+                {"val": "[D]", "id": "gl_damagedice"},
+                {"val": "fray", "id": "gl_fray"}]
             }]
             },
             {
