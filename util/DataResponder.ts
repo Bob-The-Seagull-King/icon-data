@@ -10,6 +10,7 @@ import glossarydata from '../data/general/glossary.json'
  */
 interface IDataRequest {
     type: string // The data file to search within
+    data: []
 }
 
 /**
@@ -57,23 +58,19 @@ class DataResponder {
      * @param type The type of data to be searched
      * @returns JSON array of data to search
      */
-    private static GetDataType(type: string) {
+    private static GetDataType(type: string, data : any[]) {
         switch(type) {
             case "abilities": {
-                return abilitiesdata
-                break;
+                return abilitiesdata.concat(data)
             }
             case "addons": {
-                return addonsdata
-                break;
+                return addonsdata.concat(data)
             }
             case "glossary": {
-                return glossarydata
-                break;
+                return glossarydata.concat(data)
             }
             default: {
-                return []
-                break;
+                return data
             }
         }
     }
@@ -84,7 +81,7 @@ class DataResponder {
      * @returns JSON object, either empty or containing the found entry
      */
     public static GetSingleEntry(request: IDataRequestID) {
-        const dataSet = DataResponder.GetDataType(request.type)
+        const dataSet = DataResponder.GetDataType(request.type, request.data)
 
         let i = 0;
         for (i = 0; i < dataSet.length; i++) {
@@ -101,7 +98,7 @@ class DataResponder {
      * @returns JSON array of all data in the specified file
      */
     public static GetFullDataEntry(request: IDataRequest) {
-        const dataSet = DataResponder.GetDataType(request.type)
+        const dataSet = DataResponder.GetDataType(request.type, request.data)
         return dataSet;
     }
 
@@ -111,7 +108,7 @@ class DataResponder {
      * @returns Array of all values associated with the requested key in the requested file
      */
     public static GetAllOfKeyInData(request: IDataRequestID) {
-        const dataSet = DataResponder.GetDataType(request.type)
+        const dataSet = DataResponder.GetDataType(request.type, request.data)
         const valueSet: any = []
 
         let i = 0;
@@ -132,7 +129,7 @@ class DataResponder {
      * @returns Array of string names of tags
      */
     public static GetAllTagsInData(request: IDataRequest) {
-        const dataSet = DataResponder.GetDataType(request.type)
+        const dataSet = DataResponder.GetDataType(request.type, request.data)
         const valueSet: any = []
 
         let i = 0;
@@ -158,7 +155,7 @@ class DataResponder {
      * @returns JSON array of entries in a data file that match the criteria
      */
     public static ComplexSearch(search: IDataRequestComplexSearch) {
-        const dataSet = DataResponder.GetDataType(search.type)
+        const dataSet = DataResponder.GetDataType(search.type, search.data)
         const dataSelect = []
 
         let i = 0;
