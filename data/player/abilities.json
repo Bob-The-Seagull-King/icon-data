@@ -15,7 +15,10 @@
         "name": "Heracule",
         "job_id": "jb_bastion",
         "attachments": [],
-        "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
+        "blurb": [{
+            "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+            "content": "Hurl your shield or weapon as a discus with irrepressible force."
+        }],
         "description":  [{
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
                             "content": "Attack:",
@@ -73,7 +76,10 @@
         "name": "Battering Ram",
         "job_id": "jb_bastion",
         "attachments": [],
-        "blurb": "Use your shield, weapon, or armored fist and send your target flying",
+        "blurb": [{
+            "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+            "content": "Use your shield, weapon, or armored fist and send your target flying."
+        }],
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -113,7 +119,10 @@
         "name": "Land Waster",
         "job_id": "jb_bastion",
         "attachments": [],
-        "blurb": "Crash your greatshield or weapon into the earth, sending up devestating shockwaves.",
+        "blurb": [{
+            "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+            "content": "Crash your greatshield or weapon into the earth, sending up devestating shockwaves."
+        }],
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -180,7 +189,10 @@
         "name": "Valiant",
         "job_id": "jb_bastion",
         "attachments": [],
-        "blurb": "Stride forth, with your shield held before you, battering aside foes.",
+        "blurb": [{
+            "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+            "content": "Stride forth, with your shield held before you, battering aside foes."
+        }],
         "description": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -216,7 +228,10 @@
         "name": "Endless Battlement",
         "job_id": "jb_bastion",
         "attachments": [{"tag_name": "addons", "val": "ad_heroicintervention"}],
-        "blurb": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there.",
+        "blurb": [{
+            "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+            "content": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there."
+        }],
         "description": [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
@@ -254,7 +269,10 @@
         "name": "Catapult",
         "job_id": "jb_bastion",
         "attachments": [],
-        "blurb": "Use your body as a springboard to set up ally maneuvers or to deflect projectiles.",
+        "blurb": [{
+            "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+            "content": "Use your body as a springboard to set up ally maneuvers or to deflect projectiles."
+        }],
         "description":  [
                         {
                             "tags": [{"tag_name": "desc_type", "val": "effect"}],
