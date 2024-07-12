@@ -7,9 +7,6 @@
                 {"tag_name": "interrupt", "val": 1},
                 {"tag_name": "type", "val": "interrupt"}
                 ],
-        "class_id": "cl_stalwart",
-        "job_id": "jb_bastion",
-        "parent_id": {"tag_name": "ability", "val": "ab_endlessbattlement"},
         "name": "Heroic Intervention",
         "description":  [
                         {
