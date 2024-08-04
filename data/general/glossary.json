@@ -3,12 +3,12 @@
         "id": "gl_areaeffect",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "general"}
-        ],
+        "tags": {
+            "category" : "general"
+        },
         "name": "Area Effect",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "An effect that is applied in a large, fixed pattern.",
             "subcontent":   []
         }]
@@ -17,12 +17,12 @@
         "id": "gl_damagedice",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "general"}
-        ],
+        "tags": {
+            "category" : "general"
+        },
         "name": "[D]",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "The damage die of your character, typically based on your Class. Roll that die when you see this symbol.",
             "subcontent":   []
         }]
@@ -31,12 +31,12 @@
         "id": "gl_fray",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "general"}
-        ],
+        "tags": {
+            "category" : "general"
+        },
         "name": "Fray",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "Fixed damage, typically based on your Class. Usually added to all attacks on hit or miss.",
             "subcontent":   []
         }]
@@ -45,12 +45,12 @@
         "id": "gl_shove",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "general"}
-        ],
+        "tags": {
+            "category" : "general"
+        },
         "name": "Shove",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "Move a character involuntarily X spaces in a straight line away from you. If they would move into another character’s space, an object, or into a higher elevation space, they collide and stop moving.",
             "subcontent":   []
         }]
@@ -59,12 +59,12 @@
         "id": "gl_overdrive",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "triggeredeffect"}
-        ],
+        "tags": {
+            "category" : "triggeredeffect"
+        },
         "name": "Overdrive",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "A triggered effect that activates at round 3+.",
             "subcontent":   []
         }]
@@ -73,12 +73,12 @@
         "id": "gl_dazed",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "status"}
-        ],
+        "tags": {
+            "category" : "status"
+        },
         "name": "Dazed",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "Gain +1 curse on attacks.",
             "subcontent":   []
         }]
@@ -87,12 +87,12 @@
         "id": "gl_impact",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "triggeredeffect"}
-        ],
+        "tags": {
+            "category" : "triggeredeffect"
+        },
         "name": "Dazed",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "A triggered effect that activates when the ability causes a target to collide.",
             "subcontent":   []
         }]
@@ -101,12 +101,12 @@
         "id": "gl_closeblast",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "areaeffect"}
-        ],
+        "tags": {
+            "category" : "areaeffect"
+        },
         "name": "Close Blast",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "A blast where at least one space of the area effect is adjacent to the character using the ability.",
             "subcontent":   []
         }]
@@ -115,12 +115,12 @@
         "id": "gl_blast",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "areaeffect"}
-        ],
+        "tags": {
+            "category" : "areaeffect"
+        },
         "name": "Blast",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "A large area in range. There are three blast templates, small, medium, and large. The origin space and the attack space (if there is one) is the central space.",
             "subcontent":   []
         }]
@@ -129,12 +129,12 @@
         "id": "gl_dash",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "movement"}
-        ],
+        "tags": {
+            "category" : "movement"
+        },
         "name": "Dash",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "Special movement that ignores engagement.",
             "subcontent":   []
         }]
@@ -143,12 +143,12 @@
         "id": "gl_stance",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "ongoing"}
-        ],
+        "tags": {
+            "category" : "ongoing"
+        },
         "name": "Stance",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "An ongoing, positive effect. A character can only have one stance active at a time and can drop a stance by taking a new stance or as a free action at the start of their turn. When a stance refreshes, regain its effects.",
             "subcontent":   []
         }]
@@ -157,12 +157,12 @@
         "id": "gl_interrupt",
         "type": "Glossary",
         "source": "core",
-        "tags": [
-            {"tag_name": "category", "val": "general"}
-        ],
+        "tags": {
+            "category" : "general"
+        },
         "name": "Interrupt",
         "description":  [{
-            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+            "tags": {"desc_type" : "desc"},
             "content": "Some abilities give you interrupts, which are abilities that trigger under certain circumstances and ‘interrupt’ whatever is going on. Each interrupt can only be used a certain number of times a round, and you can only use one interrupt on any turn (either your own or another characters). You may also use interrupts before, after, or in the middle of any action, even off your turn, if you have them.",
             "subcontent":   []
         }]

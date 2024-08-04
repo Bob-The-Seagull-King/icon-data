@@ -135,12 +135,13 @@ class DataResponder {
         let i = 0;
         for (i = 0; i < dataSet.length; i++) {
 
-            let j = 0;
-            for (j = 0; j < dataSet[i].tags.length; j++) {
-                if (!valueSet.includes(dataSet[i].tags[j].tag_name)) {
-                    valueSet.push(dataSet[i].tags[j].tag_name.toString())
+            Object.entries(dataSet[i].tags).forEach(
+                ([key]) => {
+                    if (!valueSet.includes(key)) {
+                        valueSet.push(key)
+                    }
                 }
-            }
+            );
 
         }
 
@@ -233,37 +234,19 @@ class DataResponder {
             }
         } else {
             const dynamicKey = term.item as keyof (typeof data);
-            if (term.tagvalue == "") {
-                let i = 0;
-                for (i = 0; i < data[dynamicKey].length; i++) {
+            
+            if (data[dynamicKey][term.value]) {
+                if (term.tagvalue === "") {
+                    return (term.equals === true)
+                } else {
                     if (term.strict) {
-                        if (data[dynamicKey][i].tag_name.toString().toLowerCase() == term.value.toString().toLowerCase()) {
-                            return (term.equals == true)
-                        }
+                        return (term.equals === (term.tagvalue.toString().toLowerCase() === data[dynamicKey][term.value].toString().toLowerCase()))
                     } else {
-                        if (data[dynamicKey][i].tag_name.toString().toLowerCase().includes( term.value.toString().toLowerCase())) {
-                            return (term.equals == true)
-                        }
+                        return (term.equals === (data[dynamicKey][term.value].toString().toLowerCase()).includes(term.tagvalue.toString().toLowerCase()))
                     }
                 }
-                return (term.equals == false);
             } else {
-                
-                let i = 0;
-                for (i = 0; i < data[dynamicKey].length; i++) {
-                    if (data[dynamicKey][i].tag_name == term.value) {
-                        if (term.strict) {
-                            if (data[dynamicKey][i].val.toString().toLowerCase() == term.tagvalue.toString().toLowerCase()) {
-                                return (term.equals == true)
-                            }
-                        } else {
-                            if (data[dynamicKey][i].val.toString().toLowerCase().includes(term.tagvalue.toString().toLowerCase())) {
-                                return (term.equals == true)
-                            }
-                        }
-                    }
-                }
-                return (term.equals == false);
+                return (term.equals === false)
             }
         }
     }
