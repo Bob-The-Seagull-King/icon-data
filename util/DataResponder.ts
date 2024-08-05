@@ -240,6 +240,9 @@ class DataResponder {
                     return (term.equals === true)
                 } else {
                     if (term.strict) {
+                        if (Array.isArray(data[dynamicKey][term.value])) {
+                            return (term.equals === (data[dynamicKey][term.value].toString().toLowerCase().includes(term.tagvalue.toString().toLowerCase())))
+                        }
                         return (term.equals === (term.tagvalue.toString().toLowerCase() === data[dynamicKey][term.value].toString().toLowerCase()))
                     } else {
                         return (term.equals === (data[dynamicKey][term.value].toString().toLowerCase()).includes(term.tagvalue.toString().toLowerCase()))
