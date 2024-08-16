@@ -1,0 +1,21 @@
+[
+    {
+        "id": "tb_",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": [],
+        "description": [],
+        "items": [
+            {
+                "id": "ti_",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": []
+            }
+        ]
+    }
+]
