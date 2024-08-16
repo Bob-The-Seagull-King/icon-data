@@ -6,6 +6,7 @@
         "tags": {
             "category" : "general"
         },
+        "eventtags": {},
         "name": "Area Effect",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -20,6 +21,7 @@
         "tags": {
             "category" : "general"
         },
+        "eventtags": {},
         "name": "[D]",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -34,6 +36,7 @@
         "tags": {
             "category" : "general"
         },
+        "eventtags": {},
         "name": "Fray",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -48,6 +51,7 @@
         "tags": {
             "category" : "general"
         },
+        "eventtags": {},
         "name": "Shove",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -62,6 +66,7 @@
         "tags": {
             "category" : "triggeredeffect"
         },
+        "eventtags": {},
         "name": "Overdrive",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -76,6 +81,7 @@
         "tags": {
             "category" : "status"
         },
+        "eventtags": {},
         "name": "Dazed",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -90,6 +96,7 @@
         "tags": {
             "category" : "triggeredeffect"
         },
+        "eventtags": {},
         "name": "Dazed",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -104,6 +111,7 @@
         "tags": {
             "category" : "areaeffect"
         },
+        "eventtags": {},
         "name": "Close Blast",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -118,6 +126,7 @@
         "tags": {
             "category" : "areaeffect"
         },
+        "eventtags": {},
         "name": "Blast",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -132,6 +141,7 @@
         "tags": {
             "category" : "movement"
         },
+        "eventtags": {},
         "name": "Dash",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -146,6 +156,7 @@
         "tags": {
             "category" : "ongoing"
         },
+        "eventtags": {},
         "name": "Stance",
         "description":  [{
             "tags": {"desc_type" : "desc"},
@@ -160,6 +171,7 @@
         "tags": {
             "category" : "general"
         },
+        "eventtags": {},
         "name": "Interrupt",
         "description":  [{
             "tags": {"desc_type" : "desc"},

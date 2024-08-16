@@ -10,6 +10,7 @@
             "inflict": ["gl_shove"],
             "attack" : true
         },
+        "eventtags": {},
         "chapter": 1,
         "class_id": "cl_stalwart",
         "name": "Heracule",
@@ -69,6 +70,7 @@
             "action": 1,
             "inflict": ["gl_shove", "gl_dazed"]
         },
+        "eventtags": {},
         "chapter": 1,
         "class_id": "cl_stalwart",
         "name": "Battering Ram",
@@ -111,6 +113,7 @@
             "inflict": ["gl_shove"],
             "attack": true
         },
+        "eventtags": {},
         "chapter": 1,
         "class_id": "cl_stalwart",
         "name": "Land Waster",
@@ -180,6 +183,7 @@
         "tags": {
             "action": 1
         },
+        "eventtags": {},
         "chapter": 1,
         "class_id": "cl_stalwart",
         "name": "Valiant",
@@ -218,6 +222,7 @@
             "range": 3,
             "type": "stance"
         },
+        "eventtags": {},
         "chapter": 1,
         "class_id": "cl_stalwart",
         "name": "Endless Battlement",
@@ -258,6 +263,7 @@
             "type" : "interrupt",
             "interrupt": 1
         },
+        "eventtags": {},
         "chapter": 1,
         "class_id": "cl_stalwart",
         "name": "Catapult",
