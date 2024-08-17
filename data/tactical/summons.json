@@ -1,15 +1,36 @@
 [
     {
-        "id": "sm_blank",
-        "type": "Addon",
+        "id": "sm_bomb",
+        "type": "Summon",
         "source": "core",
         "tags": {
+            "size": 1,
+            "intangible": true
         },
         "eventtags": {},
-        "name": "",
-        "description":  [],
+        "name": "Bomb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The bomb can be shoved or teleported and can share space with other characters, though it can't share space with other bombs. When any character enters a bomb's space, they can remove it from the battlefield. At the end of their turn, they may place it on any free adjacent space. Characters can only carry one bomb at once.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "teleported", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a round, you may gamble at the end of any turn other than yours, after all bombs have been placed. All bombs explode, dealing damage equal to the gamble result in a small blast area effect centered on them. Characters in the area of multiple explosions are only affected once.",
+                                    "glossary": [{"val": "gamble", "id": "gl_gamble"},{"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            }
+        ],
         "blurb":  [],
-        "colour": "",
-        "limit": 0
+        "colour": "cl_vagabond",
+        "limit": 6
     }
 ]

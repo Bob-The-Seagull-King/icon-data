@@ -150,6 +150,21 @@
         }]
     },
     {
+        "id": "gl_teleport",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "movement"
+        },
+        "eventtags": {},
+        "name": "Teleport",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Special movement that allows you to instantly move to unoccupied space within range X.",
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_stance",
         "type": "Glossary",
         "source": "core",
@@ -176,6 +191,21 @@
         "description":  [{
             "tags": {"desc_type" : "desc"},
             "content": "Some abilities give you interrupts, which are abilities that trigger under certain circumstances and ‘interrupt’ whatever is going on. Each interrupt can only be used a certain number of times a round, and you can only use one interrupt on any turn (either your own or another characters). You may also use interrupts before, after, or in the middle of any action, even off your turn, if you have them.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_gamble",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Gamble",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Roll 1d6, then trigger an effect on a certain result or higher.",
             "subcontent":   []
         }]
     }
