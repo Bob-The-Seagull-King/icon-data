@@ -14,7 +14,7 @@
         "name": "Endless Battlement",
         "job_id": "jb_bastion",
         "talent": ["tl_endlessbattlement_1", "tl_endlessbattlement_2"],
-        "mastery": ["ms_endlessbattlement"],
+        "mastery": ["ms_endlessbattlement_perfectbattlement"],
         "blurb": [{
             "tags": {"desc_type" : "subeffect"},
             "content": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there."
