@@ -1,9 +1,10 @@
 
 // Data File Imports -----------------------------------
-import abilitiesdata from '../data/player/abilities.json'
-import addonsdata from '../data/player/addons.json'
+import abilitiesdata from '../data/tactical/abilities.json'
+import addonsdata from '../data/tactical/addons.json'
+import summonsdata from '../data/tactical/summons.json';
 import glossarydata from '../data/general/glossary.json'
-import tabledata from '../data/player/table.json'
+import tabledata from '../data/general/table.json'
 // -----------------------------------------------------
 
 /**
@@ -66,6 +67,9 @@ class DataResponder {
             }
             case "addons": {
                 return addonsdata.concat(data)
+            }
+            case "summons": {
+                return summonsdata.concat(data)
             }
             case "glossary": {
                 return glossarydata.concat(data)

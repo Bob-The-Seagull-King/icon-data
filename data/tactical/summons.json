@@ -1,0 +1,15 @@
+[
+    {
+        "id": "sm_blank",
+        "type": "Addon",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "",
+        "description":  [],
+        "blurb":  [],
+        "colour": "",
+        "limit": 0
+    }
+]
