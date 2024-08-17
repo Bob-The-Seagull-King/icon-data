@@ -180,6 +180,21 @@
         }]
     },
     {
+        "id": "gl_rush",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "movement"
+        },
+        "eventtags": {},
+        "name": "Rush",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Move X spaces. You are unstoppable and immune to all damage while moving.",
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_teleport",
         "type": "Glossary",
         "source": "core",

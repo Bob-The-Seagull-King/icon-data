@@ -13,5 +13,20 @@
                 "glossary": [{"val": "heroic", "id": "gl_heroic"}, {"val": "shoves", "id": "gl_shove"}]
             }
                         ]
+    },
+    {
+        "id": "tr_blackrockvanguard",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Black Rock Vanguard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can take any number of interrupts per turn. When you take an interrupt, you may rush 1 after it resolves.",
+                "glossary": [{"val": "interrupts", "id": "gl_interrupt"}, {"val": "rush 1", "id": "gl_rush"}]
+            }
+                        ]
     }
 ]
