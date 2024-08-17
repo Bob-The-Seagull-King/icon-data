@@ -1,0 +1,32 @@
+[
+    {
+        "id": "tl_endlessbattlement_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you are in the aura, attacks against your ally gain +1 curse.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_endlessbattlement_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You and your ally both have have counter while you are in the aura.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "counter", "id": "gl_counter"}]
+            }
+                        ]
+    }
+]

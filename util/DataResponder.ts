@@ -3,6 +3,9 @@
 import abilitiesdata from '../data/tactical/abilities.json'
 import addonsdata from '../data/tactical/addons.json'
 import summonsdata from '../data/tactical/summons.json';
+import talentsdata from '../data/tactical/talents.json';
+import masteriesdata from '../data/tactical/masteries.json';
+
 import glossarydata from '../data/general/glossary.json'
 import tabledata from '../data/general/table.json'
 // -----------------------------------------------------
@@ -70,6 +73,12 @@ class DataResponder {
             }
             case "summons": {
                 return summonsdata.concat(data)
+            }
+            case "talents": {
+                return talentsdata.concat(data)
+            }
+            case "masteries": {
+                return masteriesdata.concat(data)
             }
             case "glossary": {
                 return glossarydata.concat(data)

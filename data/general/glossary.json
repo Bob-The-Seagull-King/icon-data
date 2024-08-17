@@ -97,10 +97,25 @@
             "category" : "triggeredeffect"
         },
         "eventtags": {},
-        "name": "Dazed",
+        "name": "Impact",
         "description":  [{
             "tags": {"desc_type" : "desc"},
             "content": "A triggered effect that activates when the ability causes a target to collide.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_counter",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Counter",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "When damaged by an ability, deal 2 damage back, each time damage is applied.",
             "subcontent":   []
         }]
     },
@@ -206,6 +221,36 @@
         "description":  [{
             "tags": {"desc_type" : "desc"},
             "content": "Roll 1d6, then trigger an effect on a certain result or higher.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_aura",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Aura",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "This ability is a continuous, ongoing (+) effect that affects all characters specified within range X of an origin point, usually a character. Characters are only affected by an aura while inside.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_curse",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Curse",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "You might get bonus dice or dice penalties on a roll from allies helping you, in the form of Boons (+1d6) and Curses (-1d6). These cancel each other out 1 to 1. These are sometimes written as +1D or -1D for simplicity.",
             "subcontent":   []
         }]
     }

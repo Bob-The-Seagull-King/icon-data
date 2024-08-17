@@ -1,0 +1,16 @@
+[
+    {
+        "id": "ms_endlessbattlement_perfectbattlement",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfect Battlement",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or higher, Endless Battlement has no maximum range, deals 4 damage instead of 2, and becomes interrupt 2."
+            }
+                        ]
+    }
+]
