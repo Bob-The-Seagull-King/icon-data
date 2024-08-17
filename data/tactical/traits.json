@@ -1,0 +1,17 @@
+[
+    {
+        "id": "tr_strive",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Strive",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may cause any ability to trigger its heroic effects when you use it, and increase the distance of any shoves by +1. If you do, after that ability resolves, you can’t use heroics until the end of your next turn, and deal half damage during that turn.",
+                "glossary": [{"val": "heroic", "id": "gl_heroic"}, {"val": "shoves", "id": "gl_shove"}]
+            }
+                        ]
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": "lb_helion",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "resolve": 2
+        },
+        "eventtags": {},
+        "name": "Endless Battlement",
+        "ultimate": ["ul_perfecthellion"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your shield becomes the sun: a discus of light and motion, shattering enemy ranks and spurring allies forth."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You hurl your shield, and every character on the battlefield is shoved 1 space in a direction of your choice. You may shove in any order, and may choose different directions for each character."
+                                }],
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "shove", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Bloodied foes are weakened. Foes at 25% hp or lower are stunned."
+                                }],
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"},{"val": "weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
+            }
+                        ]
+    }
+]

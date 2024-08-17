@@ -120,6 +120,21 @@
         }]
     },
     {
+        "id": "gl_heroic",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Heroic",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Stalwart-only triggered effect. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc).",
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_closeblast",
         "type": "Glossary",
         "source": "core",
@@ -251,6 +266,51 @@
         "description":  [{
             "tags": {"desc_type" : "desc"},
             "content": "You might get bonus dice or dice penalties on a roll from allies helping you, in the form of Boons (+1d6) and Curses (-1d6). These cancel each other out 1 to 1. These are sometimes written as +1D or -1D for simplicity.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_bloodied",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Bloodied",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "When a character is at or under 50% maximum HP, they are bloodied.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_weakened",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Weakened",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "All damage dealt reduced by 2.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_stunned",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Stunned",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Can’t take interrupts. Your next ability used ends your turn, then end this status.",
             "subcontent":   []
         }]
     }

@@ -12,5 +12,19 @@
                 "content": "At round 4 or higher, Endless Battlement has no maximum range, deals 4 damage instead of 2, and becomes interrupt 2."
             }
                         ]
+    },
+    {
+        "id": "ul_perfecthellion",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfect Helion",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can repeat this effect once on either allies or enemies."
+            }
+                        ]
     }
 ]
