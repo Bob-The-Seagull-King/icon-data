@@ -1,0 +1,58 @@
+[
+    {
+        "id": "cl_stalwart",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Stalwart",
+        "subtitle": "Weapon master and unparalleled soldier",
+        "traits": ["tr_armour"],
+        "jobs": ["jb_bastion"],
+        "specialmechanic": {
+            "title": "Heroics",
+            "description": [ {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Stalwarts can push themselves beyond their normal limits, performing heroics and activating any heroic triggered effects of an ability. Each job has different ways of performing heroics.",
+                            "glossary": [{"val": "heroics", "id": "gl_heroic"}]
+                        } ]
+        },
+        "gambit": {
+            "title": "Stalwart Gambit",
+            "description": [ {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "If you take a Stalwart ability as a non-Stalwart class, you get Heroics, and the ability to trigger a Heroic ability for free once a combat."
+                        } ]
+        },
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Stalwarts are tough and vigorous warriors, with heavy armor and abilities that let them stand their ground, protect their allies, and control space. They largely eschew the use of ranged attacks but are mythic soldiers and gods of the battlefield, able to perform incredible feats of physical prowess and resilience."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Stalwarts boast Slashed and Weakened, which allow them to slow down speedy foes and lower their damage, and have access to Rampart and Vigilance, which makes it much more risky for characters to move around them. They also easily gain Sturdy, making them resistant to being moved, and can in turn Shove their foes, knocking them around the battlefield."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Stalwarts are strong against skirmisher foes and weaker against artillery foes."
+            }
+        ],
+        "complexity": "Low",
+        "strengths": "Tough, good at punishing foes, protecting allies, and controlling the battlefield.",
+        "weaknesses": "Lower mobility and weak to ranged attackers.",
+        "stats": {
+            "vit": 10,
+            "hp" : 40,
+            "defense" : 6,
+            "speed" : 4,
+            "dash" : 2,
+            "fray" : 4,
+            "damage" : 6,
+            "basicrange" : 3
+        }
+    }
+]

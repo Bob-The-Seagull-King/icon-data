@@ -1,7 +1,7 @@
 [
     {
         "id": "tr_strive",
-        "type": "Talent",
+        "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
@@ -16,7 +16,7 @@
     },
     {
         "id": "tr_blackrockvanguard",
-        "type": "Talent",
+        "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
@@ -26,6 +26,20 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "You can take any number of interrupts per turn. When you take an interrupt, you may rush 1 after it resolves.",
                 "glossary": [{"val": "interrupts", "id": "gl_interrupt"}, {"val": "rush 1", "id": "gl_rush"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_armour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Armour",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Reduce all damage taken by 2."
             }
                         ]
     }
