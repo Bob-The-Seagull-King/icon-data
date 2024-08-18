@@ -9,7 +9,6 @@
         "name": "Stalwart",
         "subtitle": "Weapon master and unparalleled soldier",
         "traits": ["tr_armour"],
-        "jobs": ["jb_bastion"],
         "specialmechanic": {
             "title": "Heroics",
             "description": [ {
