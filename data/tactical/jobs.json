@@ -10,7 +10,6 @@
         "name": "Bastion",
         "subtitle": "Unbreakable Knight",
         "traits": ["tr_strive"],
-        "abilities": ["ab_endlessbattlement"],
         "addons": [],
         "blurb": [
             {
