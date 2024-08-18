@@ -4,6 +4,10 @@
         "type": "Job",
         "source": "core",
         "tags": {
+            "Interrupt": true,
+            "Shove": true,
+            "Collide": true,
+            "Aura": true
         },
         "eventtags": {},
         "class_id": "cl_stalwart",
