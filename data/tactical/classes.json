@@ -43,7 +43,7 @@
         ],
         "complexity": "Low",
         "strengths": "Tough, good at punishing foes, protecting allies, and controlling the battlefield.",
-        "weaknesses": "Lower mobility and weak to ranged attackers.",
+        "weaknessess": "Lower mobility and weak to ranged attackers.",
         "stats": {
             "vit": 10,
             "hp" : 40,
