@@ -11,11 +11,13 @@
         "subtitle": "Unbreakable Knight",
         "traits": ["tr_strive"],
         "abilities": ["ab_endlessbattlement"],
+        "addons": [],
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
                 "content": "The Bastions are the shield lords of Arden Eld, larger than life figures that tread the ancient imperial roads with their heads held high and armor gleaming. From town to town they act as errant knights and mercenaries, protecting the weak and vulnerable, and driving back the Blights with hammer-like blows from their greatshields, which they throw like a discus with incredible force."
             },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
                 "tags": {"desc_type" : "subeffect"},
                 "content": "The imperious and mighty presence of a Bastion in town is a stabilizing force and can become an event for a whole village. All Bastions follow an ancient and long-forgotten hero’s code, an old oath to stand against chaos in all its forms."
@@ -23,17 +25,19 @@
         ],
         "playstyle": [
             {
-            "tags": {"desc_type" : "subeffect"},
-            "content": "Bastions are powerful knights and tacticians and focus on shoving their enemies and moving their allies into position with their Press the Advantage trait. Almost everything they do changes the shape of the battlefield in some way, and they get extra benefits for smashing foes into obstacles or other characters with collide. They benefit from good positioning, since shoves typically have to be away from you.",
-            "glossary": [{"val": "shoving", "id": "gl_shove"}, {"val": "collide", "id": "gl_impact"},{"val": "shoves", "id": "gl_shove"}]
+                "tags": {"desc_type" : "desc"},
+                "content": "Bastions are powerful knights and tacticians and focus on shoving their enemies and moving their allies into position with their Press the Advantage trait. Almost everything they do changes the shape of the battlefield in some way, and they get extra benefits for smashing foes into obstacles or other characters with collide. They benefit from good positioning, since shoves typically have to be away from you.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"}, {"val": "collide", "id": "gl_impact"},{"val": "shoves", "id": "gl_shove"}]
             },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "desc"},
                 "content": "Bastions also have a fair number of interrupts and can react off their turn to enemy actions, and also benefit from auras.",
                 "glossary": [{"val": "auras", "id": "gl_aura"}, {"val": "interrupts", "id": "gl_interrupt"}]
             },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "desc"},
                 "content": "Their Limit Break, Helion, is relatively cheap, but can rearrange everyone's position and can potentially stun and daze a huge number of foes.",
                 "glossary": [{"val": "stun", "id": "gl_stunned"}, {"val": "daze", "id": "gl_dazed"}]
             }
