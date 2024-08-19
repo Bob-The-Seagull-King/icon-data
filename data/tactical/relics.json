@@ -1,0 +1,56 @@
+[
+    {
+        "id": "rl_apegod",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "Stun": true,
+            "Shove": true
+        },
+        "eventtags": {},
+        "colour": "cl_stalwart",
+        "name": "Ape God",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This gauntlet or weapon is oversized, studded with metal, and incredibly heavy."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 17,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Stun your attack target.",
+                "glossary": [{"val": "Stun", "id": "gl_stunned"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Become immune to stun.",
+                "glossary": [{"val": "stun", "id": "gl_stunned"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you stun a foe, you can also stun another foe within 2 spaces of that character.",
+                "glossary": [{"val": "stun", "id": "gl_stunned"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "If your Invoke goes off, your attack also deals bonus damage, shoves all foes adjacent to your target 1, and you may shove yourself 2 in any direction after it resolves.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"},{"val": "shove", "id": "gl_shove"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": " Climb the highest peak in Arden Eld."
+        }]
+    }
+]

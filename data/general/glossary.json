@@ -30,6 +30,21 @@
         }]
     },
     {
+        "id": "gl_bonusdamage",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "damage"
+        },
+        "eventtags": {},
+        "name": "Bonus Damage",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "When an ability gains bonus damage, roll one more [D] for each instance of bonus damage and pick the highest result.",
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_fray",
         "type": "Glossary",
         "source": "core",
