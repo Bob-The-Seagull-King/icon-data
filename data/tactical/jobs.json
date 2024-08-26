@@ -13,7 +13,7 @@
         "class_id": "cl_stalwart",
         "name": "Bastion",
         "subtitle": "Unbreakable Knight",
-        "traits": ["tr_strive"],
+        "traits": ["tr_strive", "tr_presstheadvantage", "tr_bullsstrength", "tr_shieldmaster"],
         "addons": [],
         "blurb": [
             {

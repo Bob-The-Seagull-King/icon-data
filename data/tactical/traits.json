@@ -15,6 +15,51 @@
                         ]
     },
     {
+        "id": "tr_presstheadvantage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Press the Advantage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, when you shove a character, you and an ally of your choice anywhere can each rush 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "rush", "id": "gl_rush"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_bullsstrength",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bull's Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All of your abilities gain collide: deal 2 damage. Characters can't take this damage more than once a turn.",
+                "glossary": [{"val": "collide", "id": "gl_impact"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_shieldmaster",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shieldmaster",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have aura 1. If you end your turn with an ally in the aura, gain vigilance +1 and become sturdy until the start of your turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            }
+                        ]
+    },
+    {
         "id": "tr_blackrockvanguard",
         "type": "Trait",
         "source": "core",

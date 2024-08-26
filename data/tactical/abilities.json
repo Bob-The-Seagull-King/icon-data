@@ -84,8 +84,8 @@
         "class_id": "cl_stalwart",
         "name": "Battering Ram",
         "job_id": "jb_bastion",
-        "talent": ["tl_bastion_1", "tl_bastion_2"],
-        "mastery": ["ms_bastion_gatesmasher"],
+        "talent": ["tl_batteringram_1", "tl_batteringram_2"],
+        "mastery": ["ms_batteringram_gatesmasher"],
         "blurb": [{
             "tags": {"desc_type" : "subeffect"},
             "content": "Use your shield, weapon, or armored fist and send your target flying."
