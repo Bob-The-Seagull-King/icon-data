@@ -1,5 +1,124 @@
 [
     {
+        "id": "tl_heracule_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Heracule’s shoves can be in any direction.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_heracule_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Heracule’s second effect triggers +1 more time."
+            }
+                        ]
+    },
+    {
+        "id": "tl_batteringram_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may rush 1 before using Battering Ram.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_batteringram_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also shove objects with Battering Ram. The object triggers collide effects on the first character it collides with.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "collide", "id": "gl_impact"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_landwaster_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If Land Waster’s effect shockwave shoves 3 or more foes or allies, it shoves +1 and stuns your target.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}, {"val": "stuns", "id": "gl_stunned"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_landwaster_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If Land Waster’s effect shockwave shoves 2 or more foes or allies, cure yourself.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_valiant_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Collide: Become unstoppable for the rest of your turn.",
+                "glossary": [{"val": "collide", "id": "gl_impact"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_valiant_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you only shove one foe, they gain hatred of you after this ability resolves.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
         "id": "tl_endlessbattlement_1",
         "type": "Talent",
         "source": "core",
@@ -26,6 +145,124 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "You and your ally both have have counter while you are in the aura.",
                 "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "counter", "id": "gl_counter"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_catapult_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your shield becomes a valid target for allied abilities. You can expend this interrupt to grant them rebound.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_catapult_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Catapult can also be triggered on foes. When triggered on foes, the effect becomes effect: shove 1. Collide: you may rush 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "Collide", "id": "gl_impact"}, {"val": "rush", "id": "gl_rush"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_perseus_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You gain 4 vigor the first time in a round this ability triggers."
+            }
+                        ]
+    },
+    {
+        "id": "tl_perseus_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can extend the area as a line 5 area effect instead of an aura.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "aura", "id": "gl_aura"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_rook_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You also have counter while Rook’s aura is active.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}, {"val": "aura", "id": "gl_aura"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_rook_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also inflict hatred on a foe that triggers Rook’s effect, but no more than once a round."
+            }
+                        ]
+    },
+    {
+        "id": "tl_greatgiorgios_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You gain phasing while rushing. Foes you passed through take 2 damage after your movement resolves, and are shoved 1 to either side of your movement.",
+                "glossary": [{"val": "rushing", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_greatgiorgios_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies adjacent to you during any part of this rush are shoved 1 in any direction after this ability resolves.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
             }
                         ]
     }

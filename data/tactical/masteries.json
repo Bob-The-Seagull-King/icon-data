@@ -1,19 +1,5 @@
 [
     {
-        "id": "ms_endlessbattlement_perfectbattlement",
-        "type": "Mastery",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Perfect Battlement",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "At round 4 or higher, Endless Battlement has no maximum range, deals 4 damage instead of 2, and becomes interrupt 2."
-            }
-                        ]
-    },
-    {
         "id": "ul_perfecthellion",
         "type": "Ultimate",
         "source": "core",
@@ -24,6 +10,137 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "You can repeat this effect once on either allies or enemies."
+            }
+                        ]
+    },
+    {
+        "id": "ms_heracule_perfectheracule",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfect Heracule",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Heracule gains rebound, and its second effect triggers +1 more time."
+            }
+                        ]
+    },
+    {
+        "id": "ms_batteringram_gatesmasher",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gatesmasher",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a turn, if you trigger Battering Ram’s Collide or Heroic effect, the ability can be used one more time this turn.",
+                "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+            }
+                        ]
+    },
+    {
+        "id": "ms_landwaster_ajax",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ajax",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Terrain effect: Before Land Waster’s effect triggers, you tear up the very ground, creating a height 1 boulder object in range 3 of you."
+            }
+                        ]
+    },
+    {
+        "id": "ms_valiant_secondwind",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or higher in combat, Valiant becomes a free action."
+            }
+                        ]
+    },
+    {
+        "id": "ms_endlessbattlement_perfectbattlement",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfect Battlement",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or higher, Endless Battlement has no maximum range, deals 4 damage instead of 2, and becomes interrupt 2.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
+                        ]
+    },
+    {
+        "id": "ms_catapult_mangonel",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mangonel",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Catapult becomes Interrupt 3.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
+                        ]
+    },
+    {
+        "id": "ms_perseus_chaosfinisher",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chaos Finisher",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this interrupt triggers, after the triggering effect resolves, you may deal 2 damage to all affected foes from the triggering ability and shove them 1 in any direction.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }
+                        ]
+    },
+    {
+        "id": "ms_rook_implacablefortress",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Implacable Fortress",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies in the aura also reduce all damage by 2, as if by armor.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            }
+                        ]
+    },
+    {
+        "id": "ms_greatgiorgios_dragonslayer",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dragonslayer",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can choose to Delay Great Giorgios. Your next turn must be slow, but the effect activates at the start of that turn instead of at the end of your target’s turn, and it deals double damage."
             }
                         ]
     }

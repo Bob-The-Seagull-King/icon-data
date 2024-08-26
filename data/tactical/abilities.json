@@ -1,5 +1,227 @@
 [
     {
+        "id": "ab_Heracule",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "truestrike": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Heracule",
+        "job_id": "jb_bastion",
+        "talent": ["tl_heracule_1", "tl_heracule_2"],
+        "mastery": ["ms_heracule_perfectheracule"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Hurl your shield or weapon as a discus with irrepressible force."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "[D] + fray"
+                                                                }],
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                            },
+                                            {
+                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "Fray"
+                                                                }],
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Attack target is weakened and shoved 1."
+                                            }],
+                            "glossary": [{"val": "weakened", "id": "gl_weakened"}, {"val": "shoved", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "A different foe in range 3 from your target is shoved 1 away from your main target."
+                                            }],
+                            "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Repeat the above effect."
+                                            }],
+                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }
+                    ]
+    },
+    {
+        "id": "ab_batteringram",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Battering Ram",
+        "job_id": "jb_bastion",
+        "talent": ["tl_bastion_1", "tl_bastion_2"],
+        "mastery": ["ms_bastion_gatesmasher"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Use your shield, weapon, or armored fist and send your target flying."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "An adjacent character is shoved 2 spaces."
+                                            }],
+                            "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Foe is slashed, and refund the action cost of this ability."
+                                            }],
+                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }
+                        ]
+    },
+    {
+        "id": "ab_landwaster",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Land Waster",
+        "job_id": "jb_bastion",
+        "talent": ["tl_landwaster_1", "tl_landwaster_2"],
+        "mastery": ["ms_landwaster_ajax"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Crash your greatshield or weapon into the earth, sending up devastating shockwaves."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "2[D] + fray"
+                                                                }],
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                            },
+                                            {
+                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "Fray"
+                                                                }],
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Area Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Foes take fray damage."
+                                            }],
+                            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}, {"val": "fray", "id": "gl_fray"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1."
+                                            }],
+                            "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gains True Strike and becomes Burst 2 (target)."
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "True Strike", "id": "gl_truestrike"}]
+                        }
+                        ]
+    },
+    {
+        "id": "ab_valiant",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Valiant",
+        "job_id": "jb_bastion",
+        "talent": ["tl_valiant_1", "tl_valiant_2"],
+        "mastery": ["ms_valiant_secondwind"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Stride forth, with your shield held before you, battering aside foes."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Rush 1, then rush 1. After each rush, shove all adjacent characters 1."
+                                            }],
+                            "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Rush 1 again, then shove all adjacent characters 1."
+                                            }],
+                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+                        }
+                        ]
+    },
+    {
         "id": "ab_endlessbattlement",
         "type": "Ability",
         "source": "core",
@@ -40,7 +262,235 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Refresh this stance at the start of your turn."
                                             }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Immediately activate the interrupt effect."
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "interrupt", "id": "gl_interrupt"}]
                         }
                         ]
+    },
+	{
+        "id": "ab_catapult",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Catapult",
+        "job_id": "jb_bastion",
+        "talent": ["tl_catapult_1", "tl_catapult_2"],
+        "mastery": ["ms_catapult_mangonel"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Use your shield as a springboard to set up ally maneuvers or to deflect projectiles."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Trigger:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "An ally ends a movement in an adjacent space."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Shove that ally 2 in any direction."
+                                            }],
+                            "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "That ally gains 2 vigor and may rush 1."
+                                            }],
+                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}]
+                        }
+                    ]
+    },
+    {
+        "id": "ab_perseus",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 2,
+            "Aura": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Perseus",
+        "job_id": "jb_bastion",
+        "talent": ["tl_perseus_1", "tl_perseus_2"],
+        "mastery": ["ms_perseus_chaosfinisher"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your armor and shield become a mirror, channeling and amplifying the destructive power of your allies’ attacks."
+        }],
+        "description":  [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Trigger:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You are included in an allied area effect."
+                                            }],
+                            "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You release an aura 1 effect centered on you that lasts for the duration of the triggering ability, extending the area effect to encompass the aura. You can choose to be immune to any part of the triggering ability."
+                                            }],
+                            "glossary": [{"val": "aura", "id": "gl_aura"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Increase the aura size by +1."
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "aura", "id": "gl_aura"}]
+                        }
+                        ]
+    },
+    {
+        "id": "ab_Rook",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "Aura": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Rook",
+        "job_id": "jb_bastion",
+        "talent": ["tl_rook_1", "tl_rook_2"],
+        "mastery": ["ms_rook_implacablefortress"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your stance is powerful as you strike, and stand tall, an armored sentinel. No enemy can safely set foot where your gaze falls."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "[D] + fray"
+                                                                }],
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                            },
+                                            {
+                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "Fray"
+                                                                }],
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Shove 1."
+                                            }],
+                            "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You gain aura 1 until the end of your next turn. Any foe in the aura that is shoved is shoved +1. If any foe ends their turn in the aura, you may deal fray damage to them and shove them 1."
+                                            }],
+                            "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "shoved", "id": "gl_shove"}, {"val": "Fray", "id": "gl_fray"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Character is slashed."
+                                            }],
+                            "glossary": [{"val": "Collide", "id": "gl_impact"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gains true strike, and increase aura to aura 2."
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "aura", "id": "gl_aura"}]
+                        }
+						]
+    },
+    {
+        "id": "ab_greatgiorgios",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "End Turn": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_stalwart",
+        "name": "Great Giorgios",
+        "job_id": "jb_bastion",
+        "talent": ["tl_greatgiorgios_1", "tl_greatgiorgios_2"],
+        "mastery": ["ms_greatgiorgios_dragonslayer"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You call a challenge to your foe to stand and fight. Cowards are blown away by your massive charge."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Choose a foe in range 3, then end your turn. At the end of that foe’s turn, you may rush 4, as long as you end each space of your movement closer to them from when you started (if you are adjacent, you don’t move at all). Then, if your foe is adjacent, they are shoved a number of spaces equal to the spaces you just moved, then take damage equal to that number +2."
+                                            }],
+                            "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Foe also gains hatred of you after this ability resolves."
+                                            }],
+                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }
+						]
     }
 ]
