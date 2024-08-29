@@ -1,5 +1,48 @@
 [
     {
+        "id": "tr_armour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Armor 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Reduce all damage taken by 2."
+            }
+                        ]
+    },
+    {
+        "id": "tr_fortify",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fortify",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spaces adjacent to you have Rampart. Gain Vigilance +1 at the end of your turn."
+            }
+                        ]
+    },
+    {
+        "id": "tr_rush",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rush X",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Stalwarts can rush as part of their abilities. When you rush, you move X spaces and are unstoppable and immune to all damage during that move.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "immune", "id": "gl_immune"}]
+            }
+                        ]
+    },
+    {
         "id": "tr_strive",
         "type": "Trait",
         "source": "core",
@@ -75,16 +118,76 @@
                         ]
     },
     {
-        "id": "tr_armour",
+        "id": "tr_demonedge",
         "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Armour",
+        "name": "Demon Edge",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Reduce all damage taken by 2."
+                "content": "If you elect to take a slow turn or use a delay effect, gain vigilance +1, and all your abilities deal bonus damage and gain true strike until the end of your next turn.",
+                "glossary": [{"val": "slow turn", "id": "gl_slowturn"}, {"val": "delay", "id": "gl_delay"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "truestrike", "id": "gl_truestrike"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_demonstrength",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Demon Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can make any ability Heroic when you use it. If you do, you can’t attack or use Heroics until the end of your following turn.",
+                "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_hissatsu",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hissatsu",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you don’t attack during your turn, your next attack ability gains +1 boon, true strike, and upgrades its damage die to d10. This effect ends after you hit with an attack.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}, {"val": "true strike", "id": "gl_truestrike"}, {"val": "damage die", "id": "gl_damagedice"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_truehorn",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "True Horn",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You are sturdy from the start of each round until the start of your turn.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_rangiri",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rangiri",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you trigger Hissatsu twice in a row, your attack ability becomes upgraded further. The entire ability now deals double damage. Roll and determine all damage on the attacker’s end when making it, then double the total before applying it."
             }
                         ]
     }

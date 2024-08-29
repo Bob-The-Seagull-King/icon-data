@@ -120,6 +120,21 @@
         }]
     },
     {
+        "id": "gl_collide",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Collide",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A triggered effect that occurs on any character shoved into an obstruction by this ability.",
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_counter",
         "type": "Glossary",
         "source": "core",
@@ -295,7 +310,7 @@
         "name": "Curse",
         "description":  [{
             "tags": {"desc_type" : "desc"},
-            "content": "You might get bonus dice or dice penalties on a roll from allies helping you, in the form of Boons (+1d6) and Curses (-1d6). These cancel each other out 1 to 1. These are sometimes written as +1D or -1D for simplicity.",
+            "content": "You might get bonus dice or dice penalties on a roll from allies helping you, in the form of Boons (+1d6) and Curses (-1d6). These cancel each other out 1 to 1. These are sometimes written as +1D or -1D for simplicity. The most important rule to remember is that you can’t get more than +2 or -2 additional dice on any roll, no matter how many dice you get otherwise.",
             "subcontent":   []
         }]
     },
@@ -341,6 +356,254 @@
         "description":  [{
             "tags": {"desc_type" : "desc"},
             "content": "Can’t take interrupts. Your next ability used ends your turn, then end this status.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_slashed",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Slashed",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Take 4 damage after you or an ally uses an ability that moves you, but no more than once a turn.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_rampart",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Rampart",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Foes cannot enter or exit a space affected by a rampart effect by dashing, flying, or teleporting.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_vigilance",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Vigilance",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A special effect with X charges, each represented by a d6. Like triggered effects, vigilance can only be used once per trigger. Vigilance charges stack if a character gains more than one. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:",
+            "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                                "content": "When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with armor.",
+                    "glossary": [{"val": "armor", "id": "gl_armor"}]
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                            "content": "When a foe breaks adjacency with you, deal that much damage to them."
+               }]
+        }]
+    },
+    {
+        "id": "gl_sturdy",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Sturdy",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "When moved or removed and placed by a foe, can only be moved max 1 space a turn.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_charge",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Charge",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A triggered effect that activates when the ability is used on a slow turn.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_slowturn",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Slow Turn",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Go after all other characters. If multiple characters take slow turns, it takes the same order as regular turns (ally/enemy/ally).",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_delay",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Delay",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Slow but powerful effect that typically ends your turn. When you use a delay effect, your next turn must be slow. The effect occurs at the start of that turn, before anything else happens.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_armor",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Armor X",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Reduce all damage taken by X. Always reduce by the highest value.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_truestrike",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "True Strike",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Ignores dodge, blind, evasion, and stealth.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_boon",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Boon",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "You might get bonus dice or dice penalties on a roll from allies helping you, in the form of Boons (+1d6) and Curses (-1d6). These cancel each other out 1 to 1. These are sometimes written as +1D or -1D for simplicity. The most important rule to remember is that you can’t get more than +2 or -2 additional dice on any roll, no matter how many dice you get otherwise.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_hatred",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Hatred of X",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Deal half damage to all foes other than foe X. End this status at the end of your turn, or if foe X becomes immune to damage or un-targetable.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_vigor",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Vigor",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from armor and resistance. Vigor stacks, but cannot go past 25% of your hp. If you gain a vigor surge, gain maximum vigor. Lose all vigor at the end of combat.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_exceed",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Exceed",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A triggered effect that takes place on a total attack roll of 15+.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_unstoppable",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Unstoppable",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Immune to all statuses. Cannot be moved by foes, and movement ignores engagement and rampart.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_immune",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Immune to X",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Not affected by X in any way. A character that’s immune to damage or effects doesn’t even count as taking them.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_endturn",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "End Turn",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "This ability ends your turn. If multiple abilities or effects would end your turn at the same time, you can only choose one",
             "subcontent":   []
         }]
     }

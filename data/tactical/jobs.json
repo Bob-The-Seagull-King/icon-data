@@ -47,5 +47,48 @@
         ],
         "limitbreak": "lb_helion",
         "upgrade_trait": "tr_blackrockvanguard"
+    },
+    {
+        "id": "jb_demonslayer",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Delay": true,
+            "Charge": true,
+            "Sturdy": true
+        },
+        "eventtags": {},
+        "class_id": "cl_stalwart",
+        "name": "Demon Slayer",
+        "subtitle": "Master of the Forbidden Arts",
+        "traits": ["tr_demonedge", "tr_demonstrength", "tr_hissatsu", "tr_truehorn"],
+        "addons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Warriors of impossible strength and insane bravado, demon slayers are warriors that specialize in fighting the largest and most dangerous monsters to crawl out of the pits that riddle the land. They relish in fighting against impossible odds, training themselves in forbidden techniques, arcane arts, and oversized weaponry that normal Kin would quake at wielding. They organize themselves into loose orders and train and hunt together, sharing tales and trophies of the colossal horrors they have slain. Some say in order to fight their quarries, the slayers must ingest demon blood to gain their strength, giving them dark and forbidden power that makes other Kin fear and respect them in equal measure."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Demon slayers are mobile, heavy hitting stalwarts that use their powerful traits to get a lot out of slow turns and charge effects.",
+                "glossary": [{"val": "slow turns", "id": "gl_slowturn"}, {"val": "charge", "id": "gl_charge"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Their Hissatsu trait powers up Demon Slayers when spending a turn not attacking and focusing their strength, like a quick-draw samurai or someone winding up a huge blow with an oversized weapon. Therefore they benefit from attacking every other turn, and waiting to strike, giving them a slow but reliable tempo. While waiting to act, they automatically become sturdy, making them very hard to displace.",
+                "glossary": [{"val": "attacking every other turn", "id": "gl_delay"}, {"val": "sturdy", "id": "gl_sturdy"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Their Limit Break, Split Heaven and Hell, is a very powerful AoE slice that is relatively easy to avoid for foes without assistance from your allies, but can be held and even canceled.",
+                "glossary": [{"val": "AoE", "id": "gl_areaeffect"}]
+            }
+        ],
+        "limitbreak": "lb_splitheavenandhell",
+        "upgrade_trait": "tr_rangiri"
     }
 ]

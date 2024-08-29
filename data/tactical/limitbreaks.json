@@ -8,8 +8,8 @@
             "resolve": 2
         },
         "eventtags": {},
-        "name": "Endless Battlement",
-        "ultimate": ["ul_perfecthellion"],
+        "name": "Helion",
+        "ultimate": ["ul_perfecthelion"],
         "blurb": [{
             "tags": {"desc_type" : "subeffect"},
             "content": "Your shield becomes the sun: a discus of light and motion, shattering enemy ranks and spurring allies forth."
@@ -34,5 +34,75 @@
                 "glossary": [{"val": "Bloodied", "id": "gl_bloodied"},{"val": "weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
             }
                         ]
+    },
+    {
+        "id": "lb_splitheavenandhell",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "resolve": 3,
+            "End Turn": true,
+            "Delay": true,
+            "True Strike": true,
+            "Divine": true
+        },
+        "eventtags": {},
+        "name": "Split Heaven and Hell",
+        "ultimate": ["ul_godwaster"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Sever Divinity and cut through the threads of possibility. Pour all your rage into one blow and topple the Gods."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "End your turn, and start charging up a god cutting blow. Delay: Your next turn must be slow. At the start of that turn, you may take one of the following options:",
+                "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "Delay", "id": "gl_delay"}, {"val": "next turn must be slow", "id": "gl_slowturn"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Sever Divine Thread:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Swing your weapon in a line 5 area effect drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their distance on the line from you. • 1 space: 100% of max hp • 2-4 spaces: 50% of max hp • 5+ spaces: 25% of max hp.",
+                                    "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "1 space: 100% of max hp"
+                                                    },
+                                                    {
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "2-4 spaces: 50% of max hp"
+                                                    },
+                                                    {
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "5+ spaces: 25% of max hp."
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Divine Cancel:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You may cancel this ability, refunding the resolve cost, and rush 1. You can limit break again this combat, but not this turn."
+                                }],
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Divine Delay:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You continue to hold this ability. Your next turn must be slow and repeat this delay effect. Each time you do this, increase the width of the line by 1 space, to a maximum of 3 width, and its length by 3 spaces. You cannot attack while holding Divine Delay."
+                                }],
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"},{"val": "weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Legend characters always take 25% of max hp from this ability instead of other effects."
+            }
+        ]
     }
 ]

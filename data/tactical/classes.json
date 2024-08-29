@@ -8,7 +8,7 @@
         "eventtags": {},
         "name": "Stalwart",
         "subtitle": "Weapon master and unparalleled soldier",
-        "traits": ["tr_armour"],
+        "traits": ["tr_armour", "tr_fortify", "tr_rush"],
         "specialmechanic": {
             "title": "Heroics",
             "description": [ {
@@ -32,7 +32,8 @@
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "Stalwarts boast Slashed and Weakened, which allow them to slow down speedy foes and lower their damage, and have access to Rampart and Vigilance, which makes it much more risky for characters to move around them. They also easily gain Sturdy, making them resistant to being moved, and can in turn Shove their foes, knocking them around the battlefield."
+                "content": "Stalwarts boast Slashed and Weakened, which allow them to slow down speedy foes and lower their damage, and have access to Rampart and Vigilance, which makes it much more risky for characters to move around them. They also easily gain Sturdy, making them resistant to being moved, and can in turn Shove their foes, knocking them around the battlefield.",
+                "glossary": [{"val": "Slashed", "id": "gl_slashed"}, {"val": "Weakened", "id": "gl_weakened"}, {"val": "Rampart", "id": "gl_rampart"}, {"val": "Vigilance", "id": "gl_vigilance"}, {"val": "Sturdy", "id": "gl_sturdy"}, {"val": "Shove", "id": "gl_shove"}]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {

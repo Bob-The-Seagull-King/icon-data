@@ -1,6 +1,6 @@
 [
     {
-        "id": "ul_perfecthellion",
+        "id": "ul_perfecthelion",
         "type": "Ultimate",
         "source": "core",
         "tags": { },
@@ -141,6 +141,35 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "You can choose to Delay Great Giorgios. Your next turn must be slow, but the effect activates at the start of that turn instead of at the end of your target’s turn, and it deals double damage."
+            }
+                        ]
+    },
+    {
+        "id": "ul_godwaster",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "God Waster",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While holding a God Cutting Blow, you can rush 2 at the start or end of any other turn than yours, but no more than twice a round.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+                        ]
+    },
+    {
+        "id": "ms_demoncutter_blooddrinkingdevilblade",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Drinking Devil Blade",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After this ability resolves, gain 2 vigor for every foe damaged."
             }
                         ]
     }

@@ -188,7 +188,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You gain 4 vigor the first time in a round this ability triggers."
+                "content": "You gain 4 vigor the first time in a round this ability triggers.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
             }
                         ]
     },
@@ -263,6 +264,36 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Allies adjacent to you during any part of this rush are shoved 1 in any direction after this ability resolves.",
                 "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "tl_demoncutter_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Exceed: Gain 6 vigor.",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+                        ]
+    },
+	{
+        "id": "tl_demoncutter_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can rush 1 before using Demon Cutter. Charge: Rush 3 instead.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
             }
                         ]
     }

@@ -7,7 +7,7 @@
             "action": 1,
             "type": "attack",
             "range": 3,
-            "truestrike": true
+            "True Strike": true
         },
         "eventtags": {},
         "chapter": 1,
@@ -68,7 +68,7 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Repeat the above effect."
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}]
                         }
                     ]
     },
@@ -107,7 +107,7 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Foe is slashed, and refund the action cost of this ability."
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "slashed", "id": "gl_slashed"}]
                         }
                         ]
     },
@@ -217,7 +217,7 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Rush 1 again, then shove all adjacent characters 1."
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
                         }
                         ]
     },
@@ -318,7 +318,7 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "That ally gains 2 vigor and may rush 1."
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}]
                         }
                     ]
     },
@@ -440,7 +440,7 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Character is slashed."
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_impact"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "slashed", "id": "gl_slashed"}]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
@@ -449,7 +449,7 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Gains true strike, and increase aura to aura 2."
                                             }],
-                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "aura", "id": "gl_aura"}]
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "true strike", "id": "gl_truestrike"}, {"val": "aura", "id": "gl_aura"}]
                         }
 						]
     },
@@ -489,7 +489,80 @@
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Foe also gains hatred of you after this ability resolves."
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "hatred", "id": "gl_hatred"}]
+                        }
+						]
+    },
+    {
+        "id": "ab_demoncutter",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "line": 3,
+            "True Strike": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Demon Cutter",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_demoncutter_1", "tl_demoncutter_2"],
+        "mastery": ["ms_demoncutter_blooddrinkingdevilblade"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You slash your weapon in a deadly swing sending cutting shockwaves out that rip through enemy defenses."
+        }],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "[D] + fray"
+                                                                }],
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                            },
+                                            {
+                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                                    "content": "Fray"
+                                                                }],
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Attack target is slashed."
+                                            }],
+                            "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Area Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Fray"
+                                            }],
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Charge or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gains range 2, and repeat the area effect in a new line 3 area in range. The areas cannot overlap."
+                                            }],
+                            "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "area effect", "id": "gl_areaeffect"}]
                         }
 						]
     }
