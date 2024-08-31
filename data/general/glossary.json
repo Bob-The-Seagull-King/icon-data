@@ -603,7 +603,143 @@
         "name": "End Turn",
         "description":  [{
             "tags": {"desc_type" : "desc"},
-            "content": "This ability ends your turn. If multiple abilities or effects would end your turn at the same time, you can only choose one",
+            "content": "This ability ends your turn. If multiple abilities or effects would end your turn at the same time, you can only choose one.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_stealth",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Stealth",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Cannot be directly targeted except from an adjacent space. Breaks on using any ability other than dash or standard move.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_evasion",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Evasion",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Roll a d6 when attacked. On a 4+, the attack automatically misses. Check before the attack roll.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_mark",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "ongoing"
+        },
+        "eventtags": {},
+        "name": "Mark",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Places a mark, an ongoing (+) effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_sealed",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Sealed",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Character cannot inflict statuses.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_pacified",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Pacified",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Character deals half damage. Breaks when damaged by a foe’s ability.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_combo",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "token"
+        },
+        "eventtags": {},
+        "name": "Combo",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Actions with Combo have two versions, a base version and combo version. When you use the base ability, gain a combo token. Any time you use a combo ability and have a token, you use the combo version instead, discarding the token. You can only have one combo token at once, and discard all tokens at the end of combat.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_powerdie",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Power Die",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A die set out and and ticked up or down depending on certain conditions. You can use a physical die to represent it, or just a tracker. Each power die is unique to the ability that granted it. You typically gain power dice at 1 tick, and if a power die ticks to 0, discard it.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_shattered",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Shattered",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Character cannot gain or benefit from vigor.",
+            "glossary": [{"val": "vigor", "id": "gl_vigor"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_vulnerable",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Vulnerable",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "All damage taken increased by 1.",
             "subcontent":   []
         }]
     }

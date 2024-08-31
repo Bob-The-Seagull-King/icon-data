@@ -7,7 +7,7 @@
         },
         "eventtags": {},
         "name": "Stalwart",
-        "subtitle": "Weapon master and unparalleled soldier",
+        "subtitle": "Weapon Master and Unparalleled Soldier",
         "traits": ["tr_armour", "tr_fortify", "tr_rush"],
         "specialmechanic": {
             "title": "Heroics",
@@ -53,6 +53,179 @@
             "fray" : 4,
             "damage" : 6,
             "basicrange" : 3
+        }
+    },
+    {
+        "id": "cl_vagabond",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Vagabond",
+        "subtitle": "Rogue, Scoundrel, and Blade for Hire",
+        "traits": ["tr_skirmisher", "tr_dodge", "tr_prowl", "tr_finesse"],
+        "specialmechanic": {
+            "title": "Finishing Blow",
+            "description": [ {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Abilities with Finishing Blow triggered effects gain additional, more powerful effects if they target at least one bloodied foe. Effects depend on the action.",
+                            "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                        } ]
+        },
+        "gambit": {
+            "title": "Vagabond Gambit",
+            "description": [ {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "If you take a Vagabond Ability as a non-Vagabond class, your vagabond abilities benefit from Finesse."
+                        } ]
+        },
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Vagabonds are the mercenaries and wanderers of Arden Eld. They know how to aim a crossbow bolt through the helmet slit of a knight or the weak spot of a monster, how to move quietly and quickly, and how to fling a knife with deadly precision."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Vagabonds boast high damage and even higher mobility. Skirmisher lets them move faster and further than other classes, while Dodge lets them avoid damage unless targeted directly. They make use of numerous tools such as Stealth, Evasion, and Finishing Blow to crush weak, isolated, or ranged enemies and avoid their counterattacks.",
+                "glossary": [{"val": "Stealth", "id": "gl_stealth"}, {"val": "Evasion", "id": "gl_evasion"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Vagabonds are strong against artillery foes and weaker against heavy foes."
+            }
+        ],
+        "complexity": "Medium",
+        "strengths": "High mobility and damage, strong summons and marks, strong against isolated foes.",
+        "weaknessess": "Relatively low durability, relies on support.",
+        "stats": {
+            "vit": 7,
+            "hp" : 28,
+            "defense" : 10,
+            "speed" : 4,
+            "dash" : 4,
+            "fray" : 2,
+            "damage" : 10,
+            "basicrange" : 4
+        }
+    },
+    {
+        "id": "cl_mendicant",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mendicant",
+        "subtitle": "Wandering Healer and Storyteller",
+        "traits": ["tr_diaga", "tr_bless", "tr_succor"],
+        "specialmechanic": {
+            "title": "Blessing",
+            "description": [ {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Certain actions give characters a Blessing token. A character can spend a blessing when making a save to gain +1 boon on that save. All Mendicant jobs also have different, alternative ways to spend blessings tokens. All blessings are discarded at the end of combat. Blessings are not unique (they don’t ‘belong’ to a character) and as long as a character has blessings from anyone, they can use them for any effects that require blessing tokens, though only one type of blessing at once.",
+                            "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+                        } ]
+        },
+        "gambit": {
+            "title": "Mendicant Gambit",
+            "description": [ {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "If you take a Mendicant Ability as a non-Mendicant job, you gain this class’ Bless action."
+                        } ]
+        },
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Mendicants are the itinerant priests, exorcists, and healers of Arden Eld. They travel from town to town, healing sicknesses of the body and soul, cleansing the damage dealt by the ruins, consulting with local spirits, and setting up wards against evil. Many mendicants are highly learned scholars, but others come from folk practices, temple monks, green witch circles, or town priesthoods. They are a highly diverse lot, and attuned to the land and the people that they care for."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Mendicants are the only class that can consistently grant vigor and lift statuses with the potent cure effect. They protect allies and guide their attacks with the Sealed and Pacified statuses, while making use of powerful combos, auras, and marks to stack negative effects on foes while empowering allies.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "Sealed", "id": "gl_sealed"}, {"val": "Pacified", "id": "gl_pacified"}, {"val": "auras", "id": "gl_aura"}, {"val": "marks", "id": "gl_mark"}, {"val": "combos", "id": "gl_combo"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Mendicants aren’t weak or strong against any particular type of foe, but have different strengths and weaknesses depending on job. This can make then a little more complex than other jobs."
+            }
+        ],
+        "complexity": "High",
+        "strengths": "Strong all-rounders, with many potent effects and the ability to heal allies and lift statuses.",
+        "weaknessess": "Low damage and reliant on allies.",
+        "stats": {
+            "vit": 10,
+            "hp" : 40,
+            "defense" : 8,
+            "speed" : 4,
+            "dash" : 2,
+            "fray" : 3,
+            "damage" : 6,
+            "basicrange" : 5
+        }
+    },
+    {
+        "id": "cl_wright",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Wright",
+        "subtitle": "Mage, Thaumaturge, and Master of the Arcane Arts",
+        "traits": ["tr_slip", "tr_aetherwall", "tr_chainreaction"],
+        "specialmechanic": {
+            "title": "Aether",
+            "description": [ {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "All Wrights gather Aether during combat, represented by a d6 power die. They passively gain 1 at the start of their turn, starting with 0. Use a d6 to track Aether. Other abilities and Chain Reaction will generate Aether when used. All Aether disperses at the end of combat. ",
+                            "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+                        },
+                        {  "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "INFUSE X: Many wright abilities have upgraded versions that can only be cast by Infusing them by spending X Aether as part of the ability. Aether is consumed at the start of the action. Only one infusion can be chosen at once, and only one infuse effect can trigger at at time. Infused abilities count as the same ability as the base ability and also benefit from all talents."
+                        } ]
+        },
+        "gambit": {
+            "title": "Wright Gambit",
+            "description": [ {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "If you take a Wright ability as a non-wright class, you get Aether and Chain Reaction."
+                        } ]
+        },
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights are mages who have mastered the manipulation of the raw power of creation: Aether. All souls are connected to Aether, and everyone is able to connect to it and feel it to some degree. Those with training, potential, and ability can learn to form and shape Aether as natural as they move their own flesh and blood. Wrights wield terrifying power - and they know it."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights become stronger the longer fights go on by the power of Aether, which they can use to Infuse their abilities to unleash some of the most spectacular attacks in the game. Wrights focus heavily on blights, piercing damage, the shattered and vulnerable statuses, and Area of Effect abilities to punish foes that group up or rely on nearby allies.",
+                "glossary": [{"val": "shattered", "id": "gl_shattered"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "Area of Effect", "id": "gl_areaeffect"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights are strong against heavy foes since they can bypass their armor, hit a broad area around them, and hit them from range, but weaker against skirmisher foes that can quickly close the gap."
+            }
+        ],
+        "complexity": "Medium",
+        "strengths": "High damage and excellent range, strong area of effect, and become more powerful the longer fights go on.",
+        "weaknessess": "Low durability and weak to foes that can engage them up close.",
+        "stats": {
+            "vit": 8,
+            "hp" : 32,
+            "defense" : 7,
+            "speed" : 4,
+            "dash" : 2,
+            "fray" : 3,
+            "damage" : 8,
+            "basicrange" : 6
         }
     }
 ]
