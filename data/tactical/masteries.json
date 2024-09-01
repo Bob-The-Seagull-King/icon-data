@@ -172,5 +172,19 @@
                 "content": "After this ability resolves, gain 2 vigor for every foe damaged."
             }
                         ]
+    },
+    {
+        "id": "ul_atomoscrusher",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Atomos Crusher",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you’re at 1 hp or lower, this ability deals 25% more max hp damage to non-legend characters."
+            }
+                        ]
     }
 ]

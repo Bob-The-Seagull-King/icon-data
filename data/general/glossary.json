@@ -757,5 +757,84 @@
             "content": "Take half damage, rounded up.",
             "subcontent":   []
         }]
+    },
+    {
+        "id": "gl_regeneration",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Regeneration",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "If bloodied, gain 4 vigor at the end of your turn.",
+            "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "vigor", "id": "gl_vigor"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_defiance",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Defiance",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn.",
+            "glossary": [{"val": "immune", "id": "gl_immune"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_sacrifice",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Sacrifice",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Reduce your hp by X, usually as a cost for an ability. Sacrifice costs are paid at the start of an ability, cannot be reduced, ignored, transferred, or resisted, cannot bring your hp below 1, and you can pay them even if you don’t have enough hp left.",
+            "glossary": [{"val": "resisted", "id": "gl_resistance"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_flying",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Flying",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A flying character ignores terrain damage and movement penalties, height movement penalties, obstruction, and engagement.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_divine",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Divine",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Damage from this ability cannot be reduced, mitigated, or negated in any way except immunity. (Ignores armor, weak, resistance, defiance, and bypasses vigor).",
+            "glossary": [{"val": "immunity", "id": "gl_immune"}, {"val": "armor", "id": "gl_armor"}, {"val": "weak", "id": "gl_weakened"}, {"val": "resistance", "id": "gl_resistance"}, {"val": "defiance", "id": "gl_defiance"}, {"val": "vigor", "id": "gl_vigor"}],
+            "subcontent":   []
+        }]
     }
 ]

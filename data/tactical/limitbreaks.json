@@ -104,5 +104,39 @@
                 "content": "Legend characters always take 25% of max hp from this ability instead of other effects."
             }
         ]
+    },
+    {
+        "id": "lb_gigantascrusher",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "resolve": 3,
+            "Divine": true,
+            "Sacrifice": true
+        },
+        "eventtags": {},
+        "name": "Gigantas Crusher",
+        "ultimate": ["ul_atomoscrusher"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Wrestle with the gods themselves."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character’s turn, you come spinning back to earth, slamming that character into the battlefield in unoccupied space in range 3 of your original location. You sacrifice 25% of your hp. Your foe takes 50% of their max hp as divine damage, or 25% as divine damage on a successful save. Then place both of you back in or adjacent to that space."
+                                }],
+                "glossary": [{"val": "sacrifice 25%", "id": "gl_sacrifice"}, {"val": "divine", "id": "gl_divine"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This ability can be used against Legends, but they may always save, taking divine fray damage and refunding this ability’s resolve cost on a successful save, and only 25% hp as divine damage on a failed save.",
+                "glossary": [{"val": "divine", "id": "gl_divine"},{"val": "fray damage", "id": "gl_fray"}]
+            }
+                        ]
     }
 ]

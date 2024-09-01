@@ -192,6 +192,95 @@
                         ]
     },
     {
+        "id": "tr_furiousberserk",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Furious Berserk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You go into a furious blood rage as you take damage, giving you the following benefits:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "You start combat with defiance.",
+                    "glossary": [{"val": "defiance", "id": "gl_defiance"}]
+                },
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "You have regeneration, and regain regeneration if defeated and rescued.",
+                    "glossary": [{"val": "regeneration", "id": "gl_regeneration"}]
+                },
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "While you’re bloodied, you are sturdy, and gain vigilance +1 at the end of your turn.",
+                    "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "vigilance +1", "id": "gl_vigilance"}]
+                }]
+            }
+                        ]
+    },
+    {
+        "id": "tr_wolfheart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wolfheart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, you may sacrifice 25% of your max hp to make an ability Heroic and increase the distance of any flight, rush, or dash as part of that move by +1.",
+                "glossary": [{"val": "sacrifice 25%", "id": "gl_sacrifice"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "rush", "id": "gl_rush"}, {"val": "dash", "id": "gl_dash"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_Pulverize",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pulverize",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you start an attack ability on higher elevation than your target, it deals bonus damage. If you are two or more levels higher, it also triggers all exceed effects.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "exceed", "id": "gl_exceed"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_Great Leap",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Leap",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you would end any movement on a lower elevation than you started, you may gain flying for the duration of that movement.",
+                "glossary": [{"val": "flying", "id": "gl_flying"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_unbreakable",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unbreakable",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If defeated, you can rescue yourself and take a turn as normal. This doesn’t take an action and takes place at the start of your turn. In addition, after being rescued in any way, including as part of this trait. you can rush 1 and deal 2 damage to all adjacent characters.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+                        ]
+    },
+    {
         "id": "tr_skirmisher",
         "type": "Trait",
         "source": "core",

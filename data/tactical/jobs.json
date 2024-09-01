@@ -90,5 +90,49 @@
         ],
         "limitbreak": "lb_splitheavenandhell",
         "upgrade_trait": "tr_rangiri"
+    },
+    {
+        "id": "jb_colossus",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Fly": true,
+            "Exceed": true,
+            "Comeback": true,
+            "Regeneration": true,
+            "Sacrifice": true
+        },
+        "eventtags": {},
+        "class_id": "cl_stalwart",
+        "name": "Colossus",
+        "subtitle": "High Flying Grappler",
+        "traits": ["tr_furiousberserk", "tr_wolfheart", "tr_pulverize", "tr_greatleap"],
+        "addons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Ferocious followers of Arenheir, the Wolf Titan, the Colossi are a martial order of berserkers, pankrationists, and warriors that reaches across all of Arden Eld. They travel throughout the land seeking powerful foes, and taking trophies to return to their great lodges to offer in tribute to Arenheir in fierce hope of resurrecting their god. At their lodges they feast and drink to their deeds, companions, and boasts.Colossi seek glory and challenge through battle, and will often go for only the absolute strongest warriors and monsters, heedless of their own safety. They fight with wild abandon and unconventional techniques that would make even the dirtiest Knave raise an eyebrow."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Colossi are hard-hitting grapplers and wrestlers that ride the knife’s edge to inflict maximum pain on their foes. They have unique access to fly, allowing them to vault up higher elevation and move around, and they get extra benefits such as exceed for launching themselves off higher terrain.",
+                "glossary": [{"val": "slow turns", "id": "gl_slowturn"}, {"val": "charge", "id": "gl_charge"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The lower colossi’s health is, the stronger they become, and they benefit from many comeback effects. At very low health, they gain regeneration and they can become absolute monsters at 1 hp. They can spend their own health to power up their abilities, but risk sending themselves into too vulnerable a state.",
+                "glossary": [{"val": "regeneration", "id": "gl_regeneration"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Their Limit Break, Gigantas Crusher, is a massive grab that can instantly destroy high value targets, such as elites, or deliver the killing blow to a legend. Since it does % based damage, it is an excellent finishing move."
+            }
+        ],
+        "limitbreak": "lb_gigantascrusher",
+        "upgrade_trait": "tr_unbreakable"
     }
 ]
