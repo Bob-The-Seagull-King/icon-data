@@ -236,7 +236,7 @@
                         ]
     },
     {
-        "id": "tr_Pulverize",
+        "id": "tr_pulverize",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -251,7 +251,7 @@
                         ]
     },
     {
-        "id": "tr_Great Leap",
+        "id": "tr_greatleap",
         "type": "Trait",
         "source": "core",
         "tags": { },
