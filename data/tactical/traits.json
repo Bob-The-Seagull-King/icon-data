@@ -190,5 +190,157 @@
                 "content": "If you trigger Hissatsu twice in a row, your attack ability becomes upgraded further. The entire ability now deals double damage. Roll and determine all damage on the attacker’s end when making it, then double the total before applying it."
             }
                         ]
+    },
+    {
+        "id": "tr_skirmisher",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skirmisher",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character with this trait can move diagonally and dash at full speed."
+            }
+                        ]
+    },
+    {
+        "id": "tr_dodge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dodge",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " Immune to all damage from missed attacks, successful saves, and area effects.",
+                "glossary": [{"val": "area effects", "id": "gl_areaeffect"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_prowl",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Prowl",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain stealth. Becomes a free action if no foes are in range 2.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_finesse",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Finesse",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You deal bonus damage to bloodied foes.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_diaga",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Diaga",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Cure a character in range 4. (A character that’s cured gains 4 vigor, or a vigor surge if they are bloodied. Then, they can immediately save agains all statuses, ending them on a success.)",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_bless",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bless",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Grant a blessing token to a character in range 4."
+            }
+                        ]
+    },
+    {
+        "id": "tr_succor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Succor",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mendicants may use Rescue to bring up a defeated ally at range 4 instead of adjacent."
+            }
+                        ]
+    },
+    {
+        "id": "tr_slip",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Slip",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Wright’s movement does not trigger and ignores interrupts, vigilance and rampart.",
+                "glossary": [{"val": "interrupts", "id": "gl_interrupt"}, {"val": "vigilance", "id": "gl_vigilance"}, {"val": "rampart", "id": "gl_rampart"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_aetherwall",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherwall",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Wrights gain resistance against all abilities from characters that are outside of range 2 from them.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_chainreaction",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chain Reaction",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "1/round, if a wright damages two or more foes with an ability, they gain 1 Aether after the ability resolves."
+            }
+                        ]
     }
 ]

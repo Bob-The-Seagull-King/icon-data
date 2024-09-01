@@ -742,5 +742,20 @@
             "content": "All damage taken increased by 1.",
             "subcontent":   []
         }]
+    },
+    {
+        "id": "gl_resistance",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Resistance",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Take half damage, rounded up.",
+            "subcontent":   []
+        }]
     }
 ]
