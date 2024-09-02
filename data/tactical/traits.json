@@ -281,6 +281,83 @@
                         ]
     },
     {
+        "id": "tr_martialmaster",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Martial Master",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can take two stances at once.",
+                "glossary": [{"val": "stances", "id": "gl_stance"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_blackheart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blackheart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you’re suffering from a status, gain vigilance +1 at the end of your turn. If you are suffering from two or more, also deal bonus damage with all abilities.",
+                "glossary": [{"val": "vigilance +1", "id": "gl_vigilance"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_taunt",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Taunt",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 3 gains hatred of you.",
+                "glossary": [{"val": "hatred", "id": "gl_hatred"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_spite",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spite",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can choose to use the Heroic effects of any ability when you use it. However, after it resolves, gain Hatred+ of the closest foe to you until the end of your next turn and you can’t use Heroics again for the same duration. If multiple foes are equidistant, you can choose.",
+                "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "+", "id": "gl_ongoing"}, {"val": "Hatred", "id": "gl_hatred"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_wayofthecrow",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Way of the Crow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If any ally is defeated, cure yourself and become unstoppable until the end of your next turn.",
+                "glossary": [{"val": "cure", "id": "gl_cure"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+            }
+                        ]
+    },
+    {
         "id": "tr_skirmisher",
         "type": "Trait",
         "source": "core",
@@ -338,6 +415,80 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "You deal bonus damage to bloodied foes.",
                 "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_tumbling",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tumbling",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may phase through characters. Entering the space of any character, including summons, always costs a maximum of 1 movement.",
+                "glossary": [{"val": "phase", "id": "gl_phasing"}, {"val": "summons", "id": "gl_summon"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_curseofchaos",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Curse of Chaos",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have evasion against characters that are 3 or more spaces away from you.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_cheaptrick",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cheap Trick",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When an attack misses you, you may teleport 1 space, then leave a bomb in an adjacent space.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_stackdice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stack Dice",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, when you trigger a finishing blow or slay effect, gain a Stacked Die after that ability resolves. You can use this die when you gamble to make the gamble result 6, consuming the die. You can only hold on to one Stacked Die at once, and lose all of them at the end of combat.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}, {"val": "gamble", "id": "gl_gamble"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_deathsapprentice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Finesse",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can hold on to 2 stacked dice at once."
             }
                         ]
     },

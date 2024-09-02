@@ -169,7 +169,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "After this ability resolves, gain 2 vigor for every foe damaged."
+                "content": "After this ability resolves, gain 2 vigor for every foe damaged.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
             }
                         ]
     },
@@ -184,6 +185,36 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "If you’re at 1 hp or lower, this ability deals 25% more max hp damage to non-legend characters."
+            }
+                        ]
+    },
+    {
+        "id": "ul_dreadmock",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dread Mock",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains range 5 and also deals divine fray damage to your foe.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}, {"val": "fray damage", "id": "gl_fray"}]
+            }
+                        ]
+    },
+    {
+        "id": "ul_ultimacurtaincall",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ultima Curtain Call",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After this ability resolves, summon half as many bombs as your gamble result anywhere on the battlefield.",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}]
             }
                         ]
     }

@@ -543,7 +543,23 @@
         "name": "Vigor",
         "description":  [{
             "tags": {"desc_type" : "desc"},
-            "content": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from armor and resistance. Vigor stacks, but cannot go past 25% of your hp. If you gain a vigor surge, gain maximum vigor. Lose all vigor at the end of combat.",
+            "content": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from armor and resistance. Vigor stacks, but cannot go past 25% of your hp. Lose all vigor at the end of combat.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_vigorsurge",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Vigor Surge",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "If you gain a vigor surge, gain maximum vigor.",
+            "glossary": [{"val": "vigor", "id": "gl_vigor"}], 
             "subcontent":   []
         }]
     },
@@ -834,6 +850,130 @@
             "tags": {"desc_type" : "desc"},
             "content": "Damage from this ability cannot be reduced, mitigated, or negated in any way except immunity. (Ignores armor, weak, resistance, defiance, and bypasses vigor).",
             "glossary": [{"val": "immunity", "id": "gl_immune"}, {"val": "armor", "id": "gl_armor"}, {"val": "weak", "id": "gl_weakened"}, {"val": "resistance", "id": "gl_resistance"}, {"val": "defiance", "id": "gl_defiance"}, {"val": "vigor", "id": "gl_vigor"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_ongoing",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Ongoing (+)",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A status or effect that is ongoing can’t be ended until the thing causing it (a mark, a stance) is ended. Indicated by a + symbol.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_dodge",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Dodge",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A Vagabond trait. Immune to all damage from misses, successful saves, and area effects.",
+            "glossary": [{"val": "Immune", "id": "gl_immune"}, {"val": "area effects", "id": "gl_areaeffect"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_cure",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Cure",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A character that’s cured gains 4 vigor, or a vigor surge if they’re bloodied. Then, they may save against all statuses.",
+            "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "vigor surge", "id": "gl_vigorsurge"}, {"val": "bloodied", "id": "gl_bloodied"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_gamble",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Gamble",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Roll 1d6, then trigger an effect on a certain result or higher.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_summon",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Summon",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A character controlled by its Summoner. Summons are intangible and cannot be marked and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a summon action that they use on their summoner’s turn, or a summon effect that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated.",
+            "glossary": [{"val": "intangible", "id": "gl_intangible"}, {"val": "marked", "id": "gl_mark"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_slay",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Slay",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A triggered effect that activates when this ability reduces a character to 0 hp.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_intangible",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Intangible",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Immune to damage and effects from foes. Does not provide obstruction or engagement.",
+            "glossary": [{"val": "Immune", "id": "gl_immune"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_phasing",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Phasing",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Can ignore obstruction and pass through, but not end your turn in, terrain, objects, or characters.",
             "subcontent":   []
         }]
     }

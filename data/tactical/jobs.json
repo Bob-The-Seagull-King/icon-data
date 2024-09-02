@@ -134,5 +134,102 @@
         ],
         "limitbreak": "lb_gigantascrusher",
         "upgrade_trait": "tr_unbreakable"
+    },
+    {
+        "id": "jb_knave",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Hatred": true,
+            "Counter": true,
+            "Interrupt": true,
+            "Unstoppable": true,
+            "Stance": true
+        },
+        "eventtags": {},
+        "class_id": "cl_stalwart",
+        "name": "Knave",
+        "subtitle": "Absolute Bastard",
+        "traits": ["tr_martialmaster", "tr_blackheart", "tr_taunt", "tr_spite"],
+        "addons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The advent of the Churning Age has coincided with the rise of a certain class of person with heavy pockets and a long list of ‘problems’ to solve. The Knaves are the solution. Hedge knights, rogue warriors, duelists, deserters, and veterans, they roam the land offering their services to whoever has the dust to spare. Though some of them are altruistically minded, they tend to go where the work, food, and fighting is thickest, and never stay for long in one location."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Knaves operate under a loose moral code and an even looser no-holds-barred fighting style, using hilts, head butts, and gauntleted fists to inflict pain, punishment, and humiliation on their opponents in equal measure. These braggadocios warriors spare no effort in flexing their incredible strength - if the price is right. For a freshly roasted chicken, a pocket full of dust, and a polish of their boots, they’ll do just about anything."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Knaves are dark knights, mercenaries, and dirty fighters that have the easiest access to the very powerful hatred condition. They have numerous ways to punish foes that take the bait, such as counter and a suite of nasty interrupts. They become stronger the more foes are around them and love being surrounded.",
+                "glossary": [{"val": "hatred", "id": "gl_hatred"}, {"val": "counter", "id": "gl_counter"}, {"val": "interrupts", "id": "gl_interrupt"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Knaves become more powerful when they are suffering statuses, and even have ways to inflict statuses on themselves, which they can then ignore by becoming unstoppable. They also have the unique ability to take two stances at once, allowing them to stack very powerful effects.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "stances", "id": "gl_stance"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Knave’s limit break, Mock, is a strong single target debuff, and makes it very hard for a foe to do anything but stand and focus on you."
+            }
+        ],
+        "limitbreak": "lb_mock",
+        "upgrade_trait": "tr_wayofthecrow"
+    },
+    {
+        "id": "jb_fool",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Gamble": true,
+            "Summons": true,
+            "Slay": true,
+            "Phasing": true
+        },
+        "eventtags": {},
+        "class_id": "cl_vagabond",
+        "name": "Fool",
+        "subtitle": "Masked Avenger",
+        "traits": ["tr_tumbling", "tr_curseofchaos", "tr_cheaptrick", "tr_stackdice"],
+        "addons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Fools are dedicated defenders of the common people of Arden Eld, part folk hero, and part hired killer. They have no official organization, and cover their faces with masks to hide their identity, wearing bells and motley to cover their collections of deadly weapons and explosives."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some people fear the Fools, calling them self-interested thugs or anarchic cultists of the Laughing God. They may not be entirely wrong, but none can deny their flair for the theatrical. They are feared rightly by all would-be tyrants, under-barons, and aspiring imperial lords. Wherever kin labor under oppression, someone will take up the mask and knives and sent cold jolts of fear into the hearts of the rich and comfortable."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fools are fast, tricky vagabonds that benefit heavily from setup. Their stack dice ability allows them to influence the outcome of gamble effects, including their bomb summons, making them very potent. Fools get stacked dice from attacking low health targets, and also have a suite of slay effects, so they get the most from zipping around the battlefield to finish off weak foes.",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "summons", "id": "gl_summon"}, {"val": "slay", "id": "gl_slay"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fools spend less movement to move through the spaces of other characters, including their bomb summons, and can phase through foes, allowing them to move very far with proper setup. This can also allow them to hop through character’s spaces to ignore movement penalties, such as climbing up elevation.",
+                "glossary": [{"val": "phase", "id": "gl_phasing"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fool’s limit break, Curtain Call, is a very powerful, high damage move that can finish off a single foe easily in a pinch, but gets the most value out of setup and with a stacked die in the pocket."
+            }
+        ],
+        "limitbreak": "lb_curtaincall",
+        "upgrade_trait": "tr_deathsapprentice"
     }
 ]

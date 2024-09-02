@@ -138,5 +138,100 @@
                 "glossary": [{"val": "divine", "id": "gl_divine"},{"val": "fray damage", "id": "gl_fray"}]
             }
                         ]
+    },
+    {
+        "id": "lb_mock",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "resolve": 2
+        },
+        "eventtags": {},
+        "name": "Mock",
+        "ultimate": ["ul_dreadmock"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "There is no weapon greater than a well-timed and well-aimed insult."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe in range 3 becomes slashed+, weakened+, cannot gain or benefit from evasion, dodge, or stealth, and gains hatred+ of you. These effects continue until the end of their next turn."
+                }],
+                "glossary": [{"val": "+", "id": "gl_ongoing"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "weakened", "id": "gl_weakened"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "dodge", "id": "gl_dodge"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "hatred", "id": "gl_hatred"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "On elite and legend foes, this ability lasts two turns instead."
+                }]
+            }
+                        ]
+    },
+    {
+        "id": "lb_curtaincall",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "resolve": 4,
+            "Divine": true,
+            "Gamble": true,
+            "True Strike": true
+        },
+        "eventtags": {},
+        "name": "Curtain Call",
+        "ultimate": ["ul_ultimacurtaincall"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Bring out the fireworks. Fire up the elden magic. Time for a showstopper."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gamble, then draw a line area effect of that many spaces +2. Soar into the air, removing yourself from the battlefield, then place yourself adjacent to the first foe in that line, delivering a massive blow. This ability has different effects depending on their position on the line. If there are no valid targets after rolling, the resolve cost of this ability is refunded."
+                }],
+                "glossary": [{"val": "Gamble", "id": "gl_gamble"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Roll [D] + fray damage once, then apply it the number of times listed.",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "effect"},
+                                    "content": "3-5 spaces",
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "x2"
+                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type" : "effect"},
+                                    "content": "6-7 spaces:",
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "x3"
+                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type" : "effect"},
+                                    "content": "8 spaces:",
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "x4 and character is stunned."
+                                    }]
+                                }
+                ],
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray damage", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+                        ]
     }
 ]
