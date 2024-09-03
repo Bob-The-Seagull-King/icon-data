@@ -15,6 +15,7 @@
         "subtitle": "Unbreakable Knight",
         "traits": ["tr_strive", "tr_presstheadvantage", "tr_bullsstrength", "tr_shieldmaster"],
         "addons": [],
+        "summons": [],
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -63,6 +64,7 @@
         "subtitle": "Master of the Forbidden Arts",
         "traits": ["tr_demonedge", "tr_demonstrength", "tr_hissatsu", "tr_truehorn"],
         "addons": [],
+        "summons": [],
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -108,6 +110,7 @@
         "subtitle": "High Flying Grappler",
         "traits": ["tr_furiousberserk", "tr_wolfheart", "tr_pulverize", "tr_greatleap"],
         "addons": [],
+        "summons": [],
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -152,6 +155,7 @@
         "subtitle": "Absolute Bastard",
         "traits": ["tr_martialmaster", "tr_blackheart", "tr_taunt", "tr_spite"],
         "addons": [],
+        "summons": [],
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -200,6 +204,7 @@
         "subtitle": "Masked Avenger",
         "traits": ["tr_tumbling", "tr_curseofchaos", "tr_cheaptrick", "tr_stackdice"],
         "addons": [],
+        "summons": ["sm_bomb"],
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
