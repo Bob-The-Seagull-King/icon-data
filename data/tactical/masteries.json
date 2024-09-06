@@ -217,5 +217,56 @@
                 "glossary": [{"val": "gamble", "id": "gl_gamble"}]
             }
                         ]
+    },
+    {
+        "id": "ul_ultimaparadiso",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ultima Paradiso",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As a free action ability while Paradiso is active, you can teleport yourself, all allies, and the area itself to any other part of the battlefield, as long as there is free space to place all characters teleported inside the area when it is moved.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "ul_ultimaecstasy",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ultima Ecstasy",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon shadows"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_shadow"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " adjacent to all allies."
+            }
+                        ]
+    },
+    {
+        "id": "ul_ultimalycanthropy",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ultima Lycanthropy",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you shape change, you can also allow allies to partly shift. The first two effects from Lycanthropy affect all allied characters."
+            }
+                        ]
     }
 ]

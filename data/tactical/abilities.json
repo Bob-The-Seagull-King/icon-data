@@ -34,7 +34,7 @@
                                                 "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                             },
                                             {
-                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "tags": {"desc_type": "subeffect"},
                                                 "content": "Miss:",
                                                 "subcontent":   [{
                                                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],

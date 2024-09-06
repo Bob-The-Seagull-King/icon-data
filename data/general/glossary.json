@@ -976,5 +976,200 @@
             "content": "Can ignore obstruction and pass through, but not end your turn in, terrain, objects, or characters.",
             "subcontent":   []
         }]
+    },
+    {
+        "id": "gl_comeback",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Comeback",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A triggered effect that turns on if the character using this ability is bloodied.",
+            "glossary": [{"val": "bloodied", "id": "gl_bloodied"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_chainreaction",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Chain Reaction",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Wright-only triggered effect. Triggers when a character damages two or more foes with this ability.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_finishingblow",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "triggeredeffect"
+        },
+        "eventtags": {},
+        "name": "Finishing Blow",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Vagabond-only. Triggered effect that triggers if this ability targets a bloodied foe.",
+            "glossary": [{"val": "bloodied", "id": "gl_bloodied"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_criticalhit",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Critical Hit",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Increase total attack damage by + [D]. Can only apply to an attack, can only apply once, and can trigger normally on a total attack roll of 20+.",
+            "glossary": [{"val": "[D]", "id": "gl_damagedice"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_unerring",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "damage"
+        },
+        "eventtags": {},
+        "name": "Unerring",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Ignores cover and aetherwall (Wrights gain resistance against all abilities from characters that are outside of range 2 of them).",
+            "glossary": [{"val": "cover", "id": "gl_cover"}, {"val": "aetherwall", "id": "gl_aetherwall"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_blinded",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "status"
+        },
+        "eventtags": {},
+        "name": "Blinded",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Max range of all abilities is 2.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_piercing",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "damage"
+        },
+        "eventtags": {},
+        "name": "Piercing Damage",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Damage cannot be reduced by armor or weakened.",
+            "glossary": [{"val": "armor", "id": "gl_armor"}, {"val": "weakened", "id": "gl_weakened"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_dangerousterrain",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "terrain"
+        },
+        "eventtags": {},
+        "name": "Dangerous Terrain",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Entering or exiting a dangerous terrain space causes a character to take 2 piercing damage. Characters can only take this damage once a turn, even if they enter new dangerous terrain spaces. Can overlap other terrain types.",
+            "glossary": [{"val": "piercing", "id": "gl_piercing"}],
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_difficultterrain",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "terrain"
+        },
+        "eventtags": {},
+        "name": "Difficult Terrain",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Costs +1 space of movement to exit. Can overlap other terrain types.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_cover",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Cover",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "If a character has cover from an ability, it halves all damage from that ability.",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "(pg. 89) Characters gain resistance to damage from ranged abilities while they are in cover, halving damage.",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "(pg.92) Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:",
+            "subcontent":   [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters in cover take half damage.",
+                "subcontent":   []
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.",
+                "subcontent":   []
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters don’t grant cover by default.",
+                "subcontent":   []
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.",
+                "subcontent":   []
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.",
+                "subcontent":   []
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Characters cannot benefit from cover against adjacent foes.",
+                "subcontent":   []
+            }]
+        }]
     }
 ]

@@ -114,7 +114,12 @@
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "Ferocious followers of Arenheir, the Wolf Titan, the Colossi are a martial order of berserkers, pankrationists, and warriors that reaches across all of Arden Eld. They travel throughout the land seeking powerful foes, and taking trophies to return to their great lodges to offer in tribute to Arenheir in fierce hope of resurrecting their god. At their lodges they feast and drink to their deeds, companions, and boasts.Colossi seek glory and challenge through battle, and will often go for only the absolute strongest warriors and monsters, heedless of their own safety. They fight with wild abandon and unconventional techniques that would make even the dirtiest Knave raise an eyebrow."
+                "content": "Ferocious followers of Arenheir, the Wolf Titan, the Colossi are a martial order of berserkers, pankrationists, and warriors that reaches across all of Arden Eld. They travel throughout the land seeking powerful foes, and taking trophies to return to their great lodges to offer in tribute to Arenheir in fierce hope of resurrecting their god. At their lodges they feast and drink to their deeds, companions, and boasts."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Colossi seek glory and challenge through battle, and will often go for only the absolute strongest warriors and monsters, heedless of their own safety. They fight with wild abandon and unconventional techniques that would make even the dirtiest Knave raise an eyebrow."
             }
         ],
         "playstyle": [
@@ -236,5 +241,167 @@
         ],
         "limitbreak": "lb_curtaincall",
         "upgrade_trait": "tr_deathsapprentice"
+    },
+    {
+        "id": "jb_freelancer",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Range 3": true,
+            "Mark": true,
+            "Exceed": true
+        },
+        "eventtags": {},
+        "class_id": "cl_vagabond",
+        "name": "Freelancer",
+        "subtitle": "Divine Punisher",
+        "traits": ["tr_boundspirit", "tr_aethershot", "tr_trigrammaton", "tr_astralbinding"],
+        "addons": [],
+        "summons": ["sm_astralseraph"],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Freelancers are free-roaming exorcists and hired guns, roaming the land and fighting blights, demons and bandits in the name of justice. They tend to act as wild cards: highly independent, highly effective, and sticking to their codes of honor."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Freelancers have their history in an ancient disgraced knightly order from one of the Seven Families of the Thrynn. They each wield a bright metal six gun, a bow, or a long rifle with extreme skill, the bullets, shot, or arrows of which they infuse with raw Aether drawn from their very souls. Each weapon is a relic passed down from master to student over the years, and can only be won in a duel with another freelancer. The freelancer’s ultimate weapon is the Astral Chain, a holy gauntlet which they use to purge and bind demons and rogue spirits into their service as Seraphim."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Freelancers are expert tempo fighters that prefer to fight around a certain range band and save their power for certain turns (the number 3 will be your friend). Attacking characters at exactly range 3 allows freelancers and their bound seraph to lay down withering punishment. To aid in this task, freelancers have a number of repositioning tools for foes and allies, including Astral Binding, which allows them to stack multiple marks and nudge those marked characters around the battlefield to get them into range.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Freelancers have numerous exceed effects and automatically trigger these effects on round 3 and 6, allowing them to have explosive turns.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Freelancer’s limit break, Paradiso, creates a very potent aura that powers up all abilities used by you and allies, but can be turned off if foes get too close."
+            }
+        ],
+        "limitbreak": "lb_paradiso",
+        "upgrade_trait": "tr_divinechamber"
+    },
+    {
+        "id": "jb_shade",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Summons": true,
+            "Stealth": true,
+            "Adverse Terrain": true,
+            "Blind": true,
+            "Finishing Blow": true
+        },
+        "eventtags": {},
+        "class_id": "cl_vagabond",
+        "name": "Shade",
+        "subtitle": "Nocturnal Assassin",
+        "traits": ["tr_shadowarts", "tr_underworld", "tr_darkside", "tr_meld"],
+        "addons": [],
+        "summons": ["sm_shadow", "sm_shadowcloud"],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Night-walkers, shadow-steppers, and masters of secret scroll arts, the Shades are spies, scouts, and assassins of unparalleled skill. Their number forms a secret and deadly society of Shadow Clans spread across Arden Eld, each practicing and refining the Night Venom Techniques. Joining the shades is presumed to be extremely difficult, but they tend to open their ranks to anyone that has been lost or abandoned."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The legends say Shades make a deal with the Weeper, the dead titan queen of night and air, and drink her tears, splitting their soul in two. Their shadow becomes animate, bestial and hungry. Over a week and a day, they must fast and train their shadow to obey them, transforming them into agile and silent warriors of the highest order. The Shades say the stories are rumors, and they get along with their Darksides. They do have a tendency to appear when least expected, in uncanny and unsettling ways."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shades are agile vagabonds that can easily reposition themselves, foes, and allies to inflict maximum carnage. Their shadows"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_shadow"
+            },
+            {   
+                "content": " create dangerous zones for foes and can grant stealth to allies. Shades do more damage to characters standing in adverse terrain, which includes shadows! They can also swap with these shadows for additional mobility."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shades are excellent at teleporting, allowing them to ignore foes and terrain completely, and have easy ways to blind their foes and inflict finishing blows.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}, {"val": "blind", "id": "gl_blinded"}, {"val": "finishing blows", "id": "gl_finishingblow"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shade’s limit break, Abyssal Ecstasy, is a low cost but very potent ability that completely shuts down ranged attackers."
+            }
+        ],
+        "limitbreak": "lb_abyssalecstasy",
+        "upgrade_trait": "tr_umbralsoul"
+    },
+    {
+        "id": "jb_warden",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Summons": true,
+            "Shove": true,
+            "Stealth": true,
+            "Dash": true
+        },
+        "eventtags": {},
+        "class_id": "cl_vagabond",
+        "name": "Warden",
+        "subtitle": "Friend to Beast and Bough",
+        "traits": ["tr_beastmaster", "tr_pathoftheaesi", "tr_ambushmaster", "tr_greenkenning"],
+        "addons": [],
+        "summons": ["sm_beast"],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Wardens are the protectors and keepers of the Deep Green, the old and untamed parts of Arden Eld, lorded over by the beasts and the ancient trees. They are both the keepers and the servants of the herd and root, tending to their health, and culling them when it becomes necessary. They sleep under the stars and make their home under bough and root, making staunch allies of the ferocious beasts of the deep wilds through a combination of rigorous training and mutual respect. Their fierce defense of the wild sometimes puts them at odds with civilization, which they tend to have a distaste for."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wardens are the keepers of the green kenning, the old ranger arts, that allow one to travel noiselessly, hide in plain sight, live off the land, and become immune to even the most deadly of toxins. They are solitary and powerful fighters. It is not uncommon for a Warden on a long sojourn to go without speaking the tongue of Kin for years at a time."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Wardens are masters of the wild that summon beasts"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_beast"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "with their actions. Beasts prowl around the battlefield until activated and have a high range. Activating a lot of them at once can pummel a foe with a lot of damage, but requires good positioning, which they can achieve with a small number of shove effects.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Wardens get a lot of benefits out of stealth, and numerous ways to enter it with finishing blows. They also have a large number of charge effects, allowing them to take stock of the battlefield before acting. The dashes granted by Wardens are especially potent and can help move allies or summons around the battlefield faster. ",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "finishing blows", "id": "gl_finishingblow"}, {"val": "charge", "id": "gl_charge"}, {"val": "dashes", "id": "gl_dash"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Warden’s Limit Break, Lycanthropy, grants a powerful suite of benefits to their dash and allows your entire team to become much more mobile.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "finishing blows", "id": "gl_finishingblow"}, {"val": "charge", "id": "gl_charge"}, {"val": "dashes", "id": "gl_dash"}]
+            }
+        ],
+        "limitbreak": "lb_lycanthropy",
+        "upgrade_trait": "tr_deepstealth"
     }
 ]

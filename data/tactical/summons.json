@@ -32,5 +32,177 @@
         "blurb":  [],
         "colour": "cl_vagabond",
         "limit": 6
+    },
+    {
+        "id": "sm_astralseraph",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true,
+            "Flying": true,
+            "Skirmisher": true
+        },
+        "eventtags": {},
+        "name": "Astral Seraph",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The seraph flies 3.",
+                                    "glossary": [{"val": "flies", "id": "gl_flying"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a round, when you score a Critical hit, trigger a Finishing Blow, or trigger an Exceed effect, you may cause the seraph to lash out against all foes at exactly range 3 from the seraph, dealing 2 unerring damage to them.",
+                                    "glossary": [{"val": "Critical Hit", "id": "gl_criticalhit"}, {"val": "Finishing Blow", "id": "gl_finishingblow"}, {"val": "Exceed", "id": "gl_exceed"}, {"val": "unerring", "id": "gl_finishingblow"}]
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "At the start of combat, you may place your seraph in range 2 from you. This summon persists even if you’re defeated."
+        }],
+        "colour": "cl_vagabond",
+        "limit": 1
+    },
+    {
+        "id": "sm_shadow",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Shadow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The shadow can share space other characters, and has different effects on foes and allies:",
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "If a foe enters the shadow’s space for any reason or starts their turn there, it it consumed, dealing 2 damage to them, disappearing and turning into a shadow cloud."
+                                                    },
+                                                    {
+                                                        "tags": {"desc_type" : "textsummon"},
+                                                        "content": "sm_shadowcloud"
+                                                    },            
+                                                    {
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "If a yourself or an ally enters the shadow’s space, it is consumed. It disappears and grants them stealth."
+                                                }],
+                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Shadows can be summoned in free space in range 2, unless a higher range is specified."
+        }],
+        "colour": "cl_vagabond",
+        "limit": 6
+    },
+    {
+        "id": "sm_shadowcloud",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "name": "Shadow Cloud",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Difficult terrain. While inside this terrain space, characters are blinded+. You are immune to these effects.",
+                "glossary": [{"val": "Difficult terrain", "id": "gl_difficultterrain"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            }
+        ],
+        "blurb":  [],
+        "colour": "cl_vagabond",
+        "limit": null
+    },
+    {
+        "id": "sm_beast",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "Size": 1,
+            "Intangiible": true
+        },
+        "eventtags": {},
+        "name": "Beast",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "All beasts can dash 1 space at the start of your turn.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When you or an ally ends any movement adjacent to a beast’s space, you may cause the beast to pounce at a foe in range 3. That character takes unerring damage equal to their distance from the beast (1-3). Then remove the beast.",
+                                    "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "When a beast is summoned, it can be summoned in any free space in range 2 unless a different range is listed. Beasts can be summoned in free space in range 2, unless a higher range is specified."
+        }],
+        "colour": "cl_vagabond",
+        "limit": 6
+    },
+    {
+        "id": "sm_greatbeast",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "Size": 1,
+            "Intangiible": true
+        },
+        "eventtags": {},
+        "name": "Great Beast",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once during your turn, your beast can dash up to 2 spaces, then may deal 2 damage to an adjacent foe and shove 1.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Repeat the action."
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "At the start of every combat, summon a great beast in range 2, a trained animal companion. This summon persists even if you’re defeated."
+        }],
+        "colour": "cl_vagabond",
+        "limit": 1
     }
 ]

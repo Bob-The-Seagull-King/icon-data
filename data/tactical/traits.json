@@ -493,6 +493,272 @@
                         ]
     },
     {
+        "id": "tr_boundspirit",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bound Spirit",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, you may place your "
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_astralseraph"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " in range 2 from you. This summon persists even if you’re defeated."
+            }
+                        ]
+    },
+    {
+        "id": "tr_aethershot",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Finesse",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any attack made on the third and sixth round of combat deals bonus damage and triggers all exceed effects, hit or miss.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "exceed", "id": "gl_exceed"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_trigrammaton",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Finesse",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your abilities used against foes at exactly range 3 gain +1 boon on attack rolls and unerring.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}, {"val": "unerring", "id": "gl_unerring"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_astralbinding",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Astral Binding",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can stack up to two marks on characters. As a free action, you can teleport all characters marked by you 1 space.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_divinechamber",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Divine Chamber",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your sixth round Aether Shell"
+            },
+            {
+                "tags": {"desc_type" : "texttrait"},
+                "content": "tr_aethershot"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "also deals divine damage.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_shadowarts",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shadow Arts",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have phasing and are immune to blinded.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}, {"val": "blinded", "id": "gl_blinded"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_underworld",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Underworld",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Abilities used against foes in pits, difficult, or dangerous terrain gain unerring and deals bonus damage.",
+                "glossary": [{"val": "unerring", "id": "gl_unerring"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_darkside",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Darkside",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you first vacate a space on your turn, you may leave a shadow."
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_shadow"
+            }
+                        ]
+    },
+    {
+        "id": "tr_meld",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Meld",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, before or after using any ability on your turn, you can swap places with any shadow"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_shadow"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " in range 3, teleporting.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_umbralsoul",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Umbral Soul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, one of your allies can swap places with any of your shadows"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_shadow"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " before or after using any ability, teleporting.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_beastmaster",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beast Master",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of every combat, summon a great beast"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_greatbeast"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " in range 2, a trained animal companion. This summon persists even if you’re defeated."
+            }
+                        ]
+    },
+    {
+        "id": "tr_pathoftheaesi",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Path of the Aesi",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you have stealth the dash action becomes a free action.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "dash", "id": "gl_dash"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_ambushmaster",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ambush Master",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your abilities made from stealth ignore cover, and deal bonus damage.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_greenkenning",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Green Kenning",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You and your summons ignore all movement penalties from terrain. Any time you grant a dash, it also gains this benefit.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_deepstealth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Stealth",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in stealth, you cannot be directly targeted at all, even from adjacent spaces.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+                        ]
+    },
+    {
         "id": "tr_diaga",
         "type": "Trait",
         "source": "core",
