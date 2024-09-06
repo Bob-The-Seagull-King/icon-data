@@ -806,6 +806,334 @@
                         ]
     },
     {
+        "id": "tr_blessingoffaith",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing of Faith",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Yourself and allies may spend a blessing token when using an ability to gain True Strike on that ability and fly 2 before using it. If they spend 3 tokens, the ability also triggers any charge effects.",
+                "glossary": [{"val": "True Strike", "id": "gl_truestrike"}, {"val": "fly", "id": "gl_flying"}, {"val": "charge", "id": "gl_charge"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_songweave",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Songweave",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You are a mastery of weaving spell-songs together. You can spend a combo token as part of any ability to activate all the charge effects of that ability, even on a regular turn. If that ability was a combo, perform its base version instead of its combo version.",
+                "glossary": [{"val": "combo", "id": "gl_combo"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_divinegrace",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Divine Grace",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, when you gain or spend a combo token, you may fly 2, then Bless yourself or an ally in range 3 of you.",
+                "glossary": [{"val": "combo", "id": "gl_combo"}, {"val": "fly", "id": "gl_flying"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_Uplift",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Succor",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The first time a round you use any ability that allows you to fly, all allies can fly 1.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_granredempta",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "Use Per Expedition": 1
+        },
+        "eventtags": {},
+        "name": "Gran Redempta",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Cure yourself and every ally on the map. Characters that are cured this way are also Rescued if they’re defeated.",
+                "glossary": [{"val": "cure", "id": "gl_cure"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_blessingofrebirth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing of Rebirth",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Yourself and allies can spend 1 blessing when using any ability to grant it pierce and bonus damage. They may spend 3 blessings instead to additionally trigger any slay effects.",
+                "glossary": [{"val": "pierce", "id": "gl_piercing"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "slay", "id": "gl_slay"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_markoftsumi",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mark of Tsumi",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of your turn, deal 2 piercing damage to all foes marked by you, and bless either yourself, or all allies marked by you.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "marked", "id": "gl_mark"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_gardenerofkin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gardener of Kin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can stack 2 marks on characters. Foes marked by you take +1 damage from summons.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_balance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Balance",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All your abilities gain slay: cure yourself or any ally.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}, {"val": "cure", "id": "gl_cure"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_defythecycle",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "Use Per Expedition": 1
+        },
+        "eventtags": {},
+        "name": "Defy the Cycle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You call upon your power to forbid the natural order of life and death from working. Until the start of your next turn, characters cannot be reduced below 1 hp. Divine damage bypasses this ability.",
+                "glossary": [{"val": "Divine", "id": "gl_divine"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_blessingofwar",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing of War",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Yourself or allies can spend a blessing when they use an ability to gain +1 boon on attacks and bonus damage with that ability. If they consume 3 blessings, it additionally triggers all exceed effects.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}, {"val": "exceed", "id": "gl_exceed"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_mantraofsealing",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mantra of Sealing",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your attacks bless all adjacent allies to you and grant them 2 vigor.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_godlysmite",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Godly Smite",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You steadily gather power as you fight. You start combat with a mantra power die, a d6 that starts at 1, and ticks up by 1 at the start of every round, to a maximum of 6. You gain the following interrupt:",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}, {"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_heroicintervention"
+            }
+                        ]
+    },
+    {
+        "id": "tr_martialarts",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Martial Arts",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have dodge.",
+                "glossary": [{"val": "dodge", "id": "gl_dodge"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_greatspiritfestival",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "Use Per Expedition": 1
+        },
+        "eventtags": {},
+        "name": "Great Spirit Festival",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bless all allies on the map and grant them 2 vigor. If they’re bloodied, repeat this effect.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_thewheeloffate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "The Wheel of Fate",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Set up a deck made up of one suit of a 52 card standard playing card deck (so 13 cards). At the start of any combat, draw up to 5 cards if you have less. Your hand and deck persist through combats, and your maximum hand size is 7 (you must discard down to 7 cards at the end of your turn). Discarded cards go in a discard pile. Once you draw through your deck, shuffle the discard pile and draw it as your new deck (meaning there’s no replacement and you will eventually draw through the deck)."
+            }
+                        ]
+    },
+    {
+        "id": "tr_skein",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skein",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Draw a card at the start of your turn. If you didn’t attack, draw an extra card at the end of your turn as well."
+            }
+                        ]
+    },
+    {
+        "id": "tr_foretell",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Foretell",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can discard 1 blessing token on yourself or an ally before that ally uses any ability to tell their fortune as an effect. You discard a card from your hand and immediately apply the effects to your target, no matter the distance or if you can see them or not. If you have no cards in hand, draw the top card of your deck instead, apply its effects, then discard it."
+            }
+                        ]
+    },
+    {
+        "id": "tr_bendfate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bend Fate",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can discard any number of cards after you gamble to roll an extra die per card discarded, choosing any result. You can repeat this effect any number of times as long as you have cards, and you can choose to discard after you see each result.",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_karma",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Karma",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies are immune to damage from your area effects. Any time you include an ally in an area effect that would damage them, after that ability resolves they gain 2 vigor and are blessed instead.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "area effects", "id": "gl_areaeffect"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_chakravartin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "Use Per Expedition": 1
+        },
+        "eventtags": {},
+        "name": "Chakravartin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 6 becomes unstoppable and immune to all damage until the end of their next turn",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "immune", "id": "gl_immune"}]
+            }
+                        ]
+    },
+    {
         "id": "tr_slip",
         "type": "Trait",
         "source": "core",

@@ -873,13 +873,13 @@
         "type": "Glossary",
         "source": "core",
         "tags": {
-            "category" : "general"
+            "category" : "status"
         },
         "eventtags": {},
         "name": "Dodge",
         "description":  [{
             "tags": {"desc_type" : "desc"},
-            "content": "A Vagabond trait. Immune to all damage from misses, successful saves, and area effects.",
+            "content": "Immune to all damage from misses, successful saves, and area effects.",
             "glossary": [{"val": "Immune", "id": "gl_immune"}, {"val": "area effects", "id": "gl_areaeffect"}],
             "subcontent":   []
         }]

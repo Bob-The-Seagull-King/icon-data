@@ -268,5 +268,66 @@
                 "content": "When you shape change, you can also allow allies to partly shift. The first two effects from Lycanthropy affect all allied characters."
             }
                         ]
+    },
+    {
+        "id": "ul_divineinvestment",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Divine Investment",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You also gain the benefit of any chosen saint, lasting until the end of your next turn."
+            }
+                        ]
+    },
+    {
+        "id": "ul_soulbloom",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Soul Bloom",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the foe is defeated while their soul is out, summon 4 plants anywhere on the battlefield."
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_plant"
+            }
+                        ]
+    },
+    {
+        "id": "ul_reachheaventhroughviolence",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "REACH HEAVEN THROUGH VIOLENCE",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The teleport effect has the range of the battlefield for both allied characters and yourself. If your target is at or under 25% hp, they take 2 divine damage twice for each adjacent ally instead.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "divine", "id": "gl_divine"}]
+            }
+                        ]
+    },
+    {
+        "id": "ul_thoth",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thoth",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the aura is active, you are automatically missed by attacks, turn any of your attack misses into hits, and succeed all saves."
+            }
+                        ]
     }
 ]

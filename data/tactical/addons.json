@@ -27,5 +27,34 @@
                                             }]
                         }
                         ]
+    },
+    {
+        "id": "ad_godlysmite",
+        "type": "Addon",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Godly Smite",
+        "description":  [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Trigger:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You or an ally makes an attack roll, and you see the total result (after boons, curses, and other adjustments)."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Add the number on your mantra die to the attack roll, which changes the final result. That foe also takes damage again after the attack resolves equal to the number on your mantra die."
+                                            }]
+                        }
+                        ]
     }
 ]

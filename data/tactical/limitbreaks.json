@@ -318,19 +318,213 @@
                                     "tags": {"desc_type" : "desc"},
                                     "content": "You become a beast hybrid of primal fury. You gain a greatly enhanced dash, with the following benefits:",
                                     "subcontent":   [{
-                                                        "tags": {"desc_type" : "desc"},
+                                                        "tags": {"desc_type" : "effect"},
                                                         "content": "Dash always becomes a free action."
                                                     },
                                                     {
-                                                        "tags": {"desc_type" : "desc"},
+                                                        "tags": {"desc_type" : "effect"},
                                                         "content": "All dashes granted as part of any of your abilities, summons, or actions (including this one!) may be increased by +1, and grant phasing while moving."
                                                     },
                                                     {
-                                                        "tags": {"desc_type" : "desc"},
+                                                        "tags": {"desc_type" : "effect"},
                                                         "content": "When you take the dash action, all allies and allied summons can dash 1. Then, any foe adjacent to one or more characters that dashed this way takes 2 damage."
                                                     }]
                                 }],
                 "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "phasing", "id": "gl_phasing"}]
+            }
+                        ]
+    },
+    {
+        "id": "lb_marchofthesaints",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "resolve": 2,
+            "Stance": true
+        },
+        "eventtags": {},
+        "name": "March of the Saints",
+        "ultimate": ["ul_divineinvestment"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You sing of the deeds of the first heroes, from the Doom. The Great Chant weaves around your allies and transforms them into echoes of those mighty heroes."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Stance:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "You begin weaving an epic song, a saga of legendary heroes. When you take this action, and when this stance refreshes, you may invest an ally in range 5 with the power of one of the great saints. Each saint must be chosen at least once before it can be chosen again. The effect takes place immediately and lasts until the end of their next turn."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Refresh:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "This stance refreshes automatically at the start of your turns."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Parzival:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "An allied character gains flying and cover from all directions."
+                                }],
+                "glossary": [{"val": "flying", "id": "gl_flying"}, {"val": "cover", "id": "gl_cover"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Leon:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "An allied character gains dodge and the ability to move diagonally."
+                                }],
+                "glossary": [{"val": "dodge", "id": "gl_dodge"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Angrboda:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "An allied character gains sturdy, and their attacks gain true strike and shove 1."
+                                }],
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}, {"val": "true strike", "id": "gl_truestrike"}, {"val": "shove", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Farnese:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "An ally gains 1 blessing and +1 boon on all attacks and saves."
+                                }],
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+            }
+                        ]
+    },
+    {
+        "id": "lb_deathsentence",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "resolve": 3
+        },
+        "eventtags": {},
+        "name": "Death Sentence",
+        "ultimate": ["ul_soulbloom"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A flash of the scythe, and the line between life and death is blurred."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You slash an adjacent foe with your weapon, knocking their soul out of their body. Draw a line 4 area effect from your foe facing directly away from you and summon the soul in the last available space."
+                }],
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_severedsoul"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The soul lasts until the end of your next turn, or until the affected character is defeated."
+            }
+                        ]
+    },
+    {
+        "id": "lb_passagetotheafterlife",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "resolve": 5,
+            "type": "attack",
+            "Divine": true,
+            "+1 Boon": true
+        },
+        "eventtags": {},
+        "name": "Passage to the Afterlife",
+        "ultimate": ["ul_reachheaventhroughviolence"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You unleash the supreme Sealer war art, inflicting ten thousand blows and shattering the connections of your foe’s vital energy to their body, hurrying on the transmigration of immortal souls."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "[D] + fray, three times."
+                                                    }],
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "Once."
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deal [D] + fray two more times."
+                                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You may teleport adjacent to the target before the attack if they’re in range 3. Every ally in range 3 of the target can also teleport adjacent to your target, or as close as possible. Your target then takes 2 additional divine damage, once, per adjacent ally."
+                }],
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "divine", "id": "gl_divine"}]
+            }
+                        ]
+    },
+    {
+        "id": "lb_highprophecy",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "resolve": 3,
+            "Aura": true
+        },
+        "eventtags": {},
+        "name": "High Prophecy",
+        "ultimate": ["ul_thoth"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A burning third eye of pure etheric energy appears on your forehead. Possibilities unfurl before you, laid out like infinite gleaming threads."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Aura:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Until the start of your next turn, you gain aura 2. Every d6 any character in the aura rolls for boons, curses, or gambling is either a 6 or a 1 (you choose)."
+                }],
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "boons", "id": "gl_boon"}, {"val": "curses", "id": "gl_curse"}, {"val": "gambling", "id": "gl_gamble"}]
             }
                         ]
     }

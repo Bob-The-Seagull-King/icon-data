@@ -204,5 +204,131 @@
         }],
         "colour": "cl_vagabond",
         "limit": 1
+    },
+    {
+        "id": "sm_thrall",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At the start of your turn, all your thralls may dash 2 spaces, ignoring difficult terrain, then dealing 1 piercing damage to an adjacent foe. Then, remove each thrall and replace it with a plant.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "When a thrall or plant is created, it can be summoned in any free space in range 2 unless a different range is listed."
+        }],
+        "colour": "cl_mendicant",
+        "limit": 6
+    },
+    {
+        "id": "sm_plant",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "name": "",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A plant space is dangerous terrain that only affects foes, and has a blessing token on it, which can be picked up if yourself or an ally enters its space. When the blessing is removed, remove the plant.",
+                                    "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "teleported", "id": "gl_teleport"}]
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "When a thrall or plant is created, it can be summoned in any free space in range 2 unless a different range is listed."
+        }],
+        "colour": "cl_mendicant",
+        "limit": null
+    },
+    {
+        "id": "sm_severedsoul",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true,
+            "Immobile": true
+        },
+        "eventtags": {},
+        "name": "Severed Soul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "While they have their soul knocked out, foes can act normally. However, the soul can be targeted as if it was the body, transferring all damage or effects it would take to the body, no matter the distance or line or sight. Damage becomes divine. Abilities that are able to target both the body and soul of the foe (such as AoEs) can hit both.",
+                                    "glossary": [{"val": "divine", "id": "gl_divine"}, {"val": "AoEs", "id": "gl_areaeffect"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "cl_mendicant",
+        "limit": 1
+    },
+    {
+        "id": "sm_wildcard",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Wild Card",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The card emits a small blast area effect centered on it, which is normally inactive. When any space of an area ability from you or an ally would touch the area, it can be activated, causing the card to explode, and extending the area effect of that ability to encompass the card’s area for the duration. Then, remove the card.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "•",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Wild cards can be triggered by other wild cards.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "•",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Wild cards do not extend the persistent effects of any area abilities, such as creating terrain effects in their space, but only the effects that last for the duration of the ability."
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "When a wild card is summoned, it can be summoned in range 2 if no other range is listed."
+        }],
+        "colour": "cl_mendicant",
+        "limit": null
     }
 ]

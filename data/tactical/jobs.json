@@ -362,7 +362,7 @@
         "subtitle": "Friend to Beast and Bough",
         "traits": ["tr_beastmaster", "tr_pathoftheaesi", "tr_ambushmaster", "tr_greenkenning"],
         "addons": [],
-        "summons": ["sm_beast"],
+        "summons": ["sm_beast", "sm_greatbeast"],
         "blurb": [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -403,5 +403,239 @@
         ],
         "limitbreak": "lb_lycanthropy",
         "upgrade_trait": "tr_deepstealth"
+    },
+    {
+        "id": "jb_chanter",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Combos": true,
+            "Charge": true,
+            "Flight": true,
+            "Create Pits": true
+        },
+        "eventtags": {},
+        "class_id": "cl_mendicant",
+        "name": "Chanter",
+        "subtitle": "Songweaver of the Great Chant",
+        "traits": ["tr_blessingoffaith", "tr_songweave", "tr_divinegrace", "tr_uplift"],
+        "addons": [],
+        "summons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Descending from numerous holy orders that have their roots high in the chronicler monasteries, the chanters are part singer, part storyteller, and part priest. At the time of the Doom, when all knowledge was deemed lost and everything put to page was transformed into ash, the only thing that persisted was the power of song, poetry, and the spirit of survival. A select order of priests committed all the great and necessary knowledge of Kin to memory, creating a single, continuous song, known as the Great Chant. In myths, stories, and histories, they recorded the knowledge of the ancients, transforming it into liturgy."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Chant performed its role, and it was through its power that the early bands of Kin survived and persevered through the darkest days. Today, however, it is so archaic, convoluted, and long that many dispute the meaning of its dogma, though none can deny its value as a mythic text. The Old Church of the chroniclers has splintered into factions that mostly squabble over its meaning and try to draw some angle from its numerous and sometimes contradictory adaptions into holy texts."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Nevertheless, the Chant still holds power - real, tangible power - to heal, mend, and uplift. There are still those that take to the road and use its awesome power for good, ringing the bells of awakening and purification, as they sing to victory."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chanters are masters of weaving combos. Their grace trait allows them to gain or lose a combo token, allowing them to ‘reset’ combos or easily use a combo version of an ability. When they use combos, they can easily bless",
+                "glossary": [{"val": "combos", "id": "gl_combo"}]
+            },
+            {
+                "tags": {"desc_type" : "texttrait"},
+                "content": "tr_bless"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " allies. Utilizing grace requires taking slow turns, which also power up a lot of chanter’s potent charge effects, effects they can also trigger on themselves or allies by stacking blessings.",
+                "glossary": [{"val": "slow turns", "id": "gl_slowturn"}, {"val": "charge", "id": "gl_charge"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chanter has a lot of ways to grant flight, and a lot of ways to create pits, which flying allies can ignore. They are good at rearranging positioning and can directly remove characters and place them, which allows them to ignore nasty effects that trigger on movement such as rampart or vigilance.",
+                "glossary": [{"val": "flight", "id": "gl_flying"}, {"val": "rampart", "id": "gl_rampart"}, {"val": "vigilance", "id": "gl_vigilance"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chanter’s limit break, March of the Saints, powers up one ally at a time with a suite of effects. Picking the order for the march can be important!",
+                "glossary": [{"val": "stun", "id": "gl_stunned"}, {"val": "daze", "id": "gl_dazed"}]
+            }
+        ],
+        "limitbreak": "lb_marchofthesaints",
+        "upgrade_trait": "tr_granredempta"
+    },
+    {
+        "id": "jb_Harvester",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Slay": true,
+            "Pierce": true,
+            "Marks": true,
+            "Summons": true
+        },
+        "eventtags": {},
+        "class_id": "cl_mendicant",
+        "name": "Harvester",
+        "subtitle": "",
+        "traits": ["tr_blessingofrebirth", "tr_markoftsumi", "tr_gardenerofkin", "tr_balance"],
+        "addons": [],
+        "summons": ["sm_thrall", "sm_plant"],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Servants of Tsumi, the Moon Titan, the Harvesters are the death priests of Arden Eld. They travel from land to land, sanctifying burial sites, performing funeral rites, and helping lingering spirits move on. The land is full of the malice and unfulfilled wishes of the long suffering dead, and so the services of the harvesters are in high demand."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Tsumi is the protector of cycles, and so the Harvesters also perform fertility blessings, oversee harvest festivals, and see to the cultivation and protection of the land and nature. They plant flowers over battlefields, and tend groves of beautiful fruit trees planted over graveyards. This dual nature makes Harvesters fierce warriors, able to make the battle bloom or rot with a single swipe of their greatscythes."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Harvesters are damaging mendicants that get great benefits out of attacking, due to their balance trait and their suite of powerful slay effects. Their blessings allow them to activate these effects on themselves or allies, and also grant the powerful pierce effect.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}, {"val": "pierce", "id": "gl_piercing"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Harvesters can stack marks, allowing them to greatly power up an ally or crush a foe. Their thrall summons",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_thrall"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " turn into plants"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_plant"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " after being activated, which present obstacles for foes and blessings for allies. Some of the harvester’s talents also allow them to tap into the powers of life and death, gaining more power if the harvester or their targets are at low health.",
+                "glossary": [{"val": "low health", "id": "gl_bloodied"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Harvester’s limit break, Death Sentence, makes even the most tenacious character vulnerable, and allows area effects to hit that character twice.",
+                "glossary": [{"val": "area effects", "id": "gl_areaeffect"}]
+            }
+        ],
+        "limitbreak": "lb_deathsentence",
+        "upgrade_trait": "tr_defythecycle"
+    },
+    {
+        "id": "jb_Sealer",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Exceed": true,
+            "Deny": true,
+            "Divine": true
+        },
+        "eventtags": {},
+        "class_id": "cl_mendicant",
+        "name": "Sealer",
+        "subtitle": "Holy Judge and Purger of Evil",
+        "traits": ["tr_blessingofwar", "tr_mantraofsealing", "tr_godlysmite", "tr_martialarts"],
+        "addons": [],
+        "summons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Traveling priests, monks, judges, and doctors, the Sealers roam the world from village to village, performing necessary rituals, marriages, ceremonies, and yearly festivals. They are a welcome sight in most villages, and most perform the important function of traveling judge and medium, acting as an impartial party translating for the will of the local spirits. They often travel with many blessed relics of the deities of the land or even portable shrines on their back."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In their other role, Sealers are legendary monster hunters and exorcists of unbelievable prowess and unshakeable faith. Whenever an especially bad blight or an arch demon appears, the Sealers are usually there to drive it back with ancient sealing magic, blessed brands, and flaming weapons."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sealers are relatively hardy melee mendicants that benefit from sticking close to allies. Their blessings can be spent to empower attacks and easily trigger exceed effects, and blessing other characters allows sealers to power up their own mantra, giving them increased benefits for being selfless.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sealers have a few abilities that are stronger the first time they are used in combat, or become stronger with time. They also have the ability to deny specific enemies attacks or movement, making them strong against single, powerful foes, and they can deal many small amounts of divine damage, allowing them to chip away at hardy defenses.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sealer’s Limit Break, Passage to the Afterlife, is the highest damage attack in the game, but can’t be used until much later in the fight."
+            }
+        ],
+        "limitbreak": "lb_passagetotheafterlife",
+        "upgrade_trait": "tr_greatspiritfestival"
+    },
+    {
+        "id": "jb_Seer",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Gamble": true,
+            "Area Effects": true,
+            "Wild Card": true
+        },
+        "eventtags": {},
+        "class_id": "cl_mendicant",
+        "name": "Seer",
+        "subtitle": "Fortune Teller and Master of Fate",
+        "traits": ["tr_thewheeloffate", "tr_skein", "tr_foretell", "tr_bendfate", "tr_karma"],
+        "addons": [],
+        "summons": ["sm_wildcard"],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Seers are made up of all the orders of hedge witches, stargazers, corner prophets, folk healers, shamans, and all manner of individuals that find themselves attracted to reading the Great Arcana, the esoteric practice of reading destiny itself, the Great Wheel of Arden Eld that determines the final fate of all things."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Through ritual, ceremony, and unrelenting practice, Seers gain the ability to predict and even defy a person’s fate, using their Aether infused card decks to influence the turning of the Great Wheel and empower their allies with foresight, precision, and uncanny accuracy."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Seers are manipulators of fate that have the potent ability to influence gamble effects and lay down powerful damaging AoE effects that do not damage their allies. ",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "AoE", "id": "gl_areaeffect"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They benefit a lot from set up with their wild cards, which can extend these AoEs (and those of their allies), to hit massive areas, potentially creating huge chains. Wild cards can be used to extend the areas of any ability, not just attacks, so you can get creative with them.",
+                "glossary": [{"val": "AoEs", "id": "gl_areaeffect"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Seers have access to nearly every effect in the game through the Wheel of Fate, but their resources are limited. Choosing when to spend these cards for effects, when to draw more cards, or when to spend them on gambling is critical.",
+                "glossary": [{"val": "gambling", "id": "gl_gamble"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Seer’s limit break, High Prophecy, allows them to manipulate probability and makes gamble effects extremely powerful for its duration. The effect also applies to anything that targets you!",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}]
+            }
+        ],
+        "limitbreak": "lb_highprophecy",
+        "upgrade_trait": "tr_chakravartin"
     }
 ]
