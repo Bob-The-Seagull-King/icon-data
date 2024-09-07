@@ -328,7 +328,7 @@
                 "tags": {"desc_type" : "textsummon"},
                 "content": "sm_shadow"
             },
-            {   
+            {   "tags": {"desc_type" : "desc"},
                 "content": " create dangerous zones for foes and can grant stealth to allies. Shades do more damage to characters standing in adverse terrain, which includes shadows! They can also swap with these shadows for additional mobility."
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },

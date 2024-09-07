@@ -214,7 +214,7 @@
             "intangible": true
         },
         "eventtags": {},
-        "name": "",
+        "name": "Thrall",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
@@ -241,7 +241,7 @@
             "Terrain Effect": true
         },
         "eventtags": {},
-        "name": "",
+        "name": "Plant",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
