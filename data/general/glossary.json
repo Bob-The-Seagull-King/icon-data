@@ -195,6 +195,21 @@
         }]
     },
     {
+        "id": "gl_burst",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "areaeffect"
+        },
+        "eventtags": {},
+        "name": "Burst",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Affects a targeted space or character in range, and all spaces in range X and line of sight from that space. Often written as Burst X (target) or burst X (self). Unlike other area patterns, does not affect the ability user unless specified. The origin space and attack space is the central space.",
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_dash",
         "type": "Glossary",
         "source": "core",
@@ -1115,6 +1130,21 @@
         "description":  [{
             "tags": {"desc_type" : "desc"},
             "content": "Costs +1 space of movement to exit. Can overlap other terrain types.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_pit",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "terrain"
+        },
+        "eventtags": {},
+        "name": "Pit",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "(pg. 89) A pit space is just what it sounds like, but could also be deep water, mud, etc. Pits count as one level lower of elevation than their base space.",
             "subcontent":   []
         }]
     },

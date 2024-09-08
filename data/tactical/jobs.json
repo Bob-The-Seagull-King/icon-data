@@ -31,7 +31,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Bastions are powerful knights and tacticians and focus on shoving their enemies and moving their allies into position with their Press the Advantage trait. Almost everything they do changes the shape of the battlefield in some way, and they get extra benefits for smashing foes into obstacles or other characters with collide. They benefit from good positioning, since shoves typically have to be away from you.",
-                "glossary": [{"val": "shoving", "id": "gl_shove"}, {"val": "collide", "id": "gl_impact"},{"val": "shoves", "id": "gl_shove"}]
+                "glossary": [{"val": "shoving", "id": "gl_shove"}, {"val": "collide", "id": "gl_collide"},{"val": "shoves", "id": "gl_shove"}]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
@@ -456,7 +456,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Chanter has a lot of ways to grant flight, and a lot of ways to create pits, which flying allies can ignore. They are good at rearranging positioning and can directly remove characters and place them, which allows them to ignore nasty effects that trigger on movement such as rampart or vigilance.",
-                "glossary": [{"val": "flight", "id": "gl_flying"}, {"val": "rampart", "id": "gl_rampart"}, {"val": "vigilance", "id": "gl_vigilance"}]
+                "glossary": [{"val": "flight", "id": "gl_flying"}, {"val": "pits", "id": "gl_pit"}, {"val": "rampart", "id": "gl_rampart"}, {"val": "vigilance", "id": "gl_vigilance"}]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
@@ -637,5 +637,210 @@
         ],
         "limitbreak": "lb_highprophecy",
         "upgrade_trait": "tr_chakravartin"
+    },
+    {
+        "id": "jb_enochian",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Exceed": true,
+            "Comeback": true
+        },
+        "eventtags": {},
+        "class_id": "cl_wright",
+        "name": "Enochian",
+        "subtitle": "Unbridled Destruction",
+        "traits": ["tr_innerfurnace", "tr_embersoul", "tr_phoenixrage", "tr_soulfire"],
+        "addons": [],
+        "summons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Enochian Orders of wrights are the most chaotic of the mage orders. They have no official organization, most of their members being hedge wizards or self taught. Many Enochians disdain authority and work for hire, sleeping and eating where they can and relying on the communities they work for to support them. Those that work on contract with guilds, armies, or mercenary companies tend to value their independence."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The power that condenses inside an Enochian is related to the element of fire, a wild spark that grows and wanes with their emotions and energy, but with control can be focused into power that can carve mountains, scorch forests, and boil rivers. In times of desperation, the Enochians can feed this power with their own life force, a dangerous practice that the other orders of wrights look down upon. The Enochians, for their part, see other wrights as stiff and uncreative. They’d rather do it their way, after all."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Enochians are walking calamities, firebrands that tap their own life force and ride the line of disaster. Their inner furnace and soulfire traits give them increased benefits for spending their own life, power up their exceed effects by making it easier to critical hit, and turn on a host of comeback effects.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "critical hit", "id": "gl_criticalhit"},{"val": "comeback", "id": "gl_comeback"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Many Enochian abilities can be powered up by spending your own life force, but enochians are relatively immobile. Use your excellent range to stay clear of the action, or risk burning out too soon!"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Enochian’s limit break, Gigaflare, sears the entire battlefield with powerful, unavoidable flame. Anyone standing close is immune to this effect, so warn your allies (or don’t).",
+                "glossary": [{"val": "immune", "id": "gl_immune"}]
+            }
+        ],
+        "limitbreak": "lb_gigaflare",
+        "upgrade_trait": "tr_brightsoul"
+    },
+    {
+        "id": "jb_geomancer",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Charge": true,
+            "Objects": true,
+            "Terrain": true,
+            "Aftershocks": true
+        },
+        "eventtags": {},
+        "class_id": "cl_wright",
+        "name": "Geomancer",
+        "subtitle": "Guardian of the Pure Earth",
+        "traits": ["tr_aftershock", "tr_resonance", "tr_orogenicrage", "tr_stonedouble"],
+        "addons": [],
+        "summons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Geomancers belong to an old order of mystics, doctors, alchemists, and esoteric martial artists called the Keepers of the Elden Gate. These scholarly wrights are concerned with health and the flow of energy, not just through the body, but through the very earth itself. They consider themselves physicians of the highest order - their patient being the eternal land of Arden Eld."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These studious wrights attune themselves to earth Aether, aligning the energy channels of their body to crystalline perfection with vigorous exercise and sometimes bizarre health regimes. In battle, the land itself is their ally, spitting forth poisonous gases, cavernous upheavals of earth, and great spires of rock to crush their foes."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "None are more concerned with the Churn than the geomancers, who view it as the greatest sickness known to Kin, and will take any opportunity to fight or study it with exuberance."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Geomancers are masters of shaping the battlefield and inflicting slow, hard hitting destruction. Geomancers gain a lot of benefits from charge effects and are able to create and modify a great number of objects and terrain. Their aftershocks are free, high damage areas that can be easy to avoid - but trapping enemies with terrain or the help of allies can help them land.",
+                "glossary": [{"val": "charge", "id": "gl_charge"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Geomancer’s resonance trait gives them bonuses for playing close to the action, so using terrain for positioning is critical. Their ability to aid allies by modifying terrain shouldn’t be discounted!"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Geomancer’s limit break, Cataclysm, is a slow effect that has a low action cost and also removes you from harm for a round. It causes maximum destruction if it hits a large number of objects.",
+                "glossary": [{"val": "stun", "id": "gl_stunned"}, {"val": "daze", "id": "gl_dazed"}]
+            }
+        ],
+        "limitbreak": "lb_cataclysm",
+        "upgrade_trait": "tr_stoneswim"
+    },
+    {
+        "id": "jb_spellblade",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Slay": true,
+            "Teleports": true,
+            "Vulnerable": true
+        },
+        "eventtags": {},
+        "class_id": "cl_wright",
+        "name": "Spellblade",
+        "subtitle": "Swordmaster, Wind Dancer",
+        "traits": ["tr_aetherdeflection", "tr_conquerorsedge", "tr_stormhiltrage", "tr_klingenkunst"],
+        "addons": [],
+        "summons": [],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Spellblades are a martial order of highly trained wrights. Many of them come from the Guild Academies in the great cities of Arden Eld, where they often take prestigious posts in the local militias and city watch. Other wrights tend to view Spellblades as stiff, unfeeling military types, but spell blades themselves know they are consummate professionals and unparalleled masters of their art."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The lightning Aether that the spellblades wield is highly volatile, and requires intense training and focus to control. Once a spell blade has learned their craft, however, the speed, power, and precision at which they can act is intoxicating, crossing great spans of space in an instant, riding the Aetherial currents with a flash of gleaming steel."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spellblades are highly mobile, agile mages that deal a flurry of small but potent blows. Their ability to skip infuses with slay effects and their powerful teleports give them a lot of benefits for prioritizing weak targets. Though they are quite fragile, their aether deflection trait can give them some staying power, but drains their aether.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}, {"val": "teleports", "id": "gl_teleport"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spellblades get a lot of mileage out of the vulnerable status as they deal a lot of small instances of damage. They can use their utility abilities to teleport themselves or allies out of tough situations, dancing around their foes.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "teleport", "id": "gl_teleport"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spellblade’s limit break, Gran Levincross, allows you to cordon off enemies and give you breathing room to finish off foes. You can ignore its crackling walls of lightning with your numerous teleport effects, and your allies can do the same.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ],
+        "limitbreak": "lb_granlevincross",
+        "upgrade_trait": "tr_greatwindriding"
+    },
+    {
+        "id": "jb_",
+        "type": "Job",
+        "source": "core",
+        "tags": {
+            "Terrain Effects": true,
+            "Summons": true,
+            "Fly": true,
+            "Collide": true
+        },
+        "eventtags": {},
+        "class_id": "cl_wright",
+        "name": "Stormbender",
+        "subtitle": "Dire Navigator, Master of the Waves",
+        "traits": ["tr_selkie", "tr_dashontherocks", "tr_sealegs", "tr_pelagicrage"],
+        "addons": [],
+        "summons": ["sm_saltsprite", "sm_selkie"],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The seas of Arden Eld are its most treacherous terrain. Boiling over with monsters, and wracked with unnatural and freakish weather, most folk prefer to give them wide berth. However, there are still those brave and hardy souls that live on the islands around Arden Eld, and the merchants, sailors, and travelers that rely on the sea for fast passage and the movement of cargo, the lifeblood of the continent’s great cities."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The storm benders are the great masters of the sea, the supreme navigators that make sailing even possible around Arden Eld. Water-attuned wrights, they are most at home on a deck, or clambering the rigging. Each of them are sailors of the highest caliber, coming from all over - old trade guilds, islander clans, and nautical churner enclaves."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Bending the essence of the sea to their beck and call, the storm benders can clear the skies with a swipe of their hands, feel the currents ahead for aquatic monsters, turn weather away from the hull of the ship, and blow wind into its sails. It doesn’t matter that many of them dabble in a little light piracy on the side - they are the undisputed masters of their element, and they wouldn’t have it any other way."
+            }
+        ],
+        "playstyle": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Stormbenders are seafaring masters of battlefield terrain effects, deal more damage to characters in those effects, and can even use their selkie summon to carry foes into these effects, or carry allies out of them. Since storm benders fly inside their own terrain, they can ignore its adverse effects, and use it to travel over other adverse terrain and enemies.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "fly", "id": "gl_flying"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "It’s other summons, salt sprites, are perfect combos with collide effects and can help move around allies. With setup, a storm bender can move allies around the entire map, and easily send enemies hurtling into dangerous terrain or pits.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}, {"val": "collide", "id": "gl_collide"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "pits", "id": "gl_pit"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Stormbender’s limit break, Elemental, transforms them into a much larger form that is also a living terrain effect, allowing them to become much sturdier, fly, and greatly slow down enemies in their area.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ],
+        "limitbreak": "lb_elemental",
+        "upgrade_trait": "tr_whirlgang"
     }
 ]

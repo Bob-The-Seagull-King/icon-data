@@ -608,7 +608,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Abilities used against foes in pits, difficult, or dangerous terrain gain unerring and deals bonus damage.",
-                "glossary": [{"val": "unerring", "id": "gl_unerring"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "unerring", "id": "gl_unerring"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
             }
                         ]
     },
@@ -1174,6 +1174,338 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "1/round, if a wright damages two or more foes with an ability, they gain 1 Aether after the ability resolves."
+            }
+                        ]
+    },
+    {
+        "id": "tr_innerfurnace",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Inner Furnace",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, you may burn your own life force when you Infuse an ability. You can sacrifice 25% of your max hp to reduce the Aether cost of that ability by 2.",
+                "glossary": [{"val": "sacrifice 25%", "id": "gl_sacrifice"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_embersoul",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Embersoul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Start combat with regeneration and defiance. Regain regeneration if rescued.",
+                "glossary": [{"val": "regeneration", "id": "gl_regeneration"}, {"val": "defiance", "id": "gl_defiance"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_phoenixrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phoenix Rage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round 5, become suffused with immortal flame. Gain defiance at the start of each of your turns, and when you would take a wound, gamble. On a 4+, ignore it. If this is your last wound, this roll becomes a 2+ instead.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_soulfire",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chain Reaction",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Comeback:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your threshold to critical hit becomes 18+, and your threshold to exceed becomes 13+. If you’re at 1 hp, these thresholds are reduced to 15+ and 10+."
+                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "critical hit", "id": "gl_criticalhit"}, {"val": "exceed", "id": "gl_exceed"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_brightsoul",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bright Soul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you are defeated, you can choose to burn off all your aether to cause a massive Burst 2 (self) explosion area effect, dealing 4 piercing damage, then 4 piercing damage a number of times again to all characters inside equal to the amount of aether you burned.",
+                "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_aftershock",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aftershock",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you use any attack, you can cause an aftershock in the space under your target. Gain Delay: Your next turn must be slow, but at the start of that turn, the aftershock explodes in a burst 1 area effect centered on that space, dealing piercing fray damage to characters within (other than you). If the area effect catches an object in the area, it deals piercing fray damage twice instead.",
+                "glossary": [{"val": "Delay", "id": "gl_delay"}, {"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "burst", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Unlike most other delay effects, aftershock does not end your turn, and can stack with other delay effects.",
+                "glossary": [{"val": "delay", "id": "gl_delay"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_resonance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Resonance",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you make an attack against a character at exactly range 3, it deals bonus damage, gain 1 Aether, and gain 3 vigor after the ability resolves.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_orogenicrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Orogenic Rage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round 5 and for the rest of combat, become unstoppable and your aftershocks deal double damage.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_stonedouble",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stone Double",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you first vacate a space on your turn, you can leave a height 1 statue object behind in the space you vacate."
+            }
+                        ]
+    },
+    {
+        "id": "tr_stoneswim",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stoneswim",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have phasing, for objects, and the spaces of objects always cost a maximum of 1 movement for you to enter.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_aetherdeflection",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stoneswim",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Interrupt 1:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Trigger:",
+                                    "subcontent": [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "You are targeted by an ability from a character in range 2."
+                                                }]
+                                },
+                                {
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Effect:",
+                                    "subcontent": [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "Gain resistance against damage from that ability. You only have one use of this interrupt per combat. However, you can spend 2 Aether any time to regain it."
+                                                }]
+                                }
+                ],
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "tr_conquerorsedge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Conqueror's Edge",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Infuse cost of your abilities is reduced by 1 if there’s a foe in range 2. Additionally, many of your infuses can be triggered as slay effects instead, and you may infuse 3 Aether to trigger the slay effect of any ability. Abilities with infuse or slay effects cannot trigger both at once.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_stormhiltrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Storm Hilt Rage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round 5 and for the rest of combat, any effects that teleport you have the range of the battlefield, and you may teleport to any space before using any ability.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_klingenkunst",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Klingenkunst",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport 2. This ability can interrupt other abilities or movement on your turn with stopping them.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_greatwindriding",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Wind Riding",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a turn, when you teleport, you can also teleport an adjacent ally with you, placing them in a free adjacent space after your teleport resolves.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_selkie",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Selkie",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have a bound elemental. At the start of any combat, summon it in range 3",
+                "glossary": [{"val": "summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_selkie"
+            }
+                        ]
+    },
+    {
+        "id": "tr_dashontherocks",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dash on the Rocks",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "1/round when you cause a character to collide, you may gain 1 aether and deal 1 piercing damage as a burst 1 area effect centered on that character.",
+                "glossary": [{"val": "collide", "id": "gl_collide"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "burst", "id": "gl_burst"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_sealegs",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sea Legs",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You deal bonus damage to characters in pits, difficult, or dangerous terrain. While inside any of your own terrain effects, you have flying.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "pits", "id": "gl_pit"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "flying", "id": "gl_flying"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_pelagicrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Wind Riding",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round 5 and for the rest of combat, you are buoyed up by a huge swell of elemental water. You gain aura 2. Yourself and allies in the aura gain flying and cover from all direction, and the area is difficult and dangerous terrain for foes.",
+                "glossary": [{"val": "aura 2", "id": "gl_aura"}, {"val": "cover", "id": "gl_cover"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "flying", "id": "gl_flying"}]
+            }
+                        ]
+    },
+    {
+        "id": "tr_whirlgang",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Whirlgang",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You are highly attuned to the ambient air currents and can command them at will. At the start of your turn, yourself and every ally in range 2 of you may fly 1 in the same direction as an effect.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
             }
                         ]
     }

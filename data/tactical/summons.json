@@ -330,5 +330,77 @@
         }],
         "colour": "cl_mendicant",
         "limit": null
+    },
+    {
+        "id": "sm_saltsprite",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true,
+            "Immobile": true
+        },
+        "eventtags": {},
+        "name": "Salt Sprite",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Sprite is both a summon and terrain effect. It can share spare with other characters, and its area counts as difficult terrain.",
+                                    "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a character is shoved into the sprite’s area, it triggers collide effects and awakens it. Allies shoved into its space can fly 2. Foes are shoved 2 in any direction. Then, remove the sprite.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "collide", "id": "gl_collide"}, {"val": "fly", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "When a Salt Sprite is summoned, it can be summoned in range 2 unless a different range is specified."
+        }],
+        "colour": "cl_wright",
+        "limit": 6
+    },
+    {
+        "id": "sm_selkie",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true,
+            "Flying": true
+        },
+        "eventtags": {},
+        "name": "Selkie",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your Selkie can share space with characters, and is also considered a terrain effect."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Selkie may fly 3 at the end of your turn. Any character standing in the Selfie’s space when it moves is removed from the battlefield, then placed back in its space, or adjacent to it if that space is occupied.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "cl_wright",
+        "limit": 1
     }
 ]
