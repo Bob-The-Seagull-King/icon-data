@@ -320,16 +320,21 @@
             }
         ],
         "playstyle": [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Shades are agile vagabonds that can easily reposition themselves, foes, and allies to inflict maximum carnage. Their shadows"
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_shadow"
-            },
-            {   
-                "content": " create dangerous zones for foes and can grant stealth to allies. Shades do more damage to characters standing in adverse terrain, which includes shadows! They can also swap with these shadows for additional mobility."
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shades are agile vagabonds that can easily reposition themselves, foes, and allies to inflict maximum carnage. Their"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "create dangerous zones for foes and can grant stealth to allies. Shades do more damage to characters standing in adverse terrain, which includes shadows! They can also swap with these shadows for additional mobility."
+                    }
+                ]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
@@ -375,18 +380,22 @@
             }
         ],
         "playstyle": [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Wardens are masters of the wild that summon beasts"
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_beast"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "with their actions. Beasts prowl around the battlefield until activated and have a high range. Activating a lot of them at once can pummel a foe with a lot of damage, but requires good positioning, which they can achieve with a small number of shove effects.",
-                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Wardens are masters of the wild that summon"
+                },
+                {
+                    "tags": {"desc_type" : "textsummon"},
+                    "content": "sm_beast"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "with their actions. Beasts prowl around the battlefield until activated and have a high range. Activating a lot of them at once can pummel a foe with a lot of damage, but requires good positioning, which they can achieve with a small number of shove effects.",
+                    "glossary": [{"val": "shove", "id": "gl_shove"}]
+                }]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
@@ -503,27 +512,31 @@
                 "glossary": [{"val": "slay", "id": "gl_slay"}, {"val": "pierce", "id": "gl_piercing"}]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Harvesters can stack marks, allowing them to greatly power up an ally or crush a foe. Their thrall summons",
-                "glossary": [{"val": "marks", "id": "gl_mark"}]
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_thrall"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": " turn into plants"
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_plant"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": " after being activated, which present obstacles for foes and blessings for allies. Some of the harvester’s talents also allow them to tap into the powers of life and death, gaining more power if the harvester or their targets are at low health.",
-                "glossary": [{"val": "low health", "id": "gl_bloodied"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Harvesters can stack marks, allowing them to greatly power up an ally or crush a foe. Their",
+                    "glossary": [{"val": "marks", "id": "gl_mark"}]
+                },
+                {
+                    "tags": {"desc_type" : "textsummon"},
+                    "content": "sm_thrall"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "summons turn into"
+                },
+                {
+                    "tags": {"desc_type" : "textsummon"},
+                    "content": "sm_plant"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": " after being activated, which present obstacles for foes and blessings for allies. Some of the harvester’s talents also allow them to tap into the powers of life and death, gaining more power if the harvester or their targets are at low health.",
+                    "glossary": [{"val": "low health", "id": "gl_bloodied"}]
+                }]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {

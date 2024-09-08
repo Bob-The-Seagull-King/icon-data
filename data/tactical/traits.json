@@ -851,7 +851,7 @@
                         ]
     },
     {
-        "id": "tr_Uplift",
+        "id": "tr_uplift",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -998,15 +998,14 @@
         "tags": { },
         "eventtags": {},
         "name": "Godly Smite",
-        "description":  [
-            {
+        "description":  [{
                 "tags": {"desc_type" : "desc"},
                 "content": "You steadily gather power as you fight. You start combat with a mantra power die, a d6 that starts at 1, and ticks up by 1 at the start of every round, to a maximum of 6. You gain the following interrupt:",
                 "glossary": [{"val": "power die", "id": "gl_powerdie"}, {"val": "interrupt", "id": "gl_interrupt"}]
             },
             {
                 "tags": {"desc_type" : "addon"},
-                "content": "ad_heroicintervention"
+                "content": "ad_godlysmite"
             }
                         ]
     },
