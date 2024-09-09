@@ -106,7 +106,7 @@
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Ability gains pierce.",
-                                                "glossary": [{"val": "pierce", "id": "gl_pierce"}]
+                                                "glossary": [{"val": "pierce", "id": "gl_piercing"}]
                                             }]
                         },
                         {
