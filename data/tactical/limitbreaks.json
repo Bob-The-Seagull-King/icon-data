@@ -30,7 +30,7 @@
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "Bloodied foes are weakened. Foes at 25% hp or lower are stunned.",
-                                    "glossary": [{"val": "Bloodied", "id": "gl_bloodied"},{"val": "weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
+                                    "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
                                 }]
             }
                         ]
@@ -521,7 +521,7 @@
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "Until the start of your next turn, you gain aura 2. Every d6 any character in the aura rolls for boons, curses, or gambling is either a 6 or a 1 (you choose).",
-                                    "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "boons", "id": "gl_boon"}, {"val": "curses", "id": "gl_curse"}, {"val": "gambling", "id": "gl_gamble"}]
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "boons", "id": "gl_boon"}, {"val": "curses", "id": "gl_curse"}, {"val": "gambling", "id": "gl_gamble"}]
                 }]
             }
         ]
