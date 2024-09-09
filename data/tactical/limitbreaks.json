@@ -329,11 +329,8 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "• When you take the dash action, all allies and allied summons can dash 1. Then, any foe adjacent to one or more characters that dashed this way takes 2 damage.",
                 "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "summons", "id": "gl_summon"}]
-            },
-            {
-                
             }
-                        ]
+        ]
     },
     {
         "id": "lb_marchofthesaints",
@@ -404,7 +401,7 @@
                                     "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
                                 }]
             }
-                        ]
+        ]
     },
     {
         "id": "lb_deathsentence",
@@ -499,7 +496,7 @@
                                     "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "divine", "id": "gl_divine"}]
                 }]
             }
-                        ]
+        ]
     },
     {
         "id": "lb_highprophecy",
@@ -527,7 +524,7 @@
                                     "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "boons", "id": "gl_boon"}, {"val": "curses", "id": "gl_curse"}, {"val": "gambling", "id": "gl_gamble"}]
                 }]
             }
-                        ]
+        ]
     },
     {
         "id": "lb_gigaflare",

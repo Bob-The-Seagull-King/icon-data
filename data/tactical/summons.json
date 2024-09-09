@@ -191,7 +191,7 @@
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "Once during your turn, your beast can dash up to 2 spaces, then may deal 2 damage to an adjacent foe and shove 1.",
-                                    "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove 1", "id": "gl_shove"}]
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove", "id": "gl_shove"}]
                                 }]
             },
             {

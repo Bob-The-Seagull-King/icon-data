@@ -381,7 +381,8 @@
             }
         ],
         "playstyle": [
-            {   "tags": {"desc_type" : "desc"},
+            {   
+                "tags": {"desc_type" : "desc"},
                 "content": "",
                 "subcontent": [
                 {
@@ -479,7 +480,7 @@
         "upgrade_trait": "tr_granredempta"
     },
     {
-        "id": "jb_Harvester",
+        "id": "jb_harvester",
         "type": "Job",
         "source": "core",
         "tags": {
@@ -550,7 +551,7 @@
         "upgrade_trait": "tr_defythecycle"
     },
     {
-        "id": "jb_Sealer",
+        "id": "jb_sealer",
         "type": "Job",
         "source": "core",
         "tags": {
@@ -598,7 +599,7 @@
         "upgrade_trait": "tr_greatspiritfestival"
     },
     {
-        "id": "jb_Seer",
+        "id": "jb_seer",
         "type": "Job",
         "source": "core",
         "tags": {
@@ -627,7 +628,7 @@
         "playstyle": [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Seers are manipulators of fate that have the potent ability to influence gamble effects and lay down powerful damaging AoE effects that do not damage their allies. ",
+                "content": "Seers are manipulators of fate that have the potent ability to influence gamble effects and lay down powerful damaging AoE effects that do not damage their allies.",
                 "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "AoE", "id": "gl_areaeffect"}]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
@@ -827,7 +828,7 @@
         "upgrade_trait": "tr_greatwindriding"
     },
     {
-        "id": "jb_",
+        "id": "jb_stormbender",
         "type": "Job",
         "source": "core",
         "tags": {

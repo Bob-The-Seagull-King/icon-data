@@ -743,8 +743,8 @@
         "tags": { },
         "eventtags": {},
         "name": "Beast Master",
-        "description":  [
-            {   "tags": {"desc_type" : "desc"},
+        "description":  [{   
+                "tags": {"desc_type" : "desc"},
                 "content": "",
                 "subcontent": [
                     {
@@ -775,7 +775,7 @@
                 "content": "While you have stealth the dash action becomes a free action.",
                 "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "dash", "id": "gl_dash"}]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_ambushmaster",
@@ -822,7 +822,7 @@
                 "content": "While in stealth, you cannot be directly targeted at all, even from adjacent spaces.",
                 "glossary": [{"val": "stealth", "id": "gl_stealth"}]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_diaga",
@@ -1197,7 +1197,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "An ally in range 6 becomes unstoppable and immune to all damage until the end of their next turn",
+                "content": "An ally in range 6 becomes unstoppable and immune to all damage until the end of their next turn.",
                 "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "immune", "id": "gl_immune"}]
             }
                         ]
