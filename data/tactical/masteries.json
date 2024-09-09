@@ -326,7 +326,85 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "While the aura is active, you are automatically missed by attacks, turn any of your attack misses into hits, and succeed all saves."
+                "content": "While the aura is active, you are automatically missed by attacks, turn any of your attack misses into hits, and succeed all saves.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            }
+                        ]
+    },
+    {
+        "id": "ul_meteor",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { 
+            "infuse": 8
+        },
+        "eventtags": {},
+        "name": "Meteor",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deal [D]+fray four times instead.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You can pay the resolve, aether, and action cost of this spell with your entire life force, dying after this action resolves, obliterating your body, and scattering your soul. If you do, it deals 999 divine damage instead."
+                }],
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }
+                        ]
+    },
+    {
+        "id": "ul_moltencore",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Molten Core",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After taking this move, you emerge with a shield of molten rock covering you. You gain unstoppable and resistance until the end of your next turn.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "resistance", "id": "gl_resistance"}]
+            }
+                        ]
+    },
+    {
+        "id": "ul_gotterdammerung",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { 
+            "infuse": 6
+        },
+        "eventtags": {},
+        "name": "Götterdämmerung",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "After this ability resolves, scathing divine lightning hits every quarter of the map but one of your choice. Characters within take 2[D]+fray Divine damage."
+                }],
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "Divine", "id": "gl_divine"}]
+            }
+                        ]
+    },
+    {
+        "id": "ul_shieldofthefourwinds",
+        "type": "Ultimate",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shield of the Four Winds",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you so choose, when an ally would be shoved, teleported, or removed from your area, you can completely prevent that ally from being moved. This effect can trigger only once a round.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "teleported", "id": "gl_teleport"}]
             }
                         ]
     }

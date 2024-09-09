@@ -56,5 +56,44 @@
                                             }]
                         }
                         ]
+    },
+    {
+        "id": "ad_tetraflare",
+        "type": "Addon",
+        "source": "core",
+        "tags": {
+            "infuse": 6
+        },
+        "eventtags": {},
+        "name": "Tetraflare",
+        "description":  [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Deal [D] + fray twice instead.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }
+                    ]
+    },
+    {
+        "id": "ad_ragnarok",
+        "type": "Addon",
+        "source": "core",
+        "tags": {
+            "Slay": true,
+            "or infuse": 3
+        },
+        "eventtags": {},
+        "name": "Ragnarök",
+        "description":  [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Area Effect:",
+                            "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take [D]+fray Divine damage."
+                            }],
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "Divine", "id": "gl_divine"}]
+                        }
+                    ]
     }
 ]

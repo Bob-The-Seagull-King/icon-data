@@ -527,5 +527,168 @@
                 "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "boons", "id": "gl_boon"}, {"val": "curses", "id": "gl_curse"}, {"val": "gambling", "id": "gl_gamble"}]
             }
                         ]
+    },
+    {
+        "id": "lb_gigaflare",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "resolve": 4,
+            "Divine": true,
+            "Unerring": true,
+            "True Strike": true
+        },
+        "eventtags": {},
+        "name": "Gigaflare",
+        "ultimate": ["ul_meteor"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "I, who stand at the apex of things, Thou, who are in the deepest pits of despair, Let thy very bones become ash!. O Flame, let the air become death! Ignite, and be banished to Hell!"
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You summon the eldflame, the primeval force of creation, dealing [D]+fray divine damage to every character, on the battlefield, ignoring line of sight. Characters in range 2 of you are exempt from this ability."
+                }],
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "divine", "id": "gl_divine"}, {"val": "gambling", "id": "gl_gamble"}]
+            },
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_tetraflare"
+            }
+                        ]
+    },
+    {
+        "id": "lb_cataclysm",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "resolve": 3,
+            "Divine": true
+        },
+        "eventtags": {},
+        "name": "Cataclysm",
+        "ultimate": ["ul_moltencore"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "I, protected by the holy trigram, Summon the ten thousand molten metal kings. Run amok with thy furies, and rend the immortal stone, Turn Heaven and Earth!"
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "End your turn. You dive into the earth and off the battlefield. Remove yourself from play. Target a line area 3 spaces wide from one side of the battlefield to the next. Then gain Delay: Your next turn must be slow. At the start of that turn, you cause a rolling wave of earth to sweep across this area, from one side to the next. Characters within take [D] + fray as an effect and are shoved 1 in the direction of the line."
+                }],
+                "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "Delay", "id": "gl_delay"}, {"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "After the first effect resolves, all objects in the area release an explosion for a medium blast area effect centered on them, dealing [D]+fray as an area effect. Characters hit by two or more explosions take 2[D]+fray instead."
+                }],
+                "glossary": [{"val": "blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this ability resolves, place yourself in any unoccupied space in the area."
+            }
+                        ]
+    },
+    {
+        "id": "lb_granlevincross",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "resolve": 4,
+            "Divine": true
+        },
+        "eventtags": {},
+        "name": "Gran Levincross",
+        "ultimate": ["ul_gotterdammerung"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "I summon thee, bloody gods of the cutting art, Let the might of the divine realm crash upon the piteous earth, Strike eighty thousand blows at once, And split the air asunder!"
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your blade extends and you make two massive cuts across the map, splitting the walls between worlds. Draw a cross section across the map, splitting it into four sections of any size. Deal [D]+fray divine damage to all characters caught in the cross, then remove all characters out of the affected area and place them in the nearest free space of your choice. Characters can pass a save to choose which side they end up on."
+                }],
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "divine", "id": "gl_divine"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The affected area becomes a crackling wall of lightning that does not block line of sight, but blocks all movement except teleporting. This effect ends at the end of the next round. Allies can use a free action to teleport across the wall from an adjacent space, placing them on the closest adjacent space on the other side.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}, {"val": "teleport", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If any version of this ability has no valid space in which teleport a character to, still deal damage, but this ability doesn’t create the lightning wall.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_ragnarok"
+            }
+                        ]
+    },
+    {
+        "id": "lb_elemental",
+        "type": "LimitBreak",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "resolve": 3
+        },
+        "eventtags": {},
+        "name": "Elemental",
+        "ultimate": ["ul_shieldofthefourwinds"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "On account of the magic that is in my body, Turn aside, detested of Sea and Storm, Thou wretch, go with thy face diverted! I call the elements into the temple of my body. Be scattered like dust, and feed the wind!"
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You take on a fearsome elemental form, gaining the following benefits for the rest of combat:"
+                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you are an Elemental:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "- You gain flying and phasing.",
+                "glossary": [{"val": "flying", "id": "gl_flying"}, {"val": "phasing", "id": "gl_phasing"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "- You release aura 2 around you. The area is a terrain effect that moves with you that is difficult and dangerous terrain for foes, and allies gain cover from all directions in the area.",
+                "glossary": [{"val": "aura 2", "id": "gl_aura"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous", "id": "gl_dangerousterrain"}, {"val": "cover", "id": "gl_cover"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "- You can share space with characters. You have resistance to any character sharing your space, and allies have resistance while sharing your space.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+                        ]
     }
 ]
