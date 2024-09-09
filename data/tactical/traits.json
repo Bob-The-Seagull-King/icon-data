@@ -106,7 +106,9 @@
         "id": "tr_blackrockvanguard",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Black Rock Vanguard",
         "description":  [
@@ -181,7 +183,9 @@
         "id": "tr_rangiri",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Rangiri",
         "description":  [
@@ -269,7 +273,9 @@
         "id": "tr_unbreakable",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Unbreakable",
         "description":  [
@@ -346,7 +352,9 @@
         "id": "tr_wayofthecrow",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Way of the Crow",
         "description":  [
@@ -456,12 +464,24 @@
         "eventtags": {},
         "name": "Cheap Trick",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "When an attack misses you, you may teleport 1 space, then leave a bomb in an adjacent space.",
-                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When an attack misses you, you may teleport 1 space, then leave a",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_bomb"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "in an adjacent space."
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_stackdice",
@@ -482,15 +502,29 @@
         "id": "tr_deathsapprentice",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
-        "name": "Finesse",
+        "name": "Death's Apprentice",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "You can hold on to 2 stacked dice at once."
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You can hold on to 2"
+                    },
+                    {
+                        "tags": {"desc_type" : "texttrait"},
+                        "content": "tr_stackdice"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "at once."
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_boundspirit",
@@ -500,19 +534,24 @@
         "eventtags": {},
         "name": "Bound Spirit",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "At the start of combat, you may place your "
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_astralseraph"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": " in range 2 from you. This summon persists even if you’re defeated."
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of combat, you may place your"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_astralseraph"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "in range 2 from you. This summon persists even if you’re defeated.",
+                        "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_aethershot",
@@ -563,24 +602,30 @@
         "id": "tr_divinechamber",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Divine Chamber",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Your sixth round Aether Shell"
-            },
-            {
-                "tags": {"desc_type" : "texttrait"},
-                "content": "tr_aethershot"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "also deals divine damage.",
-                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Your sixth round"
+                    },
+                    {
+                        "tags": {"desc_type" : "texttrait"},
+                        "content": "tr_aethershot"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "also deals divine damage.",
+                        "glossary": [{"val": "divine", "id": "gl_divine"}]
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_shadowarts",
@@ -593,7 +638,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "You have phasing and are immune to blinded.",
-                "glossary": [{"val": "phasing", "id": "gl_phasing"}, {"val": "blinded", "id": "gl_blinded"}]
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}, {"val": "immune", "id": "gl_immune"}, {"val": "blinded", "id": "gl_blinded"}]
             }
                         ]
     },
@@ -608,7 +653,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Abilities used against foes in pits, difficult, or dangerous terrain gain unerring and deals bonus damage.",
-                "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "unerring", "id": "gl_unerring"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "unerring", "id": "gl_unerring"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
             }
                         ]
     },
@@ -620,15 +665,20 @@
         "eventtags": {},
         "name": "Darkside",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "When you first vacate a space on your turn, you may leave a shadow."
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_shadow"
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When you first vacate a space on your turn, you may leave a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_meld",
@@ -638,43 +688,53 @@
         "eventtags": {},
         "name": "Meld",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Once a round, before or after using any ability on your turn, you can swap places with any shadow"
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_shadow"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": " in range 3, teleporting.",
-                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Once a round, before or after using any ability on your turn, you can swap places with any shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "in range 3, teleporting.",
+                        "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_umbralsoul",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Umbral Soul",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Once a round, one of your allies can swap places with any of your shadows"
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_shadow"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": " before or after using any ability, teleporting.",
-                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Once a round, one of your allies can swap places with any of your"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "before or after using any ability, teleporting.",
+                        "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_beastmaster",
@@ -684,19 +744,23 @@
         "eventtags": {},
         "name": "Beast Master",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "At the start of every combat, summon a great beast"
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_greatbeast"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": " in range 2, a trained animal companion. This summon persists even if you’re defeated."
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of every combat, summon a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_greatbeast"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "in range 2, a trained animal companion. This summon persists even if you’re defeated."
+                    }
+                ]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_pathoftheaesi",
@@ -724,9 +788,9 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Your abilities made from stealth ignore cover, and deal bonus damage.",
-                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "cover", "id": "gl_cover"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_greenkenning",
@@ -739,15 +803,17 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "You and your summons ignore all movement penalties from terrain. Any time you grant a dash, it also gains this benefit.",
-                "glossary": [{"val": "dash", "id": "gl_dash"}]
+                "glossary": [{"val": "summons", "id": "gl_summon"}, {"val": "dash", "id": "gl_dash"}]
             }
-                        ]
+        ]
     },
     {
         "id": "tr_deepstealth",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Deep Stealth",
         "description":  [
@@ -870,6 +936,7 @@
         "type": "Trait",
         "source": "core",
         "tags": { 
+            "chapter": 3,
             "action": 2,
             "Use Per Expedition": 1
         },
@@ -948,6 +1015,7 @@
         "type": "Trait",
         "source": "core",
         "tags": { 
+            "chapter": 3,
             "action": 2,
             "Use Per Expedition": 1
         },
@@ -1029,6 +1097,7 @@
         "type": "Trait",
         "source": "core",
         "tags": { 
+            "chapter": 3,
             "action": 1,
             "Use Per Expedition": 1
         },
@@ -1119,6 +1188,7 @@
         "type": "Trait",
         "source": "core",
         "tags": { 
+            "chapter": 3,
             "action": 2,
             "Use Per Expedition": 1
         },
@@ -1217,7 +1287,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "At the start of round 5, become suffused with immortal flame. Gain defiance at the start of each of your turns, and when you would take a wound, gamble. On a 4+, ignore it. If this is your last wound, this roll becomes a 2+ instead.",
-                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+                "glossary": [{"val": "defiance", "id": "gl_defiance"}, {"val": "gamble", "id": "gl_gamble"}]
             }
                         ]
     },
@@ -1234,9 +1304,9 @@
                 "content": "Comeback:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Your threshold to critical hit becomes 18+, and your threshold to exceed becomes 13+. If you’re at 1 hp, these thresholds are reduced to 15+ and 10+."
-                }],
-                "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "critical hit", "id": "gl_criticalhit"}, {"val": "exceed", "id": "gl_exceed"}]
+                                    "content": "Your threshold to critical hit becomes 18+, and your threshold to exceed becomes 13+. If you’re at 1 hp, these thresholds are reduced to 15+ and 10+.",
+                                    "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "critical hit", "id": "gl_criticalhit"}, {"val": "exceed", "id": "gl_exceed"}]
+                }]
             }
                         ]
     },
@@ -1244,14 +1314,16 @@
         "id": "tr_brightsoul",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Bright Soul",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "If you are defeated, you can choose to burn off all your aether to cause a massive Burst 2 (self) explosion area effect, dealing 4 piercing damage, then 4 piercing damage a number of times again to all characters inside equal to the amount of aether you burned.",
-                "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+                "glossary": [{"val": "Burst 2", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
             }
                         ]
     },
@@ -1324,7 +1396,9 @@
         "id": "tr_stoneswim",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Stoneswim",
         "description":  [
@@ -1341,7 +1415,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Stoneswim",
+        "name": "Aether Deflection",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
@@ -1359,11 +1433,12 @@
                                     "content": "Effect:",
                                     "subcontent": [{
                                                         "tags": {"desc_type" : "desc"},
-                                                        "content": "Gain resistance against damage from that ability. You only have one use of this interrupt per combat. However, you can spend 2 Aether any time to regain it."
+                                                        "content": "Gain resistance against damage from that ability. You only have one use of this interrupt per combat. However, you can spend 2 Aether any time to regain it.",
+                                                        "glossary": [{"val": "resistance", "id": "gl_resistance"}]
                                                 }]
                                 }
                 ],
-                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "resistance", "id": "gl_resistance"}]
+                "glossary": [{"val": "Interrupt 1", "id": "gl_interrupt"}]
             }
         ]
     },
@@ -1418,7 +1493,9 @@
         "id": "tr_greatwindriding",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Great Wind Riding",
         "description":  [
@@ -1439,7 +1516,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You have a bound elemental. At the start of any combat, summon it in range 3",
+                "content": "You have a bound elemental. At the start of any combat, summon it in range 3.",
                 "glossary": [{"val": "summon", "id": "gl_summon"}]
             },
             {
@@ -1497,7 +1574,9 @@
         "id": "tr_whirlgang",
         "type": "Trait",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "chapter": 3
+        },
         "eventtags": {},
         "name": "Whirlgang",
         "description":  [

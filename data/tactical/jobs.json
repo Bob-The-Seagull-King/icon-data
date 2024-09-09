@@ -332,7 +332,8 @@
                         "content": "sm_shadow"
                     },
                     {   "tags": {"desc_type" : "desc"},
-                        "content": "create dangerous zones for foes and can grant stealth to allies. Shades do more damage to characters standing in adverse terrain, which includes shadows! They can also swap with these shadows for additional mobility."
+                        "content": "s create dangerous zones for foes and can grant stealth to allies. Shades do more damage to characters standing in adverse terrain, which includes shadows! They can also swap with these shadows for additional mobility.",
+                        "glossary": [{"val": "stealth", "id": "gl_stealth"}]
                     }
                 ]
             },
@@ -534,7 +535,7 @@
                 },
                 {
                     "tags": {"desc_type" : "desc"},
-                    "content": " after being activated, which present obstacles for foes and blessings for allies. Some of the harvester’s talents also allow them to tap into the powers of life and death, gaining more power if the harvester or their targets are at low health.",
+                    "content": "after being activated, which present obstacles for foes and blessings for allies. Some of the harvester’s talents also allow them to tap into the powers of life and death, gaining more power if the harvester or their targets are at low health.",
                     "glossary": [{"val": "low health", "id": "gl_bloodied"}]
                 }]
             },
@@ -610,7 +611,7 @@
         "name": "Seer",
         "subtitle": "Fortune Teller and Master of Fate",
         "traits": ["tr_thewheeloffate", "tr_skein", "tr_foretell", "tr_bendfate", "tr_karma"],
-        "addons": [],
+        "addons": ["ad_thegreatwheel"],
         "summons": ["sm_wildcard"],
         "blurb": [
             {
@@ -705,8 +706,7 @@
         "tags": {
             "Charge": true,
             "Objects": true,
-            "Terrain": true,
-            "Aftershocks": true
+            "Terrain": true
         },
         "eventtags": {},
         "class_id": "cl_wright",
@@ -732,10 +732,22 @@
             }
         ],
         "playstyle": [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Geomancers are masters of shaping the battlefield and inflicting slow, hard hitting destruction. Geomancers gain a lot of benefits from charge effects and are able to create and modify a great number of objects and terrain. Their aftershocks are free, high damage areas that can be easy to avoid - but trapping enemies with terrain or the help of allies can help them land.",
-                "glossary": [{"val": "charge", "id": "gl_charge"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Geomancers are masters of shaping the battlefield and inflicting slow, hard hitting destruction. Geomancers gain a lot of benefits from charge effects and are able to create and modify a great number of objects and terrain. Their",
+                    "glossary": [{"val": "charge", "id": "gl_charge"}]
+                },
+                {
+                    "tags": {"desc_type" : "texttrait"},
+                    "content": "tr_aftershock"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "are free, high damage areas that can be easy to avoid - but trapping enemies with terrain or the help of allies can help them land."
+                }]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
@@ -806,7 +818,7 @@
         "type": "Job",
         "source": "core",
         "tags": {
-            "Terrain Effects": true,
+            "Terrain": true,
             "Summons": true,
             "Fly": true,
             "Collide": true
@@ -835,16 +847,39 @@
             }
         ],
         "playstyle": [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Stormbenders are seafaring masters of battlefield terrain effects, deal more damage to characters in those effects, and can even use their selkie summon to carry foes into these effects, or carry allies out of them. Since storm benders fly inside their own terrain, they can ignore its adverse effects, and use it to travel over other adverse terrain and enemies.",
-                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "fly", "id": "gl_flying"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Stormbenders are seafaring masters of battlefield terrain effects, deal more damage to characters in those effects, and can even use their"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_selkie"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "summon to carry foes into these effects, or carry allies out of them. Since storm benders fly inside their own terrain, they can ignore its adverse effects, and use it to travel over other adverse terrain and enemies.",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "fly", "id": "gl_flying"}]
+                    }
+                ]
             },
-            { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "It’s other summons, salt sprites, are perfect combos with collide effects and can help move around allies. With setup, a storm bender can move allies around the entire map, and easily send enemies hurtling into dangerous terrain or pits.",
-                "glossary": [{"val": "summons", "id": "gl_summon"}, {"val": "collide", "id": "gl_collide"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "pits", "id": "gl_pit"}]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It’s other summons,"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_saltsprite"
+                    },
+                    {   "tags": {"desc_type" : "desc"},
+                        "content": "are perfect combos with collide effects and can help move around allies. With setup, a storm bender can move allies around the entire map, and easily send enemies hurtling into dangerous terrain or pits.",
+                        "glossary": [{"val": "summons", "id": "gl_summon"}, {"val": "collide", "id": "gl_collide"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "pits", "id": "gl_pit"}]
+                    }
+                ]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {

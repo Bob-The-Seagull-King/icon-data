@@ -241,19 +241,22 @@
         "eventtags": {},
         "name": "Ultima Ecstasy",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Summon shadows"
-            },
-            {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_shadow"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": " adjacent to all allies."
-            }
-                        ]
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "s adjacent to all allies."
+                    }]
+            }]
     },
     {
         "id": "ul_ultimalycanthropy",
@@ -351,9 +354,9 @@
                 "content": "Special Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "You can pay the resolve, aether, and action cost of this spell with your entire life force, dying after this action resolves, obliterating your body, and scattering your soul. If you do, it deals 999 divine damage instead."
-                }],
-                "glossary": [{"val": "divine", "id": "gl_divine"}]
+                                    "content": "You can pay the resolve, aether, and action cost of this spell with your entire life force, dying after this action resolves, obliterating your body, and scattering your soul. If you do, it deals 999 divine damage instead.",
+                                    "glossary": [{"val": "divine", "id": "gl_divine"}]
+                }]
             }
                         ]
     },
@@ -387,9 +390,9 @@
                 "content": "Area Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "After this ability resolves, scathing divine lightning hits every quarter of the map but one of your choice. Characters within take 2[D]+fray Divine damage."
-                }],
-                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "Divine", "id": "gl_divine"}]
+                                    "content": "After this ability resolves, scathing divine lightning hits every quarter of the map but one of your choice. Characters within take 2[D]+fray Divine damage.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "Divine", "id": "gl_divine"}]
+                }]
             }
                         ]
     },

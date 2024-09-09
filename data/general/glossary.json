@@ -1143,47 +1143,43 @@
         "name": "Cover",
         "description":  [{
             "tags": {"desc_type" : "desc"},
-            "content": "If a character has cover from an ability, it halves all damage from that ability.",
-            "subcontent":   []
-        },
-        {
-            "tags": {"desc_type" : "desc"},
             "content": "(pg. 89) Characters gain resistance to damage from ranged abilities while they are in cover, halving damage.",
             "subcontent":   []
         },
         {
             "tags": {"desc_type" : "desc"},
-            "content": "(pg.92) Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:",
-            "subcontent":   [{
-                "tags": {"desc_type" : "desc"},
-                "content": "Characters in cover take half damage.",
-                "subcontent":   []
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.",
-                "subcontent":   []
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Characters don’t grant cover by default.",
-                "subcontent":   []
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.",
-                "subcontent":   []
-            },
-            {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.",
-                "subcontent":   []
-            },
-            {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Characters cannot benefit from cover against adjacent foes.",
-                "subcontent":   []
-            }]
+            "content": "(pg.92) Abilities deal half damage to characters in cover. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "- Characters in cover take half damage.",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "- Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "- Characters don’t grant cover by default.",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "- A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "- Characters on a higher elevation ignore cover against all characters on a lower elevation.",
+            "subcontent":   []
+        },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "- Characters cannot benefit from cover against adjacent foes.",
+            "subcontent":   []
         }]
     }
 ]

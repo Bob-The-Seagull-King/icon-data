@@ -5,7 +5,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true
+            "Intangible": true
         },
         "eventtags": {},
         "name": "Bomb",
@@ -39,7 +39,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true,
+            "Intangible": true,
             "Flying": true,
             "Skirmisher": true
         },
@@ -78,7 +78,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true
+            "Intangible": true
         },
         "eventtags": {},
         "name": "Shadow",
@@ -88,21 +88,26 @@
                 "content": "Summon Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "The shadow can share space other characters, and has different effects on foes and allies:",
-                                    "subcontent":   [{
-                                                        "tags": {"desc_type" : "desc"},
-                                                        "content": "If a foe enters the shadow’s space for any reason or starts their turn there, it it consumed, dealing 2 damage to them, disappearing and turning into a shadow cloud."
-                                                    },
-                                                    {
-                                                        "tags": {"desc_type" : "textsummon"},
-                                                        "content": "sm_shadowcloud"
-                                                    },            
-                                                    {
-                                                        "tags": {"desc_type" : "desc"},
-                                                        "content": "If a yourself or an ally enters the shadow’s space, it is consumed. It disappears and grants them stealth."
-                                                }],
-                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}]
-                                }]
+                                    "content": "The shadow can share space other characters, and has different effects on foes and allies:"
+                }]
+            },
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "• If a foe enters the shadow’s space for any reason or starts their turn there, it it consumed, dealing 2 damage to them, disappearing and turning into a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadowcloud"
+                    }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• If a yourself or an ally enters the shadow’s space, it is consumed. It disappears and grants them stealth.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
             }
         ],
         "blurb":  [{
@@ -125,7 +130,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Difficult terrain. While inside this terrain space, characters are blinded+. You are immune to these effects.",
-                "glossary": [{"val": "Difficult terrain", "id": "gl_difficultterrain"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+                "glossary": [{"val": "Difficult terrain", "id": "gl_difficultterrain"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}, {"val": "immune", "id": "gl_immune"}]
             }
         ],
         "blurb":  [],
@@ -137,8 +142,8 @@
         "type": "Summon",
         "source": "core",
         "tags": {
-            "Size": 1,
-            "Intangiible": true
+            "size": 1,
+            "Intangible": true
         },
         "eventtags": {},
         "name": "Beast",
@@ -174,8 +179,8 @@
         "type": "Summon",
         "source": "core",
         "tags": {
-            "Size": 1,
-            "Intangiible": true
+            "size": 1,
+            "Intangible": true
         },
         "eventtags": {},
         "name": "Great Beast",
@@ -186,7 +191,7 @@
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "Once during your turn, your beast can dash up to 2 spaces, then may deal 2 damage to an adjacent foe and shove 1.",
-                                    "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove", "id": "gl_shove"}]
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove 1", "id": "gl_shove"}]
                                 }]
             },
             {
@@ -211,7 +216,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true
+            "Intangible": true
         },
         "eventtags": {},
         "name": "Thrall",
@@ -266,7 +271,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true,
+            "Intangible": true,
             "Immobile": true
         },
         "eventtags": {},
@@ -292,7 +297,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true
+            "Intangible": true
         },
         "eventtags": {},
         "name": "Wild Card",
@@ -337,7 +342,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true,
+            "Intangible": true,
             "Immobile": true
         },
         "eventtags": {},
@@ -358,7 +363,7 @@
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "When a character is shoved into the sprite’s area, it triggers collide effects and awakens it. Allies shoved into its space can fly 2. Foes are shoved 2 in any direction. Then, remove the sprite.",
-                                    "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "collide", "id": "gl_collide"}, {"val": "fly", "id": "gl_flying"}]
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "collide", "id": "gl_collide"}, {"val": "fly 2", "id": "gl_flying"}]
                                 }]
             }
         ],
@@ -375,7 +380,7 @@
         "source": "core",
         "tags": {
             "size": 1,
-            "intangible": true,
+            "Intangible": true,
             "Flying": true
         },
         "eventtags": {},
@@ -395,7 +400,7 @@
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "The Selkie may fly 3 at the end of your turn. Any character standing in the Selfie’s space when it moves is removed from the battlefield, then placed back in its space, or adjacent to it if that space is occupied.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                    "glossary": [{"val": "fly 3", "id": "gl_flying"}]
                                 }]
             }
         ],
