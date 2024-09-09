@@ -1,20 +1,63 @@
 [
     {
-        "id": "tb_",
+        "id": "tb_saddleborn",
         "type": "Table",
         "source": "core",
         "tags": {},
         "eventtags": {},
-        "colnames": [],
-        "description": [],
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
         "items": [
             {
-                "id": "ti_",
+                "id": "ti_saddlebornchapter1",
                 "type": "TableItem",
                 "source": "core",
                 "tags": {},
                 "eventtags": {},
-                "description": []
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Animals or Vehicles"
+                }]
+            },
+            {
+                "id": "ti_saddlebornchapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Monsters"
+                }]
+            },
+            {
+                "id": "ti_saddlebornchapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "An entire herd of animals or monsters."
+                }]
             }
         ]
     }

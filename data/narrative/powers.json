@@ -1,0 +1,26 @@
+[
+    {
+        "id": "pw_saddleborn",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Saddleborn",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain a Knack for riding or piloting:",
+                            "glossary": [{"val": "Knack", "id": "gl_knack"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_saddleborn"
+                        }
+                    ]
+    }
+]

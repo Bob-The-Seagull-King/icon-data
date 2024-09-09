@@ -1181,5 +1181,20 @@
             "content": "- Characters cannot benefit from cover against adjacent foes.",
             "subcontent":   []
         }]
+    },
+    {
+        "id": "gl_knack",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "narrative"
+        },
+        "eventtags": {},
+        "name": "Knack",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Gain +1 Boon (+1D6) to a roll.",
+            "subcontent":   []
+        }]
     }
 ]
