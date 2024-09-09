@@ -169,7 +169,7 @@
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
                                                 "content": "Ally gains Counter and Sturdy, but cannot gain or benefit from stealth or evasion until the start of their next turn.",
-                                                "glossary": [{"val": "Counter", "id": "gl_counter"}, {"val": "Sturdy", "id": "gl_sturdy"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "Evasion", "id": "gl_evasion"}]
+                                                "glossary": [{"val": "Counter", "id": "gl_counter"}, {"val": "Sturdy", "id": "gl_sturdy"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "evasion", "id": "gl_evasion"}]
                                             }]
                         },
                         {

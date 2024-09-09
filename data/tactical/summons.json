@@ -316,8 +316,7 @@
                 "content": "•",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Wild cards can be triggered by other wild cards.",
-                                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                    "content": "Wild cards can be triggered by other wild cards."
                                 }]
             },
             {

@@ -373,36 +373,36 @@
                 "content": "Parzival:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "subeffect"},
-                                    "content": "An allied character gains flying and cover from all directions."
-                                }],
-                "glossary": [{"val": "flying", "id": "gl_flying"}, {"val": "cover", "id": "gl_cover"}]
+                                    "content": "An allied character gains flying and cover from all directions.",
+                                    "glossary": [{"val": "flying", "id": "gl_flying"}, {"val": "cover", "id": "gl_cover"}]
+                                }]
             },
             {
                 "tags": {"desc_type" : "effect"},
                 "content": "Leon:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "subeffect"},
-                                    "content": "An allied character gains dodge and the ability to move diagonally."
-                                }],
-                "glossary": [{"val": "dodge", "id": "gl_dodge"}]
+                                    "content": "An allied character gains dodge and the ability to move diagonally.",
+                                    "glossary": [{"val": "dodge", "id": "gl_dodge"}]
+                                }]
             },
             {
                 "tags": {"desc_type" : "effect"},
                 "content": "Angrboda:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "subeffect"},
-                                    "content": "An allied character gains sturdy, and their attacks gain true strike and shove 1."
-                                }],
-                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}, {"val": "true strike", "id": "gl_truestrike"}, {"val": "shove", "id": "gl_shove"}]
+                                    "content": "An allied character gains sturdy, and their attacks gain true strike and shove 1.",
+                                    "glossary": [{"val": "sturdy", "id": "gl_sturdy"}, {"val": "true strike", "id": "gl_truestrike"}, {"val": "shove", "id": "gl_shove"}]
+                                }]
             },
             {
                 "tags": {"desc_type" : "effect"},
                 "content": "Farnese:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "subeffect"},
-                                    "content": "An ally gains 1 blessing and +1 boon on all attacks and saves."
-                                }],
-                "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+                                    "content": "An ally gains 1 blessing and +1 boon on all attacks and saves.",
+                                    "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+                                }]
             }
                         ]
     },
@@ -427,9 +427,9 @@
                 "content": "Summon:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "You slash an adjacent foe with your weapon, knocking their soul out of their body. Draw a line 4 area effect from your foe facing directly away from you and summon the soul in the last available space."
-                }],
-                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                                    "content": "You slash an adjacent foe with your weapon, knocking their soul out of their body. Draw a line 4 area effect from your foe facing directly away from you and summon the soul in the last available space.",
+                                    "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                }]
             },
             {
                 "tags": {"desc_type" : "textsummon"},
@@ -468,9 +468,9 @@
                                     "content": "On Hit:",
                                     "subcontent":   [{
                                                         "tags": {"desc_type" : "desc"},
-                                                        "content": "[D] + fray, three times."
-                                                    }],
-                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                        "content": "[D] + fray, three times.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
                                 },
                                 {
                                     "tags": {"desc_type": "subeffect"},
@@ -486,18 +486,18 @@
                 "content": "Exceed:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Deal [D] + fray two more times."
-                                }],
-                "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                    "content": "Deal [D] + fray two more times.",
+                                    "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
             },
             {
                 "tags": {"desc_type" : "effect"},
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "You may teleport adjacent to the target before the attack if they’re in range 3. Every ally in range 3 of the target can also teleport adjacent to your target, or as close as possible. Your target then takes 2 additional divine damage, once, per adjacent ally."
-                }],
-                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "divine", "id": "gl_divine"}]
+                                    "content": "You may teleport adjacent to the target before the attack if they’re in range 3. Every ally in range 3 of the target can also teleport adjacent to your target, or as close as possible. Your target then takes 2 additional divine damage, once, per adjacent ally.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "divine", "id": "gl_divine"}]
+                }]
             }
                         ]
     },
@@ -523,9 +523,9 @@
                 "content": "Aura:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Until the start of your next turn, you gain aura 2. Every d6 any character in the aura rolls for boons, curses, or gambling is either a 6 or a 1 (you choose)."
-                }],
-                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "boons", "id": "gl_boon"}, {"val": "curses", "id": "gl_curse"}, {"val": "gambling", "id": "gl_gamble"}]
+                                    "content": "Until the start of your next turn, you gain aura 2. Every d6 any character in the aura rolls for boons, curses, or gambling is either a 6 or a 1 (you choose).",
+                                    "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "boons", "id": "gl_boon"}, {"val": "curses", "id": "gl_curse"}, {"val": "gambling", "id": "gl_gamble"}]
+                }]
             }
                         ]
     },

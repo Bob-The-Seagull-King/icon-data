@@ -408,7 +408,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Warden’s Limit Break, Lycanthropy, grants a powerful suite of benefits to their dash and allows your entire team to become much more mobile.",
-                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "finishing blows", "id": "gl_finishingblow"}, {"val": "charge", "id": "gl_charge"}, {"val": "dashes", "id": "gl_dash"}]
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
             }
         ],
         "limitbreak": "lb_lycanthropy",
@@ -631,10 +631,23 @@
                 "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "AoE", "id": "gl_areaeffect"}]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
-            {
+            {   
                 "tags": {"desc_type" : "desc"},
-                "content": "They benefit a lot from set up with their wild cards, which can extend these AoEs (and those of their allies), to hit massive areas, potentially creating huge chains. Wild cards can be used to extend the areas of any ability, not just attacks, so you can get creative with them.",
-                "glossary": [{"val": "AoEs", "id": "gl_areaeffect"}]
+                "content": "",
+                "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "They benefit a lot from set up with their"
+                },
+                {
+                    "tags": {"desc_type" : "textsummon"},
+                    "content": "sm_wildcard"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "which can extend these AoEs (and those of their allies), to hit massive areas, potentially creating huge chains. Wild cards can be used to extend the areas of any ability, not just attacks, so you can get creative with them.",
+                    "glossary": [{"val": "AoEs", "id": "gl_areaeffect"}]
+                }]
             },
             { "tags": {"desc_type" : "gap"}, "content": "", "glossary": [] },
             {
