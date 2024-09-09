@@ -4,6 +4,11 @@
         "type": "Job",
         "source": "core",
         "tags": {
+            "Armour": true,
+            "Weakened": true,
+            "Slashed": true,
+            "Rampart": true,
+            "Vigilance": true
         },
         "eventtags": {},
         "name": "Stalwart",
@@ -60,6 +65,10 @@
         "type": "Job",
         "source": "core",
         "tags": {
+            "Dodge": true,
+            "Blinded": true,
+            "Dazed": true,
+            "Evasion": true
         },
         "eventtags": {},
         "name": "Vagabond",
@@ -116,6 +125,9 @@
         "type": "Job",
         "source": "core",
         "tags": {
+            "Pacified": true,
+            "Sealed": true,
+            "Blessing": true
         },
         "eventtags": {},
         "name": "Mendicant",
@@ -172,6 +184,9 @@
         "type": "Job",
         "source": "core",
         "tags": {
+            "Shattered": true,
+            "Vulnerable": true,
+            "Aether": true
         },
         "eventtags": {},
         "name": "Wright",
