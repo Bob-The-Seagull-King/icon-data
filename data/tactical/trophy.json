@@ -1,0 +1,19 @@
+[
+    {
+        "id": "tp_frostenchantment",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Frost Enchantment",
+        "category": "general",
+        "uses" : 3,
+        "usetype": "combat",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Use this enchantment at the start of combat to wreathe your weapon in shimmering frost. Any time you attack a character this combat, you create difficult terrain under them.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }]
+    }
+]

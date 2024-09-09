@@ -10,6 +10,7 @@ import traitsdata from '../data/tactical/traits.json'
 import jobsdata from '../data/tactical/jobs.json'
 import classesdata from '../data/tactical/classes.json'
 import relicsdata from '../data/tactical/relics.json'
+import trophydata from '../data/tactical/trophy.json'
 
 import glossarydata from '../data/general/glossary.json'
 import tabledata from '../data/general/table.json'
@@ -99,6 +100,9 @@ class DataResponder {
             }
             case "relics": {
                 return relicsdata.concat(data)
+            }
+            case "trophies": {
+                return trophydata.concat(data)
             }
             case "glossary": {
                 return glossarydata.concat(data)
