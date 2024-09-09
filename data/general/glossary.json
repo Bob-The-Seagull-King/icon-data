@@ -916,21 +916,6 @@
         }]
     },
     {
-        "id": "gl_gamble",
-        "type": "Glossary",
-        "source": "core",
-        "tags": {
-            "category" : "general"
-        },
-        "eventtags": {},
-        "name": "Gamble",
-        "description":  [{
-            "tags": {"desc_type" : "desc"},
-            "content": "Roll 1d6, then trigger an effect on a certain result or higher.",
-            "subcontent":   []
-        }]
-    },
-    {
         "id": "gl_summon",
         "type": "Glossary",
         "source": "core",
@@ -1067,8 +1052,7 @@
         "description":  [{
             "tags": {"desc_type" : "desc"},
             "content": "Ignores cover and aetherwall (Wrights gain resistance against all abilities from characters that are outside of range 2 of them).",
-            "glossary": [{"val": "cover", "id": "gl_cover"}, {"val": "aetherwall", "id": "gl_aetherwall"}],
-            "subcontent":   []
+            "glossary": [{"val": "cover", "id": "gl_cover"}]
         }]
     },
     {
