@@ -130,7 +130,7 @@
         ],
         "blurb":  [],
         "colour": "cl_vagabond",
-        "limit": null
+        "limit": 0
     },
     {
         "id": "sm_beast",
@@ -258,7 +258,7 @@
             "content": "When a thrall or plant is created, it can be summoned in any free space in range 2 unless a different range is listed."
         }],
         "colour": "cl_mendicant",
-        "limit": null
+        "limit": 0
     },
     {
         "id": "sm_severedsoul",
@@ -329,7 +329,7 @@
             "content": "When a wild card is summoned, it can be summoned in range 2 if no other range is listed."
         }],
         "colour": "cl_mendicant",
-        "limit": null
+        "limit": 0
     },
     {
         "id": "sm_saltsprite",
