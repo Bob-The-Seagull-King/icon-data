@@ -4,6 +4,8 @@
         "type": "CampItem",
         "source": "core",
         "tags": {
+            "heal": true,
+            "wounds": true
         },
         "eventtags": {},
         "name": "Elixer Stone",
