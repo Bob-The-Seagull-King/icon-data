@@ -23,6 +23,8 @@ import glossarydata from '../data/general/glossary.json'
 import tabledata from '../data/general/table.json'
 import kindata from '../data/general/kins.json'
 import culturedata from '../data/general/cultures.json'
+import campitemdata from '../data/general/campitems.json'
+import campupgradedata from '../data/general/campupgrades.json'
 // -----------------------------------------------------
 
 /**
@@ -142,6 +144,12 @@ class DataResponder {
             }
             case "cultures": {
                 return culturedata.concat(data)
+            }
+            case "campitems": {
+                return campitemdata.concat(data)
+            }
+            case "campupgrades": {
+                return campupgradedata.concat(data)
             }
             default: {
                 return data

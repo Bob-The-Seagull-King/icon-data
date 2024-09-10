@@ -1,0 +1,25 @@
+[
+    {
+        "id": "cp_elixerstone",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Elixer Stone",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This unsettling and extremely valuable blood red stone, found in the very deepest depths of the arkenruins, is condensed Dust and life essence in its purest form. When exposed to Aether, it bleeds a substance that can be condensed into elixirs that can heal wounds."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A party embarks with one elixir. A character can drink an elixir any time outside of tactical combat to heal a wound. Healing a wound also replenishes 25% hp."
+            }
+        ],
+        "upgradelist" : ["cu_elixerbrewing","cu_clarity"]
+    }
+]

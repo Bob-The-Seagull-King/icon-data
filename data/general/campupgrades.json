@@ -1,0 +1,53 @@
+[
+    {
+        "id": "cu_elixerbrewing",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Elixer Brewing",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When they camp, or during an interlude, characters can brew a new 1 elixir by spending 4 dust. A GM might offer elixir ingredients as a reward, allowing you to waive this cost."
+            }
+        ],
+        "upgradelist" : ["cu_deepelixerstone"]
+    },
+    {
+        "id": "cu_deepelixerstone",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Deep Elixer Stone",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you brew elixirs, brew two elixirs instead."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_clarity",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Clarity",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can drink an elixir to heal all strain."
+            }
+        ],
+        "upgradelist" : []
+    }
+]
