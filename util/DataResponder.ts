@@ -13,6 +13,7 @@ import relicsdata from '../data/tactical/relics.json'
 import trophydata from '../data/tactical/trophy.json'
 
 import powerdata from '../data/narrative/powers.json'
+import actiondata from '../data/narrative/actions.json'
 
 import glossarydata from '../data/general/glossary.json'
 import tabledata from '../data/general/table.json'
@@ -114,6 +115,9 @@ class DataResponder {
             }
             case "powers": {
                 return powerdata.concat(data)
+            }
+            case "actions": {
+                return actiondata.concat(data)
             }
             default: {
                 return data

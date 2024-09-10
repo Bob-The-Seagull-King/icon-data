@@ -1,0 +1,524 @@
+[
+    {
+        "id": "ac_sneak",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Sneak",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Move with stealth and silence. Perform actions without notice. Spring an ambush."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The risk and effect of Sneak actions is usually dependent on how alert the target of the action is, and what the scale of the task is."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At lower chapters, a character needs some cover or distraction to effectively do something sneaky, such as darkness or misdirection. They can probably only do it slowly. At higher chapters, they need less cover and can do it faster."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sneaking can represent using your natural skill or magical abilities that turn you invisible or unseen to the eye."
+            }
+        ],
+        "chapterone": [
+            "sneak into a camp or building",
+            "fish an item out of someone's pocket",
+            "plant something on someone",
+            "use sleight of hand to fool someone",
+            "spring an ambush on a single person"
+        ],
+        "chaptertwo": [
+            "sneak into a large or guarded location like a castle",
+            "pickpocket or ambush a whole group of people"
+        ],
+        "chapterthr": [
+            "sneak past a guarded location in broad daylight",
+            "stealth by a monster with unusual senses",
+            "steal something someone is holding while they're looking at you"
+        ]
+    },
+    {
+        "id": "ac_traverse",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Traverse",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Climb, swim, leap, fly. Run swiftly. Chase or flee. Pilot a vehicle or ride an animal."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Traverse is usually about how far and how safely a character can move in a given amount of time. It not only includes running, jumping, climbing, etc, but also teleporting and flying, something most characters can do a little of."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Adding extra complications on to a traverse roll can change the risk and effect. For example wanting to do the following may adjust risk and effect:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Move without touching the ground."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Take someone else with you."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Move up a vertical surface."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Move through thick mud, water, heavy snow, etc."
+                    }
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Overland travel might be a single roll, or might take a project or ritual (see the section below) to do something like teleport instantly using a ritual, book safe passage on an airship etc."
+            }
+        ],
+        "chapterone": [
+            "climb over a manor wall",
+            "swim a river or cross a gap",
+            "ride an animal or pilot a vehicle",
+            "move a short distance quickly (a few dozen paces)"
+        ],
+        "chaptertwo": [
+            "climb over a castle wall",
+            "swim a lake or cross a chasm",
+            "ride a monster",
+            "move a long distance (a field's length) very quickly (climbing, sprinting, jumping, teleporting, flying, etc)"
+        ],
+        "chapterthr": [
+            "run up a massive cliffside",
+            "swim a channel or cross a canyon",
+            "ride a huge monster",
+            "arrive in a nearby town almost instantly",
+            "keep up or outrun a horse or riding animal"
+        ]
+    },
+    {
+        "id": "ac_sense",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Sense",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Scan and assess a broad area or situation. Spot at a distance. Find tracks, clues, paths. Sense the presence of magic or hidden things."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you sense, you broadly survey or take in an area. You don’t get a lot of detail or specifics, but you might notice things like traps, hidden doors, magical constructs, hidden ambushes, people etc. You might notice smoke from a campfire, or dust kicked up from a caravan over the horizon."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Usually the risk and effect of sense actions is determined by how tense the situation is and also factors such as darkness, obscurity (from weather, dust, etc), and distance."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sense can also be used to detect the presence of magic or people. Powerful magic might be more risky or harder to detect. Creatures or people from higher chapters might also be much harder or even impossible to detect, depending on their skill level."
+            }
+        ],
+        "chapterone": [
+            "spot or detect traps, hidden doors, or hidden objects",
+            "look for entrances into an ancient ruin",
+            "sense an ambush",
+            "track or hunt over ground",
+            "detect magic or the presence of nearby mundane beings"
+        ],
+        "chaptertwo": [
+            "sense a master assassin",
+            "track someone through new snow or in days-old mud",
+            "detect subtle or hidden magic",
+            "spy a moving caravan hours before it arrives",
+            "predict the weather days in advance"
+        ],
+        "chapterthr": [
+            "determine the exact location of an invisible creature",
+            "track someone in a busy town by the smell of their tobacco",
+            "visualize the ambient connections of magic around you"
+        ]
+    },
+    {
+        "id": "ac_study",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Study",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Analyze something or someone in detail. Discern someone’s intentions or notice deception. Perform research. Decipher an inscription."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Study is looking at something with a more focused lens, in detail. You might not notice a hidden door well with study, but once you find it, you may be able to determine how to open it. Studying situations can help you untangle clues about what happened, and study can be used for research or academic pursuits, such as deciphering text, recalling ancient monster lore, or transcribing an ancient spell."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Usually it’s the qualities of what you’re studying that determine the risk and effect of studying something - as well as what’s going on at the time. Studying a monster for weaknesses while it’s chasing you might be a little risky for example."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also study living creatures to determine their emotions and intent - perhaps to see if you are being deceived. If that’s the case, their chapter usually determines the difficulty."
+            }
+        ],
+        "chapterone": [
+            "figure out how to open a door",
+            "decipher a text in a foreign language",
+            "find a path through a maze",
+            "solve a riddle",
+            "untangle a puzzle",
+            "do light detective work",
+            "determine weather the local barkeep is charging too much"
+        ],
+        "chaptertwo": [
+            "decipher an ancient text",
+            "research forbidden lore",
+            "find the weak heart scale on a wyrm",
+            "figure out where someone has been by looking at their clothing",
+            "determine whether the master thief is going to let you leave her den alive"
+        ],
+        "chapterthr": [
+            "surmise exactly what happened in a room last week from two hairs and a splotch of blood",
+            "decipher an ancient inscription by intuition alone",
+            "solve a mystery right away that would have stumped an entire team of local heroes",
+            "guess the archwyrm's riddle in one go"
+        ]
+    },
+    {
+        "id": "ac_charm",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Charm",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Sway with direct charisma, deception, or diplomacy. Call in favors. Cause distraction or misdirection."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Charm can be used when you’re trying to sway with direct appeals, charisma, diplomacy, connections, or deception. Like many other actions, Charm’s effectiveness and risk is highly depending on scale and the person or group of people you are trying to Charm."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You probably won’t be able to talk your way out of every situation, but that’s something that is depending on the tone of your game. Some people just won’t listen to reason."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Doing something that takes long term effort with Charm such as brokering peace, or a courtly romance, might be a project."
+            }
+        ],
+        "chapterone": [
+            "sway a person into aiding you",
+            "get the carvan owner to apologize to his daughter",
+            "lie to a town militia person",
+            "assume a made up identity",
+            "talk down a bandit"
+        ],
+        "chaptertwo": [
+            "sway a small crowd into aiding you or taking some action",
+            "convince the king to let you out of the dungeon",
+            "pretend to be someone well-known",
+            "talk down an assassin"
+        ],
+        "chapterthr": [
+            "sway an entire town of people into helping you",
+            "convince the king to step down from his throne, then pretend to be king for a week"
+        ]
+    },
+    {
+        "id": "ac_command",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Command",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Use force of will and presence to lead or intimidate. Give orders."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Command is when you use force of will, leadership, personality, threats, or intimidation to force someone into action. It’s more blunt than Charm and may work better or worse on different kinds of people. As with charm, the scale of the target of your action, the situation, and their nature will all affect risk and effect. Scaring off a few people trying to rob you will probably be a lot easier than scaring off a hungry monster the size of a draft horse."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also use command to lead a group of people or run an organization."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Actions like doing battle, running a city, etc may be a project."
+            }
+        ],
+        "chapterone": [
+            "effectively lead a few people into battle",
+            "intimidate someone",
+            "organize a defense",
+            "force surrender from a fleeing thief",
+            "run a small organisation such as a shop or business"
+        ],
+        "chaptertwo": [
+            "effectively lead a platoon into battle",
+            "intimidate a small group of people",
+            "organize a group of peasants into a rebellion",
+            "force an outnumbered army to retreat",
+            "make a hardened killer hesitate",
+            "run a large organisation"
+        ],
+        "chapterthr": [
+            "effectively lead an army into battle",
+            "start a revolution",
+            "force a large number of soldiers to surrender",
+            "run or rule a small city"
+        ]
+    },
+    {
+        "id": "ac_tinker",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Tinker",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Interact with, understand, or use alchemy, etheric constructs, or technology. Fix, pick, or break locks or mechanisms. Construct, deconstruct, or alter technology."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Tinker allows you to create, alter, or disassemble devices and constructs, whether magical or mundane."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Usually the risk and effect of a tinker action are highly dependent on the size and goal of the creation, the availability of tools, devices, workshop spaces, etc. You can often think about what ‘chapter’ a tinkering device would be from and extrapolate from there. Tinker also allows alteration of existing devices, which could involve something like picking a lock."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Many tinker actions take the form of a project or ritual."
+            }
+        ],
+        "chapterone": [
+            "uncomplicated or relatively simple devices and constructs",
+            "a simple lock",
+            "a spell that sets off an alarm",
+            "a clockwork automata",
+            "a pair of magnification goggles",
+            "a clock",
+            "a small bomb"
+        ],
+        "chaptertwo": [
+            "complicated magical or mundane devices and constructs",
+            "a magically sealed door",
+            "an arkentech automata",
+            "aetherically powered lights",
+            "an airship",
+            "a power gauntlet",
+            "a spell that produces toxic gas"
+        ],
+        "chapterthr": [
+            "very complicated or legendary devices or constructs",
+            "a suit of arkentech power armour",
+            "an ancient arkentech golem",
+            "a force shield",
+            "a sealed habitat"
+        ]
+    },
+    {
+        "id": "ac_excel",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Excel",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Act with concentrated precision or skill. Fire a ranged weapon. Hit a tiny target at range. Catch a falling coin. Balance on a narrow wire. Squeeze through a tight space."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Excel is the counterpart to tinker and allows you to use your manual dexterity and agility to perform feats of skill and precision."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Excel is most often affected by the potential risks. Balancing on a wire may be hard, but not risky unless there’s a fifty foot drop underneath."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Excel can also be used to perform feats with or simply shoot ranged weaponry such as gun, bows, or bolts of energy from your staff - whatever your character has on hand."
+            }
+        ],
+        "chapterone": [
+            "make a tough shot",
+            "squeeze into a tight space",
+            "balance on a wire",
+            "do a backflip",
+            "disarm someone",
+            "cut someone's purse strings"
+        ],
+        "chaptertwo": [
+            "shoot a coin out of someone's hand at fifty paces",
+            "balance on a moving wagon while juggling",
+            "throw a knife through an arrow slit"
+        ],
+        "chapterthr": [
+            "make a nearly impossible shot",
+            "balance on the tip of a sword",
+            "hit a wyrm with an arrow while it's flying at you and you're hanging off the side of an airship, upside down"
+        ]
+    },
+    {
+        "id": "ac_smash",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Smash",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Overwhelm with physical or magical force. Swing a melee weapon. Throw a punch or blast down a door with a magic spell. Wreck an object or obstacle."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Smash is when you use violence or direct force to accomplish your goals. This could be physical strength or magical prowess. Shooting a fireball at a door or kicking it down accomplish pretty much the same thing, after all."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The risk and effect of smash are usually depending on your target and your own capabilities."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also use Smash to swing a melee weapon, whether that’s a giant hammer or a sword made of fire."
+            }
+        ],
+        "chapterone": [
+            "break a gate",
+            "kick a bandit in the face",
+            "throw a punch",
+            "blow up a door",
+            "throw a barrel"
+        ],
+        "chaptertwo": [
+            "snap a heavy iron chain",
+            "throw back ten people with one blow",
+            "smash a boulder",
+            "blow right through a stone wall"
+        ],
+        "chapterthr": [
+            "blow a hole through a castle wall",
+            "use your knuckles as a battering ram to smash a castle gate",
+            "fight a small platoon by yourself",
+            "split a cliff face",
+            "burn away a small forest"
+        ]
+    },
+    {
+        "id": "ac_endure",
+        "type": "Action",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Endure",
+        "laconic": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Push yourself to your limits. Power through pain, cold, heat, or harsh environments. Lift or drag something enormously heavy."
+            }
+        ],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Endure is the counterpart of smash, for when you use your ability to withstand or exert tremendous forces. It could be not just physical strength, but magical or semi-magical fortitude as well, brought on by training, spells, etc."
+            }
+        ],
+        "chapterone": [
+            "hold up a portcullis or push aside a heavy stone",
+            "go for a long time without food or water",
+            "hold your breath",
+            "push on into extreme heat or cold",
+            "run through the night",
+            "win a drinking contest",
+            "withstand pain"
+        ],
+        "chaptertwo": [
+            "lift an ox into the air or hold a castle gate open",
+            "eat something poisonous",
+            "go without sleep, food, or rest for a few days",
+            "withstand tremendous pain"
+        ],
+        "chapterthr": [
+            "wade through fire or ice",
+            "lift a three story leggio caravan",
+            "carry an entire ancient tree trunk",
+            "force open a sealed stone door that has been sealed for a thousand years",
+            "out-drink a Jotunn"
+        ]
+    }
+]
