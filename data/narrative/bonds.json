@@ -1,0 +1,30 @@
+[
+    {
+        "id": "bd_pathfinder",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Pathfinder",
+        "powers": ["pw_saddleborn"],
+        "secondwind": "sw_pathfinder",
+        "speciability": "sa_pathfinder",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_highlandkit","gr_lowlandkid","gr_extremekit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Discover new things, meet new people, learn new things. The Pathfinder is always looking to horizon. They’re the first to clamber up the mountain, leap across the river, or dash down the slope. The road is their friend and they can’t wait to see what’s around the corner."
+            }
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "id": "sa_pathfinder",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Leading a team action only costs 1 effort for you."
+            }
+                        ]
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "id": "sw_pathfinder",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Regain 1 effort when you enter a new scene. This ability can activate any number of times a session."
+            }
+                        ]
+    }
+]

@@ -1,0 +1,76 @@
+[
+    {
+        "id": "gr_adventurerskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Adventurer's Kit",
+        "items": [
+            "lantern",
+            "pack",
+            "bedroll",
+            "rope",
+            "flint and tinder",
+            "journal",
+            "rations",
+            "cooking pot",
+            "knives",
+            "canvas tent"
+        ]
+    },
+    {
+        "id": "gr_highlandkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Highland Kit",
+        "items": [
+            "pitons",
+            "climbing harness",
+            "hooks",
+            "zipline",
+            "cold weather outfit",
+            "preserved rations",
+            "thermos",
+            "foldable canvas glider (one person)"
+        ]
+    },
+    {
+        "id": "gr_lowlandkid",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Lowland Kit",
+        "items": [
+            "arkentech compass",
+            "warm weather outfit",
+            "shovel",
+            "local maps",
+            "reliable one/two person mount (horse, dog, arkentech heliobike)"
+        ]
+    },
+    {
+        "id": "gr_extremekit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Extreme Kit",
+        "items": [
+            "uncomfortable (safe) hazard gear",
+            "blight testing strips and curatives",
+            "diving suit",
+            "foldable kayak",
+            "arkentech rebreather (1 hour of clear air for water/gas)",
+            "rebreather refill",
+            "rebreather refill"
+        ]
+    }
+]
