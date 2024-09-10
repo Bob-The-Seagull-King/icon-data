@@ -7,9 +7,9 @@
         },
         "eventtags": {},
         "name": "Pathfinder",
-        "powers": ["pw_saddleborn"],
+        "actions": ["ac_traverse","ac_sense"],
         "secondwind": "sw_pathfinder",
-        "speciability": "sa_pathfinder",
+        "specialability": "sa_pathfinder",
         "gear": [
             {
                 "choose": 0,
@@ -25,6 +25,13 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "Discover new things, meet new people, learn new things. The Pathfinder is always looking to horizon. They’re the first to clamber up the mountain, leap across the river, or dash down the slope. The road is their friend and they can’t wait to see what’s around the corner."
             }
-        ]
+        ],
+        "ideals": [
+            "I addressed challenges with curiosity, exploration, or understanding.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I saw, heard, or tasted something truly unique."
+        ],
+        "effort": 3,
+        "strain": 5
     }
 ]

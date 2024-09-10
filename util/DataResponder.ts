@@ -14,6 +14,10 @@ import trophydata from '../data/tactical/trophy.json'
 
 import powerdata from '../data/narrative/powers.json'
 import actiondata from '../data/narrative/actions.json'
+import bonddata from '../data/narrative/bonds.json'
+import geardata from '../data/narrative/gear.json'
+import secondwinddata from '../data/narrative/secondwind.json'
+import specialabilitydata from '../data/narrative/specialability.json'
 
 import glossarydata from '../data/general/glossary.json'
 import tabledata from '../data/general/table.json'
@@ -118,6 +122,18 @@ class DataResponder {
             }
             case "actions": {
                 return actiondata.concat(data)
+            }
+            case "bonds": {
+                return bonddata.concat(data)
+            }
+            case "gears": {
+                return geardata.concat(data)
+            }
+            case "secondwinds": {
+                return secondwinddata.concat(data)
+            }
+            case "specialabilities": {
+                return specialabilitydata.concat(data)
             }
             default: {
                 return data
