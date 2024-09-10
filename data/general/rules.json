@@ -1,0 +1,97 @@
+[
+    {
+        "id": "rs_camp",
+        "type": "Ruleset",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Camp",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Adventurers in Arden Eld often get around on enormous aetherships, traveling wagons, vehicles, or caravans. They bring with them all kinds of supplies: portable shrines, elixir cauldrons, cooking pots, vittles, and lengths of rope for traversing caverns. The camp can be any of these things. It’s representative of the gear, supplies, and transportation that the characters keep in common, and may take with them on an expedition."
+            }
+        ],
+        "rules": [
+            {
+                "title": "Camp Sheet",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When you start a group of characters, also start a camp sheet. Camp sheets have the following:"
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "list"},
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "Group Name: ",
+                                "subcontent": [
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "You can name your group if you like, or leave it blank until later."
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "Ambitions: ",
+                                "subcontent": [
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Write 1-3 long term goals for your group. If you accomplish an Ambition during an interlude, everyone in your group gets 1 xp, then write a new ambition. You can leave these blank for now if you like."
+                                    }
+                                ]
+                            },
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "Camp Fixtures: ",
+                                "subcontent": [
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "The various pieces of gear, shelter, and accoutrement that your group keeps around camp. Fixtures apply their benefits to everyone in the group and anyone can spend dust to purchase, upgrade, or use them. Start with 1 of your choice."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Camping",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "During an expedition you can camp (usually a limited number of times) to clear all strain, regain all effort, and regain all hp. You scarf down a meal, put your feet up, clean your weapons, tend to your wounds, or polish your armor. You then lose all resolve you have accumulated."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Camping is pretty loose and could represent anything from a short break in a battle where you catch your breath or a momentary break on a trail to fix your boots to an entire night or even a few days spent in one place."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You only camp during an expedition, but you might spend time in your camp (or what your camp represents if it represents something like a caravan or airship) during interludes or in downtime. Either way, the camp is usually a character in its own right and often serves as a home away from home for Icons."
+                    }
+                ]
+            },
+            {
+                "title": "Camp Fixtures",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "There are various camp fixtures and their upgrades. When you make your characters, start with one. Additional upgrades and fixtures can be bought during an interlude and take effect at the end of an interlude. Anyone can spend dust on them."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If camp upgrades are nested, you need to take the previous upgrade to get the one under it."
+                    }
+                ]
+            }
+        ]
+    }
+]

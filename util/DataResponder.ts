@@ -25,6 +25,7 @@ import kindata from '../data/general/kins.json'
 import culturedata from '../data/general/cultures.json'
 import campitemdata from '../data/general/campitems.json'
 import campupgradedata from '../data/general/campupgrades.json'
+import rulesetdata from '../data/general/rules.json'
 // -----------------------------------------------------
 
 /**
@@ -150,6 +151,9 @@ class DataResponder {
             }
             case "campupgrades": {
                 return campupgradedata.concat(data)
+            }
+            case "rules": {
+                return rulesetdata.concat(data)
             }
             default: {
                 return data
