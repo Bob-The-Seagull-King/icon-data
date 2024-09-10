@@ -21,6 +21,7 @@ import specialabilitydata from '../data/narrative/specialability.json'
 
 import glossarydata from '../data/general/glossary.json'
 import tabledata from '../data/general/table.json'
+import kindata from '../data/general/kins.json'
 // -----------------------------------------------------
 
 /**
@@ -134,6 +135,9 @@ class DataResponder {
             }
             case "specialabilities": {
                 return specialabilitydata.concat(data)
+            }
+            case "kins": {
+                return kindata.concat(data)
             }
             default: {
                 return data
