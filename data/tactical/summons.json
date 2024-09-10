@@ -406,5 +406,87 @@
         "blurb":  [],
         "colour": "cl_wright",
         "limit": 1
+    },
+    {
+        "id": "sm_spiritidol",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 10,
+            "defense": 10,
+            "armour": 0,
+            "speed": 4
+        },
+        "eventtags": {},
+        "name": "Spirit Idol",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Idol heals to full HP after each combat. It can take a standard move and the following actions:"
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Spirit Slash (1 Action, Attack, Range 3): ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On hit: "
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "1d6+1 damage."
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: "
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "1 damage."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Push (1 Action): ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An adjacent character is shoved 1 space.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Spirit Blast (1 Action): ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character in range 3 is sealed or weakened (spirit’s choice).",
+                        "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Dash (1 Action): ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The spirit dashes 3 spaces.",
+                        "glossary": [{"val": "dashes", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 1
     }
 ]

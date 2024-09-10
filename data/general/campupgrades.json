@@ -49,5 +49,1121 @@
             }
         ],
         "upgradelist" : []
+    },
+    {
+        "id": "cu_extendedpearls",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Extended Pearls",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Up to 6 additional pearls can also be given to NPC allies. Pearls can also be linked to any other pearl network within their range, connecting them together."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_resonantpearls",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Resonant Pearls",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When in a populous location with an etheric field (like a city) the pearls don’t have a maximum distance."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_silentpearls",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Silent Pearls",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Within the same room (or a very short distance) anyone wearing a linked pearl can communicate telepathically, without speaking out loud."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_empoweredattunement",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Empowered Attunement",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dust can be withdrawn or deposited into the Vault from anywhere, ending up in a specially attuned vial on each character’s waist."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_aethersapphire",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Aether Sapphire",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase the vault’s capacity to 12."
+            }
+        ],
+        "upgradelist" : ["cu_aetherruby"]
+    },
+    {
+        "id": "cu_aetherruby",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Aether Ruby",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase the vault’s capacity to 16."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_upgradedcondenser",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Upgraded Condenser",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If it’s at least half full, the vault condenses 2 dust instead of 1."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_soulstone",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Soulstone",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can also change jobs at camp."
+            }
+        ],
+        "upgradelist" : ["cu_greatersoulstone"]
+    },
+    {
+        "id": "cu_greatersoulstone",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Greater Soulstone",
+        "cost": 6,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can take 7 abilities instead of 6 on an expedition."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_flaskbelt",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Flash Belt",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can hold on to four flasks."
+            }
+        ],
+        "upgradelist" : ["cu_improvedflaskbelt"]
+    },
+    {
+        "id": "cu_improvedflaskbelt",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Improved Flask Belt",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can hold on to up to two major flasks."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_majorflashofdivinespeed",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Major Flask of Divine Speed",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Brewed for 5 dust. Until the end of your next turn, increase all move, rush, dash, fly, and teleport amounts by +2",
+                "glossary": [
+                    {"val": "rush", "id": "gl_rush"},
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "fly", "id": "gl_flying"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_majorflashofdivinestrength",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Major Flask of Divine Strength",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Brewed for 5 dust. Your next action deals bonus damage and is a critical hit on hit if it is an attack.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "critical hit", "id": "gl_criticalhit"}
+                ]
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_majorflashofdivineluck",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Major Flask of Divine Luck",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Brewed for 5 dust. Until the end of your next turn, all attacks miss you and you cannot miss attacks (a miss becomes a hit instead)."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_majorflashofdivinehealth",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Major Flask of Divine Health",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Clear all statuses and gain a vigor surge.",
+                "glossary": [
+                    {"val": "vigor surge", "id": "gl_vigorsurge"}
+                ]
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_majorflashofdivinegrace",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Major Flask of Divine Grace",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Brewed for 3 dust. Increase the effect of your next narrative action to superpowered.",
+                "glossary": [
+                    {"val": "superpowered", "id": "gl_superpowered"}
+                ]
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_foraging",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Foraging",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your group can forage or shop for ingredients during an interlude. Roll 1d6. You can hold on to that number until used during cooking. If you roll and save a 1, you can use it as insurance. Discard it when you roll a 1 cooking result to re-roll, taking the second result as final."
+            }
+        ],
+        "upgradelist" : ["cu_improvedingredients"]
+    },
+    {
+        "id": "cu_improvedingredients",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Improved Ingredients",
+        "cost": 5,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you cook, you can keep any 2 dice and combine their effects."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_variety",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Variety",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a different character from the last one cooks each time you camp or go into an interlude, roll +1d6 when cooking."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_masterclass",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Masterclass",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you get a critical hit on a cooking roll, the effects apply to every combat until you camp or go into an interlude.",
+                "glossary": [
+                    {"val": "critical hit", "id": "gl_criticalhitaction"}
+                ]
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_commonality",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Commonality",
+        "cost": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters that help others heal their burdens instead of healing their own allow that character to tick 2 segments instead of 1.",
+                "glossary": [
+                    {"val": "burdens", "id": "gl_burden"}
+                ]
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_momentum",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Momentum",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you finish camp, gain 1 personal resolve."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_memoriesofpurpose",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Memories Of Purpose",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a session, all characters can heal 1 strain merely by taking a moment to breathe."
+            }
+        ],
+        "upgradelist" : ["cu_memoriesofhope"]
+    },
+    {
+        "id": "cu_memoriesofhope",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Memories Of Hope",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When using memories of purpose, characters also regain 1 effort."
+            }
+        ],
+        "upgradelist" : ["cu_memoriesofhome"]
+    },
+    {
+        "id": "cu_memoriesofhome",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Memories Of Home",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All characters gain +1 effort box and +1 max strain."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_bait",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Bait",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can spend 1 dust to add 1d6 to a fishing roll any number of times."
+            }
+        ],
+        "upgradelist" : ["cu_improvedtacklebox"]
+    },
+    {
+        "id": "cu_improvedtacklebox",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Improved Tackle Box",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain 1 free use of bait an expedition."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_beginnersluck",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Beginner's Luck",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a character fishes that was different from the previous time, they fish with +1d."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_trophyboard",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Trophy Board",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you catch a super rare fish, everyone gains 1 xp."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_catchandrelease",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Catch And Release",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you release a fish you caught without gaining its effects, all characters can tick 1 segment on a burden."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_forgekit",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Forge Kit",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can add armor repair kit, whetstone, oil, tongs, hammer, nails to their loose gear."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_toolrack",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Tool Rack",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any project clock or ambition clock involving crafting starts with 1 segment filled in."
+            }
+        ],
+        "upgradelist" : ["cu_improvedworkshop"]
+    },
+    {
+        "id": "cu_improvedworkshop",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Improved Workshop",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain +1d to fill in any clock involving crafting."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_relicforge",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Relic Forge",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of each session, infuse 1 dust into a relic of your choice. Aspect infusions cost only 10 dust."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_ancientrelicforge",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Ancient Relic Forge",
+        "cost": 6,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can take an extra relic. They can still only take 3 with them on an expedition."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_wakefulstone",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Wakeful Stone",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The stone can be used twice before it needs to recharge."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_resonantstone",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Resonant Stone",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The stone affects a larger area when used, and can transport anything smaller than a wagon in about a thirty foot radius."
+            }
+        ],
+        "upgradelist" : ["cu_grandmotherstone"]
+    },
+    {
+        "id": "cu_grandmotherstone",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Grandmother Stone",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This stone is a chip off the great shard. It can be tuned to any mother stone in a ten mile radius or so without physically being present."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_librarykit",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Library Kit",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can add almanac, monster guide, local maps, simple ritual tome, tome of legend lore to their loose gear."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_trainingmanuals",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Training Manuals",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of each interlude, each character gets +1 xp."
+            }
+        ],
+        "upgradelist" : ["cu_focusedtraining"]
+    },
+    {
+        "id": "cu_focusedtraining",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Focused Training",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Instead of healing burdens, characters can train to gain + 1 xp. Stacks with training manuals."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_arkentomes",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Arkentomes",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can make rolls to recall or gather information about dungeon or monster lore at +1D."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_productiveresearch",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Productive Research",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Instead of healing burdens, characters can turn xp into dust, at a 2 to 1 rate."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_whitedemoncard",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "White Demon Card",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can burn a rare card to re-roll your Kapkat roll. The card is gone forever unless you win the match. You can’t burn it if it’s your last rare card."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_rubyprincesscard",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Ruby Princess Card",
+        "cost": 1,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain +1d and increased effect on social rolls against anyone else with this card (anyone playing kapkat has about a 50% chance of having one, check with a d6)."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_vesselofavaricecard",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Vessel Of Avarice Card",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "It’s uncertain what this rare card actually does, but having it does make rare cards cheaper by 1 dust."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_sapphirewarrior",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Sapphire Warrior",
+        "cost": 1,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can wager up to 3 rare cards on competitive matches if your opponent agrees."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_verdantkingcard",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Verdant King Card",
+        "cost": 1,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can sell rare cards for 1 dust."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_goldenmaidencard",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Golden Maiden Card",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have a special, repeatable ambition clock you can attempt to fill out for free each downtime (6 segments). When you fill it up, get a rare card instead of gaining xp."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_commune",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Commune",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a session, a single character can pray at the shrine and ask a yes/no question about a person, place, or object. The GM will answer with one of the following: Wheel (yes, positive), Stone (no, negative), or Chaos (mixed outcome)."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_absolution",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Absolution",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A broken character with 3 burdens can pray at the shrine during camp to recover from being broken. They must still take a break from the next expedition."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_grace",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Grace",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A fallen character (someone who took 4 wounds) can be granted grace during an interlude by burning 10 dust, as long as they fell in the next year, even if they are dead, retired, corrupted, or gone in some way. They return from being fallen, recovering all wounds, effort, strain, and hp. However, the character is living on borrowed time as the dust is fortifying their body and cleansing their soul and must undergo a journey or expedition to make things permanent. The GM can set up an expedition or an ambition for this."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_empoweredspirit",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Empowered Spirit",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The spirit gains +1 effort and its combat ability as an NPC can be used twice a battle instead."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_greatspirit",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Great Spirit",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As character the spirit can choose to become Size 2 when it starts battle. If so, its speed is reduced to 2, but it also gains +6 hp, becomes Sturdy, and deals 1d8 damage with its attack instead of 1d6. It can also reduce or enlarge itself as a 1 action ability during combat."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_spiritvengance",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Spirit Vengance",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As a character, the spirit can do each of the following once a session: take a superpowered action, or deal 2d damage with its spirit slash attack instead of 1d."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_survivalkit",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Survival Kit",
+        "cost": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Add good cloak, waterproof clothing, extra rations, sturdy tent, tanning racks, quality tools to loose gear."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_rangers",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Rangers",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Start the first combat of any expedition with 4 vigor.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }
+        ],
+        "upgradelist" : ["cu_toughened","cu_footwork"]
+    },
+    {
+        "id": "cu_toughened",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Toughened",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Also gain this benefit after you camp."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_footwork",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Footwork",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On the first turn of combat only, all characters can move diagonally."
+            }
+        ],
+        "upgradelist" : ["cu_advancedfootwork"]
+    },
+    {
+        "id": "cu_advancedfootwork",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Advanced Footwork",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On the first turn of combat only, characters can dash as a free action."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_thiefkit",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Thief Kit",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Add pouch of chalk, lock pick, crowbar, extra rope, ball bearings to loose gear for all characters."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_skeletonkey",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Skeleton Key",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "1/session you can make any action roll to open, unlock, or activate a device or door superpowered in effect."
+            }
+        ],
+        "upgradelist" : []
+    },
+    {
+        "id": "cu_shadowcloaks",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Shadow Cloaks",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "For the first combat after you embark on an expedition, start with stealth.",
+                "glossary": [
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }
+        ],
+        "upgradelist" : ["cu_whispercloaks"]
+    },
+    {
+        "id": "cu_whispercloaks",
+        "type": "CampUpgrade",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Whisper Cloaks",
+        "cost": true,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Also gain this benefit after you camp."
+            }
+        ],
+        "upgradelist" : []
     }
 ]

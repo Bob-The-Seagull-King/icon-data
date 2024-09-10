@@ -318,5 +318,462 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_cookingpot",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Result"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_cookingpot1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Burnt Meal - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "No Effect!"
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_cookingpot2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Nutritious meal - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Ignore difficult terrain.",
+                            "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_cookingpot3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Refreshing Meal - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Saves are successful on an 9+ instead of a 10+"
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_cookingpot4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Invigorating Meal - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Deal bonus damage in the first round of combat.",
+                            "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_cookingpot5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Healthy Meal - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Start that combat with 2 vigor, or +2 vigor if you already start with Vigor.",
+                            "glossary": [
+                                {"val": "vigor", "id": "gl_vigor"},
+                                {"val": "Vigor", "id": "gl_vigor"}
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_cookingpot6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Hearty Meal - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain resistance to all damage in the first round of combat.",
+                            "glossary": [
+                                {"val": "resistance", "id": "gl_resistance"}
+                            ]
+                        }
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_fishingpole",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Result"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_fishingpole1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Line Snapped - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "No result!"
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpole2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Got away - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "No result. Next time you fish, add +1d to your roll."
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpole3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3-5"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Common Fish - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Collect 2 of these fish and they can be sold at market for 1 dust. Dungeon guppies, cave carp, and Arkentrout are all pretty common examples."
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpole6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Rare Fish!: Roll 1d6. Can be sold at market for 1 dust."
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_fishingpoleresult6"
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpole66",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6,6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Super Rare Fish!: This super hard to catch fist can be sold for 3 dust at market. Roll 1d6."
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_fishingpoleresult66"
+                        }
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_fishingpoleresult6",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Result"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_fishingpoleresult6result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Glibfish - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Eat to gain +1D and improve effect on all command and charm rolls for a scene."
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpoleresult6result2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Musclefish - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Eat to gain +1D and increased effect on Endure and Smash actions for a scene."
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpoleresult6result3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Wrightfish - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Ask the fish for advice. If you follow it, gain +1D and improved effect on your next narrative action."
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpoleresult6result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Elixer Fish - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Can be drunk to gain a vigor surge.",
+                            "glossary": [
+                                {"val": "vigor surge", "id": "gl_vigorsurge"}
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpoleresult6result5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Panaflounder - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Eat as free action to end all statuses and foe’s marks.",
+                            "glossary": [
+                                {"val": "marks", "id": "gl_mark"}
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpoleresult6result6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Golden Gizzet - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Can be sold at market for 3 dust."
+                        }
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_fishingpoleresult66",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Result"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_fishingpoleresult66result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1-3"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Wishfish - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The fish is infused with reality warping Aether. You can use the fish to perform one action roll as superpowered, expending it.",
+                            "glossary": [
+                                {"val": "superpowered", "id": "gl_superpowered"}
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_fishingpoleresult66result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4-6"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Godfish - ",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "This magnificent specimen sells for 5 dust at market. Alternately, its scales are so tough it can be used as a shield. At the start of combat, expend the fish to give a character 10 vigor, which could put them over their maximum.",
+                            "glossary": [
+                                {"val": "vigor", "id": "gl_vigor"}
+                            ]
+                        }
+                    ]
+                }]
+            }
+        ]
     }
 ]

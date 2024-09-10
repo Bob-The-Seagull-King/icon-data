@@ -23,5 +23,578 @@
             }
         ],
         "upgradelist" : ["cu_elixerbrewing","cu_clarity"]
+    },
+    {
+        "id": "cp_aetherpearls",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "action": true,
+            "charm": true,
+            "command": true
+        },
+        "eventtags": {},
+        "name": "Aetherpearls",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This small set of pearls are etherically linked together, and can be inset into armor or worn as jewelry. There are always just enough for all player characters and no more."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every character can add +1 to their charm or command rating, up to a max of 3."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can add aetherpearls to their adventurer’s kit. While wearing a pearl, characters can talk to any other character wearing a linked pearl within a mile. They must talk out loud and hear the other person’s voice in their ear."
+            }
+        ],
+        "upgradelist" : ["cu_extendedpearls", "cu_resonantpearls", "cu_silentpearls"]
+    },
+    {
+        "id": "cp_aethervault",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "dust": true
+        },
+        "eventtags": {},
+        "name": "Aethervault",
+        "purchase": 3,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can keep up to 6 Dust inside this crystalline prism, where it is safely stored. Characters can deposit or withdraw Dust from it by touching it. Only characters attuned to the prism (your group, and any NPCs you choose) can withdraw or deposit dust, and it is practically indestructible unless you hurl it into an high powered Aetherforge."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The vault has a clever but slow acting condenser inside. At the end of each interlude, if there is at least 1 Dust inside the Vault, it attracts more Aether, adding 1 Dust to the vault. If there’s no room in the vault, not more Dust is generated."
+            }
+        ],
+        "upgradelist" : ["cu_empoweredattunement","cu_aethersapphire","cu_upgradedcondenser"]
+    },
+    {
+        "id": "cp_cabinet",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Cabinet",
+        "purchase": 3,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This dusty cabinet or traveling trunk allows you to keep additional gear with you."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During camp, you can swap out your abilities and gear at will."
+            }
+        ],
+        "upgradelist" : ["cu_soulstone"]
+    },
+    {
+        "id": "cp_cauldron",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "cost": true,
+            "heal": true,
+            "effort": true,
+            "damage": true
+        },
+        "eventtags": {},
+        "name": "Cauldron",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A heavy iron cauldron and apothecary where characters can brew flasks."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can brew one of the following flasks during an interlude by spending 2 dust. Flasks can be drunk as part of making an action roll (in narrative play) or as a free action ability in combat. Characters can only hold on to three flasks, and up to one major flask."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Flask Of Action: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Gain +1 boon on their next narrative action."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Flask of Resolve: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Regain 2 effort."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Flask of Alacrity: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Dash 4.",
+                                "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Power Flask: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Gain bonus damage on your next action.",
+                                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Major Phoenix flask: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "An incapacitated character can drink a Phoenix Flask at the end of a round to Rescue themselves. They can do this even while incapacitated."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Major Healing flask: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Cure yourself",
+                                "glossary": [{"val": "Cure", "id": "gl_cure"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Major Power flask: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Gain bonus damage on all actions until the end of your next turn.",
+                                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                            }
+                        ]
+                    }
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "GMs can offer flask ingredients as rewards for treasure collected during an expedition, or side tasks. If that's the case, forgo the dust cost for brewing a flask if you have the ingredients. Ingredients are usually for a specific flask."
+            }
+        ],
+        "upgradelist" : ["cu_flaskbelt","cu_majorflashofdivinespeed","cu_majorflashofdivinestrength","cu_majorflashofdivineluck","cu_majorflashofdivinehealth","cu_majorflashofdivinegrace"]
+    },
+    {
+        "id": "cp_cookingpot",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "action": true,
+            "heal": true,
+            "damage": true
+        },
+        "eventtags": {},
+        "name": "Cooking Pot",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you embark on an expedition, or when you camp, one character can cook a meal for everyone."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character’s cooking skill is a unique action, starting at 1d6. A character can improve their cooking by investing 2 xp to improve their cooking skill by 1, up to a maximum of 4. Xp invested in cooking has to be spent when you gain xp and not from your bar."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Roll 1d6 per level of cooking skill and choose any die as the final result."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Meal effects apply to the very next combat only you get into."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_cookingpot"
+            }
+        ],
+        "upgradelist" : ["cu_foraging","cu_variety","cu_masterclass"]
+    },
+    {
+        "id": "cp_campfire",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "heal": true,
+            "burden": true
+        },
+        "eventtags": {},
+        "name": "Campfire",
+        "purchase": 6,
+        "upgrade": 6,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your camp has a bright and well fed fire. It’s easy to take a load off and talk around the fire, and it burns brightly even in dark moments."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During Heal Burdens, characters can tick a free segment on a burden of their choice."
+            }
+        ],
+        "upgradelist" : ["cu_commonality","cu_momentum","cu_memoriesofpurpose"]
+    },
+    {
+        "id": "cp_fishingpole",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "action": true,
+            "heal": true,
+            "damage": true
+        },
+        "eventtags": {},
+        "name": "Fishing Pole",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once an expedition, if there’s a water source nearby, one character can fish. A character’s fishing skill is a unique action, starting at 1d6. A character can improve their fishing by investing 2 xp to improve their fishing skill by 1, up to a maximum of 4. Xp invested in fishing has to be spent when you gain xp and not from your bar."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Roll 1d6 per level of fishing skill and choose the highest result as the final result."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_fishingpole"
+            }
+        ],
+        "upgradelist" : ["cu_bait","cu_beginnersluck","cu_trophyboard","cu_catchandrelease"]
+    },
+    {
+        "id": "cp_forge",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "action": true,
+            "endure": true,
+            "smash": true
+        },
+        "eventtags": {},
+        "name": "Forge",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A workshop for building weapons or armor, and keeping them in tip top shape."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every character can add +1 to their endure or smash ratings, up to a maximum of 4."
+            }
+        ],
+        "upgradelist" : ["cu_forgekit","cu_toolrack","cu_relicforge","cu_ancientrelicforge"]
+    },
+    {
+        "id": "cp_liftstone",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Liftstone",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This stone is etherically linked to a set of similar stones, all of which are clones from a great shard theorized to be buried deep in the heart of Arden Eld. Most of them have been recovered and are inset into major cities, but others still resonate in ruins, lost libraries, or deep locations in the world. You can tune a stone by tapping it to a mother stone. A liftstone can only be tuned to one stone at a time."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once attuned, you may raise this stone aloft and charge it with Aether to instantly lift everyone within about a ten foot radius into the world’s aetheric network, transporting them instantly back to a clear space near the mother stone. This carries all player characters, one or two NPC allies, and their equipment, but anything bigger than a pack animal will have to get left behind."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a lift stone is used, it must be recharged by either not using it for the duration of 1 expedition, or re-infusing it with 3 dust."
+            }
+        ],
+        "upgradelist" : ["cu_wakefulstone","cu_resonantstone"]
+    },
+    {
+        "id": "cp_portablelibrary",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "action": true,
+            "tinker": true,
+            "study": true
+        },
+        "eventtags": {},
+        "name": "Portable Library",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A collection of well-worn tomes, manuals, and scrolls."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every character can add +1 to their tinker or study rating, up to a max of 4."
+            }
+        ],
+        "upgradelist" : ["cu_librarykit","cu_trainingmanuals","cu_arkentomes","cu_productiveresearch"]
+    },
+    {
+        "id": "cp_kapkattable",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Kapkat Table",
+        "purchase": 3,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This table is for playing kapkat, a competitive and collectible card game that simulates a battle between demons and brave warriors called bearers of the flame. The colorful character and card art is very popular with certain circles."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Though a basic deck isn’t hard to come by, quality decks of cards are usually beautifully printed and kept by wealthy individuals as a luxury item, with rare cards going for a lot of dust, but they end up making their way down to enthusiast collectors, where there is a healthy secondary market."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your Kapkat deck quality is a number from 0-5. If you're a new player, your deck starts at 0. NPCs can also have kapkat decks, and their deck quality is always obvious to you if you play."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you play Kapkat with someone else, both players roll their deck quality as a fortune roll. The higher number wins, and in case of ties, go to the second highest number (so 6,6,4 would beat 6,5,2)."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a session, someone can play a wagered game of kapkat, which must be done at camp or during an interlude. If you win a game of kapkat, you take 1 dust from the loser. However, the reverse is also true, even with NPCs."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you enter a populated location where someone might sell cards, you can buy rare cards to upgrade your deck for 2 dust a rare card. Every 2 rare cards upgrades your deck 1 quality."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A competitive game of kapkat is played in 3 rounds, with best of 3, and requires at least 1 rare card. The loser gives a rare card to the winner."
+            }
+        ],
+        "upgradelist" : ["cu_whitedemoncard","cu_rubyprincesscard","cu_vesselofavaricecard","cu_sapphirewarrior","cu_verdantkingcard","cu_goldenmaidencard"]
+    },
+    {
+        "id": "cp_shrine",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Shrine",
+        "purchase": 3,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shrine to the Titans, the slain precursors. Grants Divine Mercy. When characters would take their last wound and die, roll a d6. On a 2+, they ignore the wound instead and miraculously heal all wounds and hit points. Divine Mercy can only occur once for a character ever in their life time."
+            }
+        ],
+        "upgradelist" : ["cu_commune","cu_absolution","cu_grace"]
+    },
+    {
+        "id": "cp_spiritidol",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Spirit Idol",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can pray at this shrine to summon its etheric spirit - usually in the form of an animal, small creature, or fairy. The spirit is friendly to your group, and can be played two ways: either as an NPC, or as a character (for a player to control)."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The spirit can only be summoned as a character if it’s controlled by someone who is not already playing a character, including the GM. Playing a spirit for a group is a good way for someone not familiar with role playing games, guesting for a session, or calling in remotely for a session to participate, since it is relatively simple."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "As An NPC: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "the spirit has the following powers:"
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Narrative: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The spirit has 2 effort, regains all of it when you camp, and can burn it to give someone aid. It doesn’t take strain and doesn’t take actions otherwise."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Combat: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The spirit is not a unit in battle, but can be invoked any time by a character as an interrupt to aid someone, letting them roll twice on any d20 roll and choose either result. This ability works once per battle."
+                    }
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "As A Character: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "the spirit has the following powers:"
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Narrative: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The spirit has 3 effort, 3 strain, and rolls 1 dice for all actions. It heals all effort and strain at camp. If the spirit takes maximum strain, it must disperse for a scene and can take no more action, then re-enters the next scene with 0 strain."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Combat: "
+            },
+            {
+                "tags": {"desc_type" : "summon"},
+                "content": "sm_spiritidol"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If defeated in combat, the spirit disperses and reappears in a space in range 3 from an ally at the start of the next round with half hp."
+            }
+        ],
+        "upgradelist" : ["cu_empoweredspirit","cu_greatspirit","cu_spiritvengance"]
+    },
+    {
+        "id": "cp_survivalgear",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "action": true,
+            "traverse": true,
+            "sense": true
+        },
+        "eventtags": {},
+        "name": "Survival Gear",
+        "purchase": 6,
+        "upgrade": 6,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Knives, tanning racks, cooking spits, climbing gear, and supplies for wilderness survival."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every character can add +1 to their traverse or sense ratings, up to a maximum of 4."
+            }
+        ],
+        "upgradelist" : ["cu_survivalkit","cu_rangers"]
+    },
+    {
+        "id": "cp_thievesgear",
+        "type": "CampItem",
+        "source": "core",
+        "tags": {
+            "action": true,
+            "sneak": true,
+            "excel": true
+        },
+        "eventtags": {},
+        "name": "Thieve's Gear",
+        "purchase": 6,
+        "upgrade": 3,
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Lockpicks, cloaks, keys, sacks for carrying loot, and magitech devices for spying or listening."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every character can add +1 to their sneak or excel ratings, up to a maximum of 4."
+            }
+        ],
+        "upgradelist" : ["cu_thiefkit","cu_skeletonkey","cu_shadowcloaks"]
     }
 ]

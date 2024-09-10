@@ -1196,5 +1196,50 @@
             "content": "Gain +1 Boon (+1D6) to a roll.",
             "subcontent":   []
         }]
+    },
+    {
+        "id": "gl_superpowered",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "narrative"
+        },
+        "eventtags": {},
+        "name": "Superpowered",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A superpowered effect can accomplish feats that are far beyond the character’s current abilities - like traversing that 50 foot wall in a single leap, smashing a tower to rubble with a blow of your sword, or sneaking through a whole army.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_criticalhitaction",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "narrative"
+        },
+        "eventtags": {},
+        "name": "Critical Hit (Action)",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "When making an action roll with 2+ results of six.",
+            "subcontent":   []
+        }]
+    },
+    {
+        "id": "gl_burden",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "narrative"
+        },
+        "eventtags": {},
+        "name": "Burden",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A burden is more long-term harm to a character and represents the mental and physical ordeal of the adventuring life. When you take a burden, write the nature of the burden underneath it. Then, tick two actions which have more than 0d. Those actions are at at -1d until the burden is healed.",
+            "subcontent":   []
+        }]
     }
 ]
