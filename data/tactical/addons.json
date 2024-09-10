@@ -9,6 +9,7 @@
         },
         "eventtags": {},
         "name": "Heroic Intervention",
+        "class_id": "cl_stalwart",
         "description":  [
                         {
                             "tags": {"desc_type" : "effect"},
@@ -38,6 +39,7 @@
         },
         "eventtags": {},
         "name": "Godly Smite",
+        "class_id": "cl_mendicant",
         "description":  [
                         {
                             "tags": {"desc_type" : "effect"},
@@ -61,126 +63,20 @@
         "id": "ad_thegreatwheel",
         "type": "Addon",
         "source": "core",
-        "tags": { },
+        "tags": { 
+            "type": "special",
+            "Special": true,
+            "Random" : true
+        },
         "eventtags": {},
         "name": "The Great Wheel",
-        "description":  [{
-                            "tags": {"desc_type" : "effect"},
-                            "content": "2 The Fool",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally must dash 3 spaces in a straight line before using the ability.",
-                                                "glossary": [{"val": "dash", "id": "gl_dash"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "3 The Scepter",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Teleport your ally to an adjacent space to you after the action resolves.",
-                                                "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "4 The Ewer",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Bless all allies in a small blast area centered on your ally.",
-                                                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "5 The Devil",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "If the ability forces saves, foes get +2 curses to save against them.",
-                                                "glossary": [{"val": "+2 curses", "id": "gl_curse"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "6 The Sword",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ability gains pierce.",
-                                                "glossary": [{"val": "pierce", "id": "gl_piercing"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "7 Death",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally gains Defiance.",
-                                                "glossary": [{"val": "Defiance", "id": "gl_defiance"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "8 The Chariot",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally becomes unstoppable and immune to all damage while moving during the ability.",
-                                                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "immune", "id": "gl_immune"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "9 The Papessa",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally becomes pacified but is cured after the ability resolves.",
-                                                "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "cured", "id": "gl_cure"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "10 The Emperor",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally gains stealth after the ability resolves.",
-                                                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "J The Star",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally makes all attacks and saves with +1 Boon until the start of their next turn, including with the triggering ability.",
-                                                "glossary": [{"val": "+1 Boon", "id": "gl_boon"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "Q The Moon",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally gains Evasion until the start of their next turn.",
-                                                "glossary": [{"val": "Evasion", "id": "gl_evasion"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "K The Sun",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally gains Counter and Sturdy, but cannot gain or benefit from stealth or evasion until the start of their next turn.",
-                                                "glossary": [{"val": "Counter", "id": "gl_counter"}, {"val": "Sturdy", "id": "gl_sturdy"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "evasion", "id": "gl_evasion"}]
-                                            }]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "A The World",
-                            "subcontent":   [{
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "Ally becomes Unstoppable until the start of their next turn.",
-                                                "glossary": [{"val": "Unstoppable", "id": "gl_unstoppable"}]
-                                            }]
-                        }
+        "class_id": "cl_mendicant",
+        "job_id": "jb_seer",
+        "description":  [
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_thegreatwheel"
+            }
         ]
     },
     {
@@ -192,6 +88,7 @@
         },
         "eventtags": {},
         "name": "Tetraflare",
+        "class_id": "cl_wright",
         "description":  [
                         {
                             "tags": {"desc_type" : "desc"},
@@ -210,6 +107,7 @@
         },
         "eventtags": {},
         "name": "Ragnarök",
+        "class_id": "cl_wright",
         "description":  [
                         {
                             "tags": {"desc_type" : "effect"},
