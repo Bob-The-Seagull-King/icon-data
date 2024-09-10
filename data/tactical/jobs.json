@@ -612,7 +612,7 @@
         "name": "Seer",
         "subtitle": "Fortune Teller and Master of Fate",
         "traits": ["tr_thewheeloffate", "tr_skein", "tr_foretell", "tr_bendfate", "tr_karma"],
-        "addons": ["ad_thegreatwheel"],
+        "addons": [],
         "summons": ["sm_wildcard"],
         "blurb": [
             {
@@ -661,6 +661,15 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Seer’s limit break, High Prophecy, allows them to manipulate probability and makes gamble effects extremely powerful for its duration. The effect also applies to anything that targets you!",
                 "glossary": [{"val": "gamble", "id": "gl_gamble"}]
+            },
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                {
+                    "tags": {"desc_type" : "table"},
+                    "content": "tb_thegreatwheel"
+                }]
             }
         ],
         "limitbreak": "lb_highprophecy",

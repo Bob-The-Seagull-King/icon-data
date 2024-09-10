@@ -1,5 +1,263 @@
 [
     {
+        "id": "tb_thegreatwheel",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Index", "Arcana", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Index"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Arcana"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_fool",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Fool"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally must dash 3 spaces in a straight line before using the ability.",
+                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                }]
+            },
+            {
+                "id": "ti_scepter",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Scepter"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Teleport your ally to an adjacent space to you after the action resolves.",
+                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                }]
+            },
+            {
+                "id": "ti_ewer",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Ewer"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Bless all allies in a small blast area centered on your ally.",
+                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}]
+                }]
+            },
+            {
+                "id": "ti_devil",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Devil"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "If the ability forces saves, foes get +2 curses to save against them.",
+                    "glossary": [{"val": "+2 curses", "id": "gl_curse"}]
+                }]
+            },
+            {
+                "id": "ti_sword",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Sword"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ability gains pierce.",
+                    "glossary": [{"val": "pierce", "id": "gl_piercing"}]
+                }]
+            },
+            {
+                "id": "ti_death",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "7"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Death"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally gains Defiance.",
+                    "glossary": [{"val": "Defiance", "id": "gl_defiance"}]
+                }]
+            },
+            {
+                "id": "ti_chariot",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "8"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Chariot"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally becomes unstoppable and immune to all damage while moving during the ability.",
+                    "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "immune", "id": "gl_immune"}]
+                }]
+            },
+            {
+                "id": "ti_papessa",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "9"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Papessa"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally becomes pacified but is cured after the ability resolves.",
+                    "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "cured", "id": "gl_cure"}]
+                }]
+            },
+            {
+                "id": "ti_emperor",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "10"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Emperor"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally gains stealth after the ability resolves.",
+                    "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                }]
+            },
+            {
+                "id": "ti_star",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "J"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Star"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally makes all attacks and saves with +1 Boon until the start of their next turn, including with the triggering ability.",
+                    "glossary": [{"val": "+1 Boon", "id": "gl_boon"}]
+                }]
+            },
+            {
+                "id": "ti_moon",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Q"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Moon"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally gains Evasion until the start of their next turn.",
+                    "glossary": [{"val": "Evasion", "id": "gl_evasion"}]
+                }]
+            },
+            {
+                "id": "ti_sun",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "K"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Sun"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally gains Counter and Sturdy, but cannot gain or benefit from stealth or evasion until the start of their next turn.",
+                    "glossary": [{"val": "Counter", "id": "gl_counter"}, {"val": "Sturdy", "id": "gl_sturdy"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "evasion", "id": "gl_evasion"}]
+                }]
+            },
+            {
+                "id": "ti_world",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "A"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The World"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Ally becomes Unstoppable until the start of their next turn.",
+                    "glossary": [{"val": "Unstoppable", "id": "gl_unstoppable"}]
+                }]
+            }
+        ]
+    },
+    {
         "id": "tb_saddleborn",
         "type": "Table",
         "source": "core",
