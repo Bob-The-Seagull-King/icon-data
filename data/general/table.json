@@ -1471,5 +1471,67 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_improvise",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_improvisechapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Small, like a vase or stool."
+                }]
+            },
+            {
+                "id": "ti_improvisechapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Large, like a piece of furniture or a door."
+                }]
+            },
+            {
+                "id": "ti_improvisechapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Massive, like a horse cart or boulder."
+                }]
+            }
+        ]
     }
 ]

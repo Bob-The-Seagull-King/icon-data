@@ -2773,5 +2773,228 @@
                             "content": "Take a power from another Bond."
                         }
                     ]
+    },
+    {
+        "id": "pw_improvise",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "smash":true
+        },
+        "eventtags": {},
+        "name": "Improvise",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can push a smash roll for free if you can somehow use something that’s not a weapon from your environment. This could also increase or decrease effect, depending on the item. You can use something:",
+                            "glossary": [{"val": "push", "id": "gl_push"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_improvise"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_punchingbag",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Punching Bag",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "If you take strain from anything, everyone else gets increased effect against that thing for the rest of the scene."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_bestefforts",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Best Efforts",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "If you fail a set-up roll, you can take 1 strain to re-roll it, taking the second result. You can do this any number of times."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_brighteyed",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Bright Eyed",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "At the start of each session, you may choose another character to look up to. You can aid that character without spending effort this session (you still share in any consequences), but aiding other characters costs 2 effort."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_followtheleader",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Follow the Leader",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Make an action roll using any character’s action rating for that action. Describe how that character taught or inspired you."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_lostcat",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "burden": true
+        },
+        "eventtags": {},
+        "name": "Lost Cat",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "If you invoked your burdens to get into trouble during a session, you can choose a character that came to your aid and let them mark 1 xp at the end of a session."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_rash",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Rash",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Once a session, if you boast about your success on a roll before you roll, you can force yourself to roll at a max of 0d, but you regain 1 effort after the roll. If you actually succeed (4+), everyone else can regain 1 effort as well."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_underdog",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Underdog",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you become exhausted, your next action gains +1d and increased effect.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_hearthelddream",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "ambition": true,
+            "burden": true
+        },
+        "eventtags": {},
+        "name": "Heart Held Dream",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You gain +1d to work on any ambition clock that’s 10 segments or longer. When you finish such a clock, you can lift a burden, or allow an ally to lift a burden.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_thelobster",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true
+        },
+        "eventtags": {},
+        "name": "The Lobster",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "If you break, your next action can be made normally, even while broken, and gains superpowered effect.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitofthewanderers",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of the Wanderers",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_dreamer",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another bond."
+                        }
+                    ]
     }
 ]
