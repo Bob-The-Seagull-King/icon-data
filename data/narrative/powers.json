@@ -130,7 +130,7 @@
         "uses": "",
         "usetype": "",
         "restriction": "",
-        "bondid": "bd_",
+        "bondid": "bd_pathfinder",
         "description": [
                         {
                             "tags": {"desc_type" : "desc"},
