@@ -2219,6 +2219,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "gambit": true
         },
         "eventtags": {},
         "name": "Gambit of the Weeper",
@@ -2230,6 +2231,233 @@
                         {
                             "tags": {"desc_type" : "desc"},
                             "content": "Take a power from another Bond."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_parable",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Parable",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can ask the GM about any path of action ahead of you. The GM will answer as truthfully as possible with the phrase ‘This is the path of ____”, with the blank part being an animal, plant, or natural element (fire/water/earth/wind) that the GM feels best fits the situation. Gain +1d when next acting on the answer.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_pacifist",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Pacifist",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "If you leave a scene of violence without harming anyone, heal 1 strain and regain 1 effort."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_longmemory",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Long Memory",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain +1d on rolls to gather information about any event that happened more than ten years ago.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        },
+                        { "tags": {"desc_type" : "gap"}, "content": "" },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "At chapter III, if it happened in your lifetime, you can also tell the GM you remember it clearly or were actually there and can’t fail the roll (treat a 1-3 as a 4+)."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_beenaround",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Been Aroun",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Unless they draw a weapon, nobody younger than you can harm, restrain, or touch you in any way unless you let them. This effect ignores chapter."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_spinneroftales",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Spinner of Tales",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You get a 12 segment ambition clock that you can work on for free each interlude, to tell a story from your past. When the clock is complete, a character of your choice that listened to you can improve an action by 1. A character can only gain this benefit once."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_pillarofrock",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Pillar of Rock",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Until you use violence or coerce someone or something in a session, reduce all strain taken from other people by 1, to a minimum of 1."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_saltbelly",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Saltbelly",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain +1d for the rest of the session against anyone that shares a meal, shares a drink, or plays a game of skill against you.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_mentor",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mentor",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can forgo working on your own ambitions to come along and help someone else with theirs. If you do, they tick 1 more segment and gain +1d.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_reputation",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Reputation",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you enter a populated area you haven’t visited before, you can decide that people there have heard of you. This gives you +1d to interact with them socially for the rest of the session, but anyone who wants to find or track you can find you easily. This works on:",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_reputation"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_themountain",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "endure": true
+        },
+        "eventtags": {},
+        "name": "The Mountain",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of your next Endure action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitoftsumi",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of Tsumi",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_elder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond"
                         }
                     ]
     }

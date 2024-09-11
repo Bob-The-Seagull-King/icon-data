@@ -1347,5 +1347,67 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_reputation",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_reputationchapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "0-3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Any town."
+                }]
+            },
+            {
+                "id": "ti_reputationchapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4-5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Any city or small village."
+                }]
+            },
+            {
+                "id": "ti_reputationchapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Anywhere."
+                }]
+            }
+        ]
     }
 ]
