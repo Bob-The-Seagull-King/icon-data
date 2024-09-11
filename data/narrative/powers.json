@@ -1021,5 +1021,255 @@
                             "content": "Take a power from another Bond."
                         }
                     ]
+    },
+    {
+        "id": "pw_mirrormask",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mirrormask",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [                        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can always tell if someone is lying if you can see their face, though the nature of the lie is unclear."
+            },
+            { "tags": {"desc_type" : "desc"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At chapter III, you only need to hear someone’s voice or read something they have written."
+            }
+                    ]
+    },
+    {
+        "id": "pw_mercurio",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "knack": true
+        },
+        "eventtags": {},
+        "name": "Mercurio",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+                        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can change your appearance completely in only a few moments by spending 1 effort, including height, weight, gender presentation, etc. Anyone in view of you can witness you change. You must appear as Kin (a person), but you could be a different Kintype, and otherwise everything else is up to you. This effect lasts until you camp, or until you eat or drink something, and while active you get a knack for impersonating your new form, although if you’re trying to impersonate a specific person, people who know them will see through your disguise up close.",
+                "glossary": [{"val": "knack", "id": "gl_knack"}]
+            },
+            { "tags": {"desc_type" : "desc"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At chapter III, this effect no longer costs effort if it's only used once a scene."
+            }
+                    ]
+    },
+    {
+        "id": "pw_mockingbird",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "knack": true
+        },
+        "eventtags": {},
+        "name": "Mockingbird",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You get a knack for mimicking sounds or voices.",
+                            "glossary": [{"val": "knack", "id": "gl_knack"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_fastfriends",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "charm": true
+        },
+        "eventtags": {},
+        "name": "Fast Friends",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can choose to automatically treat your next charm action roll as a 6. If you do, its effects only last:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_fastfriends"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After the duration expires, its target(s) realize they were manipulated."
+            }
+                    ]
+    },
+    {
+        "id": "pw_thebigshow",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "excel": true,
+            "charm": true,
+            "sneak": true
+        },
+        "eventtags": {},
+        "name": "The Big Show",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Critical hits on excel, charm, or sneak actions regain 2 effort for all party members who witness your feats.",
+                            "glossary": [{"val": "Critical hits", "id": "gl_criticalhitaction"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_habituallinestepper",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": 2,
+        "uses": "session",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You instantly disappear from sight and re-appear somewhere:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_habituallinestepper"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You don’t have to see your destination, but you are shunted back to your starting point if it’s occupied or obstructed (like trying to hop into solid rock, for example)."
+            }
+                    ]
+    },
+    {
+        "id": "pw_quickfingers",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Quickfingers",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Name a number of objects nearby equal to the chapter number that you can see that could fit or carry in one or both hands. By the start of the next scene, you have possession of them. If you stole them, the person you stole it from will find out within the hour."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_ridipagliacci",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can invoke each of your burdens instead of spending 1 effort, once a session for each burden."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_exuent",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Exuent",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you lead an action to flee or escape trouble, don’t spend effort."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_stepofthesmilingfew",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "sneak": true
+        },
+        "eventtags": {},
+        "name": "Step of the Smiling Few",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the power of your next Sneak action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitofthelaughinggod",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Gambit of the Laughing God",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
     }
 ]

@@ -1085,5 +1085,129 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_fastfriends",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_fastfriendschapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1 minute"
+                }]
+            },
+            {
+                "id": "ti_fastfriendschapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "An hour"
+                }]
+            },
+            {
+                "id": "ti_fastfriendschapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "A whole day"
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_habituallinestepper",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_habituallinestepperchapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Nearby"
+                }]
+            },
+            {
+                "id": "ti_habituallinestepperchapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Within two or three hundred paces."
+                }]
+            },
+            {
+                "id": "ti_habituallinestepperchapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Within a mile."
+                }]
+            }
+        ]
     }
 ]
