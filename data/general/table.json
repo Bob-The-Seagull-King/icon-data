@@ -1374,7 +1374,7 @@
                 "eventtags": {},
                 "description": [{
                     "tags": {"desc_type" : "desc"},
-                    "content": "0-3"
+                    "content": "1"
                 },{
                     "tags": {"desc_type" : "desc"},
                     "content": "Any town."
@@ -1388,7 +1388,7 @@
                 "eventtags": {},
                 "description": [{
                     "tags": {"desc_type" : "desc"},
-                    "content": "4-5"
+                    "content": "2"
                 },{
                     "tags": {"desc_type" : "desc"},
                     "content": "Any city or small village."
@@ -1402,10 +1402,72 @@
                 "eventtags": {},
                 "description": [{
                     "tags": {"desc_type" : "desc"},
-                    "content": "6"
+                    "content": "3"
                 },{
                     "tags": {"desc_type" : "desc"},
                     "content": "Anywhere."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_gaiacompass",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_gaiacompasschapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Village"
+                }]
+            },
+            {
+                "id": "ti_gaiacompasschapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Town"
+                }]
+            },
+            {
+                "id": "ti_gaiacompasschapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Settlement of any kind."
                 }]
             }
         ]

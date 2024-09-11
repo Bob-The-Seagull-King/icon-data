@@ -109,8 +109,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
-            "burden": true,
-            "heal": true
+            "heal": true,
+            "burden": true
         },
         "eventtags": {},
         "name": "Lay Burdens",
@@ -828,6 +828,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "burden": true,
             "strain": true
         },
         "eventtags": {},
@@ -927,6 +928,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "burden": true,
+            "heal": true
         },
         "eventtags": {},
         "name": "It's Nothing",
@@ -1198,6 +1201,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "burden": true
         },
         "eventtags": {},
         "name": "Ridi Pagliacci",
@@ -1403,6 +1407,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "burden": true,
+            "ambition": true
         },
         "eventtags": {},
         "name": "Honor Student",
@@ -1422,6 +1428,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "ambition": true,
+            "interlude": true
         },
         "eventtags": {},
         "name": "Passionate",
@@ -1670,6 +1678,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "ambition": true,
+            "interlude": true
         },
         "eventtags": {},
         "name": "Iron Cutting",
@@ -1750,6 +1760,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "burden": true,
             "superpowered": true
         },
         "eventtags": {},
@@ -2158,6 +2169,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "ambition": true
         },
         "eventtags": {},
         "name": "Coordinator",
@@ -2178,6 +2190,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "ambition": true,
+            "interlude": true
         },
         "eventtags": {},
         "name": "Ladder Climber",
@@ -2322,6 +2336,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "ambition": true,
+            "interlude": true
         },
         "eventtags": {},
         "name": "Spinner of Tales",
@@ -2380,6 +2396,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "ambition": true
         },
         "eventtags": {},
         "name": "Mentor",
@@ -2458,6 +2475,302 @@
                         {
                             "tags": {"desc_type" : "desc"},
                             "content": "Take a power from another Bond"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_xenoclash",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Xenoclash",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Choose two actions. Once a session, you can push each of these actions without spending effort. Describe the unique talents or abilities that allow you to do this.",
+                            "glossary": [{"val": "push", "id": "gl_push"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gaiacompass",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "knack": true
+        },
+        "eventtags": {},
+        "name": "Gaia Compass",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have a knack for navigation. You always know the distance and direction of the nearest:",
+                "glossary": [{"val": "knack", "id": "gl_knack"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_gaiacompass"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can sense dungeons within a few miles, and get a bad feeling when one is about to surface."
+            }
+                    ]
+    },
+    {
+        "id": "pw_openup",
+        "type": "Power",
+        "source": "core",
+        "tags": {   
+            "interlude": true
+        },
+        "eventtags": {},
+        "name": "Open Up",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can spend time with one other character during an interlude trying to understand each other. If you do, you can each aid each other once without spending effort during the next expedition."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_bloom",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "ambition": true
+        },
+        "eventtags": {},
+        "name": "Bloom",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Any character can set out a unique ambition clock once with 4 segments to try and learn a little of your language and customs. If they finish the clock, they gain 1 xp and they can understand your language, allowing you to communicate with them privately. You can decide whether an NPC speaks your language or not."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_earthglide",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "knack": true
+        },
+        "eventtags": {},
+        "name": "Earthglide",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You have an unusual way of moving due to skills, magical talent, or anatomy. You gain a knack for movement through certain terrain and don’t suffer reduced effect moving through it. Pick one per chapter:",
+                            "glossary": [{"val": "knack", "id": "gl_knack"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "list"},
+                            "content": "",
+                            "subcontent": [
+                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Forests"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Oceans"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mountains"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Snow"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Swamps"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deserts"
+                                }
+                            ]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_tourguide",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "ambition": true,
+            "interlude": true
+        },
+        "eventtags": {},
+        "name": "Tour Guide",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When a character works on ambitions or a project, they can bring you along. Roll a 1d6 fortune roll. On a 1, despite your best efforts you don’t help, giving -1d on the roll. On a 2-5, your unique insights help, giving +1d on the roll. On a 6, you offer a perspective that both gives +1d and allows them to tick 1 more segment.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_earthspeech",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Earth Speech",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can speak and understand something unusual, and have normal effect while doing so. Your conversation partners might not speak language, or be particularly eloquent. Whether they are actually talking back or not is up to the tone of your game. Pick one per chapter:"
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Animals"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Plants"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Rocks"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Weapons"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Tools"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Vehicles"
+                    }
+                ]
+            }
+                    ]
+    },
+    {
+        "id": "pw_centered",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Centered",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You have a unique cuisine, or a unique eating or drinking stricture or habit. When you share it with someone or explain it to them, they gain +1d to set you up for the rest of the session, and you get +1d on the next roll involving them.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_resourceful",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Resourceful",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can bring one more piece of loose gear with you on an expedition."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_thewave",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "sense": true
+        },
+        "eventtags": {},
+        "name": "The Wave",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of your next sense action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitoftheformless",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of the Formless",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_outsider",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
                         }
                     ]
     }
