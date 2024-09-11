@@ -4,6 +4,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "knack": true
         },
         "eventtags": {},
         "name": "Saddleborn",
@@ -28,6 +29,9 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "push": true,
+            "traverse": true,
+            "sneak": true
         },
         "eventtags": {},
         "name": "Windrider",
@@ -66,6 +70,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "action": true
         },
         "eventtags": {},
         "name": "Dabbler",
@@ -104,6 +109,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "burden": true,
+            "heal": true
         },
         "eventtags": {},
         "name": "Lay Burdens",
@@ -187,6 +194,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "sense": true,
+            "effect": true
         },
         "eventtags": {},
         "name": "Horizon Sweeper",
@@ -248,6 +257,8 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "superpowered": true,
+            "traverse": true
         },
         "eventtags": {},
         "name": "Lightspeed",
@@ -268,6 +279,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "gambit": true
         },
         "eventtags": {},
         "name": "Gambit of Gaia",
