@@ -110,7 +110,7 @@
         "uses": 1,
         "usetype": "session",
         "restriction": "",
-        "bondid": "bd_",
+        "bondid": "bd_pathfinder",
         "description": [
                         {
                             "tags": {"desc_type" : "desc"},
