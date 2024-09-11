@@ -1258,6 +1258,7 @@
         "type": "Power",
         "source": "core",
         "tags": {
+            "gambit": true
         },
         "eventtags": {},
         "name": "Gambit of the Laughing God",
@@ -1265,6 +1266,232 @@
         "usetype": "",
         "restriction": "4 Bond Powers",
         "bondid": "bd_harlequin",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_rarefiend",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "knack": true
+        },
+        "eventtags": {},
+        "name": "Rarefiend",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You have a knack for actions involving people considered highborn or high class. However, if you use this knack, all actions involving people considered low class or lowborn are 0d at best until the end of the session.",
+                            "glossary": [{"val": "knack", "id": "gl_knack"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_privatetutor",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Private Tutor",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You've had specialized training. Choose any action. You can re-roll any ‘1’s you roll as part of that action, keeping the new result. However, choose one other action that you neglected - you must re-roll any ‘6’s as part of this action, keeping the new result."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_silverspoon",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Silver Spoon",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can never be accused of trespassing except by someone considered high rank or high class (a manager, a noble, a military officer, etc), appropriate to chapter. This effect does not extend to anyone else with you, but get +1d on rolls to cover for them.",
+                "glossary": [{"val": "+1d", "id": "gl_boon"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At chapter II, you can cover for one extra person without question, and at chapter III you can cover for anyone you like within reason."
+            }
+                    ]
+    },
+    {
+        "id": "pw_trustthefund",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Trust the Fund",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You always have enough in your pockets to sway someone when you try to gain access, assets, or information. If you do, gain +1d or increased effect, but it’s incredibly obvious that you’re bribing them.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_specialreserve",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Special Reserve",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Get +1d or increased effect when you gather information or recall info on something rare, expensive, or hard to find.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_ivorytower",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Ivory Tower",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When the GM describes a location, monster, person, or historical event, you can ask the GM for an additional detail only an expert would know and get a truthful answer. Get +1d the next time you act on the answer.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_honorstudent",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Honor Student",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "If you forgo healing burdens, you can tick an extra segment on an ambition. If you take one other character along with you to observe, they can also tick a segment on their own ambitions."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_passionate",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Passionate",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You always have a secret passion ambition you can work on, something you’ve wanted to try but never been able to. It’s a 12 segment ambition clock that gives 3 xp for completing it, and can be worked on for free each interlude. If you complete your passion, you can pursue a new one."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_unflappable",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "command": true,
+            "charm": true
+        },
+        "eventtags": {},
+        "name": "Unflappable",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Leading actions to Command or Charm a large group costs no effort for you"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_perfectgrace",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "charm": true
+        },
+        "eventtags": {},
+        "name": "Perfect Grace",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_highborn",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of your next Charm action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitofthebronzequeen",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of the Bronze Queen",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_highborn",
         "description": [
                         {
                             "tags": {"desc_type" : "desc"},
