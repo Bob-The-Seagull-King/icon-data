@@ -1209,5 +1209,143 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_abetterway",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_abetterwaychapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One person or a small object."
+                }]
+            },
+            {
+                "id": "ti_abetterwaychapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "A whole group of people or a large object."
+                }]
+            },
+            {
+                "id": "ti_abetterwaychapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "A whole town, or a massive object such as a train, huge machine, etc."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_mender",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Result"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_menderresult0",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "0-3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Characters can spend 1 effort to heal 1 strain."
+                }]
+            },
+            {
+                "id": "ti_menderresult4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4-5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Character heals 1 strain."
+                }]
+            },
+            {
+                "id": "ti_menderresult6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Character heals 2 strain."
+                }]
+            },
+            {
+                "id": "ti_menderresult66",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6,6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Character heals 4 strain."
+                }]
+            }
+        ]
     }
 ]

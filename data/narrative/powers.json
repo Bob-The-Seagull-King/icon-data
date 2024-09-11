@@ -1498,5 +1498,232 @@
                             "content": "Take a power from another Bond."
                         }
                     ]
+    },
+    {
+        "id": "pw_pushthrough",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Push Through",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can take 1 strain instead of spending effort to take aid actions, which cannot be reduced or ignored."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_divineluck",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Divine Luck",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you take strain as a consequence, roll a 1d6 fortune roll. On 6, reduce the strain suffered to 0 (even critical strain)."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_illuminate",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Illuminate",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Your actions have +1 boon or increased effect (choose) with or against characters or creatures that trust you."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_untangle",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Untangle",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you help someone else lift burdens, you increase their segments healed by +1, and heal 1 segment yourself."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_pangloss",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Pangloss",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you fail a desperate action, your next action can be pushed without spending effort.",
+                            "glossary": [{"val": "pushed", "id": "gl_push"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_abetterway",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "study": true,
+            "tinker": true
+        },
+        "eventtags": {},
+        "name": "A Better Way",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you study to understand how something or someone is hurt or broken, or tinker to fix something, get +1d or increased effect. This ability works without effect loss on:",
+                "glossary": [{"val": "+1d", "id": "gl_boon"}]
+            },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_abetterway"
+            }
+                    ]
+    },
+    {
+        "id": "pw_mender",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "charm": true,
+            "tinker": true
+        },
+        "eventtags": {},
+        "name": "Mender",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can charm or tinker to heal someone’s strain. Check the final result:"
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_mender"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_encourage",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Encourage",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Spend a use of this ability to use aid without spending effort or exposing yourself to consequences"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_ironcutting",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Iron Cutting",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "At the end of each interlude, you can tick 2 segments total, split between any ambition, project clock, or ritual clock of your choice, even those belonging to another character."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_heartforge",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "tinker": true
+        },
+        "eventtags": {},
+        "name": "Heart Forge",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of your next Tinker action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitoftheforgetitan",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of the Forge Titan",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_mender",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
     }
 ]
