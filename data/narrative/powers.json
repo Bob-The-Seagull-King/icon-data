@@ -1153,9 +1153,9 @@
         "tags": {
         },
         "eventtags": {},
-        "name": 2,
-        "uses": "session",
-        "usetype": "",
+        "name": "Habitual Line Stepper",
+        "uses": 2,
+        "usetype": "session",
         "restriction": "",
         "bondid": "bd_harlequin",
         "description": [
