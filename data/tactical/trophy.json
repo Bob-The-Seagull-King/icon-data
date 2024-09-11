@@ -390,7 +390,7 @@
         "source": "core",
         "tags": {
             "action": 1,
-            "stunned": 1
+            "stunned": true
         },
         "eventtags": {},
         "name": "Circlet of Command",
