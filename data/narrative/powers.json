@@ -262,7 +262,7 @@
         },
         "eventtags": {},
         "name": "Lightspeed",
-        "uses": "1",
+        "uses": 1,
         "usetype": "session",
         "restriction": "",
         "bondid": "bd_pathfinder",
@@ -287,6 +287,291 @@
         "usetype": "",
         "restriction": "4 Bond Powers",
         "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_heartsight",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Heartsight",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Close your eyes. You can view a location for 1 minute, anywhere:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_heartsight"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You view the location as if an invisible observer, hearing and seeing everything. You cannot move your point of vision, and your body is immobile and vulnerable while taking this action. You can end it any time. You don’t have to be able to see the location you’re trying to view."
+            }
+                    ]
+    },
+    {
+        "id": "pw_libraryorgan",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "study": true,
+            "sense": true
+        },
+        "eventtags": {},
+        "name": "Library Organ",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Get +1d on study and sense for the rest of the scene, but all other actions are at 0d."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At chapter III, also increase all effect from study and sense."
+            }
+                    ]
+    },
+    {
+        "id": "pw_argus",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Argus",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You get a knack for sensing:",
+                            "glossary": [{"val": "knack", "id": "gl_knack"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_argus"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_midnighteyes",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "study": true,
+            "sense": true
+        },
+        "eventtags": {},
+        "name": "Midnight Eyes",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can see in the dark, which could make your risk and effect better. Your study and sense actions get increased effect in darkness."
+            },
+            { "tags": {"desc_type" : "desc"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At Chapter III or higher, you can see anything close by in good detail without the use of your eyes."
+            }
+                    ]
+    },
+    {
+        "id": "pw_unhinge",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Unhinge",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you push a desperate action, it also gains increased effect.",
+                            "glossary": [{"val": "push", "id": "gl_push"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_darkclarity",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "action": "study"
+        },
+        "eventtags": {},
+        "name": "Dark Clarity",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You may study the ambient emotional state of:"
+                        },
+                        { "tags": {"desc_type" : "gap"}, "content": ""  },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_darkclarity"
+                        },
+                        { "tags": {"desc_type" : "gap"}, "content": ""  },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You get an impression of how they are feeling and what the strongest emotion they are feeling is. Your next action including your target(s) that can act on this information gets +1 boon or increased effect.",
+                            "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_possession",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Possession",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Ask a presence inside you for advice. The GM will answer as the presence. Get +1d on the next action that follows that advice.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_instinctive",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Instinctive",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Describe a course of action to the GM you plan to take this session. You will receive an answer that is truthful, if unclear, that comes from a feeling. The GM can choose from the following options:"
+                        },
+                        {
+                            "tags": {"desc_type" : "list"},
+                            "content": "",
+                            "subcontent": [
+                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Wheel (good/positive outcomes)"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Stone (bad/negative outcomes)"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Chaos (a mix of good and bad outcomes)"
+                                }
+                            ]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_geist",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Geist",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you are able to touch someone skin to skin, even if you break contact, you can see through their eyes and experience their sensations and ambient emotional state, though you can do little but observe, and they are not aware of your presence. The effect can be accessed:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_geist"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": ""  },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The effect is canceled when you use this ability again, and while you’re concentrating on it, you cannot do anything yourself except sit in quiet focus, otherwise the effect breaks. A player character must be willing, and you may need a roll to be able to touch a hostile, unaware, or unwilling character."
+            }
+                    ]
+    },
+    {
+        "id": "pw_terribletruth",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "study": true
+        },
+        "eventtags": {},
+        "name": "Terrible Truth",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_seeker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of your next Study action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitoftheoutsider",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of the Outsider",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_seeker",
         "description": [
                         {
                             "tags": {"desc_type" : "desc"},

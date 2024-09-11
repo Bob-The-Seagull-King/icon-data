@@ -795,7 +795,7 @@
         ],
         "items": [
             {
-                "id": "ti_saddlebornchapter1",
+                "id": "ti_horizonsweeperchapter1",
                 "type": "TableItem",
                 "source": "core",
                 "tags": {},
@@ -809,7 +809,7 @@
                 }]
             },
             {
-                "id": "ti_saddlebornchapter2",
+                "id": "ti_horizonsweeperchapter2",
                 "type": "TableItem",
                 "source": "core",
                 "tags": {},
@@ -823,7 +823,7 @@
                 }]
             },
             {
-                "id": "ti_saddlebornchapter3",
+                "id": "ti_horizonsweeperchapter3",
                 "type": "TableItem",
                 "source": "core",
                 "tags": {},
@@ -834,6 +834,254 @@
                 },{
                     "tags": {"desc_type" : "desc"},
                     "content": "Distance of any kind"
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_heartsight",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_heartsightchapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Close by, within shouting distance"
+                }]
+            },
+            {
+                "id": "ti_heartsightchapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Within a few miles"
+                }]
+            },
+            {
+                "id": "ti_heartsightchapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Anywhere in Arden Eld"
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_argus",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_arguschapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Hidden objects, paths, tracks, or traps"
+                }]
+            },
+            {
+                "id": "ti_arguschapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Hidden people, monsters, or ambushes"
+                }]
+            },
+            {
+                "id": "ti_arguschapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Invisible or metaphysical objects or forces, such as the flow of magic."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_darkclarity",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_darkclaritychapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One person close by"
+                }]
+            },
+            {
+                "id": "ti_darkclaritychapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One person or monster close by"
+                }]
+            },
+            {
+                "id": "ti_darkclaritychapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "All people or monsters close by"
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_geist",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Chapter", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti_geistchapter1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "One"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Until the end of the scene"
+                }]
+            },
+            {
+                "id": "ti_geistchapter2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Two"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Until the end of the expedition"
+                }]
+            },
+            {
+                "id": "ti_geistchapter3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Three"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Indefinitely"
                 }]
             }
         ]
