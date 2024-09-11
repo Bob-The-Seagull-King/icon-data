@@ -12,5 +12,159 @@
                 "content": "Leading a team action only costs 1 effort for you."
             }
                         ]
+    },
+    {
+        "id": "sa_seeker",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When exhausted, you get +1d on study and sense actions and can aid in those actions without spending effort."
+            }
+                        ]
+    },
+    {
+        "id": "sa_mighty",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When an ally close to you suffers strain, you can take the strain for them. In addition, you can spend 1 Effort when you take any strain to reduce it by 1, to a minimum of 1."
+            }
+                        ]
+    },
+    {
+        "id": "sa_wolf",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You are hardened. Your 4 clock burden gives you no penalties."
+            }
+                        ]
+    },
+    {
+        "id": "sa_harlequin",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you’re exhausted, get +1d and increased effect on sneak."
+            }
+                        ]
+    },
+    {
+        "id": "sa_highborn",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you’re exhausted, characters that aid you spend no effort."
+            }
+                        ]
+    },
+    {
+        "id": "sa_mender",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can allow someone else to regain 1 effort by spending 1 effort."
+            }
+                        ]
+    },
+    {
+        "id": "sa_brave",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you lead a team action, get +1d on the action or increased effect."
+            }
+                        ]
+    },
+    {
+        "id": "sa_broker",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you become exhausted or break, all team mates regain 1 effort."
+            }
+                        ]
+    },
+    {
+        "id": "sa_elder",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of a session, choose another character to watch over. The first time in the session that character would take a burden, you can intervene and choose to take that burden instead if you have one free. If you do, regain all effort and clear all strain, and mark +1 xp."
+            }
+                        ]
+    },
+    {
+        "id": "sa_outsider",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You gain +1d to set characters up."
+            }
+                        ]
+    },
+    {
+        "id": "sa_dreamer",
+        "type": "SpecialAbility",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Special Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters that successfully aid you or set you up can recover 1 effort, but no more than once a session."
+            }
+                        ]
     }
 ]

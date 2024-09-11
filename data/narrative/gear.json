@@ -72,5 +72,598 @@
             "rebreather refill",
             "rebreather refill"
         ]
+    },
+    {
+        "id": "gr_ritualkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Ritual Kit",
+        "items": [
+            "tightly bound tome of rituals",
+            "mysterious occult scroll",
+            "candles",
+            "chalk",
+            "salt",
+            "paper for talismans",
+            "reagents for burning",
+            "holy icon",
+            "silver bolt",
+            "deat light lantern - pierces supernatural darkness, weather, or obscurement"
+        ]
+    },
+    {
+        "id": "gr_archaeologistskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Archaeologist's Kit",
+        "items": [
+            "thick tome of dungeon lore",
+            "pick",
+            "shovel",
+            "head lantern",
+            "extra spool of rope",
+            "climbing harness",
+            "arkentech ruin sensor - 2 mile effectiveness"
+        ]
+    },
+    {
+        "id": "gr_scholarskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Scholar's Kit",
+        "items": [
+            "academic almanac",
+            "telescope",
+            "star chart",
+            "tattered personal notes",
+            "magnifying arkentech lenses - 10x zoon",
+            "aether compass - senses, qualifies, and measures ambient aether"
+        ]
+    },
+    {
+        "id": "gr_soldierskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Soldier's Kit",
+        "items": [
+            "extra rations",
+            "whetstone",
+            "oil",
+            "two pairs of good boots",
+            "extra large pack",
+            "badge of rank",
+            "protection ward"
+        ]
+    },
+    {
+        "id": "gr_mercenaryskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mercenary's Kit",
+        "items": [
+            "fortifying snack",
+            "iron flask",
+            "bounty ledger",
+            "backup weapon",
+            "foldable hand cart",
+            "heavy object for hitting someone with"
+        ]
+    },
+    {
+        "id": "gr_brawlerskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Brawler's Kit",
+        "items": [
+            "healing ointment",
+            "copious bandages",
+            "splint",
+            "thick gauntlets or gloves",
+            "foldable stretcher",
+            "good luck charm"
+        ]
+    },
+    {
+        "id": "gr_soloskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Solo's Kit",
+        "items": [
+            "shadow cloak",
+            "collapsible weapon",
+            "spiked gloves and boots for climbing and combat",
+            "single use flashbomb",
+            "sleep toxin",
+            "slow acting poison",
+            "paralyzing toxin"
+        ]
+    },
+    {
+        "id": "gr_survivorskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Survivor's Kit",
+        "items": [
+            "pick-me-up - something to take the edge off",
+            "old bandages",
+            "lock picks",
+            "change of clothes",
+            "concealed weapon(s)",
+            "faded memento",
+            "extensive memory of local street layout and back doors"
+        ]
+    },
+    {
+        "id": "gr_wandererskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Wanderer's Kit",
+        "items": [
+            "weatherproof cloak",
+            "hardy travelling outfit",
+            "extra rope",
+            "survival rations",
+            "hunting weapon",
+            "general knowledge of local fauna and flora - from good and bad experiences"
+        ]
+    },
+    {
+        "id": "gr_entertainerskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Entertainer's Kit",
+        "items": [
+            "instrument",
+            "fancy outfit",
+            "three free meals",
+            "tome of song lore",
+            "tickets to a show",
+            "extensive knowledge of local haunts",
+            "free entry and lodging for a single inn, tavern, or place to stay"
+        ]
+    },
+    {
+        "id": "gr_rakeskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Rake's Kit",
+        "items": [
+            "hooded lantern",
+            "lock picks",
+            "paramour's portrait",
+            "concealed weapon",
+            "loaded dice",
+            "gaming set",
+            "three extra outfits",
+            "disguise kit - wigs, outfits, fake noses - etc - can be applied to others"
+        ]
+    },
+    {
+        "id": "gr_tricksterskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Trickster's Kit",
+        "items": [
+            "someone else's pocket contents",
+            "ball bearings",
+            "official looking uniform",
+            "fire starter",
+            "very convenient key",
+            "large pounch of mysterious powder"
+        ]
+    },
+    {
+        "id": "gr_nobleskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Noble's Kit",
+        "items": [
+            "two changes of fancy clothes",
+            "dueling weapon",
+            "personal reference",
+            "traveling trunk",
+            "expensive jewelry",
+            "general knowledge of city politics",
+            "noble pedigree or family reputation"
+        ]
+    },
+    {
+        "id": "gr_academickit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Academic Kit",
+        "items": [
+            "thick-bound almanac",
+            "late night snacks",
+            "massive sheathes of rambling but extensive notes",
+            "hobby journal",
+            "sample kit",
+            "extra large pack",
+            "expensive arkentech contraption - compass, scope, etc - top of the line but breakable and can only be used once"
+        ]
+    },
+    {
+        "id": "gr_cloisterkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Cloister Kit",
+        "items": [
+            "simple ritual gear - candles, bowl, talismans",
+            "protective ward",
+            "traveling staff or walking stick",
+            "good hat",
+            "badge of a scholarly, wright, or religious order - proving membership",
+            "old arkentech relic of unknown use"
+        ]
+    },
+    {
+        "id": "gr_mendingkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mending Kit",
+        "items": [
+            "healing ointment",
+            "light reading",
+            "snacks",
+            "bandages",
+            "blanket",
+            "splint",
+            "salve",
+            "blight remedies",
+            "apron",
+            "clean gloves",
+            "holy icon",
+            "copious sweets"
+        ]
+    },
+    {
+        "id": "gr_hearthkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Hearth Kit",
+        "items": [
+            "great cooking pot",
+            "oversize coat",
+            "bright lantern",
+            "extra ingredients",
+            "seasoning",
+            "firewood",
+            "spacious tent",
+            "large pack",
+            "arkentech hot plate and igniter that can start a fire anywhere, even underwater"
+        ]
+    },
+    {
+        "id": "gr_workkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Work Kit",
+        "items": [
+            "goggles",
+            "sandwich",
+            "vials for storage",
+            "weak acid",
+            "metal auger",
+            "heavy tookbox - pliers, spanners, tools, wire, etc",
+            "repurposed arkentech doodad - single use"
+        ]
+    },
+    {
+        "id": "gr_bravekit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Brave Kit",
+        "items": [
+            "signature outfit",
+            "3 arkentech light gems",
+            "maps to a mysterious place",
+            "northstone - always tells north and time of day, even underground",
+            "trinket from home",
+            "arkentech power gauntlet - single use"
+        ]
+    },
+    {
+        "id": "gr_explorerkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Explorer Kit",
+        "items": [
+            "waterproof cloak",
+            "extendable walking pole - 3 to 10 ft",
+            "compass",
+            "flask",
+            "three empty bottles",
+            "chalk",
+            "6 depth stones - toss to check depth of pits",
+            "abyss stones - glows when monsters are nearby"
+        ]
+    },
+    {
+        "id": "gr_inheritedkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Inherited Kit",
+        "items": [
+            "hexagonal key",
+            "oddly fitting clothing",
+            "antique armour piece",
+            "broken arkenrelic",
+            "heirloom weapon",
+            "memories of a prophecy"
+        ]
+    },
+    {
+        "id": "gr_shadykit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Shady Kit",
+        "items": [
+            "false identity papers",
+            "tilted hat",
+            "quick disguise",
+            "coat with six hidden pockets",
+            "lock picks",
+            "forgery tools",
+            "convenient bribe",
+            "arkentech skeleton key - opens or activates most arkentech devices"
+        ]
+    },
+    {
+        "id": "gr_socialiteskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Socialite's Kit",
+        "items": [
+            "two fancy outfits",
+            "one very fancy outfit",
+            "one inconspicuous outfit",
+            "one servant's outfit",
+            "really nice pair of shoes",
+            "jewelry",
+            "tailoring supplies",
+            "address of anyone in a city or town",
+            "single invite to any party"
+        ]
+    },
+    {
+        "id": "gr_bossskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Boss's Kit",
+        "items": [
+            "ledger",
+            "gambling kit",
+            "crowbar",
+            "flask of something string - coffee, tea, or alchohol",
+            "guild membership badge",
+            "key to a warehouse",
+            "scuffed pair of arkentech radios - not effective over distance"
+        ]
+    },
+    {
+        "id": "gr_weatheredadventurerskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Weathered Adventurer's Kit",
+        "items": [
+            "rusted lantern",
+            "well-worn pack",
+            "flat bedroll",
+            "three loops of sturdy rope",
+            "flint and tinder",
+            "arkentech firestarter",
+            "thick journal",
+            "extra rations",
+            "sturdy cooking pot",
+            "nicked utility knife",
+            "sleeping bag"
+        ]
+    },
+    {
+        "id": "gr_veteranskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Veteran's Kit",
+        "items": [
+            "broken famous weapon",
+            "old badge of rank",
+            "weapon care kit",
+            "painful memento",
+            "the most solid boots in the world",
+            "thick and warm cloak",
+            "good knowledge of wound care"
+        ]
+    },
+    {
+        "id": "gr_hermitskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Hermit's Kit",
+        "items": [
+            "herbal medicine",
+            "icon of a magic or religious order",
+            "heavy and sturdy walking stave",
+            "light back",
+            "excellent hat",
+            "good knowledge of local foraging - food, medicine, poisonous plants, etc"
+        ]
+    },
+    {
+        "id": "gr_nostalgickit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Nostalgic Kit",
+        "items": [
+            "memories of the local area from a long time ago",
+            "a useful story you heard once",
+            "a safe place you know about nearby",
+            "an excellent sense of direction"
+        ]
+    },
+    {
+        "id": "gr_outsiderskit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Outsider's Kit",
+        "items": [
+            "strangely shaped lantern",
+            "pack",
+            "bedroll",
+            "5 fire stones - hot",
+            "food from home",
+            "foreign clothes",
+            "local clothes",
+            "icon from a distant land",
+            "unique weapon or tool",
+            "script in a foreign language"
+        ]
+    },
+    {
+        "id": "gr_outsidersspecialkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Outsider's Collection",
+        "items": [
+            "At the end of an interlude can take any other piece of gear from any other bond used by player character in your party and add it to your loose gear list."
+        ]
+    },
+    {
+        "id": "gr_improvisedkit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Improvised Kit",
+        "items": [
+            "fistful of sand",
+            "convenient rock",
+            "makeshift key",
+            "homemade tool",
+            "pocket snacks",
+            "slingshot"
+        ]
+    },
+    {
+        "id": "gr_unluckykit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Unlucky Kit",
+        "items": [
+            "a sudden fall",
+            "an untied knot",
+            "a slip",
+            "a broken pot or cup",
+            "a flying object"
+        ]
+    },
+    {
+        "id": "gr_luckykit",
+        "type": "GearKit",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Lucky Kit",
+        "items": [
+            "a single useful clue",
+            "a sudden change in lighting",
+            "a shift in the weather",
+            "a convenient noise",
+            "a useful crack in a wall or door"
+        ]
     }
 ]

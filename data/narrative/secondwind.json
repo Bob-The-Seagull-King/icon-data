@@ -12,5 +12,159 @@
                 "content": "Regain 1 effort when you enter a new scene. This ability can activate any number of times a session."
             }
                         ]
+    },
+    {
+        "id": "sw_seeker",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Regain all effort when you discover something hidden, forbidden, or secret."
+            }
+                        ]
+    },
+    {
+        "id": "sw_mighty",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Regain all effort when you take injury or harm while protecting someone else."
+            }
+                        ]
+    },
+    {
+        "id": "sw_wolf",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Regain all effort when you fix someone else’s mistakes, or someone else fixes yours."
+            }
+                        ]
+    },
+    {
+        "id": "sw_harlequin",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Regain all effort when your actions get you in trouble with someone or something powerful."
+            }
+                        ]
+    },
+    {
+        "id": "sw_highborn",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may regain all effort when someone else relieves all effort."
+            }
+                        ]
+    },
+    {
+        "id": "sw_mender",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You only regain effort from bond powers, camping, or interludes."
+            }
+                        ]
+    },
+    {
+        "id": "sw_brave",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Regain all effort when you charge forth without a plan."
+            }
+                        ]
+    },
+    {
+        "id": "sw_broker",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can regain all effort when another team mate becomes exhausted or breaks."
+            }
+                        ]
+    },
+    {
+        "id": "sw_elder",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can regain all effort when you manage to avoid confrontation or violence through your actions."
+            }
+                        ]
+    },
+    {
+        "id": "sw_outsider",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Regain all effort when you spend a scene trying not to use your unique talents or abilities."
+            }
+                        ]
+    },
+    {
+        "id": "sw_dreamer",
+        "type": "SecondWind",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Second Wind",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can regain all effort when someone helps you out of a bad situation. Your rescuer can also recover 1 effort."
+            }
+                        ]
     }
 ]

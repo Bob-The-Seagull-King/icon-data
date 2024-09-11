@@ -7,6 +7,8 @@
         },
         "eventtags": {},
         "name": "Pathfinder",
+        "customkitsize": 3,
+        "loosegearsize": 2,
         "actions": ["ac_traverse","ac_sense"],
         "secondwind": "sw_pathfinder",
         "specialability": "sa_pathfinder",
@@ -30,6 +32,409 @@
             "I addressed challenges with curiosity, exploration, or understanding.",
             "I expressed my heritage, background, or beliefs through my actions.",
             "I saw, heard, or tasted something truly unique."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_seeker",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Seeker",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_study","ac_sense"],
+        "secondwind": "sw_seeker",
+        "specialability": "sa_seeker",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_ritualkit","gr_archaeologistskit","gr_scholarskit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Uncover forbidden knowledge, untangle people, teeter on the edge of sanity. The Seeker wants answers - about the world, about magic, about monsters, about themselves - all of it. Their keen wits let them cut through any situation, even if they may not like what they uncover."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with investigation, intuition, or recklessness.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I questioned my own understanding of the world."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_mighty",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mighty",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_smash", "ac_endure"],
+        "secondwind": "sw_mighty",
+        "specialability": "sa_mighty",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_soldierskit","gr_mercenaryskit","gr_brawlerskit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Use your prodigious physical or magical strength to destroy obstacles and help your friends. The Mighty revels in strength and power, and presents an unbreakable front to the enemy, but uses that power not to oppress and control, but to protect the vulnerable and stand against evil."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with strength, leadership, or force.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I didn’t back down when faced with a challenge."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_wolf",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Wolf",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_excel", "ac_sneak"],
+        "secondwind": "sw_wolf",
+        "specialability": "sa_wolf",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_soloskit","gr_survivorskit","gr_wandererskit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "You are a tough exterior covered in scars. Your competency makes you strong, but you also can’t let anyone see where you’re vulnerable. The wolf stands strong alone, but can’t forget that they ultimately rely on the pack."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with precision, coldness, or intimidation.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I let people see a glimpse of who I am beneath my mask."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_harlequin",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Harlequin",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_sneak","ac_charm"],
+        "secondwind": "sw_harlequin",
+        "specialability": "sa_harlequin",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_entertainerskit","gr_rakeskit","gr_tricksterskit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trick, humiliate, and dance around the powerful. The Harlequin despises those who take themselves too seriously, and delights in slipping in and out of conversations, roles, and situations."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with cunning, subterfuge, or deceit.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I talked or slipped my way out of a charged situation."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_highborn",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Highborn",
+        "customkitsize": 5,
+        "loosegearsize": 2,
+        "actions": ["ac_charm","ac_study"],
+        "secondwind": "sw_highborn",
+        "specialability": "sa_highborn",
+        "gear": [
+            {
+                "choose": 2,
+                "kits": ["gr_nobleskit","gr_academickit","gr_cloisterkit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "You were born into a sheltered existence, both protected and constrained by wealth, walls, or rules, a curse as much as it is a blessing. You have privileges, power, and knowledge that others envy, but have so much else to learn about the world."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with poise, passion, or social status",
+            "I challenged or acted against my heritage, background, or standing beliefs with my actions.",
+            "I learned something new about my companions."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_mender",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mender",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_tinker","ac_charm"],
+        "secondwind": "sw_mender",
+        "specialability": "sa_mender",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_mendingkit","gr_hearthkit","gr_workkit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "You gather your group with cheer and good attitude. You use your power to fix, heal, and mend. You can be quiet, but when you’re loud, people listen."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with diplomacy, positivity, or empathy",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I learned how someone or something was broken."
+        ],
+        "effort": 6,
+        "strain": 5
+    },
+    {
+        "id": "bd_brave",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Brave",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_endure","ac_command"],
+        "secondwind": "sw_brave",
+        "specialability": "sa_brave",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_bravekit","gr_explorerkit","gr_inheritedkit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Use your courage, luck, and wits to smash head on into problems. The Brave is always at the front line, hurling themselves at problems, and hoping their allies will pick up the pieces. They’re at their best when relying on fate, teamwork, and the power of perseverance."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with perseverance, friendship, and courage.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I used my heart rather than my head to solve a problem."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_broker",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Broker",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_command","ac_tinker"],
+        "secondwind": "sw_broker",
+        "specialability": "sa_broker",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_shadykit","gr_socialiteskit","gr_bossskit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Use your superior skills, class, intellect, or delicate touch to handle situations with elegance. You’ve been there before, and you have a plan for everything under the sun. Some may call you stuck up, but they don’t see how the strings you pull save their sorry hides again and again."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with manipulation, influence, or planning.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "Despite my best efforts, we went wildly off plan."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_elder",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Elder",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_endure","ac_excel"],
+        "secondwind": "sw_elder",
+        "specialability": "sa_elder",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_weatheredadventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_veteranskit","gr_hermitskit","gr_nostalgickit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "You’ve been around a long time - maybe too long. You’ve seen a lot of what Arden Eld has to offer - the good and the bad. The adventuring life, with its threats, its challenges, and it’s wandering lifestyle, are something you would perhaps want put behind you, but you have a little more work to do before you can put your gear away for good. There are people out there who need you."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with patience, wisdom, or experience.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I defused a potentially violent situation."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_outsider",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Outsider",
+        "customkitsize": 3,
+        "loosegearsize": 4,
+        "actions": ["ac_sense","ac_traverse"],
+        "secondwind": "sw_outsider",
+        "specialability": "sa_outsider",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_outsiderskit"]
+            },
+            {
+                "choose": 0,
+                "kits": ["gr_outsidersspecialkit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "You’re not from around here. You’re a little strange or unique in appearance, customs, or culture, and it can make people cautious or uneasy, but also curious. You may have come from a chronicler monastery, or a hermit village at the edge of the world, or you might literally be a fish out of water, from a town on the sea floor. Your perspective on things can be refreshing and you have powerful talents you can bring to bear."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with my unique perspective, talents, or culture.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I made a new friend, or deepened an existing friendship."
+        ],
+        "effort": 3,
+        "strain": 5
+    },
+    {
+        "id": "bd_dreamer",
+        "type": "Bond",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Dreamer",
+        "customkitsize": 3,
+        "loosegearsize": 2,
+        "actions": ["ac_sneak","ac_smash"],
+        "secondwind": "sw_dreamer",
+        "specialability": "sa_dreamer",
+        "gear": [
+            {
+                "choose": 0,
+                "kits": ["gr_adventurerskit"]
+            },
+            {
+                "choose": 1,
+                "kits": ["gr_improvisedkit","gr_unluckykit","gr_luckykit"]
+            }
+        ],
+        "blurb": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "You are optimistic, perhaps to a fault. You might be new the to the adventuring life, young, or a little green around the ears - or perhaps you are simply too wise to be cynical. Not everything goes right when you try it, but try it you must."
+            }
+        ],
+        "ideals": [
+            "I addressed challenges with creativity, cheer, or trust in my allies.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I failed miserably."
         ],
         "effort": 3,
         "strain": 5
