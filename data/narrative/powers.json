@@ -1942,5 +1942,295 @@
                             "content": "Take a power from another Bond."
                         }
                     ]
+    },
+    {
+        "id": "pw_contingency",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Contingency",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can use this power to ‘flash back’ in time to tell the GM how you prepared for a situation. You can use this ability before or after any action roll to do one of the following:"
+                        },
+                        { "tags": {"desc_type" : "gap"}, "content": "" },
+                        {
+                            "tags": {"desc_type" : "list"},
+                            "content": "",
+                            "subcontent": [
+                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Set up a character for the next action (even yourself)."
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Resist consequences of something that just happened by taking strain, even for another character."
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Increase effect or lower risk."
+                                }
+                            ]
+                        },
+                        { "tags": {"desc_type" : "gap"}, "content": "" },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "To do so, however, you need to be able to tell the GM how you prepared and also make fortune roll using one of your actions to see how well your preparation went. On a 4+ gain the expected effect, on a 6 choose an extra effect, and on a 1-3 you had to abandon the plan (this ability has no effect this scene and regain 1 use)."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_swoon",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Swoon",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you would take consequences as a result of your actions, you have may another willing character nearby take the consequences instead of you after you learn what they are. If they do, they take 1 xp."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_immaculate",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "knack": true
+        },
+        "eventtags": {},
+        "name": "Immaculate",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Get a knack for situations where being dressed appropriately would help you (disguises, uniforms, outfits, formalwear, etc), appropriate to chapter.",
+                            "glossary": [{"val": "knack", "id": "gl_knack"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_begborroworsteal",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Beg, Borrow, or Steal",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you need the right tool for the job (a disguise, a tool, a weapon, a portable boat, a ladder) you can choose to have it right now. The tool’s power, type, and rarity depends on chapter, and it lasts until the end of the session, or until you use this ability again. Gain +1d on actions using the tool, but the GM chooses one:"
+                        },
+                        {
+                            "tags": {"desc_type" : "list"},
+                            "content": "",
+                            "subcontent": [
+                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "It was stolen from someone, who will track you down by next interlude."
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "It’s poor quality and breaks after the scene is over."
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "It gets you into trouble after the scene is over (it attracts attention, there’s an unwanted side effect, it leads you somewhere you weren’t expecting to go)."
+                                }
+                            ]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_fruitful",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Fruitful",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have a contact or family member in every populated location. Define this person with the GM and pick one (choose carefully):"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Not in trouble with the law."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Reliable."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Won’t need a favor."
+                    }
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Roll +1d on actions where your contact could help you.",
+                "glossary": [{"val": "+1d", "id": "gl_boon"}]
+            }
+                    ]
+    },
+    {
+        "id": "pw_faust",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Faust",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The next time you roll, treat all 1s as 6s. The next time you roll after that, treat all 6s as 1s."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_makeitwork",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Make It Work",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You may use your highest rated action for any single action with normal effectiveness (charming a door to open for example)."
+                        },
+                        { "tags": {"desc_type" : "gap"}, "content": "" },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Explain to the GM how you’re doing this. At chapter III, you don’t need to explain."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_coordinator",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Coordinator",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You get 2 xp for pursuing a group ambition instead of 1, and gain +1d when working on a group ambition.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_ladderclimber",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Ladder Climber",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can pursue ambitions twice during an interlude, but only if you pursue different ambitions."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_goldenhand",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "command": true
+        },
+        "eventtags": {},
+        "name": "Golden Hand",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of your next Command action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitoftheweeper",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Gambit of the Weeper",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_broker",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
     }
 ]
