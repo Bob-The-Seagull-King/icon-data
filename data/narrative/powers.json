@@ -1725,5 +1725,222 @@
                             "content": "Take a power from another Bond."
                         }
                     ]
+    },
+    {
+        "id": "pw_striketheroad",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Strike the Road",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The first team action you lead in a session costs you 0 effort."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_crushlimiter",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true
+        },
+        "eventtags": {},
+        "name": "Crush Limiter",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "you can give your next action superpowered effect, but take a burden at the end of the scene.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_luckasaconstant",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Luck as a Constant",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you critical hit, regain all effort, heal all strain, and mark 1 xp.",
+                            "glossary": [{"val": "critical hit", "id": "gl_criticalhitaction"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_allin",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "All In",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Using Aid to help a character taking a desperate action costs 0 effort for you."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_joyluckwindthrower",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Joyluck Wind Thrower",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you take a desperate action, you can take +1d on the action. If you do, treat any die less than a 6 as a 1.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_thesun",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "The Sun",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain increased effect on all actions for the rest of the scene."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_coordinate",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Coordinate",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Aiding you on team actions costs 0 effort."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_heartofhearts",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Heart of Hearts",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can flash back to a scene from your past or hometown and describe how your memory of that time inspires you in the current moment. You can treat your next roll as though you rolled a critical hit (6,6). You can only use this ability three times ever, and when you expend its third use, replace this power with another one.",
+                            "glossary": [{"val": "critical hit", "id": "gl_criticalhitaction"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_teamplayer",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Team Player",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When any ally sets you up, you have increased effect on the roll."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_bravedestiny",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true
+        },
+        "eventtags": {},
+        "name": "Brave Destiny",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of the next team action you take to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitofthehundredswordgod",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of the Hundred Sword God",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_brave",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
     }
 ]
