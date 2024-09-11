@@ -802,5 +802,224 @@
                             "content": "Take a power from another Bond."
                         }
                     ]
+    },
+    {
+        "id": "pw_clarity",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Clarity",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "If you break, regain all effort, and you can push your next action for free.",
+                            "glossary": [{"val": "push", "id": "gl_push"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_scarcoat",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "strain": true
+        },
+        "eventtags": {},
+        "name": "Scarcoat",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain +1 max strain per Burden you have"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_bloodscent",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "knack": true
+        },
+        "eventtags": {},
+        "name": "Blood Scent",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You get a knack for tracking or intimidating anyone or anything that’s wounded.",
+                            "glossary": [{"val": "knack", "id": "gl_knack"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_goforawalk",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Go for a Walk",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you separate from the group to do something alone, you can trigger this ability to get +1d and increased effect on your action. ‘Cut to black’ and roll the action ‘off-screen’, then cut back to when you return to the group, describing what happened.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_cornered",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Cornered",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you are outnumbered in a tense or violent situation, leading team actions does not cost effort for you."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_lurk",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Lurk",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When the GM describes a scene, you can choose to be there, hidden, appropriate to chapter. Don’t worry about how you got there."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_itsnothing",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "It's Nothing",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "During Heal Burdens, heal 2 extra ticks on a burden of your choice if nobody helps you heal burdens. Heal 1 tick on two burdens if someone does help you heal, instead of just one burden. If you do so, you can’t help other people heal burdens."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_crackshell",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Crack Shell",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you’re exhausted, you can take aid actions without spending effort."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_bishop",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Bishop",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you set someone up, that person gets both +1d and increased effect on the set up roll.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_widk",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "excel": true
+        },
+        "eventtags": {},
+        "name": "Wick",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the power of your next Excel action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitofarenheir",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of Arenheir",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_wolf",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
     }
 ]
