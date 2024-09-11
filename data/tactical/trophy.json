@@ -4,6 +4,8 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
+            "attack": true,
+            "terrain": "difficult"
         },
         "eventtags": {},
         "name": "Frost Enchantment",
@@ -14,6 +16,372 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Use this enchantment at the start of combat to wreathe your weapon in shimmering frost. Any time you attack a character this combat, you create difficult terrain under them.",
                 "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }]
+    },
+    {
+        "id": "tp_flameenchantment",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "attack": true
+        },
+        "eventtags": {},
+        "name": "Flame Enchantment",
+        "category": "general",
+        "uses" : 3,
+        "usetype": "combat",
+        "description": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Your attacks this combat gain:",
+            "glossary": [{"val": "", "id": ""}]
+        },{
+            "tags": {"desc_type" : "effect"},
+            "content": "Exceed: ",
+            "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Release a burst 1 (target) explosion, dealing 3 damage to all characters inside.",
+                    "glossary": [{"val": "burst 1", "id": "gl_burst"}]
+                }
+            ]
+        }]
+    },
+    {
+        "id": "tp_lightningenchantment",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "attack": true,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Lightning Enchantment",
+        "category": "general",
+        "uses" : 3,
+        "usetype": "combat",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your attacks this combat deal 1 piercing damage to any foe damaged after they resolve.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }]
+    },
+    {
+        "id": "tp_poisonenchantment",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "attack": true,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Poison Enchantment",
+        "category": "general",
+        "uses" : 3,
+        "usetype": "combat",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your attacks this combat gain pierce.",
+                "glossary": [{"val": "pierce", "id": "gl_piercing"}]
+            }]
+    },
+    {
+        "id": "tp_gnarledhorn",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Gnarled Horn",
+        "category": "general",
+        "uses" : 5,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You can blow this horn as a free action ability to allow all allies to rush 3.",
+                "glossary": [{"val": "rush 3", "id": "gl_rush"}]
+            }]
+    },
+    {
+        "id": "tp_displacementcloak",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "teleport": true,
+            "movement": true
+        },
+        "eventtags": {},
+        "name": "Displacement Cloak",
+        "category": "general",
+        "uses" : 2,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Wrap this cloak around you and blink in and out of existence. This expedition, you may make your standard move as a 4 space teleport.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }]
+    },
+    {
+        "id": "tp_bootsofspeed",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "movement": true,
+            "dash": true
+        },
+        "eventtags": {},
+        "name": "Boots of Speed",
+        "category": "general",
+        "uses" : 6,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Use these sleek boots to take the dash action as a free action.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }]
+    },
+    {
+        "id": "tp_valkyriesmantle",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Valkyrie's Mantle",
+        "category": "general",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, you may fly with any of your movement.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }]
+    },
+    {
+        "id": "tp_crystalskull",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stunned": true
+        },
+        "eventtags": {},
+        "name": "Crystal Skull",
+        "category": "general",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Crush the skull as 1 action ability. A foe in range 6 must save or sacrifice 50% of its max hp, or 25% of its max hp on a successful save. If this reduces it to 1 hp, it is also stunned. Has no effect on legends.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"},{"val": "stunned", "id": "gl_stunned"}]
+            }]
+    },
+    {
+        "id": "tp_whispercloak",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Whisper Cloak",
+        "category": "general",
+        "uses" : 5,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Pull this cloak over you at the start of combat to gain dodge, evasion, and stealth+ for the first round.",
+                "glossary": [{"val": "dodge", "id": "gl_dodge"},{"val": "evasion", "id": "gl_evasion"},{"val": "stealth", "id": "gl_stealth"},{"val": "+", "id": "gl_ongoing"}]
+            }]
+    },
+    {
+        "id": "tp_staveofflame",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Stave of Flame",
+        "category": "general",
+        "uses" : 5,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Point this stave at a space on the ground in range 6 as an action to release a spark of flame as a medium blast area effect, inflicting 4 damage to characters within.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+            }]
+    },
+    {
+        "id": "tp_helmoftheram",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "shove": true,
+            "rush": true
+        },
+        "eventtags": {},
+        "name": "Helm of the Ram",
+        "category": "general",
+        "uses" : 3,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Use this heavy, horned helm as a free action to shove an adjacent character 2 spaces, then rush 2.",
+                "glossary": [{"val": "shove", "id": "gl_shove"},{"val": "rush", "id": "gl_rush"}]
+            }]
+    },
+    {
+        "id": "tp_phaseshard",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "movement": true
+        },
+        "eventtags": {},
+        "name": "Phase Shard",
+        "category": "general",
+        "uses" : 3,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "As a 1 action ability, remove yourself from the battlefield, then return in any free space."
+            }]
+    },
+    {
+        "id": "tp_gangariantsstave",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action" : 2,
+            "stunned": true,
+            "terrain": "pit",
+            "shove": true
+        },
+        "eventtags": {},
+        "name": "Gandariant's Stave",
+        "category": "general",
+        "uses" : 6,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "As a 2 action ability, force a foe in range 3 to save. On a failed save, they take 10 damage and are stunned and have a pit created under them. On a successful save, they are shoved 5.",
+                "glossary": [{"val": "stunned", "id": "gl_stunned"},{"val": "pit", "id": "gl_pit"},{"val": "shoved", "id": "gl_shove"}]
+            }]
+    },
+    {
+        "id": "tp_brokenkeytonumenea",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Broken Key to Numenea",
+        "category": "general",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Use this key as a free action ability to travel briefly to the Titan City of Numenea, removing yourself from the battlefield and ending your turn. You return at the start of your next turn, in free space in range 3 from your original location."
+            }]
+    },
+    {
+        "id": "tp_jotunnmead",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "vigor": true,
+            "stunned": true
+        },
+        "eventtags": {},
+        "name": "Jotunn Mead",
+        "category": "general",
+        "uses" : 2,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Drink this potent mead as a 1 action ability to gain 15 vigor. This vigor could put you over the maximum. However, at the start of your next turn, you are stunned.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "stunned", "id": "gl_stunned"}]
+            }]
+    },
+    {
+        "id": "tp_axeofmork",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Axe of Mork",
+        "category": "general",
+        "uses" : 2,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Swing this axe at an adjacent foe at 8 hp or lower as a 1 action ability to instant defeat them."
+            }]
+    },
+    {
+        "id": "tp_wardingarmor",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "defiance": true,
+            "vigor": true
+        },
+        "eventtags": {},
+        "name": "Warding Armor",
+        "category": "general",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Start every combat this expedition with defiance and 5 vigor.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "defiance", "id": "gl_defiance"}]
+            }]
+    },
+    {
+        "id": "tp_tearsoftheweeper",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Tears of the Weeper",
+        "category": "general",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Feed this silky black liquid to any character at 4 wounds and fallen. During combat, this is a 1 action ability, after combat this can take place in narrative play. That character can return from being defeated if in combat, and recovers 2 wounds. They are no longer fallen."
+        },{ "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "However, their soul aether begins to slowly drain away from them over the coming weeks, to a dark temple below the earth. Without intervention, they will become a soulless husk."
+        }]
+    },
+    {
+        "id": "tp_fragmentoftheurspell",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Fragment of the Ur-Spell",
+        "category": "general",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Spend 2 actions to read this fragment of terrifying Ur-magic and inflict 999 divine damage to a foe anywhere on the battlefield. Legends must save or take 25% of their maximum hp as divine damage instead, or 13 divine on a successful save.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
             }]
     }
 ]
