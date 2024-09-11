@@ -578,5 +578,229 @@
                             "content": "Take a power from another Bond."
                         }
                     ]
+    },
+    {
+        "id": "pw_truegrit",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "True Grit",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you break, you remain in control of your character for the rest of the scene. If you would remain broken longer than that (you have 3 burdens for example) this effect ends at the end of the scene."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_ironjaw",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "strain": true
+        },
+        "eventtags": {},
+        "name": "Iron Jaw",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can’t suffer critical strain (take 4 strain instead)"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_volcanic",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Volcanic",
+        "uses": 2,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When someone or something harms an ally in your presence, you can trigger this ability to get +1d or increased effect (choose) on all actions against them for the rest of the scene.",
+                            "glossary": [{"val": "+1d", "id": "gl_boon"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_hammersoul",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "smash": true
+        },
+        "eventtags": {},
+        "name": "Hammersoul",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Your Smash actions have increased effect when you’re exhausted."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_overpower",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "endure": true,
+            "smash": true
+        },
+        "eventtags": {},
+        "name": "Overpower",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can push by taking 2 strain instead of spending effort for Endure and Smash actions.",
+                            "glossary": [{"val": "push", "id": "gl_push"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_thetower",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "The Tower",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "While you’re at maximum strain, characters can aid you without spending effort. If you break, all characters that witness it recover 1 effort."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_forceofwill",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "command": true
+        },
+        "eventtags": {},
+        "name": "Force of Will",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can choose to automatically treat your next Command action roll against another character as a 6. The GM can decide a character is too strong willed for this to work on them, forcing you to roll normally, but if they do, regain 2 effort after that roll resolves. It always works on foes from a lower chapter than you.",
+                            "glossary": [{"val": "", "id": ""}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_halflight",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "endure": true,
+            "smash": true,
+            "command": true
+        },
+        "eventtags": {},
+        "name": "Half Light",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you gather information about violence or possible threats, you can use Endure, Smash, or Command."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_thewall",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "The Wall",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "This scene only, reduce all strain suffered by you or an ally of your choice by 1, to a minimum of 1."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_maketotaldestroy",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "superpowered": true,
+            "smash": true
+        },
+        "eventtags": {},
+        "name": "Make Total Destroy",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Increase the effect of your next Smash action to superpowered.",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitofthestormlord",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+            "gambit": true
+        },
+        "eventtags": {},
+        "name": "Gambit of the Storm Lord",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_mighty",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
     }
 ]
