@@ -383,5 +383,392 @@
                 "content": "Spend 2 actions to read this fragment of terrifying Ur-magic and inflict 999 divine damage to a foe anywhere on the battlefield. Legends must save or take 25% of their maximum hp as divine damage instead, or 13 divine on a successful save.",
                 "glossary": [{"val": "divine", "id": "gl_divine"}]
             }]
+    },
+    {
+        "id": "tp_circletofcommand",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stunned": 1
+        },
+        "eventtags": {},
+        "name": "Circlet of Command",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "This sinister helm can only be used against Relict, and only once per combat. To use this helm, you must spend 1 action and save. On a successful save, target a relict without the elite or legend tag. You control that relict’s next turn. On a failed save, regain the charge for this ability, but you are stunned, and can’t attempt to use it again this combat.",
+                "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+            }]
+    },
+    {
+        "id": "tp_soulgem",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Soul Gem",
+        "category": "relict",
+        "uses" : 2,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Use this gem as an action to summon 3 Relict Husks. They fight as allied summons, acting on your turn.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}]
+            }]
+    },
+    {
+        "id": "tp_relictarbalest",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "line": 8
+        },
+        "eventtags": {},
+        "name": "Relict Arbalest",
+        "category": "relict",
+        "uses" : 3,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "An ancient Relict weapon that still barely functions, shooting bolts of lightning."
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can make a 1 action attack with it."
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "content": "[D] + fray"
+                                        }],
+                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Miss / Area Effect:",
+                        "subcontent":   [{
+                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "content": "Fray"
+                                        }],
+                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "All foes in the area take 1 piercing damage.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }]
+    },
+    {
+        "id": "tp_whisperingpendant",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Whispering Pendant",
+        "category": "relict",
+        "uses" : 5,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Speak the name of your foe into this pendant as a free action to inflict the sealed status on that foe anywhere on the map. That foe also cannot benefit from stealth or evasion for the rest of the round.",
+                "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "stealth", "id": "gl_stealth"},{"val": "evasion", "id": "gl_evasion"}]
+            }]
+    },
+    {
+        "id": "tp_gemofspiritsevering",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Gem of Spirit Severing",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Crush this gem as a free action to sever your soul temporarily from your body."
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your soul is an intangible size 1 summon that is created in free space within range 5 of your body. While your soul is out, your body is unstoppable but otherwise can still take damage and be targeted normally.",
+                "glossary": [{"val": "intangible", "id": "gl_intangible"},{"val": "summon", "id": "gl_summon"},{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You take all actions and movement from your soul instead of your body, and your soul additionally has flying and phasing.",
+                "glossary": [{"val": "flying", "id": "gl_flying"},{"val": "phasing", "id": "gl_phasing"}]
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your soul reunites with your body if you end a turn with it adjacent to your body, or at the end of combat."
+            }]
+    },
+    {
+        "id": "tp_decayedarkentecharmor",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Decayed Arkentech Armor",
+        "category": "relict",
+        "uses" : 3,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Strap on a piece of decaying relict armor for extra protection. As an interrupt when you’re hit by any attack but before damage is applied, you can expend the plate to reduce the damage by 3, as if from armor.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"},{"val": "armor", "id": "gl_armor"}]
+            }]
+    },
+    {
+        "id": "tp_telekeneticrod",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Telekenetic Rod",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "While holding this rod, you gain the Levitation trait (immune to terrain damage and movement penalties)."
+            }]
+    },
+    {
+        "id": "tp_shockclasp",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Shock Clasp",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When strapped to a hilt of a weapon, this clasp causes all attacks to deal 1 piercing damage to their target after the ability resolves, hit or miss.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }]
+    },
+    {
+        "id": "tp_ghostweave",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "phasing": true
+        },
+        "eventtags": {},
+        "name": "Ghost Weave",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Weaving these metallic strands into a cloak or armor grants you phasing.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }]
+    },
+    {
+        "id": "tp_helmofcommand",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": true,
+            "Vessel Knight": true
+        },
+        "eventtags": {},
+        "name": "Helm of Command",
+        "category": "relict",
+        "uses" : 2,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You can use the power of this helm to issue a dread command as a Round Action at the start of any round in combat. The command is so powerful that you may shove all foes and allies 2 spaces in a direction of your choice, and all foes are weakened+ for the duration of the round.",
+                "glossary": [{"val": "shove", "id": "gl_shove"},{"val": "weakened", "id": "gl_weakened"},{"val": "+", "id": "gl_ongoing"}]
+            }]
+    },
+    {
+        "id": "tp_darklightinfuser",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": true,
+            "Vessel Knight": true,
+            "divine": true,
+            "cure": true
+        },
+        "eventtags": {},
+        "name": "Darklight Infuser",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You dip your weapon or implements in the dread essence of Divine Death. For the duration of this expedition, your attacks gain:",
+                "glossary": [{"val": "", "id": ""}]
+            },{
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Any attack you make that would reduce a character to 0 hp before any reductions or other effects becomes divine damage.",
+                        "glossary": [{"val": "divine", "id": "gl_divine"}]
+                    }
+                ]
+            },{
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay: ",
+                "glossary": [{"val": "Slay", "id": "gl_slay"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cure yourself.",
+                        "glossary": [{"val": "Cure", "id": "gl_cure"}]
+                    }
+                ]
+            }]
+    },
+    {
+        "id": "tp_theblackbook",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": true,
+            "Arkenlich": true,
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "The Black Book",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "As 2 actions, a character can read aloud from the Black Book of the dead, choosing a character in range 4. That character gains aura 2. At the end of that character’s turn, a flurry of tormented souls sweeps across the battlefield, forcing all characters outside the aura to sacrifice 25% of their maximum hp, then this effect ends. This has no effect on Legends.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }]
+    },
+    {
+        "id": "tp_goldenmask",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": true,
+            "Arkenlich": true
+        },
+        "eventtags": {},
+        "name": "Golden Mask",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "This mask allows one to peer into dark futures. At the start of any expedition you use this mask, roll a d20, d10, d8, d6, and d4 and record the numbers. You can substitute the number when you gain or roll any die (such as a damage die, attack roll, gamble, or power die) made by you, your allies, or the GM for the rest of the expedition during tactical combat."
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Doing so consumes the die. This doesn’t take an action or interrupt and doesn’t count as using an ability, but each time you do, you must sacrifice 3.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }]
+    },
+    {
+        "id": "tp_graspofiron",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": true,
+            "Dread Lords": true
+        },
+        "eventtags": {},
+        "name": "Grasp of Iron",
+        "category": "relict",
+        "uses" : 3,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Clutching this heavy iron gauntlet, when worn, can summon any foe. As 1 action, you may use this gauntlet and choose any foe on the battlefield. That foe is shoved until adjacent to you.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }]
+    },
+    {
+        "id": "tp_keytoiz",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": true,
+            "Dread Lords": true,
+            "terrain": "pit"
+        },
+        "eventtags": {},
+        "name": "Key to Iz",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "This dagger-like key allows one to slip to a forbidden and writhing interstitial space. For the duration of an expedition, you can call upon its power to gain the ability to create a swirling rift pit space in any space in range 6 with 1 action, and also to teleport to any pit on the battlefield as a free action.",
+                "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "teleport", "id": "gl_teleport"}]
+            }]
+    },
+    {
+        "id": "tp_shiveringarrow",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": true,
+            "Dread Lords": true
+        },
+        "eventtags": {},
+        "name": "Shivering Arrow",
+        "category": "relict",
+        "uses" : 1,
+        "usetype": "",
+        "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "This arrow is made of cold, dead titan-killing steel. You can declare you are using it with any ranged attack. If you do, all the attack’s damage becomes divine and the attack cannot miss. Additionally, it gains:",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay: ",
+                "glossary": [{"val": "Slay", "id": "gl_slay"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gain 1 resolve."
+                    }
+                ]
+            }]
     }
 ]
