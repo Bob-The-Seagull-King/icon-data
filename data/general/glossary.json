@@ -1241,5 +1241,20 @@
             "content": "A burden is more long-term harm to a character and represents the mental and physical ordeal of the adventuring life. When you take a burden, write the nature of the burden underneath it. Then, tick two actions which have more than 0d. Those actions are at at -1d until the burden is healed.",
             "subcontent":   []
         }]
+    },
+    {
+        "id": "gl_push",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "narrative"
+        },
+        "eventtags": {},
+        "name": "Push",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "When you push an action, gain an additional +1D on the roll.",
+            "subcontent":   []
+        }]
     }
 ]

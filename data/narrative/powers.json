@@ -22,5 +22,264 @@
                             "content": "tb_saddleborn"
                         }
                     ]
+    },
+    {
+        "id": "pw_windrider",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Windrider",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you push yourself to take a traverse or sneak action, you also get increased effect and choose one of the following for the action per chapter:"
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You don’t touch the ground"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You don’t make a sound"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You can’t be touched while moving."
+                    }
+                ]
+            }
+                    ]
+    },
+    {
+        "id": "pw_dabbler",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Dabbler",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Get +1 point to put in any action rating. At the start of an interlude, you must swap this point around to a new action. It can’t take any rating higher than 1+ the chapter number."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_freesoul",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Freesoul",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "You can escape from any restraint, grab, shackle, hold, or prison cell without rolling, appropriate to chapter. You can conceal this ability if you wish."
+                        }
+                    ]
+    },
+    {
+        "id": "pw_layburdens",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Lay Burdens",
+        "uses": 1,
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you enter a populated location, untick 1 segment on all burdens, and you may push your next action for free.",
+                            "glossary": [{"val": "push", "id": "gl_push"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_airfeel",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Airfeel",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "When you camp or start an expedition, you can ask any of the following questions about the next day or so of travel and get a truthful yes or no answer from the GM. Get increased effect when next acting on the answers."
+                        },
+                        {
+                            "tags": {"desc_type" : "list"},
+                            "content": "",
+                            "subcontent": [
+                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Is it a long, dangerous, or arduous journey?"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Is the journey defended or contested?"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Are you currently being pursued, tracked, or hunted?"
+                                }
+                            ]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_colortongue",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Colortongue",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can understand and speak all languages and read all scripts. When you interact with a living creature that doesn’t speak language, you can understand its intents and feelings and get a knack to interact with it socially.",
+                "glossary": [{"val": "knack", "id": "gl_knack"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At chapter II or higher, you can use this to interact with even non-living creatures, such as magical constructs or the undead."
+            }
+                    ]
+    },
+    {
+        "id": "pw_horizonsweeper",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Horizon Sweeper",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Your sense actions have increased effect and aren’t affected by:"
+                        },
+                        {
+                            "tags": {"desc_type" : "table"},
+                            "content": "tb_horizonsweeper"
+                        }
+                    ]
+    },
+    {
+        "id": "pw_memoryofthesole",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Memory of the Sole",
+        "uses": "",
+        "usetype": "",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Name a location you last set up camp or spent an interlude. The GM will determine the difficulty of the journey there by answering the questions below. When the next scene starts, you and up to ten other willing people can choose to be safely there if you take 2 strain for each ‘yes’ answer, which could cause you to break. Work backwards to figure out how you got there (the scene doesn’t necessarily have to take place the next hour or day, for example)."
+                        },
+                        {
+                            "tags": {"desc_type" : "list"},
+                            "content": "",
+                            "subcontent": [
+                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Is it a long, dangerous, or arduous journey?"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Is the location defended or contested?"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Are you currently being pursued, tracked, or hunted?"
+                                }
+                            ]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_lightspeed",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Lightspeed",
+        "uses": "1",
+        "usetype": "session",
+        "restriction": "",
+        "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Your next traverse action has superpowered effect",
+                            "glossary": [{"val": "superpowered", "id": "gl_superpowered"}]
+                        }
+                    ]
+    },
+    {
+        "id": "pw_gambitofgaia",
+        "type": "Power",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Gambit of Gaia",
+        "uses": "",
+        "usetype": "",
+        "restriction": "4 Bond Powers",
+        "bondid": "bd_pathfinder",
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Take a power from another Bond."
+                        }
+                    ]
     }
 ]
