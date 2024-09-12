@@ -1745,5 +1745,330 @@
                 "content": "You have access to a portable version of an Arkentech mega weapon. It takes a long time to charge, but is incredibly potent and can end fights even with just the threat of firing. All fights this expedition automatically result in a victory for you at the end of round 6. However, once this effect is used, it is used up and is no longer active for the rest of the expedition."
             }
         ]
+    },
+    {
+        "id": "tp_voidshard",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Void Shard",
+        "category": "demon",
+        "uses" : 6,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As a free action ability, create a Void Rift terrain effect in free space in range 3, which counts as a pit to everyone but demons.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_natalslime",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Natal Slime",
+        "category": "demon",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Slippery and foul smelling. Apply at the beginning of combat to, gain counter for that combat. Foes that trigger counter are also shoved 1.",
+                "glossary": [{"val": "counter", "id": "gl_counter"},{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_emptybone",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Empty Bone",
+        "category": "demon",
+        "uses" : 2,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This bone is hollow but seems bigger on the inside. Free action ability: End turn. Become intangible until the start of your next turn,",
+                "glossary": [{"val": "intangible", "id": "gl_intangible"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_purifieddemonblood",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Purified Demon Blood",
+        "category": "demon",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swig before combat to gain regeneration, but at the start of your turn gain hatred of the closest foe.",
+                "glossary": [{"val": "regeneration", "id": "gl_regeneration"},{"val": "hatred", "id": "gl_hatred"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_palemaneye",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Pale Man Eye",
+        "category": "demon",
+        "uses" : 2,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Point this swiveling eye at a foe as a 1 action ability for the following:"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Deals [D]+fray to that character, removes all created objects in a medium blast area effect, and shoves all other characters 1 away from that character.",
+                        "glossary": [
+                            {"val": "[D]", "id": "gl_damagedice"},
+                            {"val": "fray", "id": "gl_fray"},
+                            {"val": "medium blast", "id": "gl_blast"},
+                            {"val": "shoves", "id": "gl_shove"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_warpingflesh",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Warping Flesh",
+        "category": "demon",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A chunk of flesh from a chaos demon. Squeeze it as a free action ability to remove yourself from the battlefield, then return in any space in range 8. When you come back, you are slightly wrong for a few days (extra fingers, face askew, limbs slightly crooked, etc)"
+            }
+        ]
+    },
+    {
+        "id": "tp_chaosshard",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Chaos Shard",
+        "category": "demon",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition all your attacks gain (as if a relic):"
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Invoke (attack 16+): ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Inflict any status of your choice."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_judicatorheartvalve",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Judicator Heart Valve",
+        "category": "demon",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition only, gain aura 2. Whenever a foe gains vigor in the aura, you may gain the same amount of vigor, but only once a round.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_unstabledemonbone",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Unstable Demon Bone",
+        "category": "demon",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition only, you may teleport 2 as a free action ability on your turn",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_whitefleshstrip",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Limb Demon"
+        },
+        "eventtags": {},
+        "name": "White Flesh Strip",
+        "category": "demon",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Consume this rubbery white flesh at the start of any combat to gain regeneration and the amorphous trait for the rest of the combat.",
+                "glossary": [{"val": "regeneration", "id": "gl_regeneration"}]
+            },{ 
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_demon_limbdemon_amorphous" 
+            }
+        ]
+    },
+    {
+        "id": "tp_clapsedhandring",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Limb Demon"
+        },
+        "eventtags": {},
+        "name": "Clasped Hand Ring",
+        "category": "demon",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During this expedition, you can use the power in this ring to unnaturally puppet your enemies’ limbs. You gain the control limbs ability, as a mark instead of a multi mark."
+            },{ 
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_limbdemon_controllimbs" 
+            }
+        ]
+    },
+    {
+        "id": "tp_seventhsword",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Violence Demon"
+        },
+        "eventtags": {},
+        "name": "Seventh Sword",
+        "category": "demon",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swing the seventh sword, instantly defeating a character in range 4, then defeating yourself. You cannot be rescued for the remainder of combat and cannot ignore any wounds gained from being defeated. Legend characters take 25% of their maximum hp as divine damage instead. You gain a cosmetic, twisting scar (describe it to your party and the GM) as the result of the cut to your soul aether from swinging this sword. Swinging a seventh sword again causes you to die.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_chakram",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Violence Demon"
+        },
+        "eventtags": {},
+        "name": "Chakram",
+        "category": "demon",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Activate this cursed talisman at the start of any combat. For the rest of combat, at the end of your turn, you are filled with unbelievable bloodlust. You deal 3 damage to all characters, including yourself, in range 2 of you at the end of your turn. This damage cannot reduce you below 1 hp."
+            }
+        ]
+    },
+    {
+        "id": "tp_claspoftheflagellant",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Majesty Demon"
+        },
+        "eventtags": {},
+        "name": "Clasp of the Flagellant",
+        "category": "demon",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This knight’s badge digs into your flesh. For this combat, you gain the Flagellant’s Guard trait."
+            },
+            {
+                "tags": {"desc_type" : "trait"},
+                "content": "tr_flagellantsguard"
+            }
+        ]
+    },
+    {
+        "id": "tp_deathxiii",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Majesty Demon"
+        },
+        "eventtags": {},
+        "name": "Death XIII",
+        "category": "demon",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This tome of dark magic can be called upon in combat. Choose a foe in range 6. That foe pulses with dark energy. At the end of that foe’s turn, they take 20 damage, or 10 damage and they deal 10 damage to an adjacent ally. They cannot choose to split the damage if there is no adjacent ally available."
+            }
+        ]
     }
 ]

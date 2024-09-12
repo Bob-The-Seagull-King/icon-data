@@ -561,5 +561,25 @@
                                 }]
             }
         ]
+    },
+    {
+        "id": "af_demon_limbdemon_controllimbs",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Control Limbs",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The demon chooses a character in range 4 and gains control over their limbs. After that character rolls a d20, the demon can choose to roll its own d20, substituting the demon’s result as the final result. A character can resist this effect by sacrificing 6, also ending this mark.",
+            "glossary": [{"val": "sacrificing", "id": "gl_sacrifice"}]
+        }        
+                        ]
     }
 ]

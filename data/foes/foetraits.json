@@ -284,5 +284,21 @@
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_monger_bountyhunt"
             }     ]
+    },
+    {
+        "id": "tf_demon_limbdemon_amorphous",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can share space with other characters and objects. Any foes that end their turn inside its space take 2 damage. Does not provide obstruction, but characters treat its space as difficult terrain. Area effects this character creates can overlap its space, and it is immune to damage and effects from its own attacks.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                ]
+            }    ]
     }
 ]
