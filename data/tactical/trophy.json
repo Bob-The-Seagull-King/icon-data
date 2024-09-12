@@ -2797,5 +2797,348 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "tp_yunmesblossom",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Yunmes Blossom",
+        "category": "hob",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon an allied Sprigg mob with 3 members. The Spriggs disappear at the end of combat.",
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_wissonrootsplinter",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "object": true,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Wisson Root Splinter",
+        "category": "hob",
+        "uses" : 2,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a wissan root object as a free action ability, a height 1 object in range 5.",
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The area around the root is difficult terrain, and the root emits aura 1 around it. Foes in the aura are vulnerable+.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_winterberry",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Winter Berry",
+        "category": "hob",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Eat this frozen berry at the start of combat to gain aura 1. Characters in the aura have cover and foes that end their turn there are sealed.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "sealed", "id": "gl_sealed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_geryanspipe",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Geryan's Pipe",
+        "category": "hob",
+        "uses" : 5,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Take a puff from this pipe as a free action ability to gain +1 boon on all rolls until the start of your following turn. During your following turn, take +1 curse on all rolls instead.",
+                "glossary": [
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_boulderhobpebble",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Boulder Hob Pebble",
+        "category": "hob",
+        "uses" : 5,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Throw this pebble as a free action ability to shove a character in range 3 1 space, then create a height boulder object adjacent to them.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_transmogrifyingmushroom",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Transmogrifying Mushroom",
+        "category": "hob",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Eat this mushroom to transform into a frog until the end of your next turn."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While a frog, you have evasion, defense 20, and dodge but cannot deal damage or inflict statuses.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"},{"val": "dodge", "id": "gl_dodge"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_banderhobfurmantle",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Banderhob Fur Mantle",
+        "category": "hob",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, while adjacent to an ally you have counter and evasion.",
+                "glossary": [
+                    {"val": "counter", "id": "gl_counter"},
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_spirithobcharm",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Spirit Hob Charm",
+        "category": "hob",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, you may swap place with any adjacent ally as a free action ability on your turn."
+            }
+        ]
+    },
+    {
+        "id": "tp_markoftheforestgod",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mark of the Forest God",
+        "category": "hob",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, gain dodge, evasion, and cover while inside the area of a terrain effect, difficult terrain, or dangerous terrain, and additionally become immune to all damage and movement penalties from terrain and terrain effects.",
+                "glossary": [
+                    {"val": "dodge", "id": "gl_dodge"},
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "difficult", "id": "gl_difficultterrain"},
+                    {"val": "dangerous", "id": "gl_dangerousterrain"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_maskofsummer",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Summer Flame Aesi"
+        },
+        "eventtags": {},
+        "name": "Mask of Summer",
+        "category": "hob",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While wearing this mask, you gain a supernatural tolerance for intoxicants of any kind. In addition, you may shove yourself 3 at the start of your turns, then shove all adjacent foes 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_pureambrosia",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Summer Flame Aesi",
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Pure Ambrosia",
+        "category": "hob",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sip from the divine wine to cure yourself as a free action ability and become unstoppable until the end of your next turn.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_maskofautumn",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Falling Leaf Aesi"
+        },
+        "eventtags": {},
+        "name": "Mask of Autumn",
+        "category": "hob",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While wearing this gnarled, oiled mask, you gain phasing and the use of the Swirling Leaves Round Action (as per this legend).",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_fallingleafaesi"
+            }
+        ]
+    },
+    {
+        "id": "tp_windcloak",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Falling Leaf Aesi"
+        },
+        "eventtags": {},
+        "name": "Wind Cloak",
+        "category": "hob",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Wrap this swirling cloak of leaves around yourself to remove yourself from the battlefield, then place yourself anywhere in range 4. When you land, all allies in range 3 may fly 2.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_fallingleafaesi_swirlingleaves"
+            }
+        ]
+    },
+    {
+        "id": "tp_frozenfetish",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Deep Snow Aesi",
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Frozen Fetish",
+        "category": "hob",
+        "uses" : 2,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Smash this small icon as a Round Action to create 4 spaces of icy black deep frost anywhere on the battlefield. These spaces have the same effects as creeping cold (as per the ability)."
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_deepsnowaesi_creepingcold"
+            }
+        ]
+    },
+    {
+        "id": "tp_maskofwinter",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Deep Snow Aesi"
+        },
+        "eventtags": {},
+        "name": "Mask of Winter",
+        "category": "hob",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While wearing this mask, your body temperature dips to supernatural lows, your flesh becomes blueish and icy, and you are no longer affected by the cold. You become immune to difficult terrain, and shove, teleport, or remove from the battlefield effects for the duration of this expedition.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "shove", "id": "gl_shove"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
     }
 ]

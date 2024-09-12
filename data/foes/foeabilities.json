@@ -692,5 +692,62 @@
             ]
         }        
                         ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_swirlingleaves",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Swirling Leaves",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of each round, the Aesi puts down a space of swirling wind, a 1 space terrain effect, adjacent to its space. Characters that enter such a space, including the Aesi, can fly 3 spaces as an effect, but only once a turn. Spaces persist until the end of combat.",
+            "glossary": [ {"val": "fly", "id": "gl_flying"}]
+        }        
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_creepingcold",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Swirling Leaves",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of combat, the Aesi creates a Creeping Cold effect in every space along the edge of the map, a creeping black frost terrain effect. The Aesi ignores its effects, but cannot voluntarily enter the area and must end its turn outside it if possible."
+        },                                
+        {
+            "tags": {"desc_type" : "list"},
+            "content": "",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The area is difficult terrain, even for flying characters",
+                    "glossary": [ {"val": "flying", "id": "gl_flying"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foes that either start or end their turn in Creeping Cold sacrifice 25% of their maximum hp. Foes at 1 hp are defeated instantly, and removed from the battlefield as they freeze solid and replaced with a frozen statue object with 10 hp. When the statue is destroyed, return that foe to the battlefield, in its space, still defeated.",
+                    "glossary": [ {"val": "sacrifice", "id": "gl_sacrifice"}]
+                } 
+            ]
+        },                                
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces."
+        }         
+                        ]
     }
 ]
