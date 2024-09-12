@@ -28,6 +28,7 @@ import campupgradedata from '../data/general/campupgrades.json'
 import rulesetdata from '../data/general/rules.json'
 
 import foetraitsdata from '../data/foes/foetraits.json'
+import foeabilitiesdata from '../data/foes/foeabilities.json'
 // -----------------------------------------------------
 
 /**
@@ -87,6 +88,9 @@ class DataResponder {
         switch(type) {
             case "abilities": {
                 return abilitiesdata.concat(data)
+            }
+            case "foeabilities": {
+                return foeabilitiesdata.concat(data)
             }
             case "addons": {
                 return addonsdata.concat(data)

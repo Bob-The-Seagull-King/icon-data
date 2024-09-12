@@ -1,6 +1,6 @@
 [
     {
-        "id": "tf_pathofruin",
+        "id": "tf_ruinbeast_wyrm_pathofruin",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -14,7 +14,7 @@
                         ]
     },
     {
-        "id": "tf_dragonfire",
+        "id": "tf_ruinbeast_wyrm_dragonfire",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -27,5 +27,53 @@
                 "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
             }
                         ]
+    },
+    {
+        "id": "tf_ruinbeast_apex_earthglide",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Earthglide",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex has Phasing.",
+                "glossary": [{"val": "Phasing", "id": "gl_phasing"}]
+            }     ]
+    },
+    {
+        "id": "tf_ruinbeast_apex_blendin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blend In",
+        "description":  [                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Apex starts its turn in difficult or dangerous terrain, it gains stealth.",
+                "glossary": [
+                    {"val": "difficult", "id": "gl_difficultterrain"},
+                    {"val": "dangerous", "id": "gl_dangerousterrain"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }        ]
+    },
+    {
+        "id": "tf_ruinbeast_apex_winged",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Winged",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex’s standard move is fly 5, and all its dashes or rushes may be replaced with a fly. This trait deactivates if weakened.",
+                "glossary": [
+                    {"val": "fly", "id": "gl_flying"}
+                ]
+            }       ]
     }
 ]

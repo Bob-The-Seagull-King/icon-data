@@ -1,0 +1,273 @@
+[
+    {
+        "id": "af_ruinbeast_apex_toxiccloud",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Toxic Cloud",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex creates a small blast area of dangerous terrain (which the Apex ignores) in free space in range. Foes inside the area are blinded+. If the Apex uses this ability again, it can either create a new cloud, or blow its existing clouds 2 spaces in any direction, which could cause them to overlap characters. It can have up to 2 clouds at once. Clouds last indefinitely, but evaporate if this ability is weakened.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "dangerous terrain", "id": "gl_dangerousterrain"},{"val": "blinded", "id": "gl_blinded"},{"val": "+", "id": "gl_ongoing"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_harden",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Harden",
+        "class_id": "icon",
+        "description":  [                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex gains 10 vigor as its armor hardens. The next time it takes damage from a foe’s ability, the armor explodes, ending all vigor, and dazing and dealing 4 piercing damage to all foes in range 2 as an area effect.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "dazing", "id": "gl_dazed"},{"val": "piercing", "id": "gl_piercing"},{"val": "area effect", "id": "gl_areaeffect"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_sanguinebarb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Sanguine Barb",
+        "class_id": "icon",
+        "description":  [                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex impales a character in range with a barb. While this effect is active, they take 1 piercing damage for each space they move, dash, or are shoved. The effect can be removed if a character doesn’t move for their entire turn, or if they are cured.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "dash", "id": "gl_dash"},{"val": "shoved", "id": "gl_shove"},{"val": "cured", "id": "gl_cure"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_primalcharge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Primal Charge",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex rushes 3, then shoves an adjacent foe 2 spaces.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+            },                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            },                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe takes fray damage twice and is slashed.",
+                "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "slashed", "id": "gl_slashed"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_stonetoss",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Stone Toss",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 3 damage and is shoved 1, then create a height 1 boulder object next to them.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            },                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe is stunned.",
+                "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_seismicgeyser",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Seismic Geyser",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex chooses a foe in range that has not acted yet. At the end of that foe’s turn, a geyser erupts under them, dealing fray damage and inflicting weakened as a medium blast area effect centered on them. Weakened foes take [D]+fray instead.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "weakened", "id": "gl_weakened"},
+                    {"val": "Weakened", "id": "gl_weakened"},
+                    {"val": "[D]", "id": "gl_damagedice"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_primalambush",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Primal Ambush",
+        "class_id": "icon",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex disappears from sight, removing itself from the battlefield. It then re-appears adjacent to any player character in range 3, placing it in free adjacent space. They must save or take 2 damage, four times and be dazed, or just 2 damage, twice on a successful save.",
+                "glossary": [
+                    {"val": "dazed", "id": "gl_dazed"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_talonsnatch",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Talon Snatch",
+        "class_id": "icon",
+        "description":  [                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex soars into the air, removing it from the battlefield, then returns with at least one space in range 2. When it takes off, it can pick up an adjacent foe, dealing fray damage and forcing them to save. On a failed save, they are removed with the Apex, then placed adjacent after it lands. On a successful save, they are shoved 1.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "shoved", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_tailsweep",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "arc": 4
+        },
+        "eventtags": {},
+        "name": "Tail Sweep",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex sweeps their tail in an arc 4 area effect. Foes inside take 2 damage and are all shoved 2 in a direction of the Apex’s choice.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            },                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe takes 2 damage again."
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_carrionstash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Carrion Stash",
+        "class_id": "icon",
+        "description":  [                             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex digs up some stashed carrion and eats it. Create a pit in an adjacent space. During their next turn, all their abilities deal bonus damage and their attacks gain +1 boon and may critical hit (+[D]).",
+                "glossary": [
+                    {"val": "pit", "id": "gl_pit"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "[D]", "id": "gl_damagedice"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_shriek",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Shriek",
+        "class_id": "icon",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex releases a shriek, affecting all foes in range as an area effect. Foes take 2 damage, once, for each space between them and the Apex (so foes at range 2 would take 2 damage, twice etc). If the Apex is inside a Hunting Ground, this effect increases to range 3.",
+                "glossary": [
+                    {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_ruinbeast_apex_primalelements",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "medium",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Primal Elements",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex releases a blast of ice, fire, sand, or some other element, creating a medium blast area effect. Foes inside take 2 damage, then must save or be shoved 2 and blinded, or just shoved 1 on a successful save. Then create up to two dangerous terrain pit spaces in the area (fire, water, quicksand, etc).",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
+                    {"val": "pit", "id": "gl_pit"}]
+            }
+                        ]
+    }
+]
