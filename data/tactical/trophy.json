@@ -2271,7 +2271,7 @@
                 "content": "You may smash this skin of fluid on to the ground during tactical combat as a Round Action to summon an unholy manifestation (as per the ability), serving you."
             },{ 
                 "tags": {"desc_type" : "foeability"},
-                "content": "tf_lowlander_faction_lowlandertoxin" 
+                "content": "af_lowlander_fetididol_manifestations" 
             }
         ]
     },
