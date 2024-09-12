@@ -492,7 +492,7 @@
         "eventtags": {},
         "class_id": "cl_mendicant",
         "name": "Harvester",
-        "subtitle": "",
+        "subtitle": "Arbiter of Life and Death",
         "traits": ["tr_blessingofrebirth", "tr_markoftsumi", "tr_gardenerofkin", "tr_balance"],
         "addons": [],
         "summons": ["sm_thrall", "sm_plant"],
