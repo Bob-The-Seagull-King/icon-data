@@ -1740,7 +1740,7 @@
                                     "glossary": [{"val": "Phasing", "id": "gl_phasing"}]
                                 }
                             ]
-                        },
+                        },{ "tags": {"desc_type" : "gap"}, "content": "" },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Seismic Geyser (1 Action, Range 5): ",
@@ -1789,7 +1789,7 @@
                                     ]
                                 }
                             ]
-                        },
+                        },{ "tags": {"desc_type" : "gap"}, "content": "" },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Primal Ambush (1 Action): ",
@@ -1833,7 +1833,7 @@
                                     ]
                                 }
                             ]
-                        },
+                        },{ "tags": {"desc_type" : "gap"}, "content": "" },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Talon Snatch (1 Action): ",
