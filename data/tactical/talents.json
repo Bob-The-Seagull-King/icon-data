@@ -54,7 +54,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "You can also shove objects with Battering Ram. The object triggers collide effects on the first character it collides with.",
-                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "collide", "id": "gl_impact"}]
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "collide", "id": "gl_collide"}]
             }
                         ]
     },
@@ -99,7 +99,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Collide: Become unstoppable for the rest of your turn.",
-                "glossary": [{"val": "collide", "id": "gl_impact"}]
+                "glossary": [{"val": "collide", "id": "gl_collide"}]
             }
                         ]
     },
@@ -174,7 +174,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Catapult can also be triggered on foes. When triggered on foes, the effect becomes effect: shove 1. Collide: you may rush 1.",
-                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "Collide", "id": "gl_impact"}, {"val": "rush", "id": "gl_rush"}]
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "Collide", "id": "gl_collide"}, {"val": "rush", "id": "gl_rush"}]
             }
                         ]
     },
@@ -292,9 +292,272 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can rush 1 before using Demon Cutter. Charge: Rush 3 instead.",
+                "content": "You can rush 1 before using Demon Cutter. Charge: rush 3 instead.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_comet_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you end your turn adjacent to your thrown weapon, gain vigilance +1.",
+                "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_comet_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Yourself and allies that end their turn adjacent to your weapon gain 2 vigor.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_drakencross_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Exceed:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Deal fray damage again to all characters in any area created by this ability.",
+                    "glossary": [{"val": "area", "id": "gl_areaeffect"}]
+                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_drakencross_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Increase range to 5, and all areas may be increased to medium blasts instead.",
+                    "glossary": [{"val": "areas", "id": "gl_areaeffect"}, {"val": "medium blasts", "id": "gl_blast"}]
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_righteousdisdain_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can rush 1 before triggering this ability, and your ally may rush 1 afterwards.",
                 "glossary": [{"val": "rush", "id": "gl_rush"}]
             }
-                        ]
+        ]
+    },
+	{
+        "id": "tl_righteousdisdain_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shove the triggering foe and ally each 1 space in any direction after this ability resolves.",
+                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_demonclaw_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Instead of any rush from Demon Claw, you can gain 2 vigor.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_demonclaw_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After the second rush, you can shove an adjacent character 2 spaces.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_gatesofhell_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain 2 vigor after any time Gates of Hell’s second effect activates.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_gatesofhell_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Vigilance’s range increases by +1 while Gates of Hell is active.",
+                "glossary": [{"val": "Vigilance's", "id": "gl_vigilance"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_soulblade_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may also increase the area of any line or arc effects by +1 in Soul Blade, including from this stance.",
+                "glossary": [{"val": "stance", "id": "gl_stance"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_soulblade_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in Soul Blade, your attacks gain ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "exceed: ",
+                                    "glossary": [{"val": "exceed", "id": "gl_exceed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "tick the die up by 1."
+            }
+        ]
+    },
+    {
+        "id": "tl_sixhellstrigram_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have counter and are sturdy while inside the area.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}, {"val": "sturdy", "id": "gl_sturdy"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_sixhellstrigram_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies inside the area reduce all damage by 2, as if from armor.",
+                "glossary": [{"val": "armor", "id": "gl_armor"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_wickedsheath_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Also shove your foe 1 for every charge on the die. Collide: Your foe is stunned.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "Collide", "id": "gl_collide"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_wickedsheath_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Exceed:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Draw a line 4 area effect that includes your target. Characters inside other than your target take 2 damage, once, for every charge on the die.",
+                    "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            }
+        ]
     }
 ]

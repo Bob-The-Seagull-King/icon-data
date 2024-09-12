@@ -157,7 +157,7 @@
                 "content": "While holding a God Cutting Blow, you can rush 2 at the start or end of any other turn than yours, but no more than twice a round.",
                 "glossary": [{"val": "rush", "id": "gl_rush"}]
             }
-                        ]
+        ]
     },
     {
         "id": "ms_demoncutter_blooddrinkingdevilblade",
@@ -172,7 +172,139 @@
                 "content": "After this ability resolves, gain 2 vigor for every foe damaged.",
                 "glossary": [{"val": "vigor", "id": "gl_vigor"}]
             }
-                        ]
+        ]
+    },
+    {
+        "id": "ms_comet_exaltedblossomsdevilblade",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Exalted Blossoms Devil Blade",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "You may teleport to any space adjacent to your weapon at the start and end of your turn.",
+                    "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                }] 
+            }
+        ]
+    },
+    {
+        "id": "ms_drakencross_darkwinddevilblade",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dark Wind Devil Blade",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "After using this ability, you may teleport to any space of any area created, then all foes in any area you created with this ability are slashed and take 2 divine damage.",
+                    "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "area", "id": "gl_areaeffect"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "divine", "id": "gl_divine"}]
+                }] 
+            }
+        ]
+    },
+    {
+        "id": "ms_righteousdisdain_shirahadori",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dark Wind Devil Blade",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The damage from Righteous Disdain cannot reduce you past 1 hp." 
+            }
+        ]
+    },
+    {
+        "id": "ms_demonclaw_ragingdemon",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Raging Demon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Demon Claw’s damage increases by 1 for every 25% of your maximum hp you are missing, up to a maximum of +3 damage." 
+            }
+        ]
+    },
+    {
+        "id": "ms_gatesofhell_flashstep",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Flash Step",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Gates of Hell resolves, you create an afterimage terrain effect in a free adjacent space. The afterimage is dangerous terrain, but only for foes. You also gain the following ability:",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            },
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_flashstep"
+            }
+        ]
+    },
+    {
+        "id": "ms_soulblade_windcallingdevilblade",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wind Calling Devil Blade",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or later in combat, soul blade also refreshes at the start of your turn and any area created by it shoves all characters inside 1 space.",
+                "glossary": [{"val": "area", "id": "gl_areaeffect"}, {"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_sixhellstrigram_darkwindchain",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dark Wind Chain",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While inside the area, you gain the following ability:"
+            },
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_darkwindchain"
+            }
+        ]
+    },
+    {
+        "id": "ms_wickedsheath_mugenshometsu",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mugen Shometsu",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the die is 2 or higher and you would discard it, roll it instead of discarding it. On a 1 or 2, keep it, using the new number."
+            }
+        ]
     },
     {
         "id": "ul_atomoscrusher",
@@ -186,7 +318,7 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "If you’re at 1 hp or lower, this ability deals 25% more max hp damage to non-legend characters."
             }
-                        ]
+        ]
     },
     {
         "id": "ul_dreadmock",
@@ -201,7 +333,7 @@
                 "content": "Gains range 5 and also deals divine fray damage to your foe.",
                 "glossary": [{"val": "divine", "id": "gl_divine"}, {"val": "fray damage", "id": "gl_fray"}]
             }
-                        ]
+        ]
     },
     {
         "id": "ul_ultimacurtaincall",
