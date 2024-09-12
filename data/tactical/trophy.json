@@ -1043,7 +1043,7 @@
                 "glossary": [{"val": "shove", "id": "gl_shove"},{"val": "fray", "id": "gl_fray"}]
             },{ 
                 "tags": {"desc_type" : "foetrait"},
-                "content": "tf_pathofruin" 
+                "content": "tf_ruinbeast_wyrm_pathofruin" 
             }]
     },
     {
@@ -1064,7 +1064,7 @@
             },
             {
                 "tags": {"desc_type" : "foetrait"},
-                "content": "tf_dragonfire"
+                "content": "tf_ruinbeast_wyrm_dragonfire"
             }]
     }
 ]
