@@ -2230,7 +2230,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "This expedition, as a free action ability you may fly 3, but must end this movement adjacent to an object or character.",
-                "glossary": [{"val": "fly", "id": "gl_fly"}]
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
             }
         ]
     },
