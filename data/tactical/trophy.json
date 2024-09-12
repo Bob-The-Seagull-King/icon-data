@@ -2380,7 +2380,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "This agile spear can be used as a pole vault. You may spend a charge to fly 3 as a free action ability. If you end that flight on an object or adjacent to a character, you may fly 3 again.",
-                "glossary": [{"val": "fly", "id": "gl_fly"}]
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
             }
         ]
     }
