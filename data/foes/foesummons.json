@@ -61,5 +61,36 @@
         "blurb":  [],
         "colour": "icon",
         "limit": 0
+    },
+    {
+        "id": "sm_lowlander_fetididol_spewinggrowth",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "defense": 0,
+            "hp": 10,
+            "object": true,
+            "height": 1
+        },
+        "eventtags": {},
+        "name": "Spewing Growth",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The area around it is difficult terrain. During the Idol’s turn, the Idol can use the Disorienting Vomit ability:"
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_fetididol_manifestations_spewinggrowth_disorientingvomit"
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
     }
 ]

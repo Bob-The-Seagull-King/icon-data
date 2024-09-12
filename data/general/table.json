@@ -1995,5 +1995,102 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_lowlander_fetididol_manifestations",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Manifestation", "Effect"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_lowlander_fetididol_manifestationsresult1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1-2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Blight Geyser"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Create a pit. At the end of each round, the pit erupts. Characters in a medium blast area effect centered on it take 6 piercing damage.",
+                    "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "medium blast", "id": "gl_blast"},{"val": "piercing", "id": "gl_piercing"}]
+                }]
+            },
+            {
+                "id": "ti_lowlander_fetididol_manifestationsresult2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3-4"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Spewing Mouth"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Summon a height 1 Spewing Growth object."
+                        },{
+                            "tags": {"desc_type" : "foesummon"},
+                            "content": "sm_lowlander_fetididol_spewinggrowth"
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "id": "ti_lowlander_fetididol_manifestationsresult3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5-6"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Pillar of Filth"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Create a height 3 pillar. Destructible (10 hp), and when destroyed, or when a character collides with it, falls over.",
+                            "glossary": [{"val": "collides", "id": "gl_collide"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Create a line 3 area effect next to it in a direction chosen by the character that destroyed it. Characters inside must save or take 2[D]+fray and be stunned, or [D]+fray on a successful save. The area becomes difficult terrain for the rest of combat.",
+                            "glossary": [
+                                {"val": "area effect", "id": "gl_areaeffect"},
+                                {"val": "[D]", "id": "gl_damagedice"},
+                                {"val": "fray", "id": "gl_fray"},
+                                {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                            ]
+                        }
+                    ]
+                }]
+            }
+        ]
     }
 ]

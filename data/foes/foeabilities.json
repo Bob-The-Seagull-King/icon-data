@@ -581,5 +581,116 @@
             "glossary": [{"val": "sacrificing", "id": "gl_sacrifice"}]
         }        
                         ]
+    },
+    {
+        "id": "af_lowlander_fetididol_manifestations",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Manifestations",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active."
+        } ,               
+        {
+            "tags": {"desc_type" : "table"},
+            "content": "tb_lowlander_fetididol_manifestations"
+        }        
+                        ]
+    },
+    {
+        "id": "af_lowlander_fetididol_manifestations_spewinggrowth_disorientingvomit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "range": 6,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Disorienting Vomit",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "3 damage and shove 2."
+        }        
+                        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_demonpankration",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "end_turn": true,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Demon Pankration",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The head lopper attempts to grab foe of its choice in range. At the of the very next player turn, if that foe is still in range 3, the Head Lopper removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:"
+        }     ,                            
+        {
+            "tags": {"desc_type" : "list"},
+            "content": "",
+            "subcontent": [                                            
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "DDT: ",
+                    "subcontent": [                                            
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The foe is stunned, weakened, slashed, and shoved 1.",
+                            "glossary": [{"val": "stunned", "id": "gl_stunned"},
+                            {"val": "weakened", "id": "gl_weakened"},
+                            {"val": "slashed", "id": "gl_slashed"},
+                            {"val": "shoved", "id": "gl_shove"}]
+                        }     
+                    ]
+                }    ,                                          
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "Spinning Piledriver: ",
+                    "subcontent": [                                            
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The Head Lopper and the foe rush 2 together, then the foe takes piercing fray damage again and has a pit created underneath them.",
+                            "glossary": [
+                                {"val": "rush", "id": "gl_rush"},
+                                {"val": "piercing", "id": "gl_piercing"},
+                                {"val": "fray", "id": "gl_fray"},
+                                {"val": "pit", "id": "gl_pit"}
+                            ]
+                        }     
+                    ]
+                }    ,                                          
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "Backbreaker: ",
+                    "subcontent": [                                            
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The foe becomes immobile for their next turn.",
+                            "glossary": [{"val": "immobile", "id": "gl_immobile"}]
+                        }     
+                    ]
+                }     
+            ]
+        }        
+                        ]
     }
 ]

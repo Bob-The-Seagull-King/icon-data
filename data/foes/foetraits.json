@@ -300,5 +300,21 @@
                     {"val": "difficult terrain", "id": "gl_difficultterrain"}
                 ]
             }    ]
+    },
+    {
+        "id": "tf_lowlander_faction_lowlandertoxin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lowlander Toxin",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round in any combat featuring lowlanders, all nonlowlander characters sacrifice 2 hp.",
+                "glossary": [
+                    {"val": "sacrifice", "id": "gl_sacrifice"}
+                ]
+            }    ]
     }
 ]

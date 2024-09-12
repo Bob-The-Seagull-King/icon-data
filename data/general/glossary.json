@@ -240,6 +240,21 @@
         }]
     },
     {
+        "id": "gl_immobile",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "movement"
+        },
+        "eventtags": {},
+        "name": "Immobile",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "Any immobile character can’t move or be removed from the battlefield. That includes regular movement, dash, fly, or teleport, being moved by other characters, or being removed and placed by other characters.",
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_teleport",
         "type": "Glossary",
         "source": "core",

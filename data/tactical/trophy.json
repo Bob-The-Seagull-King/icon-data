@@ -2070,5 +2070,318 @@
                 "content": "This tome of dark magic can be called upon in combat. Choose a foe in range 6. That foe pulses with dark energy. At the end of that foe’s turn, they take 20 damage, or 10 damage and they deal 10 damage to an adjacent ally. They cannot choose to split the damage if there is no adjacent ally available."
             }
         ]
+    },
+    {
+        "id": "tp_mancatcher",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Mancatcher",
+        "category": "lowlander",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This huge hooked pole can be used as a free action on your turn to shove a character in range 3 as close to you as possible.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_antidote",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Antidote",
+        "category": "lowlander",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You are immune to lowlander toxin."
+            }
+        ]
+    },
+    {
+        "id": "tp_ruinicon",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Ruin Icon",
+        "category": "lowlander",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Small iron icon of the dungeons underneath the blight lands. As free action ability you can call on the ruins to surface. Create a height 1 ruin object in range 6. Characters adjacent to it when its created take 2 damage and are shoved 1 away from it.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_pitpoison",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Pit Poison",
+        "category": "lowlander",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rub this incredible potent poison on your weapon as a free action. Your next attack’s damage cannot be reduced in any way (by armor, resistance, statuses, cover, etc)",
+                "glossary": [
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_monsterspinelauncher",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Monster Spine Launcher",
+        "category": "lowlander",
+        "uses" : 6,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A potent improvised weapon. As a free action ability, deal 1 piercing damage to and inflict vulnerable on a character in range 6.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "vulnerable", "id": "gl_vulnerable"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_ointment",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Ointment",
+        "category": "lowlander",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Thick, foul smelling, and greasy medicine distilled from blight lands beasts. Use as a free action ability to cure yourself but take 1 piercing damage after the cure resolves.",
+                "glossary": [{"val": "cure", "id": "gl_cure"},{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_lowlandertoxin",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Lowlander Toxin",
+        "category": "lowlander",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During any fight in this expedition, you can cause the fight to have the Lowlander Toxin effect (as the faction trait)."
+            },{ 
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_lowlander_faction_lowlandertoxin" 
+            }
+        ]
+    },
+    {
+        "id": "tp_grapplinghook",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Grappling Hook",
+        "category": "lowlander",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, as a free action ability you may fly 3, but must end this movement adjacent to an object or character.",
+                "glossary": [{"val": "fly", "id": "gl_fly"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_survivalsuit",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Survival Suit",
+        "category": "lowlander",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition you are immune to lowlander toxin, dangerous terrain, and damage from terrain effects.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_corruptiveichor",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Fetid Cult"
+        },
+        "eventtags": {},
+        "name": "Corruptive Ichor",
+        "category": "lowlander",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may smash this skin of fluid on to the ground during tactical combat as a Round Action to summon an unholy manifestation (as per the ability), serving you."
+            },{ 
+                "tags": {"desc_type" : "foeability"},
+                "content": "tf_lowlander_faction_lowlandertoxin" 
+            }
+        ]
+    },
+    {
+        "id": "tp_iconofthepit",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Fetid Cult"
+        },
+        "eventtags": {},
+        "name": "Icon of the Pit",
+        "category": "lowlander",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Holding this icon of an eye within a wheel grants you the power of the deep and dark powers of the blight lands, the corruptive influence of the Black Sun. During this expedition, you cannot sleep, but nor do you require it. In any tactical combat, you have resistance while standing in pits, and deal divine damage to any character standing inside a pit.",
+                "glossary": [
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "divine", "id": "gl_divine"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_cataclysweapon",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Head Lopper"
+        },
+        "eventtags": {},
+        "name": "Cataclysm Weapon",
+        "category": "lowlander",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This oversized weapon is incredibly hard to even swing or shoot, but packs a punch. During this expedition, your attacks deal bonus damage and create a pit under your target after you attack them.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_beltofthechampion",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Head Lopper"
+        },
+        "eventtags": {},
+        "name": "Belt of the Champion",
+        "category": "lowlander",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Buckle on this impressive belt and spend a charge to use the Demon Pankration ability."
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_headlopper_demonpankration"
+            }
+        ]
+    },
+    {
+        "id": "tp_lesserwormspore",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Hurian Worm Rider"
+        },
+        "eventtags": {},
+        "name": "Lesser Wormspore",
+        "category": "lowlander",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This unique Red Worm gland pulses like a living thing and fuses to flesh. Though a weaker version of the real thing, attaching this to a living body takes preparation and bravery. Once attached, for the duration of an expedition, you automatically rescue yourself at the start of your turn if defeated. In addition, only the first wound you take reduces your maximum hp (you are still fallen if you suffer 4 wounds)."
+            }
+        ]
+    },
+    {
+        "id": "tp_hurianspear",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Hurian Worm Rider",
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Hurian Spear",
+        "category": "lowlander",
+        "uses" : 6,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This agile spear can be used as a pole vault. You may spend a charge to fly 3 as a free action ability. If you end that flight on an object or adjacent to a character, you may fly 3 again.",
+                "glossary": [{"val": "fly", "id": "gl_fly"}]
+            }
+        ]
     }
 ]
