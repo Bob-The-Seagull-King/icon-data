@@ -93,5 +93,147 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "rs_trophies",
+        "type": "Ruleset",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Trophies",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Trophies offer a way for GMs to offer additional minor rewards other than xp or dust. They mostly have effects in tactical combat."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Trophies is a loose term for anything powerful that is scavenged from the dungeons and ruins of Arden Eld, whether it’s an arkentech wonder or something carved from a monster or beast. Trophies are less powerful than Relics, however, having limited use and eventually running out of magical power and crumbling."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All Trophies grant you either a trait or an ability, and last either a certain number of expeditions or combats, or a certain number of active uses. When uses are depleted to 0, the trophy crumbles or breaks and is no longer usable."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters can hold on to three trophies at once."
+                    }
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "General Dungeon Trophies are listed in the following section and there’s more in each foe section as possible rewards. There will be more in the full game. Every legend (boss) fight in this game has unique trophy rewards."
+            }
+        ],
+        "rules": [
+            {
+                "title": "Optional: Replenishing trophies",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Trophies are intended to be a ‘one and done’ kind of deal, since they offer a lot of free power to a character. If you want the uses of the trophy to be able to be replenished, or a more permanent part of a character, then make it a long term ambition clock for a character."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "rs_relics",
+        "type": "Ruleset",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Relics",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Relics are objects of power that slowly take on aspects of legendary heroes, becoming magical or famous weapons simply by being around you. A relic could be something you retrieved on your adventures or something you have always had that slowly awakens to power."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Relic colors are thematic and any job can take any color of relic."
+            }
+        ],
+        "rules": [
+            {
+                "title": "Improving Relics",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Relics start with 1 level and take 6 dust each to unlock levels II and III."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Infuse 1 dust into a relic of your choice when you complete a tactical combat."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters gain a relic at level 2, 6, and 9."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Once a Relic is level 3, it can be Aspected by either infusing 12 dust or completing a legendary task. These tasks are suggestions and can be adjusted by the GM to fit your game."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Once at least one character has completed an aspect quest for a relic, other characters can aspect a relic for 4 dust."
+                    }
+                ]
+            },
+            {
+                "title": "Invoking Relics",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "In combat, some relics have abilities that can be invoked for a powerful effect. Invokes have three types:"
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Attack Invoke: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "When you make an attack, if the die used for the attack roll is a certain number or higher, you can invoke the relic’s power against your attack target. This only counts the d20, and not the total attack roll. For example, in an (Attack, 15+) invoke, you could invoke the relic’s power when you make any attack roll and the die is 15 or higher. This Invoke happens after the attack roll, but before damage and effects are applied. With attacks that don’t have a roll, such as an auto-hit attack, roll 1d20 anyway to check."
+                            }
+                        ]
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Gambit Invoke: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "An invoke that can be triggered under the listed conditions, but only once per combat. For example, an invoke that says ‘gambit: your next attack is a critical hit on hit’ works automatically, but can’t be used again even if that attack misses. Gambits are usually always effects or free actions"
+                            }
+                        ]
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Rounde Invoke: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Automatically, at a certain round of combat or later. These effects are always active. For example (Round 5+) relics have effects that are always active at round 5 or later."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]
