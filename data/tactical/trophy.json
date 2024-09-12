@@ -2383,5 +2383,419 @@
                 "glossary": [{"val": "fly", "id": "gl_flying"}]
             }
         ]
+    },
+    {
+        "id": "tp_titanblade",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "curse": 1
+        },
+        "eventtags": {},
+        "name": "Titan Blade",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swing this enormous blade for the following attack:"
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "content": "3[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "content": "[D]+fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "The foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_meadoferenhelion",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Mead of Erenhelion",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This mead may be administered to a dead character, even after combat, to bring them back to life (also restore all wounds). If you do so, their soul is bound to the ancient, ruined hall of the Storm Titan and will return there, or to its ruins, after death, binding them as a formless shade. It might be possible to undo this fate."
+            }
+        ]
+    },
+    {
+        "id": "tp_thannirgreatscythe",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Thannir Greatscythe",
+        "category": "jotunn",
+        "uses" : 2,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swing this scythe to cure all allies in range 3 and remove all vigor from foes in range 3.",
+                "glossary": [{"val": "cure", "id": "gl_cure"},{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_eldertitanrune",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Elder Titanrune",
+        "category": "jotunn",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This combat only, become size 2"
+            }
+        ]
+    },
+    {
+        "id": "tp_titanhammer",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "small",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Titan Hammer",
+        "category": "jotunn",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As a 1 action ability, slam this huge hammer into a small blast area in range 3. Characters inside are weakened and take 4 damage.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "weakened", "id": "gl_weakened"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_blackblood",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Blackblood",
+        "category": "jotunn",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Thick, potent blood of the Holy Body. Consume to gain 20 vigor, which could put you over your maximum.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_titanforgegreatbow",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Titanforge Greatbow",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, your ranged attacks gain pierce and shove 1, but you cannot dash, rush, fly or teleport.",
+                "glossary": [
+                    {"val": "pierce", "id": "gl_piercing"},
+                    {"val": "shove", "id": "gl_shove"},
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "rush", "id": "gl_rush"},
+                    {"val": "fly", "id": "gl_flying"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_greatwolfmantle",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Great Wolf Mantle",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, gain the skirmisher trait if you don’t already have it."
+            },
+            {
+                "tags": {"desc_type" : "trait"},
+                "content": "tr_skirmisher"
+            }
+        ]
+    },
+    {
+        "id": "tp_nilflingtooth",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Nilfling Tooth",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, your attacks deal maximum damage to foes at 25% hp or lower."
+            }
+        ]
+    },
+    {
+        "id": "tp_aegisoferenhelion",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Rider of the Primal Storm"
+        },
+        "eventtags": {},
+        "name": "Aegis of Erenhelion",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This shield-shaped brooch wards against pernicious runes and hexes. For the duration of this expedition, you may choose to become immune to the effects of foe abilities that check if you are adjacent to an ally, or not adjacent to an ally."
+            }
+        ]
+    },
+    {
+        "id": "tp_bridleshard",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Rider of the Primal Storm"
+        },
+        "eventtags": {},
+        "name": "Bridle Shard",
+        "category": "jotunn",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Hold this bridle shard aloft at the start of any combat to summon a titansteed to ride for the rest of combat, gaining the benefits of the Rider’s Call Steed trait for the rest of this combat."
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_jotunn_rideroftheprimalstorm_callsteed"
+            }
+        ]
+    },
+    {
+        "id": "tp_quicksilverdraught",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Keeper of the Eldflame"
+        },
+        "eventtags": {},
+        "name": "Quicksilver Draught",
+        "category": "jotunn",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Drink this magic draught to neutralize all aether affecting your body. You end all effects, positive or negative, currently affecting you, including marks, statuses, stances, delay effects, etc.",
+                "glossary": [{"val": "marks", "id": "gl_mark"},
+                {"val": "delay effects", "id": "gl_delay"},
+                {"val": "stances", "id": "gl_stance"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_starofthecreator",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Keeper of the Eldflame",
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Star of the Creator",
+        "category": "jotunn",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This blinding star can be embedded into armor temporarily, granting incredible power. Call on its divine power as a free action ability during your turn to temporarily become immune to all damage and effects. This effect ends at the start of your next turn.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_firstkeytothegates",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Warden of the Aeongate"
+        },
+        "eventtags": {},
+        "name": "First Key to the Gates",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Turning this key at the end of your turn allows you to slow the flow of time for everyone but yourself. You gain an additional turn this round, which you take directly after this turn. The key then disintegrates and is destroyed."
+            }
+        ]
+    },
+    {
+        "id": "tp_secondkeytothegates",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Warden of the Aeongate",
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Second Key to the Gates",
+        "category": "jotunn",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Turn this key as an interrupt ability",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Turn the Second Key: ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Trigger: "
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "An ally is defeated."
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Effect: "
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Reverse the flow of time slightly and alter causality. That character is reduced to 1 hp instead. End the current turn. Then the key disintegrates."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_thirdkeytothegates",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Warden of the Aeongate",
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Third Key to the Gates",
+        "category": "jotunn",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Turn this key as an interrupt ability",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Turn the Third Key: ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Trigger: "
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "A foe uses a non-basic ability on its turn, and the ability resolves."
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Effect: "
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "End that foe’s turn. After three uses, this key disintegrates."
+                    }
+                ]
+            }
+        ]
     }
 ]

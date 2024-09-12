@@ -316,5 +316,38 @@
                     {"val": "sacrifice", "id": "gl_sacrifice"}
                 ]
             }    ]
+    },
+    {
+        "id": "tf_jotunn_rideroftheprimalstorm_callsteed",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Call Steed",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rider gains a massive Titansteed, granting it the following benefits:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase the Rider’s speed to 5."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider gains flying.",
+                        "glossary": [{"val": "flying", "id": "gl_flying"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider may break up any of its movement with actions."
+                    }
+                ]
+            }
+                        ]
     }
 ]
