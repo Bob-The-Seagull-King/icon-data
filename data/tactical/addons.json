@@ -30,6 +30,47 @@
                         ]
     },
     {
+        "id": "ad_flashstep",
+        "type": "Addon",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Flash Step",
+        "class_id": "cl_stalwart",
+        "description":  [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Remove an afterimage that has no characters occupying it, then remove yourself and place yourself in its space."
+                                            }]
+                        }]
+    },
+    {
+        "id": "ad_darkwindchain",
+        "type": "Addon",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Dark Wind Chain",
+        "class_id": "cl_stalwart",
+        "description":  [
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Deal 2 damage to any foe in range 4 and shove them 1 space towards you, then force them to save. On a failed save, they are shoved 2 more spaces towards you.",
+                                                "glossary": [{"val": "shove", "id": "gl_shove"}]
+                                            }]
+                        }]
+    },
+    {
         "id": "ad_godlysmite",
         "type": "Addon",
         "source": "core",

@@ -28,19 +28,19 @@
                                                 "tags": {"desc_type" : "subeffect"},
                                                 "content": "On Hit:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "[D] + fray"
-                                                                }],
-                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "2[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
                                             },
                                             {
                                                 "tags": {"desc_type": "subeffect"},
                                                 "content": "Miss:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "Fray"
-                                                                }],
-                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
                                             }]
                         },
                         {
@@ -48,18 +48,18 @@
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Attack target is weakened and shoved 1."
-                                            }],
-                            "glossary": [{"val": "weakened", "id": "gl_weakened"}, {"val": "shoved", "id": "gl_shove"}]
+                                                "content": "Attack target is weakened and shoved 1.",
+                                                "glossary": [{"val": "weakened", "id": "gl_weakened"}, {"val": "shoved", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "A different foe in range 3 from your target is shoved 1 away from your main target."
-                                            }],
-                            "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                                "content": "A different foe in range 3 from your target is shoved 1 away from your main target.",
+                                                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
@@ -96,18 +96,19 @@
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "An adjacent character is shoved 2 spaces."
-                                            }],
-                            "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                                "content": "An adjacent character is shoved 2 spaces.",
+                                                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Collide or Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Foe is slashed, and refund the action cost of this ability."
+                                                "content": "Foe is slashed, and refund the action cost of this ability.",
+                                                "glossary": [{"val": "slashed", "id": "gl_slashed"}]
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "slashed", "id": "gl_slashed"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}]
                         }
                         ]
     },
@@ -138,19 +139,19 @@
                                                 "tags": {"desc_type" : "subeffect"},
                                                 "content": "On Hit:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "2[D] + fray"
-                                                                }],
-                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "2[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
                                             },
                                             {
-                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "tags": {"desc_type": "subeffect"},
                                                 "content": "Miss:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "Fray"
-                                                                }],
-                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
                                             }]
                         },
                         {
@@ -158,27 +159,29 @@
                             "content": "Area Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Foes take fray damage."
+                                                "content": "Foes take fray damage.",
+                                                "glossary": [{"val": "fray", "id": "gl_fray"}]
                                             }],
-                            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}, {"val": "fray", "id": "gl_fray"}]
+                            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1."
-                                            }],
-                            "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                                "content": "Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1.",
+                                                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Gains True Strike and becomes Burst 2 (target)."
+                                                "content": "Gains True Strike and becomes Burst 2 (target).",
+                                                "glossary": [{"val": "True Strike", "id": "gl_truestrike"}, {"val": "Burst 2", "id": "gl_burst"}]
                                             }],
-                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "True Strike", "id": "gl_truestrike"}]
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
                         }
                         ]
     },
@@ -206,18 +209,19 @@
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Rush 1, then rush 1. After each rush, shove all adjacent characters 1."
-                                            }],
-                            "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+                                                "content": "Rush 1, then rush 1. After each rush, shove all adjacent characters 1.",
+                                                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Collide or Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Rush 1 again, then shove all adjacent characters 1."
+                                                "content": "Rush 1 again, then shove all adjacent characters 1.",
+                                                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}]
                         }
                         ]
     },
@@ -241,15 +245,15 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there."
         }],
-        "description": [
-                        {
+        "description": [{
                             "tags": {"desc_type" : "effect"},
                             "content": "Stance:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "When you enter this stance, or when it refreshes, choose an ally in range. Gain the following interrupt:"
+                                                "content": "When you enter this stance, or when it refreshes, choose an ally in range. Gain the following interrupt:",
+                                                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
                                             }],
-                            "glossary": [{"val": "Stance", "id": "gl_stance"}, {"val": "interrupt", "id": "gl_interrupt"}]
+                            "glossary": [{"val": "Stance", "id": "gl_stance"}]
                         },
                         {
                             "tags": {"desc_type" : "addon"},
@@ -268,11 +272,11 @@
                             "content": "Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Immediately activate the interrupt effect."
+                                                "content": "Immediately activate the interrupt effect.",
+                                                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
                                             }],
-                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "interrupt", "id": "gl_interrupt"}]
-                        }
-                        ]
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
     },
 	{
         "id": "ab_catapult",
@@ -307,18 +311,19 @@
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Shove that ally 2 in any direction."
-                                            }],
-                            "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                                "content": "Shove that ally 2 in any direction.",
+                                                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Collide or Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "That ally gains 2 vigor and may rush 1."
+                                                "content": "That ally gains 2 vigor and may rush 1.",
+                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "rush", "id": "gl_rush"}]
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "Rush", "id": "gl_rush"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}]
                         }
                     ]
     },
@@ -342,35 +347,34 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Your armor and shield become a mirror, channeling and amplifying the destructive power of your allies’ attacks."
         }],
-        "description":  [
-                        {
+        "description":  [{
                             "tags": {"desc_type" : "effect"},
                             "content": "Trigger:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "You are included in an allied area effect."
-                                            }],
-                            "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                                                "content": "You are included in an allied area effect.",
+                                                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "You release an aura 1 effect centered on you that lasts for the duration of the triggering ability, extending the area effect to encompass the aura. You can choose to be immune to any part of the triggering ability."
-                                            }],
-                            "glossary": [{"val": "aura", "id": "gl_aura"}]
+                                                "content": "You release an aura 1 effect centered on you that lasts for the duration of the triggering ability, extending the area effect to encompass the aura. You can choose to be immune to any part of the triggering ability.",
+                                                "glossary": [{"val": "aura", "id": "gl_aura"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Increase the aura size by +1."
+                                                "content": "Increase the aura size by +1.",
+                                                "glossary": [{"val": "aura", "id": "gl_aura"}]
                                             }],
-                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "aura", "id": "gl_aura"}]
-                        }
-                        ]
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
     },
     {
         "id": "ab_Rook",
@@ -392,27 +396,26 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Your stance is powerful as you strike, and stand tall, an armored sentinel. No enemy can safely set foot where your gaze falls."
         }],
-        "description": [
-                        {
+        "description": [{
                             "tags": {"desc_type" : "effect"},
                             "content": "Attack:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "subeffect"},
                                                 "content": "On Hit:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "[D] + fray"
-                                                                }],
-                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
                                             },
                                             {
-                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "tags": {"desc_type": "subeffect"},
                                                 "content": "Miss:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "Fray"
-                                                                }],
-                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
                                             }]
                         },
                         {
@@ -420,38 +423,39 @@
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Shove 1."
-                                            }],
-                            "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                                "content": "Shove 1.",
+                                                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "You gain aura 1 until the end of your next turn. Any foe in the aura that is shoved is shoved +1. If any foe ends their turn in the aura, you may deal fray damage to them and shove them 1."
-                                            }],
-                            "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "shoved", "id": "gl_shove"}, {"val": "Fray", "id": "gl_fray"}]
+                                                "content": "You gain aura 1 until the end of your next turn. Any foe in the aura that is shoved is shoved +1. If any foe ends their turn in the aura, you may deal fray damage to them and shove them 1.",
+                                                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "shoved", "id": "gl_shove"}, {"val": "Fray", "id": "gl_fray"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Collide:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Character is slashed."
+                                                "content": "Character is slashed.",
+                                                "glossary": [{"val": "slashed", "id": "gl_slashed"}]
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "slashed", "id": "gl_slashed"}]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Gains true strike, and increase aura to aura 2."
+                                                "content": "Gains true strike, and increase aura to aura 2.",
+                                                "glossary": [{"val": "true strike", "id": "gl_truestrike"}, {"val": "aura", "id": "gl_aura"}]
                                             }],
-                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}, {"val": "true strike", "id": "gl_truestrike"}, {"val": "aura", "id": "gl_aura"}]
-                        }
-						]
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
     },
     {
         "id": "ab_greatgiorgios",
@@ -472,26 +476,25 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You call a challenge to your foe to stand and fight. Cowards are blown away by your massive charge."
         }],
-        "description": [
-                        {
+        "description": [{
                             "tags": {"desc_type" : "effect"},
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Choose a foe in range 3, then end your turn. At the end of that foe’s turn, you may rush 4, as long as you end each space of your movement closer to them from when you started (if you are adjacent, you don’t move at all). Then, if your foe is adjacent, they are shoved a number of spaces equal to the spaces you just moved, then take damage equal to that number +2."
-                                            }],
-                            "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+                                                "content": "Choose a foe in range 3, then end your turn. At the end of that foe’s turn, you may rush 4, as long as you end each space of your movement closer to them from when you started (if you are adjacent, you don’t move at all). Then, if your foe is adjacent, they are shoved a number of spaces equal to the spaces you just moved, then take damage equal to that number +2.",
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Collide or Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Foe also gains hatred of you after this ability resolves."
+                                                "content": "Foe also gains hatred of you after this ability resolves.",
+                                                "glossary": [{"val": "hatred", "id": "gl_hatred"}]
                                             }],
-                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "hatred", "id": "gl_hatred"}]
-                        }
-						]
+                            "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
     },
     {
         "id": "ab_demoncutter",
@@ -514,26 +517,155 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You slash your weapon in a deadly swing sending cutting shockwaves out that rip through enemy defenses."
         }],
-        "description": [
-                        {
+        "description": [{
                             "tags": {"desc_type" : "effect"},
                             "content": "Attack:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "subeffect"},
                                                 "content": "On Hit:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "[D] + fray"
-                                                                }],
-                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
                                             },
                                             {
-                                                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                                "tags": {"desc_type": "subeffect"},
                                                 "content": "Miss:",
                                                 "subcontent":   [{
-                                                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                                    "content": "Fray"
-                                                                }],
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Attack target is slashed.",
+                                                "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Area Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Fray",
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Charge or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gains range 2, and repeat the area effect in a new line 3 area in range. The areas cannot overlap.",
+                                                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                                            }],
+                            "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_comet",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "Blast": "medium"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Comet",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_comet_1", "tl_comet_2"],
+        "mastery": ["ms_comet_exaltedblossomsdevilblade"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your weapon becomes like a meteor, burning through the air as you hurl at at your foes and smash it into the earth."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Area Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "2 damage."
+                                            }],
+                            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "fter throwing your weapon, it becomes an object placed in the center space of the area, or as close as possible."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Charge or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Rush 3 after throwing your weapon.",
+                                                "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                                            }],
+                            "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}]                        
+                        }]
+    },
+    {
+        "id": "ab_drakencross",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 3,
+            "Blast": "small"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Draken Cross",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_drakencross_1", "tl_drakencross_2"],
+        "mastery": ["ms_drakencross_darkwinddevilblade"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Fill the air with the flurry of blades."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Area Effect:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type" : "desc"}],
+                                                "content": "Fray.",
                                                 "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                             }]
                         },
@@ -542,28 +674,381 @@
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Attack target is slashed."
-                                            }],
-                            "glossary": [{"val": "slashed", "id": "gl_slashed"}]
-                        },
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "Area Effect:",
-                            "subcontent":   [{
+                                                "content": "You may rush 1, then target another small blast area in range 3 with ",
+                                                "subcontent":   [{
+                                                                    "tags": {"desc_type" : "subeffect"},
+                                                                    "content": "area effect: ",
+                                                                    "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                                                                }],
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "small blast", "id": "gl_blast"}]
+                                            },
+                                            {
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Fray"
-                                            }],
-                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                "content": "fray damage. The areas cannot overlap.",
+                                                "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
                             "content": "Charge or Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Gains range 2, and repeat the area effect in a new line 3 area in range. The areas cannot overlap."
+                                                "content": "Gains true strike, and may repeat the effect.",
+                                                "glossary": [{"val": "true strike", "id": "gl_truestrike"}]
                                             }],
-                            "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}, {"val": "area effect", "id": "gl_areaeffect"}]
-                        }
-						]
+                            "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_righteousdisdain",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "range": 2
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Righteous Disdain",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_righteousdisdain_1", "tl_righteousdisdain_2"],
+        "mastery": ["ms_righteousdisdain_shirahadori"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "With a clap, you deflect a weapon or projectile with your bare hand or the flat edge of your blade."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Trigger:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "A foe uses an ability that targets an ally in range, and damage to your ally has been determined on the foe’s end but not applied yet."
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Apply the damage to both you and your ally, but both of you gain resistance to it, and are sturdy against its effects.",
+                                                "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "sturdy", "id": "gl_sturdy"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gain vigor 4 after this ability resolves.",
+                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+        }]
+    },
+    {
+        "id": "ab_demonclaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "True Strike": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Demon Claw",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_demonclaw_1", "tl_demonclaw_2"],
+        "mastery": ["ms_demonclaw_ragingdemon"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Even unarmed, a Demon Slayer can employ ferocious strength and unleash blows with their bare hands that can crumple steel."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "Rush 1, then rush 1. Each time, you may deal 2 damage to an adjacent foe. Foes can only be damaged once per use of this ability.",
+                                                "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Special:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type" : "desc"}],
+                                                "content": "If you didn’t attack on your turn before using this ability, it deals damage to all adjacent foes."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Charge or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Weaken all adjacent characters after the first or second rush.",
+                                                "glossary": [{"val": "Weaken", "id": "gl_weakened"}, {"val": "rush", "id": "gl_rush"}]
+                                            }],
+                            "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+        }]
+    },
+    {
+        "id": "ab_gatesofhell",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Gates of Hell",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_gatesofhell_1", "tl_gatesofhell_2"],
+        "mastery": ["ms_gatesofhell_flashstep"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You move so quickly that even your afterimages are capable of deflecting blows."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "Rush 2.",
+                                                "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type" : "desc"}],
+                                                "content": "Gain +1 vigilance. Until the start of your next turn, you gain counter, and may rush 2 after activating vigilance. This effect can trigger any number of times a round, but only once a turn.",
+                                                "glossary": [{"val": "vigilance", "id": "gl_vigilance"}, {"val": "counter", "id": "gl_counter"}, {"val": "rush", "id": "gl_rush"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gain +2 vigilance instead.",
+                                                "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+        }]
+    },
+    {
+        "id": "ab_soulblade",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Soul Blade",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_soulblade_1", "tl_soulblade_2"],
+        "mastery": ["ms_soulblade_windcallingdevilblade"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You imbue your weapon with aether, causing additional cuts at the very aether of your foe."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Stance:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "When entering this stance, gain a d6 power die, starting at 2.",
+                                                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+                                            },
+                                            {
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "• When you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 area effect that must include your target, after the attack resolves. The area has true strike. Foes in the area take damage equal to the amount you ticked down.",
+                                                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "true strike", "id": "gl_truestrike"}]
+                                            },
+                                            {
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "• If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.",
+                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                            },
+                                            {
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "• If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.",
+                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                            },
+                                            {
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "• If the die goes to 0, you exit this stance."
+                                            }],
+                            "glossary": [{"val": "Stance", "id": "gl_stance"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gain +1 tick on the die for every adjacent foe when you enter this stance."
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Refresh:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type" : "desc"}],
+                                                "content": "This stance refreshes if you end a turn without attacking, or if you start a slow turn.",
+                                                "glossary": [{"val": "slow turn", "id": "gl_slowturn"}]
+                                            }]
+                        }]
+    },
+    {
+        "id": "ab_sixhellstrigram",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Delay": true,
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Six Hells Trigram",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_sixhellstrigram_1", "tl_sixhellstrigram_2"],
+        "mastery": ["ms_sixhellstrigram_darkwindchain"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Using dark arts, you summon up a sliver of the demon world, blocking out a dark arena that traps enemies in its web."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "End your turn and gain ",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "effect"},
+                                                "content": "Terrain Effect:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type" : "desc"}],
+                                                                    "content": "Mark out a burst 2 (self) area, then gain ",
+                                                                    "glossary": [{"val": "burst 2", "id": "gl_burst"}]
+                                                                },
+                                                                {
+                                                                    "tags": [{"desc_type" : "effect"}],
+                                                                    "content": "Delay: ",
+                                                                    "subcontent":   [{
+                                                                                        "tags": [{"desc_type" : "desc"}],
+                                                                                        "content": "Your next turn must be slow, but at the start of that turn, the trigram activates.",
+                                                                                        "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}]
+                                                                }],
+                                                                    "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• When the trigram activates, all foes inside are weakened.",
+                            "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• While active, any foes that attempt to exit the terrain effect during any turn must first pass a save, or become unable to do so until the start of their next turn. If they are moving, they don’t lose their movement but can’t consider the area outside valid space to move to."
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• This area lasts until this ability is used again."
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "The area has rampart and foes in the are when it activates take fray damage.",
+                                                "glossary": [{"val": "rampart", "id": "gl_rampart"}, {"val": "fray", "id": "gl_fray"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_wickedsheath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "True Strike": true,
+            "Power Die": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_stalwart",
+        "name": "Wicked Sheath",
+        "job_id": "jb_demonslayer",
+        "talent": ["tl_wickedsheath_1", "tl_wickedsheath_2"],
+        "mastery": ["ms_wickedsheath_mugenshometsu"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The master art of the demon slayers - holding a single blow with ultimate patience, until it can slay the most tenebrous of monsters in one stroke."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray and shove 1.",
+                                                                    "glossary": [{"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type" : "desc"}],
+                                                "content": "After you attack, your weapon becomes charged with energy. At the start of each round, gain a d4 power die at 1, or tick it up by 1. For each tick of the die:",
+                                                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• Increase the base damage on hit of Wicked Sheath by [D] and the shove by 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "shove", "id": "gl_shove"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• The attack gains +1 boon.",
+                            "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Discard the power die after you hit with any attack.",
+                            "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Charge or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may also rush 1 before making the attack once for each charge on the die.",
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                            }],
+                            "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
     }
 ]
