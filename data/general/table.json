@@ -1533,5 +1533,464 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_mightofthewild",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Might of the Wild", "Description"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_mightofthewildresult1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Toxic"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Toxic Cloud (1 Action, Range 5): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex creates a small blast area of dangerous terrain (which the Apex ignores) in free space in range. Foes inside the area are blinded+. If the Apex uses this ability again, it can either create a new cloud, or blow its existing clouds 2 spaces in any direction, which could cause them to overlap characters. It can have up to 2 clouds at once. Clouds last indefinitely, but evaporate if this ability is weakened.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "dangerous terrain", "id": "gl_dangerousterrain"},{"val": "blinded", "id": "gl_blinded"},{"val": "+", "id": "gl_ongoing"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Thick Hide"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Harden (1 Action): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex gains 10 vigor as its armor hardens. The next time it takes damage from a foe’s ability, the armor explodes, ending all vigor, and dazing and dealing 4 piercing damage to all foes in range 2 as an area effect.",
+                                    "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "dazing", "id": "gl_dazed"},{"val": "piercing", "id": "gl_piercing"},{"val": "area effect", "id": "gl_areaeffect"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Spines"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Sanguine Barb (1 Action, Range 6): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex impales a character in range with a barb. While this effect is active, they take 1 piercing damage for each space they move, dash, or are shoved. The effect can be removed if a character doesn’t move for their entire turn, or if they are cured.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "dash", "id": "gl_dash"},{"val": "shoved", "id": "gl_shove"},{"val": "cured", "id": "gl_cure"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Horned"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Primal Charge (1 Action): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex rushes 3, then shoves an adjacent foe 2 spaces.",
+                                    "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+                                },                               
+                                {
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Collide: ",
+                                    "glossary": [{"val": "Collide", "id": "gl_collide"}]
+                                },                               
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe takes fray damage twice and is slashed.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "slashed", "id": "gl_slashed"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Brutal Strength"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Stone Toss (1 Action, Range 3): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe in range takes 3 damage and is shoved 1, then create a height 1 boulder object next to them.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                },                               
+                                {
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Collide: ",
+                                    "glossary": [{"val": "Collide", "id": "gl_collide"}]
+                                },                               
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe is stunned.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Burrowing"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Earthglide: ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex has Phasing.",
+                                    "glossary": [{"val": "Phasing", "id": "gl_phasing"}]
+                                }
+                            ]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Seismic Geyser (1 Action, Range 5): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex chooses a foe in range that has not acted yet. At the end of that foe’s turn, a geyser erupts under them, dealing fray damage and inflicting weakened as a medium blast area effect centered on them. Weakened foes take [D]+fray instead.",
+                                    "glossary": [
+                                        {"val": "fray", "id": "gl_fray"},
+                                        {"val": "weakened", "id": "gl_weakened"},
+                                        {"val": "Weakened", "id": "gl_weakened"},
+                                        {"val": "[D]", "id": "gl_damagedice"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult7",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "7"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Chameleonic"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Blend In: ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If the Apex starts its turn in difficult or dangerous terrain, it gains stealth.",
+                                    "glossary": [
+                                        {"val": "difficult", "id": "gl_difficultterrain"},
+                                        {"val": "dangerous", "id": "gl_dangerousterrain"},
+                                        {"val": "stealth", "id": "gl_stealth"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Primal Ambush (1 Action): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex disappears from sight, removing itself from the battlefield. It then re-appears adjacent to any player character in range 3, placing it in free adjacent space. They must save or take 2 damage, four times and be dazed, or just 2 damage, twice on a successful save.",
+                                    "glossary": [
+                                        {"val": "dazed", "id": "gl_dazed"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult8",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "8"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Winged"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Winged: ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex’s standard move is fly 5, and all its dashes or rushes may be replaced with a fly. This trait deactivates if weakened.",
+                                    "glossary": [
+                                        {"val": "fly", "id": "gl_flying"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Talon Snatch (1 Action): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex soars into the air, removing it from the battlefield, then returns with at least one space in range 2. When it takes off, it can pick up an adjacent foe, dealing fray damage and forcing them to save. On a failed save, they are removed with the Apex, then placed adjacent after it lands. On a successful save, they are shoved 1.",
+                                    "glossary": [
+                                        {"val": "fray", "id": "gl_fray"},
+                                        {"val": "shoved", "id": "gl_shove"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult9",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "9"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Lashing Tail"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Tail Sweep (1 Action, Arc 4): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex sweeps their tail in an arc 4 area effect. Foes inside take 2 damage and are all shoved 2 in a direction of the Apex’s choice.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                },                               
+                                {
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Collide: ",
+                                    "glossary": [{"val": "Collide", "id": "gl_collide"}]
+                                },                               
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe takes 2 damage again."
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult10",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "10"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Carrion Eater"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Carrion Stash (1 Action, End Turn): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex digs up some stashed carrion and eats it. Create a pit in an adjacent space. During their next turn, all their abilities deal bonus damage and their attacks gain +1 boon and may critical hit (+[D]).",
+                                    "glossary": [
+                                        {"val": "pit", "id": "gl_pit"},
+                                        {"val": "bonus damage", "id": "gl_bonusdamage"},
+                                        {"val": "+1 boon", "id": "gl_boon"},
+                                        {"val": "[D]", "id": "gl_damagedice"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult11",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "11"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Sonic Shriek"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Shriek (1 Action, Range 2): ",
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex releases a shriek, affecting all foes in range as an area effect. Foes take 2 damage, once, for each space between them and the Apex (so foes at range 2 would take 2 damage, twice etc). If the Apex is inside a Hunting Ground, this effect increases to range 3.",
+                                    "glossary": [
+                                        {"val": "area effect", "id": "gl_areaeffect"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_mightofthewildresult12",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "12"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Element Breath"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Primal Elements (1 Action, Medium Blast, Range 2): ",
+                            "glossary": [
+                                        {"val": "Medium Blast", "id": "gl_blast"}],
+                            "subcontent": [                                
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Apex releases a blast of ice, fire, sand, or some other element, creating a medium blast area effect. Foes inside take 2 damage, then must save or be shoved 2 and blinded, or just shoved 1 on a successful save. Then create up to two dangerous terrain pit spaces in the area (fire, water, quicksand, etc).",
+                                    "glossary": [
+                                        {"val": "medium blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"},
+                                        {"val": "shoved", "id": "gl_shove"},
+                                        {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
+                                        {"val": "pit", "id": "gl_pit"}]
+                                }
+                            ]
+                        }
+                    ]
+                }]
+            }
+        ]
     }
 ]
