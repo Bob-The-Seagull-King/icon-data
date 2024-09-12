@@ -119,38 +119,5 @@
                             }]
                         }
                     ]
-    },
-    {
-        "id": "ad_foe_pathofruin",
-        "type": "Addon",
-        "source": "core",
-        "tags": {
-        },
-        "eventtags": {},
-        "name": "Path of Ruin",
-        "class_id": "icon",
-        "description":  [
-                        {
-                            "tags": {"desc_type" : "desc"},
-                            "content": "Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
-                        }
-                    ]
-    },
-    {
-        "id": "ad_foe_dragonfire",
-        "type": "Addon",
-        "source": "core",
-        "tags": {
-        },
-        "eventtags": {},
-        "name": "Dragonfire",
-        "class_id": "icon",
-        "description":  [
-                        {
-                            "tags": {"desc_type" : "desc"},
-                            "content": "The wyrm’s divine fire scorches the very soul. When an ability inflicts dragon fire, all of its targets sacrifice 25% of their max hp.",
-                            "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
-                        }
-                    ]
     }
 ]

@@ -1042,8 +1042,8 @@
                 "content": "Wrap your armor or weapon with the power of the wyrm, imbuing you with its fury. For this expedition, at the start of any combat, you can choose your own path of ruin edge. At the end of the round, you may choose to shove all characters 1 space towards that edge, then deal fray damage to them if they are in range 4 of that edge.",
                 "glossary": [{"val": "shove", "id": "gl_shove"},{"val": "fray", "id": "gl_fray"}]
             },{ 
-                "tags": {"desc_type" : "addon"},
-                "content": "ad_foe_pathofruin" 
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_pathofruin" 
             }]
     },
     {
@@ -1063,8 +1063,8 @@
                 "content": "The tailbone of a Wyrm has a remarkable sword shape and is razor sharp. While wielding such a magnificent weapon, your attacks against bloodied characters inflict dragonfire. Legends are immune to this effect."
             },
             {
-                "tags": {"desc_type" : "addon"},
-                "content": "ad_foe_dragonfire"
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_dragonfire"
             }]
     }
 ]

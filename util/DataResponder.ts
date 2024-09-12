@@ -26,6 +26,8 @@ import culturedata from '../data/general/cultures.json'
 import campitemdata from '../data/general/campitems.json'
 import campupgradedata from '../data/general/campupgrades.json'
 import rulesetdata from '../data/general/rules.json'
+
+import foetraitsdata from '../data/foes/foetraits.json'
 // -----------------------------------------------------
 
 /**
@@ -97,6 +99,9 @@ class DataResponder {
             }
             case "traits": {
                 return traitsdata.concat(data)
+            }
+            case "foetraits": {
+                return foetraitsdata.concat(data)
             }
             case "masteries": {
                 return masteriesdata.concat(data)
