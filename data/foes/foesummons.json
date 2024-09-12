@@ -1,0 +1,36 @@
+[
+    {
+        "id": "sm_scavenger_twinblades_twirlingblade",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Twirling Blade",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes that collide with a blade or start their turn adjacent to a blade take 2 piercing damage.",
+                                    "glossary": [{"val": "collide", "id": "gl_collide"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If a blade collides with a character, it also deals 2 piercing damage to them. Characters can be damaged by multiple blades at once.",
+                                    "glossary": [{"val": "collides", "id": "gl_collide"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 1
+    }
+]

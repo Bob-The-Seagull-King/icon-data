@@ -1,6 +1,6 @@
 [
     {
-        "id": "tf_ruinbeast_wyrm_pathofruin",
+        "id": "tf_beast_wyrm_pathofruin",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -14,7 +14,7 @@
                         ]
     },
     {
-        "id": "tf_ruinbeast_wyrm_dragonfire",
+        "id": "tf_beast_wyrm_dragonfire",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -29,7 +29,7 @@
                         ]
     },
     {
-        "id": "tf_ruinbeast_apex_earthglide",
+        "id": "tf_beast_apex_earthglide",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -43,7 +43,7 @@
             }     ]
     },
     {
-        "id": "tf_ruinbeast_apex_blendin",
+        "id": "tf_beast_apex_blendin",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -61,7 +61,7 @@
             }        ]
     },
     {
-        "id": "tf_ruinbeast_apex_winged",
+        "id": "tf_beast_apex_winged",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -75,5 +75,214 @@
                     {"val": "fly", "id": "gl_flying"}
                 ]
             }       ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_boots",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All remaining Brothers become sturdy and gain The Boot.",
+                "glossary": [
+                    {"val": "sturdy", "id": "gl_sturdy"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_boots_theboot"
+            }     
+          ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_fixer",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "One brother can use Grapple once a round."
+            },                       
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fixer_grapple"
+            }       ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_filth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All remaining Brothers gain Dripping Blade."
+            },                       
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_filth_drippingblade"
+            }     ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_filth_drippingblade",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dripping Blade",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks force the attack target to sacrifice 3 after dealing damage.",
+                "glossary": [
+                    {"val": "sacrifice", "id": "gl_sacrifice"}
+                ]
+            }       ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_cats",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All Brothers gain Feline Felicity."
+            },                       
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_cats_felinefelicity"
+            }   ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_sharkie",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All Brothers gain Great Swindle."
+            },                       
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharkie_greatswindle"
+            }      ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_pale",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All Brothers go to speed 5 and gain phasing.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"}
+                ]
+            }       ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_sharp_keeneye",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Keen Eye",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All attacks can critical hit (+[D]).",
+                "glossary": [
+                    {"val": "critical hit", "id": "gl_criticalhit"},
+                    {"val": "+[D]", "id": "gl_damagedice"}
+                ]
+            }       ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_sharp",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All Brothers gain Keen Eye, and one brother can use Ricochet Shot once a round."
+            },                       
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_sharp_keeneye"
+            } ,                       
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharp_ricochetshot"
+            }        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_fanatic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "One brother can use Spark once a round."
+            },                       
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fanatic_spark"
+            }      ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_broker",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All Brothers gain Defiance.",
+                "glossary": [
+                    {"val": "Defiance", "id": "gl_defiance"}
+                ]
+            }       ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_blessing_monger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blessing",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes are marked by Bounty Hunt"
+            },                       
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_monger_bountyhunt"
+            }     ]
     }
 ]

@@ -1562,7 +1562,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_toxiccloud"
+                            "content": "af_beast_apex_toxiccloud"
                         }
                     ]
                 }]
@@ -1585,7 +1585,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_harden"
+                            "content": "af_beast_apex_harden"
                         }
                     ]
                 }]
@@ -1608,7 +1608,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_sanguinebarb"
+                            "content": "af_beast_apex_sanguinebarb"
                         }
                     ]
                 }]
@@ -1631,7 +1631,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_primalcharge"
+                            "content": "af_beast_apex_primalcharge"
                         }
                     ]
                 }]
@@ -1654,7 +1654,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_stonetoss"
+                            "content": "af_beast_apex_stonetoss"
                         }
                     ]
                 }]
@@ -1677,11 +1677,11 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foetrait"},
-                            "content": "tf_ruinbeast_apex_earthglide"
+                            "content": "tf_beast_apex_earthglide"
                         },
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_seismicgeyser"
+                            "content": "af_beast_apex_seismicgeyser"
                         }
                     ]
                 }]
@@ -1704,11 +1704,11 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foetrait"},
-                            "content": "tf_ruinbeast_apex_blendin"
+                            "content": "tf_beast_apex_blendin"
                         },
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_primalambush"
+                            "content": "af_beast_apex_primalambush"
                         }
                     ]
                 }]
@@ -1731,11 +1731,11 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foetrait"},
-                            "content": "tf_ruinbeast_apex_winged"
+                            "content": "tf_beast_apex_winged"
                         },
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_talonsnatch"
+                            "content": "af_beast_apex_talonsnatch"
                         }
                     ]
                 }]
@@ -1758,7 +1758,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_tailsweep"
+                            "content": "af_beast_apex_tailsweep"
                         }
                     ]
                 }]
@@ -1781,7 +1781,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_carrionstash"
+                            "content": "af_beast_apex_carrionstash"
                         }
                     ]
                 }]
@@ -1804,7 +1804,7 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_shriek"
+                            "content": "af_beast_apex_shriek"
                         }
                     ]
                 }]
@@ -1827,9 +1827,201 @@
                     "subcontent": [
                         {
                             "tags": {"desc_type" : "foeability"},
-                            "content": "af_ruinbeast_apex_primalelements"
+                            "content": "af_beast_apex_primalelements"
                         }
                     ]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_bloodrune_trophy",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Blood Bound Blessing", "Description"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_bloodrune_trophyresult1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Boots"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_boots"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Fixer"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_fixer"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Filth"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_filth"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Cats"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_cats"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Sharkie"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_sharkie"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Pale"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_pale"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult7",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "7"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Sharp"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_sharp"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult8",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "8"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Fanatic"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_fanatic"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult9",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "9"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Broker"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_broker"
+                }]
+            },
+            {
+                "id": "ti_bloodrune_trophyresult10",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "10"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Monger"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_scavenger_bloodboundband_blessing_monger"
                 }]
             }
         ]

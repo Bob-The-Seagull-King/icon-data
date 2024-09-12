@@ -29,6 +29,7 @@ import rulesetdata from '../data/general/rules.json'
 
 import foetraitsdata from '../data/foes/foetraits.json'
 import foeabilitiesdata from '../data/foes/foeabilities.json'
+import foesummonsdata from '../data/foes/foesummons.json'
 // -----------------------------------------------------
 
 /**
@@ -97,6 +98,9 @@ class DataResponder {
             }
             case "summons": {
                 return summonsdata.concat(data)
+            }
+            case "foesummons": {
+                return foesummonsdata.concat(data)
             }
             case "talents": {
                 return talentsdata.concat(data)

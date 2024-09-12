@@ -775,7 +775,7 @@
         },
         "eventtags": {},
         "name": "Yellow Spore Sack",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 5,
         "usetype": "",
         "description": [{
@@ -794,7 +794,7 @@
         },
         "eventtags": {},
         "name": "Drift Oil",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -811,7 +811,7 @@
         },
         "eventtags": {},
         "name": "Howler Venom",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 2,
         "usetype": "",
         "description": [{
@@ -828,7 +828,7 @@
         },
         "eventtags": {},
         "name": "Screecher Gland",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -845,7 +845,7 @@
         },
         "eventtags": {},
         "name": "Landshark Cape",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -863,7 +863,7 @@
         },
         "eventtags": {},
         "name": "Kelpie Head",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -893,7 +893,7 @@
         },
         "eventtags": {},
         "name": "Stalker Scales",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 2,
         "usetype": "expedition",
         "description": [{
@@ -910,7 +910,7 @@
         },
         "eventtags": {},
         "name": "Gigantapede Stinger",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -937,7 +937,7 @@
         },
         "eventtags": {},
         "name": "Chimera Hide",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -954,7 +954,7 @@
         },
         "eventtags": {},
         "name": "Chimaeric Ichor",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 2,
         "usetype": "expedition",
         "description": [{
@@ -973,7 +973,7 @@
         },
         "eventtags": {},
         "name": "Chimaeric Bile",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -991,7 +991,7 @@
         },
         "eventtags": {},
         "name": "Apex Mantle",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -1009,7 +1009,7 @@
         },
         "eventtags": {},
         "name": "Apex Fang",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -1034,7 +1034,7 @@
         },
         "eventtags": {},
         "name": "Wyrm Gut",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -1043,7 +1043,7 @@
                 "glossary": [{"val": "shove", "id": "gl_shove"},{"val": "fray", "id": "gl_fray"}]
             },{ 
                 "tags": {"desc_type" : "foetrait"},
-                "content": "tf_ruinbeast_wyrm_pathofruin" 
+                "content": "tf_beast_wyrm_pathofruin" 
             }]
     },
     {
@@ -1055,7 +1055,7 @@
         },
         "eventtags": {},
         "name": "Tail Sword",
-        "category": "ruinbeast",
+        "category": "beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -1064,7 +1064,351 @@
             },
             {
                 "tags": {"desc_type" : "foetrait"},
-                "content": "tf_ruinbeast_wyrm_dragonfire"
+                "content": "tf_beast_wyrm_dragonfire"
             }]
+    },
+    {
+        "id": "tp_scavbadge",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Scav Badge",
+        "category": "scavenger",
+        "uses" : 0,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deal bonus damage to any character holding a valuables token.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_goldtooth",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Gold Tooth",
+        "category": "scavenger",
+        "uses" : 2,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Take the following 1 action ability:"
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Gang Up: ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Up to three allies in range 5 can dash 3 spaces. If they end their turn adjacent to the same character, each of them deals 2 damage to that character.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_shankscrosshilt",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Shank's Cross Hilt",
+        "category": "scavenger",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During the next combat, abilities you use against foes standing next to your allies gain true strike and deal bonus damage.",
+                "glossary": [{"val": "true strike", "id": "gl_truestrike"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_ruffiansboots",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Ruffians Boots",
+        "category": "scavenger",
+        "uses" : 5,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As a free action, gain stealth",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_glittercloak",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Glittercloak",
+        "category": "scavenger",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Don a sparkling cloak that shifts and obscures your location. During the next combat, gain evasion. Any foe that ends their turn in range 2 of you gains hatred of you.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"},{"val": "hatred", "id": "gl_hatred"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_sparklinggem",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Sparkling Gem",
+        "category": "scavenger",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Use the following Interrupt",
+                "glossary": [{"val": "", "id": ""}]
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trick of the Light: ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                        "content": "Trigger: "
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "An ally is targeted by an attack or ability from a foe."
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Effect: "
+                    },
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "That ally gains evasion against that attack or ability. After it resolves, teleport that ally 3 spaces to their ‘real’ location.",
+                        "glossary": [{"val": "evasion", "id": "gl_evasion"},{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_junkmagetalisman",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Junk Mage Talisman",
+        "category": "scavenger",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, the first time you take damage in any combat, reduce it to 0."
+            }
+        ]
+    },
+    {
+        "id": "tp_plunderblade",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Plunder Blade",
+        "category": "scavenger",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This blade has the ability to magically create wealth from nowhere. All your attacks gain (as if a relic):"
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Invoke (attack 15+): ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create 2 valuables tokens adjacent to your target foe."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_midanshard",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Midan Shard",
+        "category": "scavenger",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This cursed icon causes weapons to transmute their foes temporarily into gold. All foes you defeat are removed from the battlefield and replaced with an object equal to their size."
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After combat, they either revert to normal (with the gold sloughing off) or stay frozen, depending on the tone of your game. For every two foes defeated this way during an expedition, gain 1 dust."
+            }
+        ]
+    },
+    {
+        "id": "tp_twinbladecharm",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Twinblades",
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Twinblade Charm",
+        "category": "scavenger",
+        "uses" : 5,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You and a chosen ally attach these charms to your armor or weapon. While attached, you or your ally may expend a charge and swap places with each other as a free action as long as you are both within range 5 of each other, removing and placing both characters. When you land, you may both deal 2 damage to all foes.",
+                "glossary": [{"val": "", "id": ""}]
+            }
+        ]
+    },
+    {
+        "id": "tp_battleblade",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Twinblades"
+        },
+        "eventtags": {},
+        "name": "Battle Blade",
+        "category": "scavenger",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon a twirling blade in free space in range 3, as a round action. At the start of your turn, you may shove the blade 1 space in any direction.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_scavenger_twinblades_twirlingblade"
+            }
+        ]
+    },
+    {
+        "id": "tp_bloodrune",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Blood Rune",
+        "category": "scavenger",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Use this remnant of runic power at the start of any combat. Roll 2d10 and pick either result, choosing the brother that matches that result. For the rest of the combat, you gain the blood bound blessing of the chosen brother."
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_bloodrune_trophy"
+            }
+        ]
+    },
+    {
+        "id": "tp_bootsboots",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Boot's Boots",
+        "category": "scavenger",
+        "uses" : 5,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immediately use Boot’s The Boot ability."
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_boots_theboot"
+            }
+        ]
+    },
+    {
+        "id": "tp_gilthand",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Gilthand",
+        "category": "scavenger",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Use this golden hand as a 1 action ability to immediately transmute a non-legend foe into a golden statue. They are removed from the battlefield and replaced with a golden statue object with a height equal to their size. The object has 10 hp. When it is destroyed, return the foe to the battlefield. If that foe was the last foe, they are instead defeated."
+            }
+        ]
+    },
+    {
+        "id": "tp_crystallizedgreed",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Crystallized Greed",
+        "category": "scavenger",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shatter this Midan crystal during any interlude to instantly gain 1d6 dust. For every interlude that passes while you hold on to the crystal, roll one more die and choose the highest result, up to a maximum of 4."
+            }
+        ]
     }
 ]

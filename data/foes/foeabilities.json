@@ -1,6 +1,6 @@
 [
     {
-        "id": "af_ruinbeast_apex_toxiccloud",
+        "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -19,7 +19,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_harden",
+        "id": "af_beast_apex_harden",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -37,7 +37,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_sanguinebarb",
+        "id": "af_beast_apex_sanguinebarb",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -56,7 +56,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_primalcharge",
+        "id": "af_beast_apex_primalcharge",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -72,19 +72,22 @@
                 "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
             },                               
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Collide: ",
-                "glossary": [{"val": "Collide", "id": "gl_collide"}]
-            },                               
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Foe takes fray damage twice and is slashed.",
-                "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "slashed", "id": "gl_slashed"}]
-            }
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes fray damage twice and is slashed.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            }                            
+            
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_stonetoss",
+        "id": "af_beast_apex_stonetoss",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -101,19 +104,22 @@
                 "glossary": [{"val": "shoved", "id": "gl_shove"}]
             },                               
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Collide: ",
-                "glossary": [{"val": "Collide", "id": "gl_collide"}]
-            },                               
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Foe is stunned.",
-                "glossary": [{"val": "stunned", "id": "gl_stunned"}]
-            }
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }                              
+            
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_seismicgeyser",
+        "id": "af_beast_apex_seismicgeyser",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -136,7 +142,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_primalambush",
+        "id": "af_beast_apex_primalambush",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -155,7 +161,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_talonsnatch",
+        "id": "af_beast_apex_talonsnatch",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -175,7 +181,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_tailsweep",
+        "id": "af_beast_apex_tailsweep",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -192,18 +198,21 @@
                 "glossary": [{"val": "shoved", "id": "gl_shove"}]
             },                               
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Collide: ",
-                "glossary": [{"val": "Collide", "id": "gl_collide"}]
-            },                               
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Foe takes 2 damage again."
-            }
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 2 damage again."
+                    }
+                ]
+            }                               
+            
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_carrionstash",
+        "id": "af_beast_apex_carrionstash",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -226,7 +235,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_shriek",
+        "id": "af_beast_apex_shriek",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -246,7 +255,7 @@
                         ]
     },
     {
-        "id": "af_ruinbeast_apex_primalelements",
+        "id": "af_beast_apex_primalelements",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -268,6 +277,199 @@
                     {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
                     {"val": "pit", "id": "gl_pit"}]
             }
+                        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_boots_theboot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "The Boot",
+        "class_id": "cl_stalwart",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "An adjacent foe is shoved 1. If they’re bloody, they are instead shoved 3.",
+            "glossary": [{"val": "bloody", "id": "gl_bloodied"},{"val": "shoved", "id": "gl_shove"}]
+        },                               
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Collide: ",
+            "glossary": [{"val": "Collide", "id": "gl_collide"}],
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foe is weakened.",
+                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                }
+            ]
+        }                              
+        
+                        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_fixer_grapple",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Grapple",
+        "class_id": "cl_stalwart",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Fixer marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency the first time in a round. On a failed save, it becomes unable to exit adjacency with Fixer by any means for the rest of the current round. On a successful save, the mark and this effect ends, but the foe is weakened.",
+            "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+        }                      
+        
+                        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_cats_felinefelicity",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Feline Felicity",
+        "class_id": "cl_vagabond",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Teleport 3, then may deal 2 damage to an adjacent foe. Bloodied foes take 2 damage twice.",
+            "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+        }                      
+        
+                        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_sharkie_greatswindle",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Great Swindle",
+        "class_id": "cl_mendicant",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "foe in range 3 is sealed, then must save or swap places with Sharkie, teleporting. Bloodied characters fail the save.",
+            "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "teleporting", "id": "gl_teleport"}]
+        }                      
+        
+                        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_sharp_ricochetshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "pierce": true,
+            "range": 10
+        },
+        "eventtags": {},
+        "name": "Ricochet Shot",
+        "class_id": "cl_wright",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "content": "[D] + fray and the foe is shattered"
+                                                    }],
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shattered", "id": "gl_shattered"}]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "content": "Fray"
+                                                    }],
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A different foe in range 3 from the original target takes fray damage."
+                                }],
+                "glossary": [{"val": "fray", "id": "gl_fray"}]
+            } ,
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deals bonus damage agaist bloodied foes."
+                                }],
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},
+                {"val": "bloodied", "id": "gl_bloodied"}]
+            }             
+        
+                        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_fanatic_spark",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Spark",
+        "class_id": "cl_wright",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Choose a foe in range 6 that has not acted this round. At the end of that foe’s next turn, they explode in a small blast area effect for [D]+fray piercing damage, dealing damage to all foes other than them in the area. Summon a pit under them. If they are standing in a pit when the explosion happens, they are stunned and also take damage.",
+            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "piercing", "id": "gl_piercing"},{"val": "stunned", "id": "gl_stunned"}]
+        }                      
+        
+                        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_monger_bountyhunt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Bounty Hunt",
+        "class_id": "cl_mendicant",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "A foe in range 6 is marked. While marked, abilities against the target gain true strike, and allies gain +1 boon to attack the foe. Using this mark again transfers it. A foe can end this mark by ending their turn more than 2 spaces away from any Brother.",
+            "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "true strike", "id": "gl_truestrike"},{"val": "+1 boon", "id": "gl_boon"},{"val": "stunned", "id": "gl_stunned"}]
+        }                      
+        
                         ]
     }
 ]
