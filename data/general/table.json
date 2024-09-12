@@ -1840,7 +1840,7 @@
         "source": "core",
         "tags": {},
         "eventtags": {},
-        "colnames": ["Result", "Blood Bound Blessing", "Description"],
+        "colnames": ["Result", "Blood Bound Blessing"],
         "description": [
         ],
         "items": [
@@ -1853,9 +1853,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "1"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Boots"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1871,9 +1868,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "2"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Fixer"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1889,9 +1883,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "3"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Filth"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1907,9 +1898,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "4"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Cats"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1925,9 +1913,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "5"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Sharkie"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1943,9 +1928,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "6"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Pale"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1961,9 +1943,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "7"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Sharp"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1979,9 +1958,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "8"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Fanatic"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -1997,9 +1973,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "9"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Broker"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},
@@ -2015,9 +1988,6 @@
                 "description": [{
                     "tags": {"desc_type" : "desc"},
                     "content": "10"
-                },{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Monger"
                 },
                 {
                     "tags": {"desc_type" : "foetrait"},

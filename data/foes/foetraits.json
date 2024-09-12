@@ -82,7 +82,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Boot's Blessing",
         "description":  [                                
             {
                 "tags": {"desc_type" : "desc"},
@@ -103,7 +103,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Fixer's Blessing",
         "description":  [                                
             {
                 "tags": {"desc_type" : "desc"},
@@ -120,7 +120,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Filth's Blessing",
         "description":  [                                 
             {
                 "tags": {"desc_type" : "desc"},
@@ -153,7 +153,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Cat's Blessing",
         "description":  [                                 
             {
                 "tags": {"desc_type" : "desc"},
@@ -170,7 +170,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Sharkie's Blessing",
         "description":  [                               
             {
                 "tags": {"desc_type" : "desc"},
@@ -187,7 +187,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Pale's Blessing",
         "description":  [                                
             {
                 "tags": {"desc_type" : "desc"},
@@ -220,7 +220,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Sharp's Blessing",
         "description":  [                                
             {
                 "tags": {"desc_type" : "desc"},
@@ -241,7 +241,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Fanatic's Blessing",
         "description":  [                               
             {
                 "tags": {"desc_type" : "desc"},
@@ -258,7 +258,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Broker's Blessing",
         "description":  [                                
             {
                 "tags": {"desc_type" : "desc"},
@@ -274,7 +274,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Blessing",
+        "name": "Monger's Blessing",
         "description":  [                                  
             {
                 "tags": {"desc_type" : "desc"},
