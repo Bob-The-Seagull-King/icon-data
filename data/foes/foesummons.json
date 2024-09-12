@@ -32,5 +32,34 @@
         "blurb":  [],
         "colour": "icon",
         "limit": 1
+    },
+    {
+        "id": "sm_imperial_veridianweapon_combatautomaton",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "defense": 5,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Combat Automaton",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a round, during the Aft Turret’s turn (including when summoned) the automaton can move 3 spaces, then make the following attack:"
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_combatautomaton_automatongun"
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
     }
 ]

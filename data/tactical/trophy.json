@@ -1410,5 +1410,340 @@
                 "content": "Shatter this Midan crystal during any interlude to instantly gain 1d6 dust. For every interlude that passes while you hold on to the crystal, roll one more die and choose the highest result, up to a maximum of 4."
             }
         ]
+    },
+    {
+        "id": "tp_imperialarquebus",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Imperial Arquebus",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Arquebus gives you a basic heavy ranged attack with a range of 8 this expedition."
+            }
+        ]
+    },
+    {
+        "id": "tp_arkentechmine",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Arkentech Mine",
+        "category": "imperial",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As an action, you may place an intangible size 1 summon in a space in range 3 not adjacent to any character. If any character exits or enters any space adjacent to the mine, it explodes for [D]+fray in a medium blast area effect and dazes characters within.",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"},
+                    {"val": "summon", "id": "gl_summon"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "dazes", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_flamehurler",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Flame Hurler",
+        "category": "imperial",
+        "uses" : 3,
+        "usetype": "",
+        "description": [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Take the following 1 action ability:"
+            },{ "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Flame hurler (1 action, range 2, medium blast, unerring, true strike): ",
+                "subcontent": [
+                    {
+                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                        "content": "Deal 5 damage as an area effect.",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_arkentechforceshield",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Arkentech Force Shield",
+        "category": "imperial",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As an action, you may spend a charge to activate this energy shield and gain aura 2 until the end of your next turn. Yourself and allies have resistance against abilities originating from characters outside the aura.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_imperialsidearm",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Imperial Sidearm",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As free action during your turn this expedition, you may deal 1 piercing damage to a foe in range 4.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_imperialrocketpack",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Imperial Rocket Pack",
+        "category": "imperial",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As an action, you may spend a charge to rush 3 spaces in a straight line, ignoring terrain and height penalties. All adjacent foes when you land are weakened and shoved 1.",
+                "glossary": [
+                    {"val": "rush", "id": "gl_rush"},
+                    {"val": "weakened", "id": "gl_weakened"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_arkentechpowerarmour",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Arkentech Power Armor",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, start every combat with vigor 1.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_arkentechpowergauntlet",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Arkentech Power Gauntlet",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, all shoves your abilities inflict are increased by 1, and your attacks gain:",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            },{
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove your foe 1 (+1) spaces.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_arkentechgoggles",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+        },
+        "eventtags": {},
+        "name": "Arkentech Goggles",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This expedition, your abilities gain unerring.",
+                "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_hellforgedarmor",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Crimson Weapon"
+        },
+        "eventtags": {},
+        "name": "Hellforged Armor",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This armor grants immunity to dangerous terrain. While bloodied during this expedition, the armor becomes wreathed in flames. All terrain adjacent to you counts as dangerous terrain.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_hadescannon",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Crimson Weapon"
+        },
+        "eventtags": {},
+        "name": "Hades Cannon",
+        "category": "imperial",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spend a charge of this ability and one action to immediately use the Hades Cannon, as per the Round action."
+            }
+        ]
+    },
+    {
+        "id": "tp_targetingflare",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Azurian Weapon"
+        },
+        "eventtags": {},
+        "name": "Targeting Flare",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of any round, fire this flare at a space in range 6 to call in off map artillery. At the end of that round, a cannon strike hits the area as a large blast area effect. Characters inside must save or take 2[D]+fray damage and be stunned, or just fray damage on a successful save. Then create a pit in the center space.",
+                "glossary": [
+                    {"val": "large blast", "id": "gl_blast"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "stunned", "id": "gl_stunned"},
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tp_landshipdrill",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Azurian Weapon",
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Landship Drill",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "For the use of this expedition, you ignore terrain penalties for being in pits. You may create a pit underneath yourself at the start of any of your turns, and may spend 1 action and end your turn to remove yourself from the battlefield, then re-appear inside any free pit on the battlefield.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "tp_retooledcombatautomaton",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Veridian Weapon",
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Retooled Combat Automaton",
+        "category": "imperial",
+        "uses" : 3,
+        "usetype": "",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "By spending 1 action, can unfold and deploy a combat automaton, as per this legend’s action. It can act during your turn."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_veridianweapon_combatautomaton"
+            }
+        ]
+    },
+    {
+        "id": "tp_doomkey",
+        "type": "Trophy",
+        "source": "core",
+        "tags": {
+            "legend": "Veridian Weapon"
+        },
+        "eventtags": {},
+        "name": "Doom Key",
+        "category": "imperial",
+        "uses" : 1,
+        "usetype": "expedition",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You have access to a portable version of an Arkentech mega weapon. It takes a long time to charge, but is incredibly potent and can end fights even with just the threat of firing. All fights this expedition automatically result in a victory for you at the end of round 6. However, once this effect is used, it is used up and is no longer active for the rest of the expedition."
+            }
+        ]
     }
 ]

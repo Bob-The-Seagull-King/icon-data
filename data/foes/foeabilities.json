@@ -395,18 +395,18 @@
                                     "content": "On Hit:",
                                     "subcontent":   [{
                                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                        "content": "[D] + fray and the foe is shattered"
-                                                    }],
-                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shattered", "id": "gl_shattered"}]
+                                                        "content": "[D] + fray and the foe is shattered",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shattered", "id": "gl_shattered"}]
+                                                    }]
                                 },
                                 {
                                     "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
                                     "content": "Miss:",
                                     "subcontent":   [{
                                                         "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                                        "content": "Fray"
-                                                    }],
-                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
                                 }]
             },
             {
@@ -471,5 +471,95 @@
         }                      
         
                         ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_hadescannon",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "unerring": true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Hades Cannon",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of the round, the Weapon charges up a massive flame cannon. At the end of the round, it fires a searing blast from the cannon."
+        },                               
+        {
+            "tags": {"desc_type" : "list"},
+            "content": "",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Assign each side of the weapon a number, from 1 to 4, then roll 1d4. The weapon blasts a line area effect 2 spaces wide that is exactly lined up with the rolled edge of the weapon and goes the entire battlefield.",
+                    "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foes inside the explosion are weakened and must save or take 2[D]+fray, or [D]+fray on a successful save. This damage cannot reduce a character below 1 hp.",
+                    "glossary": [
+                        {"val": "weakened", "id": "gl_weakened"},
+                        {"val": "[D]", "id": "gl_damagedice"},
+                        {"val": "fray", "id": "gl_fray"}
+                    ]
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Munition inside explode."
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Weapon takes 8 damage if it’s caught inside an explosion."
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Then, create a space of burning dangerous terrain under every foe, then 2 more spaces anywhere in the area, even if there were no foes inside.",
+                    "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                }
+            ]
+        }                      
+        
+                        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_combatautomaton_automatongun",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "attack": true,
+            "type": "attack",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Automaton Gun",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "content": "5 Damage."
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "content": "2 Damage."
+                                                    }]
+                                }]
+            }
+        ]
     }
 ]
