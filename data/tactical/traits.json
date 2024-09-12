@@ -1586,5 +1586,21 @@
                 "glossary": [{"val": "fly", "id": "gl_flying"}]
             }
                         ]
+    },
+    {
+        "id": "tr_flagellantsguard",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+        },
+        "eventtags": {},
+        "name": "Flagellant's Guard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Reduce all damage to self and adjacent allies by 3, as if from armor, but you must sacrifice 3 at the end of your turns.",
+                "glossary": [{"val": "armor", "id": "gl_armor"},{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+                        ]
     }
 ]
