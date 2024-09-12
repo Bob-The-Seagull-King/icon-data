@@ -224,7 +224,7 @@
                     { "tags": {"desc_type" : "gap"}, "content": "" },
                     {
                         "tags": {"desc_type" : "effect"},
-                        "content": "Rounde Invoke: ",
+                        "content": "Round Invoke: ",
                         "subcontent": [
                             {
                                 "tags": {"desc_type" : "desc"},
