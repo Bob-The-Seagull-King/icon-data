@@ -1678,7 +1678,7 @@
                         {
                             "tags": {"desc_type" : "foetrait"},
                             "content": "tf_ruinbeast_apex_earthglide"
-                        },{ "tags": {"desc_type" : "gap"}, "content": "" },
+                        },
                         {
                             "tags": {"desc_type" : "foeability"},
                             "content": "af_ruinbeast_apex_seismicgeyser"
@@ -1705,7 +1705,7 @@
                         {
                             "tags": {"desc_type" : "foetrait"},
                             "content": "tf_ruinbeast_apex_blendin"
-                        },{ "tags": {"desc_type" : "gap"}, "content": "" },
+                        },
                         {
                             "tags": {"desc_type" : "foeability"},
                             "content": "af_ruinbeast_apex_primalambush"
@@ -1732,7 +1732,7 @@
                         {
                             "tags": {"desc_type" : "foetrait"},
                             "content": "tf_ruinbeast_apex_winged"
-                        },{ "tags": {"desc_type" : "gap"}, "content": "" },
+                        },
                         {
                             "tags": {"desc_type" : "foeability"},
                             "content": "af_ruinbeast_apex_talonsnatch"
