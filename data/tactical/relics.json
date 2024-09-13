@@ -7,7 +7,7 @@
             "stun": true,
             "shove": true,
             "invoke": true,
-            "attack": true
+            "attack": 17
         },
         "eventtags": {},
         "colour": "cl_stalwart",
@@ -115,7 +115,7 @@
         "source": "core",
         "tags": {
             "invoke": true,
-            "attack": true,
+            "attack": 11,
             "shove": true
         },
         "eventtags": {},
@@ -171,7 +171,7 @@
         "tags": {
             "counter": true,
             "invoke": true,
-            "attack": true,
+            "attack": 11,
             "piercing": true
         },
         "eventtags": {},
@@ -225,7 +225,7 @@
         "type": "Relic",
         "source": "core",
         "tags": {
-            "attack": true,
+            "attack": 17,
             "gambit": true,
             "defiance": true
         },
@@ -336,7 +336,7 @@
         "type": "Relic",
         "source": "core",
         "tags": {
-            "attack": true,
+            "attack": 13,
             "invoke": true,
             "save": true
         },
@@ -448,7 +448,7 @@
         "source": "core",
         "tags": {
             "invoke": true,
-            "attack": true,
+            "attack": 19,
             "delay": true,
             "divine": true,
             "sturdy": true
@@ -550,6 +550,574 @@
         "quest": [{
             "tags": {"desc_type" : "subeffect"},
             "content": "Find and smith the Primal Iron Soul, a legendary meteorite that fell deep in the blight lands."
+        }]
+    },
+    {
+        "id": "rl_gladesong",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "gambit": true,
+            "attack": 11,
+            "boon": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Gladesong",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your weapon is carved from supple but durable gaia wood, sharper than any metal."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your attacks against foes standing next to an allied summon gain +1 boon.",
+                "glossary": [
+                    {"val": "summon", "id": "gl_summon"},
+                    {"val": "+1 boon", "id": "gl_boon"}
+                ]
+            }]
+        },
+        "tier_ii": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 11,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Move all allied summons in range 2 of you 1 space, ignoring all movement penalties. All foes adjacent to at least one allied summon that was moved this way then take 2 damage.",
+                "glossary": [{"val": "summons", "id": "gl_summon"},{"val": "summon", "id": "gl_summon"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "It always costs at most 1 movement for you to enter the spaces of allied summons.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            }]
+        },
+        "aspected": {
+            "invoke": true,
+            "invoke_type": "gambit",
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Free action: This turn only, entering the spaces of your allied summons costs at most 0 movement for you and allies.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Drink from the primeval Gaia pool."
+        }]
+    },
+    {
+        "id": "rl_gloam",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "attack": 14,
+            "blind": true,
+            "boon": true,
+            "curse": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Gloam",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This cloak or clothing appears to be made out of woven shadow. The cloth is richly textured."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 14,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Blind your foe. If your foe is already blinded, they take 2 damage.",
+                "glossary": [{"val": "blinded", "id": "gl_blind"},{"val": "Blind", "id": "gl_blind"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "+1 boon on attacks against blind targets",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"},{"val": "blind", "id": "gl_blind"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Blind characters gain +1 curse on attacks against you, and you may dash 1 after they any ability they target with you resolves.",
+                "glossary": [{"val": "Blind", "id": "gl_blind"},{"val": "+1 curse", "id": "gl_curse"},{"val": "dash", "id": "gl_dash"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Any foe that starts or ends their turn adjacent to you and no other characters is blinded. Blinded foes take 2 damage.",
+                "glossary": [{"val": "Blinded", "id": "gl_blind"},{"val": "blinded", "id": "gl_blind"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Find a source of True Darkness, deep underground, and capture it with needle and thread."
+        }]
+    },
+    {
+        "id": "rl_hermes",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "gambit": true,
+            "teleport": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Hermes",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Intricate, curling silver wings are carved into this artifact, weapon, or armor."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "gambit",
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Free action: Teleport 2.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you use this relic’s invoke, all other allies in range 2 of you can teleport 2 as well.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase range of all teleports granted by your abilities and as part of this relic by 1.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "This relic’s invoke becomes: Free Action: Teleport 1 space, then teleport 1 space. This teleport can be interrupted with other abilities.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"},{"val": "teleport", "id": "gl_teleport"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Weave a strand taken from the cloak of the Titan of trickery, the Laughing God, into your relic."
+        }]
+    },
+    {
+        "id": "rl_mistborn",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "gambit": true,
+            "stealth": true,
+            "bonus_damage": true,
+            "dash": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Mistborn",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your weapon is made from seeping mist, and doesn’t seem to be entirely present."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "gambit",
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Free action: Gain stealth",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks from stealth deal bonus damage",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "If you end your turn with no other foes or allies in range 2, gain stealth. If you already would gain stealth, dash 2.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"},{"val": "dash", "id": "gl_dash"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Stealth now only breaks if you or an effect or a summon you own deals damage to a foe.",
+                "glossary": [{"val": "Stealth", "id": "gl_stealth"},{"val": "summon", "id": "gl_summon"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Sail to the edge of the world and bathe your relic in the mists there."
+        }]
+    },
+    {
+        "id": "rl_ruin",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "boon": true,
+            "bonus_damage": true,
+            "pacified": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Ruin",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A weapon, bow, or stave carved from ancient stone, a heavy slab of a thing."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You may trade in 1 boon, once per attack, for bonus damage.",
+                "glossary": [{"val": "1 boon", "id": "gl_boon"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Become immune to pacified.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your first attack in any combat cannot miss (change any miss into a hit)."
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your first attack also gains +1 boon, and its listed ranges are increased by +2.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Gather rubble from the pillars of the oldest Arkenruin."
+        }]
+    },
+    {
+        "id": "rl_sleipnir",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "gambit": true,
+            "flying": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Sleipnir",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Odd wooden armor or a necklace of bones carved with the image of an eight legged horse."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "gambit",
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Free action: Fly 2. This free action can interrupt abilities.",
+                "glossary": [{"val": "Fly", "id": "gl_flying"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a turn, after you end any flying movement on a lower elevation than you started, you can fly 1 again.",
+                "glossary": [{"val": "flying", "id": "gl_flying"},{"val": "fly", "id": "gl_flying"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase all your flight effects by +1, including as part of this relic.",
+                "glossary": [{"val": "flight", "id": "gl_flying"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your invoke gambit can be taken twice a combat."
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Tame a titansteed, one of the enormous legendary wild horses."
+        }]
+    },
+    {
+        "id": "rl_rigoletto",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "gambit": true,
+            "evasion": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Rigoletto",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A colorful token, built to look like a spinning wheel. When sewn into armor, weapons, or accessories, it allows its wielder to move with preternatural speed."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Evasion triggers for you on a 3+",
+                "glossary": [{"val": "Evasion", "id": "gl_evasion"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you or an ally in range 2 successfully evades an attack, deal 2 damage to the attacker."
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "If you have evasion, you can also roll evasion for allies in range 2, but it only triggers on a 6.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }]
+        },
+        "aspected": {
+            "invoke": true,
+            "invoke_type": "gambit",
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Activate at the start of any turn for."
+            },{
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This turn only, your evasion is always successful.",
+                        "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+                    }
+                ]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Beat the shadow of the Laughing God in a foot race. He cheats."
+        }]
+    },
+    {
+        "id": "rl_huntress",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "dodge": true,
+            "mark": true,
+            "bonus_damage": true,
+            "dash": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Huntress",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This supple leather relic has been crafted with images of Gaia, the Hunter Titan."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain dodge against characters you marked.",
+                "glossary": [{"val": "dodge", "id": "gl_dodge"},{"val": "marked", "id": "gl_mark"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks against characters you marked deal bonus damage.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you hit a character you marked with an attack, dash 2 after the ability resolves.",
+                "glossary": [{"val": "dash", "id": "gl_dash"},{"val": "marked", "id": "gl_mark"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Effects apply to any marked character, not just those you marked.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Take the pelt of a legendary beast and incorporate it into your relic."
+        }]
+    },
+    {
+        "id": "rl_fragmentofiz",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "gambit": true,
+            "phasing": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Fragment of Iz",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A shifting, crackling relic that seems out of sync with reality. Its color and shape seems to writhe and warp."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "gambit",
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Free action: Gain phasing until the start of your next turn.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you phase through a character, you may deal 2 damage to them. This effect can only trigger once a round for the same character.",
+                "glossary": [{"val": "phase", "id": "gl_phasing"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "While you have phasing, entering the space of other characters or objects costs a maximum of 1 movement for you.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You always have phasing when you dash.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"},{"val": "dash", "id": "gl_dash"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Stand before the gates of the buried and ancient necropolis of Iz, and behold the horror."
+        }]
+    },
+    {
+        "id": "rl_dominus",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "attack": 17,
+            "slay": true,
+            "dash": true
+        },
+        "eventtags": {},
+        "colour": "cl_vagabond",
+        "name": "Dominus",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A relic that most often takes the form of a crimson gauntlet. The surface is oddly slick."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "All your attacks gain a new effect:"
+            },{
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay: ",
+                "glossary": [{"val": "Slay", "id": "gl_slay"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 2 after the ability resolves.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                    }
+                ]
+            }]
+        },
+        "tier_ii": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 17,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Trigger any slay effects of your attack.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase Dominus I to dash 4.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your slay effects also trigger if they reduce a character to at or below 25% hp.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Beat another wielder of a Dominus relic in single combat."
         }]
     }
 ]
