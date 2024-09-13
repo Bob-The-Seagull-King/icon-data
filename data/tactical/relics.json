@@ -637,7 +637,7 @@
             "description": [{
                 "tags": {"desc_type" : "desc"},
                 "content": "Blind your foe. If your foe is already blinded, they take 2 damage.",
-                "glossary": [{"val": "blinded", "id": "gl_blind"},{"val": "Blind", "id": "gl_blind"}]
+                "glossary": [{"val": "blinded", "id": "gl_blinded"},{"val": "Blind", "id": "gl_blinded"}]
             }]
         },
         "tier_ii": {
@@ -645,7 +645,7 @@
             "description": [{
                 "tags": {"desc_type" : "desc"},
                 "content": "+1 boon on attacks against blind targets",
-                "glossary": [{"val": "+1 boon", "id": "gl_boon"},{"val": "blind", "id": "gl_blind"}]
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"},{"val": "blind", "id": "gl_blinded"}]
             }]
         },
         "tier_iii": {
@@ -653,7 +653,7 @@
             "description": [{
                 "tags": {"desc_type" : "desc"},
                 "content": "Blind characters gain +1 curse on attacks against you, and you may dash 1 after they any ability they target with you resolves.",
-                "glossary": [{"val": "Blind", "id": "gl_blind"},{"val": "+1 curse", "id": "gl_curse"},{"val": "dash", "id": "gl_dash"}]
+                "glossary": [{"val": "Blind", "id": "gl_blinded"},{"val": "+1 curse", "id": "gl_curse"},{"val": "dash", "id": "gl_dash"}]
             }]
         },
         "aspected": {
@@ -661,7 +661,7 @@
             "description": [{
                 "tags": {"desc_type" : "desc"},
                 "content": "Any foe that starts or ends their turn adjacent to you and no other characters is blinded. Blinded foes take 2 damage.",
-                "glossary": [{"val": "Blinded", "id": "gl_blind"},{"val": "blinded", "id": "gl_blind"}]
+                "glossary": [{"val": "Blinded", "id": "gl_blinded"},{"val": "blinded", "id": "gl_blinded"}]
             }]
         },
         "quest": [{
