@@ -553,7 +553,7 @@
                             "content": "Area Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Fray",
+                                                "content": "Fray.",
                                                 "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                             }]
                         },
@@ -705,6 +705,7 @@
         "source": "core",
         "tags": {
             "type": "interrupt",
+            "interrupt": 1,
             "range": 2
         },
         "eventtags": {},
@@ -722,8 +723,9 @@
                             "tags": {"desc_type" : "effect"},
                             "content": "Trigger:",
                             "subcontent":   [{
-                                                "tags": {"desc_type" : "subeffect"},
+                                                "tags": {"desc_type" : "desc"},
                                                 "content": "A foe uses an ability that targets an ally in range, and damage to your ally has been determined on the foe’s end but not applied yet."
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
@@ -744,7 +746,6 @@
                                             }],
                             "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
                         }]
-        }]
     },
     {
         "id": "ab_demonclaw",
@@ -769,9 +770,10 @@
                             "tags": {"desc_type" : "effect"},
                             "content": "Effect:",
                             "subcontent":   [{
-                                                "tags": {"desc_type" : "subeffect"},
+                                                "tags": {"desc_type" : "effect"},
                                                 "content": "Rush 1, then rush 1. Each time, you may deal 2 damage to an adjacent foe. Foes can only be damaged once per use of this ability.",
                                                 "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
@@ -791,7 +793,6 @@
                                             }],
                             "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}]
                         }]
-        }]
     },
     {
         "id": "ab_gatesofhell",
@@ -818,6 +819,7 @@
                                                 "tags": {"desc_type" : "subeffect"},
                                                 "content": "Rush 2.",
                                                 "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                                            }]
                         },
                         {
                             "tags": {"desc_type" : "effect"},
@@ -838,7 +840,6 @@
                                             }],
                             "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
                         }]
-        }]
     },
     {
         "id": "ab_soulblade",
@@ -863,29 +864,29 @@
                             "tags": {"desc_type" : "effect"},
                             "content": "Stance:",
                             "subcontent":   [{
-                                                "tags": {"desc_type" : "subeffect"},
+                                                "tags": {"desc_type" : "desc"},
                                                 "content": "When entering this stance, gain a d6 power die, starting at 2.",
                                                 "glossary": [{"val": "power die", "id": "gl_powerdie"}]
-                                            },
-                                            {
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "• When you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 area effect that must include your target, after the attack resolves. The area has true strike. Foes in the area take damage equal to the amount you ticked down.",
-                                                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "true strike", "id": "gl_truestrike"}]
-                                            },
-                                            {
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "• If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.",
-                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
-                                            },
-                                            {
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "• If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.",
-                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
-                                            },
-                                            {
-                                                "tags": {"desc_type" : "desc"},
-                                                "content": "• If the die goes to 0, you exit this stance."
-                                            }],
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• When you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 area effect that must include your target, after the attack resolves. The area has true strike. Foes in the area take damage equal to the amount you ticked down.",
+                            "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "true strike", "id": "gl_truestrike"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.",
+                            "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.",
+                            "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• If the die goes to 0, you exit this stance.",
                             "glossary": [{"val": "Stance", "id": "gl_stance"}]
                         },
                         {
@@ -945,10 +946,11 @@
                                                                                         "tags": [{"desc_type" : "desc"}],
                                                                                         "content": "Your next turn must be slow, but at the start of that turn, the trigram activates.",
                                                                                         "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}]
-                                                                }],
+                                                                                    }],
                                                                     "glossary": [{"val": "Delay", "id": "gl_delay"}]
                                                                 }]
-                                            }]
+                                            }],
+                            "glossary": [{"val": "End your turn", "id": "gl_endturn"}]
                         },
                         {
                             "tags": {"desc_type" : "desc"},
@@ -968,7 +970,7 @@
                             "content": "Heroic:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "The area has rampart and foes in the are when it activates take fray damage.",
+                                                "content": "The area has rampart and foes in the area when it activates take fray damage.",
                                                 "glossary": [{"val": "rampart", "id": "gl_rampart"}, {"val": "fray", "id": "gl_fray"}]
                                             }],
                             "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
@@ -1049,6 +1051,493 @@
                                                 "glossary": [{"val": "rush", "id": "gl_rush"}]
                                             }],
                             "glossary": [{"val": "Charge", "id": "gl_charge"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_valkyrie",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "True Strike": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Valkyrie",
+        "job_id": "jb_colossus",
+        "talent": ["tl_valkyrie_1", "tl_valkyrie_2"],
+        "mastery": ["ms_valkyrie_calloferenhelion"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Soaring through the air like a vengeful spirit, you crash into your enemy."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may fly 1.",
+                                                "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Attack target is weakened.",
+                                                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Exceed or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Create a pit under your target.",
+                                                "glossary": [{"val": "pit", "id": "gl_pit"}]
+                                            }],
+                            "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_upheaval",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Upheaval",
+        "job_id": "jb_colossus",
+        "talent": ["tl_upheaval_1", "tl_upheaval_2"],
+        "mastery": ["ms_upheaval_titanstrength"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The disciples of the wolf titan exhibit such legendary strength that they can rip up the earth itself with their bare hands."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Terrain Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Smash the battlefield, creating a height 1 boulder object in free space in range. Adjacent characters are shoved 1 away from the terrain when it appears.",
+                                                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Comeback or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Create difficult terrain underneath any character shoved by this ability.",
+                                                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "shoved", "id": "gl_shove"}]
+                                            }],
+                            "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_dropkick",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Sacrifice": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Dropkick",
+        "job_id": "jb_colossus",
+        "talent": ["tl_dropkick_1", "tl_dropkick_2"],
+        "mastery": ["ms_dropkick_giantkicker"],
+        "blurb": [],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Fly 1.",
+                                                "glossary": [{"val": "Fly", "id": "gl_flying"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Sacrifice 6. An adjacent foe takes [D] + Fray damage.",
+                                                "glossary": [{"val": "Sacrifice", "id": "gl_sacrifice"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may rush 2 before or after using this ability.",
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_massiveoverhead",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "End Turn": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Massive Overhead",
+        "job_id": "jb_colossus",
+        "talent": ["tl_massiveoverhead_1", "tl_massiveoverhead_2"],
+        "mastery": ["ms_massiveoverhead_bloodrush"],
+        "blurb": [],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "End your turn.",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Your next attack strikes with such force that it deals bonus damage and creates a pit under its target after it resolves.",
+                                                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "pit", "id": "gl_pit"}]
+                                            }],
+                            "glossary": [{"val": "End your turn", "id": "gl_endturn"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Special Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "If your target was already in a pit before the triggering attack, it also activates all exceed effects.",
+                                                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "exceed", "id": "gl_exceed"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Comeback or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Attack may also create a small blast area effect on its target, dealing 2 damage to all characters inside.",
+                                                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                            }],
+                            "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_takedown",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Takedown",
+        "job_id": "jb_colossus",
+        "talent": ["tl_takedown_1", "tl_takedown_2"],
+        "mastery": ["ms_takedown_fierceelbow"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You deliver a mighty blow with wild abandon, so strong that you yourself are left reeling."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Both you and your foe are stunned. You may sacrifice 4 to avoid this stun.",
+                                                "glossary": [{"val": "stunned", "id": "gl_stunned"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Exceed or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gains true strike and creates a pit under your target.",
+                                                "glossary": [{"val": "true strike", "id": "gl_truestrike"}, {"val": "pit", "id": "gl_pit"}]
+                                            }],
+                            "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_greatsuplex",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Great Suplex",
+        "job_id": "jb_colossus",
+        "talent": ["tl_greatsuplex_1", "tl_greatsuplex_2"],
+        "mastery": ["ms_greatsuplex_titanheart"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Wrapping your arms around your foe, you fling the two of you backwards with a force that liquifies rock."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You pick up an adjacent foe, removing them from the battlefield."
+                                            }],
+                            "glossary": [{"val": "End your turn", "id": "gl_endturn"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Sacrifice up to 6, then fly half that many spaces. Place your foe in a free adjacent space. They take [D] + fray damage and are slashed. Slashed characters are stunned. If you can’t place the foe in a valid space this action can’t be taken.",
+                                                "glossary": [{"val": "Sacrifice", "id": "gl_sacrifice"}, {"val": "fly", "id": "gl_flying"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "stunned", "id": "gl_stunned"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Sacrifice cost costs 0 hp but counts as sacrificing 6.",
+                                                "glossary": [{"val": "Sacrifice", "id": "gl_sacrifice"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_gigatonwhip",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "True Strike": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Gigaton Whip",
+        "job_id": "jb_colossus",
+        "talent": ["tl_gigatonwhip_1", "tl_gigatonwhip_2"],
+        "mastery": ["ms_gigatonwhip_izunadrop"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You fling your foe into a wall, catching them on the rebound."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D].",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "1 damage."
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Effect:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "shove 2.",
+                                                                    "glossary": [{"val": "shove", "id": "gl_shove"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You bounce your foe, then and catch them mid air. Remove them from the battlefield, fly 1, then place them in any free adjacent space. They take fray damage.",
+                                                "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Exceed or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Smash the ground when you land, creating difficult terrain under your foe and in two adjacent spaces.",
+                                                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                                            }],
+                            "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_ragingwolf",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "True Strike": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Raging Wolf",
+        "job_id": "jb_colossus",
+        "talent": ["tl_ragingwolf_1", "tl_ragingwolf_2"],
+        "mastery": ["ms_ragingwolf_beastwithin"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You deliver a spectacular series of wild, rising blows. Like a cornered animal, your strength becomes greater the more of your blood spills."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Special Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "This ability has no effect if you are not bloodied.",
+                                                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Comeback:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gain additional effects depending on your current hp. Each effect stacks and takes place in order:"
+                                            }],
+                            "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "• Bloodied:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may rush 1, then deal fray damage to an adjacent foe. That foe is slashed.",
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "fray", "id": "gl_fray"}, {"val": "slashed", "id": "gl_slashed"}]
+                                            }],
+                            "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "• 25% or lower:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may fly 1, then shove all adjacent foes 1.",
+                                                "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "shove", "id": "gl_shove"}]
+                                            }],
+                            "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "• 1 hp or lower:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Repeat the above two effects."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Become unstoppable and immune to all damage while using this ability.",
+                                                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "immune", "id": "gl_immune"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Special Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "If you are defeated, your next use of this ability in the same combat becomes a free action."
+                                            }]
+                        }]
+    },
+    {
+        "id": "ab_boilingblood",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_stalwart",
+        "name": "Boiling Blood",
+        "job_id": "jb_colossus",
+        "talent": ["tl_boilingblood_1", "tl_boilingblood_2"],
+        "mastery": ["ms_boilingblood_greathemon"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Colossi can lash out with the last of their strength, using the heat and strength of their body to punish their foes before expiring."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "addon"},
+                            "content": "ad_defydeath"
                         }]
     }
 ]

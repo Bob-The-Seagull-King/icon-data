@@ -559,5 +559,333 @@
                 "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
             }
         ]
+    },
+    {
+        "id": "tl_valkyrie_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Valkyrie gains range 4."
+            }
+        ]
+    },
+	{
+        "id": "tl_valkyrie_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Exceed:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "You are unstoppable and immune to all damage while flying with Valkyrie.",
+                    "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "immune", "id": "gl_immune"}, {"val": "flying", "id": "gl_flying"}]
+                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "You may fly 3 instead.",
+                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_upheaval_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The boulder bounces before landing, dealing 2 damage in a small blast area effect anywhere in range.",
+                "glossary": [{"val": "Large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Large blast.",
+                    "glossary": [{"val": "Large blast", "id": "gl_blast"}]
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_upheaval_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The boulder bounces before landing, creating a pit anywhere in free space in range.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_dropkick_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Comeback:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Hit your foe so hard that you create 2 spaces of difficult terrain in adjacent spaces after this ability resolves.",
+                    "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_dropkick_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shove your foe 1, then shove yourself 1 away from your foe.",
+                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Increase shoves to 2.",
+                    "glossary": [{"val": "shoves", "id": "gl_shove"}]
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_massiveoverhead_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attack gains Exceed: Also create a height 1 boulder object adjacent to your foe.",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_massiveoverhead_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attack gains Exceed: The pit also becomes dangerous terrain.",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}, {"val": "pit", "id": "gl_pit"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_takedown_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may rush 2 or fly 2 before using Takedown.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_takedown_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also choose to shove your target 2, then shove yourself 2.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Collide:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Deal fray damage.",
+                    "glossary": [{"val": "fray", "id": "gl_fray"}]
+                }],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_greatsuplex_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This ability deals bonus damage to your target if you land them in a pit.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_greatsuplex_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can use this ability on allies. If you do, reduce its action cost to 1, they are immune to its damage and statuses, and both of you can rush 1 after it resolves.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_gigatonwhip_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If your target collides with another character, you may also shove that character 1 and deal 2 damage to them.",
+                "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_gigatonwhip_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fly 2 instead.",
+                "glossary": [{"val": "Fly", "id": "gl_flying"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Shove 3 and fly 3.",
+                    "glossary": [{"val": "Shove", "id": "gl_shove"}, {"val": "fly", "id": "gl_flying"}]
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_ragingwolf_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can voluntarily reduce yourself to 1 hp before using Raging Wolf."
+            }
+        ]
+    },
+	{
+        "id": "tl_ragingwolf_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you’re at 1 hp, increase flight to 3.",
+                "glossary": [{"val": "flight", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_boilingblood_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While Defy Death is active, all abilities also trigger all exceed effects.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_boilingblood_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can rush or fly 1 before using any ability while Defy Death is active.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "fly", "id": "gl_flying"}]
+            }
+        ]
     }
 ]
