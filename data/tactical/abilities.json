@@ -1539,5 +1539,367 @@
                             "tags": {"desc_type" : "addon"},
                             "content": "ad_defydeath"
                         }]
+    },
+    {
+        "id": "ab_lowblow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "Combo": true,
+            "True Strike": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Low Blow",
+        "job_id": "jb_knave",
+        "talent": ["tl_lowblow_1", "tl_lowblow_2"],
+        "mastery": ["ms_lowblow_sadist"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Hit them right in the gronch."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may rush 1.",
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Foe is slashed. If they are already slashed, they gain hatred of you.",
+                                                "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "hatred", "id": "gl_hatred"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Slay or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may cure yourself.",
+                                                "glossary": [{"val": "cure", "id": "gl_cure"}]
+                                            }],
+                            "glossary": [{"val": "Slay", "id": "gl_slay"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "addon"},
+                            "content": "ad_thehook"
+                        }]
+    },
+    {
+        "id": "ab_provoke",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Provoke",
+        "job_id": "jb_knave",
+        "talent": ["tl_provoke_1", "tl_provoke_2"],
+        "mastery": ["ms_provoke_stormoffury"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You drop your guard, and wait for foes to take the bait."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may rush 1, then each adjacent foe deals 1 piercing damage to you, as if damaging you with an ability. You then deal 2 damage, once, for each foe that damaged you this way to all adjacent foes, to a maximum of three times.",
+                                                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Affects all foes in range 2."
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Slay:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Then, you may shove all affected foes 1 towards or away from you.",
+                                                "glossary": [{"val": "shove", "id": "gl_shove"}]
+                                            }],
+                            "glossary": [{"val": "Slay", "id": "gl_slay"}]
+                        }]
+    },
+    {
+        "id": "ab_revenge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Revenge",
+        "job_id": "jb_knave",
+        "talent": ["tl_revenge_1", "tl_revenge_2"],
+        "mastery": ["ms_revenge_ironmaiden"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "No matter how hard pressed, your hands, feet, and armor are ready to retaliate."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Gain unstoppable and counter until the end of your next turn.",
+                                                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "counter", "id": "gl_counter"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Slay or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "While this ability’s effect is active, you can rush 1 as an effect if you are damaged by a foe’s ability, but no more than once a turn.",
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                            }],
+                            "glossary": [{"val": "Slay", "id": "gl_slay"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "addon"},
+                            "content": "ad_indignation"
+                        }]
+    },
+    {
+        "id": "ab_riposte",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "Stance": true,
+            "Gamble": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Riposte",
+        "job_id": "jb_knave",
+        "talent": ["tl_riposte_1", "tl_riposte_2"],
+        "mastery": ["ms_riposte_strongleft"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "When you come at a knave, you best not miss."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Stance:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "When you enter this stance or when it refreshes, gain the following interrupt until the start of your next turn:",
+                                                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+                                            }],
+                            "glossary": [{"val": "Stance", "id": "gl_stance"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "addon"},
+                            "content": "ad_direparry"
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Refresh:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Refresh this stance when a foe damages you or an adjacent ally with an ability."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Also gain vigor equal to your gamble result after this ability resolves.",
+                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "gamble", "id": "gl_gamble"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_darkknight",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Dark Knight",
+        "job_id": "jb_knave",
+        "talent": ["tl_darkknight_1", "tl_darkknight_2"],
+        "mastery": ["ms_darkknight_infectioushatred"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You give into the heat of battle, becoming a creature of violence and instinct."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Stance:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "While in this stance:"
+                                            }],
+                            "glossary": [{"val": "Stance", "id": "gl_stance"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• You gain hatred+ of the closet foe to you at the start of your turn or when you enter this stance. If multiple foes are equidistant, you may choose.",
+                            "glossary": [{"val": "hatred", "id": "gl_hatred"}, {"val": "+", "id": "gl_ongoing"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• You are sturdy.",
+                            "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "• You gain vigilance +1 at the end of your turn.",
+                            "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "On entering this stance, you may gain 2 vigor per status affecting you, including from this stance.",
+                                                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "status", "id": "gl_status"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Refresh:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may refresh or exit this stance at the start of your turn.",
+                                                "glossary": [{"val": "stance", "id": "gl_stance"}]
+                                            }]
+                        }]
+    },
+    {
+        "id": "ab_strongarm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_stalwart",
+        "name": "Strongarm",
+        "job_id": "jb_knave",
+        "talent": ["tl_strongarm_1", "tl_strongarm_2"],
+        "mastery": ["ms_strongarm_perfectstrongarm"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Grappling is a common and brutal strategy among the knaves, who will happily hurl their foes into trees, rocks, or their own allies."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Shove an adjacent foe in a full circle either clockwise or counter clockwise through each space around you, phasing through characters. Stop and collide if your foe would hit an obstruction.",
+                                                "glossary": [{"val": "Shove", "id": "gl_shove"}, {"val": "phasing", "id": "gl_phasing"}, {"val": "collide", "id": "gl_collide"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Your foe takes 2 damage once for each foe or ally they pass through, to a maximum of 3 times, and those characters are shoved 1. Then, shove your foe 1.",
+                                                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Collide:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Foes are weakened.",
+                                                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                            }],
+                        "glossary": [{"val": "Collide", "id": "gl_collide"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Shove your foe 1 space, then 1 additional space for every character they passed through instead, to a maximum of 4 extra spaces.",
+                                                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
     }
 ]

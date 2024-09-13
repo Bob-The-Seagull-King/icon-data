@@ -678,7 +678,7 @@
                 "glossary": [{"val": "Shove", "id": "gl_shove"}]
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "subeffect"},
                 "content": "Charge:",
                 "subcontent": [{
                     "tags": {"desc_type" : "desc"},
@@ -748,7 +748,7 @@
                 "glossary": [{"val": "shove", "id": "gl_shove"}]
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "subeffect"},
                 "content": "Collide:",
                 "subcontent": [{
                     "tags": {"desc_type" : "desc"},
@@ -818,7 +818,7 @@
                 "glossary": [{"val": "Fly", "id": "gl_flying"}]
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "subeffect"},
                 "content": "Charge:",
                 "subcontent": [{
                     "tags": {"desc_type" : "desc"},
@@ -885,6 +885,200 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "You can rush or fly 1 before using any ability while Defy Death is active.",
                 "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_lowblow_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deals bonus damage if your foe is suffering from a status.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "status", "id": "gl_status"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_lowblow_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain vigilance +1.",
+                    "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_provoke_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this ability only affects one foe, they gain hatred of you.",
+                "glossary": [{"val": "hatred", "id": "gl_hatred"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_provoke_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can sacrifice 2 after this ability resolves to deal 2 damage again to all adjacent foes.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_revenge_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While this ability’s effect is active, attacks against adjacent allies gain +1 curse.",
+                "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_revenge_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can sacrifice 4 to gain or lose a combo token after using any version of this ability.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "combo", "id": "gl_combo"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_riposte_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also sacrifice 2 to roll 1 more d6 while gambling.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "gambling", "id": "gl_gambling"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_riposte_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain vigilance +1 after Riposte resolves.",
+                    "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_darkknight_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may rush 2 towards your hated foe at the start of their turn, but only once a round.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "hated", "id": "gl_hatred"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_darkknight_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in this stance, you have regeneration.",
+                "glossary": [{"val": "regeneration", "id": "gl_regeneration"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_strongarm_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "this ability gains range 2. Remove your target and place them into adjacency before activating this effect."
+                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_strongarm_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During the spin, you can cause your target to take damage and phase through objects the same way as characters, though those objects are not shoved.",
+                "glossary": [{"val": "phase", "id": "gl_phasing"}, {"val": "shoved", "id": "gl_shove"}]
             }
         ]
     }

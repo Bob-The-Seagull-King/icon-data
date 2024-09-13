@@ -468,6 +468,103 @@
         ]
     },
     {
+        "id": "ms_lowblow_sadist",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sadist",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After this ability resolves, you may rush 1 and gain 2 vigor for every status your foe is suffering from.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "status", "id": "gl_status"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_provoke_stormoffury",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Storm of Fury",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Before dealing each instance of damage, you may rush 1.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_revenge_ironmaiden",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Iron Maiden",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Also gains "
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "until the end of your next turn, immediately after you activate vigilance, deal 2 damage to all adjacent foes.",
+                    "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "ms_riposte_strongleft",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Storm of Fury",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Refresh Riposte at the start of your turn. Uses of Dire Parry can stack up to 3 times, and you can bank these uses."
+            }
+        ]
+    },
+    {
+        "id": "ms_darkknight_infectioushatred",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Infectious Hatred",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in Dark Knight, you have aura 1. Foes that end their turn in the aura must save or gain hatred of you.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "hatred", "id": "gl_hatred"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_strongarm_perfectstrongarm",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfect Strongarm",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Perform two full circles instead, and you may rush 2 before the second circle.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
         "id": "ul_ultimacurtaincall",
         "type": "Ultimate",
         "source": "core",

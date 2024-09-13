@@ -110,6 +110,119 @@
                         }]
     },
     {
+        "id": "ad_thehook",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "The Hook",
+        "class_id": "cl_stalwart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains range 2 and "
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "shove character 1 towards you.",
+                    "glossary": [{"val": "shove", "id": "gl_shove"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "ad_indignation",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Indignation",
+        "class_id": "cl_stalwart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains True Strike and replace the base effect with ",
+                "glossary": [{"val": "True Strike", "id": "gl_truestrike"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "gain +1 vigilance for every status your foe is suffering from, to a maximum of three times, then gain counter until the end of your next turn.",
+                    "glossary": [{"val": "vigilance", "id": "gl_vigilance"}, {"val": "status", "id": "gl_status"}, {"val": "counter", "id": "gl_counter"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "ad_direparry",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Dire Parry",
+        "class_id": "cl_stalwart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe targets an ally in range 2 with an ability."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gamble, then deal that much damage to your foe. On a 6, they are also slashed and shoved 1. If you have vigilance, you can spend any number of vigilance charges when gambling to roll one extra d6 per charge spent.",
+                                    "glossary": [{"val": "Gamble", "id": "gl_gamble"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "shoved", "id": "gl_shove"}, {"val": "vigilance", "id": "gl_vigilance"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "ad_sweettorment",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Sweet Torment",
+        "class_id": "cl_stalwart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": ""
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You soar into the air, removing yourself from the battlefield, then return in any space adjacent to that ally."
+                                }]
+            }
+        ]
+    },
+    {
         "id": "ad_godlysmite",
         "type": "Addon",
         "source": "core",

@@ -1102,6 +1102,22 @@
         }]
     },
     {
+        "id": "gl_status",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {
+            "category" : "general"
+        },
+        "eventtags": {},
+        "name": "Status",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "A negative effect. Includes slashed, blind, dazed, hatred, pacified, sealed, shattered, stunned, weakened, and vulnerable.",
+            "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "blind", "id": "gl_blinded"}, {"val": "dazed", "id": "gl_dazed"}, {"val": "hatred", "id": "gl_hatred"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "sealed", "id": "gl_sealed"}, {"val": "shattered", "id": "gl_shattered"}, {"val": "stunned", "id": "gl_stunned"}, {"val": "weakened", "id": "gl_weakened"}, {"val": "vulnerable", "id": "gl_vulnerable"}],
+            "subcontent":   []
+        }]
+    },
+    {
         "id": "gl_dangerousterrain",
         "type": "Glossary",
         "source": "core",
