@@ -994,7 +994,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "You can also sacrifice 2 to roll 1 more d6 while gambling.",
-                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "gambling", "id": "gl_gambling"}]
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "gambling", "id": "gl_gamble"}]
             }
         ]
     },
