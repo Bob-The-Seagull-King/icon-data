@@ -71,6 +71,45 @@
                         }]
     },
     {
+        "id": "ad_defydeath",
+        "type": "Addon",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Defy Death",
+        "class_id": "cl_stalwart",
+        "description":  [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Trigger:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You are defeated."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You fight on, remaining standing at 1 hp and do not become defeated until the end of your next turn, or if combat ends before then. During that time, damage cannot reduce you past 1 hp and you deal bonus damage with all abilities.",
+                                                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Also deal fray damage twice to all adjacent foes.",
+                                                "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
         "id": "ad_godlysmite",
         "type": "Addon",
         "source": "core",

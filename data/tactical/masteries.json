@@ -38,7 +38,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Once a turn, if you trigger Battering Ram’s Collide or Heroic effect, the ability can be used one more time this turn.",
-                "glossary": [{"val": "Collide", "id": "gl_impact"}, {"val": "Heroic", "id": "gl_heroic"}]
+                "glossary": [{"val": "Collide", "id": "gl_collide"}, {"val": "Heroic", "id": "gl_heroic"}]
             }
                         ]
     },
@@ -317,6 +317,138 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "If you’re at 1 hp or lower, this ability deals 25% more max hp damage to non-legend characters."
+            }
+        ]
+    },
+    {
+        "id": "ms_valkyrie_calloferenhelion",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Call of Erenhelion",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you use Valkyrie, all allies may fly 1. If they end this flight on a lower elevation than they started, they may fly 1 again.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_upheaval_titanstrength",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Titan Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains range 5 and Comeback: Boulder may be placed as a height 2 pillar instead.",
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_dropkick_giantkicker",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Giant Kicker",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or later, Dropkick gains true strike and a line 4 area effect that must include your target. The area deals fray damage to all characters other than your target.",
+                "glossary": [{"val": "true strike", "id": "gl_truestrike"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "fray damage", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_massiveoverhead_bloodrush",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Rush",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or later, Massive Overhead also grants you 4 vigor and no longer ends your turn.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "ends your turn", "id": "gl_endturn"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_takedown_fierceelbow",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fierce Elbow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you Takedown a character, the character takes 2 damage once after the ability resolves for each difference in elevation between you and them when you started this ability, for a maximum of three times."
+            }
+        ]
+    },
+    {
+        "id": "ms_greatsuplex_titanheart",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Titanheart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can target two adjacent characters with this ability."
+            }
+        ]
+    },
+    {
+        "id": "ms_gigatonwhip_izunadrop",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Izuna Drop",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Instead of the normal collide effect, on collide you can do the legendary Izuna Drop. You take a pose, then end your turn and gain Delay: Your next turn must be slow. At the start of that turn, you may rush 2, then if any foe is adjacent, you grab them, removing both of you from the battlefield, then come spinning back to earth, placing both of you back in free space adjacent to each other in range 3. That foe is weakened, stunned and takes fray damage twice.",
+                "glossary": [{"val": "collide", "id": "gl_collide"}, {"val": "end your turn", "id": "gl_endturn"}, {"val": "Delay", "id": "gl_delay"}, {"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "rush", "id": "gl_rush"}, {"val": "weakened", "id": "gl_weakened"}, {"val": "stunned", "id": "gl_stunned"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_ragingwolf_beastwithin",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beast Within",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can immediately use Raging Wolf as an interrupt before becoming defeated. This ignores the interrupt limit.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_boilingblood_greathemon",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Hemon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When Defy Death would expire, you can take a wound to extend the duration by 1 turn. This effect can only be triggered once per combat."
             }
         ]
     },
