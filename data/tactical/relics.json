@@ -1166,7 +1166,7 @@
             "invoke": false,
             "description": [{
                 "tags": {"desc_type" : "desc"},
-                "content": "can hold +1 more stance than normal.",
+                "content": "You can hold +1 more stance than normal.",
                 "glossary": [{"val": "stance", "id": "gl_stance"}]
             }]
         },
@@ -1693,6 +1693,590 @@
         "quest": [{
             "tags": {"desc_type" : "subeffect"},
             "content": "Travel to Arden Eld’s moon."
+        }]
+    },
+    {
+        "id": "rl_apophis",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "dangerous_terrain": true,
+            "piercing": true,
+            "invoke": true,
+            "attack": 12
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Apophis",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Coiling serpents cradle the hilt of this weapon or curl around the base of this necklace."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of your turn, create a poison pool dangerous terrain space in free space adjacent to you.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You are immune to dangerous terrain. If you start your turn in a dangerous terrain space, you may deal 1 piercing damage to all adjacent characters.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"},{"val": "piercing", "id": "gl_piercing"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 12,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a poison pool dangerous terrain space under your attack target after the ability resolves.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you damage foes standing in dangerous terrain, it gains piercing.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"},{"val": "piercing", "id": "gl_piercing"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Infuse your relic with three scales of the ancient Wyrm Nidhogg."
+        }]
+    },
+    {
+        "id": "rl_domain",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "terrain": true,
+            "dangerous_terrain": true,
+            "difficult_terrain": true,
+            "piercing": true,
+            "boon": true,
+            "invoke": true,
+            "round": 4
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Domain",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A sceptre, weapon, or helm embedded with a deeply inset gem."
+        },{
+            "tags": {"desc_type" : "gap"},
+            "content": ""
+        },{
+            "tags": {"desc_type" : "desc"},
+            "content": "Gain the Domain trait."
+        },{
+            "tags": {"desc_type" : "trait"},
+            "content": "tr_domain"
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain +1 boon on attacks against foes in your Domain.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that end their turn in your Domain take 1 piercing damage.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Dangerous terrain deals +1 more damage to foes inside your Domain. Difficult terrain costs 2 spaces for foes to exit instead of 1.",
+                "glossary": [{"val": "Dangerous terrain", "id": "gl_dangerousterrain"},{"val": "Difficult terrain", "id": "gl_difficultterrain"}]
+            }]
+        },
+        "aspected": {
+            "invoke": true,
+            "invoke_type": "round",
+            "invoke_val": 4,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your Domain becomes difficult and dangerous terrain for foes.",
+                "glossary": [{"val": "dangerous", "id": "gl_dangerousterrain"},{"val": "difficult", "id": "gl_difficultterrain"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Gain a gemstone for your Domain relic from a ruler (dead or living)."
+        }]
+    },
+    {
+        "id": "rl_cloudpiercer",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "boon": true,
+            "piercing": true
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Cloudpiercer",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This bright metal weapon crackles with latent power."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain +1 boon on attacks against foes at exactly range 3.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you attack a foe at exactly range 3, deal 1 piercing damage to them again after the ability resolves.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you attack a foe at exactly range 3, you may deal 1 piercing damage to all other foes at exactly range 3.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of your turn, you can set your ‘exact’ range effects, including as part of this relic, to range 2, 3, or 4, lasting until the start of your next turn."
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Survive a day in the Hundred Year storm."
+        }]
+    },
+    {
+        "id": "rl_pleiades",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "attack": 11,
+            "difficult_terrain": true,
+            "shove": true,
+            "collide": true
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Pleiades",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A set of six star-diamonds, flickering with a distance light, set into earrings or a neck piece."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 11,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Create an icy patch of difficult terrain under your attack target.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You are immune to difficult terrain. If you start your turn in a difficult terrain space, you can create an icy patch of difficult terrain in a free adjacent space, including under characters.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, when you enter a difficult terrain space, you can slide and shove yourself 2 in the direction of your movement.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"},{"val": "shove", "id": "gl_shove"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "During Pleaides III’s slide, If you collide with a character, deal 2 damage to them and create an icy difficult terrain space under them.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"},{"val": "collide", "id": "gl_collide"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Find and learn from the observatory of the Stargazer Titan."
+        }]
+    },
+    {
+        "id": "rl_skipjack",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "rebound": true,
+            "invoke": true,
+            "round": 4,
+            "piercing": true
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Skipjack",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This gem-incrusted gauntlet is intricately made and seems heavy, but is oddly light to wear."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase the listed range of all your abilities by +1."
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your attacks with a range gain rebound. The rebounded ability has a maximum range of 3.",
+                "glossary": [{"val": "rebound", "id": "gl_rebound"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you bounce an attack, the attack explodes on its new target, creating a small blast area effect on them that deals 1 piercing damage to all characters, including the new target.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "piercing", "id": "gl_piercing"}]
+            }]
+        },
+        "aspected": {
+            "invoke": true,
+            "invoke_type": "round",
+            "invoke_val": 4,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Skipjack attacks can bounce twice, exploding each time. Characters can only be damage by one explosion."
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Find and use the workshop of the Forge Titan in the heart of Arden Eld."
+        }]
+    },
+    {
+        "id": "rl_towerofbarbs",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "bonus_damage": true,
+            "unerring": true,
+            "invoke": true,
+            "gambit": true
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Tower of Barbs",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Coiling thorns have been set into this ranged weapon. The barbs sometimes curl towards your flesh."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Deal bonus damage if a character is at maximum range of your ranged attack or in the end space of a line or arc area effect.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Also gains unerring if a character is at maximum range.", 
+                "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": true,
+            "invoke_type": "gambit",
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Set the range and/or area of your next arc, line, or ranged attack to any number between 1 and 6"
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Tower of Barbs III invoke becomes between 1 and 8, and can be used twice a combat."
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Climb to the top floor of the legendary dungeon the Tower of Barbs."
+        }]
+    },
+    {
+        "id": "rl_riftwalker",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "pit": true,
+            "teleport": true,
+            "invoke": true,
+            "attack": 11
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Riftwalker",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This relic has a contorted shape set into at - an impossible geometry that confounds the mind."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You may cause any of your attack with area effects to include in the area any Pit spaces connected to them by adjacency, even diagonally.",
+                "glossary": [{"val": "Pit", "id": "gl_pit"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "You can ignore movement and height penalties from pits.",
+                "glossary": [{"val": "pits", "id": "gl_pit"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 11,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a pit space in a free space adjacent to a target of your attack",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you move, you can spend 1 space of movement to teleport from any pit into any other pit in range 3, but no more than once a turn.",
+                "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "teleport", "id": "gl_teleport"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Enter the Eternal Maze - a dangerous pocket dimension, and escape with its secrets."
+        }]
+    },
+    {
+        "id": "rl_arenheir",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "critical_hit": true,
+            "exceed": true
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Arenheir",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This weapon or armor has the imagery of a great fierce wolf on it."
+        }],
+        "tier_i": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your critical hits deal bonus damage.",
+                "glossary": [{"val": "critical hits", "id": "gl_criticalhit"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "If your attack target is at 25% hp or lower, your ability triggers all exceed effects.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your threshold for exceed and critical hits is decreased by 1, and decreases again by 1 at round 3 and 5.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"},{"val": "critical hits", "id": "gl_criticalhit"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "When you score a critical hit, reduce the threshold for critical hits by 1. This cannot reduce it lower than 15+.",
+                "glossary": [{"val": "critical hit", "id": "gl_criticalhit"}]
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Find the burial tomb of Arenheir’s master, the ancient Berserker Titan, the Hundred Sword Titan, and pray there."
+        }]
+    },
+    {
+        "id": "rl_conqueringking",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "attack": 18,
+            "round": [5,7],
+            "bonus_damage": true,
+            "critical_hit": true
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Conquering King",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This relic has a regal bearing, with imagery of lightning bolts made of wrought gold."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "round",
+            "invoke_val": 5,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "All abilities deal bonus damage.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }]
+        },
+        "tier_ii": {
+            "invoke": true,
+            "invoke_type": "round",
+            "invoke_val": 7,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "All attacks become critical hits on hit.",
+                "glossary": [{"val": "critical hits", "id": "gl_criticalhit"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 18,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Lower your threshold for any effects that rely on round number by 1, this combat only. This effect can stack multiple times. This applies to all abilities, traits, and relics."
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Conquering King III becomes Invoke (Attack, 15+)."
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Find and commune with an entrance to the Highest House, the divine realm where the creators of the world are said to sleep."
+        }]
+    },
+    {
+        "id": "rl_paleblood",
+        "type": "Relic",
+        "source": "core",
+        "tags": {
+            "invoke": true,
+            "attack": 16,
+            "charge": true,
+            "collide": true,
+            "comeback": true,
+            "chain_reaction": true,
+            "exceed": true,
+            "finishing_blow": true,
+            "slay": true,
+            "power_die": true
+        },
+        "eventtags": {},
+        "colour": "cl_wright",
+        "name": "Paleblood",
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This relic has inlays of pale bone, intricately carved. When infused, the inlays light up."
+        }],
+        "tier_i": {
+            "invoke": true,
+            "invoke_type": "",
+            "invoke_val": 0,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, gain a d4 power die, starting at 1. Tick it up by 1 at the end of each round. When the die is 4, you may expend it when you use any ability, discarding it, to grant that ability bonus damage and trigger all of the following triggered effects:",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+            },{
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },{
+                "tags": {"desc_type" : "desc"},
+                "content": "Charge, collide, comeback, chain reaction, exceed, finishing blow, slay.",
+                "glossary": [
+                    {"val": "Charge", "id": "gl_charge"},
+                    {"val": "collide", "id": "gl_collide"},
+                    {"val": "comeback", "id": "gl_comeback"},
+                    {"val": "chain reaction", "id": "gl_chainreaction"},
+                    {"val": "exceed", "id": "gl_exceed"},
+                    {"val": "finishing blow", "id": "gl_finishingblow"},
+                    {"val": "slay", "id": "gl_slay"}
+                ]
+            }]
+        },
+        "tier_ii": {
+            "invoke": true,
+            "invoke_type": "attack",
+            "invoke_val": 16,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Tick a power die you have up or down by 1.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+            }]
+        },
+        "tier_iii": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Your power die is not expended but resets to 1.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+            }]
+        },
+        "aspected": {
+            "invoke": false,
+            "description": [{
+                "tags": {"desc_type" : "desc"},
+                "content": "Invoke becomes (Attack, 12+)"
+            }]
+        },
+        "quest": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Slay a powerful monster and find a smith willing to work with its bones."
         }]
     }
 ]

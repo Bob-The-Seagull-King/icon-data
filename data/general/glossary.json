@@ -1271,5 +1271,19 @@
             "content": "When you push an action, gain an additional +1D on the roll.",
             "subcontent":   []
         }]
+    },
+    {
+        "id": "gl_rebound",
+        "type": "Glossary",
+        "source": "core",
+        "tags": {"category": "general"
+        },
+        "eventtags": {},
+        "name": "Rebound",
+        "description":  [{
+            "tags": {"desc_type" : "desc"},
+            "content": "An ability that is rebounded can be bounced off a character in range. The ability has no effect, but is instead redirected from that character’s space as the origin space, taking into account cover, line of sight, and other similar effects from their space. Any effects that apply to the original user of the ability still apply to them (such as sacrificing hp, or moving). Rebound does not stack.",
+            "subcontent":   []
+        }]
     }
 ]

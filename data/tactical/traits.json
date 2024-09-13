@@ -1602,5 +1602,21 @@
                 "glossary": [{"val": "armor", "id": "gl_armor"},{"val": "sacrifice", "id": "gl_sacrifice"}]
             }
                         ]
+    },
+    {
+        "id": "tr_domain",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+        },
+        "eventtags": {},
+        "name": "Domain",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you create a terrain effect or object, you can place your Domain over one of its spaces, a small blast terrain effect. Using this trait again moves the Domain instead of creating a new one.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}]
+            }
+                        ]
     }
 ]
