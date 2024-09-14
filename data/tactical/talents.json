@@ -1126,7 +1126,7 @@
         "name": "Talent 1",
         "description":  [
             {
-                "tags": {"desc_type" : "effect"},
+                "tags": {"desc_type" : "desc"},
                 "content": "You can sacrifice 2 after using this interrupt to immediately regain it.",
                 "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "interrupt", "id": "gl_interrupt"}]
             }
@@ -1161,7 +1161,7 @@
         "name": "Talent 1",
         "description":  [
             {
-                "tags": {"desc_type" : "effect"},
+                "tags": {"desc_type" : "desc"},
                 "content": "Against characters at 25% hp or lower, this ability cannot miss (turn any miss into a hit)."
             }
         ]
@@ -1175,9 +1175,363 @@
         "name": "Talent 2",
         "description":  [
             {
-                "tags": {"desc_type" : "effect"},
+                "tags": {"desc_type" : "desc"},
                 "content": "This ability gains range 2 against characters 25% hp or lower and you may rush 2 before using it against those characters.",
                 "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_cavaliere_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you pass through an ally or summon during this movement, deal bonus damage.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_cavaliere_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies you pass through during this movement can dash 1.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_carnevale_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fly 1 after summoning each bomb instead.",
+                "glossary": [{"val": "Fly", "id": "gl_flying"}, {"val": "summoning", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Fly 2 instead.",
+                    "glossary": [{"val": "Fly", "id": "gl_flying"}]
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_carnevale_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can allow any ally in range 2 to dash 1 before summoning a bomb instead.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "summoning", "id": "gl_summon"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_spinningtop_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can always choose to dash 3 spaces with Spinning Top after seeing your gamble result.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "gamble", "id": "gl_gamble"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_spinningtop_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Spinning Top becomes fly instead.",
+                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_death_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If there’s a bloodied character in the area, roll 1 more d6 and choose any result.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_death_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "create a pit under your target, and summon a",
+                    "glossary": [{"val": "pit", "id": "gl_pit"}]
+                },
+                {
+                    "tags": {"desc_type" : "textsummon"},
+                    "content": "sm_bomb"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "in the pit."
+                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_gallowshumor_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gallows Humor instantly ticks up to maximum if an ally is defeated anywhere."
+            }
+        ]
+    },
+	{
+        "id": "tl_gallowshumor_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The empowered ability gains"
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "effect:",
+                        "subcontent": [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "deal 4 damage again to any target at 25% hp or lower."
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tl_partyfavor_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase flight on yourself to 3.",
+                "glossary": [{"val": "flight", "id": "gl_flying"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_partyfavor_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dazed or blinded foes activate the Finishing Blow effect.",
+                "glossary": [{"val": "Dazed", "id": "gl_dazed"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "Finishing Blow", "id": "gl_finishingblow"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_masquerade_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you haven't acted yet this round, gain evasion after swapping until the end of your next turn.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_masquerade_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Fly 1, then summon a",
+                        "glossary": [{"val": "Fly", "id": "gl_flying"}, {"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_bomb"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "after swapping."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tl_diablo_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If you catch 2 or more foes or allies in the end spaces of the cross, summon a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_bomb"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in the center space if it is free."
+                    }
+                ]
+            }
+        ]
+    },
+	{
+        "id": "tl_diablo_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Allies in the area can fly 1.",
+                        "glossary": [{"val": "fly", "id": "gl_flying"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Charge:",
+                        "subcontent": [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Allies in the area can fly 3.",
+                            "glossary": [{"val": "fly", "id": "gl_flying"}]
+                        }],
+                        "glossary": [{"val": "Charge", "id": "gl_charge"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tl_chronotemper_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This dash gains phasing and ignores movement penalties from terrain.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "phasing", "id": "gl_phasing"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_chronotemper_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Before and after the dash, fly 1.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "fly", "id": "gl_flying"}]
             }
         ]
     }

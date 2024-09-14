@@ -220,6 +220,37 @@
         ]
     },
     {
+        "id": "ad_cheattime",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Cheat Time",
+        "class_id": "cl_vagabond",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The start or end of any turn other than yours."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gamble, then the marked character dashes a number of spaces equal to the gamble result, 1 space at a time. Each tim they finish a dash, they may deal 2 damage to an adjacent foe, but cannot damage the same foe more than once in the same turn.",
+                                    "glossary": [{"val": "Gamble", "id": "gl_gamble"}, {"val": "marked", "id": "gl_mark"}, {"val": "dashes", "id": "gl_dash"}]
+                                }]
+            }
+        ]
+    },
+    {
         "id": "ad_godlysmite",
         "type": "Addon",
         "source": "core",

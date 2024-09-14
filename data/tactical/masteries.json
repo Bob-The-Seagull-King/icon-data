@@ -505,18 +505,24 @@
         "eventtags": {},
         "name": "Iron Maiden",
         "description":  [
-            {
+            {   
                 "tags": {"desc_type" : "desc"},
-                "content": "Also gains "
-            },
-            {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "effect:",
-                "subcontent":   [{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "until the end of your next turn, immediately after you activate vigilance, deal 2 damage to all adjacent foes.",
-                    "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
-                }]
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Also gains "
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "effect:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "until the end of your next turn, immediately after you activate vigilance, deal 2 damage to all adjacent foes.",
+                            "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                        }]
+                    }
+                ]
             }
         ]
     },
@@ -623,6 +629,187 @@
                 "glossary": [{"val": "gamble", "id": "gl_gamble"}]
             }
                         ]
+    },
+    {
+        "id": "ms_cavaliere_pegaso",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pegaso",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Cavaliere resolves, you may fly 4.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_carnevale_ilcaoslamiamusa",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Il Caos, La Mia Musa",
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When you summon a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_bomb"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "with this ability, you may bounce it it off a character in range, dealing 2 damage, then summon it in range 2 of that character."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ms_spinningtop_vorticedifollia",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Vortice Di Follia",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you triggered a slay effect during your turn before using Spinning Top, it becomes a free action.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_death_ultimadeath",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Vortice Di Follia",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase Death’s threshold to 16 hp or less."
+            }
+        ]
+    },
+    {
+        "id": "ms_gallowshumor_maestriamortale",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Vortice Di Follia",
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While in this stance, all your abilities with an action cost of 1 or 2 gain",
+                        "glossary": [{"val": "stance", "id": "gl_stance"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "slay:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "all allies may dash 1, then foes adjacent to at least one ally that dashed this way take 2 damage.",
+                            "glossary": [{"val": "dash", "id": "gl_dash"}]
+                        }],
+                        "glossary": [{"val": "slay", "id": "gl_slay"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ms_partyfavor_amico",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amico",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can throw the Party Favor at any character in range instead, making it a mark. You can gamble at the end of any turn after yours to detonate it, ending the mark and effect.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}, {"val": "gamble", "id": "gl_gamble"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_masquerade_hallofmirrors",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hall of Mirrors",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Masquerade has no maximum range."
+            }
+        ]
+    },
+    {
+        "id": "ms_diablo_hellfestival",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hell Festival",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also choose to end your turn, mark out the area effect and gain",
+                "glossary": [{"val": "end your turn", "id": "gl_endturn"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "delay:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "You must take a slow turn next round. At the start of that turn, the area explodes again, dealing [D] damage to all characters within as an area effect, and summoning a",
+                    "glossary": [{"val": "slow turn", "id": "gl_slowturn"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "summoning", "id": "gl_summon"}]
+                },
+                {
+                    "tags": {"desc_type" : "textsummon"},
+                    "content": "sm_bomb"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "adjacent to each foe in the area."
+                }],
+                "glossary": [{"val": "delay", "id": "gl_delay"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_chronotemper_revolution",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Revolution",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can take this interrupt three times a round. The second time you use it, the dash becomes just 2 spaces, and the third time just 1 space.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "dash", "id": "gl_dash"}]
+            }
+        ]
     },
     {
         "id": "ul_ultimaparadiso",
