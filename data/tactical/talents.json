@@ -1081,5 +1081,104 @@
                 "glossary": [{"val": "phase", "id": "gl_phasing"}, {"val": "shoved", "id": "gl_shove"}]
             }
         ]
+    },
+    {
+        "id": "tl_intimidate_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Rush 2 instead.",
+                    "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_intimidate_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your foe also takes 2 damage, once, for every status they are afflicted by when Intimidate’s stun triggers, up to a maximum of three times.",
+                "glossary": [{"val": "status", "id": "gl_status"}, {"val": "stun", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_suckerpunch_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "You can sacrifice 2 after using this interrupt to immediately regain it.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
+    },
+	{
+        "id": "tl_suckerpunch_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "This ability is interrupt 2.",
+                    "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
+    },
+    {
+        "id": "tl_bleakmercy_1",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 1",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Against characters at 25% hp or lower, this ability cannot miss (turn any miss into a hit)."
+            }
+        ]
+    },
+	{
+        "id": "tl_bleakmercy_2",
+        "type": "Talent",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Talent 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "This ability gains range 2 against characters 25% hp or lower and you may rush 2 before using it against those characters.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+        ]
     }
 ]

@@ -565,6 +565,51 @@
         ]
     },
     {
+        "id": "ms_intimidate_ironskull",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Iron Skull",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Intimidate’s stun triggers, also become unstoppable until the end of your next turn.",
+                "glossary": [{"val": "stun", "id": "gl_stunned"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_suckerpunch_strongright",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Strong Right",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can rush 2 before activating Sucker Punch, it triggers from within range 2, and you may give it shove 1.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "ms_bleakmercy_painkiller",
+        "type": "Mastery",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Painkiller",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once gained, Sweet Torment’s aura lasts indefinitely. If you use Sweet Torment again while the aura is active, deal 2 damage, once, to all foes in the aura within for every status they are suffering from, to a maximum of three times.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "status", "id": "gl_status"}]
+            }
+        ]
+    },
+    {
         "id": "ul_ultimacurtaincall",
         "type": "Ultimate",
         "source": "core",

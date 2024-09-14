@@ -206,18 +206,15 @@
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "Trigger:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": ""
-                                }]
+                "content": "As above, but replace the base effect with  "
             },
             {
                 "tags": {"desc_type" : "effect"},
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "You soar into the air, removing yourself from the battlefield, then return in any space adjacent to that ally."
+                                    "content": "until the end of your next turn, gain aura 1. Foes in the aura cannot be cured and cannot save to clear statuses.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "cured", "id": "gl_cure"}, {"val": "statuses", "id": "gl_status"}]
                                 }]
             }
         ]

@@ -1901,5 +1901,165 @@
                                             }],
                             "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
                         }]
+    },
+    {
+        "id": "ab_intimidate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Intimidate",
+        "job_id": "jb_knave",
+        "talent": ["tl_intimidate_1", "tl_intimidate_2"],
+        "mastery": ["ms_intimidate_ironskull"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Swatting interlopers out of the way, you make it your personal vendetta to make someone’s day as miserable as possible."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "End your turn and Mark:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Choose a foe at or further away than range 4."
+                                            }],
+                            "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "Mark", "id": "gl_mark"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Each time that foe damages you or an ally with an ability, you may rush 1, ending closer to them if possible, then you may shove any adjacent character 1. This effect can activate any number of times. If you start your turn adjacent to your marked foe, deal fray damage to them, stun them, and then this mark ends. You may also end it at the start of your turn.",
+                                                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}, {"val": "fray", "id": "gl_fray"}, {"val": "marked", "id": "gl_mark"}, {"val": "stun", "id": "gl_stunned"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Choose a foe at or further away than range 2."
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_suckerpunch",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Sucker Punch",
+        "job_id": "jb_knave",
+        "talent": ["tl_suckerpunch_1", "tl_suckerpunch_2"],
+        "mastery": ["ms_suckerpunch_strongright"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "There’s nothing that can’t be solved with the liberal application of fists to faces."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Trigger:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "An enemy adjacent to you rolls a save and you see the result."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "The enemy must re-roll the save, keeping the second result."
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "The character rolls the new save with +1 curse.",
+                                                "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+                                            }],
+                            "glossary": [{"val": "Heroic", "id": "gl_heroic"}]
+                        }]
+    },
+    {
+        "id": "ab_bleakmercy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "Melee": true,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_stalwart",
+        "name": "Bleak Mercy",
+        "job_id": "jb_knave",
+        "talent": ["tl_bleakmercy_1", "tl_bleakmercy_2"],
+        "mastery": ["ms_bleakmercy_painkiller"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Crush your foes and see them driven before you."
+        }],
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "2[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Bleak Mercy gains true strike and ignores defiance, armor, and vigor if its target is suffering from 3 or more statuses.",
+                                                "glossary": [{"val": "true strike", "id": "gl_truestrike"}, {"val": "defiance", "id": "gl_defiance"}, {"val": "armor", "id": "gl_armor"}, {"val": "vigor", "id": "gl_vigor"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Slay or Heroic:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Cure yourself, then shove all foes in range 2 1 space in any direction.",
+                                                "glossary": [{"val": "cure", "id": "gl_cure"}, {"val": "shove", "id": "gl_shove"}]
+                                            }],
+                            "glossary": [{"val": "Slay", "id": "gl_slay"}, {"val": "Heroic", "id": "gl_heroic"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "addon"},
+                            "content": "ad_sweettorment"
+                        }]
     }
 ]
