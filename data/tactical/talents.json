@@ -2207,7 +2207,27 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Terrain Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You can replace any"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_beast"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "you summon with a space of dangerous terrain instead.",
+                        "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                    }
+                ]
+            }
+        ]
     },
 	{
         "id": "tl_apex_2",
@@ -2216,7 +2236,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you attack a foe at exactly range 3, this ability gains unerring and you may shove your foe 1 in any direction after this ability resolves.",
+                "glossary": [{"val": "unerring", "id": "gl_unerring"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_gwynt_1",
@@ -2225,7 +2251,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If made from stealth, increase the dashes and range of this ability by +1.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "dashes", "id": "gl_dash"}]
+            }
+        ]
     },
 	{
         "id": "tl_gwynt_2",
@@ -2234,7 +2266,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You and your ally or summon may each shove your target 1 space.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_circletheoak_1",
@@ -2243,7 +2281,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies you pass through with Circle the Oak may dash 1 after this ability resolves.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
     },
 	{
         "id": "tl_circletheoak_2",
@@ -2252,7 +2296,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you passed through two or more allies or allied summons, also gain evasion until the end of your next turn.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}, {"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
     },
     {
         "id": "tl_miststrider_1",
@@ -2261,7 +2311,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once a round, when you enter or exit the area, you can gain stealth.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
     },
 	{
         "id": "tl_miststrider_2",
@@ -2270,7 +2326,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the area count all characters as having evasion.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
     },
     {
         "id": "tl_stampede_1",
@@ -2279,7 +2341,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you trigger a finishing blow on a foe, you may transfer the mark to them as a free action.",
+                "glossary": [{"val": "finishing blow", "id": "gl_finishingblow"}, {"val": "mark", "id": "gl_mark"}]
+            }
+        ]
     },
 	{
         "id": "tl_stampede_2",
@@ -2288,7 +2356,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the beast passes through two or more characters before reaching your foe it deals 4 damage and shoves them 2 instead.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_strengthofthepack_1",
@@ -2297,7 +2371,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you first enter this stance, increase the dash granted to 4.",
+                "glossary": [{"val": "stance", "id": "gl_stance"}, {"val": "dash", "id": "gl_dash"}]
+            }
+        ]
     },
 	{
         "id": "tl_strengthofthepack_2",
@@ -2306,7 +2386,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you have three or more summons in this aura, you have evasion.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "summons", "id": "gl_summon"}, {"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
     },
     {
         "id": "tl_underway_1",
@@ -2315,7 +2401,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you have stealth, you can create a third underway at any point during your turn as a free action. This underway is replaced if created again.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
     },
 	{
         "id": "tl_underway_2",
@@ -2324,7 +2416,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you create an underway, you may create up to three spaces of leafy difficult terrain in adjacent spaces. Allies adjacent to underways have cover.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "cover", "id": "gl_cover"}]
+            }
+        ]
     },
     {
         "id": "tl_morrigan_1",
@@ -2333,7 +2431,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While holding Morrigan, you have cover and ranged attacks against you take +1 curse.",
+                "glossary": [{"val": "cover", "id": "gl_cover"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }
+        ]
     },
 	{
         "id": "tl_morrigan_2",
@@ -2342,7 +2446,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Morrigan resolves, some of the winged creatures linger, creating two spaces of dangerous terrain in range 2.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
     {
         "id": "tl_sidhe_1",
@@ -2351,7 +2461,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Also create a space of dangerous terrain adjacent to your foe after the effect expires.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
 	{
         "id": "tl_sidhe_2",
@@ -2360,7 +2476,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the effect expires, your foe explodes with a medium blast area effect, dealing 2 damage to all other characters within.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
     },
     {
         "id": "tl_holy_1",

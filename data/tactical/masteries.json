@@ -1159,9 +1159,22 @@
         "eventtags": {},
         "name": "Loaded Quiver",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "If you end your turn without attacking, the next time you use Apex, summon +1 more beasts, and deal 2 damage, once, to your target for every beast you summon."
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If you end your turn without attacking, the next time you use Apex, summon +1 more",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_beast"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "and deal 2 damage, once, to your target for every beast you summon."
+                    }]
             }
         ]
     },
@@ -1175,7 +1188,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Increase dashes and ranges by +1, and the effect can be used on an additional ally or allied summon in range."
+                "content": "Increase dashes and ranges by +1, and the effect can be used on an additional ally or allied summon in range.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}, {"val": "summon", "id": "gl_summon"}]
             }
         ]
     },
@@ -1189,7 +1203,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Enemies no longer stop this move, and you may phase through their spaces. Enemies you pass through are shoved 1, take fray damage, and are dazed."
+                "content": "Enemies no longer stop this move, and you may phase through their spaces. Enemies you pass through are shoved 1, take fray damage, and are dazed.",
+                "glossary": [{"val": "phase", "id": "gl_phasing"}, {"val": "shoved", "id": "gl_shove"}, {"val": "fray", "id": "gl_fray"}, {"val": "dazed", "id": "gl_dazed"}]
             }
         ]
     },
@@ -1201,9 +1216,22 @@
         "eventtags": {},
         "name": "River Guardians",
         "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "This ability creates a beast inside when an area is created. Foes that start their turn inside the area that end their turn outside of it take 2 damage and are dazed."
+            {   "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This ability creates a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_beast"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "inside when an area is created. Foes that start their turn inside the area that end their turn outside of it take 2 damage and are dazed.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }]
             }
         ]
     },
@@ -1217,7 +1245,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Yourself and allies can ride the beast if it passes through their space, removing themselves from the battlefield instead of taking damage and shove. When it ends its movement, they hop off and must place themselves in an adjacent space, or as close as possible."
+                "content": "Yourself and allies can ride the beast if it passes through their space, removing themselves from the battlefield instead of taking damage and shove. When it ends its movement, they hop off and must place themselves in an adjacent space, or as close as possible.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
             }
         ]
     },
@@ -1231,7 +1260,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Strength Of The Pack becomes a free action at round 4 or later and its aura affects the entire battlefield."
+                "content": "Strength Of The Pack becomes a free action at round 4 or later and its aura affects the entire battlefield.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
             }
         ]
     },
@@ -1245,7 +1275,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Foes that are shoved into portals or that end their turn adjacent to an underway can be teleported to any free space adjacent to any other underway. A foe can pass a save to avoid it, and can only be successfully teleported this way once a round. Bloodied foes fail the save."
+                "content": "Foes that are shoved into portals or that end their turn adjacent to an underway can be teleported to any free space adjacent to any other underway. A foe can pass a save to avoid it, and can only be successfully teleported this way once a round. Bloodied foes fail the save.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "teleported", "id": "gl_teleport"}, {"val": "Bloodied", "id": "gl_bloodied"}]
             }
         ]
     },
@@ -1259,7 +1290,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "After Morrigan resolves, you can redirect the flock, creating a small blast terrain effect in range 3. The area is dangerous terrain for foes, and allies in the area have cover. It lasts until this effect is repeated."
+                "content": "After Morrigan resolves, you can redirect the flock, creating a small blast terrain effect in range 3. The area is dangerous terrain for foes, and allies in the area have cover. It lasts until this effect is repeated.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "cover", "id": "gl_cover"}]
             }
         ]
     },
@@ -1273,7 +1305,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "While the toxin’s effect is active, your foe treats all other characters as having cover, evasion and dodge. This effect turns off while they are adjacent to an ally."
+                "content": "While the toxin’s effect is active, your foe treats all other characters as having cover, evasion and dodge. This effect turns off while they are adjacent to an ally.",
+                "glossary": [{"val": "cover", "id": "gl_cover"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "dodge", "id": "gl_dodge"}]
             }
         ]
     },

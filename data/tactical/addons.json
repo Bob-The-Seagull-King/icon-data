@@ -406,6 +406,15 @@
         "name": "Underway",
         "class_id": "cl_vagabond",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "As a free action ability, you and allies can teleport from any space adjacent to an underway to a free adjacent space to any other underway. This ability does not interrupt movement or other action.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                                }]
+            }
         ]
     },
     {
