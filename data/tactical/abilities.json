@@ -2931,7 +2931,7 @@
                             "content": "Effect:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Allies are immune to damage from this ability. If it passes through two or more allies, automatically triggers all <i>exceed</i> effects.",
+                                                "content": "Allies are immune to damage from this ability. If it passes through two or more allies, automatically triggers all exceed effects.",
                                                 "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "exceed", "id": "gl_exceed"}]
                                             }]
                         },
@@ -2940,7 +2940,7 @@
                             "content": "Finishing Blow or Exceed:",
                             "subcontent":   [{
                                                 "tags": {"desc_type" : "desc"},
-                                                "content": "Attack target explodes with a large blast area effect placed centered on them. Foes inside take 2 damage and are <i>blinded</i>. Blinded foes take 2 damage twice instead.",
+                                                "content": "Attack target explodes with a large blast area effect placed centered on them. Foes inside take 2 damage and are blinded. Blinded foes take 2 damage twice instead.",
                                                 "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "blinded", "id": "gl_blinded"}]
                                             }],
                             "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}, {"val": "Exceed", "id": "gl_exceed"}]
@@ -2960,7 +2960,7 @@
         "eventtags": {},
         "chapter": 1,
         "class_id": "cl_vagabond",
-        "name": "Soul Shot",
+        "name": "Umbra",
         "job_id": "jb_shade",
         "talent": ["tl_umbra_1", "tl_umbra_2"],
         "mastery": ["ms_umbra_devilfrogtechnique"],
@@ -2969,6 +2969,64 @@
             "content": "By the power of darkness."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You may teleport 3.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your foe is blinded.",
+                                    "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Finishing Blow:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Summon a ",
+                                    "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_shadow"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "adjacent to your target."
+                                }],
+                "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_penumbra"
@@ -2995,16 +3053,35 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You mark your foe with a dire seal. Shadowy tendrils reach out from an unknown space and jerk them like a puppet."
         }],
-        "description": []
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Mark:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Flick an umbral seal at a character in range 3, marking them. While marked, once a round when you teleport, you can also teleport the marked character 1 spaces and deal 2 damage to them if they’re a foe.",
+                                                "glossary": [{"val": "marking", "id": "gl_mark"}, {"val": "teleport", "id": "gl_teleport"}]
+                                            }],
+                            "glossary": [{"val": "Mark", "id": "gl_mark"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Finishing Blow:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "When marking a bloodied character, immediately trigger the effect, ignoring the round limit.",
+                                                "glossary": [{"val": "marking", "id": "gl_mark"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                                            }],
+                            "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+                        }]
     },
     {
         "id": "ab_deathblossom",
         "type": "Ability",
         "source": "core",
         "tags": {
-            "action": 1,
+            "action": 2,
             "type": "attack",
-            "range": 3,
+            "range": 2,
             "burst": 1,
             "Unerring": true
         },
@@ -3021,6 +3098,51 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Finishing Blow:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "After this ability resolves, create a pit under your attack target. The pit is also a ",
+                                    "glossary": [{"val": "pit", "id": "gl_pit"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_shadowcloud"
+                                }],
+                "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_flyingsleeves"
             }
@@ -3032,7 +3154,7 @@
         "source": "core",
         "tags": {
             "action": 1,
-            "range": 3,
+            "range": 2,
             "Summon": true,
             "Aura": true
         },
@@ -3047,7 +3169,44 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Draw out a fragment of true darkness, roaming and hunting for warmth."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Summon 2",
+                                    "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_shadow"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in range 2."
+                                }],
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Until the start of your next turn, you gain aura 2. You may consume a",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_shadow"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in the aura when you or any ally in the aura is targeted by an attack to grant evasion against that attack.",
+                                    "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_shadowplay",
@@ -3068,7 +3227,26 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Using forbidden scroll techniques, you confuse the senses of foes and allies alike."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Choose a character other than yourself in range, then a different character other than yourself in range 3 of that character. Swap their places, removing and placing them. Allies swapped gain stealth. Foes swapped are dazed.",
+                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "dazed", "id": "gl_dazed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Finishing Blow:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Repeat the effect."
+                                }],
+                "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+            }
+        ]
     },
     {
         "id": "ab_umbralecho",
@@ -3090,7 +3268,36 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You split echoes of your soul into clones that overlay your movements."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Stance:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You create shadowy copies of yourself, granting a d4 power die, starting at 2. If the die ticks down to 0, end this stance. While in this stance:",
+                                    "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+                                }],
+                "glossary": [{"val": "Stance", "id": "gl_stance"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• When you use an ability that targets a foe, you may trigger any finishing blow effects of that ability, then tick the die down by 1.",
+                "glossary": [{"val": "finishing blow", "id": "gl_finishingblow"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• After you tick the die down, you may teleport 1.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Refresh:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Refresh this stance if you end your turn with no foes adjacent. When you do, tick the die up by 1."
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_assassinate",
@@ -3112,7 +3319,18 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You step through the air, emerging from the shadow of your foe, where they find only gleaming knives."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "End your turn",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "and choose a foe in range. At the end of that foe’s turn, as long as they’re in range 3, teleport to any space adjacent to them and deal 2 damage, three times to them and inflict blinded. Reduce this damage to just 2 damage if they have an adjacent ally. Then, you may kick off them and fly 2.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "fly", "id": "gl_flying"}]
+                                }],
+                "glossary": [{"val": "End your turn", "id": "gl_endturn"}]
+            }
+        ]
     },
     {
         "id": "ab_nocturne",
@@ -3133,7 +3351,34 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You capture a thin silver thread of spilled life force of a foe and use it to tear open a space of night and cold."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You trigger a finishing blow effect.",
+                                    "glossary": [{"val": "finishing blow", "id": "gl_finishingblow"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark a small blast centered on that character, then create a terrain effect in the area. All spaces of this terrain effect are",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_shadowcloud"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "This area lasts until this ability is used again."
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_incubus",
@@ -3158,6 +3403,47 @@
             "content": "The thirteenth scroll art, a void-sheathed blade that cuts away at the aether of the very soul, leaving a cut that creates slashed darkness."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark your foe. While marked, if any foe ends their turn adjacent to your marked foe, or your foe ends their turn adjacent to any other foe, then both the target and any adjacent foes take 2 damage and are dazed. This effect can only trigger once per round.",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "dazed", "id": "gl_dazed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Finishing Blow:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Immediately trigger the mark effect, ignoring the round limit.",
+                                    "glossary": [{"val": "mark", "id": "gl_mark"}]
+                                }],
+                "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_succubus"

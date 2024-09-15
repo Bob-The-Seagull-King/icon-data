@@ -261,7 +261,8 @@
         "eventtags": {},
         "name": "Divine Intervention",
         "class_id": "cl_vagabond",
-        "description":  [{
+        "description":  [
+            {
                 "tags": {"desc_type" : "effect"},
                 "content": "Trigger:",
                 "subcontent":   [{
@@ -292,6 +293,11 @@
         "name": "Penumbra",
         "class_id": "cl_vagabond",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport your foe up to 3 spaces towards you instead of teleporting yourself. A foe can save to avoid this effect. Blinded foes fail this save.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}, {"val": "Blinded", "id": "gl_blinded"}]
+            }
         ]
     },
     {
@@ -306,6 +312,19 @@
         "name": "Flying Sleeves",
         "class_id": "cl_vagabond",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Area becomes Arc 4."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If you catch an ally or allied summon in the area, you and your allies are immune to this ability’s damage and effects, and you may extend the area effect to arc 8.",
+                                    "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "immune", "id": "gl_immune"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            }
         ]
     },
     {
@@ -320,6 +339,32 @@
         "name": "Soul Proxy",
         "class_id": "cl_vagabond",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You take damage from a foe."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "End this stance, consume and remove all",
+                                    "glossary": [{"val": "stance", "id": "gl_stance"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_shadow"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in range 2 of you, and immediately gain defiance against the incoming damage. Deal 2 damage, once, to the triggering foe for each shadow consumed this way. You cannot take this stance again for the rest of combat.",
+                                    "glossary": [{"val": "defiance", "id": "gl_defiance"}]
+                                }]
+            }
         ]
     },
     {
@@ -333,6 +378,20 @@
         "name": "Succubus",
         "class_id": "cl_vagabond",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Instead of the Mark, gain",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "deal 3 damage to all characters marked by Incubus, and teleport them 2.",
+                                    "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "teleport", "id": "gl_teleport"}]
+                                }]
+            }
         ]
     },
     {

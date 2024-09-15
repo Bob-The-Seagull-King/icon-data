@@ -1829,7 +1829,18 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain defiance.",
+                    "glossary": [{"val": "defiance", "id": "gl_defiance"}]
+                }],
+                "glossary": [{"val": "Slay", "id": "gl_slay"}]
+            }
+        ]
     },
 	{
         "id": "tl_umbra_2",
@@ -1838,7 +1849,28 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You can sacrifice 2 or consume a",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in range 2 of you to gain a combo token after using this move.",
+                        "glossary": [{"val": "combo", "id": "gl_combo"}]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "tl_harrow_1",
@@ -1847,7 +1879,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You mark your foe with a dire seal. Shadowy tendrils reach out from an unknown space and jerk them like a puppet.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
     },
 	{
         "id": "tl_harrow_2",
@@ -1856,7 +1894,28 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You can also sacrifice 2 or consume a",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in range 2 of you when marking a foe to also create a pit under them.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "tl_deathblossom_1",
@@ -1865,7 +1924,18 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Finishing Blow:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Teleport all characters in the area 1.",
+                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                }],
+                "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+            }
+        ]
     },
 	{
         "id": "tl_deathblossom_2",
@@ -1874,7 +1944,18 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Teleport 2, then throw knives, dealing 2 damage to up to three foes in range 3.",
+                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                }],
+                "glossary": [{"val": "Slay", "id": "gl_slay"}]
+            }
+        ]
     },
     {
         "id": "tl_nightmare_1",
@@ -1883,7 +1964,28 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When you summon a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "you or an ally or allied summon in range 2 may teleport 1.",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
     },
 	{
         "id": "tl_nightmare_2",
@@ -1892,7 +1994,28 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While Umbra’s effect is active, you or allies can rebound abilities off",
+                        "glossary": [{"val": "rebound", "id": "gl_rebound"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in the aura. Doing so consumes the shadow, removing it.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "tl_shadowplay_1",
@@ -1901,7 +2024,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you swap two foes, you may then teleport them 1 after this ability resolves.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_shadowplay_2",
@@ -1910,7 +2039,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you swap two allies, one of them can gain evasion until the start of their next turn.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
     },
     {
         "id": "tl_umbralecho_1",
@@ -1919,7 +2054,32 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in this stance, your abilities gain",
+                "glossary": [{"val": "stance", "id": "gl_stance"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "slay:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon a",
+                        "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This effect can only trigger once a round."
+                    }
+                ]
+            }
+        ]
     },
 	{
         "id": "tl_umbralecho_2",
@@ -1928,7 +2088,27 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While in Umbral Echo, you have phasing and entering the space of",
+                        "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "always costs a maximum of 1 movement."
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "tl_assassinate_1",
@@ -1937,7 +2117,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you’re in stealth, increase all ranges by +2, and doesn’t break stealth.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
     },
 	{
         "id": "tl_assassinate_2",
@@ -1946,7 +2132,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While you’re holding Assassinate, you have evasion.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
     },
     {
         "id": "tl_nocturne_1",
@@ -1955,7 +2147,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While Nocturne is active, you may teleport up to 2 spaces in or out of the area as a free action.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_nocturne_2",
@@ -1964,7 +2162,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may sacrifice 2 when the area is created to increase the size of the area to medium blast, or sacrifice 4 to increase it to large blast.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "blast", "id": "gl_blast"}]
+            }
+        ]
     },
     {
         "id": "tl_incubus_1",
@@ -1973,7 +2177,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Incubus gains range 3. If you make it from stealth, gains range 5.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
     },
 	{
         "id": "tl_incubus_2",
@@ -1982,7 +2192,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Incubus deals bonus damage for every ally of your target adjacent to your target.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
     },
     {
         "id": "tl_apex_1",

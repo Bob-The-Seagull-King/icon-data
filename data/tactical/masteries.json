@@ -995,7 +995,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Increase Umbra and Penumbra’s range to 6 and it gains unerring."
+                "content": "Increase Umbra and Penumbra’s range to 6 and it gains unerring.",
+                "glossary": [{"val": "unerring", "id": "gl_unerring"}]
             }
         ]
     },
@@ -1023,7 +1024,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can teleport 2 spaces before and after using this ability."
+                "content": "You can teleport 2 spaces before and after using this ability.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
             }
         ]
     },
@@ -1037,7 +1039,24 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain effect: until the start of your next turn, when a shadow is consumed in the aura, you may also create a pit in or adjacent to its space."
+                "content": "Gain"
+            },
+            {   "tags": {"desc_type" : "subeffect"},
+                "content": "effect",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "until the start of your next turn, when a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_shadow"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "is consumed in the aura, you may also create a pit in or adjacent to its space.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "pit", "id": "gl_pit"}]
+                    }]
             }
         ]
     },
@@ -1065,7 +1084,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain the following {{{{interrupt}}}} while in this stance:"
+                "content": "Gain the following interrupt while in this stance:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "stance", "id": "gl_stance"}]
             },
             {
                 "tags": {"desc_type" : "addon"},
@@ -1097,7 +1117,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can weave shadow magic when the area is created to teleport any characters in range 2 of you into any free space inside the area, as long as there is room for that character."
+                "content": "You can weave shadow magic when the area is created to teleport any characters in range 2 of you into any free space inside the area, as long as there is room for that character.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
             }
         ]
     },
@@ -1111,7 +1132,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Incubus’ mark stacks with other marks. You may mark any number of characters with Incubus. When a character takes damage from an Incubus mark, you may also mark them."
+                "content": "Incubus’ mark stacks with other marks. You may mark any number of characters with Incubus. When a character takes damage from an Incubus mark, you may also mark them.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
             }
         ]
     },
