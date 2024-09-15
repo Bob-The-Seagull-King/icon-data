@@ -880,7 +880,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "While your foe is marked and in range 3 of you, they must save if they attempt to move to any space more than 3 spaces away from you. On a successful save, they can move as normal. On a failed save, they can’t consider any space further away than range 3 of you valid space to move to until the start of their next turn, then become immune to this effect for the rest of combat."
+                "content": "While your foe is marked and in range 3 of you, they must save if they attempt to move to any space more than 3 spaces away from you. On a successful save, they can move as normal. On a failed save, they can’t consider any space further away than range 3 of you valid space to move to until the start of their next turn, then become immune to this effect for the rest of combat.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "immune", "id": "gl_immune"}]
             }
         ]
     },
@@ -894,7 +895,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain stealth after marking your target. This interrupt does not break stealth, and while you have stealth, it can be used +1 more time a round."
+                "content": "Gain stealth after marking your target. This interrupt does not break stealth, and while you have stealth, it can be used +1 more time a round.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "interrupt", "id": "gl_interrupt"}]
             }
         ]
     },
@@ -908,7 +910,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "At round 4 or later, Ace becomes a free action to enter if you have not used it yet this combat. It also refreshes automatically at the start of your turn, and its dash increases to 3."
+                "content": "At round 4 or later, Ace becomes a free action to enter if you have not used it yet this combat. It also refreshes automatically at the start of your turn, and its dash increases to 3.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
             }
         ]
     },
@@ -922,7 +925,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Terrain Effect: After activating Showdown, you may create a small blast terrain effect on you of smoke. The area grants cover, and yourself and allies exiting the area can gain stealth, but no more than once a round for each character. It lasts until created again."
+                "content": "Terrain Effect: After activating Showdown, you may create a small blast terrain effect on you of smoke. The area grants cover, and yourself and allies exiting the area can gain stealth, but no more than once a round for each character. It lasts until created again.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "cover", "id": "gl_cover"}, {"val": "stealth", "id": "gl_stealth"}]
             }
         ]
     },
@@ -936,7 +940,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can cause the area to hover around you as an Aura 2 instead, which lasts for the rest of combat, with the same effect as the default area. When this ability triggers again, you may deal 2 unerring damage to all foes in this aura instead of replacing the aura."
+                "content": "You can cause the area to hover around you as an Aura 2 instead, which lasts for the rest of combat, with the same effect as the default area. When this ability triggers again, you may deal 2 unerring damage to all foes in this aura instead of replacing the aura.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "unerring", "id": "gl_unerring"}]
             }
         ]
     },
@@ -950,7 +955,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Allies Soul Shot passes through gain 3 vigor and may fly 3."
+                "content": "Allies Soul Shot passes through gain 3 vigor and may fly 3.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "fly", "id": "gl_flying"}]
             }
         ]
     },

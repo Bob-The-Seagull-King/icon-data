@@ -2614,14 +2614,33 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Shoot with your heart."
         }],
-        "description": []
+        "description": [{
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your next ability with a listed range gains unerring, +1 boon on attacks, and rebound.",
+                                    "glossary": [{"val": "unerring", "id": "gl_unerring"}, {"val": "+1 boon", "id": "gl_boon"}, {"val": "rebound", "id": "gl_rebound"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Finishing Blow:",
+                                    "subcontent":   [{
+                                                        "tags": {"desc_type" : "desc"},
+                                                        "content": "Gain stealth after the ability resolves.",
+                                                        "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                                                    }],
+                                    "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_astralchain",
         "type": "Ability",
         "source": "core",
         "tags": {
-            "action": 1,
+            "action": 2,
             "type": "attack",
             "range": 3,
             "Mark": true
@@ -2638,7 +2657,48 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "With your heavenly chain skillfully whirling through the air, you dispense divine justice."
         }],
-        "description": []
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "2[D] + Fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Mark:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Your foe is marked. While marked, at the start of your turn, if they are in range 3, they take 2 unerring damage from you as bolt of celestial lightning shoots between you. If they are at exactly range 3, increase damage to 2 damage, twice instead.",
+                                                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "unerring", "id": "gl_unerring"}]
+                                            }],
+                            "glossary": [{"val": "Mark", "id": "gl_mark"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Finishing Blow or Exceed:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You may fly 4.",
+                                                "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                            }],
+                            "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}, {"val": "Exceed", "id": "gl_exceed"}]
+                        }]
     },
     {
         "id": "ab_deusexmachina",
@@ -2661,7 +2721,20 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "When skillfully used, the astral chain can be used to maneuver in the blink of an eye."
         }],
-        "description": []
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Mark:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Mark and grapple on to a foe, ally, or summon in range from you with an ethereal lasso and gain the following interrupt while that character is marked. You can take the interrupt regardless of distance.",
+                                                "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "summon", "id": "gl_summon"}, {"val": "interrupt", "id": "gl_interrupt"}]
+                                            }],
+                            "glossary": [{"val": "Mark", "id": "gl_mark"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "addon"},
+                            "content": "ad_divineintervention"
+                        }]
     },
     {
         "id": "ab_ace",
@@ -2684,7 +2757,25 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "The world goes still, and is split by a bolt of lightning."
         }],
-        "description": []
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "End your turn and gain Stance:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "When you take this stance, or when it refreshes, you may dash 1 and your next attack triggers all exceed effects, dazes your foe, and gains unerring.",
+                                                "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "exceed", "id": "gl_exceed"}, {"val": "dazes", "id": "gl_dazed"}, {"val": "unerring", "id": "gl_unerring"}]
+                                            }],
+                            "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "Stance", "id": "gl_stance"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Refresh:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Refresh this stance after you score a finishing blow.",
+                                                "glossary": [{"val": "finishing blow", "id": "gl_finishingblow"}]
+                                            }]
+                        }]
     },
     {
         "id": "ab_showdown",
@@ -2706,7 +2797,34 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "With a glint in your eye, you zero in on a foe with preternatural accuracy."
         }],
-        "description": []
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Choose a foe in range 3 and become immobile until the end of your current turn. At the end of that foe’s next turn, if they’re in range 3 of you, you may dash 2, and the effect ends. If they’re at range 4 or higher, they take 2 unerring damage from you twice, ignoring cover.",
+                                                "glossary": [{"val": "immobile", "id": "gl_immobile"}, {"val": "dash", "id": "gl_dash"}, {"val": "unerring", "id": "gl_unerring"}, {"val": "cover", "id": "gl_cover"}]
+                                            }],
+                            "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "Stance", "id": "gl_stance"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Finishing Blow:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Deal 2 damage four times instead."
+                                            }],
+                            "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Refresh:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Showdown can be used as free action if you activated an exceed effect or scored a critical hit this turn.",
+                                                "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "critical hit", "id": "gl_criticalhit"}]
+                                            }]
+                        }]
     },
     {
         "id": "ab_wardingbolts",
@@ -2729,7 +2847,24 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You rapidly fire a massive barrage from your weapon into the air. The projectiles hover in the air like hunting eagles, waiting to strike."
         }],
-        "description": []
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Trigger:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You score a critical hit or trigger an exceed effect.",
+                                                "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "critical hit", "id": "gl_criticalhit"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Terrain Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "You shoot out a flurry of projectiles into the air, where they hover in place, creating a small blast terrain effect in range, which can overlap characters. Foes that start their turn in the area that end their turn outside of the area are struck by a projectile, taking 2 unerring damage and dazing them. The area lasts until this ability is used again.",
+                                                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "unerring", "id": "gl_unerring"}, {"val": "dazing", "id": "gl_dazed"}]
+                                            }]
+                        }]
     },
     {
         "id": "ab_soulshot",
@@ -2751,7 +2886,65 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "The ultimate freelancer technique - using the soul aether of their companions to supercharge astral bullets."
         }],
-        "description": []
+        "description": [{
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + Fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Foe is blinded.",
+                                                "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Area Effect:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "Fray.",
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Effect:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Allies are immune to damage from this ability. If it passes through two or more allies, automatically triggers all <i>exceed</i> effects.",
+                                                "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "exceed", "id": "gl_exceed"}]
+                                            }]
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Finishing Blow or Exceed:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "desc"},
+                                                "content": "Attack target explodes with a large blast area effect placed centered on them. Foes inside take 2 damage and are <i>blinded</i>. Blinded foes take 2 damage twice instead.",
+                                                "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "blinded", "id": "gl_blinded"}]
+                                            }],
+                            "glossary": [{"val": "Finishing Blow", "id": "gl_finishingblow"}, {"val": "Exceed", "id": "gl_exceed"}]
+                        }]
     },
     {
         "id": "ab_umbra",

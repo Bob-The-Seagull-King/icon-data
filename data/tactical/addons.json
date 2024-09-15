@@ -251,6 +251,36 @@
         ]
     },
     {
+        "id": "ad_divineintervention",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Divine Intervention",
+        "class_id": "cl_vagabond",
+        "description":  [{
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The end of any turn."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleport 2 towards the target or teleport your target 1 towards you. The teleport must end with both of you closer together. Allies can choose whether to take this teleport.",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                }]
+            }
+        ]
+    },
+    {
         "id": "ad_penumbra",
         "type": "Addon",
         "source": "core",

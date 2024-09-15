@@ -1621,7 +1621,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When Trick shot rebounds off an ally or summon, you may teleport them 2.",
+                "glossary": [{"val": "rebounds", "id": "gl_rebound"}, {"val": "summon", "id": "gl_summon"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_trickshot_2",
@@ -1630,7 +1636,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Trick shot rebounds, it causes phantom projectiles to split off, dealing 2 unerring damage to all foes at exactly range 3 from its rebound target.",
+                "glossary": [{"val": "rebounds", "id": "gl_rebound"}, {"val": "unerring", "id": "gl_unerring"}]
+            }
+        ]
     },
     {
         "id": "tl_astralchain_1",
@@ -1639,7 +1651,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, gain evasion against your marked foe while they are in range 3.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
     },
 	{
         "id": "tl_astralchain_2",
@@ -1648,7 +1666,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, all attacks from you or allies against your marked foe may gain rebound and deal bonus damage if they are rebounded.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "rebound", "id": "gl_rebound"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
     },
     {
         "id": "tl_deusexmachina_1",
@@ -1657,7 +1681,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies and summons can be teleported up to 4 spaces instead.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}, {"val": "teleported", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_deusexmachina_2",
@@ -1666,7 +1696,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Using this interrupt on a foe dazes or blinds them (your choice).",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "dazes", "id": "gl_dazed"}, {"val": "blinds", "id": "gl_blinded"}]
+            }
+        ]
     },
     {
         "id": "tl_ace_1",
@@ -1675,7 +1711,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If your attack target is at exactly range 3, they explode with a medium blast area effect centered on them. Foes inside are dazed.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
     },
 	{
         "id": "tl_ace_2",
@@ -1684,7 +1726,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If your attack target is at exactly range 3, you may also teleport them 2 after the attack resolves.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
     {
         "id": "tl_showdown_1",
@@ -1693,7 +1741,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each time you deal damage with Showdown, you may teleport 1.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_showdown_2",
@@ -1702,7 +1756,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you activate Showdown, gain stealth.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
     },
     {
         "id": "tl_wardingbolts_1",
@@ -1711,7 +1771,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can consume the area as a free action to disperse the bolts, dealing 2 unerring damage to all foes at exactly range 3 from the center space of the area, and ending the effect.",
+                "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+            }
+        ]
     },
 	{
         "id": "tl_wardingbolts_2",
@@ -1720,7 +1786,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Marked foes take 2 damage, twice, instead.",
+                "glossary": [{"val": "Marked", "id": "gl_mark"}]
+            }
+        ]
     },
     {
         "id": "tl_soulshot_1",
@@ -1729,7 +1801,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or greater, Soul Shot considers all characters in the line to be at exactly range 3."
+            }
+        ]
     },
 	{
         "id": "tl_soulshot_2",
@@ -1738,7 +1815,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or greater, Soul Shot becomes Line 6."
+            }
+        ]
     },
     {
         "id": "tl_umbra_1",
