@@ -2594,5 +2594,2411 @@
                             "tags": {"desc_type" : "addon"},
                             "content": "ad_cheattime"
                         }]
+    },
+    {
+        "id": "ab_trickshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+            
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Trick Shot",
+        "job_id": "jb_freelancer",
+        "talent": ["tl_trickshot_1", "tl_trickshot_2"],
+        "mastery": ["ms_trickshot_goldenbullet"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Shoot with your heart."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_astralchain",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "Mark": true
+            
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Astral Chain",
+        "job_id": "jb_freelancer",
+        "talent": ["tl_astralchain_1", "tl_astralchain_2"],
+        "mastery": ["ms_astralchain_diamondpunisher"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "With your heavenly chain skillfully whirling through the air, you dispense divine justice."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_deusexmachina",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "Mark": true
+            
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Deus Ex Machina",
+        "job_id": "jb_freelancer",
+        "talent": ["tl_deusexmachina_1", "tl_deusexmachina_2"],
+        "mastery": ["ms_deusexmachina_whipofthethrones"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "When skillfully used, the astral chain can be used to maneuver in the blink of an eye."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_ace",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true,
+            "End Turn": true
+            
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Deus Ex Machina",
+        "job_id": "jb_freelancer",
+        "talent": ["tl_ace_1", "tl_ace_2"],
+        "mastery": ["ms_ace_hotchamber"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The world goes still, and is split by a bolt of lightning."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_showdown",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+            
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_vagabond",
+        "name": "Showdown",
+        "job_id": "jb_freelancer",
+        "talent": ["tl_showdown_1", "tl_showdown_2"],
+        "mastery": ["ms_showdown_quench"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "With a glint in your eye, you zero in on a foe with preternatural accuracy."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_wardingbolts",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1,
+            "range": 3
+            
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_vagabond",
+        "name": "Warding Bolts",
+        "job_id": "jb_freelancer",
+        "talent": ["tl_wardingbolts_1", "tl_wardingbolts_2"],
+        "mastery": ["ms_wardingbolts_phantombolts"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You rapidly fire a massive barrage from your weapon into the air. The projectiles hover in the air like hunting eagles, waiting to strike."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_soulshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_vagabond",
+        "name": "Soul Shot",
+        "job_id": "jb_freelancer",
+        "talent": ["tl_soulshot_1", "tl_soulshot_2"],
+        "mastery": ["ms_soulshot_greatangelos"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The ultimate freelancer technique - using the soul aether of their companions to supercharge astral bullets."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_umbra",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "boon": 1,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Soul Shot",
+        "job_id": "jb_shade",
+        "talent": ["tl_umbra_1", "tl_umbra_2"],
+        "mastery": ["ms_umbra_devilfrogtechnique"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "By the power of darkness."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_penumbra"
+            }
+        ]
+    },
+    {
+        "id": "ab_harrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Harrow",
+        "job_id": "jb_shade",
+        "talent": ["tl_harrow_1", "tl_harrow_2"],
+        "mastery": ["ms_harrow_boneraventechnique"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You mark your foe with a dire seal. Shadowy tendrils reach out from an unknown space and jerk them like a puppet."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_deathblossom",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "burst": 1,
+            "Unerring": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Death Blossom",
+        "job_id": "jb_shade",
+        "talent": ["tl_deathblossom_1", "tl_deathblossom_2"],
+        "mastery": ["ms_deathblossom_shukuchi"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "From beneath a cloak, out from flying sleeves, or hidden in coils of hair - infinite blades. One more sweep, and shadowy bolts of cloth cut through your foes like razors."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_flyingsleeves"
+            }
+        ]
+    },
+    {
+        "id": "ab_nightmare",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "Summon": true,
+            "Aura": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Nightmare",
+        "job_id": "jb_shade",
+        "talent": ["tl_nightmare_1", "tl_nightmare_2"],
+        "mastery": ["ms_nightmare_hellcentipedetechnique"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Draw out a fragment of true darkness, roaming and hunting for warmth."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_shadowplay",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Shadow Play",
+        "job_id": "jb_shade",
+        "talent": ["tl_shadowplay_1", "tl_shadowplay_2"],
+        "mastery": ["ms_shadowplay_palerattechnique"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Using forbidden scroll techniques, you confuse the senses of foes and allies alike."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_umbralecho",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true,
+            "Power Die": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Umbral Echo",
+        "job_id": "jb_shade",
+        "talent": ["tl_umbralecho_1", "tl_umbralecho_2"],
+        "mastery": ["ms_umbralecho_bunshin"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You split echoes of your soul into clones that overlay your movements."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_assassinate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "End Turn": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_vagabond",
+        "name": "Assassinate",
+        "job_id": "jb_shade",
+        "talent": ["tl_assassinate_1", "tl_assassinate_2"],
+        "mastery": ["ms_assassinate_thousandyearlizardtechnique"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You step through the air, emerging from the shadow of your foe, where they find only gleaming knives."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_nocturne",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_vagabond",
+        "name": "Nocturne",
+        "job_id": "jb_shade",
+        "talent": ["tl_nocturne_1", "tl_nocturne_2"],
+        "mastery": ["ms_nocturne_trapdoorspidertechnique"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You capture a thin silver thread of spilled life force of a foe and use it to tear open a space of night and cold."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_incubus",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "Mark": true,
+            "boon": 1,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_vagabond",
+        "name": "Incubus",
+        "job_id": "jb_shade",
+        "talent": ["tl_incubus_1", "tl_incubus_2"],
+        "mastery": ["ms_incubus_toxicwidowtechnique"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The thirteenth scroll art, a void-sheathed blade that cuts away at the aether of the very soul, leaving a cut that creates slashed darkness."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_succubus"
+            }
+        ]
+    },
+    {
+        "id": "ab_apex",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "boon": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Apex",
+        "job_id": "jb_warden",
+        "talent": ["tl_apex_1", "tl_apex_2"],
+        "mastery": ["ms_apex_loadedquiver"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your strike is a clarion call to the forest, the plains, and the deep places of the Green, bringing forth their denizens to fight for you."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_gwynt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Gwynt",
+        "job_id": "jb_warden",
+        "talent": ["tl_gwynt_1", "tl_gwynt_2"],
+        "mastery": ["ms_gwynt_greatgwynt"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "With catlike reflexes, you pounce, spurring allies to action."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_circletheoak",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Circle the Oak",
+        "job_id": "jb_warden",
+        "talent": ["tl_circletheoak_1", "tl_circletheoak_2"],
+        "mastery": ["ms_circletheoak_timbersplit"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Ten palm strikes with the heel of the hand or the haft of the axe will shatter even the most tenacious bark."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_miststrider",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "Terrain Effect": true,
+            "Summon": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Mist Strider",
+        "job_id": "jb_warden",
+        "talent": ["tl_miststrider_1", "tl_miststrider_2"],
+        "mastery": ["ms_miststrider_riverguardians"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Call on the beasts of the deep mists and rains, whose form is shadow and water."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_stampede",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Mark": true,
+            "Summon": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Stampede",
+        "job_id": "jb_warden",
+        "talent": ["tl_stampede_1", "tl_stampede_2"],
+        "mastery": ["ms_stampede_lordofthesteppe"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "With a bellow or a clenched fist, you summon an immense spirit to pound your enemies."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_strengthofthepack",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "Stance": true,
+            "Aura": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_vagabond",
+        "name": "Strength of the Pack",
+        "job_id": "jb_warden",
+        "talent": ["tl_strengthofthepack_1", "tl_strengthofthepack_2"],
+        "mastery": ["ms_strengthofthepack_cuchulainn"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Your senses sync with those of the herd, and you strike as one."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_underway",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_vagabond",
+        "name": "Underway",
+        "job_id": "jb_warden",
+        "talent": ["tl_underway_1", "tl_underway_2"],
+        "mastery": ["ms_underway_baleportal"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You open the greenways to your allies, allowing them to step the branch-paths and cross distances in an instant."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_underway"
+            }
+        ]
+    },
+    {
+        "id": "ab_morrigan",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Delay": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_vagabond",
+        "name": "Morrigan",
+        "job_id": "jb_warden",
+        "talent": ["tl_morrigan_1", "tl_morrigan_2"],
+        "mastery": ["ms_morrigan_darkwing"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You call in the winged warriors of the sky to smite your foes."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_sidhe",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "Melee": true,
+            "boon": 1
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_vagabond",
+        "name": "Morrigan",
+        "job_id": "jb_warden",
+        "talent": ["tl_sidhe_1", "tl_sidhe_2"],
+        "mastery": ["ms_sidhe_greatfumepoison"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Dip your weapons in the toxins of the deadliest creatures to roam the deep green. Mere preparation of this technique requires years of ritual, patience, and training."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_holy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 5,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Holy",
+        "job_id": "jb_chanter",
+        "talent": ["tl_holy_1", "tl_holy_2"],
+        "mastery": ["ms_holy_magnasancti"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You ring the bell of purity and a tone rings out that soothes the peaceful and chastises the violent. A second ring from the bell shatters the tone from the first, breaking open the earth."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_hades"
+            }
+        ]
+    },
+    {
+        "id": "ab_felicity",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "Mark": true,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Felicity",
+        "job_id": "jb_chanter",
+        "talent": ["tl_felicity_1", "tl_felicity_2"],
+        "mastery": ["ms_felicity_fantasia"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You ring the bell of fleeting guardians, and an ally feels their step lifted by invisible wings."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_fleet"
+            }
+        ]
+    },
+    {
+        "id": "ab_pandaemonium",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 5,
+            "Blast": "medium",
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Pandaemonium",
+        "job_id": "jb_chanter",
+        "talent": ["tl_pandaemonium_1", "tl_pandaemonium_2"],
+        "mastery": ["ms_pandaemonium_dulcepurgatorio"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You sing a passage of the days of chaos and battle, where the tumult of the battlefield was like the churning of the sea, and divine lightning scathed the land."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_fleet"
+            }
+        ]
+    },
+    {
+        "id": "ab_aria",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "True Strike": true,
+            "Delay": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Aria",
+        "job_id": "jb_chanter",
+        "talent": ["tl_aria_1", "tl_aria_2"],
+        "mastery": ["ms_aria_powerchord"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You pose, then deliver a striking performance that resonates through the soul."
+        }],
+        "description": [
+        ]
+    },
+    {
+        "id": "ab_dervish",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Dervish",
+        "job_id": "jb_chanter",
+        "talent": ["tl_dervish_1", "tl_dervish_2"],
+        "mastery": ["ms_dervish_beaconofhope"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You sing of the comfort of companions, and the dawn that surely will follow."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_dawn"
+            }
+        ]
+    },
+    {
+        "id": "ab_symphony",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "True Strike": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Symphony",
+        "job_id": "jb_chanter",
+        "talent": ["tl_symphony_1", "tl_symphony_2"],
+        "mastery": ["ms_symphony_crescendo"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You ring the bell of thresholds, creating crystalline fragments of the ancient power that courses through the Chant."
+        }],
+        "description": [
+        ]
+    },
+    {
+        "id": "ab_gentleness",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Gentleness",
+        "job_id": "jb_chanter",
+        "talent": ["tl_gentleness_1", "tl_gentleness_2"],
+        "mastery": ["ms_gentleness_gentleprayer"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You radiate an aura of such powerful peace that all close to you, monster or man, find it impossible to raise a hand in violence."
+        }],
+        "description": [
+        ]
+    },
+    {
+        "id": "ab_monogatari",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Gamble": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Monogatari",
+        "job_id": "jb_chanter",
+        "talent": ["tl_monogatari_1", "tl_monogatari_2"],
+        "mastery": ["ms_monogatari_raconteur"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Some chanters also study the Book of Ages, the great mythic chronicle of heroes from the time of the Doom. This unorthodox text inherits some of their ability to sing the chant, granting it tangible power."
+        }],
+        "description": [
+        ]
+    },
+    {
+        "id": "ab_chastise",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 5,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_mendicant",
+        "name": "Chastise",
+        "job_id": "jb_chanter",
+        "talent": ["tl_chastise_1", "tl_chastise_2"],
+        "mastery": ["ms_chastise_supremeforbiddance"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You ring the bell of true names, forbidding your foes in august tones against harming an ally."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_charism"
+            }
+        ]
+    },
+    {
+        "id": "ab_sow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 4,
+            "Mark": true,
+            "Pierce": true,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Sow",
+        "job_id": "jb_harvester",
+        "talent": ["tl_sow_1", "tl_sow_2"],
+        "mastery": ["ms_sow_spectralscythe"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You throw out a poison seed that bursts into thorny death."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_reap"
+            }
+        ]
+    },
+    {
+        "id": "ab_growingseason",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Growing Season",
+        "job_id": "jb_harvester",
+        "talent": ["tl_growingseason_1", "tl_growingseason_2"],
+        "mastery": ["ms_growingseason_soothingspore"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Blow magical spores in the air, which are disturbed by the chaos of combat. Where they fall, the fruit of life and death blooms."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_gravebirth",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Gravebirth",
+        "job_id": "jb_harvester",
+        "talent": ["tl_gravebirth_1", "tl_gravebirth_2"],
+        "mastery": ["ms_gravebirth_recycle"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Vine and root coil through the deep soil, bringing forth the restless dead."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_harvest",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "arc": 6
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Harvest",
+        "job_id": "jb_harvester",
+        "talent": ["tl_harvest_1", "tl_harvest_2"],
+        "mastery": ["ms_harvest_harvestmoon"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You swing with a blade as bright as the new moon."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_bloodgrove",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2,
+            "Terrain Effect": true,
+            "Summon": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Blood Grove",
+        "job_id": "jb_harvester",
+        "talent": ["tl_bloodgrove_1", "tl_bloodgrove_2"],
+        "mastery": ["ms_bloodgrove_hungrygrove"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The wilderness boils with explosive growth, fed by the blood of the battlefield."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_rot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Combo": true,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Rot",
+        "job_id": "jb_harvester",
+        "talent": ["tl_rot_1", "tl_rot_2"],
+        "mastery": ["ms_rot_regrowth"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Leaves shrivel. Hair Curls. Wounds fail to heal."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_regenerate"
+            }
+        ]
+    },
+    {
+        "id": "ab_crimsonbloom",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Mark": true,
+            "Summon": true,
+            "Power Die": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Crimson Bloom",
+        "job_id": "jb_harvester",
+        "talent": ["tl_crimsonbloom_1", "tl_crimsonbloom_2"],
+        "mastery": ["ms_crimsonbloom_motherbloodwillow"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You release a rapidly growing seed of the Thornwillow, the blood-fatted plant of the harvesters whose sap is a powerful intoxicant."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_fairyring",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "End Turn": true,
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Fairy Ring",
+        "job_id": "jb_harvester",
+        "talent": ["tl_fairyring_1", "tl_fairyring_2"],
+        "mastery": ["ms_fairyring_sporeshroud"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You cast out a handful of aether-feeding fungi, holy spores that grow into a ringed garden of colorful and deadly mushrooms."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_spiritaway"
+            }
+        ]
+    },
+    {
+        "id": "ab_darksliver",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 2
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_mendicant",
+        "name": "Dark Sliver",
+        "job_id": "jb_harvester",
+        "talent": ["tl_darksliver_1", "tl_darksliver_2"],
+        "mastery": ["ms_darksliver_recycle"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The blade edges of the harvesters are so sharp they can cut the very soul."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_godhand",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "God Hand",
+        "job_id": "jb_sealer",
+        "talent": ["tl_godhand_1", "tl_godhand_2"],
+        "mastery": ["ms_godhand_fistsofheavenandhell"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Divine energy infuses you, allowing hammer-like blows that would fell a demon with even your bare hands."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_devilhand"
+            }
+        ]
+    },
+    {
+        "id": "ab_grandseal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Grand Seal",
+        "job_id": "jb_sealer",
+        "talent": ["tl_grandseal_1", "tl_grandseal_2"],
+        "mastery": ["ms_grandseal_milksutra"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Bind an enemy in an astral seal, condemning them and crushing them under the weight of their own evil."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_matsuri",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Matsuri",
+        "job_id": "jb_sealer",
+        "talent": ["tl_matsuri_1", "tl_matsuri_2"],
+        "mastery": ["ms_matsuri_bloodfestival"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Swing your weapon in a flaming arc that sends sprays of fire in bright displays, lighting up the sky."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_spiritshrine",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Spirit Shrine",
+        "job_id": "jb_sealer",
+        "talent": ["tl_spiritshrine_1", "tl_spiritshrine_2"],
+        "mastery": ["ms_spiritshrine_spiritpatronage"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Many sealers carry portable shrines to the local spirits, adding on talismans, images, icons, or offerings to whichever small god holds dominion over the areas they travel through. In a pinch, they can set these shrines down and beseech the spirits for aid."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_shrine"
+            }
+        ]
+    },
+    {
+        "id": "ab_sanctify",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Sanctify",
+        "job_id": "jb_sealer",
+        "talent": ["tl_sanctify_1", "tl_sanctify_2"],
+        "mastery": ["ms_sanctify_eldensalt"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You throw out a handful of glittering salt, scorching the spiritually impure."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_grandbanishment",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Grand Banishment",
+        "job_id": "jb_sealer",
+        "talent": ["tl_grandbanishment_1", "tl_grandbanishment_2"],
+        "mastery": ["ms_grandbanishment_horseandoxseal"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "With a word and a quickly drawn talisman, you stomp your foot and forbid your foe from taking another step towards you."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_divineaegis",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Divine Aegis",
+        "job_id": "jb_sealer",
+        "talent": ["tl_divineaegis_1", "tl_divineaegis_2"],
+        "mastery": ["ms_divineaegis_shroudfromheaven"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You place a holy seal over your ally, enveloping them in divine protection."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_justice",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Justice",
+        "job_id": "jb_sealer",
+        "talent": ["tl_justice_1", "tl_justice_2"],
+        "mastery": ["ms_justice_granjudicata"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Invoking the spirits of the land and air, you move at impossible speed, doling out blows faster than the eye can see. A second blow scatters your foes and whisks away your allies."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_judgement"
+            }
+        ]
+    },
+    {
+        "id": "ab_openthegates",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_mendicant",
+        "name": "Open The Gates",
+        "job_id": "jb_sealer",
+        "talent": ["tl_openthegates_1", "tl_openthegates_2"],
+        "mastery": ["ms_openthegates_burialfist"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "This aptly named technique can be used to deliver an extremely powerful blow - but focusing the body’s aether in such a way takes a long time to recharge."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_centerthetemple"
+            }
+        ]
+    },
+    {
+        "id": "ab_sleightofhand",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 5,
+            "Blast": "small",
+            "Summon": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Sleight of Hand",
+        "job_id": "jb_seer",
+        "talent": ["tl_sleightofhand_1", "tl_sleightofhand_2"],
+        "mastery": ["ms_sleightofhand_kingofswords"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A flash of bright color, and a card is stuck to your foe, bursting into arcane fire in a flash."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_wildcard"
+            }
+        ]
+    },
+    {
+        "id": "ab_chaostarot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "Blast": "small",
+            "Summon": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Chaos Tarot",
+        "job_id": "jb_seer",
+        "talent": ["tl_chaostarot_1", "tl_chaostarot_2"],
+        "mastery": ["ms_chaostarot_royaltygold"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential. You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_wildcard"
+            }
+        ]
+    },
+    {
+        "id": "ab_astra",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "line": 5,
+            "Combo": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Astra",
+        "job_id": "jb_seer",
+        "talent": ["tl_astra_1", "tl_astra_2"],
+        "mastery": ["ms_astra_thechalice"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You call down the heavens themselves on your foes."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_fortuna"
+            }
+        ]
+    },
+    {
+        "id": "ab_polaris",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Polaris",
+        "job_id": "jb_seer",
+        "talent": ["tl_polaris_1", "tl_polaris_2"],
+        "mastery": ["ms_polaris_moonsilverprincess"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A distant glint in the heavens, portents of the devastation to come."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_sisyphus",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Sisyphus",
+        "job_id": "jb_seer",
+        "talent": ["tl_sisyphus_1", "tl_sisyphus_2"],
+        "mastery": ["ms_sisyphus_blackknightgrave"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You bend a character’s fate, reversing causality so that the very ground warps under their feet."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_granreversa",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true,
+            "Aura": true,
+            "type": "interrupt",
+            "Power Die": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_mendicant",
+        "name": "Gran Reversa",
+        "job_id": "jb_seer",
+        "talent": ["tl_granreversa_1", "tl_granreversa_2"],
+        "mastery": ["ms_granreversa_misericordia"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Causality unmakes itself around you, as wounds heal instantly."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_reversefate"
+            }
+        ]
+    },
+    {
+        "id": "ab_eclipse",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "Delay": true,
+            "End Turn": true,
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Eclipse",
+        "job_id": "jb_seer",
+        "talent": ["tl_eclipse_1", "tl_eclipse_2"],
+        "mastery": ["ms_eclipse_thehelm"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "No blurb."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_wish",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_mendicant",
+        "name": "Wish",
+        "job_id": "jb_seer",
+        "talent": ["tl_wish_1", "tl_wish_2"],
+        "mastery": ["ms_wish_starscornedhermit"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You struggle against fate itself, undoing causality and defying the stars."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_thetower",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 5,
+            "Gamble": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_mendicant",
+        "name": "The Tower",
+        "job_id": "jb_seer",
+        "talent": ["tl_thetower_1", "tl_thetower_2"],
+        "mastery": ["ms_thetower_superbolide"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You invoke the ultimate power of the tower card, sealing a foe’s fate. In short order, untold calamity befalls them."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_pyre",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 5,
+            "type": "attack",
+            "Blast": "medium"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Pyre",
+        "job_id": "jb_enochian",
+        "talent": ["tl_pyre_1", "tl_pyre_2"],
+        "mastery": ["ms_pyre_magnapyre"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Power curls into a writhing ball in your hand, before it's unleashed on your enemies."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_pyrotic"
+            }
+        ]
+    },
+    {
+        "id": "ab_eldenrune",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Elden Rune",
+        "job_id": "jb_enochian",
+        "talent": ["tl_eldenrune_1", "tl_eldenrune_2"],
+        "mastery": ["ms_eldenrune_arkenrune"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You carve a burning rune of power into the very ground beneath you."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_greatrune"
+            }
+        ]
+    },
+    {
+        "id": "ab_lance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "line": 8
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Lance",
+        "job_id": "jb_enochian",
+        "talent": ["tl_lance_1", "tl_lance_2"],
+        "mastery": ["ms_lance_greatspiritlance"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A flash scorches the eyeballs, and a thin line burns through rock, flesh, and armor."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_volvaga"
+            }
+        ]
+    },
+    {
+        "id": "ab_soulburn",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Soul Burn",
+        "job_id": "jb_enochian",
+        "talent": ["tl_soulburn_1", "tl_soulburn_2"],
+        "mastery": ["ms_soulburn_soulspark"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You stoke the furnace with the very essence of your being."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_incandius"
+            }
+        ]
+    },
+    {
+        "id": "ab_blazingbond",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Soul Burn",
+        "job_id": "jb_enochian",
+        "talent": ["tl_blazingbond_1", "tl_blazingbond_2"],
+        "mastery": ["ms_blazingbond_greatsoulbond"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You link the soul Aether of you and a companion with a chain of pure fire aether, drawing from the strength of one to bolster the other."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_heartfire"
+            }
+        ]
+    },
+    {
+        "id": "ab_aethershard",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "Object": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Aethershard",
+        "job_id": "jb_enochian",
+        "talent": ["tl_aethershard_1", "tl_aethershard_2"],
+        "mastery": ["ms_aethershard_aethershift"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You crystallize ambient Aether with force of will, forcing it to take a useful form."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_aethershard"
+            }
+        ]
+    },
+    {
+        "id": "ab_implode",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "End Turn": true,
+            "Delay": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Implode",
+        "job_id": "jb_enochian",
+        "talent": ["tl_implode_1", "tl_implode_2"],
+        "mastery": ["ms_implode_wakingvoid"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You burn away the air itself, creating a sucking void that rips your foes into its howling embrace."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_null"
+            }
+        ]
+    },
+    {
+        "id": "ab_pyroclast",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Pyroclast",
+        "job_id": "jb_enochian",
+        "talent": ["tl_pyroclast_1", "tl_pyroclast_2"],
+        "mastery": ["ms_pyroclast_magmotic"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Taking a page from the geomancers, Enochians can send a pulse of fire aether into the earth itself, causing tectonic upheaval."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_pyrospire"
+            }
+        ]
+    },
+    {
+        "id": "ab_blackstar",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 8,
+            "Blast": "large",
+            "type": "attack",
+            "Pierce": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_wright",
+        "name": "Blackstar",
+        "job_id": "jb_enochian",
+        "talent": ["tl_blackstar_1", "tl_blackstar_2"],
+        "mastery": ["ms_blackstar_greatspiritbomb"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You burn and condense your own aether into super condensed form, creating a crackling black orb that inflicts maximum destruction. Without the time to stabilize this attack, its use can rip away your very life force."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_astralblackstar"
+            }
+        ]
+    },
+    {
+        "id": "ab_bio",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "type": "attack",
+            "Blast": "small"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Bio",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_bio_1", "tl_bio_2"],
+        "mastery": ["ms_bio_magnabio"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The earth splits, excising poison from its depths, belching poisonous metals and gases."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_biotic"
+            }
+        ]
+    },
+    {
+        "id": "ab_dragondive",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "End Turn": true,
+            "Delay": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Dragon Dive",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_dragondive_1", "tl_dragondive_2"],
+        "mastery": ["ms_dragondive_doubledragon"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The earth is an old friend to geomancers, and will allow them passage as easily as slipping into water."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_boulderkick"
+            }
+        ]
+    },
+    {
+        "id": "ab_geo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "arc": 6,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Geo",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_geo_1", "tl_geo_2"],
+        "mastery": ["ms_geo_magnageo"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The stomp of a foot or the slap of a palm is magnified a hundered fold into rumbling death."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_geotic"
+            }
+        ]
+    },
+    {
+        "id": "ab_helixheel",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 3
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Helix Heel",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_helixheel_1", "tl_helixheel_2"],
+        "mastery": ["ms_helixheel_spiralcrusher"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Striking deep into the earth, a wave of strength resonates with the very terrain around oneself."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_terraforming",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Terraforming",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_terraforming_1", "tl_terraforming_2"],
+        "mastery": ["ms_terraforming_ancienteruption"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The key of creation is turned, and the land is shaped like clay, as the Titans once did."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_earthblood"
+            }
+        ]
+    },
+    {
+        "id": "ab_obsidianflesh",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Stance": true,
+            "Power Die": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Obsidian Flesh",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_obsidianflesh_1", "tl_obsidianflesh_2"],
+        "mastery": ["ms_obsidianflesh_diamondsoul"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Like the deepest magma in the earth's crust, your flesh becomes more stony when struck, eventually becoming covered in a gleaming obsidian shell."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_realignment",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Realignment",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_realignment_1", "tl_realignment_2"],
+        "mastery": ["ms_realignment_jadeneedle"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Using your knowledge of innumerable anatomies, you quickly rearrange energy channels in your target to heal them - forcefully."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_medicinepalm"
+            }
+        ]
+    },
+    {
+        "id": "ab_midas",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Midas",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_midas_1", "tl_midas_2"],
+        "mastery": ["ms_midas_stoneresonance"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "In a flash, flesh becomes unyielding stone."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_quakingpalm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "type": "attack",
+            "Pierce": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_wright",
+        "name": "Quaking Palm",
+        "job_id": "jb_geomancer",
+        "talent": ["tl_quakingpalm_1", "tl_quakingpalm_2"],
+        "mastery": ["ms_quakingpalm_purehaeon"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You hit your target with a pressure wave, setting up lethal vibrations in their body that are strong enough to crack the earth beneath their feet."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_primalburst"
+            }
+        ]
+    },
+    {
+        "id": "ab_blitz",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "type": "attack",
+            "Pierce": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Blitz",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_blitz_1", "tl_blitz_2"],
+        "mastery": ["ms_blitz_gungnir"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A thousand needles of light, each striking a perfect blow."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_granblitz"
+            }
+        ]
+    },
+    {
+        "id": "ab_odinforce",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Power Die": true,
+            "Stance": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Odinforce",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_odinforce_1", "tl_odinforce_2"],
+        "mastery": ["ms_odinforce_levinblades"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You thrust your weapon skyward, and pierce the heavens."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_nothung",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2,
+            "type": "attack",
+            "arc": 4
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Nothung",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_nothung_1", "tl_nothung_2"],
+        "mastery": ["ms_nothung_excalibur"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You summon a blade of pure lightning energy, sweeping it in a shining arc."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_gram"
+            }
+        ]
+    },
+    {
+        "id": "ab_atherwand",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Ätherwand",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_atherwand_1", "tl_atherwand_2"],
+        "mastery": ["ms_atherwand_hellerwind"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You summon the highwinds to batter your foes."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_athersturm"
+            }
+        ]
+    },
+    {
+        "id": "ab_fulminate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Fulminate",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_fulminate_1", "tl_fulminate_2"],
+        "mastery": ["ms_fulminate_handoftyr"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You charge your target with unstable magnetic energy, causing unstoppable attractive force."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_bifrost",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Bifröst",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_bifrost_1", "tl_bifrost_2"],
+        "mastery": ["ms_bifrost_pathtoerenhelion"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You slash a line of rampant multicolored lightning aether, a blinding arch of light that can carry you or your allies to safety."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_heimdall"
+            }
+        ]
+    },
+    {
+        "id": "ab_rampantnail",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "Power Die": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Rampant Nail",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_rampantnail_1", "tl_rampantnail_2"],
+        "mastery": ["ms_rampantnail_voraciousnail"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A weapon of pure lightning energy impales itself into the earth, flying froma a phantom arsenal, and crackling with potential."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_lightningspike"
+            },
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_ruinos"
+            }
+        ]
+    },
+    {
+        "id": "ab_sturmreiten",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Sturmreiten",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_sturmreiten_1", "tl_sturmreiten_2"],
+        "mastery": ["ms_sturmreiten_mjollnir"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You transmute yourself and your gear into pure lightning Aether, coursing through the boundaries between worlds in a moment."
+        }],
+        "description": []
+    },
+    {
+        "id": "ab_driftingleaf",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "line": 6
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_wright",
+        "name": "Drifting Leaf",
+        "job_id": "jb_spellblade",
+        "talent": ["tl_driftingleaf_1", "tl_driftingleaf_2"],
+        "mastery": ["ms_driftingleaf_greatcyclone"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Agile and alert, your swordcraft spells doom for your foe. When they go to retaliate, you were never there."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_leafonthewind"
+            },
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_phantomblade"
+            }
+        ]
+    },
+    {
+        "id": "ab_rime",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "line": 6,
+            "Summon": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Rime",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_rime_1", "tl_rime_2"],
+        "mastery": ["ms_rime_magnarime"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You pull an enormous weapon made out of pure ice out of the air, and hurl it through foes."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_dagon"
+            }
+        ]
+    },
+    {
+        "id": "ab_tsunami",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Tsunami",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_tsunami_1", "tl_tsunami_2"],
+        "mastery": ["ms_tsunami_legendarystorm"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The stormbenders can ride swells of water as easily as any terrestrial steed. For those not as gifted, the experience is less pleasant."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_stormlash"
+            }
+        ]
+    },
+    {
+        "id": "ab_cryo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 8,
+            "Pierce": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Cryo",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_cryo_1", "tl_cryo_2"],
+        "mastery": ["ms_cryo_magnacryo"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You shoot a spear of frozen water aether at your foe, stirring up ambient water aether in the air."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_cryotic"
+            }
+        ]
+    },
+    {
+        "id": "ab_geyser",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Object": true,
+            "Summon": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Geyser",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_geyser_1", "tl_geyser_2"],
+        "mastery": ["ms_geyser_greatgeyser"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You awaken the water aether lying dormant in the land or sea, causing it to surge up in a vigorous burst."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_volcanicgeyser"
+            }
+        ]
+    },
+    {
+        "id": "ab_gust",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Gust",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_gust_1", "tl_gust_2"],
+        "mastery": ["ms_gust_northsoul"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The stormbenders are friend to breeze and gale, and have learned how to coax the wind into doing their bidding."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_greatgust"
+            }
+        ]
+    },
+    {
+        "id": "ab_heaveho",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_wright",
+        "name": "Heave-Ho",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_heaveho_1", "tl_heaveho_2"],
+        "mastery": ["ms_heaveho_tidalsmash"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Better get your sea legs."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_saltsprite"
+            }
+        ]
+    },
+    {
+        "id": "ab_deepwrath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "Mark": true
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Deepwrath",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_deepwrath_1", "tl_deepwrath_2"],
+        "mastery": ["ms_deepwrath_darktide"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Better get your sea legs."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_saltsprite"
+            }
+        ]
+    },
+    {
+        "id": "ab_waterspout",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 2,
+        "class_id": "cl_wright",
+        "name": "Waterspout",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_waterspout_1", "tl_waterspout_2"],
+        "mastery": ["ms_waterspout_hurricane"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "You grab the reigns of the storm and pull it to earth, causing a rippling tornado of water."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_saltsprite"
+            }
+        ]
+    },
+    {
+        "id": "ab_eyeofthestorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "Blast": "medium",
+            "type": "attack",
+            "Pierce": true
+        },
+        "eventtags": {},
+        "chapter": 3,
+        "class_id": "cl_wright",
+        "name": "Eye of the Storm",
+        "job_id": "jb_stormbender",
+        "talent": ["tl_eyeofthestorm_1", "tl_eyeofthestorm_2"],
+        "mastery": ["ms_eyeofthestorm_greataeoncloud"],
+        "blurb": [{
+            "tags": {"desc_type" : "subeffect"},
+            "content": "A storm of vigorous tunder and acid rain descends at your command, but the center remains calm."
+        }],
+        "description": [
+            {
+                "tags": {"desc_type" : "addon"},
+                "content": "ad_aeoncloud"
+            }
+        ]
     }
 ]

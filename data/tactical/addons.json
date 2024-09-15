@@ -220,7 +220,35 @@
         ]
     },
     {
-        "id": "ad_cheattime",
+        "id": "ad_penumbra",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Penumbra",
+        "class_id": "cl_vagabond",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_flyingsleeves",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "arc": 4
+        },
+        "eventtags": {},
+        "name": "Flying Sleeves",
+        "class_id": "cl_vagabond",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_soulproxy",
         "type": "Addon",
         "source": "core",
         "tags": { 
@@ -228,26 +256,155 @@
             "interrupt": 1
         },
         "eventtags": {},
-        "name": "Cheat Time",
+        "name": "Soul Proxy",
         "class_id": "cl_vagabond",
         "description":  [
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Trigger:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "The start or end of any turn other than yours."
-                                }]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Effect:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "Gamble, then the marked character dashes a number of spaces equal to the gamble result, 1 space at a time. Each tim they finish a dash, they may deal 2 damage to an adjacent foe, but cannot damage the same foe more than once in the same turn.",
-                                    "glossary": [{"val": "Gamble", "id": "gl_gamble"}, {"val": "marked", "id": "gl_mark"}, {"val": "dashes", "id": "gl_dash"}]
-                                }]
-            }
+        ]
+    },
+    {
+        "id": "ad_succubus",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Succubus",
+        "class_id": "cl_vagabond",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_underway",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "Object": true
+        },
+        "eventtags": {},
+        "name": "Underway",
+        "class_id": "cl_vagabond",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_hades",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Hades",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_fleet",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Fleet",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_fantasia",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Fantasia",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_purgatorio",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Purgatorio",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_dawn",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Dawn",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_charism",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Charism",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_reap",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Reap",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_regenerate",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Regenerate",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_spiritaway",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Spirit Away",
+        "class_id": "cl_mendicant",
+        "description":  [
         ]
     },
     {
@@ -281,6 +438,108 @@
                         ]
     },
     {
+        "id": "ad_devilhand",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Devil Hand",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_fistsofheavenandhell",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Fists of Heaven and Hell",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_shrine",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "height": 1,
+            "Object": true
+        },
+        "eventtags": {},
+        "name": "Shrine",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_graceofthespirits",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Grace of the Spirits",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_judgement",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "type": "interrupt",
+            "interrupt": 1,
+            "Gamble": true
+        },
+        "eventtags": {},
+        "name": "Judgement",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_granjudicata",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Gran Judicata",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_centerthetemple",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Center The Temple",
+        "class_id": "cl_mendicant",
+        "description":  [
+        ]
+    },
+    {
         "id": "ad_thegreatwheel",
         "type": "Addon",
         "source": "core",
@@ -298,6 +557,21 @@
                 "tags": {"desc_type" : "table"},
                 "content": "tb_thegreatwheel"
             }
+        ]
+    },
+    {
+        "id": "ad_fortuna",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true,
+            "range": 5,
+            "Blast": "medium"
+        },
+        "eventtags": {},
+        "name": "Fortuna",
+        "class_id": "cl_mendicant",
+        "description":  [
         ]
     },
     {
@@ -319,12 +593,260 @@
                     ]
     },
     {
+        "id": "ad_pyrotic",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Pyrotic",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_greatrune",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Great Rune",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_volvaga",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Volvaga",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_greatspiritlance",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 6,
+            "action": 2,
+            "type": "attack",
+            "line": 10,
+            "width": 3
+        },
+        "eventtags": {},
+        "name": "Great Spirit Lance",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_incandius",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 4
+        },
+        "eventtags": {},
+        "name": "Incandius",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_heartfire",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Heartfire",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_aethershard",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "height": 1,
+            "Object": true
+        },
+        "eventtags": {},
+        "name": "Aethershard",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_null",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 4
+        },
+        "eventtags": {},
+        "name": "Null",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_pyroclast",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Pyroclast",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_astralblackstar",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 5
+        },
+        "eventtags": {},
+        "name": "Astral Blackstar",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_biotic",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Biotic",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_magnabio",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 6,
+            "action": 2,
+            "type": "attack",
+            "range": 8,
+            "Blast": "large"
+        },
+        "eventtags": {},
+        "name": "Magnabio",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_boulderkick",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Boulder Kick",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_geotic",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3,
+            "arc": 8
+        },
+        "eventtags": {},
+        "name": "Boulder Kick",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_magnageo",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 6,
+            "action": 2,
+            "type": "attack",
+            "arc": 10
+        },
+        "eventtags": {},
+        "name": "Magnageo",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_earthblood",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 2
+        },
+        "eventtags": {},
+        "name": "Earthblood",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_medicinepalm",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 2
+        },
+        "eventtags": {},
+        "name": "Medicine Palm",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_primalburst",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Primal Burst",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
         "id": "ad_ragnarok",
         "type": "Addon",
         "source": "core",
         "tags": {
-            "Slay": true,
-            "or infuse": 3
+            "Slay or": true,
+            "infuse": 3
         },
         "eventtags": {},
         "name": "Ragnarök",
@@ -340,5 +862,260 @@
                             }]
                         }
                     ]
+    },
+    {
+        "id": "ad_granblitz",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Slay or": true,
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Gran Blitz",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_gram",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Slay or": true,
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Gram",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_athersturm",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": "X"
+        },
+        "eventtags": {},
+        "name": "Äthersturm",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_heimdall",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Slay or": true,
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Heimdall",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_lightningspike",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Terrain Effect": true
+        },
+        "eventtags": {},
+        "name": "Lightning Spike",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_ruinos",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Slay or": true,
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Ruinös",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_leafonthewind",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Leaf on the Wind",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_phantomblade",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Slay or": true,
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Phantom Blade",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_dagon",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Dagon",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_magnarime",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": "X"
+        },
+        "eventtags": {},
+        "name": "Magnarime",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_stormlash",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 1
+        },
+        "eventtags": {},
+        "name": "Stormlash",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_cryotic",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Cryotic",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_magnacryo",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": "X"
+        },
+        "eventtags": {},
+        "name": "Magnacryo",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_volcanicgeyser",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Volcanic Geyser",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_greatgust",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 4
+        },
+        "eventtags": {},
+        "name": "Great Gust",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_tidalsmash",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": "X"
+        },
+        "eventtags": {},
+        "name": "Tidal Smash",
+        "class_id": "cl_wright",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The shove spaces become shove X."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "foes are shattered.",
+                    "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                }],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+            
+        ]
+    },
+    {
+        "id": "ad_greatwaterspout",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 2
+        },
+        "eventtags": {},
+        "name": "Great Waterspout",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
+    },
+    {
+        "id": "ad_aeoncloud",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "infuse": 3
+        },
+        "eventtags": {},
+        "name": "Aeoncloud",
+        "class_id": "cl_wright",
+        "description":  [
+        ]
     }
 ]
