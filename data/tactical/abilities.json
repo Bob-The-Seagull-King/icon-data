@@ -4570,7 +4570,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Your foe is <i>sealed</i>.",
+                                    "content": "Your foe is sealed.",
                                     "glossary": [{"val": "sealed", "id": "gl_sealed"}]
                                 }]
             },
@@ -4634,7 +4634,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "If that character is bloodied, repeat this effect. Foes are additionally <i>pacified</i>.",
+                                    "content": "If that character is bloodied, repeat this effect. Foes are additionally pacified.",
                                     "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "pacified", "id": "gl_pacified"}]
                                 }]
             }
@@ -4800,7 +4800,7 @@
                 "content": "Terrain Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Grow a <i>medium blast</i> area of undergrowth, with its center space in range. The area is dangerous terrain for foes and disappears if you use this ability again.",
+                                    "content": "Grow a medium blast area of undergrowth, with its center space in range. The area is dangerous terrain for foes and disappears if you use this ability again.",
                                     "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
                                 }]
             },
@@ -4809,18 +4809,18 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "As long as you are in the area, summon a <i>thrall</i> in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:",
+                                    "content": "As long as you are in the area, summon a thrall in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:",
                                     "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
                                 }]
             },
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "• Triggered a <i>slay</i> effect",
+                "content": "• Triggered a slay effect",
                 "glossary": [{"val": "slay", "id": "gl_slay"}]
             },
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "• Sacrificed</i> as part of an ability",
+                "content": "• Sacrificed as part of an ability",
                 "glossary": [{"val": "Sacrificed", "id": "gl_sacrifice"}]
             },
             {
@@ -5098,7 +5098,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "<i>Seal</i> your foe, then bless yourself or an ally in range 2.",
+                                    "content": "Seal your foe, then bless yourself or an ally in range 2.",
                                     "glossary": [{"val": "Seal", "id": "gl_sealed"}]
                                 }]
             },
@@ -5144,7 +5144,7 @@
                 "content": "Mark:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "A foe in range becomes <i>sealed</i> and <i>marked</i>. While marked, after they use an ability that damages an ally of yours, they take 2 <i>divine</i> damage. A foe can pass a save at the end of their turn to end this mark.",
+                                    "content": "A foe in range becomes sealed and marked. While marked, after they use an ability that damages an ally of yours, they take 2 divine damage. A foe can pass a save at the end of their turn to end this mark.",
                                     "glossary": [{"val": "sealed", "id": "gl_sealed"}, {"val": "marked", "id": "gl_mark"}, {"val": "divine", "id": "gl_divine"}]
                                 }],
                 "glossary": [{"val": "Mark", "id": "gl_mark"}]

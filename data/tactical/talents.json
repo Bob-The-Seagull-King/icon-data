@@ -2826,7 +2826,7 @@
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "create an <i>Eden vine</i> <i>terrain effect</i> in an adjacent space. The vine is <i>difficult terrain</i> and a <i>pit</i> and creates a",
+                        "content": "create an Eden vine terrain effect in an adjacent space. The vine is difficult terrain and a pit and creates a",
                         "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "pit", "id": "gl_pit"}]
                     },
                     {
@@ -2861,7 +2861,7 @@
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "create a height 1 <i>blood tree</i> object in adjacent space. The tree creates a"
+                        "content": "create a height 1 blood tree object in adjacent space. The tree creates a"
                     },
                     {
                         "tags": {"desc_type" : "textsummon"},
@@ -3230,7 +3230,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Bloodied foes are also <i>pacified</i>+ while marked.",
+                "content": "Bloodied foes are also pacified+ while marked.",
                 "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}, {"val": "marked", "id": "gl_mark"}]
             }
         ]

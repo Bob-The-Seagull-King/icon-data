@@ -732,7 +732,7 @@
                 "content": "Mark:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Mark a character in range 4. If that character would be defeated before the start of your next turn, they are instantly <i>rescued</i> after being defeated, then gain a vigor surge and become unstoppable until the end of their next turn. Then, even if this effect didn’t trigger, summon a",
+                                    "content": "Mark a character in range 4. If that character would be defeated before the start of your next turn, they are instantly rescued after being defeated, then gain a vigor surge and become unstoppable until the end of their next turn. Then, even if this effect didn’t trigger, summon a",
                                     "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "vigor surge", "id": "gl_vigorsurge"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
                                 },
                                 {
@@ -856,7 +856,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Character explodes in a medium blast <i>area effect</i> centered on them, dealing 1 <i>divine</i> damage to all foes.",
+                                    "content": "Character explodes in a medium blast area effect centered on them, dealing 1 divine damage to all foes.",
                                     "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "divine", "id": "gl_divine"}]
                                 }]
             },
@@ -919,7 +919,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "<i>Seal</i> your foe, then bless yourself or an ally in range 2.",
+                                    "content": "Seal your foe, then bless yourself or an ally in range 2.",
                                     "glossary": [{"val": "Seal", "id": "gl_sealed"}]
                                 }]
             },
@@ -928,7 +928,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Character explodes in a medium blast <i>area effect</i> centered on them, dealing 1 <i>divine</i> damage to all foes.",
+                                    "content": "Character explodes in a medium blast area effect centered on them, dealing 1 divine damage to all foes.",
                                     "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "divine", "id": "gl_divine"}]
                                 }]
             },
