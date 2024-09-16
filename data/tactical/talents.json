@@ -2491,7 +2491,24 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Hades resolves, gamble, then all pits in the area explode for a medium blast area effect, centered on them.",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "pits", "id": "gl_pit"}, {"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "characters in at least one area take damage equal to half the gamble result."
+                    }
+                ],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            }
+        ]
     },
 	{
         "id": "tl_holy_2",
@@ -2500,7 +2517,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may fly 1 before using Holy, or 3 when charged.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "charged", "id": "gl_charge"}]
+            }
+        ]
     },
     {
         "id": "tl_felicity_1",
@@ -2509,7 +2532,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When an ally ends any movement from this ability, they can shove all adjacent characters 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
     },
 	{
         "id": "tl_felicity_2",
@@ -2518,7 +2547,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can fly 1, then shove an adjacent character 1 when granting movement from this ability.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_pandaemonium_1",
@@ -2527,7 +2562,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Pandaemonium resolves, gamble. Shove all characters affected 1 space in any direction. On a 4+, shove them 1 again. On a 6, shove them 1 again.",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "Shove", "id": "gl_shove"}]
+            }
+        ]
     },
 	{
         "id": "tl_pandaemonium_2",
@@ -2536,7 +2577,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Purgatorio’s damage does not break pacified and its effect causes pits to appear under every pacified foe.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "pits", "id": "gl_pit"}]
+            }
+        ]
     },
     {
         "id": "tl_aria_1",
@@ -2545,7 +2592,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may fly 1 when Aria’s special effect triggers.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
     },
 	{
         "id": "tl_aria_2",
@@ -2554,7 +2607,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If Aria’s special effect triggers twice, gain defiance and also become unstoppable until the start of your turn.",
+                "glossary": [{"val": "defiance", "id": "gl_defiance"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+            }
+        ]
     },
     {
         "id": "tl_dervish_1",
@@ -2563,7 +2622,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A swirling aura 1 of winds surrounds you after taking this ability until the start of your next turn, granting you and allies inside counter.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "counter", "id": "gl_counter"}]
+            }
+        ]
     },
 	{
         "id": "tl_dervish_2",
@@ -2572,7 +2637,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Before you use this ability, you can cause a wind blast, shoving all adjacent foes 1 and dealing 2 damage to them.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_symphony_1",
@@ -2581,7 +2652,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When motes explode, they deal 2 damage again to all foes inside and shove them 1 away from the center space if at least one other mote was already exploded this turn.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
     },
 	{
         "id": "tl_symphony_2",
@@ -2590,7 +2667,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies are cured after detonating their second mote in the same turn.",
+                "glossary": [{"val": "cured", "id": "gl_cure"}]
+            }
+        ]
     },
     {
         "id": "tl_gentleness_1",
@@ -2599,7 +2682,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Yourself and allies inside the aura also have counter in this stance.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "counter", "id": "gl_counter"}, {"val": "stance", "id": "gl_stance"}]
+            }
+        ]
     },
 	{
         "id": "tl_gentleness_2",
@@ -2608,7 +2697,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters cannot critically hit or be critical hit inside Gentleness’ aura, and also cannot gain, deal, or take bonus damage.",
+                "glossary": [{"val": "critical hit", "id": "gl_criticalhit"}, {"val": "aura", "id": "gl_aura"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
     },
     {
         "id": "tl_monogatari_1",
@@ -2617,7 +2712,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can cause the effect to also apply to foes. Foes that fulfill the condition are sealed.",
+                "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+            }
+        ]
     },
 	{
         "id": "tl_monogatari_2",
@@ -2626,7 +2727,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can spend any number of blessings on characters in range 2 to roll 1 extra d6 per blessing spent when gambling.",
+                "glossary": [{"val": "gambling", "id": "gl_gamble"}]
+            }
+        ]
     },
     {
         "id": "tl_chastise_1",
@@ -2635,7 +2742,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While either effect from this ability is active, your foe takes 1 divine damage after using any ability that damages another character.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }
+        ]
     },
 	{
         "id": "tl_chastise_2",
@@ -2644,7 +2757,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While either effect from this ability is active, if your foe defeats any character, they take 1 divine damage three times.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }
+        ]
     },
     {
         "id": "tl_sow_1",

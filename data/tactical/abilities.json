@@ -4055,6 +4055,34 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe is pacified.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Cure a character in range 2 of that foe.",
+                                    "glossary": [{"val": "Cure", "id": "gl_cure"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Grant 3 vigor to all other characters of your choice in range 2 of your foe.",
+                                    "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_hades"
             }
@@ -4083,6 +4111,25 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark an ally in range. That character gains a blessing and can fly 2. Whenever you spend a combo token, your marked character can fly 2.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "combo", "id": "gl_combo"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "That ally gains two blessings instead."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_fleet"
             }
@@ -4093,7 +4140,7 @@
         "type": "Ability",
         "source": "core",
         "tags": {
-            "action": 1,
+            "action": 2,
             "type": "attack",
             "range": 5,
             "Blast": "medium",
@@ -4111,6 +4158,36 @@
             "content": "You sing a passage of the days of chaos and battle, where the tumult of the battlefield was like the churning of the sea, and divine lightning scathed the land."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Remove all characters in the area, then place them back in any other space in the area."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Increase area to Large Blast, and allies in the area gain 4 vigor.",
+                                    "glossary": [{"val": "Large Blast", "id": "gl_blast"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_fleet"
@@ -4138,6 +4215,25 @@
             "content": "You pose, then deliver a striking performance that resonates through the soul."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "End your turn and gain Delay:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "your next turn must be slow. At the start of that turn, you deliver a stunning performance, affecting a small blast area effect centered on you. Foes in the area take fray damage twice and are sealed. Sealed or Pacified foes are shoved 1. Allies in the area are cured.",
+                                    "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "fray", "id": "gl_fray"}, {"val": "sealed", "id": "gl_sealed"}, {"val": "Pacified", "id": "gl_pacified"}, {"val": "shoved", "id": "gl_shove"}, {"val": "cured", "id": "gl_cure"}]
+                                }],
+                "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "Delay", "id": "gl_delay"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If you are damaged by a foe’s ability before the start of that turn, the area becomes a medium blast. If you are damaged again, it becomes a large blast.",
+                                    "glossary": [{"val": "blast", "id": "gl_blast"}]
+                                }]
+            }
         ]
     },
     {
@@ -4161,6 +4257,24 @@
             "content": "You sing of the comfort of companions, and the dawn that surely will follow."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You fly 1, then whisk an ally in range away with powerful winds, removing them from the battlefield and placing them in any space adjacent to you.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Choose a second ally."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_dawn"
@@ -4187,6 +4301,33 @@
             "content": "You ring the bell of thresholds, creating crystalline fragments of the ancient power that courses through the Chant."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Remove up to four blessings from characters anywhere to create pulsing motes of energy that descend, creating terrain spaces in free space on the map. None can be placed adjacent to each other or overlap."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Any character that enters an affected space or starts their turn there detonates the mote, removing it and creating a small blast explosion as an area effect, centered on them. Foes inside take fray damage, and allies inside gain 2 vigor.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "fray damage", "id": "gl_fray"}, {"val": "vigor", "id": "gl_vigor"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• If the character was yourself or an ally, they are blessed and can fly 1. If that character was a foe, they also have a pit created under them.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "pit", "id": "gl_pit"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Create +2 more spaces."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
         ]
     },
     {
@@ -4209,6 +4350,24 @@
             "content": "You radiate an aura of such powerful peace that all close to you, monster or man, find it impossible to raise a hand in violence."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Gain Stance:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When you take this stance, you have aura 1. All characters (including yourself) in the aura gain +1 curse on attacks and take 1 divine damage each time they deal damage to another character.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "divine", "id": "gl_divine"}]
+                                }],
+                "glossary": [{"val": "Stance", "id": "gl_stance"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Refresh:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Refresh or exit this stance at the start of your turn."
+                                }]
+            }
         ]
     },
     {
@@ -4231,6 +4390,74 @@
             "content": "Some chanters also study the Book of Ages, the great mythic chronicle of heroes from the time of the Doom. This unorthodox text inherits some of their ability to sing the chant, granting it tangible power."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Sing a short passage from the book of ages. At the end of your turn, gamble and consult the following table to see which tale you sing. The song resonates in the air until this ability is used again. Yourself or allies that complete the described course of action from the song passage are blessed at the end of their turn they complete it and may fly 2. Characters can only fulfill this condition once per song.",
+                                    "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "fly", "id": "gl_flying"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Roll one extra d6 when gambling and choose any result.",
+                                    "glossary": [{"val": "gambling", "id": "gl_gamble"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "1.) A Tale of Fury:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Reduce a character to 0 hp or reduce them below 50% hp if above."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "2.) A Tale of Travels:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Move more than 4 spaces from your starting point on your turn."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "3.) A Tale of Green and Pleassant Times:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Do not attack."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "4.) A Tale of Cunning:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Use an interrupt.",
+                                    "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "5.) A Tale of Boon Companions:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "End your turn adjacent to an ally."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "6.) A Tale of Triumph:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Use an ability on an ally."
+                                }]
+            }
         ]
     },
     {
@@ -4255,6 +4482,46 @@
             "content": "You ring the bell of true names, forbidding your foes in august tones against harming an ally."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe is sealed.",
+                                    "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Choose either yourself or an ally in range. Until the end of your foe’s next turn, if they damage any character chosen with an ability, they take 1 divine damage three times at the end of that turn. Whether this ability triggered or not, this effect then ends.",
+                                    "glossary": [{"val": "divine", "id": "gl_divine"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Choose yourself and an ally in range."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_charism"

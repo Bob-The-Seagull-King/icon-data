@@ -428,6 +428,42 @@
         "name": "Hades",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains True Strike and Medium Blast.",
+                "glossary": [{"val": "True Strike", "id": "gl_truestrike"}, {"val": "Medium Blast", "id": "gl_blast"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray damage.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Fray damage.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Create a pit under your target.",
+                                    "glossary": [{"val": "pit", "id": "gl_pit"}]
+                                }]
+            }
         ]
     },
     {
@@ -441,6 +477,15 @@
         "name": "Fleet",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "An ally in range 5 is blessed and may fly 4. For every foe or ally they pass over during this movement, they gain 2 vigor.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
         ]
     },
     {
@@ -455,6 +500,23 @@
         "name": "Fantasia",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Remove an ally in range 5 from the battlefield. Return them to the battlefield in their original location or as close as possible at the start of their turn, then they may fly 1.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Reduce the action cost of this ability by 1 for every two blessing tokens your target has, down to a minimum of a free action."
+                                }]
+            }
         ]
     },
     {
@@ -468,6 +530,46 @@
         "name": "Purgatorio",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "All pits in the area explode for a medium blast area effect, centered on them.",
+                                    "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Create a pit under the attack target.",
+                                    "glossary": [{"val": "pit", "id": "gl_pit"}]
+                                }]
+            }
         ]
     },
     {
@@ -481,6 +583,15 @@
         "name": "Dawn",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gain aura 1 until the end of your next turn. While in the aura, yourself and allies gain +1 boon on saves and can save to end statuses and other effects at the start of your turns instead of the end.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "+1 boon", "id": "gl_boon"}, {"val": "statuses", "id": "gl_status"}]
+                                }]
+            }
         ]
     },
     {
@@ -494,6 +605,15 @@
         "name": "Charism",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Choose a foe in range. At the end of that foe’s next turn, either cure or bless allies in a small blast area centered on them (choose). If there were two or more allies in the area, then create a pit under that foe.",
+                                    "glossary": [{"val": "cure", "id": "gl_cure"}, {"val": "pit", "id": "gl_pit"}]
+                                }]
+            }
         ]
     },
     {

@@ -1334,7 +1334,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Holy creates a small blast terrain effect after resolving. Only one of these areas can be placed at once. Allies have flying in the area, and allies that end their turn in the area may gain 2 vigor."
+                "content": "Holy creates a small blast terrain effect after resolving. Only one of these areas can be placed at once. Allies have flying in the area, and allies that end their turn in the area may gain 2 vigor.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "flying", "id": "gl_flying"}, {"val": "vigor", "id": "gl_vigor"}]
             }
         ]
     },
@@ -1348,7 +1349,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain an alternate {{{{combo}}}} ability. You can choose this ability or Fleet when you spend a token:"
+                "content": "Gain an alternate combo ability. You can choose this ability or Fleet when you spend a token:",
+                "glossary": [{"val": "combo", "id": "gl_combo"}]
             },
             {
                 "tags": {"desc_type" : "addon"},
@@ -1366,7 +1368,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "This ability deals bonus damage. Pandaemonium’s area effect and Purgatorio’s pit explosion effect extend to all pits on the battlefield."
+                "content": "This ability deals bonus damage. Pandaemonium’s area effect and Purgatorio’s pit explosion effect extend to all pits on the battlefield.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "pit", "id": "gl_pit"}]
             }
         ]
     },
@@ -1380,7 +1383,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "At round 4 or later, Aria gains charge: free action."
+                "content": "At round 4 or later, Aria gains charge: free action.",
+                "glossary": [{"val": "charge", "id": "gl_charge"}]
             }
         ]
     },
@@ -1394,7 +1398,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can empower this ability to gain both effects at once and automatically activate their charge effects. This also counts as spending a combo token, though you don’t actually need to spend one. If you empower the ability this way, it cannot be used for the rest of combat."
+                "content": "You can empower this ability to gain both effects at once and automatically activate their charge effects. This also counts as spending a combo token, though you don’t actually need to spend one. If you empower the ability this way, it cannot be used for the rest of combat.",
+                "glossary": [{"val": "combo", "id": "gl_combo"}]
             }
         ]
     },
@@ -1422,7 +1427,17 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gains Special Effect: When the aura refreshes, you may increase or decrease the aura size by +1, to a maximum of 3 or a minimum of 1. When you do, foes inside must save or be pacified."
+                "content": "Gain"
+            },
+            {   "tags": {"desc_type" : "subeffect"},
+                "content": "Special Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When the aura refreshes, you may increase or decrease the aura size by +1, to a maximum of 3 or a minimum of 1. When you do, foes inside must save or be pacified.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"}]
+                    }
+                ]
             }
         ]
     },
@@ -1436,7 +1451,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Roll 1 extra d6 when gambling, and when gambling, you can choose any two results. Yourself and allies that complete both results in the same turn are also cured."
+                "content": "Roll 1 extra d6 when gambling, and when gambling, you can choose any two results. Yourself and allies that complete both results in the same turn are also cured.",
+                "glossary": [{"val": "gambling", "id": "gl_gamble"}, {"val": "cured", "id": "gl_cure"}]
             }
         ]
     },
@@ -1450,7 +1466,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The first time you use this ability in a combat, any character chosen is immune to all damage from the chosen foe until the start of your next turn."
+                "content": "The first time you use this ability in a combat, any character chosen is immune to all damage from the chosen foe until the start of your next turn.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}]
             }
         ]
     },
@@ -1552,7 +1569,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain an alternate {{{{combo}}}} action:"
+                "content": "Gain an alternate combo action:"
             },
             {
                 "tags": {"desc_type" : "addon"},
