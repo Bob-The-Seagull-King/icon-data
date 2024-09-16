@@ -3145,8 +3145,7 @@
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Ability gains range 6.",
-                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                        "content": "Ability gains range 6."
                     }
                 ],
                 "glossary": [{"val": "Sacrifice", "id": "gl_sacrifice"}]
@@ -3160,7 +3159,24 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All versions of this ability gain"
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exceed:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gain evasion until the end of your next turn.",
+                        "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+                    }
+                ],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            }
+        ]
     },
 	{
         "id": "tl_godhand_2",
@@ -3169,7 +3185,25 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase teleports to 2, and all version of this ability gain",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Slay:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "gain or lose a combo token.",
+                        "glossary": [{"val": "combo", "id": "gl_combo"}]
+                    }
+                ],
+                "glossary": [{"val": "Slay", "id": "gl_slay"}]
+            }
+        ]
     },
     {
         "id": "tl_grandseal_1",
@@ -3178,7 +3212,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied foes gain +1 curse on saves while marked.",
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "marked", "id": "gl_mark"}]
+            }
+        ]
     },
 	{
         "id": "tl_grandseal_2",
@@ -3187,7 +3227,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied foes are also <i>pacified</i>+ while marked.",
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}, {"val": "marked", "id": "gl_mark"}]
+            }
+        ]
     },
     {
         "id": "tl_matsuri_1",

@@ -1646,7 +1646,17 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Dark Sliver can summon a mote of life instead of any regular plant. A mote of life is a plant, but becomes a terrain effect when its blessing is removed. Inside, any ally gains regeneration while standing in its space."
+                "content": "Dark Sliver can summon a mote of life instead of any regular plant. A mote of life is a",
+                "glossary": [{"val": "summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_plant"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "but becomes a terrain effect when its blessing is removed. Inside, any ally gains regeneration while standing in its space.",
+                "glossary": [{"val": "regeneration", "id": "gl_regeneration"}]
             }
         ]
     },
@@ -1675,7 +1685,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Add an alternate combo action. It gains all talent effects of this ability."
+                "content": "Add an alternate combo action. It gains all talent effects of this ability.",
+                "glossary": [{"val": "combo", "id": "gl_combo"}]
             },
             {
                 "tags": {"desc_type" : "addon"},
@@ -1693,7 +1704,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "When this mark ends, if there is a new foe in range 3 of your target, you may transfer it to that foe."
+                "content": "When this mark ends, if there is a new foe in range 3 of your target, you may transfer it to that foe.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
             }
         ]
     },

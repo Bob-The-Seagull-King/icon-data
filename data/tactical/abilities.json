@@ -5063,6 +5063,56 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleport 1.",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "<i>Seal</i> your foe, then bless yourself or an ally in range 2.",
+                                    "glossary": [{"val": "Seal", "id": "gl_sealed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You and allies in range 2 gain 3 vigor.",
+                                    "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_devilhand"
             }
@@ -5088,7 +5138,18 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Bind an enemy in an astral seal, condemning them and crushing them under the weight of their own evil."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe in range becomes <i>sealed</i> and <i>marked</i>. While marked, after they use an ability that damages an ally of yours, they take 2 <i>divine</i> damage. A foe can pass a save at the end of their turn to end this mark.",
+                                    "glossary": [{"val": "sealed", "id": "gl_sealed"}, {"val": "marked", "id": "gl_mark"}, {"val": "divine", "id": "gl_divine"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            }
+        ]
     },
     {
         "id": "ab_matsuri",
