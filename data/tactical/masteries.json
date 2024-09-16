@@ -1499,7 +1499,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Reap and Sow also create an arc 4 area effect drawn from your target as the origin space, that cannot include your target. Foes inside take 2 piercing damage, and allies inside gain 2 vigor."
+                "content": "Reap and Sow also create an arc 4 area effect drawn from your target as the origin space, that cannot include your target. Foes inside take 2 piercing damage, and allies inside gain 2 vigor.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "vigor", "id": "gl_vigor"}]
             }
         ]
     },
@@ -1513,7 +1514,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Foes marked by Growing Season are pacified+ while in or adjacent to spaces occupied by plants."
+                "content": "Foes marked by Growing Season are pacified+ while in or adjacent to spaces occupied by plants.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}]
             }
         ]
     },
@@ -1541,7 +1543,16 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "When this ability passes through a plant, you can cause that plant to explode, dealing 2 piercing damage in a small blast area effect centered on each plant, and granting its blessing character to yourself or any other ally in range 3 of that plant. Characters can only be damaged by one of these explosions a turn."
+                "content": "When this ability passes through a"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_plant"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "you can cause that plant to explode, dealing 2 piercing damage in a small blast area effect centered on each plant, and granting its blessing character to yourself or any other ally in range 3 of that plant. Characters can only be damaged by one of these explosions a turn.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
             }
         ]
     },
@@ -1555,7 +1566,16 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Each time you summon a thrall with Blood Grove, extend the area by 1 space, added to its total area, as long as those spaces are placed adjacent to the area when the effect is triggered."
+                "content": "Each time you summon a",
+                "glossary": [{"val": "summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_thrall"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "with Blood Grove, extend the area by 1 space, added to its total area, as long as those spaces are placed adjacent to the area when the effect is triggered."
             }
         ]
     },
@@ -1569,11 +1589,12 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain an alternate combo action:"
+                "content": "Gain an alternate combo action:",
+                "glossary": [{"val": "combo", "id": "gl_combo"}]
             },
             {
                 "tags": {"desc_type" : "addon"},
-                "content": "ad_regenerate"
+                "content": "ad_regrowth"
             }
         ]
     },
@@ -1587,7 +1608,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "At round 4 or later, Crimson Bloom becomes a free action and its power die starts at 3 ticks."
+                "content": "At round 4 or later, Crimson Bloom becomes a free action and its power die starts at 3 ticks.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
             }
         ]
     },
@@ -1601,7 +1623,16 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Whenever the rings’ interrupt activates, create a height 1 Megamushroom object anywhere inside or adjacent to the area. The object has a blessing token on it and counts as a plant, but isn’t removed if the token is removed."
+                "content": "Whenever the rings’ interrupt activates, create a height 1 Megamushroom object anywhere inside or adjacent to the area. The object has a blessing token on it and counts as a",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_plant"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "but isn’t removed if the token is removed."
             }
         ]
     },

@@ -2772,7 +2772,18 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If Sow’s marked foe is defeated, it can be transferred to a different foe in range 3 from that foe."
+                    }
+                ]
+            }
+        ]
     },
 	{
         "id": "tl_sow_2",
@@ -2781,7 +2792,20 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Reap’s Slay effect triggers.",
+                        "glossary": [{"val": "Slay", "id": "gl_slay"}]
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
     {
         "id": "tl_growingseason_1",
@@ -2790,7 +2814,33 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Abilities used against a character marked by Growing Season gain",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "slay:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "create an <i>Eden vine</i> <i>terrain effect</i> in an adjacent space. The vine is <i>difficult terrain</i> and a <i>pit</i> and creates a",
+                        "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "pit", "id": "gl_pit"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_plant"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in its space at the start of the round if there isn't already a plant there."
+                    }
+                ],
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            }
+        ]
     },
 	{
         "id": "tl_growingseason_2",
@@ -2799,7 +2849,32 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Abilities used against a character marked by Growing Season gain",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "slay:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "create a height 1 <i>blood tree</i> object in adjacent space. The tree creates a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_plant"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "on top of it at the start of the round if there isn't already a plant there."
+                    }
+                ],
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            }
+        ]
     },
     {
         "id": "tl_gravebirth_1",
@@ -2808,7 +2883,27 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When you end your turn, all"
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_thrall"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "of your choice burrow, removing them from the battlefield, then you may place them in free space in your aura.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}]
+                    }
+                ]
+            }
+        ]
     },
 	{
         "id": "tl_gravebirth_2",
@@ -2817,7 +2912,23 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the end of your turn, you may sacrifice 2 to summon an additional",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_thrall"
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "tl_harvest_1",
@@ -2826,7 +2937,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies in the area also gain 2 vigor, or 4 vigor if Harvest’s Slay effect triggers.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "Slay", "id": "gl_slay"}]
+            }
+        ]
     },
 	{
         "id": "tl_harvest_2",
@@ -2835,7 +2952,23 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains Range 2."
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Range 5."
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
     {
         "id": "tl_bloodgrove_1",
@@ -2844,7 +2977,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "All spaces of the area cost 0 movement for thralls to enter."
+            }
+        ]
     },
 	{
         "id": "tl_bloodgrove_2",
@@ -2853,7 +2991,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "Once on your turn you, while inside the area, you can sacrifice 2 to extend the area by 2 spaces, adding to its total area on any edge.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
     },
     {
         "id": "tl_rot_1",
@@ -2862,7 +3006,33 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters marked by Regenerate gain",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "summon a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_plant"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in an adjacent space at the start of their turn."
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
 	{
         "id": "tl_rot_2",
@@ -2871,7 +3041,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that start their turn adjacent to a character marked by Rot take 2 piercing damage.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     },
     {
         "id": "tl_crimsonbloom_1",
@@ -2880,7 +3056,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "If Crimson Bloom’s damage would reduce an ally to 1 hp or below, they also gain defiance.",
+                "glossary": [{"val": "defiance", "id": "gl_defiance"}]
+            }
+        ]
     },
 	{
         "id": "tl_crimsonbloom_2",
@@ -2889,7 +3071,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes at 25% hp or lower sacrifice 10 instead.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
     },
     {
         "id": "tl_fairyring_1",
@@ -2898,7 +3086,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes cannot gain vigor inside of the ring, and lose all vigor if they start their turn there.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
     },
 	{
         "id": "tl_fairyring_2",
@@ -2907,7 +3101,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "desc"},
+                "content": "You can use Spirit Away on allies. If you do, it doesn’t seal them.",
+                "glossary": [{"val": "seal", "id": "gl_sealed"}]
+            }
+        ]
     },
     {
         "id": "tl_darksliver_1",
@@ -2916,7 +3116,20 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deal bonus damage and increase all ranges by +1.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
 	{
         "id": "tl_darksliver_2",
@@ -2925,7 +3138,20 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Sacrifice 2:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Ability gains range 6.",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    }
+                ],
+                "glossary": [{"val": "Sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
     },
     {
         "id": "tl_godhand_1",

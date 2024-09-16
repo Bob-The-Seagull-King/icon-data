@@ -627,6 +627,62 @@
         "name": "Reap",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Summon a",
+                                    "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_thrall"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "adjacent to your target."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Repeat the effect."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You can make this melee attack against the target marked by Sow regardless of distance or line of sight. It also gains unerring if made this way.",
+                                    "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+                                }]
+            }
         ]
     },
     {
@@ -640,6 +696,55 @@
         "name": "Regenerate",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark an ally in range. While marked, that character has regeneration. If that character is at 25% hp or lower when marked, they also gain defiance.",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "regeneration", "id": "gl_regeneration"}, {"val": "defiance", "id": "gl_defiance"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "This mark can be placed even if Rot is already active.",
+                                    "glossary": [{"val": "mark", "id": "gl_mark"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "ad_regrowth",
+        "type": "Addon",
+        "source": "core",
+        "tags": { 
+            "Combo": true
+        },
+        "eventtags": {},
+        "name": "Regrowth",
+        "class_id": "cl_mendicant",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark a character in range 4. If that character would be defeated before the start of your next turn, they are instantly <i>rescued</i> after being defeated, then gain a vigor surge and become unstoppable until the end of their next turn. Then, even if this effect didn’t trigger, summon a",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "vigor surge", "id": "gl_vigorsurge"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_plant"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in an adjacent space to them and end this mark.",
+                                    "glossary": [{"val": "mark", "id": "gl_mark"}]
+                                }]
+            }
         ]
     },
     {
@@ -654,6 +759,23 @@
         "name": "Spirit Away",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe enters or exits the area."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleport that foe 2 and seal them. This interrupts but does not end their movement.",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}, {"val": "seal", "id": "gl_sealed"}]
+                                }]
+            }
         ]
     },
     {

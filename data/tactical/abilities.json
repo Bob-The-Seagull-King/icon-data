@@ -4553,6 +4553,38 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your foe is <i>sealed</i>.",
+                                    "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You foe is marked. When marked, and after you attack your marked foe thereafter, bless yourself or an ally in range 3 of your target.",
+                                    "glossary": [{"val": "marked", "id": "gl_mark"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_reap"
             }
@@ -4578,7 +4610,36 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Blow magical spores in the air, which are disturbed by the chaos of combat. Where they fall, the fruit of life and death blooms."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark a character in range. Once a round after that character ends their turn, create a",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_plant"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "adjacent to their space."
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If that character is bloodied, repeat this effect. Foes are additionally <i>pacified</i>.",
+                                    "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            }
+            
+        ]
     },
     {
         "id": "ab_gravebirth",
@@ -4599,7 +4660,45 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Vine and root coil through the deep soil, bringing forth the restless dead."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Stance:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When you enter this stance, or when it refreshes, summon a",
+                                    "glossary": [{"val": "stance", "id": "gl_stance"}, {"val": "summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_thrall"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in free space in range 2. While in this stance, you have aura 2, with the following effects:",
+                                    "glossary": [{"val": "stance", "id": "gl_stance"}, {"val": "aura", "id": "gl_aura"}]
+                                }],
+                "glossary": [{"val": "Stance", "id": "gl_stance"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• At the end of your turn, you may consume any blessing tokens in the aura to summon one thrall in the aura per blessing consumed.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "aura", "id": "gl_aura"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• At the start of your turn, you can prevent up to three thralls in the area from collapsing into plants."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Refresh:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Refresh this stance once a round when you trigger a slay effect.",
+                                    "glossary": [{"val": "slay", "id": "gl_slay"}]
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_harvest",
@@ -4621,7 +4720,58 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You swing with a blade as bright as the new moon."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes take Fray damage. Allies are blessed.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Summon a",
+                                    "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_thrall"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "for each foe in the area, and deal 2 piercing damage again as an area effect to those foes.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }],
+                "glossary": [{"val": "Slay", "id": "gl_slay"}]
+            }
+        ]
     },
     {
         "id": "ab_bloodgrove",
@@ -4644,7 +4794,45 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "The wilderness boils with explosive growth, fed by the blood of the battlefield."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Grow a <i>medium blast</i> area of undergrowth, with its center space in range. The area is dangerous terrain for foes and disappears if you use this ability again.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "As long as you are in the area, summon a <i>thrall</i> in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Triggered a <i>slay</i> effect",
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Sacrificed</i> as part of an ability",
+                "glossary": [{"val": "Sacrificed", "id": "gl_sacrifice"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Are bloodied",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each condition can only trigger once."
+            }
+        ]
     },
     {
         "id": "ab_rot",
@@ -4668,6 +4856,16 @@
             "content": "Leaves shrivel. Hair Curls. Wounds fail to heal."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark a foe in range. While marked, that character cannot be cured, cannot gain or benefit from vigor, and gains +1 curse on saves. If that character is at 25% hp or lower when marked, they also lose defiance.",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "defiance", "id": "gl_defiance"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_regenerate"
@@ -4696,7 +4894,37 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You release a rapidly growing seed of the Thornwillow, the blood-fatted plant of the harvesters whose sap is a powerful intoxicant."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark a character in range. At the end of any turn that character took damage, or after they attack, set out a d6 power die or increase the die by 1. When the die would tick to 6, consume it. The marked character sacrifices 6, but then gains 6 vigor, deals bonus damage with all abilities, and becomes unstoppable until the end of their next turn.",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "power die", "id": "gl_powerdie"}, {"val": "sacrifices", "id": "gl_sacrifice"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When the die is consumed, summon a",
+                                    "glossary": [{"val": "summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_plant"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "and pass this mark to a new character of your choice in in range 3 of the original character. You must pass the mark if possible. If there are no valid characters, the mark ends.",
+                                    "glossary": [{"val": "mark", "id": "gl_mark"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            }
+        ]
     },
     {
         "id": "ab_fairyring",
@@ -4719,6 +4947,15 @@
             "content": "You cast out a handful of aether-feeding fungi, holy spores that grow into a ringed garden of colorful and deadly mushrooms."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "End your turn and create a ring of mushrooms, a burst 2 (self) terrain effect. The ring can be created overlapping any terrain and underneath characters. While the ring is active, gain the following interrupt. The ring lasts until this ability is used again.",
+                                    "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "burst 2", "id": "gl_burst"}, {"val": "interrupt", "id": "gl_interrupt"}]
+                                }]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_spiritaway"
@@ -4745,7 +4982,64 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "The blade edges of the harvesters are so sharp they can cut the very soul."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Cut away a part of the target’s soul, choosing a free space in range 3 of your foe. If the foe is not occupying that space at the end of their next turn, they take 2 piercing damage, are pacified, and summon a",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_plant"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in that space."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Create a"
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_plant"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in range 3 of your foe."
+                                }],
+                "glossary": [{"val": "Slay", "id": "gl_slay"}]
+            }
+        ]
     },
     {
         "id": "ab_godhand",
