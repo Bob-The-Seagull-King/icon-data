@@ -1335,6 +1335,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
+            "legend": "Blood Bound Band"
         },
         "eventtags": {},
         "name": "Blood Rune",
@@ -1357,6 +1358,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
+            "legend": "Blood Bound Band"
         },
         "eventtags": {},
         "name": "Boot's Boots",
@@ -1379,6 +1381,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
+            "legend": "Midan",
             "action": 1
         },
         "eventtags": {},
@@ -1398,6 +1401,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
+            "legend": "Midan"
         },
         "eventtags": {},
         "name": "Crystallized Greed",

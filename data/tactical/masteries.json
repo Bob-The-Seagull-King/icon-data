@@ -2640,7 +2640,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "The first time the marked character vacates a space during their turn, they leave a dangerous terrain space behind them. Marked allies are immune to dangerous terrain, and marked foes take +1 more damage from dangerous terrain.",
-                "glossary": [{"val": "marked", "id": "gl_marked"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "immune", "id": "gl_immune"}]
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "immune", "id": "gl_immune"}]
             }
         ]
     },
