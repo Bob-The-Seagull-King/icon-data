@@ -1719,7 +1719,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The first time you use Matsuri in a combat, you may increase all its teleports by +2, it deals bonus damage, and it triggers all exceed effects."
+                "content": "The first time you use Matsuri in a combat, you may increase all its teleports by +2, it deals bonus damage, and it triggers all exceed effects.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "exceed", "id": "gl_exceed"}]
             }
         ]
     },
@@ -1733,7 +1734,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain the following interrupt:"
+                "content": "Gain the following interrupt:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
             },
             {
                 "tags": {"desc_type" : "addon"},
@@ -1779,7 +1781,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "This mark can be activated twice before it fades."
+                "content": "This mark can be activated twice before it fades.",
+                "glossary": [{"val": "mark", "id": "gl_marked"}]
             }
         ]
     },
@@ -1793,7 +1796,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Add an alternate combo action:"
+                "content": "Add an alternate combo action:",
+                "glossary": [{"val": "combo", "id": "gl_combo"}]
             },
             {
                 "tags": {"desc_type" : "addon"},
@@ -1811,7 +1815,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Any version of this ability deals bonus damage and always triggers exceed effects at round 4 or later."
+                "content": "Any version of this ability deals bonus damage and always triggers exceed effects at round 4 or later.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "exceed", "id": "gl_exceed"}]
             }
         ]
     },

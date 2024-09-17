@@ -925,7 +925,7 @@
         "name": "Cure",
         "description":  [{
             "tags": {"desc_type" : "desc"},
-            "content": "A character that’s cured gains 4 vigor, or a vigor surge if they’re bloodied. Then, they may save against all statuses.",
+            "content": "A character that’s cured gains 4 vigor, or a vigor surge if they’re bloodied. Then, they may save against all statuses, ending them on a success.",
             "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "vigor surge", "id": "gl_vigorsurge"}, {"val": "bloodied", "id": "gl_bloodied"}],
             "subcontent":   []
         }]

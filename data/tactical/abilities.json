@@ -1,5 +1,205 @@
 [
     {
+        "id": "ab_standardmove",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 0
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_icon",
+        "name": "Standard Move",
+        "job_id": "jb_icon",
+        "talent": [],
+        "mastery": [],
+        "blurb": [],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Move up your speed."
+                        }
+                    ]
+    },
+    {
+        "id": "ab_dash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_icon",
+        "name": "Dash",
+        "job_id": "jb_icon",
+        "talent": [],
+        "mastery": [],
+        "blurb": [],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Dash half your speed, rounded up.",
+                            "glossary": [{"val": "dash", "id": "gl_dash"}]
+                        }
+                    ]
+    },
+    {
+        "id": "ab_interact",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_icon",
+        "name": "Interact",
+        "job_id": "jb_icon",
+        "talent": [],
+        "mastery": [],
+        "blurb": [],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Interact with something on the map that takes more than a few moments, such as pulling a lever, opening a heavy door, picking up a heavy object, etc."
+                        }
+                    ]
+    },
+    {
+        "id": "ab_rescue",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_icon",
+        "name": "Rescue",
+        "job_id": "jb_icon",
+        "talent": [],
+        "mastery": [],
+        "blurb": [],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Rescue an adjacent defeated ally. An ally that is rescued ends the incapacitated state on themselves and heals to full hit points, minus any wounds they’ve taken."
+                        }
+                    ]
+    },
+    {
+        "id": "ab_lightattack",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_icon",
+        "name": "Light Attack",
+        "job_id": "jb_icon",
+        "talent": [],
+        "mastery": [],
+        "blurb": [],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The range of this attack is determined by your class."
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        }
+                    ]
+    },
+    {
+        "id": "ab_heavyattack",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_icon",
+        "name": "Heavy Attack",
+        "job_id": "jb_icon",
+        "talent": [],
+        "mastery": [],
+        "blurb": [],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The range of this attack is determined by your class."
+                        },
+                        {
+                            "tags": {"desc_type" : "effect"},
+                            "content": "Attack:",
+                            "subcontent":   [{
+                                                "tags": {"desc_type" : "subeffect"},
+                                                "content": "On Hit:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "2[D] + fray.",
+                                                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                                }]
+                                            },
+                                            {
+                                                "tags": {"desc_type": "subeffect"},
+                                                "content": "Miss:",
+                                                "subcontent":   [{
+                                                                    "tags": [{"desc_type": "desc"}],
+                                                                    "content": "Fray.",
+                                                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                                }]
+                                            }]
+                        }
+                    ]
+    },
+    {
+        "id": "ab_recover",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "chapter": 1,
+        "class_id": "cl_icon",
+        "name": "Recover",
+        "job_id": "jb_icon",
+        "talent": [],
+        "mastery": [],
+        "blurb": [],
+        "description": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Cure yourself.",
+                            "glossary": [{"val": "Cure", "id": "gl_cure"}]
+                        }
+                    ]
+    },
+    {
         "id": "ab_Heracule",
         "type": "Ability",
         "source": "core",
@@ -5170,7 +5370,49 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Swing your weapon in a flaming arc that sends sprays of fire in bright displays, lighting up the sky."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleport 2. Allies in range 2 may teleport 1.",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Create a large blast explosion area effect centered on your foe. Yourself and allies inside gain 3 vigor. Foes take 2 divine damage.",
+                                    "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "divine", "id": "gl_divine"}]
+                                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            }
+        ]
     },
     {
         "id": "ab_spiritshrine",
@@ -5191,6 +5433,10 @@
             "content": "Many sealers carry portable shrines to the local spirits, adding on talismans, images, icons, or offerings to whichever small god holds dominion over the areas they travel through. In a pinch, they can set these shrines down and beseech the spirits for aid."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a shrine in a free adjacent space. The shrine can be placed on other objects, and lasts until this ability is used again without increasing its height (see below)."
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_shrine"
@@ -5216,7 +5462,26 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You throw out a handful of glittering salt, scorching the spiritually impure."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You scatter salt in a medium blast area effect in range, creating a terrain effect in those spaces. Foes in the area effect take 1 divine damage. While in the area, foes take +1 curse on saves and are pacified if they start or end their turn there. Allies inside the area take +1 boon on saves. The area persists until you take this action again or until the end of combat.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "divine", "id": "gl_divine"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+1 boon", "id": "gl_boon"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "After using any ability that triggers an exceed effect, deal 1 divine damage to all foes in the area, and grant 2 vigor to all allies in the area.",
+                                    "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "divine", "id": "gl_divine"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_grandbanishment",
@@ -5237,7 +5502,17 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "With a word and a quickly drawn talisman, you stomp your foot and forbid your foe from taking another step towards you."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleport 1, End your turn and choose a foe in range, sealing their movement with force of will. Until the end of that foe’s next turn, they take 3 divine damage after they or an ally uses any ability that moves them closer to you.",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}, {"val": "end your turn", "id": "gl_endturn"}, {"val": "divine", "id": "gl_divine"}]
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_divineaegis",
@@ -5259,7 +5534,18 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You place a holy seal over your ally, enveloping them in divine protection."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark an ally in range 3. While marked, any foe that attempts to use an ability that includes that ally as a target must first save. On a successful save, there are no further effects, and the mark remains active. On a failed save, the chosen ally is unstoppable and gains resistance to all damage from the triggering ability for its duration, then the mark fades.",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "resistance", "id": "gl_resistance"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            }
+        ]
     },
     {
         "id": "ab_justice",
@@ -5282,6 +5568,39 @@
             "content": "Invoking the spirits of the land and air, you move at impossible speed, doling out blows faster than the eye can see. A second blow scatters your foes and whisks away your allies."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You score a Critical Hit or trigger an Exceed effect.",
+                                    "glossary": [{"val": "Critical Hit", "id": "gl_criticalhit"}, {"val": "Exceed", "id": "gl_exceed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Burst 2 (self):",
+                                    "glossary": [{"val": "Burst 2", "id": "gl_burst"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes take 1 divine damage. Allies are blessed.",
+                                    "glossary": [{"val": "divine", "id": "gl_divine"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Then, teleport 2.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                                }]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_judgement"
@@ -5309,6 +5628,56 @@
             "content": "This aptly named technique can be used to deliver an extremely powerful blow - but focusing the body’s aether in such a way takes a long time to recharge."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleport 1.",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray and foe is pacified.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}, {"val": "pacified", "id": "gl_pacified"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Shove your foe 1, then teleport 1, then shove your foe 1, then teleport 1.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}, {"val": "teleport", "id": "gl_teleport"}]
+                                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "This attack gains +1 boon, cannot miss (turn any miss into a hit) and triggers any exceed effects the first time it is used in combat.",
+                                    "glossary": [{"val": "+1 boon", "id": "gl_boon"}, {"val": "exceed", "id": "gl_exceed"}]
+                                }]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_centerthetemple"

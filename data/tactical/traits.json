@@ -854,6 +854,14 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Grant a blessing token to a character in range 4."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can spend a blessing when making a save to gain +1 boon on that save. All Mendicant jobs also have different, alternative ways to spend blessings tokens. All blessings are discarded at the end of combat."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Blessings are not unique (they don’t ‘belong’ to a character) and as long as a character has blessings from anyone, they can use them for any effects that require blessing tokens, though only one type of blessing at once."
             }
                         ]
     },

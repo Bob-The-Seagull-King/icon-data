@@ -3242,7 +3242,25 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase teleports by +1 and gains",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Slay:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Repeat the teleport effect.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ],
+                "glossary": [{"val": "Slay", "id": "gl_slay"}]
+            }
+        ]
     },
 	{
         "id": "tl_matsuri_2",
@@ -3251,7 +3269,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied foes take bonus damage and must also save or be stunned.",
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
     },
     {
         "id": "tl_spiritshrine_1",
@@ -3260,7 +3284,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you or an ally ends their turn inside the Shrine’s aura and didn’t attack, they are blessed and gain 2 vigor.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
     },
 	{
         "id": "tl_spiritshrine_2",
@@ -3269,7 +3299,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that use any ability inside the shrine’s aura can be teleported 1 after the triggering ability resolves.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "teleported", "id": "gl_teleport"}]
+            }
+        ]
     },
     {
         "id": "tl_sanctify_1",
@@ -3278,7 +3314,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied foes must save if they attempt to enter the area. On a failed save, they cannot voluntarily enter the area until the start of their next turn.",
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}]
+            }
+        ]
     },
 	{
         "id": "tl_sanctify_2",
@@ -3287,7 +3329,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied allies inside gain 4 vigor for ending their turn inside instead.",
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
     },
     {
         "id": "tl_grandbanishment_1",
@@ -3296,7 +3344,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your chosen character treats you and any allies in range 2 of you as having cover.",
+                "glossary": [{"val": "cover", "id": "gl_cover"}]
+            }
+        ]
     },
 	{
         "id": "tl_grandbanishment_2",
@@ -3305,7 +3359,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied foes can be teleported 2 at the end of any turn this ability’s damage activates.",
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "teleported", "id": "gl_teleport"}]
+            }
+        ]
     },
     {
         "id": "tl_divineaegis_1",
@@ -3314,7 +3374,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If your ally is at 25% hp or lower when marked, marking them becomes a free action.",
+                "glossary": [{"val": "marked", "id": "gl_marked"}]
+            }
+        ]
     },
 	{
         "id": "tl_divineaegis_2",
@@ -3323,7 +3389,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If your ally is at 25% hp or lower when marked, they also gain defiance.",
+                "glossary": [{"val": "marked", "id": "gl_marked"}, {"val": "defiance", "id": "gl_defiance"}]
+            }
+        ]
     },
     {
         "id": "tl_justice_1",
@@ -3332,7 +3404,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies affected by either interrupt gain 2 vigor.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
     },
 	{
         "id": "tl_justice_2",
@@ -3341,7 +3419,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can teleport 1 space before and after triggering either interrupt.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
     },
     {
         "id": "tl_openthegates_1",
@@ -3350,7 +3434,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may teleport an ally in range 2 instead of teleporting yourself with any of this ability’s teleports.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_openthegates_2",
@@ -3359,7 +3449,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Both versions of this ability gains a range equal to the round number."
+            }
+        ]
     },
     {
         "id": "tl_sleightofhand_1",

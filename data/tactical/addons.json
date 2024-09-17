@@ -955,6 +955,42 @@
         "name": "Shrine",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Aura 2. You can use this ability again while adjacent to your shrine to increase its size, increasing the height by +1. The shrine gains additional benefits equal to its total height, including other objects it is stacked on:",
+                                    "glossary": [{"val": "Aura", "id": "gl_aura"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Height 1:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Yourself and allies in the aura have cover from characters from the outside and gain +1 boon on attack rolls.",
+                                    "glossary": [{"val": "cover", "id": "gl_cover"}, {"val": "+1 boon", "id": "gl_boon"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Height 2:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Yourself and allies in the aura gain 2 vigor when you end your turn there.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Height 3+:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Yourself and allies in the aura have evasion.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "evasion", "id": "gl_evasion"}]
+                                }]
+            }
         ]
     },
     {
@@ -969,6 +1005,24 @@
         "name": "Grace of the Spirits",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "An ally in the aura is damaged by an foe’s ability.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your ally becomes immune to all damage from the triggering ability. Destroy the shrine, then deal 2 divine damage, once, to the foe per height of the shrine. You cannot place shrines for the rest of combat.",
+                                    "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "divine", "id": "gl_divine"}]
+                                }]
+            }
         ]
     },
     {
@@ -985,6 +1039,24 @@
         "name": "Judgement",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You score a Critical Hit or trigger an Exceed effect.",
+                                    "glossary": [{"val": "Critical Hit", "id": "gl_criticalhit"}, {"val": "Exceed", "id": "gl_exceed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gamble, then you may teleport yourself and each character in range 2 half that far. Foes are pacified.",
+                                    "glossary": [{"val": "Gamble", "id": "gl_gamble"}, {"val": "teleport", "id": "gl_teleport"}, {"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            }
         ]
     },
     {
@@ -1000,6 +1072,24 @@
         "name": "Gran Judicata",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You score a Critical Hit or trigger an Exceed effect.",
+                                    "glossary": [{"val": "Critical Hit", "id": "gl_criticalhit"}, {"val": "Exceed", "id": "gl_exceed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deal 4 divine damage to all foes on the battlefield above bloodied, and all bloodied allies are blessed and gain 2 vigor.",
+                                    "glossary": [{"val": "divine", "id": "gl_divine"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
         ]
     },
     {
@@ -1015,6 +1105,46 @@
         "name": "Center The Temple",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleport spaces equal to the round number before the attack.",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deal 1 damage again to your target. At round 4 or later, increase this damage to 6."
+                                }],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            }
         ]
     },
     {
