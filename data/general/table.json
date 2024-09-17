@@ -2092,5 +2092,583 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_rule_advancement_combat",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Level", "Chapter", "Benefit"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_rule_advancement_combat_level0",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "0"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Choose a Job and two Abilities."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain 2 Ability Points and unlock Limit Break."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Relic."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Mastery Point."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Choose one of the following"
+                    },{
+                        "tags": {"desc_type" : "list"},
+                        "content": "",
+                        "subcontent": [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain a second Job and 2 Ability Points."
+                        },{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain a Mastery Point."
+                        }
+
+                        ]
+                    }
+
+                    ]
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain 1 Ability Point."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Relic."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level7",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "7"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Mastery Point."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level8",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "8"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Choose one of the following"
+                    },{
+                        "tags": {"desc_type" : "list"},
+                        "content": "",
+                        "subcontent": [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain a second Job and 2 Ability Points."
+                        },{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain a Mastery Point."
+                        }
+
+                        ]
+                    }
+
+                    ]
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level9",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "9"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Relic."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level10",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "10"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Mastery Point."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level11",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "11"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain 1 Ability Point."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_combat_level12",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "12"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Mastery Point."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_rule_advancement_narrative",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Level", "Chapter", "Benefit"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_rule_advancement_narrative_level0",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "0"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Choose a Culture and Kin type."
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Choose a Bond and gain 2 dots in a bond-specific action, and a Bond power"
+                        },
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain 4 extra dots to improve actions. None can be taken past 3 at level 0."
+                        }
+                    ]
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Bond Power and improve an action."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Bond Power and improve an action."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Bond Power."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Choose one of the following"
+                    },{
+                        "tags": {"desc_type" : "list"},
+                        "content": "",
+                        "subcontent": [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Improve two actions."
+                        },{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain a Bond power."
+                        }
+
+                        ]
+                    }
+
+                    ]
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Improve an action."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Bond power."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level7",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "7"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Improve an action."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level8",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "8"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "",
+                    "subcontent": [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Choose one of the following"
+                    },{
+                        "tags": {"desc_type" : "list"},
+                        "content": "",
+                        "subcontent": [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Improve two actions."
+                        },{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Gain a Bond power."
+                        }
+
+                        ]
+                    }
+
+                    ]
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level9",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "9"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Bond power."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level10",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "10"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Improve an action."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level11",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "11"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Improve an action."
+                }]
+            },
+            {
+                "id": "ti_rule_advancement_narrative_level12",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "12"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Gain a Bond power."
+                }]
+            }
+        ]
     }
 ]

@@ -235,5 +235,87 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "rs_advancement",
+        "type": "Ruleset",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Advancement",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters level from level 0 to level 1 after the first session."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of each session, each player checks the xp triggers for their character and gains xp if the trigger was fulfilled."
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Did you fulfill at least one of your Ideals? (1 xp) Two or more? (2 xp)"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Was your character challenged or tested, through combat or otherwise? (1 xp) Multiple times? (2 xp)"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Accomplished an ambition (group or personal)? (1-3 xp)"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Invoked Burdens at least once - (1 xp)"
+                    }
+
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When a character hits 15 xp, they clear their xp bar and accumulate a level up, which can be spent at the end of a interlude (a downtime period) or at the end of a session to level up their character. Characters can’t level higher than the chapter the game is currently in."
+            }
+        ],
+        "rules": [
+            {
+                "title": "Combat Advancement",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At level 1 and every level afterwards, characters gain +1 Ability Point when they hit 7 xp and go into a camp, enter an interlude, or at the end of a session."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Ability Points can be spent to gain a new Ability or unlock a Talent for an ability they already have. Only one of an Ability's talents can be unlocked."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "table"},
+                        "content": "tb_rule_advancement_combat"
+                    }
+                ]
+            },
+            {
+                "title": "Narrative Advancement",
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At level 0, no character can have an Action Rating higher than 3. From level 1 and onwards characters can only ever have one action at 4 dots."
+                    },
+                    { "tags": {"desc_type" : "gap"}, "content": "" },
+                    {
+                        "tags": {"desc_type" : "table"},
+                        "content": "tb_rule_advancement_narrative"
+                    }
+                ]
+            }
+        ]
     }
 ]
