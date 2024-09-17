@@ -276,7 +276,6 @@
 
                 ]
             },
-            { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "When a character hits 15 xp, they clear their xp bar and accumulate a level up, which can be spent at the end of a interlude (a downtime period) or at the end of a session to level up their character. Characters can’t level higher than the chapter the game is currently in."

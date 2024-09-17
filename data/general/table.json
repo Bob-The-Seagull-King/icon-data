@@ -2099,7 +2099,7 @@
         "source": "core",
         "tags": {},
         "eventtags": {},
-        "colnames": ["Level", "Chapter", "Benefit"],
+        "colnames": ["Lv", "Ch", "Benefit"],
         "description": [
         ],
         "items": [
@@ -2381,7 +2381,7 @@
         "source": "core",
         "tags": {},
         "eventtags": {},
-        "colnames": ["Level", "Chapter", "Benefit"],
+        "colnames": ["Lv", "Ch", "Benefit"],
         "description": [
         ],
         "items": [
