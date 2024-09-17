@@ -2030,7 +2030,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can put an Arkenrune down instead of a regular Elden Rune, but only one at a time, replacing the last Arkenrune you placed. Arkenrunes can't be scrubbed out, extend to a small blast area, and their benefits also extend to allies."
+                "content": "You can put an Arkenrune down instead of a regular Elden Rune, but only one at a time, replacing the last Arkenrune you placed. Arkenrunes can't be scrubbed out, extend to a small blast area, and their benefits also extend to allies.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}]
             }
         ]
     },
@@ -2044,7 +2045,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Gain access to the Great Spirit Lance infusion. Great Spirit Lance benefits from Pyre talents."
+                "content": "Gain access to the Great Spirit Lance infusion. Great Spirit Lance benefits from Lance talents."
             },
             {
                 "tags": {"desc_type" : "addon"},
@@ -2062,11 +2063,13 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Free Action: You can willingly siphon off your burning life force to empower your next ability sacrificing 4, then ending the stance."
+                "content": "Free Action: You can willingly siphon off your burning life force to empower your next ability sacrificing 4, then ending the stance.",
+                "glossary": [{"val": "sacrificing", "id": "gl_sacrifice"}, {"val": "stance", "id": "gl_stance"}]
             },
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The ability deals bonus damage, cannot miss (turn any attack miss into a hit), activates all exceed effects, and foes gain +1 curse on any saves."
+                "content": "The ability deals bonus damage, cannot miss (turn any attack miss into a hit), activates all exceed effects, and foes gain +1 curse on any saves.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "exceed", "id": "gl_exceed"}, {"val": "+1 curse", "id": "gl_curse"}]
             }
         ]
     },
@@ -2080,7 +2083,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "If one of the partners would take damage from an ability that would reduce them below 1 hp, the other can reduce themselves to 1 hp to grant that ally immunity to all damage from the triggering ability. The bond then snaps, ending this mark."
+                "content": "If one of the partners would take damage from an ability that would reduce them below 1 hp, the other can reduce themselves to 1 hp to grant that ally immunity to all damage from the triggering ability. The bond then snaps, ending this mark.",
+                "glossary": [{"val": "immunity", "id": "gl_immune"}]
             }
         ]
     },
@@ -2094,7 +2098,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "If you start or end your turn adjacent to an Aethershard, gain phasing until the end of your next turn. The spaces of objects cost a maximum of 0 spaces for you to enter for the same duration."
+                "content": "If you start or end your turn adjacent to an Aethershard, gain phasing until the end of your next turn. The spaces of objects cost a maximum of 0 spaces for you to enter for the same duration.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
             }
         ]
     },
@@ -2108,7 +2113,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can choose a character with this ability instead of a space, but it doesn't stun the center character. If that character is defeated, Implode immediately activates."
+                "content": "You can choose a character with this ability instead of a space, but it doesn't stun the center character. If that character is defeated, Implode immediately activates.",
+                "glossary": [{"val": "stun", "id": "gl_stunned"}]
             }
         ]
     },
@@ -2122,7 +2128,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Instead of creating a spire, you can create a magma-filled Pit. The pit is additionally dangerous terrain. When it appears, the eruption causes a medium blast area effect centered on your target that inflicts 2 piercing damage."
+                "content": "Instead of creating a spire, you can create a magma-filled Pit. The pit is additionally dangerous terrain. When it appears, the eruption causes a medium blast area effect centered on your target that inflicts 2 piercing damage.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
             }
         ]
     },
@@ -2136,7 +2143,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "When you use Blackstar, if it's special effect triggers, you can split sacrifice into 25% max hp to yourself, and 25% to an ally in range 4."
+                "content": "When you use Blackstar, if it's special effect triggers, you can split sacrifice into 25% max hp to yourself, and 25% to an ally in range 4.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
             }
         ]
     },

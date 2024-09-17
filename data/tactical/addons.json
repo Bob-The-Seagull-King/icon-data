@@ -1270,11 +1270,11 @@
         "name": "Tetraflare",
         "class_id": "cl_wright",
         "description":  [
-                        {
-                            "tags": {"desc_type" : "desc"},
-                            "content": "Deal [D] + fray twice instead.",
-                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
-                        }
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deal [D] + fray twice instead.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            }
                     ]
     },
     {
@@ -1288,6 +1288,11 @@
         "name": "Pyrotic",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase range to 10 and blast size to Large Blast. Create a pit under the attack target after this ability resolves.",
+                "glossary": [{"val": "Large Blast", "id": "gl_blast"}, {"val": "pit", "id": "gl_pit"}]
+            }
         ]
     },
     {
@@ -1295,12 +1300,75 @@
         "type": "Addon",
         "source": "core",
         "tags": { 
-            "infuse": 3
+            "infuse": 6,
+            "action": 2,
+            "type": "attack",
+            "range": 12,
+            "Blast": "large"
         },
         "eventtags": {},
         "name": "Magnapyre",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + Fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a pit under your attack target.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback or Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The area explodes again, dealing 2 piercing damage to all characters.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "Exceed", "id": "gl_exceed"}]
+            }
         ]
     },
     {
@@ -1314,6 +1382,11 @@
         "name": "Great Rune",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Grant the following effect to your rune: your attacks also shatter their main target while standing in this rune.",
+                "glossary": [{"val": "shatter", "id": "gl_shattered"}]
+            }
         ]
     },
     {
@@ -1327,6 +1400,10 @@
         "name": "Volvaga",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains width +1 and may melt any objects of your choice in its path, removing them."
+            }
         ]
     },
     {
@@ -1344,6 +1421,55 @@
         "name": "Great Spirit Lance",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + Fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Line of sight can't be blocked by objects, and ignores cover granted by objects or terrain.",
+                                    "glossary": [{"val": "cover", "id": "gl_cover"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "After the ability resolves, every foe or ally in the area explodes, taking 2 piercing damage as an area effect. If you catch at least three foes or allies in the area, every foe or ally in the area takes 2 piercing damage twice instead.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            }
         ]
     },
     {
@@ -1357,6 +1483,23 @@
         "name": "Incandius",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When entering this stance, shove all adjacent characters 3 and spark a soul ember at them, dealing 1 piercing damage to them.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters are vulnerable.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
         ]
     },
     {
@@ -1371,6 +1514,34 @@
         "name": "Heartfire",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You or your ally takes damage or sacrifices hp.",
+                                    "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You can choose to reduce that damage by 3, as if by armor, or the sacrifice cost by 3. If you do, the other partner sacrifices 3.",
+                                    "glossary": [{"val": "armor", "id": "gl_armor"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Reduce partner sacrifice to 1.",
+                                    "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+                                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
         ]
     },
     {
@@ -1385,6 +1556,15 @@
         "name": "Aethershard",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "When you include the Aethershard in the area effect of any ability, the ability resonates with the shards, dealing 2 piercing damage as an area effect, once, to all characters in the area for every one of your Aethershards caught in the same ability. Then destroy all Aethershards activated this way and gain 1 Aether.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
         ]
     },
     {
@@ -1398,6 +1578,11 @@
         "name": "Null",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All characters adjacent to the area effect are also affected.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+            }
         ]
     },
     {
@@ -1411,6 +1596,10 @@
         "name": "Pyrospire",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Terrian space becomes height 3."
+            }
         ]
     },
     {
@@ -1424,6 +1613,10 @@
         "name": "Astral Blackstar",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Ignore Blackstar's round requirement."
+            }
         ]
     },
     {

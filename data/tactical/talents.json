@@ -3794,7 +3794,20 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Allies are immune to damage from this ability.",
+                        "glossary": [{"val": "immune", "id": "gl_immune"}]
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
 	{
         "id": "tl_pyre_2",
@@ -3803,7 +3816,20 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exceed:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You may shove all characters in the area 2 spaces.",
+                        "glossary": [{"val": "shove", "id": "gl_shove"}]
+                    }
+                ],
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}]
+            }
+        ]
     },
     {
         "id": "tl_eldenrune_1",
@@ -3812,7 +3838,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can teleport up to 3 spaces into an Elden Rune space as a free action.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_eldenrune_2",
@@ -3821,7 +3853,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While standing in an Elden Rune, the infuse cost of your spells are reduce by 1, to a minimum of 1."
+            }
+        ]
     },
     {
         "id": "tl_lance_1",
@@ -3830,7 +3867,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this ability passes through an object, it released a soul ember, dealing 1 piercing damage to a character in range 3 of that object. Each character can only be struck by one ember by a single use of this ability.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     },
 	{
         "id": "tl_lance_2",
@@ -3839,7 +3882,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you are at 1 hp or lower, this ability deals maximum base damage (before critical hits).",
+                "glossary": [{"val": "critical hit", "id": "gl_criticalhit"}]
+            }
+        ]
     },
     {
         "id": "tl_soulburn_1",
@@ -3848,7 +3897,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a foe is struck by two or more soul embers from this ability in the same turn, they become vulnerable.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+            }
+        ]
     },
 	{
         "id": "tl_soulburn_2",
@@ -3857,7 +3912,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that end their turn adjacent to you while Soul Burn is active take 1 piercing damage and are shoved 1.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_blazingbond_1",
@@ -3866,7 +3927,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, you can teleport yourself or your ally 2 spaces at the end of your turn, as long as you end closer to each other.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_blazingbond_2",
@@ -3875,7 +3942,20 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Grant both you and your ally defiance when taking this action.",
+                        "glossary": [{"val": "defiance", "id": "gl_defiance"}]
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
     {
         "id": "tl_aethershard_1",
@@ -3884,7 +3964,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you take any action that spends Aether, you can first remove one of your aethershards, then place it in any free space up to range 2 from its original location."
+            }
+        ]
     },
 	{
         "id": "tl_aethershard_2",
@@ -3893,7 +3978,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your abilities gain pierce against characters adjacent to Aethershards.",
+                "glossary": [{"val": "pierce", "id": "gl_piercing"}]
+            }
+        ]
     },
     {
         "id": "tl_implode_1",
@@ -3902,7 +3993,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any character in the center space is also shattered when this ability activates.",
+                "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+            }
+        ]
     },
 	{
         "id": "tl_implode_2",
@@ -3911,7 +4008,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The center space also becomes a pit.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
     },
     {
         "id": "tl_pyroclast_1",
@@ -3920,7 +4023,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Also cause a magma eruption adjacent to your target, creating 2 spaces of dangerous terrain.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
 	{
         "id": "tl_pyroclast_2",
@@ -3929,7 +4038,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may sacrifice 2 to immediately shatter your target as part of this ability.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "shatter", "id": "gl_shattered"}]
+            }
+        ]
     },
     {
         "id": "tl_blackstar_1",
@@ -3938,7 +4053,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If Blackstar's special effect triggers, capture your fleeing soul aether and gain 1 aether after this ability resolves."
+            }
+        ]
     },
 	{
         "id": "tl_blackstar_2",
@@ -3947,7 +4067,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If Blackstar's special effect triggers, gain 5 vigor after this ability resolves.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
     },
     {
         "id": "tl_bio_1",
