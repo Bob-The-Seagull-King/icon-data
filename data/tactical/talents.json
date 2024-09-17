@@ -3378,7 +3378,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "If your ally is at 25% hp or lower when marked, marking them becomes a free action.",
-                "glossary": [{"val": "marked", "id": "gl_marked"}]
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
             }
         ]
     },
@@ -3393,7 +3393,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "If your ally is at 25% hp or lower when marked, they also gain defiance.",
-                "glossary": [{"val": "marked", "id": "gl_marked"}, {"val": "defiance", "id": "gl_defiance"}]
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "defiance", "id": "gl_defiance"}]
             }
         ]
     },
