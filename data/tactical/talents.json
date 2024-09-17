@@ -4082,7 +4082,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may also cause pits, objects you created, and difficult terrain caught in the area to become <i>dangerous</i> terrain.",
+                "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
 	{
         "id": "tl_bio_2",
@@ -4091,7 +4097,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may cause existing <i>dangerous<i> terrain spaces in the area to boil with poison after this ability resolves. Characters in or adjacent to one or more of those spaces take 2 piercing damage as an area effect.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
     },
     {
         "id": "tl_dragondive_1",
@@ -4100,7 +4112,24 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain"
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is vulnerable.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+        ]
     },
 	{
         "id": "tl_dragondive_2",
@@ -4109,7 +4138,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may burst out of the ground and fly 3 after Dragon Dive's delay effect resolves.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "delay", "id": "gl_delay"}]
+            }
+        ]
     },
     {
         "id": "tl_geo_1",
@@ -4118,7 +4153,25 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When a boulder or pit is created with this ability, you may shove all adjacent characters 1 away from it.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "shove", "id": "gl_shove"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "character has a space of difficult terrain created under them.",
+                        "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+        ]
     },
 	{
         "id": "tl_geo_2",
@@ -4127,7 +4180,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Boulders can be created under characters, and you may choose to make characters you create boulders under immune to damage from this ability.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}]
+            }
+        ]
     },
     {
         "id": "tl_helixheel_1",

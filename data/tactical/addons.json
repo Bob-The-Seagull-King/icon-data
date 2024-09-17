@@ -1450,7 +1450,8 @@
                                     "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + Fray.",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
-                                }]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
             },
             {
                 "tags": {"desc_type" : "effect"},
@@ -1630,6 +1631,11 @@
         "name": "Biotic",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase blast size to medium blast, and shatters all characters inside.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "shatters", "id": "gl_shattered"}]
+            }
         ]
     },
     {
@@ -1647,6 +1653,47 @@
         "name": "Magnabio",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + Fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a medium blast toxic cloud terrain effect centered on the center space. The area is dangerous terrain and characters inside the area are shattered+. The cloud lasts until this ability is used again.",
+                                    "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "shattered", "id": "gl_shattered"}, {"val": "+", "id": "gl_ongoing"}]
+                                }]
+            }
         ]
     },
     {
@@ -1660,6 +1707,11 @@
         "name": "Boulder Kick",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The area effect released becomes range 3, burst 1 (target). If only one character is caught in the area, they take 2 piercing damage twice instead and are shoved 2.",
+                "glossary": [{"val": "burst 1", "id": "gl_burst"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "shoved", "id": "gl_shove"}]
+            }
         ]
     },
     {
@@ -1674,6 +1726,11 @@
         "name": "Boulder Kick",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deals bonus damage to characters standing in difficult terrain, pits, or dangerous terrain, and automatically triggers the charge effect against a foe standing in those spaces.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "pits", "id": "gl_pit"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "charge", "id": "gl_charge"}]
+            }
         ]
     },
     {
@@ -1690,6 +1747,56 @@
         "name": "Magnageo",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe explodes in a large blast area, extending the area effect.",
+                                    "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + Fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Creates a massive crater. Create a boulder object in every side space of a small blast area centered on the attack target, with a pit in the center space. These terrain effects can be created under characters.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "pit", "id": "gl_pit"}]
+                                }]
+            }
         ]
     },
     {

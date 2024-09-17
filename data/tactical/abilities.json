@@ -6802,7 +6802,8 @@
             "action": 1,
             "range": 8,
             "type": "attack",
-            "Blast": "small"
+            "Blast": "small",
+            "Pierce": true
         },
         "eventtags": {},
         "chapter": 1,
@@ -6816,6 +6817,59 @@
             "content": "The earth splits, excising poison from its depths, belching poisonous metals and gases."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is shattered.",
+                                    "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Charge:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a space of <i>dangerous</i> terrain in the center space of the area, and under every foe in the area.",
+                        "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_biotic"
@@ -6845,6 +6899,35 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Choose a character in range, <b>end your turn</b>, and gain",
+                                    "glossary": [{"val": "end your turn", "id": "gl_endturn"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "effect"},
+                                    "content": "Delay: ",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "You must take a slow turn next round. At the start of that turn, you dive into the earth, removing yourself from the battlefield and placing yourself within range 3 of that character. They don't have to be in range or line of sight.",
+                                                        "glossary": [{"val": "slow turn", "id": "gl_slowturn"}]
+                                                    }],
+                                    "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "When you explode upwards, you release a burst 1 area effect centered on you, shoving 1 and dealing 2 piercing damage to all characters.",
+                                    "glossary": [{"val": "burst 1", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shoving", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_boulderkick"
             }
@@ -6871,6 +6954,57 @@
             "content": "The stomp of a foot or the slap of a palm is magnified a hundered fold into rumbling death."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a height 1 boulder object in free space anywhere in the area after the attack resolves."
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target explodes in a medium blast area effect, dealing 2 piercing damage again to all characters and creating a pit under them.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "pit", "id": "gl_pit"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_geotic"
