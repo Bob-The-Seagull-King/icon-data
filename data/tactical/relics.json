@@ -2225,9 +2225,7 @@
             "content": "This relic has inlays of pale bone, intricately carved. When infused, the inlays light up."
         }],
         "tier_i": {
-            "invoke": true,
-            "invoke_type": "",
-            "invoke_val": 0,
+            "invoke": false,
             "description": [{
                 "tags": {"desc_type" : "desc"},
                 "content": "At the start of combat, gain a d4 power die, starting at 1. Tick it up by 1 at the end of each round. When the die is 4, you may expend it when you use any ability, discarding it, to grant that ability bonus damage and trigger all of the following triggered effects:",
