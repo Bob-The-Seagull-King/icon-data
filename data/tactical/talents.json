@@ -3463,7 +3463,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This ability does not break the pacified condition and deals 2 damage again to any pacified foes in the area.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+            }
+        ]
     },
 	{
         "id": "tl_sleightofhand_2",
@@ -3472,7 +3478,24 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After this ability resolves, roll 1 more d6 the next time you gamble this turn.",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Charge:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 more d6s."
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
     },
     {
         "id": "tl_chaostarot_1",
@@ -3481,7 +3504,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can consume any number of blessings on character in Chaos Tarot’s area before gambling to roll 1 extra d6 per blessing consumed.",
+                "glossary": [{"val": "gambling", "id": "gl_gamble"}]
+            }
+        ]
     },
 	{
         "id": "tl_chaostarot_2",
@@ -3490,7 +3519,24 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can move Chaos Tarot’s area up to 2 spaces in any direction before applying the gamble effect.",
+                "glossary": [{"val": "gamble", "id": "gl_gamble"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Charge:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "4 spaces."
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
     },
     {
         "id": "tl_astra_1",
@@ -3499,7 +3545,24 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any version of this ability explodes with meteor showers when used, creating two spaces of difficult terrain in the area.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Charge:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Also create a height 1 meteor object in any part of the area, dealing 2 damage to adjacent foes when it lands."
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
     },
 	{
         "id": "tl_astra_2",
@@ -3508,7 +3571,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If two or more allies are caught in the area of this ability, increase all medium blasts to large blasts, and this ability deals bonus damage.",
+                "glossary": [{"val": "medium blasts", "id": "gl_blast"}, {"val": "large blasts", "id": "gl_blast"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
     },
     {
         "id": "tl_polaris_1",
@@ -3517,7 +3586,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can cause one of your Polaris to follow a character as a mark instead of a space.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
     },
 	{
         "id": "tl_polaris_2",
@@ -3526,7 +3601,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a space of difficult terrain under the center space of each Polaris space after it resolves. On a gamble result of 4+, create either a height 1 meteor object or a pit instead.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "gamble", "id": "gl_gamble"}, {"val": "pit", "id": "gl_pit"}]
+            }
+        ]
     },
     {
         "id": "tl_sisyphus_1",
@@ -3535,7 +3616,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If they’re bloodied, foes gain +1 curse on the save, and are also pacified after being returned to their starting location.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "pacified", "id": "gl_pacified"}]
+            }
+        ]
     },
 	{
         "id": "tl_sisyphus_2",
@@ -3544,7 +3631,21 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allies are"
+            },
+            {
+                "tags": {"desc_type" : "texttrait"},
+                "content": "tr_bless"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "after being moved with Sisyphus and gain 2 vigor. If they’re at 25% hp or lower, they can also be cured.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "cured", "id": "gl_cured"}]
+            }
+        ]
     },
     {
         "id": "tl_granreversa_1",
@@ -3553,7 +3654,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Your power die from this ability starts at d6, with 6 charges.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+            }
+        ]
     },
 	{
         "id": "tl_granreversa_2",
@@ -3562,7 +3669,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If your ally was bloodied, instantly regain a tick on this die after this ability resolves.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
     },
     {
         "id": "tl_eclipse_1",
@@ -3571,7 +3684,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If Eclipse explodes, create a fiery pit in its center space. The pit is also dangerous terrain. Characters adjacent to the pit are sealed when it is created.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "sealed", "id": "gl_sealed"}]
+            }
+        ]
     },
 	{
         "id": "tl_eclipse_2",
@@ -3580,7 +3699,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If Eclipse explodes, it creates a shower of bolides, dealing 3 damage again to up to three characters in its area effect.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
     },
     {
         "id": "tl_wish_1",
@@ -3589,7 +3714,22 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If your ally is bloodied, they are also",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            },
+            {
+                "tags": {"desc_type" : "texttrait"},
+                "content": "tr_bless"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "after this interrupt resolves and may dash 2.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "dash", "id": "gl_dash"}]
+            }
+        ]
     },
 	{
         "id": "tl_wish_2",
@@ -3598,7 +3738,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this damage would have reduced your ally to 0 hp, also cure yourself after this ability resolves.",
+                "glossary": [{"val": "cure", "id": "gl_cure"}]
+            }
+        ]
     },
     {
         "id": "tl_thetower_1",
@@ -3607,7 +3753,24 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Roll an extra 1d6 when gambling for this ability.",
+                "glossary": [{"val": "gambling", "id": "gl_gamble"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Charge:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Also gains range 10."
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
     },
 	{
         "id": "tl_thetower_2",
@@ -3616,7 +3779,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The meteor scatters debris when landing, creating two spaces of difficult terrain in the area, which could also be created under characters.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
     },
     {
         "id": "tl_pyre_1",

@@ -1845,7 +1845,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "After using this ability, you gain six spectral blades that hover behind you, using a d6 power die starting at 6 to track them. At the end of your turn, gamble. If you roll under the number of blades remaining, a blade flies out and deals 2 divine damage to a foe in range 6. Using this ability again with blades active restocks them."
+                "content": "After using this ability, you gain six spectral blades that hover behind you, using a d6 power die starting at 6 to track them. At the end of your turn, gamble. If you roll under the number of blades remaining, a blade flies out and deals 2 divine damage to a foe in range 6. Using this ability again with blades active restocks them.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}, {"val": "gamble", "id": "gl_gamble"}, {"val": "divine", "id": "gl_divine"}]
             }
         ]
     },
@@ -1859,7 +1860,16 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Instead of summoning a wild card with this ability, you can instead end your turn and summon a Master Card. You can only have one Master Card active at once. The Master Card acts as a wild card, but also gains the gamble effect of Chaos Tarot, which it grants to any area ability that triggers it. It is consumed as normal after being activated."
+                "content": "Instead of summoning a"
+            },
+            {
+                "tags": {"desc_type" : "textsummon"},
+                "content": "sm_wildcard"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "with this ability, you can instead end your turn and summon a Master Card. You can only have one Master Card active at once. The Master Card acts as a wild card, but also gains the gamble effect of Chaos Tarot, which it grants to any area ability that triggers it. It is consumed as normal after being activated.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "gamble", "id": "gl_gamble"}, {"val": "area", "id": "gl_areaeffect"}]
             }
         ]
     },
@@ -1873,7 +1883,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "After you use any version of this ability, deal 2 divine damage, once, to a foe in the area for each blessed ally in the area, up to a maximum of three times. Foes can be damaged more than once by this effect."
+                "content": "After you use any version of this ability, deal 2 divine damage, once, to a foe in the area for each blessed ally in the area, up to a maximum of three times. Foes can be damaged more than once by this effect.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
             }
         ]
     },
@@ -1915,7 +1926,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Vigor granted by Gran Reversa can increase a character’s total vigor over their maximum."
+                "content": "Vigor granted by Gran Reversa can increase a character’s total vigor over their maximum.",
+                "glossary": [{"val": "Vigor", "id": "gl_vigor"}]
             }
         ]
     },
@@ -1929,7 +1941,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "If you choose, at the start of your turn, Eclipse’s effect does not expire after activating. Instead, you can repeat its delay effect at the end of your turn without ending your turn or creating a new area. The area also disappears if you use this ability again."
+                "content": "If you choose, at the start of your turn, Eclipse’s effect does not expire after activating. Instead, you can repeat its delay effect at the end of your turn without ending your turn or creating a new area. The area also disappears if you use this ability again.",
+                "glossary": [{"val": "delay", "id": "gl_delay"}]
             }
         ]
     },
@@ -1943,7 +1956,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "If the damage would have reduced your ally to 0 hp, they also gain defiance, then become unstoppable until the end of their next turn."
+                "content": "If the damage would have reduced your ally to 0 hp, they also gain defiance, then become unstoppable until the end of their next turn.",
+                "glossary": [{"val": "defiance", "id": "gl_defiance"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
             }
         ]
     },
@@ -1957,7 +1971,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "If the chosen character is at 25% hp or lower, they take double damage from Eclipse’s meteor effect, and the effect also ignores defiance."
+                "content": "If the chosen character is at 25% hp or lower, they take double damage from Eclipse’s meteor effect, and the effect also ignores defiance.",
+                "glossary": [{"val": "defiance", "id": "gl_defiance"}]
             }
         ]
     },

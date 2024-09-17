@@ -5708,8 +5708,53 @@
         }],
         "description": [
             {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_wildcard"
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray damage.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Your foe is pacified.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray damage.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Summon a",
+                                    "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_wildcard"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in range 2 of your foe."
+                                }]
             }
         ]
     },
@@ -5732,12 +5777,92 @@
         "mastery": ["ms_chaostarot_royaltygold"],
         "blurb": [{
             "tags": {"desc_type" : "subeffect"},
-            "content": "You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential. You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential."
+            "content": "You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential."
         }],
         "description": [
             {
-                "tags": {"desc_type" : "textsummon"},
-                "content": "sm_wildcard"
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gamble, then apply the listed effect in the area.",
+                                    "glossary": [{"val": "Gamble", "id": "gl_gamble"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "1.)",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Card explodes for fray damage.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "2.)",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "All characters in the area are teleported 2.",
+                                    "glossary": [{"val": "teleported", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "3.)",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Create two spaces of difficult terrain in the area.",
+                                    "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "4.)",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "texttrait"},
+                                    "content": "tr_bless"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "up to two characters in the area."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "5.)",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Seal up to two characters in the area.",
+                                    "glossary": [{"val": "Seal", "id": "gl_sealed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "6.)",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Choose two."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Then, summon a",
+                                    "glossary": [{"val": "summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textsummon"},
+                                    "content": "sm_wildcard"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in the area."
+                                }],
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
             }
         ]
     },
@@ -5764,6 +5889,56 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe explodes in a medium blast area effect, centered on them. Gamble, then deal that much damage again to all characters in the area. On a 4+, create two spaces of difficult terrain in the area. On a 6, a meteor also lands, creating a height 1 meteor object in any part of the area and dealing 2 damage to adjacent characters when it lands.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "Gamble", "id": "gl_gamble"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "You can remove any number of blessings from allies in the area to roll 1 extra d6 per blessing removed when gambling.",
+                                    "glossary": [{"val": "gambling", "id": "gl_gamble"}]
+                                }]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_fortuna"
             }
@@ -5788,7 +5963,72 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "A distant glint in the heavens, portents of the devastation to come."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Choose a space on the battlefield in range 5. While you have at least one Polaris space active, you may gamble at the end of any turn after yours with the following effects:",
+                                    "glossary": [{"val": "gamble", "id": "gl_gamble"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Gamble:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "A meteor lands in every space chosen by Polaris, exploding. The effects of each space vary depending on how many spaces are active. Each effect other than the blast size stacks:",
+                                    "glossary": [{"val": "blast", "id": "gl_blast"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "1:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Small blast",
+                                    "glossary": [{"val": "Small blast", "id": "gl_blast"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "area effect, deals damage equal to the gamble result.",
+                                    "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "2:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Medium Blast,",
+                                    "glossary": [{"val": "Medium Blast", "id": "gl_blast"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "deals +2 damage.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "3:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Large Blast,",
+                                    "glossary": [{"val": "Large Blast", "id": "gl_blast"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "deals +2 damage, and characters in center spaces are stunned.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, remove all spaces."
+            }
+        ]
     },
     {
         "id": "ab_sisyphus",
@@ -5810,7 +6050,18 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You bend a character’s fate, reversing causality so that the very ground warps under their feet."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Mark a character in range. While marked, note their starting position at the start of their turn. If they’re in range 3 of their starting position at the end of their turn, you may remove them from the battlefield and return them to their starting position, or as close as possible if it’s occupied. Then, a foe can save, ending this mark on a success.",
+                                    "glossary": [{"val": "Mark", "id": "gl_mark"}]   
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]                
+            }
+        ]
     },
     {
         "id": "ab_granreversa",
@@ -5836,8 +6087,26 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Stance:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gain aura 2, and a d4 power die, starting at 4. While in this stance, gain the following interrupt:",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "power die", "id": "gl_powerdie"}, {"val": "interrupt", "id": "gl_interrupt"}]   
+                                }],
+                "glossary": [{"val": "Stance", "id": "gl_stance"}]                
+            },
+            {
                 "tags": {"desc_type" : "addon"},
-                "content": "ad_reversefate"
+                "content": "ad_reversefate"             
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Refresh:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You may exit or refresh this stance at the start of your turn. When you refresh this stance, tick the die up by 1."
+                                }]
             }
         ]
     },
@@ -5863,7 +6132,46 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "No blurb."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "End your turn and create a",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "effect"}],
+                                    "content": "Terrain Effect:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Create a burning brand of star fire in range, dangerous terrain, then gain",
+                                                        "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                                                    },
+                                                    {
+                                                        "tags": [{"desc_type": "effect"}],
+                                                        "content": "delay:",
+                                                        "glossary": [{"val": "delay", "id": "gl_delay"}]
+                                                    },
+                                                    {
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Your next turn must be slow. At the start of that turn, check if there is a character standing in that space:",
+                                                        "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}]
+                                                    }]
+                                }],
+                "glossary": [{"val": "End your turn", "id": "gl_endturn"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• If there is, that character takes 2 divine damage and is sealed.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}, {"val": "sealed", "id": "gl_sealed"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• If there isn’t, it explodes for a large blast area effect centered on that space, scattering star fire everywhere. All characters in the area take 2 divine damage, and create a space of dangerous terrain under every foe in the area.",
+                "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "divine", "id": "gl_divine"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, end the effect."
+            }
+        ]
     },
     {
         "id": "ab_wish",
@@ -5884,7 +6192,25 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You struggle against fate itself, undoing causality and defying the stars."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "An ally on the battlefield takes damage from a foe equal to 25% of their max hp or more."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Reverse the flow of causality. That damage cannot reduce your ally past 1 hp, and they are cured after it resolves. The stress of taking this action causes you to sacrifice 25% of your maximum HP.",
+                                    "glossary": [{"val": "cured", "id": "gl_cure"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_thetower",
@@ -5907,7 +6233,38 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "You invoke the ultimate power of the tower card, sealing a foe’s fate. In short order, untold calamity befalls them."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "1 damage and foe is sealed.",
+                                                        "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At the end of that foe’s turn, gamble. A massive meteor hits for a large blast area effect centered on them, dealing damage equal to the number on the gamble die +2 to all characters.",
+                                    "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Then, create a height 1 meteor object in the area."
+                                }]
+            }
+        ]
     },
     {
         "id": "ab_pyre",

@@ -1180,6 +1180,51 @@
         "name": "Fortuna",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Autohit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foes take fray damage. Allies gain 3 vigor and are",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"}, {"val": "vigor", "id": "gl_vigor"}]
+                                },
+                                {
+                                    "tags": [{"desc_type": "texttrait"}],
+                                    "content": "tr_bless"
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Summon a",
+                                    "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                                },
+                                {
+                                    "tags": [{"desc_type": "textsummon"}],
+                                    "content": "sm_wildcard"
+                                },
+                                {
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "in the area."
+                                }],
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+            }
         ]
     },
     {
@@ -1194,6 +1239,24 @@
         "name": "Reverse Fate",
         "class_id": "cl_mendicant",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "An ally in the aura is targeted by a foe’s ability.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Tick down your power die by any amount. Gamble with a number of d6s equal to the number of ticks you spent, then that ally gains vigor equal to double the gamble result. However, at the end of the current turn, your ally loses all vigor.",
+                                    "glossary": [{"val": "Gamble", "id": "gl_gamble"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
         ]
     },
     {
