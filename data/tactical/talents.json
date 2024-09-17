@@ -4085,7 +4085,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You may also cause pits, objects you created, and difficult terrain caught in the area to become <i>dangerous</i> terrain.",
+                "content": "You may also cause pits, objects you created, and difficult terrain caught in the area to become dangerous terrain.",
                 "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
             }
         ]
@@ -4100,7 +4100,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You may cause existing <i>dangerous<i> terrain spaces in the area to boil with poison after this ability resolves. Characters in or adjacent to one or more of those spaces take 2 piercing damage as an area effect.",
+                "content": "You may cause existing dangerous terrain spaces in the area to boil with poison after this ability resolves. Characters in or adjacent to one or more of those spaces take 2 piercing damage as an area effect.",
                 "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
             }
         ]
@@ -4225,7 +4225,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Charge Effects can also be placed in any space adjacent to the area.",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
     },
 	{
         "id": "tl_terraforming_2",
@@ -4234,7 +4240,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can also create up to 3 spaces of dangerous terrain in the area as a choosable effect.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
     {
         "id": "tl_obsidianflesh_1",
@@ -4243,7 +4255,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this ability ticks over, it doesn't end until the end of the current turn."
+            }
+        ]
     },
 	{
         "id": "tl_obsidianflesh_2",
@@ -4252,7 +4269,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this ability ends, you may have the shell explode off you, dealing 2 piercing damage in a range 2, burst 1 area effect and shoving characters inside 1.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "burst 1", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shoving", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_realignment_1",
@@ -4261,7 +4284,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters in the area take piercing fray damage again one more time if your target is bloodied.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
     },
 	{
         "id": "tl_realignment_2",
@@ -4270,7 +4299,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a space of dangerous or difficult terrain in the area for each effect purged.",
+                "glossary": [{"val": "dangerous", "id": "gl_dangerousterrain"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
     },
     {
         "id": "tl_midas_1",
@@ -4279,7 +4314,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When your chosen character is returned, their statue remains on the battlefield as a broken shell object. Place them in an adjacent space to it instead."
+            }
+        ]
     },
 	{
         "id": "tl_midas_2",
@@ -4288,7 +4328,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When your chosen character returns, the shell explodes off them, shoving all adjacent characters 1. If that character was at 25% hp or lower, also deal piercing fray damage to all characters in a burst 1 area centered on them as an area effect.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}, {"val": "burst 1", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shoving", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_quakingpalm_1",
@@ -4297,7 +4343,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While Quaking Palm's effect is active, after that character uses any ability that moves them, create a difficult terrain space in any free space adjacent to them.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
     },
 	{
         "id": "tl_quakingpalm_2",
@@ -4306,7 +4358,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While Quaking Palm's effect is active, after that character uses any ability that moves them, deal 1 piercing damage to all foes adjacent to that character.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     },
     {
         "id": "tl_blitz_1",
@@ -4315,7 +4373,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When used against a bloodied foe, blitz creates two lightning dangerous terrain spaces in free space in range 2 of them.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
 	{
         "id": "tl_blitz_2",
@@ -4324,7 +4388,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can grant Blitz's first effect to any ally in range 2 instead."
+            }
+        ]
     },
     {
         "id": "tl_odinforce_1",
@@ -4333,7 +4402,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you end a turn without attacking, gain +2 more Odinforce bolts."
+            }
+        ]
     },
 	{
         "id": "tl_odinforce_2",
@@ -4342,7 +4416,19 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Odinforce gains 4 bolts instead of 2 on refresh."
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
     {
         "id": "tl_nothung_1",
@@ -4351,7 +4437,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When used against a bloodied foe, Nothung deals bonus damage, and deals 1 piercing damage again to its target on hit.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     },
 	{
         "id": "tl_nothung_2",
@@ -4360,7 +4452,20 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase teleport to 4.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
     {
         "id": "tl_atherwand_1",
@@ -4369,7 +4474,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When you use this ability again, it doesn't replace the old area, but extends it, as long as at least once space of the new area is adjacent to the old."
+            }
+        ]
     },
 	{
         "id": "tl_atherwand_2",
@@ -4378,7 +4488,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of your turn, you can move the area 1 space in any direction. If it moves into the space of a character, it shoves them 1.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_fulminate_1",
@@ -4387,7 +4503,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When marking a character, you can increase the area to 3, and the teleport to 2, but it only affects allies.",
+                "glossary": [{"val": "marking", "id": "gl_mark"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_fulminate_2",
@@ -4396,7 +4518,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When marking a character, you can condense the aura to 1, but increase the teleport to 2 spaces instead.",
+                "glossary": [{"val": "marking", "id": "gl_mark"}, {"val": "aura", "id": "gl_aura"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
     {
         "id": "tl_bifrost_1",
@@ -4405,7 +4533,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The teleport from Bifröst can interrupt other actions and does not stop movement.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
 	{
         "id": "tl_bifrost_2",
@@ -4414,7 +4548,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bifröst areas grow by 2 spaces, added anywhere to the total area in any pattern, at the end of each round. When they grow, deal 1 piercing damage to all characters inside.",
+                "glossary": [{"val": "areas", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     },
     {
         "id": "tl_rampantnail_1",
@@ -4423,7 +4563,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the nail is active, a small blast area centered on the nail is dangerous terrain.",
+                "glossary": [{"val": "area", "id": "gl_areaeffect"}, {"val": "small blast", "id": "gl_blast"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
 	{
         "id": "tl_rampantnail_2",
@@ -4432,7 +4578,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of your turn, tick the power die up by 1 for every bloodied foe or ally in the area.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
     },
     {
         "id": "tl_sturmreiten_1",
@@ -4441,7 +4593,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may teleport one adjacent ally with you to any free adjacent space after this interrupt resolves.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
     },
 	{
         "id": "tl_sturmreiten_2",
@@ -4450,7 +4608,19 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You may extend Sturmreiten's area by another line 3 area, drawn in a different direction."
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            }
+        ]
     },
     {
         "id": "tl_driftingleaf_1",
@@ -4459,7 +4629,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Drifting Leaf deals bonus damage against bloodied foes, and its interrupt deals 1 piercing damage, twice to them instead.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "interrupt", "id": "gl_interrupt"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     },
 	{
         "id": "tl_driftingleaf_2",
@@ -4468,7 +4644,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You may teleport your foe to any space adjacent to you instead of teleporting yourself 1 when this interrupt triggers.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
     },
     {
         "id": "tl_rime_1",
@@ -4477,7 +4659,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the end space of Rime hits a pit or object, the weapon bounces back and deals 1 piercing damage, twice as an area effect to all affected characters again.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
     },
 	{
         "id": "tl_rime_2",
@@ -4486,7 +4674,27 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If the end space of Rime hits a pit or object, it explodes into a shower of icicles, dealing 1 piercing damage to one or two characters as an area effect in range 3 of that pit or object, and summoning a",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "summoning", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_saltsprite"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "adjacent to each of those characters."
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "tl_tsunami_1",
@@ -4495,7 +4703,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Tsunami creates a pit in its center space after completing its movement. The pit remains even if Tsunami moves on.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
     },
 	{
         "id": "tl_tsunami_2",
@@ -4504,7 +4718,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes inside Tsunami take +1 curse on saves.",
+                "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+            }
+        ]
     },
     {
         "id": "tl_cryo_1",
@@ -4513,7 +4733,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or later, this ability generates +1 Aether when used."
+            }
+        ]
     },
 	{
         "id": "tl_cryo_2",
@@ -4522,7 +4747,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At round 4 or later, this ability shatters all characters in its area.",
+                "glossary": [{"val": "shatters", "id": "gl_shattered"}]
+            }
+        ]
     },
     {
         "id": "tl_geyser_1",
@@ -4531,7 +4762,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase the height of all geysers by +1 at the start of your turn. Allies standing on a geyser have cover from all directions.",
+                "glossary": [{"val": "cover", "id": "gl_cover"}]
+            }
+        ]
     },
 	{
         "id": "tl_geyser_2",
@@ -4540,7 +4777,27 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Once a round, when a character collides with a geyser, summon a",
+                        "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_saltsprite"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in range 2 from them."
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "tl_gust_1",
@@ -4549,7 +4806,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gust can be used for cover by allies as if it were height 1 terrain.",
+                "glossary": [{"val": "cover", "id": "gl_cover"}]
+            }
+        ]
     },
 	{
         "id": "tl_gust_2",
@@ -4558,7 +4821,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Yourself and allies that are shoved by gust can fly 2 after stopping instead of being shoved.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "fly", "id": "gl_flying"}]
+            }
+        ]
     },
     {
         "id": "tl_heaveho_1",
@@ -4567,7 +4836,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If only one foe is caught in the area of wave, also create a pit underneath them.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
     },
     {
         "id": "tl_heaveho_2",
@@ -4576,7 +4851,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If you don't use this interrupt, stock up another use of it at the start of your turn. You can stock it up to interrupt 3.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
     },
     {
         "id": "tl_deepwrath_1",
@@ -4585,7 +4866,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Marked allies gain +1 boon on saves in pits, and foes don't gain any height advantage.",
+                "glossary": [{"val": "Marked", "id": "gl_mark"}, {"val": "+1 boon", "id": "gl_boon"}, {"val": "pits", "id": "gl_pit"}]
+            }
+        ]
     },
 	{
         "id": "tl_deepwrath_2",
@@ -4594,7 +4881,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Marked foes take bonus damage from all sources and are shattered+ while inside pits.",
+                "glossary": [{"val": "Marked", "id": "gl_mark"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "shattered", "id": "gl_shattered"}, {"val": "+", "id": "gl_ongoing"}, {"val": "pits", "id": "gl_pit"}]
+            }
+        ]
     },
     {
         "id": "tl_waterspout_1",
@@ -4603,7 +4896,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After characters are spit out, they are shoved 1 away from the waterspout.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
     },
     {
         "id": "tl_waterspout_2",
@@ -4612,7 +4911,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If only one for or ally is inside the waterspout, it can move 3 spaces instead, and leaves a space of difficult terrain in one space that it vacates.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
     },
     {
         "id": "tl_eyeofthestorm_1",
@@ -4621,7 +4926,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If there is no character in the center space, create a pit there. The pit is also dangerous terrain.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
     },
 	{
         "id": "tl_eyeofthestorm_2",
@@ -4630,6 +4941,12 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The center character may also take 1 piercing damage, once, for every foe or ally in the area effect, up to three times.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
     }
 ]
