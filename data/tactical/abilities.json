@@ -6272,7 +6272,7 @@
         "source": "core",
         "tags": {
             "action": 2,
-            "range": 5,
+            "range": 6,
             "type": "attack",
             "Blast": "medium"
         },
@@ -6288,6 +6288,47 @@
             "content": "Power curls into a writhing ball in your hand, before it's unleashed on your enemies."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback or Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "After the ability resolves, the area explodes again, dealing 2 piercing damage to all characters.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "Exceed", "id": "gl_exceed"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_pyrotic"
@@ -6314,6 +6355,23 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Inscribe an Elden Rune on the space underneath you. While standing on an Elden Rune space, the range of all abilities with a listed range is increased by +3. The rune lasts until the end of the scene. A foe can scrub out an Elden Rune by enter or exiting its space."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "You can sacrifice 2 to cast a rune down as a free action.",
+                                    "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+                                }]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_greatrune"
             }
@@ -6326,7 +6384,8 @@
         "tags": {
             "action": 1,
             "type": "attack",
-            "line": 8
+            "line": 8,
+            "Pierce": true
         },
         "eventtags": {},
         "chapter": 1,
@@ -6340,6 +6399,66 @@
             "content": "A flash scorches the eyeballs, and a thin line burns through rock, flesh, and armor."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is vulnerable.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Line of sight can't be blocked by objects, and ignores cover granted by objects or terrain.",
+                                    "glossary": [{"val": "cover", "id": "gl_cover"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Comeback or Exceed:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Also deals bonus damage for every unique object it passed through.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "Exceed", "id": "gl_exceed"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_volvaga"
@@ -6367,6 +6486,39 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Stance:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Burn your own life force into a fierce blaze. In this stance:"
+                                }],
+                "glossary": [{"val": "Stance", "id": "gl_stance"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• You sacrifice 2 at the end of your turn.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Your abilities automatically activate any comeback triggers.",
+                "glossary": [{"val": "comeback", "id": "gl_comeback"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• After you sacrifice with this ability, or after any other of your abilities with a sacrifice effect resolves, you can spark a soul ember at a character in range 5, dealing 1 piercing damage.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "piercing", "id": "gl_piercing"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Refresh:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Refresh or exit this stance at the start of your turn.",
+                                    "glossary": [{"val": "stance", "id": "gl_stance"}]
+                                }]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_incandius"
             }
@@ -6392,6 +6544,16 @@
             "content": "You link the soul Aether of you and a companion with a chain of pure fire aether, drawing from the strength of one to bolster the other."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Mark:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "An ally in range is marked by you. While affected by this mark and in range, gain the Heartfire interrupt:",
+                                    "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "interrupt", "id": "gl_interrupt"}]
+                                }],
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_heartfire"
@@ -6420,8 +6582,29 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Sacrifice 3 and summon an Aethershard in a free space in range 6.",
+                                    "glossary": [{"val": "Sacrifice", "id": "gl_sacrifice"}, {"val": "summon", "id": "gl_summon"}]
+                                }]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_aethershard"
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Reduce sacrifice to 1.",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
             }
         ]
     },
@@ -6448,6 +6631,27 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "desc"},
+                "content": "End your turn and Delay:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Choose a space in range. Your next turn must be slow, but at the start of that turn, that space explodes with gravitational energy, shoving all characters in a large blast area effect around it as close as possible towards it. Characters are shoved in any order you like. Any character that is in the center space when this ability activates must save or be stunned.",
+                                    "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "stunned", "id": "gl_stunned"}]
+                                }],
+                "glossary": [{"val": "End your turn", "id": "gl_endturn"}, {"val": "Delay", "id": "gl_delay"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Free action."
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_null"
             }
@@ -6473,6 +6677,26 @@
             "content": "Taking a page from the geomancers, Enochians can send a pulse of fire aether into the earth itself, causing tectonic upheaval."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Choose yourself or a character in range. At the end of that character's next turn, the ground beneath them erupts. Create a height 1 magma spire object under them, pushing them up. All characters adjacent to that object, but not the original character, are shoved 1 and take 2 piercing damage.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "You may choose yourself and another character."
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_pyrospire"
@@ -6503,6 +6727,68 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is shattered.",
+                                    "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Comeback or Exceed:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage, creates a pit under the center space, and up to three spaces of difficult terrain in the area.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "pit", "id": "gl_pit"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                    }
+                ],
+                "glossary": [{"val": "Comeback", "id": "gl_comeback"}, {"val": "Exceed", "id": "gl_exceed"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Also Sacrifice 50% of your max hp unless the round number is 6 or higher.",
+                                    "glossary": [{"val": "Sacrifice", "id": "gl_sacrifice"}]
+                                }]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_astralblackstar"
             }
@@ -6516,7 +6802,8 @@
             "action": 1,
             "range": 8,
             "type": "attack",
-            "Blast": "small"
+            "Blast": "small",
+            "Pierce": true
         },
         "eventtags": {},
         "chapter": 1,
@@ -6530,6 +6817,59 @@
             "content": "The earth splits, excising poison from its depths, belching poisonous metals and gases."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is shattered.",
+                                    "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Charge:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a space of <i>dangerous</i> terrain in the center space of the area, and under every foe in the area.",
+                        "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_biotic"
@@ -6559,6 +6899,35 @@
         }],
         "description": [
             {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Choose a character in range, <b>end your turn</b>, and gain",
+                                    "glossary": [{"val": "end your turn", "id": "gl_endturn"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "effect"},
+                                    "content": "Delay: ",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "You must take a slow turn next round. At the start of that turn, you dive into the earth, removing yourself from the battlefield and placing yourself within range 3 of that character. They don't have to be in range or line of sight.",
+                                                        "glossary": [{"val": "slow turn", "id": "gl_slowturn"}]
+                                                    }],
+                                    "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "When you explode upwards, you release a burst 1 area effect centered on you, shoving 1 and dealing 2 piercing damage to all characters.",
+                                    "glossary": [{"val": "burst 1", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shoving", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_boulderkick"
             }
@@ -6585,6 +6954,57 @@
             "content": "The stomp of a foot or the slap of a palm is magnified a hundered fold into rumbling death."
         }],
         "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a height 1 boulder object in free space anywhere in the area after the attack resolves."
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target explodes in a medium blast area effect, dealing 2 piercing damage again to all characters and creating a pit under them.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "pit", "id": "gl_pit"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
             {
                 "tags": {"desc_type" : "addon"},
                 "content": "ad_geotic"
