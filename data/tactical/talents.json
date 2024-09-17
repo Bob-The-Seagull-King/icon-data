@@ -3643,7 +3643,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "after being moved with Sisyphus and gain 2 vigor. If they’re at 25% hp or lower, they can also be cured.",
-                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "cured", "id": "gl_cured"}]
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "cured", "id": "gl_cure"}]
             }
         ]
     },
