@@ -7030,7 +7030,44 @@
             "tags": {"desc_type" : "subeffect"},
             "content": "Striking deep into the earth, a wave of strength resonates with the very terrain around oneself."
         }],
-        "description": []
+        "description": [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Release a shockwave in a line 3 area effect, dealing 2 piercing damage to all foes.",
+                                    "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "If an object is in the end space of the line, you can extend this line by 3 or more spaces in any direction, drawn from the object. If a new object is at the end space of <i>this line</i>, you can keep extending the line by 3 spaces this way each time, but can only extend it once per object."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Then, all objects this line passed through resonate, releasing a burst 1 area effect centered on them and dealing 2 piercing damage to all characters inside.",
+                                    "glossary": [{"val": "burst 1", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Shatter any foe damaged by this ability.",
+                                    "glossary": [{"val": "Shatter", "id": "gl_shattered"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
     },
     {
         "id": "ab_terraforming",

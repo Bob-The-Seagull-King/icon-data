@@ -4195,7 +4195,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 1",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When Helix Heel bounces off an object, you can shove it 1 in any direction before extending the line.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
     },
 	{
         "id": "tl_helixheel_2",
@@ -4204,7 +4210,13 @@
         "tags": { },
         "eventtags": {},
         "name": "Talent 2",
-        "description":  []
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After Helix Heel resolves, fly 1 or teleport 1 space for each bounce (up to three times).",
+                "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
     },
     {
         "id": "tl_terraforming_1",

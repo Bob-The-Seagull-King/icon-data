@@ -1810,6 +1810,10 @@
         "name": "Earthblood",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sink into the ground, removing yourself from the battlefield and placing yourself in any space in the area after the ability resolves."
+            }
         ]
     },
     {
@@ -1823,6 +1827,11 @@
         "name": "Medicine Palm",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The chosen character also immediately gains a vigor surge, but loses all vigor at the end of their next turn.",
+                "glossary": [{"val": "vigor surge", "id": "gl_vigorsurge"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
         ]
     },
     {
@@ -1836,6 +1845,23 @@
         "name": "Primal Burst",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After this ability resolves, you may shove the affected character 1 space for each time the effect triggered. These shoves can be in any direction.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe must save or be stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
         ]
     },
     {
@@ -1850,16 +1876,16 @@
         "name": "Ragnarök",
         "class_id": "cl_wright",
         "description":  [
-                        {
-                            "tags": {"desc_type" : "effect"},
-                            "content": "Area Effect:",
-                            "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take [D]+fray Divine damage.",
-                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "Divine", "id": "gl_divine"}]
-                            }]
-                        }
-                    ]
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take [D]+fray Divine damage.",
+                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "Divine", "id": "gl_divine"}]
+                }]
+            }
+        ]
     },
     {
         "id": "ad_granblitz",
@@ -1873,6 +1899,10 @@
         "name": "Gran Blitz",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Repeat the first effect."
+            }
         ]
     },
     {
@@ -1887,6 +1917,15 @@
         "name": "Gram",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "After the ability resolves, release a flurry of slashes in a burst 2 (self) area effect, dealing 1 piercing damage, twice, to all foes.",
+                        "glossary": [{"val": "burst 2", "id": "gl_burst"}, {"val": "piercing", "id": "gl_piercing"}]
+                }]
+            }
         ]
     },
     {
@@ -1900,6 +1939,10 @@
         "name": "Äthersturm",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Infuse X aether, and extend the area by 1 spaces for every Aether infused, up to a maximum of +3 spaces."
+            }
         ]
     },
     {
@@ -1914,6 +1957,10 @@
         "name": "Heimdall",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a new line 3 terrain effect, which cannot overlap the first. This second effect does not deal damage but has the same terrain effect as the first."
+            }
         ]
     },
     {
@@ -1927,6 +1974,15 @@
         "name": "Lightning Spike",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The spike has aura 2. Whenever you or an ally deals 3 or less damage to a character in the aura, gain a d6 power die at 1, or tick the power die by up 1. At the start of any turn the die is at maximum, the spike becomes charged with energy. While charged, you can cause the spike to explode as a free action ability, dealing 1 piercing damage, twice to all characters in the aura as an area effect, shattering them, and shoving them 1 away from it. The spike is then removed.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "power die", "id": "gl_powerdie"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shattering", "id": "gl_shattered"}, {"val": "shoving", "id": "gl_shove"}]
+                }]
+            }
         ]
     },
     {
@@ -1941,6 +1997,11 @@
         "name": "Ruinös",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Re-summon the nail after it detonates, discarding the first power die.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+            }
         ]
     },
     {
@@ -1955,6 +2016,23 @@
         "name": "Leaf on the Wind",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A foe enters a space adjacent to you."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Teleport 2, then deal 1 piercing damage to that foe.",
+                        "glossary": [{"val": "Teleport", "id": "gl_teleport"}, {"val": "piercing", "id": "gl_piercing"}]
+                }]
+            }
         ]
     },
     {
@@ -1969,6 +2047,11 @@
         "name": "Phantom Blade",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Until the start of your next turn, this interrupt has unlimited uses.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
         ]
     },
     {
@@ -1982,6 +2065,20 @@
         "name": "Dagon",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This ability gains range 6, and gains",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "collide:",
+                        "glossary": [{"val": "collide", "id": "gl_collide"}]
+                },
+                {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "creates a watery pit under this character after this ability resolves.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                }]
+            }
         ]
     },
     {
@@ -1995,6 +2092,32 @@
         "name": "Magnarime",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rime can be infused with massive aether, becoming",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Infuse X."
+                },
+                {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If so:"
+                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• The area gains range 6 and becomes Arc 4, plus one per aether infused."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Summon a pit in the area after the ability resolves for every two aether infused.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Deal 1 piercing damage to all characters in the area again after the ability resolves for every two aether infused.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
         ]
     },
     {
@@ -2002,12 +2125,17 @@
         "type": "Addon",
         "source": "core",
         "tags": { 
-            "infuse": 1
+            "infuse": 1,
+            "action": 0
         },
         "eventtags": {},
         "name": "Stormlash",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Choose an edge of the map. Your active tsunamis move 2 spaces in that direction."
+            }
         ]
     },
     {
@@ -2021,6 +2149,28 @@
         "name": "Cryotic",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Change area to Line 8, increase damage to fray damage, and gains",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "effect"},
+                        "content": "effect:"
+                },
+                {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "summon a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                },
+                {
+                        "tags": {"desc_type" : "textsummon"},
+                        "content": "sm_saltsprite"
+                },
+                {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "for every character in the area adjacent to those characters."
+                }],
+                "glossary": [{"val": "fray", "id": "gl_fray"}]
+            }
         ]
     },
     {
@@ -2034,6 +2184,65 @@
         "name": "Magnacryo",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase the line length by 2 and attack deals bonus damage for every two aether spent.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": {"desc_type": "subeffect"},
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + Fray.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is shattered.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + Fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }],
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The attack target is impaled with an icy harpoon, then shoved along the line as far as possible towards you, until they collide or are stopped by an obstruction.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "collide", "id": "gl_collide"}]
+                }]
+            }
         ]
     },
     {
@@ -2047,6 +2256,11 @@
         "name": "Volcanic Geyser",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a Volcanic Geyser instead. When it erupts, it removes and places all characters in a medium blast area effect centered on it, and creates dangerous terrain under foes.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
         ]
     },
     {
@@ -2060,6 +2274,10 @@
         "name": "Great Gust",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gust can be created over characters, and immediately activates its effect when it is created, as if characters inside had entered its space."
+            }
         ]
     },
     {
@@ -2075,19 +2293,19 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The shove spaces become shove X."
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Collide:",
-                "subcontent": [{
-                    "tags": {"desc_type" : "desc"},
-                    "content": "foes are shattered.",
-                    "glossary": [{"val": "Dash", "id": "gl_dash"}]
-                }],
-                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+                "content": "The shove spaces become shove X.",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "Collide:",
+                                    "glossary": [{"val": "Collide", "id": "gl_collide"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "foes are shattered.",
+                                    "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                                }],
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
             }
-            
         ]
     },
     {
@@ -2101,6 +2319,10 @@
         "name": "Great Waterspout",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The waterspout can also suck in objects in the area, removing and placing them before all characters."
+            }
         ]
     },
     {
@@ -2114,6 +2336,11 @@
         "name": "Aeoncloud",
         "class_id": "cl_wright",
         "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase area effect to a large blast and damage to [D]+fray. The center space is still clear.",
+                "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            }
         ]
     }
 ]

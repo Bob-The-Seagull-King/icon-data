@@ -2223,7 +2223,20 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You can bounce Helix Heel off characters instead. Characters that it bounces off are shoved 1 away from you after the ability resolves. Collide: Create a pit under the colliding character."
+                "content": "You can bounce Helix Heel off characters instead. Characters that it bounces off are shoved 1 away from you after the ability resolves.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {   
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a pit under the colliding character.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
             }
         ]
     },
