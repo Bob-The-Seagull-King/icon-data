@@ -3393,7 +3393,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "Until the start of your next turn, you gain aura 2. You may consume a",
+                                    "content": "Until the start of your next turn, you gain aura 2. You may consume a ",
                                     "glossary": [{"val": "aura", "id": "gl_aura"}]
                                 },
                                 {
@@ -4028,7 +4028,7 @@
                 "content": "",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "• When entering this stance, or when it refreshes, summon a"
+                                    "content": "• When entering this stance, or when it refreshes, summon a "
                                 },
                                 {
                                     "tags": {"desc_type" : "textsummon"},
@@ -4101,7 +4101,7 @@
                 "content": "Charge:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "Summon a"
+                                    "content": "Summon a "
                                 },
                                 {
                                     "tags": {"desc_type" : "textsummon"},
@@ -4150,7 +4150,7 @@
                 "content": "Charge:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "Summon a"
+                                    "content": "Summon a "
                                 },
                                 {
                                     "tags": {"desc_type" : "textsummon"},
@@ -6903,7 +6903,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "Choose a character in range, end your turn, and gain",
+                                    "content": "Choose a character in range, end your turn, and gain ",
                                     "glossary": [{"val": "end your turn", "id": "gl_endturn"}]
                                 },
                                 {
@@ -7889,7 +7889,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "Shove all characters 1 to either side of the line, You can shove in different directions for all characters. Then shove the attack target 1 and summon a",
+                                    "content": "Shove all characters 1 to either side of the line, You can shove in different directions for all characters. Then shove the attack target 1 and summon a ",
                                     "glossary": [{"val": "Shove", "id": "gl_shove"}, {"val": "summon", "id": "gl_summon"}]
                                 },
                                 {
@@ -7906,7 +7906,7 @@
                 "content": "Collide:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "Summon a",
+                                    "content": "Summon a ",
                                     "glossary": [{"val": "Summon", "id": "gl_summon"}]
                                 },
                                 {
@@ -8084,7 +8084,7 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "After the geyser is removed, summon a",
+                                    "content": "After the geyser is removed, summon a ",
                                     "glossary": [{"val": "summon", "id": "gl_summon"}]
                                 },
                                 {
@@ -8093,7 +8093,7 @@
                                 },
                                 {
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "in its space."
+                                    "content": " in its space."
                                 }]
             },
             {
@@ -8193,7 +8193,7 @@
                 "content": "Collide:",
                 "subcontent":   [{
                                     "tags": [{"desc_type": "desc"}],
-                                    "content": "Summon a",
+                                    "content": "Summon a ",
                                     "glossary": [{"val": "summon", "id": "gl_summon"}]
                                 },
                                 {
