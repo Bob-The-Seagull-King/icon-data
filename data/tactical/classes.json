@@ -11,7 +11,7 @@
             "Vigilance": true
         },
         "eventtags": {},
-        "name": "Stalwart",
+        "name": "STalwart",
         "subtitle": "Weapon Master and Unparalleled Soldier",
         "traits": ["tr_armour", "tr_fortify", "tr_rush"],
         "specialmechanic": {
