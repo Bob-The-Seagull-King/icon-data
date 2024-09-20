@@ -9,7 +9,7 @@
         },
         "eventtags": {},
         "name": "Frost Enchantment",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 3,
         "usetype": "combat",
         "description": [{
@@ -27,7 +27,7 @@
         },
         "eventtags": {},
         "name": "Flame Enchantment",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 3,
         "usetype": "combat",
         "description": [{
@@ -57,7 +57,7 @@
         },
         "eventtags": {},
         "name": "Lightning Enchantment",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 3,
         "usetype": "combat",
         "description": [{
@@ -76,7 +76,7 @@
         },
         "eventtags": {},
         "name": "Poison Enchantment",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 3,
         "usetype": "combat",
         "description": [{
@@ -94,7 +94,7 @@
         },
         "eventtags": {},
         "name": "Gnarled Horn",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 5,
         "usetype": "",
         "description": [{
@@ -113,7 +113,7 @@
         },
         "eventtags": {},
         "name": "Displacement Cloak",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 2,
         "usetype": "expedition",
         "description": [{
@@ -132,7 +132,7 @@
         },
         "eventtags": {},
         "name": "Boots of Speed",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 6,
         "usetype": "",
         "description": [{
@@ -149,7 +149,7 @@
         },
         "eventtags": {},
         "name": "Valkyrie's Mantle",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -168,7 +168,7 @@
         },
         "eventtags": {},
         "name": "Crystal Skull",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -185,7 +185,7 @@
         },
         "eventtags": {},
         "name": "Whisper Cloak",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 5,
         "usetype": "",
         "description": [{
@@ -204,7 +204,7 @@
         },
         "eventtags": {},
         "name": "Stave of Flame",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 5,
         "usetype": "",
         "description": [{
@@ -224,7 +224,7 @@
         },
         "eventtags": {},
         "name": "Helm of the Ram",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -243,7 +243,7 @@
         },
         "eventtags": {},
         "name": "Phase Shard",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -263,7 +263,7 @@
         },
         "eventtags": {},
         "name": "Gandariant's Stave",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 6,
         "usetype": "",
         "description": [{
@@ -281,7 +281,7 @@
         },
         "eventtags": {},
         "name": "Broken Key to Numenea",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -300,7 +300,7 @@
         },
         "eventtags": {},
         "name": "Jotunn Mead",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 2,
         "usetype": "",
         "description": [{
@@ -318,7 +318,7 @@
         },
         "eventtags": {},
         "name": "Axe of Mork",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 2,
         "usetype": "",
         "description": [{
@@ -336,7 +336,7 @@
         },
         "eventtags": {},
         "name": "Warding Armor",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -354,7 +354,7 @@
         },
         "eventtags": {},
         "name": "Tears of the Weeper",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -375,7 +375,7 @@
         },
         "eventtags": {},
         "name": "Fragment of the Ur-Spell",
-        "category": "general",
+        "category": "fc_general",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -394,7 +394,7 @@
         },
         "eventtags": {},
         "name": "Circlet of Command",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -413,7 +413,7 @@
         },
         "eventtags": {},
         "name": "Soul Gem",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 2,
         "usetype": "",
         "description": [{
@@ -433,7 +433,7 @@
         },
         "eventtags": {},
         "name": "Relict Arbalest",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -489,7 +489,7 @@
         },
         "eventtags": {},
         "name": "Whispering Pendant",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 5,
         "usetype": "",
         "description": [{
@@ -507,7 +507,7 @@
         },
         "eventtags": {},
         "name": "Gem of Spirit Severing",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -537,7 +537,7 @@
         },
         "eventtags": {},
         "name": "Decayed Arkentech Armor",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -554,7 +554,7 @@
         },
         "eventtags": {},
         "name": "Telekenetic Rod",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -571,7 +571,7 @@
         },
         "eventtags": {},
         "name": "Shock Clasp",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -589,7 +589,7 @@
         },
         "eventtags": {},
         "name": "Ghost Weave",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -607,7 +607,7 @@
         },
         "eventtags": {},
         "name": "Helm of Command",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 2,
         "usetype": "",
         "description": [{
@@ -627,7 +627,7 @@
         },
         "eventtags": {},
         "name": "Darklight Infuser",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -667,7 +667,7 @@
         },
         "eventtags": {},
         "name": "The Black Book",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -685,7 +685,7 @@
         },
         "eventtags": {},
         "name": "Golden Mask",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -707,7 +707,7 @@
         },
         "eventtags": {},
         "name": "Grasp of Iron",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -726,7 +726,7 @@
         },
         "eventtags": {},
         "name": "Key to Iz",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -744,7 +744,7 @@
         },
         "eventtags": {},
         "name": "Shivering Arrow",
-        "category": "relict",
+        "category": "fc_relict",
         "uses" : 1,
         "usetype": "",
         "description": [{
@@ -775,7 +775,7 @@
         },
         "eventtags": {},
         "name": "Yellow Spore Sack",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 5,
         "usetype": "",
         "description": [{
@@ -794,7 +794,7 @@
         },
         "eventtags": {},
         "name": "Drift Oil",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -811,7 +811,7 @@
         },
         "eventtags": {},
         "name": "Howler Venom",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 2,
         "usetype": "",
         "description": [{
@@ -828,7 +828,7 @@
         },
         "eventtags": {},
         "name": "Screecher Gland",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -845,7 +845,7 @@
         },
         "eventtags": {},
         "name": "Landshark Cape",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -863,7 +863,7 @@
         },
         "eventtags": {},
         "name": "Kelpie Head",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -893,7 +893,7 @@
         },
         "eventtags": {},
         "name": "Stalker Scales",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 2,
         "usetype": "expedition",
         "description": [{
@@ -910,7 +910,7 @@
         },
         "eventtags": {},
         "name": "Gigantapede Stinger",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -937,7 +937,7 @@
         },
         "eventtags": {},
         "name": "Chimera Hide",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -954,7 +954,7 @@
         },
         "eventtags": {},
         "name": "Chimaeric Ichor",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 2,
         "usetype": "expedition",
         "description": [{
@@ -973,7 +973,7 @@
         },
         "eventtags": {},
         "name": "Chimaeric Bile",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -991,7 +991,7 @@
         },
         "eventtags": {},
         "name": "Apex Mantle",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -1009,7 +1009,7 @@
         },
         "eventtags": {},
         "name": "Apex Fang",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 3,
         "usetype": "",
         "description": [{
@@ -1034,7 +1034,7 @@
         },
         "eventtags": {},
         "name": "Wyrm Gut",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -1055,7 +1055,7 @@
         },
         "eventtags": {},
         "name": "Tail Sword",
-        "category": "beast",
+        "category": "fc_beast",
         "uses" : 1,
         "usetype": "expedition",
         "description": [{
@@ -1075,7 +1075,7 @@
         },
         "eventtags": {},
         "name": "Scav Badge",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 0,
         "usetype": "",
         "description": [
@@ -1095,7 +1095,7 @@
         },
         "eventtags": {},
         "name": "Gold Tooth",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 2,
         "usetype": "",
         "description": [
@@ -1124,7 +1124,7 @@
         },
         "eventtags": {},
         "name": "Shank's Cross Hilt",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -1144,7 +1144,7 @@
         },
         "eventtags": {},
         "name": "Ruffians Boots",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 5,
         "usetype": "",
         "description": [
@@ -1163,7 +1163,7 @@
         },
         "eventtags": {},
         "name": "Glittercloak",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -1183,7 +1183,7 @@
         },
         "eventtags": {},
         "name": "Sparkling Gem",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1225,7 +1225,7 @@
         },
         "eventtags": {},
         "name": "Junk Mage Talisman",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1243,7 +1243,7 @@
         },
         "eventtags": {},
         "name": "Plunder Blade",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1271,7 +1271,7 @@
         },
         "eventtags": {},
         "name": "Midan Shard",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1295,7 +1295,7 @@
         },
         "eventtags": {},
         "name": "Twinblade Charm",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 5,
         "usetype": "",
         "description": [
@@ -1315,7 +1315,7 @@
         },
         "eventtags": {},
         "name": "Battle Blade",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1339,7 +1339,7 @@
         },
         "eventtags": {},
         "name": "Blood Rune",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1362,7 +1362,7 @@
         },
         "eventtags": {},
         "name": "Boot's Boots",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 5,
         "usetype": "",
         "description": [
@@ -1386,7 +1386,7 @@
         },
         "eventtags": {},
         "name": "Gilthand",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -1405,7 +1405,7 @@
         },
         "eventtags": {},
         "name": "Crystallized Greed",
-        "category": "scavenger",
+        "category": "fc_scavenger",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -1423,7 +1423,7 @@
         },
         "eventtags": {},
         "name": "Imperial Arquebus",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1442,7 +1442,7 @@
         },
         "eventtags": {},
         "name": "Arkentech Mine",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1468,7 +1468,7 @@
         },
         "eventtags": {},
         "name": "Flame Hurler",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 3,
         "usetype": "",
         "description": [            
@@ -1498,7 +1498,7 @@
         },
         "eventtags": {},
         "name": "Arkentech Force Shield",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1518,7 +1518,7 @@
         },
         "eventtags": {},
         "name": "Imperial Sidearm",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1538,7 +1538,7 @@
         },
         "eventtags": {},
         "name": "Imperial Rocket Pack",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1561,7 +1561,7 @@
         },
         "eventtags": {},
         "name": "Arkentech Power Armor",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1580,7 +1580,7 @@
         },
         "eventtags": {},
         "name": "Arkentech Power Gauntlet",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1610,7 +1610,7 @@
         },
         "eventtags": {},
         "name": "Arkentech Goggles",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1630,7 +1630,7 @@
         },
         "eventtags": {},
         "name": "Hellforged Armor",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1650,7 +1650,7 @@
         },
         "eventtags": {},
         "name": "Hades Cannon",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1669,7 +1669,7 @@
         },
         "eventtags": {},
         "name": "Targeting Flare",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -1696,7 +1696,7 @@
         },
         "eventtags": {},
         "name": "Landship Drill",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1717,7 +1717,7 @@
         },
         "eventtags": {},
         "name": "Retooled Combat Automaton",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1740,7 +1740,7 @@
         },
         "eventtags": {},
         "name": "Doom Key",
-        "category": "imperial",
+        "category": "fc_imperial",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1759,7 +1759,7 @@
         },
         "eventtags": {},
         "name": "Void Shard",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 6,
         "usetype": "",
         "description": [
@@ -1778,7 +1778,7 @@
         },
         "eventtags": {},
         "name": "Natal Slime",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1798,7 +1798,7 @@
         },
         "eventtags": {},
         "name": "Empty Bone",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 2,
         "usetype": "",
         "description": [
@@ -1817,7 +1817,7 @@
         },
         "eventtags": {},
         "name": "Purified Demon Blood",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1837,7 +1837,7 @@
         },
         "eventtags": {},
         "name": "Pale Man Eye",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 2,
         "usetype": "",
         "description": [
@@ -1872,7 +1872,7 @@
         },
         "eventtags": {},
         "name": "Warping Flesh",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1890,7 +1890,7 @@
         },
         "eventtags": {},
         "name": "Chaos Shard",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1918,7 +1918,7 @@
         },
         "eventtags": {},
         "name": "Judicator Heart Valve",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1938,7 +1938,7 @@
         },
         "eventtags": {},
         "name": "Unstable Demon Bone",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -1958,7 +1958,7 @@
         },
         "eventtags": {},
         "name": "White Flesh Strip",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -1981,7 +1981,7 @@
         },
         "eventtags": {},
         "name": "Clasped Hand Ring",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2003,7 +2003,7 @@
         },
         "eventtags": {},
         "name": "Seventh Sword",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -2023,7 +2023,7 @@
         },
         "eventtags": {},
         "name": "Chakram",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2042,7 +2042,7 @@
         },
         "eventtags": {},
         "name": "Clasp of the Flagellant",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2065,7 +2065,7 @@
         },
         "eventtags": {},
         "name": "Death XIII",
-        "category": "demon",
+        "category": "fc_demon",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2084,7 +2084,7 @@
         },
         "eventtags": {},
         "name": "Mancatcher",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2103,7 +2103,7 @@
         },
         "eventtags": {},
         "name": "Antidote",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2122,7 +2122,7 @@
         },
         "eventtags": {},
         "name": "Ruin Icon",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2142,7 +2142,7 @@
         },
         "eventtags": {},
         "name": "Pit Poison",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2166,7 +2166,7 @@
         },
         "eventtags": {},
         "name": "Monster Spine Launcher",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 6,
         "usetype": "",
         "description": [
@@ -2186,7 +2186,7 @@
         },
         "eventtags": {},
         "name": "Ointment",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2205,7 +2205,7 @@
         },
         "eventtags": {},
         "name": "Lowlander Toxin",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2227,7 +2227,7 @@
         },
         "eventtags": {},
         "name": "Grappling Hook",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2246,7 +2246,7 @@
         },
         "eventtags": {},
         "name": "Survival Suit",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2266,7 +2266,7 @@
         },
         "eventtags": {},
         "name": "Corruptive Ichor",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2288,7 +2288,7 @@
         },
         "eventtags": {},
         "name": "Icon of the Pit",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2311,7 +2311,7 @@
         },
         "eventtags": {},
         "name": "Cataclysm Weapon",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2334,7 +2334,7 @@
         },
         "eventtags": {},
         "name": "Belt of the Champion",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2357,7 +2357,7 @@
         },
         "eventtags": {},
         "name": "Lesser Wormspore",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2377,7 +2377,7 @@
         },
         "eventtags": {},
         "name": "Hurian Spear",
-        "category": "lowlander",
+        "category": "fc_lowlander",
         "uses" : 6,
         "usetype": "",
         "description": [
@@ -2400,7 +2400,7 @@
         },
         "eventtags": {},
         "name": "Titan Blade",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -2453,7 +2453,7 @@
         },
         "eventtags": {},
         "name": "Mead of Erenhelion",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -2471,7 +2471,7 @@
         },
         "eventtags": {},
         "name": "Thannir Greatscythe",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 2,
         "usetype": "",
         "description": [
@@ -2490,7 +2490,7 @@
         },
         "eventtags": {},
         "name": "Elder Titanrune",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2511,7 +2511,7 @@
         },
         "eventtags": {},
         "name": "Titan Hammer",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2533,7 +2533,7 @@
         },
         "eventtags": {},
         "name": "Blackblood",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2552,7 +2552,7 @@
         },
         "eventtags": {},
         "name": "Titanforge Greatbow",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2578,7 +2578,7 @@
         },
         "eventtags": {},
         "name": "Great Wolf Mantle",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2600,7 +2600,7 @@
         },
         "eventtags": {},
         "name": "Nilfling Tooth",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2619,7 +2619,7 @@
         },
         "eventtags": {},
         "name": "Aegis of Erenhelion",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2638,7 +2638,7 @@
         },
         "eventtags": {},
         "name": "Bridle Shard",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2661,7 +2661,7 @@
         },
         "eventtags": {},
         "name": "Quicksilver Draught",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2684,7 +2684,7 @@
         },
         "eventtags": {},
         "name": "Star of the Creator",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2704,7 +2704,7 @@
         },
         "eventtags": {},
         "name": "First Key to the Gates",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -2725,7 +2725,7 @@
         },
         "eventtags": {},
         "name": "Second Key to the Gates",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 1,
         "usetype": "",
         "description": [
@@ -2769,7 +2769,7 @@
         },
         "eventtags": {},
         "name": "Third Key to the Gates",
-        "category": "jotunn",
+        "category": "fc_jotunn",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2811,7 +2811,7 @@
         },
         "eventtags": {},
         "name": "Yunmes Blossom",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2833,7 +2833,7 @@
         },
         "eventtags": {},
         "name": "Wisson Root Splinter",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 2,
         "usetype": "",
         "description": [
@@ -2862,7 +2862,7 @@
         },
         "eventtags": {},
         "name": "Winter Berry",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2885,7 +2885,7 @@
         },
         "eventtags": {},
         "name": "Geryan's Pipe",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 5,
         "usetype": "",
         "description": [
@@ -2908,7 +2908,7 @@
         },
         "eventtags": {},
         "name": "Boulder Hob Pebble",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 5,
         "usetype": "",
         "description": [
@@ -2927,7 +2927,7 @@
         },
         "eventtags": {},
         "name": "Transmogrifying Mushroom",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -2950,7 +2950,7 @@
         },
         "eventtags": {},
         "name": "Banderhob Fur Mantle",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2973,7 +2973,7 @@
         },
         "eventtags": {},
         "name": "Spirit Hob Charm",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -2991,7 +2991,7 @@
         },
         "eventtags": {},
         "name": "Mark of the Forest God",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -3017,7 +3017,7 @@
         },
         "eventtags": {},
         "name": "Mask of Summer",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -3038,7 +3038,7 @@
         },
         "eventtags": {},
         "name": "Pure Ambrosia",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -3058,7 +3058,7 @@
         },
         "eventtags": {},
         "name": "Mask of Autumn",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
@@ -3082,7 +3082,7 @@
         },
         "eventtags": {},
         "name": "Wind Cloak",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 3,
         "usetype": "",
         "description": [
@@ -3107,7 +3107,7 @@
         },
         "eventtags": {},
         "name": "Frozen Fetish",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 2,
         "usetype": "",
         "description": [
@@ -3130,7 +3130,7 @@
         },
         "eventtags": {},
         "name": "Mask of Winter",
-        "category": "hob",
+        "category": "fc_hob",
         "uses" : 1,
         "usetype": "expedition",
         "description": [
