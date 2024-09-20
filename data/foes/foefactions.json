@@ -1,0 +1,61 @@
+[
+    {   "id": "fc_beast",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruin Beast",
+        "description" : [
+            {
+            "tags": {"desc_type" : "subeffect"},
+            "content": "The ruins are full of wildlife that has adapted to their unique environment over time - or have been changed or warped by it. Wherever there are dungeons or a Blight, there are Ruin Beasts. They are the most common monsters found afield in the blight-stricken areas of Arden Eld, and the most likely to wander adrift."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Beasts fit into a dungeon ecosystem much the same as they do in more mundane ecosystems outside of their unnatural environments. There are many biologists and naturalists across Arden Eld undertaking the hard work of categorizing the dizzying number of species that are found every week by intrepid adventurers. Many beast organs and excretions are extremely useful in medicine, research, industry, and even cosmetics, and teams of hunters are often sent out to bag a particularly beast once its kind are sighted."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some naturalists are more in favor of conservation, and argue that despite their strange origins, the beasts of the great dungeons, though dangerous and unusual, should be treated as just another part of the natural world. They’re more interested in studying the beasts and preventing them from harming local communities than actively poaching them."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Not all ruin beasts are hostile, and some are in fact quite docile unless provoked. However, nearly all of them are capable of tremendous bursts of strength and power when enraged, a by product of their harsh environment - and necessary for survival."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Beast, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Monsters:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Beasts do not negotiate. They might flee if losing a fight badly or act out of self preservation."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Beasts have simple motivations, which are typically for territory or food. Ruin beasts in particular are often affected by the blighted energies of unconfined ruins, which can mutate them or drive them sick or mad. Sometimes it is possible to cure these beasts of their afflictions."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_beast_enrage"],
+        "actions": [],
+        "traits_added": ["tf_faction_beast_enrage"],
+        "actions_added": [],
+        "stats" : {}
+    }
+]

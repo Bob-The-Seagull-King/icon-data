@@ -349,5 +349,75 @@
                 ]
             }
                         ]
+    },
+    {
+        "id": "tf_class_heavy_guard",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has Rampart. Reduce all damage to self and allies in orthogonal spaces by 2, as if by armor.",
+                "glossary": [{"val": "Rampart", "id": "gl_rampart"},{"val": "armor", "id": "gl_armor"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_faction_beast_enrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Enrage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain +1 action when bloodied.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_faction_beast_brawlerbeast_primalstrength",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Primal Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All of the beast's abilities gain:"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes are weakened. Weakened foes instead take 2 damage and the beast gains 2 vigor.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "Weakened", "id": "gl_weakened"},{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_faction_beast_brawlerbeast_stonelizard_curlup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Curl Up",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, this character curls up and becomes a height 1 boulder object."
+            }
+                        ]
     }
 ]

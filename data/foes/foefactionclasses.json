@@ -1,0 +1,55 @@
+[
+    {
+        "id": "fc_beast_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brawler Beast",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Beasts with thick hides, strong limbs, and monstrous tempers. These dungeon-dwelling beasts enforce their territory through raw aggression and muscle. The energies of the dungeons have given them prodigious size."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_heavy_smash","af_beast_heavy_wildtoss","af_beast_heavy_barellingcharge"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_brawlerbeast_primalstrength"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            } ,
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_beast_heavy_wildtoss_ch2"],
+                "removed_actions": ["af_beast_heavy_wildtoss"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            } ,
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_beast_heavy_wildtoss_ch3"],
+                "removed_actions": ["af_beast_heavy_wildtoss"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    }
+]

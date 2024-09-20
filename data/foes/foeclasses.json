@@ -1,0 +1,22 @@
+[
+    {
+        "id": "cl_foe_heavy",
+        "type": "FoeClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heavy",
+        "stats": {
+            "vit": 10,
+            "hp": 40,
+            "defense": 6,
+            "speed": 4,
+            "dash": 2,
+            "fray": 4,
+            "damage": 6
+        },
+        "traits": ["tf_class_heavy_guard"],
+        "actions": [],
+        "class": "red"        
+    }
+]

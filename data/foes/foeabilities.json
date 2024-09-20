@@ -749,5 +749,155 @@
             "content": "At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces."
         }         
                         ]
+    },
+    {
+        "id": "af_beast_heavy_smash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "True Strike": true
+        },
+        "eventtags": {},
+        "name": "Smash",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Shove 1. If the beast or target is bloodied increase this shove to 3.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"},{"val": "shove", "id": "gl_shove"},{"val": "bloodied", "id": "gl_bloodied"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_heavy_wildtoss",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Wild Toss",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beast hurls an adjacent ally, removing them from the battlefield, then placing them in range 3. That ally deals 2 damage to adjacent foes when landing."
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_heavy_wildtoss_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Wild Toss",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beast hurls an adjacent ally or foe, removing them from the battlefield, then placing them in range 3. That character deals 2 damage to adjacent foes when landing."
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_heavy_wildtoss_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Wild Toss",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beast hurls an adjacent ally or foe, removing them from the battlefield, then placing them in range 5. That character deals 2 damage to adjacent foes when landing. If the beast is bloodied the target also takes 3 damage.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_heavy_barellingcharge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Barelling Charge",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beast chooses a foe in range and becomes sturdy.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+            },                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that foe’s next turn, the beast rushes up to 4, with each space moving towards that foe, phasing through characters.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "phasing", "id": "gl_phasing"}]
+            },                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters the beast passes through are shoved 1 to either side and take 2 damage."
+            },                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the beasts ends this movement adjacent to their foe, that foe is weakened and must save or take 2[D]+fray and become stunned, or [D]+fray on a successful save. Then, this effect ends.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "stunned", "id": "gl_stunned"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_heavy_stonelizard_rollingboulder",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rolling Boulder",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The lizard gathers momentum, then rolls 4 spaces in a straight line, or as far as possible, rushing. After it stops moving, it deals damage to all adjacent foes equal to the spaces it rushed, then shoves them 1.",
+                "glossary": [{"val": "rushing", "id": "gl_rush"},{"val": "rushed", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+            }
+                        ]
     }
 ]

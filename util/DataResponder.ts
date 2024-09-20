@@ -30,6 +30,10 @@ import rulesetdata from '../data/general/rules.json'
 import foetraitsdata from '../data/foes/foetraits.json'
 import foeabilitiesdata from '../data/foes/foeabilities.json'
 import foesummonsdata from '../data/foes/foesummons.json'
+import foeclassdata from '../data/foes/foeclasses.json'
+import foefactiondata from '../data/foes/foefactions.json'
+import foefactionclassdata from '../data/foes/foefactionclasses.json'
+import foejobdata from '../data/foes/foejobs.json'
 // -----------------------------------------------------
 
 /**
@@ -141,6 +145,9 @@ class DataResponder {
             case "actions": {
                 return actiondata.concat(data)
             }
+            case "foeclass": {
+                return foeclassdata.concat(data)
+            }
             case "bonds": {
                 return bonddata.concat(data)
             }
@@ -167,6 +174,15 @@ class DataResponder {
             }
             case "rules": {
                 return rulesetdata.concat(data)
+            }
+            case "foefaction": {
+                return foefactiondata.concat(data)
+            }
+            case "foefactionclass": {
+                return foefactionclassdata.concat(data)
+            }
+            case "foejobs": {
+                return foejobdata.concat(data)
             }
             default: {
                 return data

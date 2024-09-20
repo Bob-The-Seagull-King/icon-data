@@ -1,0 +1,23 @@
+[
+    {
+        "id": "fj_beast_heavy_stonelizard",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stone Lizard",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+
+        ],
+        "stats": {},
+        "actions": ["af_beast_heavy_stonelizard_rollingboulder"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_brawlerbeast_stonelizard_curlup"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "chapter": 1
+    }
+]
