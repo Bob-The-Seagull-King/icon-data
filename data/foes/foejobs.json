@@ -9,7 +9,10 @@
         "faction_id": "fc_beast",
         "class_id": "cl_foe_heavy",
         "description": [
-
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Thick hides and stony skin make these large beasts almost impossible to tell from boulders."
+            }
         ],
         "stats": {},
         "actions": ["af_beast_heavy_stonelizard_rollingboulder"],
