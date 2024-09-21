@@ -115,7 +115,7 @@
             "speed": 4,
             "dash": 2,
             "defense": 6,
-            "hp_per": "Per Player"s
+            "hp_per": "Per Player"
         },
         "traits": ["tf_class_mob_mob"],
         "actions": [],
