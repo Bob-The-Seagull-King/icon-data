@@ -1,4 +1,151 @@
 [
+    
+    {
+        "id": "tf_class_heavy_guard",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has Rampart. Reduce all damage to self and allies in orthogonal spaces by 2, as if by armor.",
+                "glossary": [{"val": "Rampart", "id": "gl_rampart"},{"val": "armor", "id": "gl_armor"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_skirmisher_skirmisher",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skirmisher",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can move diagonally, and dash moves full speed.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_skirmisher_dodge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dodge",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to damage from missed attacks, area effects and successful saves.",
+                "glossary": [{"val": "Immune", "id": "gl_immune"}, {"val": "area effects", "id": "gl_areaeffect"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_leader_diaga",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Diaga",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 4 is cured.",
+                "glossary": [{"val": "cured", "id": "gl_cure"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_artillery_slip",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Slip",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Movement ignores rampart, interrupts, and vigilance.",
+                "glossary": [{"val": "rampart", "id": "gl_rampart"}, {"val": "interrupts", "id": "gl_interrupt"}, {"val": "vigilance", "id": "gl_vigilance"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_artillery_aetherwall",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Aetherwall",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains resistance against all abilities from characters that are outside of range 2 from them (Cover halves ranged damage).",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "Cover", "id": "gl_cover"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_legend_legend",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Legend",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Takes 1 turn for each player character."
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_legend_juggernaut",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Juggernaut",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, this character may clear a status or mark.",
+                "glossary": [{"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_class_mob_mob",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Mob",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character doesn’t trigger slay effects, and is removed when defeated.",
+                "glossary": [{"val": "slay", "id": "gl_slay"}]
+            }
+                        ]
+    },
     {
         "id": "tf_beast_wyrm_pathofruin",
         "type": "Trait",
@@ -347,21 +494,6 @@
                         "content": "The Rider may break up any of its movement with actions."
                     }
                 ]
-            }
-                        ]
-    },
-    {
-        "id": "tf_class_heavy_guard",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Guard",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Has Rampart. Reduce all damage to self and allies in orthogonal spaces by 2, as if by armor.",
-                "glossary": [{"val": "Rampart", "id": "gl_rampart"},{"val": "armor", "id": "gl_armor"}]
             }
                         ]
     },

@@ -18,5 +18,105 @@
         "traits": ["tf_class_heavy_guard"],
         "actions": [],
         "class": "red"        
+    },
+    {
+        "id": "cl_foe_skirmisher",
+        "type": "FoeClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skirmisher",
+        "stats": {
+            "vit": 7,
+            "hp": 28,
+            "defense": 10,
+            "speed": 4,
+            "dash": 4,
+            "fray": 2,
+            "damage": 10
+        },
+        "traits": ["tf_class_skirmisher_skirmisher", "tf_class_skirmisher_dodge"],
+        "actions": [],
+        "class": "yellow"        
+    },
+    {
+        "id": "cl_foe_leader",
+        "type": "FoeClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Leader",
+        "stats": {
+            "vit": 10,
+            "hp": 40,
+            "defense": 8,
+            "speed": 4,
+            "dash": 2,
+            "fray": 3,
+            "damage": 6
+        },
+        "traits": ["tf_class_leader_diaga"],
+        "actions": [],
+        "class": "green"        
+    },
+    {
+        "id": "cl_foe_artillery",
+        "type": "FoeClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Artillery",
+        "stats": {
+            "vit": 8,
+            "hp": 32,
+            "defense": 7,
+            "speed": 4,
+            "dash": 2,
+            "fray": 3,
+            "damage": 8
+        },
+        "traits": ["tf_class_artillery_slip", "tf_class_artillery_aetherwall"],
+        "actions": [],
+        "class": "blue"        
+    },
+    {
+        "id": "cl_foe_legend",
+        "type": "FoeClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Legend",
+        "stats": {
+            "vit": 10,
+            "hp": 50,
+            "defense": 8,
+            "speed": 4,
+            "dash": 2,
+            "fray": 3,
+            "damage": 8
+        },
+        "traits": ["tf_class_legend_legend", "tf_class_legend_juggernaut"],
+        "actions": [],
+        "class": "purple"        
+    },
+    {
+        "id": "cl_foe_mob",
+        "type": "FoeClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mob",
+        "stats": {
+            "members": 2,
+            "damage": 6,
+            "fray": 3,
+            "hits": 2,
+            "speed": 4,
+            "dash": 2,
+            "defense": 6
+        },
+        "traits": ["tf_class_mob_mob"],
+        "actions": [],
+        "class": "red"        
     }
 ]
