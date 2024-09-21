@@ -93,11 +93,12 @@
             "speed": 4,
             "dash": 2,
             "fray": 3,
-            "damage": 8
+            "damage": 8,
+            "hp_per": "Per Player"
         },
         "traits": ["tf_class_legend_legend", "tf_class_legend_juggernaut"],
         "actions": [],
-        "class": "purple"        
+        "class": "icon"        
     },
     {
         "id": "cl_foe_mob",
@@ -113,10 +114,11 @@
             "hits": 2,
             "speed": 4,
             "dash": 2,
-            "defense": 6
+            "defense": 6,
+            "hp_per": "Per Player"s
         },
         "traits": ["tf_class_mob_mob"],
         "actions": [],
-        "class": "red"        
+        "class": "grey"        
     }
 ]
