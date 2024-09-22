@@ -30,7 +30,7 @@
         "tags": { },
         "eventtags": {},
         "name": "Husk",
-        "faction_id": "fc_demon",
+        "faction_id": "fc_relict",
         "class_id": "cl_foe_mob",
         "description": [
             {
@@ -50,7 +50,7 @@
         "removed_actions": [],
         "traits": ["tf_relict_husk_endlessdead", "tf_relict_husk_fading"],
         "removed_traits": [],
-        "category": "job",
+        "category": "unique",
         "phases": [],
         "chapter": 1
     },
@@ -74,7 +74,7 @@
         "removed_actions": [],
         "traits": [],
         "removed_traits": [],
-        "category": "job",
+        "category": "unique",
         "phases": [],
         "chapter": 1
     }
