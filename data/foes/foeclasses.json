@@ -55,8 +55,8 @@
             "fray": 3,
             "damage": 6
         },
-        "traits": ["tf_class_leader_diaga"],
-        "actions": [],
+        "traits": [],
+        "actions": ["af_class_leader_diaga"],
         "class": "green"        
     },
     {
@@ -96,8 +96,8 @@
             "damage": 8,
             "hp_per": "Per Player"
         },
-        "traits": ["tf_class_legend_legend", "tf_class_legend_juggernaut"],
-        "actions": [],
+        "traits": ["tf_class_legend_legend"],
+        "actions": ["af_class_legend_juggernaut"],
         "class": "icon"        
     },
     {

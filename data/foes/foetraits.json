@@ -46,23 +46,6 @@
                         ]
     },
     {
-        "id": "tf_class_leader_diaga",
-        "type": "Trait",
-        "source": "core",
-        "tags": { 
-            "action": 1
-        },
-        "eventtags": {},
-        "name": "Diaga",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "An ally in range 4 is cured.",
-                "glossary": [{"val": "cured", "id": "gl_cure"}]
-            }
-                        ]
-    },
-    {
         "id": "tf_class_artillery_slip",
         "type": "Trait",
         "source": "core",
@@ -109,23 +92,6 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Takes 1 turn for each player character."
-            }
-                        ]
-    },
-    {
-        "id": "tf_class_legend_juggernaut",
-        "type": "Trait",
-        "source": "core",
-        "tags": { 
-            "action": 1
-        },
-        "eventtags": {},
-        "name": "Juggernaut",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "At the start of the round, this character may clear a status or mark.",
-                "glossary": [{"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
             }
                         ]
     },
