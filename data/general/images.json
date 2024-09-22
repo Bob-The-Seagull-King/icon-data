@@ -14,5 +14,33 @@
         },
         "img_src": "https://pbs.twimg.com/media/Fyg2FbFWIAAd3sg?format=jpg&name=large",
         "caption": "Steadfast Warrior"
+    },
+    {
+        "tags": {
+            "kn_beastfolk": true
+        },
+        "img_src": "https://i.imgur.com/oA0uDJG.png",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "kn_trogg": true
+        },
+        "img_src": "https://i.imgur.com/mwDXgbd.png",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "kn_thrynn": true
+        },
+        "img_src": "https://i.imgur.com/y4z2yJ8.png",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "kn_xixo": true
+        },
+        "img_src": "https://i.imgur.com/Lzh151c.png",
+        "caption": ""
     }
 ]
