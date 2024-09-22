@@ -82,7 +82,6 @@
         "type": "Trait",
         "source": "core",
         "tags": { 
-            "action": 1
         },
         "eventtags": {},
         "name": "Legend",
