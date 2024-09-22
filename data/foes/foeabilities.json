@@ -599,6 +599,95 @@
         ]
     },
     {
+        "id": "af_faction_demon_devour",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Devour",
+        "class_id": "icon",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demon devours and absorbs an adjacent bloodied demon, destroying it permanently and curing itself. They then gain +1 action for all their turns for the rest of combat, starting with this one.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "curing", "id": "gl_cure"}]
+            }        
+        ]
+    },
+    {
+        "id": "af_faction_demon_devournatal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Devour",
+        "class_id": "icon",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Demons may Devour an adjacent Natal as a free action, destroying it and giving them +1 action for this turn only. A demon can only use Devour or Devour Natal in the same turn, and not both."
+            }        
+        ]
+    },
+    {
+        "id": "af_demon_natal_squirm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Squirm",
+        "class_id": "grey",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Dash 2, then deal 1 piercing damage to all adjacent foes.",
+                                    "glossary": [{"val": "Dash", "id": "gl_dash"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Up to two other Natals may deal 1 piercing damage to an adjacent foe.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }         
+        ]
+    },
+    {
+        "id": "af_demon_natal_voidvomit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Void Vomit",
+        "class_id": "grey",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Create a difficult terrain space adjacent to up to two natals. This space can be created under characters, and deals 1 piercing damage to a character in the space when it is created.",
+                                    "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }       
+        ]
+    },
+    {
         "id": "af_demon_limbdemon_controllimbs",
         "type": "Ability",
         "source": "core",
@@ -785,6 +874,47 @@
             "content": "At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces."
         }         
                         ]
+    },
+    {
+        "id": "af_relict_husk_soulfrenzy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Soul Frenzy",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "All husks may rush 1 space. Then foes adjacent to one or more husks take 2 piercing damage.",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }    
+        ]
+    },
+    {
+        "id": "af_relict_husk_soulsacrifice",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Soul Sacrifice",
+        "class_id": "grey",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Choose a bloodied character adjacent to one or more husks, then destroy all husks adjacent to that character. If that character is an ally, they gain 2 vigor per husk destroyed. If that character was a foe, they must sacrifice 2 per husk destroyed.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
     },
     {
         "id": "af_beast_heavy_smash",

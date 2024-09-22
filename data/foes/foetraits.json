@@ -186,6 +186,243 @@
             }       ]
     },
     {
+        "id": "tf_demon_limbdemon_amorphous",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can share space with other characters and objects. Any foes that end their turn inside its space take 2 damage. Does not provide obstruction, but characters treat its space as difficult terrain. Area effects this character creates can overlap its space, and it is immune to damage and effects from its own attacks.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_lowlander_faction_lowlandertoxin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lowlander Toxin",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round in any combat featuring lowlanders, all nonlowlander characters sacrifice 2 hp.",
+                "glossary": [
+                    {"val": "sacrifice", "id": "gl_sacrifice"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_jotunn_rideroftheprimalstorm_callsteed",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Call Steed",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rider gains a massive Titansteed, granting it the following benefits:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase the Rider’s speed to 5."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider gains flying.",
+                        "glossary": [{"val": "flying", "id": "gl_flying"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider may break up any of its movement with actions."
+                    }
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_faction_folk_greatculture",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Culture",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "To make a Folk foe, use basic foes and apply the Kin template and Great Culture trait of your choice."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_relict_legionofthedead",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Legion of the Dead",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Relict are a legion of mindless husks, cursed with an undying existence. This gives all relict except Legends the following traits:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• This character has a chance to rise again when defeated. Roll 1d6 at the start of each round that this character is defeated. On a 5+, this character gets back up at 25% hp, returning it from defeated, and can take a turn normally this round. If defeated again, this character disintegrates and is removed from the battlefield. If all characters with this trait are defeated, it deactivates."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Add a Husk mob to a fight. This does not take up points in the encounter."
+            },
+            {
+                "tags": {"desc_type" : "textfoe"},
+                "content": "fj_relict_mob_husk"
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_husk_endlessdead",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Endless Dead",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Add to this mob by 1 at the start of every round, placing a new member anywhere on the battlefield not adjacent to a foe."
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_husk_fading",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fading",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This mob is defeated if all of its allies is defeated, and disintegrates."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_beast_enrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Enrage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain +1 action when bloodied.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_faction_beast_brawlerbeast_primalstrength",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Primal Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All of the beast's abilities gain:"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes are weakened. Weakened foes instead take 2 damage and the beast gains 2 vigor.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "Weakened", "id": "gl_weakened"},{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_faction_beast_brawlerbeast_stonelizard_curlup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Curl Up",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, this character curls up and becomes a height 1 boulder object."
+            }
+                        ]
+    },
+    {
+        "id": "tf_faction_scavenger_valuables",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Culture",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Valuables: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables can be picked up by any character by moving into their space. They don’t provide obstruction, can’t be targeted, and can share space with anything except other valuables tokens. Characters drop them in adjacent spaces when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don’t count."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When the Scavenger uses an ability and either they or their target has one or more valuables tokens, the ability gains more powerful "
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "greed"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " effects."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Cut and Run: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If a Scavenger has 4 or more valuables tokens, they attempt to flee the battlefield, fleeing successfully if they start their turn in an edge space of the battlefield with no hostile characters adjacent."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",
@@ -395,123 +632,94 @@
             }     ]
     },
     {
-        "id": "tf_demon_limbdemon_amorphous",
+        "id": "tf_faction_imperial_chainofcommand",
         "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Amorphous",
-        "description":  [                                  
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Can share space with other characters and objects. Any foes that end their turn inside its space take 2 damage. Does not provide obstruction, but characters treat its space as difficult terrain. Area effects this character creates can overlap its space, and it is immune to damage and effects from its own attacks.",
-                "glossary": [
-                    {"val": "difficult terrain", "id": "gl_difficultterrain"}
-                ]
-            }    ]
-    },
-    {
-        "id": "tf_lowlander_faction_lowlandertoxin",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Lowlander Toxin",
-        "description":  [                                  
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "At the start of each round in any combat featuring lowlanders, all nonlowlander characters sacrifice 2 hp.",
-                "glossary": [
-                    {"val": "sacrifice", "id": "gl_sacrifice"}
-                ]
-            }    ]
-    },
-    {
-        "id": "tf_jotunn_rideroftheprimalstorm_callsteed",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Call Steed",
+        "name": "Chain of Command",
         "description":  [
             {
-                "tags": {"desc_type" : "desc"},
-                "content": "The Rider gains a massive Titansteed, granting it the following benefits:"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "",
+                "tags": {"desc_type" : "effect"},
+                "content": "Commanding Officer: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Increase the Rider’s speed to 5."
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "The Rider gains flying.",
-                        "glossary": [{"val": "flying", "id": "gl_flying"}]
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "The Rider may break up any of its movement with actions."
+                        "content": "Designate one foe the commanding officer of the imperial detachment. They get a special template."
                     }
                 ]
-            }
-                        ]
-    },
-    {
-        "id": "tf_faction_beast_enrage",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Enrage",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Gain +1 action when bloodied.",
-                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
-            }
-                        ]
-    },
-    {
-        "id": "tf_faction_beast_brawlerbeast_primalstrength",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Primal Strength",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "All of the beast's abilities gain:"
             },
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "Collide: ",
-                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "content": "Orders: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Foes are weakened. Weakened foes instead take 2 damage and the beast gains 2 vigor.",
-                        "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "Weakened", "id": "gl_weakened"},{"val": "vigor", "id": "gl_vigor"}]
+                        "content": "At the start of the round, give an orders token to any imperial character. That character automatically activates any exceed effects of their attacks, deals bonus damage, and gains +1 action, but can only take their turn after all other imperials have acted. At the end of the round, discard that token.",
+                        "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special Template: Imperial Officer"
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Any job"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This template stacks with other templates."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Promotion: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Starts combat with vigor equal to their VIT.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Imperial Command Aura: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Aura 2. Allies in the aura gain +1 boon on attacks.",
+                        "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "+1 boon", "id": "gl_boon"}]
                     }
                 ]
             }
-                        ]
+        ]
     },
     {
-        "id": "tf_faction_beast_brawlerbeast_stonelizard_curlup",
+        "id": "tf_faction_demon_abyssallegion",
         "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Curl Up",
-        "description":  [
+        "name": "Abyssal Legion",
+        "description":  [                                  
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "When defeated, this character curls up and becomes a height 1 boulder object."
-            }
-                        ]
+                "content": "When fighting demons, at the start of combat, place a Natal mob, this faction’s special mob, on the map. The mob does not count for the total faction budget."
+            },
+            {
+                "tags": {"desc_type" : "textfoe"},
+                "content": "fj_demon_mob_natal"
+            },                     
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_faction_demon_devour"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_faction_demon_devournatal"
+            }   
+        ]
     }
 ]

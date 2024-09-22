@@ -22,5 +22,60 @@
         "category": "job",
         "phases": [],
         "chapter": 1
+    },
+    {
+        "id": "fj_relict_mob_husk",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Husk",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The shuffling mass of relict servitors, in thrall to the network."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This mob is always present in Relict fights. When new husks are summoned, they add to the current mob, or create a new one that can act on the following round if there isn’t one."
+            }
+        ],
+        "stats": {
+            "speed": 2,
+            "dash": 1
+        },
+        "actions": ["af_relict_husk_soulfrenzy", "af_relict_husk_soulsacrifice"],
+        "removed_actions": [],
+        "traits": ["tf_relict_husk_endlessdead", "tf_relict_husk_fading"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_mob_natal",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Natal",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Natals are immature demons, smooth, pale-skinned humanoids. Wherever demons appears, breaching the veil between worlds, they inevitably pour forth. Given time, Natals warp, burst, and shed their skins, transforming into different and more powerful demons."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_natal_squirm", "af_demon_natal_voidvomit", "af_faction_demon_devournatal"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "chapter": 1
     }
 ]

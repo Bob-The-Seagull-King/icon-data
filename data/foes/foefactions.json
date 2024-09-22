@@ -1,4 +1,132 @@
 [
+    {   "id": "fc_general",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "General",
+        "description" : [
+            {
+            "tags": {"desc_type" : "subeffect"},
+            "content": "Foes with no faction tied to them."
+            }
+        ],
+        "template": [],
+        "traits": [],
+        "actions": [],
+        "traits_added": [],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_folk",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Folk",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great melange of peoples that populate Arden Eld, split into the Six Great Cultures. Folk are as diverse as the land itself, and all hold dear their own stories, upbringings, and dreams. Though their drives and passions often bring them into conflict, they are, at their root, people just like you."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Folk, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk are Kin."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival)."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk value their own lives and will usually surrender or flee if there’s no chance of winning a fight. Martial-minded cultures like Islanders, Leggio, or Guilders might put up more of a fight."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_folk_greatculture"],
+        "actions": [],
+        "traits_added": ["tf_faction_folk_greatculture"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_relict",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Relict",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Relict are the most common danger that adventurers face in the ruins of Arden Eld. They are the spectral remnants of the Arken Empire, souls bound in a semi-automated etheric network that runs through the ruins, entrapped there by an ancient sorcerer as a last ditch effort to save a dying people. The process was technically successful, but most relict have been left mindless husks - tormented souls harnessed and stored in lightning aether powered sarcophagus-like nodes nestled throughout the ruins."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In its dying days, the Arken Empire became obsessed with escaping its own destruction, and the places where Relict now rest show this in their very stones. The great tomb-cities prepared for the populace now lie beneath the earth, both dead and alive. Great monuments of dead emperors peer over pitch black chasms lined with the husks of the deceased. Relict armor sits eerily still in alcoves, or crumpled into a corner, until its a node senses intruders, the Relict within rippling out through conduits to manifest in crackling undeath."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "There are some Relict, remnants of the Black Sun cult, that have retained more sense of themselves and work at dark purpose to resurrect the old empire and bring back the Arkenlords. These masters of the dead are barely sane from their long stint with undeath and think only of returning the surface world to its former glory."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Relict, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Monsters:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Most relict are mindless husks. Their more intelligent masters usually have more complex motivations."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Relict are usually dormant, but become active when their tomb-cities are intruded upon by unlucky treasure-seekers. They can also be stirred into wakefulness by the priests of the Black Sun, whose only goal is the reawakening of the old empire, the resurrection of the Arkenlords, and the reconquest and total subjugation of the world of the living."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_relict_legionofthedead"],
+        "actions": [],
+        "traits_added": ["tf_faction_relict_legionofthedead"],
+        "actions_added": [],
+        "stats" : {}
+    },
     {   "id": "fc_beast",
         "type": "FoeFaction",
         "source": "core",
@@ -44,7 +172,7 @@
         { "tags": {"desc_type" : "gap"}, "content": "" },
         {
             "tags": {"desc_type" : "effect"},
-            "content": "Motivations",
+            "content": "Motivations:",
             "subcontent": [
                 {
                     "tags": {"desc_type" : "desc"},
@@ -55,6 +183,320 @@
         "traits": ["tf_faction_beast_enrage"],
         "actions": [],
         "traits_added": ["tf_faction_beast_enrage"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_scavenger",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Relict",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Scavengers is a particular term in Arden Eld, referring to the scions of the Churning Age - those who rush into the ruins in search of relics to extract for a quick profit, or prowl the roads in search of vulnerable folk to shake down. Many find that it is easier to have others do the hard work for them, then rob them blind on the way out."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Scavenger bands are as diverse as any other folk of Arden Eld, but usually turn to scavenging out of a desire for profit, something that can be intensely personal. Many scavengers come from the cities, seeking wealth from the ruins that was denied to them by virtue of social class in their homelands. Still others are opportunists, deserters from Imperial armies, Churners whose business has dried up, or people from local villages that were sick of the parochial life and wanted to exercise their ambition. A lot of the time, they are barely one step away from adventurers."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Not all scavenger bands employ banditry, and some are actually large, ‘legitimate’ enterprises, sanctioned by the major guilds (frequently involving a lot of corruption). These bands are run by individuals colloquially known as Churn Barons - ruthless profiteers who will turn to any means to make money."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Scavenger, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Scavengers are kin, can be bargained with, and will flee or surrender if heavily outnumbered or heavily losing a fight."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Scavengers are typically after the wealth in the ruins and won’t fight if terms can be reached."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_scavenger_valuables"],
+        "actions": [],
+        "traits_added": ["tf_faction_scavenger_valuables"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_imperial",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Imperial",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great cities of Arden Eld are growing, stretching at their limits. Some have crowned kings, dictators, or patricians. Other set their ambitions higher - to create a nation, or recreate the old empire - a terrible endeavor indeed. The leaders of the Imperials are single-minded people in love with regalia, the war-banner, the factory, and the clang of steel. They worship the musket. Their soldiers on the ground are less enthusiastic, but given the chance, they will trample the Green into mud and ashes none the less."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Imperials make heavy use of salvaged and repurposed arkentech, that drive the engine- cores of their massive war machines and automatons. The black-powder weapons that they employ are low quality but effective in mass."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe an Imperial, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Imperials are kin, can be bargained with, and will flee or surrender if heavily outnumbered or heavily losing a fight."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Imperials have orders they are following from whatever guild master, warlord, or under-baron they serve. Usually this is to capture a location, object of power, or person of interest. If characters can work around those orders, Imperials can usually be bargained with or even be helpful."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_imperial_chainofcommand"],
+        "actions": [],
+        "traits_added": ["tf_faction_imperial_chainofcommand"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_demon",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Demon",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The origin of Demons is a mystery, but most scholars agree they appear to be closely related to the Doom. They are among the most dangerous and fearsome creatures that lurk in the deep levels of the Arkenruins, existing seemingly only to destroy. Whenever they appear, they drive other creatures to the surface in a Blight."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The deeper you go in the ruins, the more demons you come across, and the more reality seems to fall apart. Some of the more infamous and unconquered ruins in Arden Eld descend miles and miles, deep into the earth, where they eventually dissolve into lightless Abyss, full of squirming Natal demons that crawl over each other like maggots, and stalked by enormous, misshapen horrors."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Demon, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Monsters:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Demons do not flee or negotiate. All Demons have the Devour trait and Abyssal Legion trait."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Most demons are mindless, extra dimensional killing machines that exist to kill and eat living things. Those that have the intelligence or wherewithal to communicate with Kin usually reveal a cruel and sadistic malice. They delight in inflicting pain, fear, violence, and destruction - including on each other."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_demon_abyssallegion"],
+        "actions": [],
+        "traits_added": ["tf_faction_demon_abyssallegion"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_lowlander",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lowlander",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Relict are the most common danger that adventurers face in the ruins of Arden Eld. They are the spectral remnants of the Arken Empire, souls bound in a semi-automated etheric network that runs through the ruins, entrapped there by an ancient sorcerer as a last ditch effort to save a dying people. The process was technically successful, but most relict have been left mindless husks - tormented souls harnessed and stored in lightning aether powered sarcophagus-like nodes nestled throughout the ruins."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In its dying days, the Arken Empire became obsessed with escaping its own destruction, and the places where Relict now rest show this in their very stones. The great tomb-cities prepared for the populace now lie beneath the earth, both dead and alive. Great monuments of dead emperors peer over pitch black chasms lined with the husks of the deceased. Relict armor sits eerily still in alcoves, or crumpled into a corner, until its a node senses intruders, the Relict within rippling out through conduits to manifest in crackling undeath."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "There are some Relict, remnants of the Black Sun cult, that have retained more sense of themselves and work at dark purpose to resurrect the old empire and bring back the Arkenlords. These masters of the dead are barely sane from their long stint with undeath and think only of returning the surface world to its former glory."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Relict, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Monsters:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Most relict are mindless husks. Their more intelligent masters usually have more complex motivations."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Relict are usually dormant, but become active when their tomb-cities are intruded upon by unlucky treasure-seekers. They can also be stirred into wakefulness by the priests of the Black Sun, whose only goal is the reawakening of the old empire, the resurrection of the Arkenlords, and the reconquest and total subjugation of the world of the living."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_relict_legionofthedead"],
+        "actions": [],
+        "traits_added": ["tf_faction_relict_legionofthedead"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_jotunn",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Jotunn",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Relict are the most common danger that adventurers face in the ruins of Arden Eld. They are the spectral remnants of the Arken Empire, souls bound in a semi-automated etheric network that runs through the ruins, entrapped there by an ancient sorcerer as a last ditch effort to save a dying people. The process was technically successful, but most relict have been left mindless husks - tormented souls harnessed and stored in lightning aether powered sarcophagus-like nodes nestled throughout the ruins."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In its dying days, the Arken Empire became obsessed with escaping its own destruction, and the places where Relict now rest show this in their very stones. The great tomb-cities prepared for the populace now lie beneath the earth, both dead and alive. Great monuments of dead emperors peer over pitch black chasms lined with the husks of the deceased. Relict armor sits eerily still in alcoves, or crumpled into a corner, until its a node senses intruders, the Relict within rippling out through conduits to manifest in crackling undeath."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "There are some Relict, remnants of the Black Sun cult, that have retained more sense of themselves and work at dark purpose to resurrect the old empire and bring back the Arkenlords. These masters of the dead are barely sane from their long stint with undeath and think only of returning the surface world to its former glory."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Relict, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Monsters:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Most relict are mindless husks. Their more intelligent masters usually have more complex motivations."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Relict are usually dormant, but become active when their tomb-cities are intruded upon by unlucky treasure-seekers. They can also be stirred into wakefulness by the priests of the Black Sun, whose only goal is the reawakening of the old empire, the resurrection of the Arkenlords, and the reconquest and total subjugation of the world of the living."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_relict_legionofthedead"],
+        "actions": [],
+        "traits_added": ["tf_faction_relict_legionofthedead"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_hob",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hob",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Relict are the most common danger that adventurers face in the ruins of Arden Eld. They are the spectral remnants of the Arken Empire, souls bound in a semi-automated etheric network that runs through the ruins, entrapped there by an ancient sorcerer as a last ditch effort to save a dying people. The process was technically successful, but most relict have been left mindless husks - tormented souls harnessed and stored in lightning aether powered sarcophagus-like nodes nestled throughout the ruins."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In its dying days, the Arken Empire became obsessed with escaping its own destruction, and the places where Relict now rest show this in their very stones. The great tomb-cities prepared for the populace now lie beneath the earth, both dead and alive. Great monuments of dead emperors peer over pitch black chasms lined with the husks of the deceased. Relict armor sits eerily still in alcoves, or crumpled into a corner, until its a node senses intruders, the Relict within rippling out through conduits to manifest in crackling undeath."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "There are some Relict, remnants of the Black Sun cult, that have retained more sense of themselves and work at dark purpose to resurrect the old empire and bring back the Arkenlords. These masters of the dead are barely sane from their long stint with undeath and think only of returning the surface world to its former glory."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Relict, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Monsters:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Most relict are mindless husks. Their more intelligent masters usually have more complex motivations."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Relict are usually dormant, but become active when their tomb-cities are intruded upon by unlucky treasure-seekers. They can also be stirred into wakefulness by the priests of the Black Sun, whose only goal is the reawakening of the old empire, the resurrection of the Arkenlords, and the reconquest and total subjugation of the world of the living."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_relict_legionofthedead"],
+        "actions": [],
+        "traits_added": ["tf_faction_relict_legionofthedead"],
         "actions_added": [],
         "stats" : {}
     }
