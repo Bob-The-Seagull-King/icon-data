@@ -50,7 +50,6 @@
         "type": "Trait",
         "source": "core",
         "tags": { 
-            "action": 1
         },
         "eventtags": {},
         "name": "Slip",
@@ -67,7 +66,6 @@
         "type": "Trait",
         "source": "core",
         "tags": { 
-            "action": 1
         },
         "eventtags": {},
         "name": "Aetherwall",
@@ -107,7 +105,7 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "This character doesn’t trigger slay effects, and is removed when defeated.",
+                "content": "This character doesn’t trigger slay effects, is removed when defeated, and is immune to all statuses.",
                 "glossary": [{"val": "slay", "id": "gl_slay"}]
             }
                         ]
