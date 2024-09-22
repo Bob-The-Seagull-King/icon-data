@@ -26,6 +26,7 @@ import culturedata from '../data/general/cultures.json'
 import campitemdata from '../data/general/campitems.json'
 import campupgradedata from '../data/general/campupgrades.json'
 import rulesetdata from '../data/general/rules.json'
+import imagedata from '../data/general/images.json'
 
 import foetraitsdata from '../data/foes/foetraits.json'
 import foeabilitiesdata from '../data/foes/foeabilities.json'
@@ -167,6 +168,9 @@ class DataResponder {
             }
             case "rules": {
                 return rulesetdata.concat(data)
+            }
+            case "images": {
+                return imagedata.concat(data)
             }
             default: {
                 return data

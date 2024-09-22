@@ -1,0 +1,18 @@
+[
+    {
+        "tags": {
+            "jb_bastion": true,
+            "kn_trogg": true
+        },
+        "img_src": "https://pbs.twimg.com/media/E3J4CgvXEAQFbBw?format=jpg&name=medium",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "jb_bastion": true,
+            "kn_beastfolk": true
+        },
+        "img_src": "https://pbs.twimg.com/media/Fyg2FbFWIAAd3sg?format=jpg&name=large",
+        "caption": "Steadfast Warrior"
+    }
+]
