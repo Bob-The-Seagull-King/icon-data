@@ -122,6 +122,50 @@
         ]
     },
     {
+        "id": "tf_faction_folk_greatfaith",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Faith",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chroniclers can take slow turns like players. If they choose to take a slow turn, they gain 3 vigor.",
+                "glossary": [{"val": "slow turns", "id": "gl_slowturn"},{"val": "slow turn", "id": "gl_slowturn"},{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_folk_stackdice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Faith",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Once a combat, when the Churner would roll a random d6 as part of an ability, they can choose which number to roll."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_folk_camaraderie",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Camaraderie",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "+1 boon on attacks and saves for every adjacent ally.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_relict_legionofthedead",
         "type": "Trait",
         "source": "core",

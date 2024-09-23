@@ -18,21 +18,36 @@
         "actions_added": [],
         "stats" : {}
     },
-    {   "id": "fc_folk",
+    {   "id": "fc_folk_chronicler",
         "type": "FoeFaction",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Folk",
+        "name": "Chronicler",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
                 "content": "The great melange of peoples that populate Arden Eld, split into the Six Great Cultures. Folk are as diverse as the land itself, and all hold dear their own stories, upbringings, and dreams. Though their drives and passions often bring them into conflict, they are, at their root, people just like you."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Though many regard chroniclers as sheltered, erudite, and austere, the stereotypes don’t tend to fit a culture that values a deep drive for curiosity and learning. A close connection to the divine and a cultural sense of discipline and purpose tend to drive them forward."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Monks, priests, and warrior-nuns of the chroniclers often descend from their mountain monasteries on quests of great import, often a task given to them by their elders interpreting a passage from the Great Chant, the Tale of Ages, the Yamangeriad, or some other holy text. This quite often brings them into conflict with folk who have no idea of their quest, especially when the instructions are based on centuries old prophecy."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Occasionally more senior chroniclers are sent to retrieve or locate dangerous or powerful artifacts that were stolen or lost from the Chambers - no matter their current state, or their current owner."
             }
         ],
         "template": [{
             "tags": {"desc_type" : "desc"},
-            "content": "To make any foe a Folk, you can add the following:"
+            "content": "To make any foe a Chronicler, you can add the following:"
         },
         { "tags": {"desc_type" : "gap"}, "content": "" },
         {
@@ -67,9 +82,349 @@
                 }
             ]
         }],
-        "traits": ["tf_faction_folk_greatculture"],
+        "traits": ["tf_faction_folk_greatfaith"],
         "actions": [],
-        "traits_added": ["tf_faction_folk_greatculture"],
+        "traits_added": ["tf_faction_folk_greatfaith"],
+        "actions_added": [],
+        "stats" : {}
+    },
+    {   "id": "fc_folk_churner",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Churner",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great melange of peoples that populate Arden Eld, split into the Six Great Cultures. Folk are as diverse as the land itself, and all hold dear their own stories, upbringings, and dreams. Though their drives and passions often bring them into conflict, they are, at their root, people just like you."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Churners are the great melange of shop-keeps, dungeon guides, map-makers, cooks, packmules, and other camp followers that make up the nomads that follow the dungeons. Every dungeon of a certain age and level of fame has a churner camp perched along its edge, and its garish tents and colorful shop signs are a welcome sight to many."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Churners are more likely than other cultures to get into dangerous, dirty, or disreputable work, and the more ruthless of them treat adventurers as a never ending stream of disposable marks, easy pickings for an enterprising entrepreneur."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Churners are well prepared for nearly any situation, which usually mean recognizing when it’s time to cut and run."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Churner, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk are Kin."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival)."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk value their own lives and will usually surrender or flee if there’s no chance of winning a fight. Martial-minded cultures like Islanders, Leggio, or Guilders might put up more of a fight."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_folk_stackdice"],
+        "actions": ["af_folk_churner_stackdice"],
+        "traits_added": ["tf_faction_folk_stackdice"],
+        "actions_added": ["af_folk_churner_stackdice"],
+        "stats" : {}
+    },
+    {   "id": "fc_folk_guilder",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guidler",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great melange of peoples that populate Arden Eld, split into the Six Great Cultures. Folk are as diverse as the land itself, and all hold dear their own stories, upbringings, and dreams. Though their drives and passions often bring them into conflict, they are, at their root, people just like you."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Though the cities of Arden Eld are few, they are growing in both size and influence. With no real counties or kingdoms, they are the closest thing to nations across the great Green. Their citizens tend to be proud, loyal, and hardworking, even if a little packed in."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Though diverse in both rule and character, the cities are largely dominated by the great Trade Guilds and their fleets of airships, and the Colleges with their trained Wrights, machines, and clockwork."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The highlords of the guilds and colleges are powerful indeed, and pursue their own agendas and machinations with great vigor. Though many are high minded and truly believe in ideas of progress, equality, and wealth for all, others are more cynical, worldly, or greedy, and are not above employing ruthless tactics to accomplish their goals."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Guilder, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk are Kin."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival)."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk value their own lives and will usually surrender or flee if there’s no chance of winning a fight. Martial-minded cultures like Islanders, Leggio, or Guilders might put up more of a fight."
+                }
+            ]
+        }],
+        "traits": [],
+        "actions": ["af_folk_guilder_strive"],
+        "traits_added": [],
+        "actions_added": ["af_folk_guilder_strive"],
+        "stats" : {}
+    },
+    {   "id": "fc_folk_islander",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Islander",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great melange of peoples that populate Arden Eld, split into the Six Great Cultures. Folk are as diverse as the land itself, and all hold dear their own stories, upbringings, and dreams. Though their drives and passions often bring them into conflict, they are, at their root, people just like you."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Brave, hardy, and adventurous folk, the islanders are not ones to shy away from trouble. Every one of the Thousand Isles is a stunningly diverse place - from it’s people, to its food, to its sights and sounds, to its dangers."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "All islands dabble in a little light piracy here and there, mostly from the soft and cargo-laden ships of the great guilds, and pirates and freelance brigadiers are often viewed as local heroes."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In times of trouble or scarcity, particularly hardened or unscrupulous Jarls may order raids on coastal villages. These can often turn into bloody affairs, and the Jarls into warlords."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Islander, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk are Kin."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival)."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk value their own lives and will usually surrender or flee if there’s no chance of winning a fight. Martial-minded cultures like Islanders, Leggio, or Guilders might put up more of a fight."
+                }
+            ]
+        }],
+        "traits": [],
+        "actions": ["af_folk_islander_bravado"],
+        "traits_added": [],
+        "actions_added": ["af_folk_islander_bravado"],
+        "stats" : {}
+    },
+    {   "id": "fc_folk_leggio",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Leggio",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great melange of peoples that populate Arden Eld, split into the Six Great Cultures. Folk are as diverse as the land itself, and all hold dear their own stories, upbringings, and dreams. Though their drives and passions often bring them into conflict, they are, at their root, people just like you."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Part warrior clan, part merchant enclave, and part theatre troupe, a Leggio caravan is a magnificent (and relieving) sight to all across the Green. The Leggio caravans are the lifeblood of Arden Eld, for without them, far off towns and settlements isolated by dungeons and growing blights would be starved of supplies, medicine, and food. Their arrival in a town is part circus, part festival, and part market day."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The caravans occasionally accept shady business, sometimes out of profit, sometimes out of desperation - transporting dangerous, rare, or illicit goods. Rarely, and usually due to some traumatic event, a wagon abandons the ways and strictures of the Multicolored Titan, and turns to banditry and thievery. These rogue wagons abandon the caravan and become similar to pirates - though they sail the seas of grass and stone instead of water."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Leggio, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk are Kin."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival)."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk value their own lives and will usually surrender or flee if there’s no chance of winning a fight. Martial-minded cultures like Islanders, Leggio, or Guilders might put up more of a fight."
+                }
+            ]
+        }],
+        "traits": [],
+        "actions": ["af_folk_leggio_acrobatics"],
+        "traits_added": [],
+        "actions_added": ["af_folk_leggio_acrobatics"],
+        "stats" : {}
+    },
+    {   "id": "fc_folk_yeokin",
+        "type": "FoeFaction",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Yeokin",
+        "description" : [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great melange of peoples that populate Arden Eld, split into the Six Great Cultures. Folk are as diverse as the land itself, and all hold dear their own stories, upbringings, and dreams. Though their drives and passions often bring them into conflict, they are, at their root, people just like you."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In the villages, you work together, you eat together, and you celebrate together. The earth supports you, and you support the earth. Life in the villages can be slow and appear sleepy or idyllic from the outside, but all villages must work hard to keep everyone safe, fed, and flourishing. Villages move with the seasons, the air, the forests, and the whims of the spirits."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },            
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "It’s considered rare for Yeokin to stray too far from their villages (those that do tend to become adventurers), especially to cause trouble, but it does occasionally happen. Town priests and elders of larger towns sometimes start to ponder demanding tribute from their smaller neighbors, or sending over their largest and toughest to ‘negotiate’ favorable trade deals. When pushed into desperation by surging dungeons or untamed blights, Yeokin towns are occasionally abandoned, those remaining turning to any means necessary to survive."
+            }
+        ],
+        "template": [{
+            "tags": {"desc_type" : "desc"},
+            "content": "To make any foe a Yeokin, you can add the following:"
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Kin:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk are Kin."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Motivations:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Kin usually fight for their ideals, usually to protect something they care about (even if that something is something as simple as their own survival)."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Folk value their own lives and will usually surrender or flee if there’s no chance of winning a fight. Martial-minded cultures like Islanders, Leggio, or Guilders might put up more of a fight."
+                }
+            ]
+        }],
+        "traits": ["tf_faction_folk_camaraderie"],
+        "actions": [],
+        "traits_added": ["tf_faction_folk_camaraderie"],
         "actions_added": [],
         "stats" : {}
     },

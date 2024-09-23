@@ -702,6 +702,80 @@
         ]
     },
     {
+        "id": "af_folk_churner_stackdice",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "dash": true
+        },
+        "eventtags": {},
+        "name": "Stack Dice",
+        "class_id": "icon",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A Churner can always spend a free action to roll 1d6 and dash up to that many spaces.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }     
+        ]
+    },
+    {
+        "id": "af_folk_guilder_strive",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Strive",
+        "class_id": "icon",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Until the start of their next turn, the Guider increases the distance of any dash, rush, teleport or flight by +3.",
+                "glossary": [{"val": "dash", "id": "gl_dash"},{"val": "rush", "id": "gl_rush"},{"val": "teleport", "id": "gl_teleport"},{"val": "flight", "id": "gl_flying"}]
+            }     
+        ]
+    },
+    {
+        "id": "af_folk_islander_bravado",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Bravado",
+        "class_id": "icon",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character sacrifices 50% of their max hp but immediately gains +1 action.",
+                "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}]
+            }     
+        ]
+    },
+    {
+        "id": "af_folk_leggio_acrobatics",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Bravado",
+        "class_id": "icon",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 2. This action can interrupt and split up other actions or movement.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}]
+            }     
+        ]
+    },
+    {
         "id": "af_demon_limbdemon_controllimbs",
         "type": "Ability",
         "source": "core",
