@@ -191,7 +191,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Relict",
+        "name": "Scavenger",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -331,11 +331,22 @@
                     "content": "Most demons are mindless, extra dimensional killing machines that exist to kill and eat living things. Those that have the intelligence or wherewithal to communicate with Kin usually reveal a cruel and sadistic malice. They delight in inflicting pain, fear, violence, and destruction - including on each other."
                 }
             ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Abyssal Legion:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "All Demons have the Abyssal Legion special mechanic, which includes the Legion, Devour, and Devour Natal traits."
+                }
+            ]
         }],
-        "traits": ["tf_faction_demon_abyssallegion"],
-        "actions": [],
-        "traits_added": ["tf_faction_demon_abyssallegion"],
-        "actions_added": [],
+        "traits": ["tf_faction_demon_legion"],
+        "actions": ["af_faction_demon_devour", "af_faction_demon_devournatal"],
+        "traits_added": ["tf_faction_demon_legion"],
+        "actions_added": ["af_faction_demon_devour", "af_faction_demon_devournatal"],
         "stats" : {}
     },
     {   "id": "fc_lowlander",
@@ -347,31 +358,36 @@
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "The Relict are the most common danger that adventurers face in the ruins of Arden Eld. They are the spectral remnants of the Arken Empire, souls bound in a semi-automated etheric network that runs through the ruins, entrapped there by an ancient sorcerer as a last ditch effort to save a dying people. The process was technically successful, but most relict have been left mindless husks - tormented souls harnessed and stored in lightning aether powered sarcophagus-like nodes nestled throughout the ruins."
+                "content": "A society of rejects, survivors, and outcasts, lowlanders are a relatively new development in Arden Eld - those that make their homes in and under the blightlands - the areas around long- emerged and active arkenruins that are inhospitable to life and full of monsters, where the very ground might be poison. They often live in squalor and constant danger from their harsh environment, and band together for survival into loose clans."
             },
             { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "In its dying days, the Arken Empire became obsessed with escaping its own destruction, and the places where Relict now rest show this in their very stones. The great tomb-cities prepared for the populace now lie beneath the earth, both dead and alive. Great monuments of dead emperors peer over pitch black chasms lined with the husks of the deceased. Relict armor sits eerily still in alcoves, or crumpled into a corner, until its a node senses intruders, the Relict within rippling out through conduits to manifest in crackling undeath."
+                "content": "Those that live in the blightlands live on the fringe. Most people that are out there chase the herds of monsters and blighted fauna, harvesting them for valuable parts that can be sold or traded back to guilds or other clans. Many of them are often pariahs, exiled from society, for real or perceived transgressions, forced into a life of brutal survival."
             },
             { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "There are some Relict, remnants of the Black Sun cult, that have retained more sense of themselves and work at dark purpose to resurrect the old empire and bring back the Arkenlords. These masters of the dead are barely sane from their long stint with undeath and think only of returning the surface world to its former glory."
+                "content": "The lowlander way of life is one of hunting, constantly on the move, and using convoys of giant, blight resistant pack insects to haul their tents, cargo, and supplies. Many lowlander clans are raiders, and using the blight as a natural barrier they attack the towns, farms, and lands outside when they need to gather supplies, retreating into the blight when pursued. Some principled lowlander clans may try to avoid bloodshed and take only what they need, but the villages they take from would nearly all see it differently."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Clanners are masters of the giant (and very dangerous) insect species of the Blightlands, using them for labor, transportation, food, and protection. They have the biggest repositories of knowledge about blightland fauna and flora in the known world, and are frequently hired as guides or advisors by enterprising outsiders. Many of them have also developed a semi- religious respect for the dungeons that in its worse forms can manifest as cult-like reverence."
             }
         ],
         "template": [{
             "tags": {"desc_type" : "desc"},
-            "content": "To make any foe a Relict, you can add the following:"
+            "content": "To make any foe a Lowlander, you can add the following:"
         },
         { "tags": {"desc_type" : "gap"}, "content": "" },
         {
             "tags": {"desc_type" : "effect"},
-            "content": "Monsters:",
+            "content": "Kin:",
             "subcontent": [
                 {
                     "tags": {"desc_type" : "desc"},
-                    "content": "Most relict are mindless husks. Their more intelligent masters usually have more complex motivations."
+                    "content": "Lowlanders are kin, can be bargained with, and will flee or surrender if heavily outnumbered or heavily losing a fight."
                 }
             ]
         },
@@ -382,13 +398,35 @@
             "subcontent": [
                 {
                     "tags": {"desc_type" : "desc"},
-                    "content": "Relict are usually dormant, but become active when their tomb-cities are intruded upon by unlucky treasure-seekers. They can also be stirred into wakefulness by the priests of the Black Sun, whose only goal is the reawakening of the old empire, the resurrection of the Arkenlords, and the reconquest and total subjugation of the world of the living."
+                    "content": "Lowlanders nearly always fight for territory or supplies. Negotiating for them for passage through their territory usually involves doing a favor or payment, and they typically respect fair deals. They prefer to take captives in battle and ransom them back later."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Lowlanders are survivors and won't hesitate to back down from a fight they know they will lose - conversely, they won’t hesitate to exploit weaknesses."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Blightland Survivalists:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "All Lowlanders have the Blightland Survivalists special mechanic, which include the Lowlander Toxin, Pit Expert, and Suddenly! traits."
                 }
             ]
         }],
-        "traits": ["tf_faction_relict_legionofthedead"],
+        "traits": ["tf_faction_lowlander_lowlandertoxin", "tf_faction_lowlander_pitexpert", "tf_faction_lowlander_suddenly"],
         "actions": [],
-        "traits_added": ["tf_faction_relict_legionofthedead"],
+        "traits_added": ["tf_faction_lowlander_lowlandertoxin", "tf_faction_lowlander_pitexpert", "tf_faction_lowlander_suddenly"],
         "actions_added": [],
         "stats" : {}
     },
@@ -401,31 +439,41 @@
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "The Relict are the most common danger that adventurers face in the ruins of Arden Eld. They are the spectral remnants of the Arken Empire, souls bound in a semi-automated etheric network that runs through the ruins, entrapped there by an ancient sorcerer as a last ditch effort to save a dying people. The process was technically successful, but most relict have been left mindless husks - tormented souls harnessed and stored in lightning aether powered sarcophagus-like nodes nestled throughout the ruins."
+                "content": "Distant cousins of the Troggs, Jotunn were born of the Titans and served them when the world was young. A variety of peoples, they are united only by their origins, extreme age, prodigious strength, and enormous stature. Most Jotunn stand twice the height of other kin, some as big as a small building."
             },
             { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "In its dying days, the Arken Empire became obsessed with escaping its own destruction, and the places where Relict now rest show this in their very stones. The great tomb-cities prepared for the populace now lie beneath the earth, both dead and alive. Great monuments of dead emperors peer over pitch black chasms lined with the husks of the deceased. Relict armor sits eerily still in alcoves, or crumpled into a corner, until its a node senses intruders, the Relict within rippling out through conduits to manifest in crackling undeath."
+                "content": "Jotunn seem virtually immune to disease, and do not age, making them technically immortal, though they can still be slain by a powerful enough foe. They do not reproduce, but were made by the titans, fully formed. There are therefore a limited number of them in the world (though many have yet to emerge), and eventually their age will pass. This is something many Jotunn are keenly aware of."
             },
             { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "There are some Relict, remnants of the Black Sun cult, that have retained more sense of themselves and work at dark purpose to resurrect the old empire and bring back the Arkenlords. These masters of the dead are barely sane from their long stint with undeath and think only of returning the surface world to its former glory."
+                "content": "Jotunn have long but very fallible memories, and the ancients remember the Arken and the Doom, and have witnessed the sins of Kin throughout the age. This tends to make them melancholy, distrustful, or resentful. At their best, they are burdened by the weights of their long lives. Many ancient Jotunn wander the land or stand guard over crumbling titan ruins, following the edicts, patrol routes, and tasks given to them by their ancient lords, so long ago that even they have forgotten. Others seek out the cities and towns of Kin, finding purpose in labor, learning, or battle."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The slaying of the titans scattered their blood across the land, where it sunk smoking into the earth. Where the blood crystallized and pooled, it formed cysts that grew a new crop of Jotunn. The Jotunn that have emerged from the earth in the millennia since then have all emerged insane, and driven only by the pain and rage of their dying progenitors, going on rampages until they are slain or collapse dead from exhaustion."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Older Jotunn often seek out their insane kin in order to put them down or out of some faint hope for salvation, hoping for some final end to their pain."
             }
         ],
         "template": [{
             "tags": {"desc_type" : "desc"},
-            "content": "To make any foe a Relict, you can add the following:"
+            "content": "To make any foe a Jotunn, you can add the following:"
         },
         { "tags": {"desc_type" : "gap"}, "content": "" },
         {
             "tags": {"desc_type" : "effect"},
-            "content": "Monsters:",
+            "content": "Kin:",
             "subcontent": [
                 {
                     "tags": {"desc_type" : "desc"},
-                    "content": "Most relict are mindless husks. Their more intelligent masters usually have more complex motivations."
+                    "content": "Ancient Jotunn are kin, can be bargained with, and will flee or surrender if heavily losing a fight."
                 }
             ]
         },
@@ -436,15 +484,40 @@
             "subcontent": [
                 {
                     "tags": {"desc_type" : "desc"},
-                    "content": "Relict are usually dormant, but become active when their tomb-cities are intruded upon by unlucky treasure-seekers. They can also be stirred into wakefulness by the priests of the Black Sun, whose only goal is the reawakening of the old empire, the resurrection of the Arkenlords, and the reconquest and total subjugation of the world of the living."
+                    "content": "Jotunn are motivated strongly by their negative emotions (sadness, anger, distrust, ennui, hunger, etc). Appeasing them or appealing to their feelings can soften them and make them open to negotiation."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Jotunn typically don’t flee but value their lives and will surrender if they see no chance of winning a fight."
+                }
+            ]
+        },
+        { "tags": {"desc_type" : "gap"}, "content": "" },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Legacy of the Titans:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "All Jotunn have the Legacy of the Titans special mechanic, which include the Elite, Titanblood, Titanfall, and Titan Armament traits."
                 }
             ]
         }],
-        "traits": ["tf_faction_relict_legionofthedead"],
+        "traits": ["tf_faction_jotunn_elite", "tf_faction_jotunn_titanblood", "tf_faction_jotunn_titanfall", "tf_faction_jotunn_titanarmament"],
         "actions": [],
-        "traits_added": ["tf_faction_relict_legionofthedead"],
+        "traits_added": ["tf_faction_jotunn_elite", "tf_faction_jotunn_titanblood", "tf_faction_jotunn_titanfall", "tf_faction_jotunn_titanarmament"],
         "actions_added": [],
-        "stats" : {}
+        "stats" : {
+            "hp_mod": 2,
+            "turns": 2
+        }
     },
     {   "id": "fc_hob",
         "type": "FoeFaction",
@@ -455,31 +528,46 @@
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "The Relict are the most common danger that adventurers face in the ruins of Arden Eld. They are the spectral remnants of the Arken Empire, souls bound in a semi-automated etheric network that runs through the ruins, entrapped there by an ancient sorcerer as a last ditch effort to save a dying people. The process was technically successful, but most relict have been left mindless husks - tormented souls harnessed and stored in lightning aether powered sarcophagus-like nodes nestled throughout the ruins."
+                "content": "Nature spirits of the Green and the Deep Green, Hobs are the keepers of field and forest. Tied intimately to the seasons, the flora and fauna of Arden Eld, and to the land itself, these ancient beings range from the tiny, mischievous spriggs to the the colossal Forest Gods."
             },
             { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "In its dying days, the Arken Empire became obsessed with escaping its own destruction, and the places where Relict now rest show this in their very stones. The great tomb-cities prepared for the populace now lie beneath the earth, both dead and alive. Great monuments of dead emperors peer over pitch black chasms lined with the husks of the deceased. Relict armor sits eerily still in alcoves, or crumpled into a corner, until its a node senses intruders, the Relict within rippling out through conduits to manifest in crackling undeath."
+                "content": "Hobs are animate spirits made of the aether of Arden Eld itself - the world soul, that inhabits every tiny rock, tree, and blade of grass. Most of the time these spirits slumber peacefully inside the land, their presence felt rather than seen, but in places where the aether of the world is especially strong, these spirits burgeon forth, emerging at the twilight hours to frolic, gallop, and clamber through the trees and streams."
             },
             { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "subeffect"},
-                "content": "There are some Relict, remnants of the Black Sun cult, that have retained more sense of themselves and work at dark purpose to resurrect the old empire and bring back the Arkenlords. These masters of the dead are barely sane from their long stint with undeath and think only of returning the surface world to its former glory."
+                "content": "Hobs range from childlike or barely intelligent, to ancient and wise, depending on the aspect of nature they are tied to. The tiny spriggs are curious enough to follow travelers and smart enough to play tricks, but otherwise have no more awareness than the birds, mice, and flowers from which they draw their essence. Conversely, the Aesi are powerful and skilled in old, powerful magic, being tied to deep and dark lakes, enormous trees, rock formations, or embodied as ancient beasts or in the shape of kin."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Most of the time, Hobs pay travelers little heed other than innocent curiosity, and many villages of the Green worship them along with a broad cast of local spirits, leaving offerings and prayers to placate them. The relationship is often harmonious and mutual - with Hobs often reciprocating by guiding travelers back to civilization, blessing harvests, or gifting small and valuable presents to local children."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "However, Hobs have existed far longer on Arden Eld than civilization and do not play by its rules. Some hobs have no more intelligence than the wild beasts from which they draw their essence, and can be just as dangerous. Others may find it perfectly acceptable to lead a traveler astray for three days in order to show them a breathtaking lake view, to encourage beautiful and colorful weeds to grow over a field, or to transform someone into a deer for a week so they can run wild in the forest. Occasionally, this turns sour and conflicts spring up between Kin and Hob - conflicts that Hobs remember for a very long time. A village priest familiar with their ways may grow old and die, or grandson may forget the yearly offering that his grandfather made to the local spirits, and the Hobs see no difference - only a sudden and unforgivable slight."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "In the worst cases, the aether of the land is stirred when the natural order is wounded. The Churn has driven more and more kin into the deeper parts of the land, as power-hungry kingdoms, barons, and princes use fire, axe, and machine to tear up the forests and mountains to fuel their industries and armies. In these cases, the Hobs that emerge from the wounded landscape are wild, vicious, or mad with rage. Driving up local animals into a frenzy, they become a terrifying force of nature that can wage all-out war with local towns or outposts, killing scores."
             }
         ],
         "template": [{
             "tags": {"desc_type" : "desc"},
-            "content": "To make any foe a Relict, you can add the following:"
+            "content": "To make any foe a Hob, you can add the following:"
         },
         { "tags": {"desc_type" : "gap"}, "content": "" },
         {
             "tags": {"desc_type" : "effect"},
-            "content": "Monsters:",
+            "content": "Kin:",
             "subcontent": [
                 {
                     "tags": {"desc_type" : "desc"},
-                    "content": "Most relict are mindless husks. Their more intelligent masters usually have more complex motivations."
+                    "content": "Hobs can (technically) be bargained with, and will occasionally flee or surrender when they are badly losing a fight. Unless greatly pressed, hobs that are considered kin will never kill characters intentionally, preferring to punish or humiliate."
                 }
             ]
         },
@@ -490,14 +578,44 @@
             "subcontent": [
                 {
                     "tags": {"desc_type" : "desc"},
-                    "content": "Relict are usually dormant, but become active when their tomb-cities are intruded upon by unlucky treasure-seekers. They can also be stirred into wakefulness by the priests of the Black Sun, whose only goal is the reawakening of the old empire, the resurrection of the Arkenlords, and the reconquest and total subjugation of the world of the living."
+                    "content": "Hobs are usually strongly motivated by trespass or injury against the land. Some are motivated by some perceived slight or offense against some ancient bargain, rule, or compact. Still others are simply motivated by natural beauty or whimsy and don’t see malice in their own actions."
+                }
+            ]
+        },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Flee:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Being immortal nature spirits, being killed doesn’t really bother a Hob (they will usually return with the next season), but they can be flighty and will run away if afraid."
+                }
+            ]
+        },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Monsters:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Hobs that are stirred up by some natural disaster or desecration of the natural world are warped and malicious, and will not bargain or negotiate until things are put right, usually returning to their usual natures once the crisis passes."
+                }
+            ]
+        },
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Nature Spirits:",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "All Hobs have the Nature Spirits special mechanic, which include the Greenwalker, Spirit Away, Trickery, and Forest Children traits."
                 }
             ]
         }],
-        "traits": ["tf_faction_relict_legionofthedead"],
-        "actions": [],
-        "traits_added": ["tf_faction_relict_legionofthedead"],
-        "actions_added": [],
+        "traits": ["tf_faction_hob_greenwalker", "tf_faction_hob_trickery", "tf_faction_hob_forestchildren"],
+        "actions": ["af_faction_hob_spiritaway"],
+        "traits_added": ["tf_faction_hob_greenwalker", "tf_faction_hob_trickery", "tf_faction_hob_forestchildren"],
+        "actions_added": ["af_faction_hob_spiritaway"],
         "stats" : {}
     }
 ]

@@ -625,13 +625,35 @@
             "action": "free"
         },
         "eventtags": {},
-        "name": "Devour",
+        "name": "Devour Natal",
         "class_id": "icon",
-        "description":  [                                
+        "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Demons may Devour an adjacent Natal as a free action, destroying it and giving them +1 action for this turn only. A demon can only use Devour or Devour Natal in the same turn, and not both."
-            }        
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Demons may Devour an adjacent"
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_demon_mob_natal"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "as a free action, destroying it and giving them +1 action for this turn only. A demon can only use"
+                    },
+                    {
+                        "tags": {"desc_type" : "foeability"},
+                        "content": "af_faction_demon_devour"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "or Devour Natal in the same turn, and not both."
+                    }
+                ]
+            }
         ]
     },
     {
@@ -1065,5 +1087,56 @@
                 "glossary": [{"val": "rushing", "id": "gl_rush"},{"val": "rushed", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
             }
                         ]
+    },
+    {
+        "id": "af_faction_hob_spiritaway",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Spirit Away",
+        "class_id": "grey",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob swaps places with an adjacent character, removing and placing both characters."
+            }
+        ]
+    },
+    {
+        "id": "af_hob_sprigg_frolic",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Frolic",
+        "class_id": "grey",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The acting Sprigg swaps places with an ally in range 3, removing and placing both characters."
+            }
+        ]
+    },
+    {
+        "id": "af_hob_sprigg_mischief",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Mischief",
+        "class_id": "grey",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The acting Sprigg swaps the places of two other characters in range 2 of the Sprigg, removing and placing both of them."
+            }
+        ]
     }
 ]

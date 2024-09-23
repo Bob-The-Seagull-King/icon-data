@@ -1,5 +1,4 @@
 [
-    
     {
         "id": "tf_class_heavy_guard",
         "type": "Trait",
@@ -104,149 +103,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "This character doesn’t trigger slay effects, is removed when defeated, and is immune to all statuses.",
-                "glossary": [{"val": "slay", "id": "gl_slay"}]
-            }
-                        ]
-    },
-    {
-        "id": "tf_beast_wyrm_pathofruin",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Path of Ruin",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
-            }
-                        ]
-    },
-    {
-        "id": "tf_beast_wyrm_dragonfire",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Dragonfire",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "The wyrm’s divine fire scorches the very soul. When an ability inflicts dragon fire, all of its targets sacrifice 25% of their max hp.",
-                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
-            }
-                        ]
-    },
-    {
-        "id": "tf_beast_apex_earthglide",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Earthglide",
-        "description":  [                                
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "The Apex has Phasing.",
-                "glossary": [{"val": "Phasing", "id": "gl_phasing"}]
-            }     ]
-    },
-    {
-        "id": "tf_beast_apex_blendin",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Blend In",
-        "description":  [                                 
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "If the Apex starts its turn in difficult or dangerous terrain, it gains stealth.",
-                "glossary": [
-                    {"val": "difficult", "id": "gl_difficultterrain"},
-                    {"val": "dangerous", "id": "gl_dangerousterrain"},
-                    {"val": "stealth", "id": "gl_stealth"}
-                ]
-            }        ]
-    },
-    {
-        "id": "tf_beast_apex_winged",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Winged",
-        "description":  [                                
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "The Apex’s standard move is fly 5, and all its dashes or rushes may be replaced with a fly. This trait deactivates if weakened.",
-                "glossary": [
-                    {"val": "fly", "id": "gl_flying"}
-                ]
-            }       ]
-    },
-    {
-        "id": "tf_demon_limbdemon_amorphous",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Amorphous",
-        "description":  [                                  
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Can share space with other characters and objects. Any foes that end their turn inside its space take 2 damage. Does not provide obstruction, but characters treat its space as difficult terrain. Area effects this character creates can overlap its space, and it is immune to damage and effects from its own attacks.",
-                "glossary": [
-                    {"val": "difficult terrain", "id": "gl_difficultterrain"}
-                ]
-            }    ]
-    },
-    {
-        "id": "tf_lowlander_faction_lowlandertoxin",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Lowlander Toxin",
-        "description":  [                                  
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "At the start of each round in any combat featuring lowlanders, all nonlowlander characters sacrifice 2 hp.",
-                "glossary": [
-                    {"val": "sacrifice", "id": "gl_sacrifice"}
-                ]
-            }    ]
-    },
-    {
-        "id": "tf_jotunn_rideroftheprimalstorm_callsteed",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Call Steed",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "The Rider gains a massive Titansteed, granting it the following benefits:"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "",
-                "subcontent": [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "Increase the Rider’s speed to 5."
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "The Rider gains flying.",
-                        "glossary": [{"val": "flying", "id": "gl_flying"}]
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "The Rider may break up any of its movement with actions."
-                    }
-                ]
+                "glossary": [{"val": "slay", "id": "gl_slay"}, {"val": "immune", "id": "gl_immune"}, {"val": "statuses", "id": "gl_status"}]
             }
                         ]
     },
@@ -282,11 +139,21 @@
             },
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "• Add a Husk mob to a fight. This does not take up points in the encounter."
-            },
-            {
-                "tags": {"desc_type" : "textfoe"},
-                "content": "fj_relict_mob_husk"
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "• Add a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "mob to a fight. This does not take up points in the encounter."
+                    }
+                ]
             }
         ]
     },
@@ -372,6 +239,83 @@
                 "content": "When defeated, this character curls up and becomes a height 1 boulder object."
             }
                         ]
+    },
+    {
+        "id": "tf_beast_wyrm_pathofruin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Path of Ruin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_wyrm_dragonfire",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dragonfire",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The wyrm’s divine fire scorches the very soul. When an ability inflicts dragon fire, all of its targets sacrifice 25% of their max hp.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_apex_earthglide",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Earthglide",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex has Phasing.",
+                "glossary": [{"val": "Phasing", "id": "gl_phasing"}]
+            }     ]
+    },
+    {
+        "id": "tf_beast_apex_blendin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blend In",
+        "description":  [                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Apex starts its turn in difficult or dangerous terrain, it gains stealth.",
+                "glossary": [
+                    {"val": "difficult", "id": "gl_difficultterrain"},
+                    {"val": "dangerous", "id": "gl_dangerousterrain"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }        ]
+    },
+    {
+        "id": "tf_beast_apex_winged",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Winged",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex’s standard move is fly 5, and all its dashes or rushes may be replaced with a fly. This trait deactivates if weakened.",
+                "glossary": [
+                    {"val": "fly", "id": "gl_flying"}
+                ]
+            }       ]
     },
     {
         "id": "tf_faction_scavenger_valuables",
@@ -697,29 +641,275 @@
         ]
     },
     {
-        "id": "tf_faction_demon_abyssallegion",
+        "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Abyssal Legion",
+        "name": "Legion",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When fighting demons, at the start of combat, place a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_demon_mob_natal"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "mob, this faction’s special mob, on the map. The mob does not count for the total faction budget."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_limbdemon_amorphous",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
         "description":  [                                  
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "When fighting demons, at the start of combat, place a Natal mob, this faction’s special mob, on the map. The mob does not count for the total faction budget."
+                "content": "Can share space with other characters and objects. Any foes that end their turn inside its space take 2 damage. Does not provide obstruction, but characters treat its space as difficult terrain. Area effects this character creates can overlap its space, and it is immune to damage and effects from its own attacks.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_faction_lowlander_lowlandertoxin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lowlander Toxin",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round in any combat featuring lowlanders, all nonlowlander characters sacrifice 2 hp.",
+                "glossary": [
+                    {"val": "sacrifice", "id": "gl_sacrifice"}
+                ]
+            }    
+        ]
+    },
+    {
+        "id": "tf_faction_lowlander_pitexpert",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pit Expert",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Lowlanders ignore movement and height disadvantage from pits.",
+                "glossary": [{"val": "pits", "id": "gl_pit"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_faction_lowlander_suddenly",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Suddenly!",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of any round, the GM can spring a lowlander trap in any unoccupied space not adjacent to a player character, with the following features:"
             },
             {
-                "tags": {"desc_type" : "textfoe"},
-                "content": "fj_demon_mob_natal"
-            },                     
-            {
-                "tags": {"desc_type" : "foeability"},
-                "content": "af_faction_demon_devour"
+                "tags": {"desc_type" : "desc"},
+                "content": "• The trap is a pit.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
             },
             {
-                "tags": {"desc_type" : "foeability"},
-                "content": "af_faction_demon_devournatal"
-            }   
+                "tags": {"desc_type" : "desc"},
+                "content": "• When activated, a foe in range 2 of the trap must save or be shoved until inside the trap.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foes that end their turn inside the pit take 3 piercing damage.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "piercing", "id": "gl_piercing"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• All traps can be disarmed by a character taking the interact action adjacent, removing it."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_jotunn_elite",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Elite",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All Jotunn have the Elite type if they don’t already have it. They’re worth 2 points in an encounter budget and take 2 turns. Double HP if upgrading from a normal foe."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_jotunn_titanblood",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Elite",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase size to 2 if not already 2."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_jotunn_titanfall",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Elite",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, roll 1d6 and assign a compass direction (1 - none, 2- N, 3-E, 4-S, 5-W, 6- GM choice). The Jotunn falls into a medium blast area placed adjacent to its space in that direction. Size 1 characters inside must save or take 6 damage, or 3 on a successful save. Move all characters out of the area into the closest available space and place the defeated Jotunn there. They count as a 2x2 height 1 object while defeated.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_jotunn_titanarmament",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Elite",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "You can arm a Jotunn with Titansteel weaponry. This increases a Jotunn’s encounter budget cost by +1. If you do, they have 50% more hp and take one extra turn a round."
+            }
+        ]
+    },
+    {
+        "id": "tf_jotunn_rideroftheprimalstorm_callsteed",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Call Steed",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rider gains a massive Titansteed, granting it the following benefits:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase the Rider’s speed to 5."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider gains flying.",
+                        "glossary": [{"val": "flying", "id": "gl_flying"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider may break up any of its movement with actions."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_hob_greenwalker",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Greenwalker",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Hobs are immune to difficult terrain.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_hob_trickery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Trickery",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Like player characters, Hobs have charge abilities and can choose to take a slow turn whenever they would take a regular turn.",
+                "glossary": [{"val": "charge", "id": "gl_charge"}, {"val": "slow turn", "id": "gl_slowturn"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_hob_forestchildren",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Forest Children",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Any fight with Hobs may include a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_hob_mob_sprigg"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "mob."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_sprigg_barelythere",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Barely There",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spriggs are intangible and don’t cause engagement or obstruction. Characters can’t collide with them and can share their space. They disappear when combat ends, or all other non-sprigg allies have been defeated.",
+                "glossary": [{"val": "intangible", "id": "gl_intangible"}, {"val": "collide", "id": "gl_collide"}]
+            }
         ]
     }
 ]

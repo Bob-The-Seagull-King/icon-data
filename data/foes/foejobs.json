@@ -77,5 +77,31 @@
         "category": "unique",
         "phases": [],
         "chapter": 1
+    },
+    {
+        "id": "fj_hob_mob_sprigg",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sprigg",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Spriggs are tiny nature spirits born from the essence of undergrowth and the small animals that live there, such as tiny birds or mice. They are extremely curious and playful, and often emerge from forests to follow after travelers for some distance in lines like wayward children. The aether of spriggs is so thin that it is almost impossible to harm them."
+            }
+        ],
+        "stats": {
+            "members": 1
+        },
+        "actions": ["af_demon_natal_squirm", "af_demon_natal_voidvomit", "af_faction_demon_devournatal"],
+        "removed_actions": [],
+        "traits": ["tf_hob_sprigg_barelythere"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "chapter": 1
     }
 ]
