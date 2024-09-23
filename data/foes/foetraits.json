@@ -154,17 +154,24 @@
         "name": "Mindless Husks",
         "description":  [
             {
-                "tags": {"desc_type" : "desc"},
-                "content": "Add a"
-            },
-            {
-                "tags": {"desc_type" : "textfoe"},
-                "content": "fj_relict_mob_husk"
-            },
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "mob to a fight. This does not take up points in the encounter."
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Add a"
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "mob to a fight. This does not take up points in the encounter."
+                    }
+                ]
             }
+            
         ]
     },
     {
@@ -351,7 +358,12 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables can be picked up by any character by moving into their space. They don’t provide obstruction, can’t be targeted, and can share space with anything except other valuables tokens. Characters drop them in adjacent spaces when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don’t count."
+                "content": "If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables can be picked up by any character by moving into their space. They don’t provide obstruction, can’t be targeted, and can share space with anything except other valuables tokens. "
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters drop them in adjacent spaces when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don’t count."
             }
         ]
     },
@@ -601,15 +613,10 @@
         "name": "Chain of Command",
         "description":  [
             {
-                "tags": {"desc_type" : "effect"},
-                "content": "Commanding Officer: ",
-                "subcontent": [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "Designate one foe the commanding officer of the imperial detachment. They get a special template."
-                    }
-                ]
+                "tags": {"desc_type" : "desc"},
+                "content": "Designate one foe the commanding officer of the imperial detachment. They get a special template."
             },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "effect"},
                 "content": "Special Template: Imperial Officer"
@@ -623,24 +630,30 @@
                 "content": "This template stacks with other templates."
             },
             {
-                "tags": {"desc_type" : "effect"},
-                "content": "Promotion: ",
+                "tags": {"desc_type" : "list"},
+                "content": "",
                 "subcontent": [
                     {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "Starts combat with vigor equal to their VIT.",
-                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
-                    }
-                ]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Imperial Command Aura: ",
-                "subcontent": [
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Promotion: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Starts combat with vigor equal to their VIT.",
+                                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                            }
+                        ]
+                    },
                     {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "Aura 2. Allies in the aura gain +1 boon on attacks.",
-                        "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "+1 boon", "id": "gl_boon"}]
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Imperial Command Aura: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Aura 2. Allies in the aura gain +1 boon on attacks.",
+                                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "+1 boon", "id": "gl_boon"}]
+                            }
+                        ]
                     }
                 ]
             }
