@@ -642,15 +642,7 @@
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "as a free action, destroying it and giving them +1 action for this turn only. A demon can only use"
-                    },
-                    {
-                        "tags": {"desc_type" : "foeability"},
-                        "content": "af_faction_demon_devour"
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "or Devour Natal in the same turn, and not both."
+                        "content": "as a free action, destroying it and giving them +1 action for this turn only. A demon can only use Devour or Devour Natal in the same turn, and not both."
                     }
                 ]
             }
@@ -1097,7 +1089,7 @@
         },
         "eventtags": {},
         "name": "Spirit Away",
-        "class_id": "grey",
+        "class_id": "icon",
         "description":  [                               
             {
                 "tags": {"desc_type" : "desc"},
