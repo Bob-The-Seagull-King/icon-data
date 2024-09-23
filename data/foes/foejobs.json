@@ -70,7 +70,7 @@
             }
         ],
         "stats": {},
-        "actions": ["af_demon_natal_squirm", "af_demon_natal_voidvomit", "af_faction_demon_devournatal"],
+        "actions": ["af_demon_natal_squirm", "af_demon_natal_voidvomit"],
         "removed_actions": [],
         "traits": [],
         "removed_traits": [],
@@ -96,7 +96,7 @@
         "stats": {
             "members": 1
         },
-        "actions": ["af_demon_natal_squirm", "af_demon_natal_voidvomit", "af_faction_demon_devournatal"],
+        "actions": ["af_hob_sprigg_frolic", "af_hob_sprigg_mischief"],
         "removed_actions": [],
         "traits": ["tf_hob_sprigg_barelythere"],
         "removed_traits": [],
