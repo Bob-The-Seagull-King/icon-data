@@ -133,27 +133,37 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Relict are a legion of mindless husks, cursed with an undying existence. This gives all relict except Legends the following traits:"
             },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "• This character has a chance to rise again when defeated. Roll 1d6 at the start of each round that this character is defeated. On a 5+, this character gets back up at 25% hp, returning it from defeated, and can take a turn normally this round. If defeated again, this character disintegrates and is removed from the battlefield. If all characters with this trait are defeated, it deactivates."
+                "content": "This character has a chance to rise again when defeated. Roll 1d6 at the start of each round that this character is defeated. On a 5+, this character gets back up at 25% hp, returning it from defeated, and can take a turn normally this round."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If defeated again, this character disintegrates and is removed from the battlefield. If all characters with this trait are defeated, it deactivates."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_relict_mindlesshusks",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mindless Husks",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Add a"
+            },
+            {
+                "tags": {"desc_type" : "textfoe"},
+                "content": "fj_relict_mob_husk"
             },
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "",
-                "subcontent": [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "• Add a"
-                    },
-                    {
-                        "tags": {"desc_type" : "textfoe"},
-                        "content": "fj_relict_mob_husk"
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "mob to a fight. This does not take up points in the encounter."
-                    }
-                ]
+                "content": "mob to a fight. This does not take up points in the encounter."
             }
         ]
     },
@@ -318,26 +328,44 @@
             }       ]
     },
     {
+        "id": "tf_faction_scavenger_cutandrun",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cut and Run",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a Scavenger has 4 or more valuables tokens, they attempt to flee the battlefield, fleeing successfully if they start their turn in an edge space of the battlefield with no hostile characters adjacent."
+            }
+        ]
+    },
+    {
         "id": "tf_faction_scavenger_valuables",
         "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Great Culture",
+        "name": "Valuables",
         "description":  [
             {
-                "tags": {"desc_type" : "effect"},
-                "content": "Valuables: ",
-                "subcontent": [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables can be picked up by any character by moving into their space. They don’t provide obstruction, can’t be targeted, and can share space with anything except other valuables tokens. Characters drop them in adjacent spaces when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don’t count."
-                    }
-                ]
-            },
+                "tags": {"desc_type" : "desc"},
+                "content": "If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables can be picked up by any character by moving into their space. They don’t provide obstruction, can’t be targeted, and can share space with anything except other valuables tokens. Characters drop them in adjacent spaces when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don’t count."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_scavenger_greed",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Greed",
+        "description":  [
             {
-                "tags": {"desc_type" : "effect"},
-                "content": "Greed: ",
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -350,17 +378,6 @@
                     {
                         "tags": {"desc_type" : "desc"},
                         "content": " effects."
-                    }
-                ]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Cut and Run: ",
-                "glossary": [{"val": "Collide", "id": "gl_collide"}],
-                "subcontent": [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "If a Scavenger has 4 or more valuables tokens, they attempt to flee the battlefield, fleeing successfully if they start their turn in an edge space of the battlefield with no hostile characters adjacent."
                     }
                 ]
             }
@@ -595,17 +612,6 @@
             },
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "Orders: ",
-                "subcontent": [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "At the start of the round, give an orders token to any imperial character. That character automatically activates any exceed effects of their attacks, deals bonus damage, and gains +1 action, but can only take their turn after all other imperials have acted. At the end of the round, discard that token.",
-                        "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
-                    }
-                ]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
                 "content": "Special Template: Imperial Officer"
             },
             {
@@ -613,7 +619,7 @@
                 "content": "Any job"
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "subeffect"},
                 "content": "This template stacks with other templates."
             },
             {
@@ -637,6 +643,21 @@
                         "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "+1 boon", "id": "gl_boon"}]
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_imperial_orders",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Orders",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, give an orders token to any imperial character. That character automatically activates any exceed effects of their attacks, deals bonus damage, and gains +1 action, but can only take their turn after all other imperials have acted. At the end of the round, discard that token.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
             }
         ]
     },
@@ -769,7 +790,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Elite",
+        "name": "Titanblood",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -783,7 +804,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Elite",
+        "name": "Titanfall",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -798,7 +819,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Elite",
+        "name": "Titan Armament",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},

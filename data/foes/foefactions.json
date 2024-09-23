@@ -8,7 +8,7 @@
         "description" : [
             {
             "tags": {"desc_type" : "subeffect"},
-            "content": "Foes with no faction tied to them."
+            "content": "Foes with no faction tied to them. These jobs are flexible and can be used for simple, easy-to-run foes that can fit into any scenario or faction encounter. You can use these jobs to describe any person, monster, or beast that a character runs into, with a little adjustment to flavor. If you want to fit these jobs into a faction, you can apply a faction template."
             }
         ],
         "template": [],
@@ -121,7 +121,7 @@
                 }
             ]
         }],
-        "traits": ["tf_faction_relict_legionofthedead"],
+        "traits": ["tf_faction_relict_legionofthedead","tf_faction_relict_mindlesshusks"],
         "actions": [],
         "traits_added": ["tf_faction_relict_legionofthedead"],
         "actions_added": [],
@@ -234,9 +234,9 @@
                 }
             ]
         }],
-        "traits": ["tf_faction_scavenger_valuables"],
+        "traits": ["tf_faction_scavenger_valuables", "tf_faction_scavenger_cutandrun","tf_faction_scavenger_greed"],
         "actions": [],
-        "traits_added": ["tf_faction_scavenger_valuables"],
+        "traits_added": ["tf_faction_scavenger_cutandrun","tf_faction_scavenger_greed"],
         "actions_added": [],
         "stats" : {}
     },
@@ -283,9 +283,9 @@
                 }
             ]
         }],
-        "traits": ["tf_faction_imperial_chainofcommand"],
+        "traits": ["tf_faction_imperial_orders","tf_faction_imperial_chainofcommand"],
         "actions": [],
-        "traits_added": ["tf_faction_imperial_chainofcommand"],
+        "traits_added": [],
         "actions_added": [],
         "stats" : {}
     },
@@ -512,11 +512,12 @@
         }],
         "traits": ["tf_faction_jotunn_elite", "tf_faction_jotunn_titanblood", "tf_faction_jotunn_titanfall", "tf_faction_jotunn_titanarmament"],
         "actions": [],
-        "traits_added": ["tf_faction_jotunn_elite", "tf_faction_jotunn_titanblood", "tf_faction_jotunn_titanfall", "tf_faction_jotunn_titanarmament"],
+        "traits_added": ["tf_faction_jotunn_elite", "tf_faction_jotunn_titanfall"],
         "actions_added": [],
         "stats" : {
             "hp_mod": 2,
-            "turns": 2
+            "turns": 2,
+            "size": 2
         }
     },
     {   "id": "fc_hob",
