@@ -377,5 +377,236 @@
         },
         "img_src": "https://i.imgur.com/GZFVg2B.png",
         "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/E3jDIs8X0AsNlV6?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/E3ZqbudXwAcm6RQ?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/E3Z5MFSXIAQWQNm?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FuAESwIWwAACXe2?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/Fdr4cClXEBEiKbB?format=png&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/Fdr4cCkXkAAFc9U?format=png&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FrxErxwWcAkb8Mw?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_relict": true
+        },
+        "img_src": "https://pbs.twimg.com/media/E3dy8GGXoAEW_lx?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_hob": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FZKtV2_XgAEndeg?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_hob": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FmW_mUCXoAAh24Z?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_hob": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FZPgW4LUcAI_3uj?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_hob": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FZLUSdnWIAUPSSe?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_hob": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FZUkBF2XgAAjfZz?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_lowlander": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FdgucxoWAAIUlmu?format=png&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_lowlander": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FdgucxiWIAEzfKj?format=png&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_lowlander": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FJ-gE4EX0Aw2BW5?format=jpg&name=large",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FZGBY9DXgAEItus?format=png&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FmnYczeXwAAIu3w?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FaXt5qSWQAAviDc?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FaXkYqbXEAA2TMV?format=png&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FcistwmXgAM-40D?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FcorFBuWAA440Pj?format=png&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FQoRRqZXoAk8oTy?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_demon": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FJAv_GEWQAE8lls?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_hob": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FJ-AZHeXMAEIdNv?format=png&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_scavenger": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FtDCPaFXgAAgDgd?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_scavenger": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FdHaSzlXoAA1t1e?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_imperial": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FdNx9W3WAAMuaMi?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_imperial": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FdNx9XfWIAIdQaM?format=jpg&name=small",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_imperial": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FUQ5TfaWYAQfZHC?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_jotunn": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FJVazb-XEAEo_WL?format=jpg&name=900x900",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_jotunn": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FW7TejbXkAQh8sA?format=jpg&name=medium",
+        "caption": ""
+    },
+    {
+        "tags": {
+            "fc_jotunn": true
+        },
+        "img_src": "https://pbs.twimg.com/media/FiMRhZKXwBINLgT?format=jpg&name=small",
+        "caption": ""
     }
 ]
