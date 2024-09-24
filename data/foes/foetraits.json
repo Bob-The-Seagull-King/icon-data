@@ -302,6 +302,130 @@
                         ]
     },
     {
+        "id": "tf_faction_beast_stalkingbeast_camouflage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Camouflage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this beast ends its turn adjacent to an object or or inside difficult or dangerous terrain, it gains stealth.",
+                "glossary": [{"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous", "id": "gl_dangerousterrain"}, {"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_beast_symbiote_latch",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Latch",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Starts combat sharing the same space as another ally the same size or larger. While latched on, can’t move, but instead moves with its host. Being moved out of its host’s space end this effect. If the Symbiote would be shoved, teleported, or removed from the battlefield, it can pass a save to avoid the effect and become immune to these effects until the end of the current turn. Can latch on to a new adjacent allied character with 1 action or its standard move ability.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "teleported", "id": "gl_teleport"}, {"val": "immune", "id": "gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_beast_symbiote_defiance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chapter 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gains defiance.",
+                        "glossary": [{"val": "defiance", "id": "gl_defiance"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_beast_symbiote_latch_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Latch",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Starts combat sharing the same space as another ally the same size or larger. While latched on, can’t move, but instead moves with its host. Being moved out of its host’s space end this effect. If the Symbiote would be shoved, teleported, or removed from the battlefield, it can pass a save to avoid the effect and become immune to these effects until the end of the current turn. Can latch on to a new adjacent allied character with 1 action or its standard move ability.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "teleported", "id": "gl_teleport"}, {"val": "immune", "id": "gl_immune"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If latched on, if"
+                    },
+                    {
+                        "tags": {"desc_type" : "foetrait"},
+                        "content": "tf_faction_beast_enrage"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "also grants + 1 action to its host. This stacks with a host’s Enrage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_beast_blightbeast_blightsplash",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blight Splash",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks deal 1 piercing damage on hit or miss to all foes in range 2 of the target as an area effect.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_beast_blightbeast_blightsplash_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blight Splash",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks deal 1 piercing damage on hit or miss to all foes in range 2 of the target as an area effect.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter 3:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, Blight Splash triggers three times."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_beast_wyrm_pathofruin",
         "type": "Trait",
         "source": "core",

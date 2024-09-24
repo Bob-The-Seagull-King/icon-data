@@ -1155,6 +1155,415 @@
                         ]
     },
     {
+        "id": "af_beast_skirmisher_ambush",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Ambush",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Beast may dash 2 before making the attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "If made from stealth, deals bonus damage and dazes its target.",
+                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "dazes", "id": "gl_dazed"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_ambush_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Ambush",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Beast may fly 2 before making the attack.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "If made from stealth, deals bonus damage and dazes its target.",
+                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "dazes", "id": "gl_dazed"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_ambush_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Ambush",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Beast may fly 2 before making the attack.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "If made from stealth, deals bonus damage and dazes its target.",
+                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "dazes", "id": "gl_dazed"}]
+                                }]
+            },
+            {
+                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Ambush can critically hit (+[D]) when this beast is bloodied.",
+                                    "glossary": [{"val": "critically hit", "id": "gl_criticalhit"}, {"val": "+[D]", "id": "gl_damagedice"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_stalkprey",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "Mark": true
+        },
+        "eventtags": {},
+        "name": "Stalk Prey",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Stalking beast marks a foe in range. While marked, at the end of that foe’s turn, the beast can remove itself from the battlefield, then return in any adjacent space to them. If the marked foe is not adjacent to any allies, the beast deals 6 damage to them, then gains stealth.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_rake",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "unerring": true,
+            "line": 4,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Rake",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the area take 2 damage. The Stalking Beast may dash to any space in the area after this action resolves, with phasing.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "phasing", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_leader_scrabble",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Latch",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "Autohit:",
+                    "subcontent":   [{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 damage, twice."
+                    }]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_leader_pheromoneblast",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Pheromone Blast",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is pacified, then shoved either 1 space towards or away from the Symbiote.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_leader_spur",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Spur",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character the symbiote is latched on to dashes 3 and may deal 2 damage to an adjacent character of the symbiote’s choice.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_leader_berserk",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Berserk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Symbiote’s host becomes sturdy, gains 5 vigor, and gains +1 action. These effects last until the end of the host’s next turn.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_artillery_biotic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "pierce": true,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Biotic",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is shattered.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, deals bonus damage and increase effect area to a large blast.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "large blast", "id": "gl_blast"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_artillery_deluge",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Deluge",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beast flies 2, then deals 2 piercing damage to a foe in range 6.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_artillery_blightlob",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 8,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Blight Lob",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Beast creates a small blast area of difficult terrain in range. Characters in the area when it is created take 3 piercing damage as an area effect, and characters inside the area are vulnerable+",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "+", "id": "gl_ongoing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_artillery_blightlob_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 8,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Blight Lob",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Beast creates a small blast area of difficult terrain in range. Characters in the area when it is created take 3 piercing damage as an area effect, and characters inside the area are vulnerable+",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, Blight Lob only costs 1 action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_faction_hob_spiritaway",
         "type": "Ability",
         "source": "core",

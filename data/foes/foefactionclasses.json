@@ -29,7 +29,7 @@
                 "traits": [],
                 "removed_traits": [],
                 "stats": {}
-            } ,
+            },
             {
                 
                 "chapter": 2,
@@ -39,7 +39,7 @@
                 "traits": [],
                 "removed_traits": [],
                 "stats": {}
-            } ,
+            },
             {
                 
                 "chapter": 3,
@@ -48,6 +48,165 @@
                 "removed_actions": ["af_beast_heavy_wildtoss"],
                 "traits": [],
                 "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_beast_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stalking Beast",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Beasts of unusual intelligence or cunning that have learned to track and hunt the unlucky creatures that wander too deep into dungeons, becoming lost or disoriented and making them perfect prey. Unfortunately, this includes many adventurers."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_skirmisher_ambush","af_beast_skirmisher_stalkprey","af_beast_skirmisher_rake"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_stalkingbeast_camouflage"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_beast_skirmisher_ambush_ch2"],
+                "removed_actions": ["af_beast_skirmisher_ambush"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_beast_skirmisher_ambush_ch3"],
+                "removed_actions": ["af_beast_skirmisher_ambush"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_beast_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Symbiote",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Odd beasts that have evolved a cooperative or parasitic relationship with other dungeon denizens, using them for survival or food as needs be."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_leader_scrabble", "af_beast_leader_pheromoneblast","af_beast_leader_spur", "af_beast_leader_berserk"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_symbiote_latch"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_beast_symbiote_defiance"],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_beast_symbiote_defiance", "tf_faction_beast_symbiote_latch_ch3"],
+                "removed_traits": ["tf_faction_beast_symbiote_latch"],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_beast_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blight Beast",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Beasts that are soaked in the corruptive energies of the deep arkenruins. Most of them are incredibly poisonous, some by regular toxins, and yet others through being able to channel the sickening energies of the dungeon cores."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_artillery_biotic", "af_beast_artillery_deluge","af_beast_artillery_blightlob"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_blightbeast_blightsplash"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_beast_artillery_blightlob_ch2"],
+                "removed_actions": ["af_beast_artillery_blightlob"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_beast_artillery_blightlob_ch2"],
+                "removed_actions": ["af_beast_artillery_blightlob"],
+                "traits": ["tf_faction_beast_blightbeast_blightsplash_ch3"],
+                "removed_traits": ["tf_faction_beast_blightbeast_blightsplash"],
                 "stats": {}
             }            
         ]
