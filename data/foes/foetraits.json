@@ -337,18 +337,12 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Chapter 2",
+        "name": "Defiance",
         "description":  [
             {
-                "tags": {"desc_type" : "effect"},
-                "content": "Chapter 2:",
-                "subcontent": [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "Gains defiance.",
-                        "glossary": [{"val": "defiance", "id": "gl_defiance"}]
-                    }
-                ]
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains defiance.",
+                "glossary": [{"val": "defiance", "id": "gl_defiance"}]
             }
         ]
     },
@@ -371,15 +365,7 @@
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "If latched on, if"
-                    },
-                    {
-                        "tags": {"desc_type" : "foetrait"},
-                        "content": "tf_faction_beast_enrage"
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "also grants + 1 action to its host. This stacks with a host’s Enrage."
+                        "content": "If latched on, if Enraged, also grant + 1 action to its host. This stacks with a host’s Enrage."
                     }
                 ]
             }

@@ -1168,25 +1168,30 @@
         "class_id": "yellow",
         "description":  [                               
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "On Hit:",
-                "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                    "content": "[D] + fray",
-                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
-                                }]
-            },
+                "tags": {"desc_type": "effect"},
+                "content": "Attack: ",
+                "subcontent":   [ {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "[D] + fray",
+                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                    }]
+                },
+                {
+                    "tags": [{"desc_type": "subeffect"}],
+                    "content": "Miss:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Fray",
+                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                    }]
+                }]
+            },    
+       
             {
-                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
-                "content": "Miss:",
-                "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                    "content": "Fray",
-                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
-                                }]
-            },
-            {
-                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "tags": {"desc_type": "effect"},
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -1195,7 +1200,7 @@
                                 }]
             },
             {
-                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "tags": {"desc_type": "effect"},
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -1219,25 +1224,29 @@
         "class_id": "yellow",
         "description":  [                               
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "On Hit:",
+                "tags": [ {"desc_type" : "effect"}],
+                "content": "Attack:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                    "content": "[D] + fray",
-                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
-                                }]
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":   [{
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "[D] + fray",
+                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                    }]
+                },
+                {
+                    "tags": [{"desc_type" : "subeffect"}],
+                    "content": "Miss:",
+                    "subcontent":   [{
+                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "content": "Fray",
+                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                    }]
+                }]
             },
             {
-                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
-                "content": "Miss:",
-                "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                    "content": "Fray",
-                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
-                                }]
-            },
-            {
-                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "tags": [ {"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -1246,7 +1255,7 @@
                                 }]
             },
             {
-                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -1268,27 +1277,32 @@
         "eventtags": {},
         "name": "Ambush",
         "class_id": "yellow",
-        "description":  [                               
+        "description":  [      
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "On Hit:",
-                "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                    "content": "[D] + fray",
-                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
-                                }]
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "content": "[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
             },
             {
-                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
-                "content": "Miss:",
-                "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
-                                    "content": "Fray",
-                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
-                                }]
-            },
-            {
-                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -1297,7 +1311,7 @@
                                 }]
             },
             {
-                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -1306,7 +1320,7 @@
                                 }]
             },
             {
-                "tags": [{"tag_name": "desc_type", "val": "effect"}],
+                "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": [{"tag_name": "desc_type", "val": "desc"}],
@@ -1368,6 +1382,7 @@
         },
         "eventtags": {},
         "name": "Latch",
+        "class_id": "green",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
@@ -1393,6 +1408,7 @@
         },
         "eventtags": {},
         "name": "Pheromone Blast",
+        "class_id": "green",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -1411,6 +1427,7 @@
         },
         "eventtags": {},
         "name": "Spur",
+        "class_id": "green",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -1428,6 +1445,7 @@
         },
         "eventtags": {},
         "name": "Berserk",
+        "class_id": "green",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -1474,7 +1492,7 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Effect:",
                 "subcontent":   [
                     {
@@ -1485,7 +1503,7 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Effect:",
                 "subcontent":   [
                     {
@@ -1507,6 +1525,7 @@
         },
         "eventtags": {},
         "name": "Deluge",
+        "class_id": "blue",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -1526,6 +1545,7 @@
         },
         "eventtags": {},
         "name": "Blight Lob",
+        "class_id": "blue",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -1545,6 +1565,7 @@
         },
         "eventtags": {},
         "name": "Blight Lob",
+        "class_id": "blue",
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
@@ -1552,12 +1573,12 @@
                 "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "+", "id": "gl_ongoing"}]
             },
             {
-                "tags": {"desc_type" : "desc"},
-                "content": "Chapter 2:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 3+: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "At round 3+, Blight Lob only costs 1 action."
+                        "content": "Blight Lob only costs 1 action."
                     }
                 ]
             }
