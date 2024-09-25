@@ -23,7 +23,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Folk - Chronicler",
+        "name": "Chronicler",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -93,7 +93,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Folk - Churner",
+        "name": "Churner",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -163,7 +163,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Folk - Guidler",
+        "name": "Guidler",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -233,7 +233,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Folk - Islander",
+        "name": "Islander",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -303,7 +303,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Folk - Leggio",
+        "name": "Leggio",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -368,7 +368,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Folk - Yeokin",
+        "name": "Yeokin",
         "description" : [
             {
                 "tags": {"desc_type" : "subeffect"},

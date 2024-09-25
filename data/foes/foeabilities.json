@@ -1586,23 +1586,22 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "",
-                "subcontent":   [
+                "content": "Creates a Soul Spark summon in free space in range.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 3+: ",
+                "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Creates a",
-                        "glossary": [{"val": "summon", "id": "gl_summon"}]
-                    },
-                    {
-                        "tags": {"desc_type" : "foesummon"},
-                        "content": "sm_relict_artillery_soulspark"
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "summon in free space in range. Round 3+: Two sparks.",
-                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                        "content": "Two sparks."
                     }
                 ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_relict_artillery_soulspark"
             }
         ]
     },
@@ -1622,34 +1621,27 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "",
-                "subcontent":   [
+                "content": "Creates a Soul Spark summon in free space in range.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 3+: ",
+                "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Creates a",
-                        "glossary": [{"val": "summon", "id": "gl_summon"}]
-                    },
-                    {
-                        "tags": {"desc_type" : "foesummon"},
-                        "content": "sm_relict_artillery_soulspark"
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "summon in free space in range. Round 3+: Two sparks.",
-                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                        "content": "Two sparks."
                     }
                 ]
             },
             {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_relict_artillery_soulspark"
+            },
+            {
                 "tags": {"desc_type" : "desc"},
-                "content": "Chapter 2:",
-                "subcontent":   [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
-                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
-                    }
-                ]
+                "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
             }
         ]
     },
@@ -1669,34 +1661,27 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "",
-                "subcontent":   [
+                "content": "Creates a Soul Spark summon in free space in range.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 3+: ",
+                "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Creates a",
-                        "glossary": [{"val": "summon", "id": "gl_summon"}]
-                    },
-                    {
-                        "tags": {"desc_type" : "foesummon"},
-                        "content": "sm_relict_artillery_soulspark_ch3"
-                    },
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "summon in free space in range. Round 3+: Two sparks.",
-                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                        "content": "Two sparks."
                     }
                 ]
             },
             {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_relict_artillery_soulspark_ch3"
+            },
+            {
                 "tags": {"desc_type" : "desc"},
-                "content": "Chapter 2:",
-                "subcontent":   [
-                    {
-                        "tags": {"desc_type" : "desc"},
-                        "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
-                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
-                    }
-                ]
+                "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
             }
         ]
     },
