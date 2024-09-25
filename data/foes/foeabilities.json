@@ -851,12 +851,11 @@
         "eventtags": {},
         "name": "Demon Pankration",
         "class_id": "icon",
-        "description":  [                               
-                                         
+        "description":  [        
         {
             "tags": {"desc_type" : "desc"},
             "content": "The head lopper attempts to grab foe of its choice in range. At the of the very next player turn, if that foe is still in range 3, the Head Lopper removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:"
-        }     ,                            
+        },                            
         {
             "tags": {"desc_type" : "list"},
             "content": "",
@@ -874,7 +873,7 @@
                             {"val": "shoved", "id": "gl_shove"}]
                         }     
                     ]
-                }    ,                                          
+                },                                          
                 {
                     "tags": {"desc_type" : "subeffect"},
                     "content": "Spinning Piledriver: ",
@@ -890,7 +889,7 @@
                             ]
                         }     
                     ]
-                }    ,                                          
+                },                                          
                 {
                     "tags": {"desc_type" : "subeffect"},
                     "content": "Backbreaker: ",
@@ -901,10 +900,9 @@
                             "glossary": [{"val": "immobile", "id": "gl_immobile"}]
                         }     
                     ]
-                }     
+                }  
             ]
-        }        
-                        ]
+        }]
     },
     {
         "id": "af_hob_fallingleafaesi_swirlingleaves",
@@ -1001,6 +999,724 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Choose a bloodied character adjacent to one or more husks, then destroy all husks adjacent to that character. If that character is an ally, they gain 2 vigor per husk destroyed. If that character was a foe, they must sacrifice 2 per husk destroyed.",
                 "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_heavy_overpower",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Overpower",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes adjacent to the attack target take fray damage.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_heavy_hookspear",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Hook Spear",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 2 is shoved 1 towards the Wight and slashed.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "slashed", "id": "gl_slashed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_heavy_graveguard",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Grave Guard",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All allies in range may rush 1 towards this character. Bloodied allies that rushed this way gain 3 vigor.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "Bloodied", "id": "gl_bloodied"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_heavy_deathmarch",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Death March",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wight and all allies in range may rush 1 space in the same direction, then all foes adjacent to any character that moved this way take 2 damage.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_heavy_deathmarch_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Death March",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wight and all allies in range may rush 1 space in the same direction, then all foes adjacent to any character that moved this way take 2 damage.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Death March becomes a free action if the Wight is bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_heavy_deathmarch_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Death March",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wight and all allies in range may rush 1 space in the same direction, then all foes adjacent to any character that moved this way take fray damage.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Death March becomes a free action if the Wight is bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_leader_unholy",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 5,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Unholy",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Sealed foes must sacrifice 4. Then, attack target is sealed.",
+                        "glossary": [{"val": "Sealed", "id": "gl_sealed"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_leader_unholy_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 5,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Unholy",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Sealed foes must sacrifice 4. Then, attack target is sealed.",
+                        "glossary": [{"val": "Sealed", "id": "gl_sealed"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Unholy creates a grasping dead terrain effect under up to two of its targets after it resolves, as per"
+                    },
+                    {
+                        "tags": {"desc_type" : "foeability"},
+                        "content": "af_relict_leader_blackcommunion"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_leader_fear",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Fear",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a foe in range 6. While marked, that foe deals half damage unless adjacent to an ally. If they end their turn adjacent to an ally, they can save to clear this mark.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_leader_blackcommunion",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Black Communion",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes take 2 damage. Allies gain 2 vigor. Then, create a difficult terrain effect space of grasping dead hands underneath every foe in the area. While inside a grasping hands space, foes are sealed+ and cannot gain vigor.",
+                        "glossary": [{"val": "Sealed", "id": "gl_sealed"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_leader_radianceoftheblacksun",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Radiance of the Black Sun",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character becomes immobile but gains Aura 2 until the start of its next turn. While the aura is active, Relict other than this character in the area cannot be reduced past 1 hp.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_skirmisher_bloodfeed",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Bloodfeed",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe take 2 damage again if not adjacent to any allies, and 2 damage again if bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_skirmisher_realityflicker",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Reality Flicker",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ghul or a relict in range 2 can teleport 3.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_skirmisher_lifedrain",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Life Drain",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An adjacent foe sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the Ghul gains evasion until the start of its next turn.",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "evasion", "id": "gl_evasion"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_skirmisher_lifedrain_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Life Drain",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A foe in range sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the Ghul gains evasion until the start of its next turn.",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "evasion", "id": "gl_evasion"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_skirmisher_lifedrain_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Life Drain",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A foe in range sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the Ghul gains evasion until the start of its next turn.",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "evasion", "id": "gl_evasion"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Drain Essence:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When used against a foe at 25% hp or lower, Life Drain additionally reduces a foe to 1 hp, and the Ghul gains a vigor surge.",
+                        "glossary": [{"val": "vigor surge", "id": "gl_vigorsurge"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_skirmisher_terrorize",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Terrorize",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A foe in range must save or become blinded+ and gains +1 curse on all attacks and saves until it ends a turn adjacent to an ally, ending this effect. On a successful save, they are only blinded.",
+                        "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}, {"val": "+1 curse", "id": "gl_curse"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_artillery_chainlightning",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 8,
+            "burst": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Chain Lightning",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + 2, twice.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage, twice."
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_artillery_soulspark",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "summon": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Soul Spark",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Creates a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "foesummon"},
+                        "content": "sm_relict_artillery_soulspark"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "summon in free space in range. Round 3+: Two sparks.",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_artillery_soulspark_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "summon": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Soul Spark",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Creates a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "foesummon"},
+                        "content": "sm_relict_artillery_soulspark"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "summon in free space in range. Round 3+: Two sparks.",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_artillery_soulspark_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "summon": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Soul Spark",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Creates a",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "foesummon"},
+                        "content": "sm_relict_artillery_soulspark_ch3"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "summon in free space in range. Round 3+: Two sparks.",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_artillery_unstablecharge",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "Mark": true
+        },
+        "eventtags": {},
+        "name": "Unstable Charge",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a foe in range. At the end of that foe's turn, they take 1 piercing damage, once, for every other character in range 2, then become vulnerable. Then, this mark ends.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
             }
         ]
     },
@@ -1484,6 +2200,7 @@
                     {
                         "tags": {"desc_type" : "subeffect"},
                         "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
                         "subcontent":   [{
                             "tags": {"desc_type" : "desc"},
                             "content": "1 damage."

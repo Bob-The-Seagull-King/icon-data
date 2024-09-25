@@ -108,6 +108,51 @@
                         ]
     },
     {
+        "id": "tf_special_defiance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Defiance",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has defiance.",
+                "glossary": [{"val": "defiance", "id": "gl_defiance"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_special_phasing",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phasing",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has phasing.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_special_flying",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Flying",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has flying.",
+                "glossary": [{"val": "flying", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_folk_greatculture",
         "type": "Trait",
         "source": "core",
@@ -328,21 +373,6 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Starts combat sharing the same space as another ally the same size or larger. While latched on, can’t move, but instead moves with its host. Being moved out of its host’s space end this effect. If the Symbiote would be shoved, teleported, or removed from the battlefield, it can pass a save to avoid the effect and become immune to these effects until the end of the current turn. Can latch on to a new adjacent allied character with 1 action or its standard move ability.",
                 "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "teleported", "id": "gl_teleport"}, {"val": "immune", "id": "gl_immune"}]
-            }
-        ]
-    },
-    {
-        "id": "tf_faction_beast_symbiote_defiance",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Defiance",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Gains defiance.",
-                "glossary": [{"val": "defiance", "id": "gl_defiance"}]
             }
         ]
     },
@@ -756,7 +786,8 @@
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_monger_bountyhunt"
-            }     ]
+            }     
+        ]
     },
     {
         "id": "tf_faction_imperial_chainofcommand",

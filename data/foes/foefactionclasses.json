@@ -1,5 +1,210 @@
 [
     {
+        "id": "fc_relict_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wight",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The foot soldiers of the Arken empire, their loyalty is no lesser in death. Their long imprisonment in the soul network has left them mindless, ruthless killing machines. In the later days of the doom, even before the Ur-spell, many soldiers and guards of high officials, satraps, and priests were subject to the immortalization process, as the population gradually became more used to the undead."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_relict_heavy_overpower", "af_relict_heavy_hookspear", "af_relict_heavy_graveguard", "af_relict_heavy_deathmarch"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_relict_heavy_deathmarch_ch2"],
+                "removed_actions": ["af_relict_heavy_deathmarch"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_relict_heavy_deathmarch_ch3"],
+                "removed_actions": ["af_relict_heavy_deathmarch"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_relict_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Necrosavant",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Priests of the Black Sun were the central cult of the Arken Imperium and foremost in political power and influence. It was they, under the leadership of their sorcerer-priests, that orchestrated the Ur-spell that necrotized what remained of the empire."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The process of preserving the entire population of the empire required a great deal of work, and therefore the priests classes were split into many castes that labored at numerous terrible projects. In the end of days, in their desperation, they delved into deeper and darker magics and sacrificed their very souls for the purpose of the Great Work."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_relict_leader_unholy", "af_relict_leader_fear", "af_relict_leader_blackcommunion"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_relict_leader_unholy_ch2"],
+                "removed_actions": ["af_relict_leader_unholy"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_relict_leader_unholy_ch2", "af_relict_leader_radianceoftheblacksun"],
+                "removed_actions": ["af_relict_leader_unholy"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_relict_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ghul",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some relict have a tiny fragment of self awareness, an existential anguish that manifests as a terrible hunger. This gives them more independence than their kin, allowing them to roam where the network is thin and warm bodies are numerous."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_relict_skirmisher_bloodfeed", "af_relict_skirmisher_realityflicker", "af_relict_skirmisher_lifedrain", "af_relict_skirmisher_terrorize"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_relict_skirmisher_lifedrain_ch2"],
+                "removed_actions": ["af_relict_skirmisher_lifedrain"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_relict_skirmisher_lifedrain_ch3"],
+                "removed_actions": ["af_relict_skirmisher_lifedrain"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_relict_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wraith",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Former slave wrights of the old empire, turned into living weapons to fight back against the Doom. Tethered to the network, these relict can float on the air with eerie grace, flickering in and out of existence."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_relict_artillery_chainlightning", "af_relict_artillery_soulspark", "af_relict_artillery_unstablecharge"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying", "tf_special_phasing"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_relict_artillery_soulspark_ch2"],
+                "removed_actions": ["af_relict_artillery_soulspark"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_relict_artillery_soulspark_ch3"],
+                "removed_actions": ["af_relict_artillery_soulspark"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
         "id": "fc_beast_cl_foe_heavy",
         "type": "FoeFactionClass",
         "source": "core",
@@ -21,7 +226,6 @@
         "removed_traits": [],
         "chapters": [
             {
-                
                 "chapter": 1,
                 "name": "1",
                 "actions": [],
@@ -31,7 +235,6 @@
                 "stats": {}
             },
             {
-                
                 "chapter": 2,
                 "name": "2",
                 "actions": ["af_beast_heavy_wildtoss_ch2"],
@@ -41,7 +244,6 @@
                 "stats": {}
             },
             {
-                
                 "chapter": 3,
                 "name": "3",
                 "actions": ["af_beast_heavy_wildtoss_ch3"],
@@ -74,7 +276,6 @@
         "removed_traits": [],
         "chapters": [
             {
-                
                 "chapter": 1,
                 "name": "1",
                 "actions": [],
@@ -84,7 +285,6 @@
                 "stats": {}
             },
             {
-                
                 "chapter": 2,
                 "name": "2",
                 "actions": ["af_beast_skirmisher_ambush_ch2"],
@@ -94,7 +294,6 @@
                 "stats": {}
             },
             {
-                
                 "chapter": 3,
                 "name": "3",
                 "actions": ["af_beast_skirmisher_ambush_ch3"],
@@ -127,7 +326,6 @@
         "removed_traits": [],
         "chapters": [
             {
-                
                 "chapter": 1,
                 "name": "1",
                 "actions": [],
@@ -137,22 +335,20 @@
                 "stats": {}
             },
             {
-                
                 "chapter": 2,
                 "name": "2",
                 "actions": [],
                 "removed_actions": [],
-                "traits": ["tf_faction_beast_symbiote_defiance"],
+                "traits": ["tf_special_defiance"],
                 "removed_traits": [],
                 "stats": {}
             },
             {
-                
                 "chapter": 3,
                 "name": "3",
                 "actions": [],
                 "removed_actions": [],
-                "traits": ["tf_faction_beast_symbiote_defiance", "tf_faction_beast_symbiote_latch_ch3"],
+                "traits": ["tf_special_defiance", "tf_faction_beast_symbiote_latch_ch3"],
                 "removed_traits": ["tf_faction_beast_symbiote_latch"],
                 "stats": {}
             }            
@@ -180,7 +376,6 @@
         "removed_traits": [],
         "chapters": [
             {
-                
                 "chapter": 1,
                 "name": "1",
                 "actions": [],
@@ -190,7 +385,6 @@
                 "stats": {}
             },
             {
-                
                 "chapter": 2,
                 "name": "2",
                 "actions": ["af_beast_artillery_blightlob_ch2"],
@@ -200,7 +394,6 @@
                 "stats": {}
             },
             {
-                
                 "chapter": 3,
                 "name": "3",
                 "actions": ["af_beast_artillery_blightlob_ch2"],

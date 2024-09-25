@@ -1,5 +1,93 @@
 [
     {
+        "id": "sm_relict_artillery_soulspark",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Soul Spark",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes adjacent to Soul Sparks are vulnerable+, and all damage deal to them becomes piercing.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "+", "id": "gl_ongoing"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If a foe ends their turn adjacent to a spark, it releases a small blast pulse centered on it, dealing 1 piercing damage twice to all foes.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The wraith can target the spark with Chain Lightning. If they do, it gains rebound and the spark triggers its area effect.",
+                                    "glossary": [{"val": "rebound", "id": "gl_rebound"},{"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_relict_artillery_soulspark_ch3",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Soul Spark",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes adjacent to Soul Sparks are vulnerable+, and all damage deal to them becomes piercing.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "+", "id": "gl_ongoing"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If a foe ends their turn adjacent to a spark, it releases a large blast pulse centered on it, dealing 1 piercing damage twice to all foes.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The wraith can target the spark with Chain Lightning. If they do, it gains rebound and the spark triggers its area effect.",
+                                    "glossary": [{"val": "rebound", "id": "gl_rebound"},{"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
         "id": "sm_scavenger_twinblades_twirlingblade",
         "type": "Summon",
         "source": "core",
