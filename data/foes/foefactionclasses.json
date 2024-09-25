@@ -210,5 +210,217 @@
                 "stats": {}
             }            
         ]
+    },
+    {
+        "id": "fc_hob_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Forest Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Greater hob spirits of the dark and shady spaces underneath the trees. Tend to take the forms of beasts, fungi, or shade-growing plants. Due to their size and strength, most forest hobs pay little heed to kin and tend to ignore them if not bothered. During winter, they hibernate and it is easy to stumble across one by accident."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_hob_foresthob_pummel","af_hob_foresthob_root","af_hob_foresthob_twistleg","af_hob_foresthob_seismicslam"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_hob_foresthob_seismicslam_ch2"],
+                "removed_actions": ["af_hob_foresthob_seismicslam"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_hob_foresthob_seismicslam_ch3"],
+                "removed_actions": ["af_hob_foresthob_seismicslam"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_hob_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hearth Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Hobs that coalesce in and around the dwellings and towns of Kin. Tend to be able to speak a little of the tongue of Kin, and have a fondness for trinkets and other shiny items. Can often only be seen by children. When treated well, act as family guardians and protectors of the hearth. When treated poorly, can become akin to poltergeists or spirits of ill mischief."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_hob_hearthhob_longfinger","af_hob_hearthhob_stealspeed","af_hob_hearthhob_snatchmemory","af_hob_hearthhob_cavort"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_hob_hearthhob_snatchmemory_ch2"],
+                "removed_actions": ["af_hob_hearthhob_snatchmemory"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_hob_hearthhob_snatchmemory_ch3"],
+                "removed_actions": ["af_hob_hearthhob_snatchmemory"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_hob_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Field Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Hobs of the fields, meadows, beaches and savannas, where the skies are plentiful. More aether-wise than other hobs and fond of tricks and deals. People sometimes seek out these hobs and make offerings for a blessing of fertility, luck in business, or in rare cases, to curse a rival."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_hob_fieldhob_theoldmagic","af_hob_fieldhob_marry","af_hob_fieldhob_cutdeal","af_hob_fieldhob_yankthread"],
+        "removed_actions": [],
+        "traits": ["tf_faction_hob_fieldhob_auraofalacrity"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_hob_fieldhob_theoldmagic_ch2"],
+                "removed_actions": ["af_hob_fieldhob_theoldmagic"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_hob_fieldhob_theoldmagic_ch3"],
+                "removed_actions": ["af_hob_fieldhob_theoldmagic"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_hob_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spirit Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Flying hobs that tend to congregate around lonely and forlorn places such as moors, swampy wetlands, riverbanks, or mountaintops, drawing from their mournful essence. These hobs are drawn towards the strong emotions and presence of kin as though seeking warmth. Though not outwardly malicious, they are dangerous company to spend long hours with."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_hob_spirithob_spiritorb","af_hob_spirithob_whisk","af_hob_spirithob_playfulpricking","af_hob_spirithob_fellspirit"],
+        "removed_actions": [],
+        "traits": ["tf_faction_hob_spirithob_phasing"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_hob_spirithob_whisk_ch2"],
+                "removed_actions": ["af_hob_spirithob_whisk"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_hob_spirithob_whisk_ch3"],
+                "removed_actions": ["af_hob_spirithob_whisk"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
     }
 ]
