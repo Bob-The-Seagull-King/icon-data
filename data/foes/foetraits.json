@@ -1130,5 +1130,35 @@
                 "glossary": [{"val": "intangible", "id": "gl_intangible"}, {"val": "collide", "id": "gl_collide"}]
             }
         ]
+    },
+    {
+        "id": "tf_faction_hob_spirithob_phasing",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phasing",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains phasing.",
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_hob_fieldhob_auraofalacrity",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Alacrity",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 1. Allies in the aura can use the charged effects of abilities even on normal turns.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"},{"val": "aura", "id": "gl_aura"},{"val": "charged", "id": "gl_charge"}]
+            }
+        ]
     }
 ]

@@ -2351,5 +2351,1036 @@
                 "content": "The acting Sprigg swaps the places of two other characters in range 2 of the Sprigg, removing and placing both of them."
             }
         ]
+    },
+    {
+        "id": "af_hob_foresthob_pummel",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "True Strike": true
+        },
+        "eventtags": {},
+        "name": "Pummel",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Shove all adjacent foes 2.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_foresthob_root",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Root",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob chooses itself or an ally in range, marking them.",
+                "glossary": [{"val": "marking", "id": "gl_mark"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When marked, that character gains 3 vigor, and while marked, that character is immune to all shove, teleport, and remove from the battlefield effects from foes.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "marked", "id": "gl_mark"},{"val": "shove", "id": "gl_shove"},{"val": "teleport", "id": "gl_teleport"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This mark ends if the marked character moves, but does not end if its allies move them.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_foresthob_twistleg",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Twist Leg",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is slashed, then marked.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"},{"val": "marked", "id": "gl_mark"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, each time that foe is shoved, teleported, or removed and placed on the battlefield, they take 2 damage.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "shoved", "id": "gl_shove"},{"val": "teleported", "id": "gl_teleport"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe can end this mark by not moving for their entire turn.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_foresthob_seismicslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Seismic Slam",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Delay: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It’s next turn must be slow.",
+                        "glossary": [{"val": "slow", "id": "gl_slowturn"}]
+                    }
+                ],
+                "glossary": [{"val": "Delay", "id": "gl_delay"}]
+            }   ,                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of that turn, all adjacent foes must save or take 2[D]+fray and be shoved 1, or [D]+fray on a successful save.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shoved", "id": "gl_shove"}]
+            },                        
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_foresthob_seismicslam_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Seismic Slam",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Delay: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It’s next turn must be slow.",
+                        "glossary": [{"val": "slow", "id": "gl_slowturn"}]
+                    }
+                ],
+                "glossary": [{"val": "Delay", "id": "gl_delay"}]
+            }   ,                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of that turn, all adjacent foes must save or take 2[D]+fray and be shoved 1, or [D]+fray on a successful save. This deals bonus damage for each object caught in the area.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shoved", "id": "gl_shove"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            },                        
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_foresthob_seismicslam_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Seismic Slam",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Delay: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It’s next turn must be slow.",
+                        "glossary": [{"val": "slow", "id": "gl_slowturn"}]
+                    }
+                ],
+                "glossary": [{"val": "Delay", "id": "gl_delay"}]
+            }   ,                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of that turn, all foes in range 2 must save or take 2[D]+fray and be shoved 1, or [D]+fray on a successful save. This deals bonus damage for each object caught in the area.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shoved", "id": "gl_shove"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            },                        
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_spirithob_spiritorb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "blast_size": "small",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Spirit Orb",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D]+2, twice.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage, twice."
+                        }],
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Teleport affected foes 2 spaces.",
+                        "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 3+:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gains charge effect for free.",
+                        "glossary": [{"val": "charge", "id": "gl_charge"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_spirithob_whisk",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Whisk",
+        "description":  [                               
+                                      
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "A foe in range becomes vulnerable, then is teleported 1.",
+            "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "teleported", "id": "gl_teleport"}]
+        },                             
+                                      
+        { "tags": {"desc_type" : "gap"},  "content": "" },                             
+                                      
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Vulnerable foes are teleported 3 instead.",
+            "glossary": [{"val": "Vulnerable", "id": "gl_vulnerable"},{"val": "teleported", "id": "gl_teleport"}]
+        }
+        ]
+    },
+    {
+        "id": "af_hob_spirithob_whisk_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Whisk",
+        "description":  [                               
+                                      
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "A character in range becomes vulnerable, then is teleported 1. If the character is an ally, they are instead teleported 2 and not made vulnerable.",
+            "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "teleported", "id": "gl_teleport"}]
+        },                             
+                                      
+        { "tags": {"desc_type" : "gap"},  "content": "" },                             
+                                      
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Vulnerable foes are teleported 3 instead.",
+            "glossary": [{"val": "Vulnerable", "id": "gl_vulnerable"},{"val": "teleported", "id": "gl_teleport"}]
+        }
+        ]
+    },
+    {
+        "id": "af_hob_spirithob_whisk_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Whisk",
+        "description":  [                               
+                                      
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "A character in range becomes vulnerable, then is teleported 1. If the character is an ally, they are instead teleported 2 and not made vulnerable.",
+            "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "teleported", "id": "gl_teleport"}]
+        },                             
+                                      
+        { "tags": {"desc_type" : "gap"},  "content": "" },                             
+                                      
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Vulnerable foes are teleported 3 instead.",
+            "glossary": [{"val": "Vulnerable", "id": "gl_vulnerable"},{"val": "teleported", "id": "gl_teleport"}]
+        }
+        ]
+    },
+    {
+        "id": "af_hob_spirithob_playfulpricking",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Playful Pricking",
+        "description":  [                               
+                                        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range of the spirit is marked.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, each time they teleport, they take 1 piercing damage. This damage cannot reduce them past 1 hp.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "teleport", "id": "gl_teleport"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe can end this mark by not moving for their entire turn.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_spirithob_fellspirit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Fell Spirit",
+        "description":  [                               
+                                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The spirit hob ends its turn and chooses a terrain space in range 6."
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                 
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Delay: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It’s next turn must be slow.",
+                        "glossary": [{"val": "slow", "id": "gl_slowturn"}]
+                    }
+                ],
+                "glossary": [{"val": "Delay", "id": "gl_delay"}]
+            },                             
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of that turn, the space explodes, releasing a massive blast of sonic energy in a medium blast area effect centered on it. Foes inside are teleported 2 spaces, shattered, then must save or take [D]+fray twice, or once on a successful save.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "teleported", "id": "gl_teleport"},
+                    {"val": "shattered", "id": "gl_shattered"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_longfinger",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "boon": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Longfinger",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D]+fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage, twice."
+                        }],
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals 3 damage again its target if they are marked.",
+                        "glossary": [{"val": "marked", "id": "gl_mark"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 3 and gain stealth.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"},{"val": "stealth", "id": "gl_stealth"}]
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_stealspeed",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "unerring": true,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Steal Speed",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob may dash up to 2, then foe in range is dazed.",
+                "glossary": [{"val": "dash", "id": "gl_dash"},{"val": "dazed", "id": "gl_dazed"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dazed foes take fray damage.",
+                "glossary": [{"val": "Dazed", "id": "gl_dazed"},{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_snatchmemory",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Snatch Memory",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "The Hob prepares to pilfer its foe’s memories, gaining the following interrupt until the start of its next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_hearthhob_snatchmemory_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_snatchmemory_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Snatch Memory",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "The Hob prepares to pilfer its foe’s memories, gaining the following interrupt until the start of its next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_hearthhob_snatchmemory_interrupt_ch2"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_snatchmemory_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Snatch Memory",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "The Hob prepares to pilfer its foe’s memories, gaining the following interrupt until the start of its next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_hearthhob_snatchmemory_interrupt_ch3"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_snatchmemory_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Snatch Memory",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe in range 3 uses an ability and the ability resolves."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe loses the memory of that ability, becoming unable to use it again until the end of their next turn. Any passive effects of the ability for that duration still continue as normal."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_snatchmemory_interrupt_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Snatch Memory",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe in range 6 uses an ability and the ability resolves."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe loses the memory of that ability, becoming unable to use it again until the end of their next turn. Any passive effects of the ability for that duration still continue as normal."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_snatchmemory_interrupt_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Snatch Memory",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe in range 6 uses an ability and the ability resolves."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe loses the memory of that ability, becoming unable to use it again until the end of their next turn. Any passive effects of the ability for that duration still continue as normal."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If the target is bloodied, they are also dazed and blinded.",
+                                    "glossary": [{"val": "bloodied", "id": "gl_bloodied"},{"val": "dazed", "id": "gl_dazed"},{"val": "blinded", "id": "gl_blinded"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_hearthhob_cavort",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Cavort",
+        "description":  [                               
+                                                     
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Delay: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It’s next turn must be slow.",
+                        "glossary": [{"val": "slow", "id": "gl_slowturn"}]
+                    }
+                ],
+                "glossary": [{"val": "Delay", "id": "gl_delay"}]
+            },                             
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of that turn, it teleports 3, then deals 3 damage to an adjacent foe. Can repeat this effect, but must choose a different foe in range each time unless a foe has already been chosen by this ability, or this effect has triggered three times.",
+                "glossary": [
+                    {"val": "teleports", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fieldhob_theoldmagic",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "The Old Magic",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Hob inflicts a status it is currently suffering from on its foe, then deals 2 damage, once, per status its foe is afflicted by."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All statuses."
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fieldhob_theoldmagic_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "The Old Magic",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Hob inflicts a status it is currently suffering from on its foe, then deals 2 damage, once, per status or mark its foe is afflicted by."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All statuses."
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fieldhob_theoldmagic_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "The Old Magic",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Hob inflicts a status it is currently suffering from on its foe, then deals 2 damage, once, per status or mark its foe is afflicted by."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All statuses."
+                    }
+                ],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If the hob or its target is bloodied, The Old Magic also may end all statuses affecting the hob after transferring them.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fieldhob_marry",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Marry",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob marks any two characters in range.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, if a marked character ends their turn in range 3 of their marked partner, they are both pacified and gain 3 vigor.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "pacified", "id": "gl_pacified"},{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fieldhob_yankthread",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Yank Thread",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is sealed.",
+                "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sealed foes are shoved 2 in any direction.",
+                "glossary": [{"val": "Sealed", "id": "gl_sealed"},{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fieldhob_cutdeal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Cut Deal",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "The Hob gains the following interrupt until the start of its next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_fieldhob_cutdeal_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fieldhob_cutdeal_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 2,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Cut Deal",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A character in range 3 of the Hob gains a status."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Hob transfers the status to itself or an ally in range 3 of the Hob. If it removed a status from an ally, that ally gains 2 vigor.",
+                                    "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+        ]
     }
 ]

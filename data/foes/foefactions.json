@@ -970,7 +970,7 @@
         }],
         "traits": ["tf_faction_hob_greenwalker", "tf_faction_hob_trickery", "tf_faction_hob_forestchildren"],
         "actions": ["af_faction_hob_spiritaway"],
-        "traits_added": ["tf_faction_hob_greenwalker", "tf_faction_hob_trickery", "tf_faction_hob_forestchildren"],
+        "traits_added": ["tf_faction_hob_greenwalker", "tf_faction_hob_trickery"],
         "actions_added": ["af_faction_hob_spiritaway"],
         "stats" : {}
     }
