@@ -107,5 +107,119 @@
         "phases": [],
         "tactics": [],
         "chapter": 1
+    },
+    {
+        "id": "fj_general_elite_archon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Archon",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Archons are armored, tough warriors that can be used to represent particularly hardy fighters, military leaders, or warlords. Alternately, they can be used to represent particularly ruthless or tough monsters."
+            }
+        ],
+        "stats": {
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions": ["af_general_archon_blackheart","af_general_archon_ironblades","af_general_archon_greatslam","af_general_archon_greatshieldwall"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_enrage","tf_jotunn_hirsinn_sturdy"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_elite_rogue",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rogue",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Rogues are quick witted and quick on their feet. They can be used to represent skilled thieves, scouts, or assassins, or particularly agile or bloodthirsty monsters."
+            }
+        ],
+        "stats": {
+            "hp_mod": 2,
+            "turns": 2,
+            "speed": 5,
+            "dash": 5
+        },
+        "actions": ["af_general_rogue_disappearingact","af_general_rogue_wickedslice","af_general_rogue_blindingdust","af_general_rogue_dirtyfighting"],
+        "removed_actions": [],
+        "traits": ["tf_general_rogue_slippery"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_elite_scion",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scion",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A scion is invested with holy power, to protect its allies and punish its foes. It can be used to represent high priests, temple guardians, or monsters touched by some sort of divine power."
+            }
+        ],
+        "stats": {
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions": ["af_general_scion_greatholy","af_general_scion_denial","af_general_scion_gust","af_general_scion_blessedground","af_general_scion_immaculate"],
+        "removed_actions": [],
+        "traits": ["tf_general_scion_grandiaga"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_elite_crucible",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crucible",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A crucible is a foe brimming with aetheric power, and could be used to represent a master wright, a war mage, or a monster that can draw upon magical forces or blasts of energy."
+            }
+        ],
+        "stats": {
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions": ["af_general_crucible_unstablereality","af_general_crucible_annihilate","af_general_crucible_fellshot","af_general_crucible_liminalarrows"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
     }
 ]

@@ -1564,5 +1564,42 @@
                 ]
             }  
           ]
+    },
+    {
+        "id": "tf_general_rogue_slippery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Slippery",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has evasion while bloodied.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_scion_grandiaga",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gran Diaga",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. At the start of the scion’s turn, all allies in the aura gain vigor 3",
+                "glossary": [
+                    {"val": "Aura", "id": "gl_aura"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }  
+          ]
     }
 ]

@@ -430,7 +430,7 @@
                                     "tags": {"desc_type" : "subeffect"},
                                     "content": "On Hit:",
                                     "subcontent":   [{
-                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "tags": [{"desc_type": "desc"}],
                                                         "content": "[D] + fray and the foe is shattered",
                                                         "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shattered", "id": "gl_shattered"}]
                                                     }]
@@ -439,7 +439,7 @@
                                     "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
                                     "content": "Miss:",
                                     "subcontent":   [{
-                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "tags": [{"desc_type": "desc"}],
                                                         "content": "Fray",
                                                         "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                                     }]
@@ -583,7 +583,7 @@
                                     "tags": {"desc_type" : "subeffect"},
                                     "content": "On Hit:",
                                     "subcontent":   [{
-                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "tags": [{"desc_type": "desc"}],
                                                         "content": "5 Damage."
                                                     }]
                                 },
@@ -591,7 +591,7 @@
                                     "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
                                     "content": "Miss:",
                                     "subcontent":   [{
-                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "tags": [{"desc_type": "desc"}],
                                                         "content": "2 Damage."
                                                     }]
                                 }]
@@ -1735,7 +1735,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -1744,7 +1744,7 @@
                 "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
                 "content": "Miss:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -1753,7 +1753,7 @@
                 "tags": [{"tag_name": "desc_type", "val": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Shove 1. If the beast or target is bloodied increase this shove to 3.",
                                     "glossary": [{"val": "Shove", "id": "gl_shove"},{"val": "shove", "id": "gl_shove"},{"val": "bloodied", "id": "gl_bloodied"}]
                                 }]
@@ -1907,7 +1907,7 @@
                 "tags": {"desc_type": "effect"},
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Beast may dash 2 before making the attack.",
                                     "glossary": [{"val": "dash", "id": "gl_dash"}]
                                 }]
@@ -1916,7 +1916,7 @@
                 "tags": {"desc_type": "effect"},
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "If made from stealth, deals bonus damage and dazes its target.",
                                     "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "dazes", "id": "gl_dazed"}]
                                 }]
@@ -1943,7 +1943,7 @@
                     "tags": {"desc_type" : "subeffect"},
                     "content": "On Hit:",
                     "subcontent":   [{
-                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "tags": [{"desc_type": "desc"}],
                                         "content": "[D] + fray",
                                         "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                     }]
@@ -1952,7 +1952,7 @@
                     "tags": [{"desc_type" : "subeffect"}],
                     "content": "Miss:",
                     "subcontent":   [{
-                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                        "tags": [{"desc_type": "desc"}],
                                         "content": "Fray",
                                         "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                     }]
@@ -1962,7 +1962,7 @@
                 "tags": [ {"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Beast may fly 2 before making the attack.",
                                     "glossary": [{"val": "fly", "id": "gl_flying"}]
                                 }]
@@ -1971,7 +1971,7 @@
                 "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "If made from stealth, deals bonus damage and dazes its target.",
                                     "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "dazes", "id": "gl_dazed"}]
                                 }]
@@ -1999,7 +1999,7 @@
                         "tags": {"desc_type" : "subeffect"},
                         "content": "On Hit:",
                         "subcontent":   [{
-                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "tags": [{"desc_type": "desc"}],
                                             "content": "[D] + fray",
                                             "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                         }]
@@ -2008,7 +2008,7 @@
                         "tags": [{"desc_type" : "subeffect"}],
                         "content": "Miss:",
                         "subcontent":   [{
-                                            "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                            "tags": [{"desc_type": "desc"}],
                                             "content": "Fray",
                                             "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                         }]
@@ -2018,7 +2018,7 @@
                 "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Beast may fly 2 before making the attack.",
                                     "glossary": [{"val": "fly", "id": "gl_flying"}]
                                 }]
@@ -2027,7 +2027,7 @@
                 "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "If made from stealth, deals bonus damage and dazes its target.",
                                     "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "dazes", "id": "gl_dazed"}]
                                 }]
@@ -2036,7 +2036,7 @@
                 "tags": [{"desc_type" : "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Ambush can critically hit (+[D]) when this beast is bloodied.",
                                     "glossary": [{"val": "critically hit", "id": "gl_criticalhit"}, {"val": "+[D]", "id": "gl_damagedice"}, {"val": "bloodied", "id": "gl_bloodied"}]
                                 }]
@@ -4487,7 +4487,7 @@
                                     "tags": {"desc_type" : "subeffect"},
                                     "content": "On Hit:",
                                     "subcontent":   [{
-                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "tags": [{"desc_type": "desc"}],
                                                         "content": "[D] + fray",
                                                         "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                                     }]
@@ -4496,7 +4496,7 @@
                                     "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
                                     "content": "Miss:",
                                     "subcontent":   [{
-                                                        "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                                        "tags": [{"desc_type": "desc"}],
                                                         "content": "Fray",
                                                         "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                                     }]
@@ -5517,7 +5517,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -5527,7 +5527,7 @@
                 "content": "Miss or Area Effect:",
                 "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -5536,7 +5536,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Deals 2 damage again to attack target and the Jotunn gains 2 vigor if the foe is affected by a status. If that foe is affected by 3 or more statuses, increase damage and vigor gain to 5.",
                                     "glossary": [{"val": "vigor", "id": "gl_vigor"}]
                                 }]
@@ -5659,7 +5659,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "All adjacent foes must choose:"
                                 }]
             },                               
@@ -5710,7 +5710,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -5719,7 +5719,7 @@
                 "tags": [{"desc_type": "subeffect"}],
                 "content": "Miss:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -5728,7 +5728,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "May dash 1 before the attack.",
                                     "glossary": [{"val": "dash", "id": "gl_dash"}]
                                 }]
@@ -5775,7 +5775,7 @@
             "content": "Area Effect:",
             "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
             "subcontent":   [{
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "tags": [{"desc_type": "desc"}],
                                 "content": "All foes are teleported 1. Bloodied characters are teleported 2 instead.",
                                 "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "Bloodied", "id": "gl_bloodied"}]
                             }]
@@ -5799,7 +5799,7 @@
             "content": "Area Effect:",
             "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
             "subcontent":   [{
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "tags": [{"desc_type": "desc"}],
                                 "content": "All foes are teleported 1. Bloodied characters are teleported 2 and blinded instead.",
                                 "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "Bloodied", "id": "gl_bloodied"},{"val": "blinded", "id": "gl_blinded"}]
                             }]
@@ -5823,7 +5823,7 @@
             "content": "Area Effect:",
             "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
             "subcontent":   [{
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "tags": [{"desc_type": "desc"}],
                                 "content": "All foes are teleported 1. Bloodied characters are teleported 2 and blinded instead.",
                                 "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "Bloodied", "id": "gl_bloodied"},{"val": "blinded", "id": "gl_blinded"}]
                             }]
@@ -5832,7 +5832,7 @@
             "tags": [{"desc_type": "effect"}],
             "content": "Effect:",
             "subcontent":   [{
-                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "tags": [{"desc_type": "desc"}],
                                 "content": "Create a 1 space elemental mote terrain effect in its area. While at least partly inside the area effect, elementals have evasion and stealth+.",
                                 "glossary": [{"val": "evasion", "id": "gl_evasion"},{"val": "stealth", "id": "gl_stealth"},{"val": "+", "id": "gl_ongoing"}]
                             }]
@@ -5854,7 +5854,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "The Elemental creates an elemental storm in range, a 1 space terrain effect."
                                 }]
             }, 
@@ -5862,7 +5862,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Terrain Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Elementals have evasion and permanent stealth inside the area. The area is dangerous terrain for all other characters and other characters are blinded+ while in the area.",
                                     "glossary": [{"val": "evasion", "id": "gl_evasion"},{"val": "stealth", "id": "gl_stealth"},{"val": "permanent", "id": "gl_ongoing"},{"val": "+", "id": "gl_ongoing"},{"val": "blinded", "id": "gl_blinded"},{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
                                 }]
@@ -5871,13 +5871,13 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Terrain Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "At the end of the round, all storms grow to a small blast area, or a large blast area if they are a small blast.",
                                     "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "large blast", "id": "gl_blast"}]
                                 }]
             }, 
             {
-                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "tags": [{"desc_type": "desc"}],
                 "content": "Up to two storms can be active at once."
             }
         ]
@@ -5899,7 +5899,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -5908,7 +5908,7 @@
                 "tags": [{"desc_type": "subeffect"}],
                 "content": "Miss:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -5917,7 +5917,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Attacktarget is sealed.",
                                     "glossary": [{"val": "sealed", "id": "gl_sealed"}]
                                 }]
@@ -6090,7 +6090,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -6100,7 +6100,7 @@
                 "content": "Miss or Area Effect:",
                 "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -6109,7 +6109,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "The Tethian may choose to scour the target with ethereal flames. If so, the tethian may deal 2 piercing damage, once, to the target for each status they are suffering from, then remove all statuses.",
                                     "glossary": [{"val": "piercing", "id": "gl_piercing"}]
                                 }]
@@ -6118,7 +6118,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Round 3+: ",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Deals 4 piercing damage per status instead.",
                                     "glossary": [{"val": "piercing", "id": "gl_piercing"}]
                                 }]
@@ -6368,7 +6368,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -6377,7 +6377,7 @@
                 "tags": [{"desc_type": "subeffect"}],
                 "content": "Miss:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -6386,7 +6386,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "If the foe is in a pit, they take 2 damage again, and the Slab gains 3 vigor.",
                                     "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "vigor", "id": "gl_vigor"}]
                                 }]
@@ -6623,7 +6623,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -6632,7 +6632,7 @@
                 "tags": [{"desc_type": "subeffect"}],
                 "content": "Miss:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -6641,7 +6641,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "May dash 1 before and after attack.",
                                     "glossary": [{"val": "dash", "id": "gl_dash"}]
                                 }]
@@ -6650,7 +6650,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Gains unerring and deals bonus damage to foes in pits or bloodied foes.",
                                     "glossary": [
                                         {"val": "unerring", "id": "gl_unerring"},
@@ -6809,7 +6809,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -6818,7 +6818,7 @@
                 "tags": [{"desc_type": "subeffect"}],
                 "content": "Miss:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -6827,7 +6827,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Sealed or Pacified foes are shoved 2 in a direction of the Boil’s choice.",
                                     "glossary": [{"val": "Sealed", "id": "gl_sealed"},{"val": "Pacified", "id": "gl_pacified"},{"val": "shoved", "id": "gl_shove"}]
                                 }]
@@ -6982,7 +6982,7 @@
                 "tags": {"desc_type" : "subeffect"},
                 "content": "On Hit:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "[D] + fray",
                                     "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                                 }]
@@ -6992,7 +6992,7 @@
                 "content": "Miss or Area Effect:",
                 "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Fray",
                                     "glossary": [{"val": "Fray", "id": "gl_fray"}]
                                 }]
@@ -7001,7 +7001,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Does not affect allies."
                                 }]
             },
@@ -7009,7 +7009,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Effect:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": "Deals bonus damage for each character in the area. If 3 or more characters are in the area, all foes in the area take 2 piercing damage and are shattered.",
                                     "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "piercing", "id": "gl_piercing"},{"val": "shattered", "id": "gl_shattered"}]
                                 }]
@@ -7028,7 +7028,7 @@
         "name": "Skittering Mass",
         "description":  [                               
             {
-                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "tags": [{"desc_type": "desc"}],
                 "content": "A foe in range either becomes vulnerable or takes 1 piercing damage, twice.",
                 "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "piercing", "id": "gl_piercing"}]
             },
@@ -7036,7 +7036,7 @@
                 "tags": [{"desc_type": "effect"}],
                 "content": "Round 3+:",
                 "subcontent":   [{
-                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "tags": [{"desc_type": "desc"}],
                                     "content": " Inflict both effects."
                                 }]
             }
@@ -7054,7 +7054,7 @@
         "name": "Updraft",
         "description":  [                               
             {
-                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "tags": [{"desc_type": "desc"}],
                 "content": "An ally or allied summon in range may fly 3.",
                 "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "fly", "id": "gl_flying"}]
             }
@@ -7073,7 +7073,7 @@
         "name": "Attack Insect",
         "description":  [                               
             {
-                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "tags": [{"desc_type": "desc"}],
                 "content": "The Apiarist summons an attack insect in range 3. It may have a maximum of two insects at once.",
                 "glossary": [{"val": "summons", "id": "gl_summon"}]
             },                             
@@ -7096,7 +7096,7 @@
         "name": "Attack Insect",
         "description":  [                               
             {
-                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "tags": [{"desc_type": "desc"}],
                 "content": "The Apiarist summons an attack insect in range 3. It may have a maximum of two insects at once.",
                 "glossary": [{"val": "summons", "id": "gl_summon"}]
             },                             
@@ -7119,7 +7119,7 @@
         "name": "Attack Insect",
         "description":  [                               
             {
-                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "tags": [{"desc_type": "desc"}],
                 "content": "The Apiarist summons an attack insect in range 3. It may have a maximum of two insects at once.",
                 "glossary": [{"val": "summons", "id": "gl_summon"}]
             },                             
@@ -7128,5 +7128,697 @@
                 "content": "sm_lowlander_artillery_attackinsect_ch3"
             }
                         ]
+    },
+    {
+        "id": "af_general_archon_blackheart",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Blackheart",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Gains +1 boon and deals bonus damage for each of the following:",
+                                    "glossary": [{"val": "+1 boon", "id": "gl_boon"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            },                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_archon_darkedge"
+            }
+        ]
+    },
+    {
+        "id": "af_general_archon_darkedge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "true_strike": true,
+            "blast_size": "medium",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Dark Edge",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray and shove 2.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and shove 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is weakened.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_archon_ironblades",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Iron Blades",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "An adjacent foe is slashed.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+            },{ "tags": [{"desc_type": "gap"}], "content": "" },{
+                "tags": [{"desc_type": "desc"}],
+                "content": "If they are already slashed, they take 2 damage.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_archon_greatslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Great Slam",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Rush 2 spaces, then all adjacent foes are shoved 1 space.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"},{"val": "shoved", "id": "gl_shove"}]
+            },{ "tags": [{"desc_type": "gap"}], "content": "" },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is weakened.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_archon_greatshieldwall",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stance": true,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Great Shieldwall",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While in this stance, becomes immobile, but attacks against adjacent allies gain +1 curse and adjacent allies have resistance.",
+                "glossary": [{"val": "stance", "id": "gl_stance"},{"val": "immobile", "id": "gl_immobile"},{"val": "+1 curse", "id": "gl_curse"},{"val": "resistance", "id": "gl_resistance"}]
+            },{ "tags": [{"desc_type": "gap"}], "content": "" },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Ends at the start of the Archon’s next turn."
+            }
+        ]
+    },
+    {
+        "id": "af_general_rogue_disappearingact",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Disappearing Act",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "When bloodied.",
+                    "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"}, 
+                    "content": "Remove self from the battlefield. At the start of the Rogue’s next turn, return them to the battlefield anywhere in range 3 of a character, with stealth.",
+                    "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_rogue_wickedslice",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Wicked Slice",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals 2 damage again to the attack target for each of the following:",
+                                    "glossary": [{"val": "+1 boon", "id": "gl_boon"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            },                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_blinded"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is blinded.",
+                        "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is dazed.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Dash 1 before and after the attack",
+                                    "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_rogue_blindingdust",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Blinding Dust",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "An adjacent foe is blinded.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+            },{ "tags": [{"desc_type": "gap"}], "content": "" },{
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Rogue then may dash 3 and gains stealth.",
+                "glossary": [{"val": "dash", "id": "gl_dash"},{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_rogue_dirtyfighting",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Dirty Fighting",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Daze two foes in range 3 of the Rogue and each other, then swap their places, removing and placing them.",
+                "glossary": [{"val": "Daze", "id": "gl_dazed"}]
+            },{ "tags": [{"desc_type": "gap"}], "content": "" },{
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_rogue_foulplay"
+            }
+        ]
+    },
+    {
+        "id": "af_general_rogue_foulplay",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Foul Play",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Teleport 4, then deal 4 damage to an adjacent foe.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+            },{ "tags": [{"desc_type": "gap"}], "content": "" },{
+                "tags": [{"desc_type": "desc"}],
+                "content": "Can repeat this effect, but must choose a different foe in range each time unless a foe has already been chosen by this ability, or this effect has triggered three times."
+            }
+        ]
+    },
+    {
+        "id": "af_general_scion_greatholy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "range": 6,
+            "blast_size": "large"
+        },
+        "eventtags": {},
+        "name": "Great Holy",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is pacified.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Allies in the area gain 3 vigor.",
+                                    "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_scion_denial",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Denial",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or become unable to attack until the end of their next turn. On a successful save, they take 2 damage and are sealed instead.",
+                "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_scion_gust",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Gust",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Scion or an ally in range may fly 2.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_scion_blessedground",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "terrain_effect": true,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Blessed Ground",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Scion creates a space of Blessed Ground in range. The Scion and allies have resistance and deal bonus damage while inside.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The spaces disappear if the Scion is defeated, and it may have a maximum of four, choosing which to keep and end."
+            }
+        ]
+    },
+    {
+        "id": "af_general_scion_immaculate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Immaculate",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 5 becomes Intangible until the end of its next turn.",
+                "glossary": [{"val": "Intangible", "id": "gl_intangible"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_crucible_unstablereality",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Unstable Reality",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Self or an ally in range 3 may teleport 2.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_crucible_annihilate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "range": 10,
+            "blast_size": "medium",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Annihilate",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target becomes vulnerable.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a pit under target.",
+                                    "glossary": [{"val": "pit", "id": "gl_pit"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Round 3+:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Increase blast size to large blast, and deals 2 piercing damage again to all foes on the battlefield.",
+                                    "glossary": [{"val": "blast size", "id": "gl_blast"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_crucible_greatslip"
+            }
+        ]
+    },
+    {
+        "id": "af_general_crucible_greatslip",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Great Slip",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Remove self from the battlefield, then return in a free space in range 3."
+            }
+        ]
+    },
+    {
+        "id": "af_general_crucible_fellshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Fell Shot",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark an unoccupied space in range.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_crucible_liminalarrows",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 10
+        },
+        "eventtags": {},
+        "name": "Liminal Arrows",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Choose a foe in line of sight and range."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that character’s turn, it takes piercing fray damage 3 times if not in cover from the Crucible, or just piercing fray damage if it is. Then this effect ends.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "fray", "id": "gl_fray"},{"val": "cover", "id": "gl_cover"}]
+            }
+        ]
     }
 ]

@@ -342,9 +342,14 @@ class DataResponder {
             const dynamicKey = term.item as keyof (typeof data);
             let isvalid = false;
             if (term.strict) {
-                isvalid = data[dynamicKey].toString().toLowerCase() == term.value.toString().toLowerCase()
+                if (data[dynamicKey] != undefined) {
+                    isvalid = data[dynamicKey].toString().toLowerCase() == term.value.toString().toLowerCase()
+
+                }
             } else {
-                isvalid = data[dynamicKey].toString().toLowerCase().includes(term.value.toString().toLowerCase())
+                if (data[dynamicKey] != undefined) {
+                    isvalid = data[dynamicKey].toString().toLowerCase().includes(term.value.toString().toLowerCase())
+                }
             }
             if (term.equals) {
                 return (isvalid)
@@ -354,21 +359,23 @@ class DataResponder {
         } else {
             const dynamicKey = term.item as keyof (typeof data);
             
-            if (data[dynamicKey][term.value]) {
-                if (term.tagvalue === "") {
-                    return (term.equals === true)
-                } else {
-                    if (term.strict) {
-                        if (Array.isArray(data[dynamicKey][term.value])) {
-                            return (term.equals === (data[dynamicKey][term.value].toString().toLowerCase().includes(term.tagvalue.toString().toLowerCase())))
-                        }
-                        return (term.equals === (term.tagvalue.toString().toLowerCase() === data[dynamicKey][term.value].toString().toLowerCase()))
+            if (data[dynamicKey] != undefined) {
+                if (data[dynamicKey][term.value]) {
+                    if (term.tagvalue === "") {
+                        return (term.equals === true)
                     } else {
-                        return (term.equals === (data[dynamicKey][term.value].toString().toLowerCase()).includes(term.tagvalue.toString().toLowerCase()))
+                        if (term.strict) {
+                            if (Array.isArray(data[dynamicKey][term.value])) {
+                                return (term.equals === (data[dynamicKey][term.value].toString().toLowerCase().includes(term.tagvalue.toString().toLowerCase())))
+                            }
+                            return (term.equals === (term.tagvalue.toString().toLowerCase() === data[dynamicKey][term.value].toString().toLowerCase()))
+                        } else {
+                            return (term.equals === (data[dynamicKey][term.value].toString().toLowerCase()).includes(term.tagvalue.toString().toLowerCase()))
+                        }
                     }
+                } else {
+                    return (term.equals === false)
                 }
-            } else {
-                return (term.equals === false)
             }
         }
     }
