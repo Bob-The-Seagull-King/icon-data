@@ -595,6 +595,34 @@
         ]
     },
     {
+        "id": "tf_faction_scavenger_looter_bully",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bully",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character always treats bloodied foes as if they have a valuables token."
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_scavenger_junker_junkarmor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Junk Armor",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The first time the Junker is damaged by an attack or ability in a combat, reduce all damage to 0 and summon 1 valuables token in free space in range 2 from them."
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",

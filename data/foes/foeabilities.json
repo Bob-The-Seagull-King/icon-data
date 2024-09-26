@@ -497,7 +497,7 @@
         },
         "eventtags": {},
         "name": "Bounty Hunt",
-        "class_id": "cl_mendicant",
+        "class_id": "green",
         "description":  [                               
                                          
         {
@@ -1004,7 +1004,7 @@
     },
     {
         "id": "af_relict_heavy_overpower",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1054,7 +1054,7 @@
     },
     {
         "id": "af_relict_heavy_hookspear",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1073,7 +1073,7 @@
     },
     {
         "id": "af_relict_heavy_graveguard",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1092,7 +1092,7 @@
     },
     {
         "id": "af_relict_heavy_deathmarch",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1111,7 +1111,7 @@
     },
     {
         "id": "af_relict_heavy_deathmarch_ch2",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1141,7 +1141,7 @@
     },
     {
         "id": "af_relict_heavy_deathmarch_ch3",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1171,7 +1171,7 @@
     },
     {
         "id": "af_relict_leader_unholy",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 2,
@@ -1223,7 +1223,7 @@
     },
     {
         "id": "af_relict_leader_unholy_ch2",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 2,
@@ -1289,7 +1289,7 @@
     },
     {
         "id": "af_relict_leader_fear",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1308,7 +1308,7 @@
     },
     {
         "id": "af_relict_leader_blackcommunion",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1334,7 +1334,7 @@
     },
     {
         "id": "af_relict_leader_radianceoftheblacksun",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 2,
@@ -1353,7 +1353,7 @@
     },
     {
         "id": "af_relict_skirmisher_bloodfeed",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1403,7 +1403,7 @@
     },
     {
         "id": "af_relict_skirmisher_realityflicker",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1
@@ -1421,7 +1421,7 @@
     },
     {
         "id": "af_relict_skirmisher_lifedrain",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1
@@ -1445,7 +1445,7 @@
     },
     {
         "id": "af_relict_skirmisher_lifedrain_ch2",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1470,7 +1470,7 @@
     },
     {
         "id": "af_relict_skirmisher_lifedrain_ch3",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1506,7 +1506,7 @@
     },
     {
         "id": "af_relict_skirmisher_terrorize",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1531,7 +1531,7 @@
     },
     {
         "id": "af_relict_artillery_chainlightning",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 2,
@@ -1572,7 +1572,7 @@
     },
     {
         "id": "af_relict_artillery_soulspark",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1607,7 +1607,7 @@
     },
     {
         "id": "af_relict_artillery_soulspark_ch2",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1647,7 +1647,7 @@
     },
     {
         "id": "af_relict_artillery_soulspark_ch3",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -1687,7 +1687,7 @@
     },
     {
         "id": "af_relict_artillery_unstablecharge",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -2074,7 +2074,7 @@
     },
     {
         "id": "af_beast_leader_scrabble",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": { 
             "action": 1,
@@ -2101,7 +2101,7 @@
     },
     {
         "id": "af_beast_leader_pheromoneblast",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -2120,7 +2120,7 @@
     },
     {
         "id": "af_beast_leader_spur",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -2139,7 +2139,7 @@
     },
     {
         "id": "af_beast_leader_berserk",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 2
@@ -2157,7 +2157,7 @@
     },
     {
         "id": "af_beast_artillery_biotic",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": { 
             "action": 1,
@@ -2168,6 +2168,7 @@
         },
         "eventtags": {},
         "name": "Biotic",
+        "class_id": "blue",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
@@ -2219,7 +2220,7 @@
     },
     {
         "id": "af_beast_artillery_deluge",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 1,
@@ -2238,7 +2239,7 @@
     },
     {
         "id": "af_beast_artillery_blightlob",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 2,
@@ -2258,7 +2259,7 @@
     },
     {
         "id": "af_beast_artillery_blightlob_ch2",
-        "type": "Trait",
+        "type": "Ability",
         "source": "core",
         "tags": {
             "action": 2,
@@ -2283,6 +2284,692 @@
                         "content": "Blight Lob only costs 1 action."
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_heavy_onetwo",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "One-Two",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Deal fray damage twice.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Once."
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_heavy_fastballspecial",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Fastball Special",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent ally is shoved 3.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "If they collide with a foe, that foe is weakened and shoved 1, and that ally gains 3 vigor.",
+                    "glossary": [{"val": "collide", "id": "gl_collide"}, {"val": "weakened", "id": "gl_weakened"}, {"val": "shoved", "id": "gl_shove"}, {"val": "vigor", "id": "gl_vigor"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_heavy_uppercut",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Uppercut",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1, then an adjacent character takes 2 damage and is shoved 1.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "They are slashed, take 2 damage, and are shoved 1 again.",
+                    "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "shoved", "id": "gl_shove"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_heavy_uppercut_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Uppercut",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1, then an adjacent character takes 2 damage and is shoved 1.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "They are slashed, take 2 damage, and are shoved 1 again.",
+                    "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "shoved", "id": "gl_shove"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "When bloodied, Uppercut becomes a free action.",
+                    "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_heavy_uppercut_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Uppercut",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1, then an adjacent character takes 2 damage and is shoved 1.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "They are slashed, take 2 damage, and are shoved 1 again.",
+                    "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "shoved", "id": "gl_shove"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "When bloodied, Uppercut becomes a free action.",
+                    "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Uppercut deals +1 more damage per valuables token the Scrapper is holding."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_heavy_haymaker",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Haymaker",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 2, then an adjacent foe must save or take [D]+fray and become stunned, or just fray damage on a successful save.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1 action."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_skirmisher_sliceanddice",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 4,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Slice and Dice",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May dash 1 both before and after attack.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_skirmisher_mug",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Mug",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is dazed. If they have a valuables token, that foe takes 3 damage, then the looter gains a valuables token.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_skirmisher_swingsack",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "arc": 3
+        },
+        "eventtags": {},
+        "name": "Swing Sack",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2 damage."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Deal 2 damage again to each character for each valuables token the Looter has."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_skirmisher_smokebomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Smoke Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a small blast area of difficult terrain in range, then the Looter gains stealth. The area can overlap characters. Self and allies in the area gain evasion+, and foes inside are blinded+.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_leader_overseersbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Overseer's Bolt",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is sealed.",
+                        "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All allies in range 2 of the target foe may dash 1.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_leader_swindle",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Swindle",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a character in range, removing and placing both characters. Foes can pass a save to avoid this effect, but are pacified on a successful save.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Free action."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_leader_swindle_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Swindle",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a character in range, removing and placing both characters. Foes can pass a save to avoid this effect, but are pacified on a successful save.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Free action."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Swindle gains range 5."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_leader_swindle_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Swindle",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a character in range, removing and placing both characters. Foes can pass a save to avoid this effect, but are pacified on a successful save.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Free action."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Swindle has no maximum range. Allies that are swapped with Swindle gain stealth.",
+                    "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_leader_incentivize",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Incentivize",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The broker either puts down a valuables token in range, or allows an ally in range 3 to dash 3.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_leader_exactprice",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Exact Price",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is marked. At the end of their turn, that foe must sacrifice 3. They can avoid paying this cost if they drop a valuables token into an adjacent space. They both avoid the cost and end this mark by dropping two or more valuables tokens instead.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_artillery_scrapstorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "pierce": true,
+            "blast_size": "small",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Scrapstorm",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and foe becomes vulnerable.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Round 3+:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage, becomes a large blast, and also creates a valuables token in its area.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "large blast", "id": "gl_blast"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_artillery_scrapturret",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Scrap Turret",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tinker summons a scrap turret in range."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_scavenger_artillery_scrapturret"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_artillery_pileitup",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Pile It Up",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Junker creates a height 1 scrap pile object in a space in range 6. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Increase damage, height and shove by +1.",
+                    "glossary": [{"val": "shove", "id": "gl_shove"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_artillery_pileitup_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Pile It Up",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Junker creates a height 1 scrap pile object in a space in range 6. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Increase damage, height and shove by +1. Adjacent foes must save or be shattered.",
+                    "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "shattered", "id": "gl_shattered"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_artillery_pileitup_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Pile It Up",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Junker creates a height 1 scrap pile object in a space in range 6. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Increase damage, height and shove by +1. Adjacent foes must save or be shattered.",
+                    "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "shattered", "id": "gl_shattered"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Pile it up gains +1 damage, height, and shove per valuables token the hoarder has, to a maximum of 3 height, +3 damage, and +3 shove."
+                }]
             }
         ]
     },

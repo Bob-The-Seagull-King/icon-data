@@ -44,7 +44,32 @@
         "limit": 0
     },
     {
-        "id": "sm_relict_artillery_soulspark_ch3",
+        "id": "sm_scavenger_artillery_scrapturret",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Scrap Turret",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a turn, when a foe in range 3 from the turret takes damage from the Scrapper, the turret deals 1 piercing damage twice to them.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_relict_artillery_soulspark",
         "type": "Summon",
         "source": "core",
         "tags": {
@@ -69,7 +94,7 @@
                 "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "If a foe ends their turn adjacent to a spark, it releases a large blast pulse centered on it, dealing 1 piercing damage twice to all foes.",
+                                    "content": "If a foe ends their turn adjacent to a spark, it releases a small blast pulse centered on it, dealing 1 piercing damage twice to all foes.",
                                     "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}]
                                 }]
             },

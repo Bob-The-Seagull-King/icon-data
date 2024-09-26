@@ -405,6 +405,206 @@
         ]
     },
     {
+        "id": "fc_scavenger_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scrapper",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Toughs that act as enforcers and workers for scavengers. They are typically large and hardened from years of street fighting or hard labor. Usually have the thankless job of hauling the heavy loot out of a dungeon"
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_heavy_onetwo","af_scavenger_heavy_fastballspecial","af_scavenger_heavy_uppercut", "af_scavenger_heavy_haymaker"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_scavenger_heavy_uppercut_ch2"],
+                "removed_actions": ["af_scavenger_heavy_uppercut"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_scavenger_heavy_uppercut_ch3"],
+                "removed_actions": ["af_scavenger_heavy_uppercut"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_scavenger_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Looter",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Canny and ambitious folk with quick fingers and quick wits. Usually specialists who are able to crack dungeon doors, disarm traps, open chests, or scout dangerous locations."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_skirmisher_sliceanddice","af_scavenger_skirmisher_mug","af_scavenger_skirmisher_swingsack","af_scavenger_skirmisher_smokebomb"],
+        "removed_actions": [],
+        "traits": ["tf_faction_scavenger_looter_bully"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_scavenger_skirmisher_smokebomb_ch2"],
+                "removed_actions": ["af_scavenger_skirmisher_smokebomb"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_scavenger_skirmisher_smokebomb_ch3"],
+                "removed_actions": ["af_scavenger_skirmisher_smokebomb"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_scavenger_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Broker",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The managers and pit bosses of the Scavengers, who are responsible for payroll and managing work teams, often chipping in themselves on site. Dirty and thankless work"
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_leader_overseersbolt", "af_scavenger_leader_swindle","af_scavenger_leader_incentivize", "af_scavenger_leader_exactprice"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_scavenger_leader_swindle_ch2"],
+                "removed_actions": ["af_scavenger_leader_swindle"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_scavenger_leader_swindle_ch3"],
+                "removed_actions": ["af_scavenger_leader_swindle"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_scavenger_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Junker",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Obsessives that collect and sort dungeon detritus, working with scavenger bands to enrich their collection. Usually dropouts from the city colleges, dungeon researchers who have become too work-obsessed, or collectors with a little too much love for their hoards."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_artillery_scrapstorm", "af_scavenger_artillery_scrapturret","af_scavenger_artillery_pileitup"],
+        "removed_actions": [],
+        "traits": ["tf_faction_scavenger_junker_junkarmor"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_scavenger_artillery_pileitup_ch2"],
+                "removed_actions": ["af_scavenger_artillery_pileitup"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_scavenger_artillery_pileitup_ch3"],
+                "removed_actions": ["af_scavenger_artillery_pileitup"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
         "id": "fc_hob_cl_foe_heavy",
         "type": "FoeFactionClass",
         "source": "core",
