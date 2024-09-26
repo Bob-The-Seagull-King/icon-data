@@ -221,5 +221,75 @@
         "phases": [],
         "tactics": [],
         "chapter": 1
+    },
+    {
+        "id": "fj_general_legend_demolisher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Demolisher",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Demolisher is pure strength and rage personified. It can be used to represent particularly colossal warriors, giants, or huge armored beasts."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_general_demolisher_pound","af_general_demolisher_hurlboulder","af_general_demolisher_lash","af_general_demolisher_heavyvault"],
+        "removed_actions": [],
+        "traits": ["tf_jotunn_hirsinn_sturdy"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Demolisher begins combat in this phase, and enters Phase II when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_general_demolisher_lumberingcharge"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Demolisher enters this phase when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_general_demolisher_lumberingcharge_phase2","af_general_demolisher_greatlash"],
+                "traits": ["tf_faction_beast_enrage","tf_general_legend_demolisher_frothingmad"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demolisher is a relatively straightforward fight. Characters will want to avoid colliding from its abilities, and finish it off quickly in phase II, where it becomes much stronger.",
+                "glossary": [
+                    {"val": "colliding", "id": "gl_collide"}
+                ]
+            }
+        ],
+        "chapter": 1
     }
 ]

@@ -7820,5 +7820,325 @@
                 "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "fray", "id": "gl_fray"},{"val": "cover", "id": "gl_cover"}]
             }
         ]
+    },
+    {
+        "id": "af_general_demolisher_lumberingcharge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Lumbering Charge",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the round, the Demolisher may Rush 1 up to four times.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Before each space of this rush, it shoves all adjacent foes 1 space and deals 1 damage to them.",
+                "glossary": [{"val": "rush", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_lumberingcharge_phase2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Lumbering Charge",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the round, the Demolisher may Rush 1 up to four times.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Before each space of this rush, it shoves all adjacent foes 1 space and deals 1 damage to them.",
+                "glossary": [{"val": "rush", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Phase II:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Repeat this action once."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_greatlash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Great Lash",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demolisher whips a chain or hook around all foes in range. They are shoved 2 spaces towards the demolisher.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foes are weakened, weakened foes take fray damage.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_pound",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "true_strike": true,
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Pound",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage for each of the following:",
+                                    "glossary": [{"val": "+1 boon", "id": "gl_boon"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            },                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_demolisher_battleroar"
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_battleroar",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Battle Roar",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in range 2 take 2 piercing damage. Bloodied foes are slashed.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "Bloodied", "id": "gl_bloodied"},{"val": "slashed", "id": "gl_slashed"}]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_demolisher_quakestrike"
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_quakestrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "burst": 1,
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Quake Strike",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + Fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a pit under attack target.",
+                                    "glossary": [{"val": "pit", "id": "gl_pit"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_hurlboulder",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Hurl Boulder",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage and is shoved 1, then create a height 1 boulder object next to them.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_lash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Lash",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demolisher whips a chain, hook, or weapon around a foe in range, shoving them 2 spaces towards the Demolisher.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foes are weakened, weakened foes take fray damage.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_demolisher_heavyvault",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Heavy Vault",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demolisher removes itself from the battlefield, then places itself in range 3."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters under it when its placed take 2 damage and are removed and placed in any adjacent space as they are tossed around."
+            }
+        ]
     }
 ]

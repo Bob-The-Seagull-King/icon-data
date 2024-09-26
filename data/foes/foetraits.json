@@ -1601,5 +1601,24 @@
                 ]
             }  
           ]
+    },
+    {
+        "id": "tf_general_legend_demolisher_frothingmad",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Frothing Mad",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks gain +1 boon and can critically hit (+[D])",
+                "glossary": [
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "critically hit", "id": "gl_criticalhit"},
+                    {"val": "[D]", "id": "gl_damagedice"}
+                ]
+            }  
+          ]
     }
 ]
