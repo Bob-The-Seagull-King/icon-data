@@ -21,6 +21,7 @@
         "removed_traits": [],
         "category": "job",
         "phases": [],
+        "tactics": [],
         "chapter": 1
     },
     {
@@ -52,6 +53,7 @@
         "removed_traits": [],
         "category": "unique",
         "phases": [],
+        "tactics": [],
         "chapter": 1
     },
     {
@@ -76,6 +78,7 @@
         "removed_traits": [],
         "category": "unique",
         "phases": [],
+        "tactics": [],
         "chapter": 1
     },
     {
@@ -102,6 +105,7 @@
         "removed_traits": [],
         "category": "unique",
         "phases": [],
+        "tactics": [],
         "chapter": 1
     }
 ]
