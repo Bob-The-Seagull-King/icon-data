@@ -903,6 +903,36 @@
         ]
     },
     {
+        "id": "tf_faction_imperial_scout_lonewolf",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lone Wolf",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When ending their turn with no foes or allies in range 2, gains stealth.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_imperial_sergeant_tacticsaura",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lone Wolf",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 1. Allies ignore engagement and rampart effects while in the aura, and may dash 1 if they start their turn there.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "rampart", "id": "gl_rampart"}, {"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",

@@ -3036,6 +3036,821 @@
         ]
     },
     {
+        "id": "af_imperial_heavy_brutalstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Brutal Strike",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exceed:",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_heavy_blunderbuss",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "true_strike": true,
+            "repeatable": true,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Blunderbuss",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Rush 1, then",
+                    "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                },
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "Area Effect:",
+                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Characters are shoved 1 and take 2 damage. If only one character is caught in the area, they are slashed.",
+                    "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "slashed", "id": "gl_slashed"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_heavy_holdtheline",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Hold the Line!",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Trooper gains 3 vigor, then gains aura 2 until the start of its next turn. The Trooper and any of its allies inside the aura are sturdy and have counter and resistance against any abilities or damage from inside the aura.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "aura", "id": "gl_aura"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "counter", "id": "gl_counter"}, {"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_heavy_holdtheline_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Hold the Line!",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Trooper gains 3 vigor, then gains aura 2 until the start of its next turn. The Trooper and any of its allies inside the aura are sturdy and have counter and resistance against any abilities or damage from inside the aura.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "aura", "id": "gl_aura"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "counter", "id": "gl_counter"}, {"val": "resistance", "id": "gl_resistance"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The aura granted by Hold the Line! also grants +1 curse on attacks for foes in the area.",
+                    "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_heavy_holdtheline_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Hold the Line!",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Trooper gains 3 vigor, then gains aura 2 until the start of its next turn. The Trooper and any of its allies inside the aura are sturdy and have counter and resistance against any abilities or damage from inside the aura.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "aura", "id": "gl_aura"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "counter", "id": "gl_counter"}, {"val": "resistance", "id": "gl_resistance"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The aura granted by Hold the Line! also grants +1 curse on attacks for foes in the area.",
+                    "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The entire aura granted by Hold the Line! extends the Trooper’s Rampart effect.",
+                    "glossary": [{"val": "Rampart", "id": "gl_rampart"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_skirmisher_pistolero",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Pistolero",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exceed:",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gains unerring, and deals bonus damage.",
+                        "glossary": [{"val": "unerring", "id": "gl_unerring"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_skirmisher_flashbomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "small",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Flash Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foes are blinded. Blinded foes are also dazed.",
+                    "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "dazed", "id": "gl_dazed"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_skirmisher_flashbomb_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "small",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Flash Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foes are blinded. Blinded foes are also dazed.",
+                    "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "dazed", "id": "gl_dazed"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Flash Bomb may teleport any allies in its area 1 space after it resolves.",
+                    "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_skirmisher_flashbomb_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "medium",
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Flash Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foes are blinded. Blinded foes are also dazed.",
+                    "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "dazed", "id": "gl_dazed"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Flash Bomb may teleport any allies in its area 1 space after it resolves.",
+                    "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Flash bomb becomes medium blast, range 5.",
+                    "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_skirmisher_prepdecoy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Prep Decoy",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character dashes 2, then gains the following interrupt until the start of their next turn:",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}, {"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_faction_imperial_scout_decoy"
+            }
+        ]
+    },
+    {
+        "id": "af_faction_imperial_scout_decoy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Decoy",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Self or any ally in range 4 is targeted by an attack."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Grant evasion against that attack, then after it resolves the targeted character teleports 3 spaces to a free space, which is its ‘real’ location.",
+                    "glossary": [{"val": "teleports", "id": "gl_teleport"}, {"val": "evasion", "id": "gl_evasion"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_leader_leadersstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Leader's Strike",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is sealed.",
+                        "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An ally in range 3 can dash 2 spaces.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exceed:",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Repeat the previous effect."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_leader_holdtheline",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Hold the Line!",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sergeant marks an ally in range. That ally gains regeneration and becomes sturdy. All these effects are lost if the mark is moved or replaced.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}, {"val": "regeneration", "id": "gl_regeneration"}, {"val": "sturdy", "id": "gl_sturdy"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_leader_armshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Arm Shot",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage and takes a shot to the arm. After they next attack, they become unable to attack for their entire following turn."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_leader_martialmight",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Martial Might",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character gains the following interrupt until the start of their next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_faction_imperial_sergeant_discipline"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_leader_martialmight_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Martial Might",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character gains the following interrupt until the start of their next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "After using Martial Might, the Sergeant and all adjacent allies can dash up to 2, but must move in the same direction.",
+                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_faction_imperial_sergeant_discipline"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_leader_martialmight_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Martial Might",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character gains the following interrupt until the start of their next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "After using Martial Might, the Sergeant and all adjacent allies can dash up to 2, but must move in the same direction.",
+                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_faction_imperial_sergeant_discipline_ch3"
+            }
+        ]
+    },
+    {
+        "id": "af_faction_imperial_sergeant_discipline",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Discipline",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "An ally anywhere makes an attack roll, and the final result is determined."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Sergeant can use this interrupt to cause them to re-roll the attack with +1 boon, taking the second result as the final result instead.",
+                    "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "+1 boon", "id": "gl_boon"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_faction_imperial_sergeant_discipline_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Discipline",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "An ally anywhere makes an attack roll, and the final result is determined."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Sergeant can use this interrupt to cause them to re-roll the attack with +1 boon, taking the second result as the final result instead.",
+                    "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "+1 boon", "id": "gl_boon"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_artillery_heavyarquebus",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 10
+        },
+        "eventtags": {},
+        "name": "Heavy Arquebus",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is vulnerable.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exceed:",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shell explodes, dealing 1 piercing damage twice in a large blast explosion area effect centered on its target.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Special: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Gunner cannot attack during their next turn."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_artillery_extraammo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Extra Ammo",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The gunner puts out a 1 space terrain effect in range. The gunner or any ally standing in the space may consume it to activate the exceed effects of their next attack and grant that attack bonus damage.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_artillery_overwatch",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Overwatch",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Gunner creates a medium blast terrain effect anywhere in range and line of sight that lasts until the start of the Gunner’s next turn. Any foe that ends their turn in the area takes 6 piercing damage as an area effect. If the Gunner is blinded, or a character is in cover from the Gunner, this damage is halved.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "cover", "id": "gl_cover"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_artillery_overwatch_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "end_turn": true,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Overwatch",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Gunner creates a medium blast terrain effect anywhere in range and line of sight that lasts until the start of the Gunner’s next turn. Any foe that ends their turn in the area takes 6 piercing damage as an area effect. If the Gunner is blinded, or a character is in cover from the Gunner, this damage is halved.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "cover", "id": "gl_cover"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Overwatch’s damage gains unerring.",
+                        "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_artillery_overwatch_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "end_turn": true,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Overwatch",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Gunner creates a medium blast terrain effect anywhere in range and line of sight that lasts until the start of the Gunner’s next turn. Any foe that ends their turn in the area takes 6 piercing damage as an area effect. If the Gunner is blinded, or a character is in cover from the Gunner, this damage is halved.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "cover", "id": "gl_cover"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Overwatch’s damage gains unerring.",
+                        "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, Overwatch becomes a free action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_faction_hob_spiritaway",
         "type": "Ability",
         "source": "core",

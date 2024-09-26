@@ -416,7 +416,7 @@
         "description": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
-                "content": "Toughs that act as enforcers and workers for scavengers. They are typically large and hardened from years of street fighting or hard labor. Usually have the thankless job of hauling the heavy loot out of a dungeon"
+                "content": "Toughs that act as enforcers and workers for scavengers. They are typically large and hardened from years of street fighting or hard labor. Usually have the thankless job of hauling the heavy loot out of a dungeon."
             }
         ],
         "stats": {},
@@ -516,7 +516,7 @@
         "description": [
             {
                 "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
-                "content": "The managers and pit bosses of the Scavengers, who are responsible for payroll and managing work teams, often chipping in themselves on site. Dirty and thankless work"
+                "content": "The managers and pit bosses of the Scavengers, who are responsible for payroll and managing work teams, often chipping in themselves on site. Dirty and thankless work."
             }
         ],
         "stats": {},
@@ -598,6 +598,206 @@
                 "name": "3",
                 "actions": ["af_scavenger_artillery_pileitup_ch3"],
                 "removed_actions": ["af_scavenger_artillery_pileitup"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_imperial_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Trooper",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The poor bloody infantry, the rank and file soldiers of the imperial legions, armed with short-muzzled muskets, broad swords, heavy armor, and hob-nailed boots. In their stained and muddy regalia, they tramp through whatever battlefield their lord sends them to. They are tough fighters in melee combat, able to repel the fiercest monsters or fighters that Arden Eld has to offer."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_imperial_heavy_brutalstrike","af_imperial_heavy_blunderbuss","af_imperial_heavy_holdtheline"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_imperial_heavy_holdtheline_ch2"],
+                "removed_actions": ["af_imperial_heavy_holdtheline"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_imperial_heavy_holdtheline_ch3"],
+                "removed_actions": ["af_imperial_heavy_holdtheline"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_imperial_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scout",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Spies or rangers sent ahead to track enemy movements and terrain for encroaching imperial armies to navigate. Often recruited from local populations, they are well-traveled, educated, and well paid compared to the common legion grunts, something that usually earns them the ire of other soldiers."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_imperial_skirmisher_pistolero", "af_imperial_skirmisher_flashbomb","af_imperial_skirmisher_prepdecoy"],
+        "removed_actions": [],
+        "traits": ["tf_faction_imperial_scout_lonewolf"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_imperial_skirmisher_flashbomb_ch2"],
+                "removed_actions": ["af_imperial_skirmisher_flashbomb"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_imperial_skirmisher_flashbomb_ch3"],
+                "removed_actions": ["af_imperial_skirmisher_flashbomb"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_imperial_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sergeant",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Field officers that are all too eager to push their rank on the battlefield. Covered in pomp and frippery and eager to test out techniques and weaponry fresh from the imperial war colleges with very little regard for the results or applications, a cause of constant griping for the rank and file. Always have well-polished boots."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_imperial_leader_leadersstrike", "af_imperial_leader_holdtheline","af_imperial_leader_armshot", "af_imperial_leader_martialmight"],
+        "removed_actions": [],
+        "traits": ["tf_faction_imperial_sergeant_tacticsaura"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_imperial_leader_martialmight_ch2"],
+                "removed_actions": ["af_imperial_leader_martialmight"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_imperial_leader_martialmight_ch3"],
+                "removed_actions": ["af_imperial_leader_martialmight"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_imperial_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gunner",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Armed with jumped-up, heavy blackpowder guns (sometimes with multiple barrels, scopes, or other unnecessary additions), gunners are the hammers to the anvil of the legion frontlines. Flashy, armed with the teeth, and with an attitude to match, they are the envy of the infantry."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_imperial_artillery_heavyarquebus", "af_imperial_artillery_extraammo","af_imperial_artillery_overwatch"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_imperial_artillery_overwatch_ch2"],
+                "removed_actions": ["af_imperial_artillery_overwatch"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_imperial_artillery_overwatch_ch3"],
+                "removed_actions": ["af_imperial_artillery_overwatch"],
                 "traits": [],
                 "removed_traits": [],
                 "stats": {}
