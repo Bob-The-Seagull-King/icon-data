@@ -4219,5 +4219,784 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "af_lowlander_heavy_demolish",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 2,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Demolish",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "If the foe is in a pit, they take 2 damage again, and the Slab gains 3 vigor.",
+                                    "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_heavy_wallofmeat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Wall of Meat",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Slab marks an ally in range.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked and in range, that ally has resistance, but the Slab sacrifices 3 hp at the end of that ally’s turns.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "resistance", "id": "gl_resistance"},{"val": "sacrifices", "id": "gl_sacrifice"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_heavy_mancatcherbolas",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Mancatcher Bolas",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is weakened and shoved 1 towards the Slab.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "shoved", "id": "gl_shove"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Weakened foes are shoved up to 4 spaces towards the Slab, or until adjacent to them.",
+                "glossary": [{"val": "Weakened", "id": "gl_weakened"},{"val": "shoved", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_heavy_kidnap",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Kidnap",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The slab rushes in a straight line 3 spaces, phasing through characters.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "phasing", "id": "gl_phasing"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The first character the slab encounters is shoved along with the slab to the end of the line, then shoved 1.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Slab or their target is bloodied, gains:",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            } 
+                        ]
+    },
+    {
+        "id": "af_lowlander_heavy_kidnap_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Great Kidnap",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The slab rushes in a straight line 3 spaces, phasing through characters.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "phasing", "id": "gl_phasing"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The first character the slab encounters is shoved along with the slab to the end of the line, then shoved 1.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Slab can spend both actions on Kidnap to increase its distance to 6 spaces.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Slab or their target is bloodied, gains:",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_heavy_kidnap_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Great Kidnap",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The slab rushes in a straight line 3 spaces, phasing through characters.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "phasing", "id": "gl_phasing"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The first character the slab encounters is shoved along with the slab to the end of the line, then shoved 1.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes damage equal to the distance the Slab rushed with this ability.",
+                        "glossary": [{"val": "rushed", "id": "gl_rush"}]
+                    }
+                ]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Slab can spend both actions on Kidnap to increase its distance to 6 spaces.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Slab or their target is bloodied, gains:",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_skirmisher_razorshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 4,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Razor Shot",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "May dash 1 before and after attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Gains unerring and deals bonus damage to foes in pits or bloodied foes.",
+                                    "glossary": [
+                                        {"val": "unerring", "id": "gl_unerring"},
+                                        {"val": "bonus damage", "id": "gl_bonusdamage"},
+                                        {"val": "pits", "id": "gl_pit"},
+                                        {"val": "bloodied", "id": "gl_bloodied"}
+                                    ]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_skirmisher_dirtyfighting",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Dirty Fighting",
+        "description":  [                               
+            
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Swap places with a character in range, teleporting both characters.",
+            "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Foes can pass a save to avoid this effect, but are dazed on a successful save. Can’t use if unable to teleport.",
+            "glossary": [{"val": "dazed", "id": "gl_dazed"},{"val": "teleport", "id": "gl_teleport"}]
+        }
+                        ]
+    },
+    {
+        "id": "af_lowlander_skirmisher_revealpit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "terrain_effect": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Reveal Pit",
+        "description":  [                               
+            
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The Grub chooses a foe in range, then creates a pit underneath them.",
+            "glossary": [{"val": "pit", "id": "gl_pit"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the grub’s choice.",
+            "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "dazed", "id": "gl_dazed"},{"val": "shoving", "id": "gl_shove"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Dazed foes cannot avoid the pit and take 3 damage.",
+            "glossary": [{"val": "Dazed", "id": "gl_dazed"},{"val": "pit", "id": "gl_pit"}]
+        }
+                        ]
+    },
+    {
+        "id": "af_lowlander_skirmisher_revealpit_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "terrain_effect": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Reveal Pit",
+        "description":  [                               
+            
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The Grub chooses a foe in range, then creates a pit underneath them and the grub.",
+            "glossary": [{"val": "pit", "id": "gl_pit"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the grub’s choice.",
+            "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "dazed", "id": "gl_dazed"},{"val": "shoving", "id": "gl_shove"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Dazed foes cannot avoid the pit and take 3 damage.",
+            "glossary": [{"val": "Dazed", "id": "gl_dazed"},{"val": "pit", "id": "gl_pit"}]
+        }
+                        ]
+    },
+    {
+        "id": "af_lowlander_skirmisher_revealpit_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "terrain_effect": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Reveal Pit",
+        "description":  [                               
+            
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The Grub chooses a foe in range, then creates a pit underneath them and the grub.",
+            "glossary": [{"val": "pit", "id": "gl_pit"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the grub’s choice.",
+            "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "dazed", "id": "gl_dazed"},{"val": "shoving", "id": "gl_shove"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "Dazed foes cannot avoid the pit and take 3 damage.",
+            "glossary": [{"val": "Dazed", "id": "gl_dazed"},{"val": "pit", "id": "gl_pit"}]
+        },                              
+        { "tags": {"desc_type" : "gap"}, "content": "" },                    
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "After this ability is used, the Grub may teleport to the space of any free pit, then deal 2 damage to all adjacent foes.",
+            "glossary": [{"val": "teleport", "id": "gl_teleport"},{"val": "pit", "id": "gl_pit"}]
+        }
+                        ]
+    },
+    {
+        "id": "af_lowlander_leader_toxoin",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Toxoin",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Sealed or Pacified foes are shoved 2 in a direction of the Boil’s choice.",
+                                    "glossary": [{"val": "Sealed", "id": "gl_sealed"},{"val": "Pacified", "id": "gl_pacified"},{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_leader_deepwellpoison",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Deep Well Poison",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 5 is marked.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, they gain no benefit from being sturdy or unstoppable.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"},{"val": "marked", "id": "gl_mark"},{"val": "unstoppable", "id": "gl_unstoppable"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of their turn, the Boil may shove them 1 space as an effect.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_leader_noxiouscloud",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Noxious Cloud",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Boil creates a choking cloud, a small blast terrain effect, in free space in range with the following effects:",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}]
+            } ,                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes in the cloud are pacified+ and take 2 piercing damage if they start their turn there.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"},{"val": "+", "id": "gl_ongoing"},{"val": "piercing", "id": "gl_piercing"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Allies that start their turn in the cloud gain 2 vigor, or 6 vigor if they are marked with Adrenalize (see below)",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "marked", "id": "gl_mark"}]
+                    }
+                ]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The cloud lasts until this ability is used again."
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_leader_adrenalize",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Adrenalize",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range is marked. When marked, they gain defiance, and while marked they gain increased from noxious cloud",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "defiance", "id": "gl_defiance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_leader_adrenalize_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Adrenalize",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range is marked and may dash 3. When marked, they gain defiance, and while marked they gain increased from noxious cloud",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "dash", "id": "gl_dash"}, {"val": "defiance", "id": "gl_defiance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_leader_adrenalize_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Adrenalize",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range is marked and may dash 3. When marked, they gain +2 speed, they gain defiance, and while marked they gain increased from noxious cloud",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "dash", "id": "gl_dash"}, {"val": "defiance", "id": "gl_defiance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_artillery_summontheswarm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Summon The Swarm",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Does not affect allies."
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Deals bonus damage for each character in the area. If 3 or more characters are in the area, all foes in the area take 2 piercing damage and are shattered.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "piercing", "id": "gl_piercing"},{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_artillery_skitteringmass",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Skittering Mass",
+        "description":  [                               
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "A foe in range either becomes vulnerable or takes 1 piercing damage, twice.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "piercing", "id": "gl_piercing"}]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Round 3+:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": " Inflict both effects."
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_artillery_updraft",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Updraft",
+        "description":  [                               
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "An ally or allied summon in range may fly 3.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "fly", "id": "gl_flying"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_artillery_attackinsect",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [                               
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The Apiarist summons an attack insect in range 3. It may have a maximum of two insects at once.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },                             
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_lowlander_artillery_attackinsect"
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_artillery_attackinsect_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [                               
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The Apiarist summons an attack insect in range 3. It may have a maximum of two insects at once.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },                             
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_lowlander_artillery_attackinsect_ch3"
+            }
+                        ]
+    },
+    {
+        "id": "af_lowlander_artillery_attackinsect_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [                               
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "The Apiarist summons an attack insect in range 3. It may have a maximum of two insects at once.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },                             
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_lowlander_artillery_attackinsect_ch3"
+            }
+                        ]
     }
 ]

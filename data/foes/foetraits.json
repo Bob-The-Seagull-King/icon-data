@@ -1209,5 +1209,24 @@
                 ]
             }  
           ]
+    },
+    {
+        "id": "tf_lowlander_grub_masteroftheunderway",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Master of the Underway",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The grub gains stealth if they start or end their turn in a pit and can use 2 spaces of movement to teleport from any pit space to any other free pit space.",
+                "glossary": [
+                    {"val": "stealth", "id": "gl_stealth"},
+                    {"val": "pit", "id": "gl_pit"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }  
+          ]
     }
 ]

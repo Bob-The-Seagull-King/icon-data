@@ -258,5 +258,98 @@
         "blurb":  [],
         "colour": "green",
         "limit": 0
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect_ch2",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect_ch3",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe, or 2 piercing damage, twice, if the foe is bloodied.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"},{"val": "bloodied", "id": "gl_bloodied"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
     }
 ]
