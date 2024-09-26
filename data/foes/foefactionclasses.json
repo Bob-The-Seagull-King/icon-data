@@ -615,5 +615,73 @@
                 "stats": {}
             }            
         ]
+    },
+    {
+        "id": "fc_general_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heavy",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": []
+    },
+    {
+        "id": "fc_general_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skirmisher",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": []
+    },
+    {
+        "id": "fc_general_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Leader",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": []
+    },
+    {
+        "id": "fc_general_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Artillery",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": []
     }
 ]
