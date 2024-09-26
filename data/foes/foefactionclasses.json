@@ -1095,5 +1095,217 @@
                 "stats": {}
             }            
         ]
+    },
+    {
+        "id": "fc_lowlander_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Slab",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Heavy-bodied Lowlanders that keep the peace, haul supplies, repair tools and gear and generally keep the camp in working shape. Though their work is often exhausting, long, and difficult, they are the backbone of the camp, and vital to its survival."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_heavy_demolish","af_lowlander_heavy_wallofmeat","af_lowlander_heavy_mancatcherbolas"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_lowlander_heavy_kidnap"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_lowlander_heavy_kidnap_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_lowlander_heavy_kidnap_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_lowlander_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Grub",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Clanners that are tasked with the menial but important tasks of the clan, which mostly involve scouting out the paths through the blights, digging pits to defend the camp, or disposing of unsavory waste, offal, and dangerous residues. Since the aboveground is extremely dangerous, they become experts at squirming through the tight, catacomb-like networks of tunnels and collapsed ruins under the blight lands."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_skirmisher_razorshot","af_lowlander_skirmisher_dirtyfighting"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_grub_masteroftheunderway"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_lowlander_skirmisher_revealpit"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_lowlander_skirmisher_revealpit_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_lowlander_skirmisher_revealpit_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_lowlander_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Boil",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Apothecaries and priests that have learned the floral lore of the blight lands, able to gather sustenance, medicine, and insight from its various alien and toxic species of plant life. The aether in blighted lands runs stagnant and tainted, but has its own kind of order, and can be mastered and channeled like any other."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_leader_toxoin","af_lowlander_leader_deepwellpoison","af_lowlander_leader_noxiouscloud"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_lowlander_leader_adrenalize"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_lowlander_leader_adrenalize_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_lowlander_leader_adrenalize_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_lowlander_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Apiarist",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Tamers who keep blight bees, necessary for a camp’s survival. These odd little insects pull in the tainted aether of the blight lands, and produce Black Honey, an extremely potent substance that is a key component of lowlander toxin."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_artillery_summontheswarm","af_lowlander_artillery_skitteringmass","af_lowlander_artillery_updraft"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_lowlander_artillery_attackinsect"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_lowlander_artillery_attackinsect_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_lowlander_artillery_attackinsect_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
     }
 ]
