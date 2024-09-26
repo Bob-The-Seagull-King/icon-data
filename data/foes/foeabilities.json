@@ -1635,13 +1635,19 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "foesummon"},
-                "content": "sm_relict_artillery_soulspark"
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
             },
             {
-                "tags": {"desc_type" : "desc"},
-                "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
-                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_relict_artillery_soulspark"
             }
         ]
     },
@@ -1675,13 +1681,19 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "foesummon"},
-                "content": "sm_relict_artillery_soulspark_ch3"
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
             },
             {
-                "tags": {"desc_type" : "desc"},
-                "content": "Soul Sparks deal 1 piercing damage to all adjacent foes when summoned.",
-                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_relict_artillery_soulspark_ch3"
             }
         ]
     },
@@ -3845,6 +3857,560 @@
                     {
                         "tags": {"desc_type" : "desc"},
                         "content": "At round 3+, Overwatch becomes a free action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_heavy_rampage",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Rampage",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is slashed. The Battle Demon can spend additional actions on this attack. For each action spent, it can repeat the following effect after this ability resolves:",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Rush 1, then deal 2 damage to all adjacent foes and shove them 1.",
+                        "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_heavy_bloodfeed",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bloodfeed",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon deals 2 damage to all adjacent characters. It then gains 2 vigor per demon damaged this way, up to a maximum of three times.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_heavy_auraofslaughter",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "stance": true,
+            "aura": true
+        },
+        "eventtags": {},
+        "name": "Aura of Slaughter",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Battle Demon gains aura 2, with the following effects:",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foes that start or end their turn in this aura take 3 damage and must save or gain hatred of the demon. Bloodied foes fail the save.",
+                "glossary": [{"val": "hatred", "id": "gl_hatred"}, {"val": "Bloodied", "id": "gl_bloodied"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• When the Battle Demon uses Devour or Devour Natal, it deals 2 damage to all other characters other than natals in the aura, then all demons in the aura may rush 1.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_skirmisher_voidtalon",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "boon": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Void Talon",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Void Demon creates a void rift adjacent to its target, which could be placed underneath it."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The demon can spend additional actions on this attack. For every action spent, it may teleport 2, once, before using this ability. If three or more actions are spent on this attack, it gains unerring and deals 2[D]+fray on hit instead.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "unerring", "id": "gl_unerring"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_skirmisher_tearrift",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Tear Rift",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a void rift in range 3, then may teleport into the Rift.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_skirmisher_timelock",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Time Lock",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is marked. While marked, that foe cannot use interrupts, free actions, or abilities that cost 2 actions unless they are adjacent to an ally. If adjacent to an ally, a marked foe can save against this mark at the end of their turn, ending it on a success.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "interrupts", "id": "gl_interrupt"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_skirmisher_decayingorbit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Decaying Orbit",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport 1, then teleport 1. Each time, may teleport an adjacent character 1 space.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_leader_enfeeble",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Enfeeble",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is pacified. Pacified characters take fray damage again.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The demon can spend additional actions on this attack. For each action spent, it deals bonus damage and increase the blast size from small, to medium, to large. If 3+ actions are spent, demons are immune to its damage and gain 3 vigor instead.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "blast size", "id": "gl_blast"}, {"val": "immune", "id": "gl_immune"}, {"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_leader_paranoia",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Paranoia",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is marked. While marked, they cannot gain or benefit from vigor, and cannot target allies with abilities. This mark ends if they end their turn 2 or more spaces away from any allies, or they may save at the end of their turn, ending it on a success.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_leader_demonburst",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Demon Burst",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Terror Demon destroys a Natal in range, then grants 3 vigor to an ally in range. If that ally is bloodied, this becomes a free action.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_leader_demonflay",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Demon Flay",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Target foe and all its adjacent allies take 2 damage, then summon a natal in range 2 of the foe."
+            }
+        ]
+    },
+    {
+        "id": "af_demon_artillery_realityrazor",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Reality Razor",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray. and foe is vulnerable.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "fray.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The demon can spend additional actions on this ability. If it spends 2 actions, the area increases to large blast and it gains pierce. If it spends 3+ actions, it deals 1 damage, three times, to all characters inside after the ability resolves.",
+                        "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "pierce", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_artillery_chaoscocoon",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Chaos Cocoon",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chaos Demon summons a cocoon destructible object in range 3.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, can spend any number of additional actions to summon 1 more cocoon per action spent."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_demon_artillery_cocoon"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_artillery_chaoscocoon_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Chaos Cocoon",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chaos Demon summons a cocoon destructible object in range 3.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, can spend any number of additional actions to summon 1 more cocoon per action spent."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Chaos Cocoons deal 2 piercing damage to all adjacent foes when summoned.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_demon_artillery_cocoon"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_artillery_chaoscocoon_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Chaos Cocoon",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chaos Demon summons a cocoon destructible object in range 3.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, can spend any number of additional actions to summon 1 more cocoon per action spent."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Chaos Cocoons deal 2 piercing damage to all adjacent foes when summoned.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_demon_artillery_cocoon_ch3"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_artillery_fatalthaum",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Fatal Thaum",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a character in range.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the end of that character’s turn, shoot a bolt of energy at that character, creating a medium blast area effect centered on them. Deals piercing fray damage to that character, removes all created terrain in the area, and shoves all other characters 1 away from that character. Then, end the mark.",
+                        "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}, {"val": "shoves", "id": "gl_shove"}]
                     }
                 ]
             }

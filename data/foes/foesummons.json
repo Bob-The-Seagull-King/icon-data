@@ -44,6 +44,50 @@
         "limit": 0
     },
     {
+        "id": "sm_relict_artillery_soulspark_ch3",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Soul Spark",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes adjacent to Soul Sparks are vulnerable+, and all damage deal to them becomes piercing.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "+", "id": "gl_ongoing"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If a foe ends their turn adjacent to a spark, it releases a large blast pulse centered on it, dealing 1 piercing damage twice to all foes.",
+                                    "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The wraith can target the spark with Chain Lightning. If they do, it gains rebound and the spark triggers its area effect.",
+                                    "glossary": [{"val": "rebound", "id": "gl_rebound"},{"val": "area effect", "id": "gl_areaeffect"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
         "id": "sm_scavenger_artillery_scrapturret",
         "type": "Summon",
         "source": "core",
@@ -69,42 +113,66 @@
         "limit": 0
     },
     {
-        "id": "sm_relict_artillery_soulspark",
+        "id": "sm_demon_artillery_cocoon",
         "type": "Summon",
         "source": "core",
         "tags": {
-            "size": 1,
-            "Intangible": true
+            "height": 1,
+            "object": true,
+            "hp": 1
         },
         "eventtags": {},
-        "name": "Soul Spark",
+        "name": "Cocoon",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "Summon Effect:",
+                "content": "Object Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "Foes adjacent to Soul Sparks are vulnerable+, and all damage deal to them becomes piercing.",
-                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "+", "id": "gl_ongoing"}, {"val": "piercing", "id": "gl_piercing"}]
+                                    "content": "The Cocoon also is destroyed if a character collides with it. When the Cocoon is destroyed or removed, summon two",
+                                    "glossary": [{"val": "collides", "id": "gl_collide"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textfoe"},
+                                    "content": "fj_demon_mob_natal"
+                                },
+                                {
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "in or adjacent to its space."
                                 }]
-            },
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_demon_artillery_cocoon_ch3",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true,
+            "hp": 1
+        },
+        "eventtags": {},
+        "name": "Cocoon",
+        "description":  [
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "Area Effect:",
-                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "content": "Object Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "If a foe ends their turn adjacent to a spark, it releases a small blast pulse centered on it, dealing 1 piercing damage twice to all foes.",
-                                    "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}]
-                                }]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Effect:",
-                "subcontent":   [{
+                                    "content": "The Cocoon also is destroyed if a character collides with it. When the Cocoon is destroyed or removed, summon three",
+                                    "glossary": [{"val": "collides", "id": "gl_collide"}]
+                                },
+                                {
+                                    "tags": {"desc_type" : "textfoe"},
+                                    "content": "fj_demon_mob_natal"
+                                },
+                                {
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "The wraith can target the spark with Chain Lightning. If they do, it gains rebound and the spark triggers its area effect.",
-                                    "glossary": [{"val": "rebound", "id": "gl_rebound"},{"val": "area effect", "id": "gl_areaeffect"}]
+                                    "content": "in or adjacent to its space."
                                 }]
             }
         ],

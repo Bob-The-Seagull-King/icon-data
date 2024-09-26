@@ -961,6 +961,284 @@
         ]
     },
     {
+        "id": "tf_faction_demon_battledemon_engorge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Engorge",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Becomes unstoppable if it devours another non-natal demon.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_battledemon_engorge_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Engorge",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Becomes unstoppable if it devours another non-natal demon.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Engorge also grants bonus damage on all abilities.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_battledemon_engorge_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Engorge",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Becomes unstoppable if it devours another non-natal demon.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Engorge also grants bonus damage on all abilities.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Engorge also increases the demons’ size to 2. Other characters in the demon’s area when its size are increased are removed and placed adjacent to the demon."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_voiddemon_voidprowler",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Void Prowler",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Void Demons can create void rifts, which are 1 space pit terrain effects with the following features:",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foes inside void rifts are blinded+.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Demons inside void rifts have evasion and ignore movement penalties when entering or exiting a rift space",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Void demons can treat any two void rifts as adjacent spaces when moving, teleporting when they move between them. However, they can only teleport this way once a turn.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_voiddemon_voidprowler_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Void Prowler",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Void Demons can create void rifts, which are 1 space pit terrain effects with the following features:",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foes inside void rifts are blinded+.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Demons inside void rifts have evasion and ignore movement penalties when entering or exiting a rift space",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Void demons can treat any two void rifts as adjacent spaces when moving, teleporting when they move between them. However, they can only teleport this way once a turn.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Void Rifts are also dangerous terrain spaces for foes.",
+                        "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_voiddemon_voidprowler_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Void Prowler",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Void Demons can create void rifts, which are 1 space pit terrain effects with the following features:",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foes inside void rifts are blinded+.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Demons inside void rifts have evasion and ignore movement penalties when entering or exiting a rift space",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Void demons can treat any two void rifts as adjacent spaces when moving, teleporting when they move between them. However, they can only teleport this way once a turn.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Void Rifts are also dangerous terrain spaces for foes.",
+                        "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Void Demons gain stealth+ while adjacent to void rifts.",
+                        "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "+", "id": "gl_ongoing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_terrordemon_auraofterror",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Terror",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demon has aura 2. Foes in the aura are pacified+ unless adjacent to an ally.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_terrordemon_auraofterror_ch2",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Terror",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demon has aura 2. Foes in the aura are pacified+ unless adjacent to an ally.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Bloodied foes also have +1 curse on attacks and saves inside Aura of Terror.",
+                        "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_faction_demon_terrordemon_auraofterror_ch3",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Terror",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demon has aura 2. Foes in the aura are pacified+ unless adjacent to an ally.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Bloodied foes also have +1 curse on attacks and saves inside Aura of Terror.",
+                        "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "+1 curse", "id": "gl_curse"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Chapter 3:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Bloodied foes must save before entering any space of Aura of Terror during their turn. On a failed save, they cannot move into the aura by any means until the end of their turn.",
+                        "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_amorphous",
         "type": "Trait",
         "source": "core",

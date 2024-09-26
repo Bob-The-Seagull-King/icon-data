@@ -805,6 +805,206 @@
         ]
     },
     {
+        "id": "fc_demon_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Battle Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Apex predators of the lightless spaces beneath the earth, battle demons, or Type I demons, exist seemingly only to split living creatures into parts convenient enough for eating. They don’t sleep, rest, breathe, or do anything except stalk the winding corridors of the deep Arkenruins and smash nearly everything they come across into a bloody pulp, including each other, and then eat the pulp. According to top guild scholars, Demons don’t need sustenance at all to exist, suggesting their hunger is more existential - or worse, for pleasure."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_heavy_rampage","af_demon_heavy_bloodfeed","af_demon_heavy_auraofslaughter"],
+        "removed_actions": [],
+        "traits": ["tf_faction_demon_battledemon_engorge"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_demon_battledemon_engorge_ch2"],
+                "removed_traits": ["tf_faction_demon_battledemon_engorge"],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_demon_battledemon_engorge_ch3"],
+                "removed_traits": ["tf_faction_demon_battledemon_engorge"],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_demon_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Void Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Type III demons. Whippet-thin, agile, and eyeless demons with extremely sharp talons. They use the talons to peel apart the skin of reality and slip through the wound, an effect which tears away at living and nonliving matter both. Less aggressive and more calculating than other demons, they will often stalk travelers for days, taking in their scent."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_skirmisher_voidtalon","af_demon_skirmisher_tearrift","af_demon_skirmisher_timelock","af_demon_skirmisher_decayingorbit"],
+        "removed_actions": [],
+        "traits": ["tf_faction_demon_voiddemon_voidprowler"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_demon_voiddemon_voidprowler_ch2"],
+                "removed_traits": ["tf_faction_demon_voiddemon_voidprowler"],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_demon_voiddemon_voidprowler_ch3"],
+                "removed_traits": ["tf_faction_demon_voiddemon_voidprowler"],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_demon_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Terror Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Type VI demons, which seem to feed off strong negative emotions in the way other demons feed off flesh. Prominent demonologists have theorized demons are themselves shaped by the fears and concepts of kin, as their true forms exist on a plane of reality utterly incomprehensible to normal senses. It would certainly explain the way terror demons seem to be able to warp themselves into imitations of primal fears."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_leader_enfeeble", "af_demon_leader_paranoia","af_demon_leader_demonburst", "af_demon_leader_demonflay"],
+        "removed_actions": [],
+        "traits": ["tf_faction_demon_terrordemon_auraofterror"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_demon_terrordemon_auraofterror_ch2"],
+                "removed_traits": ["tf_faction_demon_terrordemon_auraofterror"],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": [],
+                "removed_actions": [],
+                "traits": ["tf_faction_demon_terrordemon_auraofterror_ch3"],
+                "removed_traits": ["tf_faction_demon_terrordemon_auraofterror"],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_demon_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chaos Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The Arkenruins are a wound in the earth so deep that at the bottom reality begins to unravel. Even though the air there is thin and stagnant, a terrifying wind lashes through the stygian halls. Though there is no light, thin ripples of color boil across the air, like rainbows on oil. Reality starts to come apart, as the laws of the world begin to unravel and time and space begin to have no meaning. In this environment, impossible creatures slip through the cracks and cavort on the dead breezes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_artillery_realityrazor", "af_demon_artillery_chaoscocoon","af_demon_artillery_fatalthaum"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                "chapter": 1,
+                "name": "1",
+                "actions": [],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_demon_artillery_chaoscocoon_ch2"],
+                "removed_actions": ["af_demon_artillery_chaoscocoon"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_demon_artillery_chaoscocoon_ch3"],
+                "removed_actions": ["af_demon_artillery_chaoscocoon"],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
         "id": "fc_hob_cl_foe_heavy",
         "type": "FoeFactionClass",
         "source": "core",
