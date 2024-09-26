@@ -472,7 +472,7 @@
         "stats": {},
         "actions": ["af_scavenger_skirmisher_sliceanddice","af_scavenger_skirmisher_mug","af_scavenger_skirmisher_swingsack","af_scavenger_skirmisher_smokebomb"],
         "removed_actions": [],
-        "traits": ["tf_faction_scavenger_looter_bully"],
+        "traits": [],
         "removed_traits": [],
         "chapters": [
             {

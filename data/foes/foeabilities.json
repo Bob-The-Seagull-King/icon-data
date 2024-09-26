@@ -2608,6 +2608,68 @@
         ]
     },
     {
+        "id": "af_scavenger_skirmisher_smokebomb_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Smoke Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a small blast area of difficult terrain in range, then the Looter gains stealth. The area can overlap characters. Self and allies in the area gain evasion+, and foes inside are blinded+.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase the blast size to medium.",
+                        "glossary": [{"val": "medium", "id": "gl_blast"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_skirmisher_smokebomb_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Smoke Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a small blast area of difficult terrain in range, then the Looter gains stealth. When created, all foes in the area take 3 damage and are dazed. The area can overlap characters. Self and allies in the area gain evasion+, and foes inside are blinded+.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "dazed", "id": "gl_dazed"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase the blast size to medium.",
+                        "glossary": [{"val": "medium", "id": "gl_blast"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_scavenger_leader_overseersbolt",
         "type": "Ability",
         "source": "core",
