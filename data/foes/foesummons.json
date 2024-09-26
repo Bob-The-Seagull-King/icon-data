@@ -180,5 +180,83 @@
         "blurb":  [],
         "colour": "icon",
         "limit": 0
+    },
+    {
+        "id": "sm_jotunn_leader_cauldron_ch1",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "height": 1
+        },
+        "eventtags": {},
+        "name": "Cauldron",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Cauldron has aura 1. The troll and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "boon", "id": "gl_boon"}, {"val": "curse", "id": "gl_curse"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_jotunn_leader_cauldron_ch2",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "height": 1
+        },
+        "eventtags": {},
+        "name": "Cauldron",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Cauldron has aura 2. The troll and any of its allies in the aura gain +1 boon on saves, and foes gain +1 curse on saves in the aura.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "boon", "id": "gl_boon"}, {"val": "curse", "id": "gl_curse"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_jotunn_leader_cauldron_ch3",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "height": 1
+        },
+        "eventtags": {},
+        "name": "Cauldron",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Cauldron has aura 2. The troll and any of its allies in the aura gain +1 boon on saves, and foes do not save against conditions at the end of their turn while in the aura.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "boon", "id": "gl_boon"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
     }
 ]

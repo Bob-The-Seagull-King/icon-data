@@ -2670,5 +2670,114 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_jotunn_leader_strangebrew",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Effect"],
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Result"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Effect"
+            }
+        ],
+        "items": [
+            {
+                "id": "ti__jotunn_leader_strangebrew_1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The brew explodes, stunning the ally.",
+                    "glossary": [{"val": "stunning", "id": "gl_stunned"}]
+                }]
+            },
+            {
+                "id": "ti_jotunn_leader_strangebrew_2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The ally increases in size by +1 for the rest of combat, up to a max of size 3. Characters in the area when the ally increases in size are removed and placed adjacent to it."
+                }]
+            },
+            {
+                "id": "ti_jotunn_leader_strangebrew_3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The ally gains Defiance.",
+                    "glossary": [{"val": "Defiance", "id": "gl_defiance"}]
+                }]
+            },
+            {
+                "id": "ti_jotunn_leader_strangebrew_4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The ally is teleported 2.",
+                    "glossary": [{"val": "teleported", "id": "gl_teleport"}]
+                }]
+            },
+            {
+                "id": "ti_jotunn_leader_strangebrew_5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The ally gains 6 more vigor.",
+                    "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                }]
+            },
+            {
+                "id": "ti_jotunn_leader_strangebrew_6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The ally immediately clears all statuses and marks.",
+                    "glossary": [{"val": "marks", "id": "gl_mark"}]
+                }]
+            }
+        ]
     }
 ]

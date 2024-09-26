@@ -683,5 +683,217 @@
         "traits": [],
         "removed_traits": [],
         "chapters": []
+    },
+    {
+        "id": "fc_jotunn_cl_foe_heavy",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hirsinn",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Lesser storm jotunn, descendants of the eternal halls. Strong enough to rip an ox in half with their bare hands, as big around as a carriage and twice as heavy. These jotunn are hairy, tusked, and often horned, like their lesser kin, the troggs. Their shaggy pelts and thick hides turn away spear strikes and sword blows from would-be hunters. In battle, they steam with heat and are capable of inciting the Berserkgang, a tremendous blood rage, even in their opponents. Largely spurning civilization, these jotunn are tremendous eaters, extremely crafty, and spend their days hunting, rune-carving, and smithing at their cavernous forges carved from bare rock. Their bestial disposition belies a canny intellect and they are fond of riddles, stories, and drinking games."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_jotunn_heavy_mightysmite","af_jotunn_heavy_stormcunning","af_jotunn_heavy_joyouscombat"],
+        "removed_actions": [],
+        "traits": ["tf_jotunn_hirsinn_sturdy"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_jotunn_heavy_berserkgang"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_jotunn_heavy_berserkgang_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_jotunn_heavy_berserkgang_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_jotunn_cl_foe_skirmisher",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Elemental",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Colossal Jotunn forged from the elements, all of them children of the Formless Titan, the chaos mother. These Jotunn are closely connected to the primal elements that compose their bodies, and care little for the laws, logic, and ways of kin. They roam the wilderness, soaring free and utterly unconcerned, only stopping their endless travels out of curiosity or confrontation. The very oldest of the elementals have begun to lose their intelligence and have started to revert to the inert elements from which they came, a calm and slow unison with the natural world which will eventually overtake all of their kind."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_jotunn_skirmisher_elementalsmite","af_jotunn_skirmisher_soar","af_jotunn_skirmisher_ragingstorm"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_jotunn_elemental_amorphous"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_jotunn_skirmisher_swirlingelements"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_jotunn_skirmisher_swirlingelements_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_jotunn_skirmisher_swirlingelements_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_jotunn_cl_foe_leader",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Troll",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "The witch-sages of the Jotunn, wise in herbalism, husbandry, and medicine, and skilled in runes. Trolls keep large gardens and herds of unusually large pigs or goats. They build their squat dwellings in caves or under the ruined bridges of the old empire, as they are sensitive to the sun, where they offer their services to local communities as healers, midwives, or cooks. The prices of a Troll’s services tend to be strange and sometimes exorbitant (a hundred fresh eggs, ten beard hairs from a virgin man, a child’s milk teeth), so it is best to approach any deal with them with a health amount of caution. Nevertheless, their skills are legendary and there is little beyond their knowledge."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_jotunn_leader_ladle","af_jotunn_leader_balecurse","af_jotunn_leader_strangebrew","af_jotunn_leader_cauldronsmash"],
+        "removed_actions": [],
+        "traits": ["tf_special_regeneration"],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_jotunn_leader_cauldron_ch1"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_jotunn_leader_cauldron_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_jotunn_leader_cauldron_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
+    },
+    {
+        "id": "fc_jotunn_cl_foe_artillery",
+        "type": "FoeFactionClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tethian",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                "content": "Strange, stoney-skinned jotunn that are found around titan ruins. They make their homes in colossal broken towers, fallen bridges, or longshattered city gates. All Tethians are keepers and guardians of dangerous or forbidden knowledge. Sometimes their ward is a physical location such as a gate or door, or a sealed vault. Other times, the Tethian themselves holds the knowledge or power in their minds or bodies, acting as a living prison. Though they are not skilled in wrightcraft in the traditional sense, they can easily manipulate aether through their bodies and are masters of rune-cunning. Most, if not all Tethians, have either a third eye on their body or skull, or only a single eye in the middle of their head. This unique eye can only see Aether, and is capable of focusing it into intensely powerful beams the same way a prism focuses light."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_jotunn_artillery_thirdeye","af_jotunn_artillery_polaris","af_jotunn_artillery_chainsoffate"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "chapters": [
+            {
+                
+                "chapter": 1,
+                "name": "1",
+                "actions": ["af_jotunn_artillery_dampentime"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 2,
+                "name": "2",
+                "actions": ["af_jotunn_artillery_dampentime_ch2"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            },
+            {
+                
+                "chapter": 3,
+                "name": "3",
+                "actions": ["af_jotunn_artillery_dampentime_ch3"],
+                "removed_actions": [],
+                "traits": [],
+                "removed_traits": [],
+                "stats": {}
+            }            
+        ]
     }
 ]

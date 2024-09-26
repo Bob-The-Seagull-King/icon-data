@@ -123,6 +123,21 @@
         ]
     },
     {
+        "id": "tf_special_regeneration",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Regeneration",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has regeneration.",
+                "glossary": [{"val": "regeneration", "id": "gl_regeneration"}]
+            }
+        ]
+    },
+    {
         "id": "tf_special_phasing",
         "type": "Trait",
         "source": "core",
@@ -1160,5 +1175,39 @@
                 "glossary": [{"val": "Aura", "id": "gl_aura"},{"val": "aura", "id": "gl_aura"},{"val": "charged", "id": "gl_charge"}]
             }
         ]
+    },
+    {
+        "id": "tf_jotunn_hirsinn_sturdy",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sturdy",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain sturdy.",
+                "glossary": [
+                    {"val": "sturdy", "id": "gl_sturdy"}
+                ]
+            }  
+          ]
+    },
+    {
+        "id": "tf_jotunn_elemental_amorphous",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can share space with other characters. Any characters that start their turn inside its space take fray damage.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }  
+          ]
     }
 ]

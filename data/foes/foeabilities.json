@@ -3367,5 +3367,857 @@
                                 }]
             }
         ]
+    },
+    {
+        "id": "af_jotunn_heavy_mightysmite",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "True Strike": true,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Mighty Smite",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Deals 2 damage again to attack target and the Jotunn gains 2 vigor if the foe is affected by a status. If that foe is affected by 3 or more statuses, increase damage and vigor gain to 5.",
+                                    "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_heavy_berserkgang",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Berserkgang",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or gain hatred of the Jotunn. On a successful save, they are weakened.",
+                "glossary": [{"val": "hatred", "id": "gl_hatred"},{"val": "weakened", "id": "gl_weakened"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the target or Jotunn is bloodied, they gain +1 curse on this save.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_heavy_berserkgang_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Berserkgang",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or gain hatred of the Jotunn. On a successful save, they are weakened.",
+                "glossary": [{"val": "hatred", "id": "gl_hatred"},{"val": "weakened", "id": "gl_weakened"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the target or Jotunn is bloodied, they gain +1 curse on this save, and this ability can be used 2/round.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_heavy_berserkgang_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Berserkgang",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or gain hatred of the Jotunn. On a successful save, they are weakened.",
+                "glossary": [{"val": "hatred", "id": "gl_hatred"},{"val": "weakened", "id": "gl_weakened"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the target or Jotunn is bloodied, they gain +1 curse on this save, this ability can be used 2/round, and the foe must save again or become stunned.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"},{"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_heavy_stormcunning",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Storm Cunning",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with an ally in range, removing and placing both characters."
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied characters gain 3 vigor.",
+                "glossary": [{"val": "Bloodied", "id": "gl_bloodied"},{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_heavy_joyouscombat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Joyous Combat",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "All adjacent foes must choose:"
+                                }]
+            },                               
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Be shoved 2.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Take 4 damage from the Jotunn."
+                    }
+                ]
+            } ,                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "af_jotunn_skirmisher_elementalsmite",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 2,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Elemental Smite",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "May dash 1 before the attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_skirmisher_soar",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Soar",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fly up to 4 spaces in a straight line.",
+                "glossary": [{"val": "Fly", "id": "gl_flying"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "One adjacent foe when the elemental either starts or ends this flight is dazed.",
+                "glossary": [{"val": "flight", "id": "gl_flying"},{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_skirmisher_swirlingelements",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 2
+        },
+        "eventtags": {},
+        "name": "Swirling Elements",
+        "description":  [   
+            
+        {
+            "tags": [{"desc_type": "effect"}],
+            "content": "Area Effect:",
+            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+            "subcontent":   [{
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "All foes are teleported 1. Bloodied characters are teleported 2 instead.",
+                                "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "Bloodied", "id": "gl_bloodied"}]
+                            }]
+        }
+        ]
+    },
+    {
+        "id": "af_jotunn_skirmisher_swirlingelements_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 2
+        },
+        "eventtags": {},
+        "name": "Swirling Elements",
+        "description":  [   
+            
+        {
+            "tags": [{"desc_type": "effect"}],
+            "content": "Area Effect:",
+            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+            "subcontent":   [{
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "All foes are teleported 1. Bloodied characters are teleported 2 and blinded instead.",
+                                "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "Bloodied", "id": "gl_bloodied"},{"val": "blinded", "id": "gl_blinded"}]
+                            }]
+        }
+        ]
+    },
+    {
+        "id": "af_jotunn_skirmisher_swirlingelements_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 2
+        },
+        "eventtags": {},
+        "name": "Swirling Elements",
+        "description":  [   
+            
+        {
+            "tags": [{"desc_type": "effect"}],
+            "content": "Area Effect:",
+            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+            "subcontent":   [{
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "All foes are teleported 1. Bloodied characters are teleported 2 and blinded instead.",
+                                "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "Bloodied", "id": "gl_bloodied"},{"val": "blinded", "id": "gl_blinded"}]
+                            }]
+        }, 
+        {
+            "tags": [{"desc_type": "effect"}],
+            "content": "Effect:",
+            "subcontent":   [{
+                                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                "content": "Create a 1 space elemental mote terrain effect in its area. While at least partly inside the area effect, elementals have evasion and stealth+.",
+                                "glossary": [{"val": "evasion", "id": "gl_evasion"},{"val": "stealth", "id": "gl_stealth"},{"val": "+", "id": "gl_ongoing"}]
+                            }]
+        }
+        ]
+    },
+    {
+        "id": "af_jotunn_skirmisher_ragingstorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Raging Storm",
+        "description":  [   
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "The Elemental creates an elemental storm in range, a 1 space terrain effect."
+                                }]
+            }, 
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Elementals have evasion and permanent stealth inside the area. The area is dangerous terrain for all other characters and other characters are blinded+ while in the area.",
+                                    "glossary": [{"val": "evasion", "id": "gl_evasion"},{"val": "stealth", "id": "gl_stealth"},{"val": "permanent", "id": "gl_ongoing"},{"val": "+", "id": "gl_ongoing"},{"val": "blinded", "id": "gl_blinded"},{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                                }]
+            }, 
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "At the end of the round, all storms grow to a small blast area, or a large blast area if they are a small blast.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "large blast", "id": "gl_blast"}]
+                                }]
+            }, 
+            {
+                "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                "content": "Up to two storms can be active at once."
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_leader_ladle",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Ladle",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Attacktarget is sealed.",
+                                    "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_leader_balecurse",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "mark": true,
+            "multimark": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Bale Curse",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is marked. While marked, they turn any boons they gain on rolls into curses instead.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "boons", "id": "gl_boon"},{"val": "curses", "id": "gl_curse"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can remove this mark by ending their turn adjacent to the Troll’s Cauldron, but they then become pacified.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"},{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_leader_cauldron_ch1",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Cauldron",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Troll summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it’s summoned are shoved 1.",
+                "glossary": [{"val": "summons", "id": "gl_summon"},{"val": "shoved", "id": "gl_shove"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_jotunn_leader_cauldron_ch1"
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_leader_cauldron_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Cauldron",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Troll summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it’s summoned are shoved 1.",
+                "glossary": [{"val": "summons", "id": "gl_summon"},{"val": "shoved", "id": "gl_shove"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_jotunn_leader_cauldron_ch2"
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_leader_cauldron_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Cauldron",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Troll summons a cauldron in range, a height 1 object. Characters adjacent to the cauldron when it’s summoned are shoved 1.",
+                "glossary": [{"val": "summons", "id": "gl_summon"},{"val": "shoved", "id": "gl_shove"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_jotunn_leader_cauldron_ch3"
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Troll gains additional abilities when in range 2 of its cauldron."
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_leader_strangebrew",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "cauldron": true
+        },
+        "eventtags": {},
+        "name": "Strange Brew",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Troll throws a potion at an ally in range. That ally gains 3 vigor, then gambles.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "gambles", "id": "gl_gamble"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_jotunn_leader_strangebrew"
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_leader_cauldronsmash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "cauldron": true
+        },
+        "eventtags": {},
+        "name": "Cauldron Smash",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is stunned and takes 6 damage. Unsummon the cauldron.",
+                "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_artillery_thirdeye",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 8,
+            "arc": 3,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Third Eye",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "The Tethian may choose to scour the target with ethereal flames. If so, the tethian may deal 2 piercing damage, once, to the target for each status they are suffering from, then remove all statuses.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Round 3+: ",
+                "subcontent":   [{
+                                    "tags": [{"tag_name": "desc_type", "val": "desc"}],
+                                    "content": "Deals 4 piercing damage per status instead.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_artillery_polaris",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Polaris",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Mark a visible space in range. While at least one of these spaces is active, the tethian gains the following interrupt, which it can use any number of times as long as it has a space active:",
+                "glossary": [{"val": "Mark", "id": "gl_mark"},{"val": "interrupt", "id": "gl_interrupt"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_jotunn_artillery_polaris_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_artillery_polaris_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": true,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Starfall",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The end of any player character turn."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gamble, then a star lands in the space for a small blast area effect, dealing piercing damage equal to the gamble result to all characters within. Any character in the center space is shattered. Then remove the space.",
+                                    "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "area effect", "id": "gl_areaeffect"},{"val": "piercing", "id": "gl_piercing"},{"val": "Gamble", "id": "gl_gamble"},{"val": "gamble", "id": "gl_gamble"},{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_artillery_chainsoffate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Chains of Fate",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tethian chains a foe in range 6 to an adjacent space. That foe becomes vulnerable, and if they end their turn in or adjacent to that space, they take fray damage three times and are stunned.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "fray", "id": "gl_fray"},{"val": "stunned", "id": "gl_stunned"}]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of their next turn, they are shoved up to 3 spaces towards that space, ending in it if possible, then this effect ends.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can only be affected by one set of chains at a time."
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_artillery_dampentime",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Dampen Time",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tethian creates a medium blast terrain effect in range, which could be placed other characters. While in the area, foes:",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+            } ,                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use 2 action abilities."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use free actions."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use 2 interrupts.",
+                        "glossary": [{"val": "interrupts", "id": "gl_interrupt"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_artillery_dampentime_ch2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Dampen Time",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tethian creates a medium blast terrain effect in range, which could be placed other characters. While in the area, foes:",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+            } ,                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use 2 action abilities."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use free actions."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use 2 interrupts.",
+                        "glossary": [{"val": "interrupts", "id": "gl_interrupt"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot active vigilance.",
+                        "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot active rampart.",
+                        "glossary": [{"val": "rampart", "id": "gl_rampart"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_artillery_dampentime_ch3",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Dampen Time",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tethian creates a medium blast terrain effect in range, which could be placed other characters. While in the area, foes:",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+            } ,                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use 2 action abilities."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use free actions."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot use 2 interrupts.",
+                        "glossary": [{"val": "interrupts", "id": "gl_interrupt"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot active vigilance.",
+                        "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot active rampart.",
+                        "glossary": [{"val": "rampart", "id": "gl_rampart"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Ignore the benefits of sturdy.",
+                        "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Ignore the benefits of unstoppable.",
+                        "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ]
+            }
+        ]
     }
 ]
