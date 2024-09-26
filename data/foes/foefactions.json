@@ -700,7 +700,7 @@
         }],
         "traits": ["tf_faction_demon_legion"],
         "actions": ["af_faction_demon_devour", "af_faction_demon_devournatal"],
-        "traits_added": ["tf_faction_demon_legion"],
+        "traits_added": [],
         "actions_added": ["af_faction_demon_devour", "af_faction_demon_devournatal"],
         "stats" : {}
     },
