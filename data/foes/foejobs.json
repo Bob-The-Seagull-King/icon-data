@@ -568,5 +568,80 @@
             }
         ],
         "chapter": 1
+    },
+    {
+        "id": "fj_general_legend_nocturnal",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nocturnal",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Nocturnal relies on extreme mobility and fear to strike down its foes. It can be used to represent winged demons, master assassins gargoyles, or other vicious and mobile foes."
+            }
+        ],
+        "stats": {
+            "dash": 4
+        },
+        "actions": ["af_general_nocturnal_cripplingparanoia","af_general_nocturnal_thepain","af_general_nocturnal_bloodyslash","af_general_nocturnal_greatfellshot"],
+        "removed_actions": [],
+        "traits": ["tf_class_skirmisher_skirmisher","tf_general_legend_nocturnal_pickoff","tf_general_legend_nocturnal_masterofthenight"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Nocturnal begins combat in this phase, and enters Phase II at the end of the round."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_general_nocturnal_lostandalone","af_general_nocturnal_assassinate"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Nocturnal enters this phase at the end of the round while in Phase I, and enters Phase III at the end of the round."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_general_nocturnal_amygdala"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Nocturnal enters this phase at the end of the round while in Phase II, and enters Phase I at the end of the round."
+                    }
+                ],
+                "name": "Phase III",
+                "actions": ["af_general_nocturnal_bloodynightmare","af_general_nocturnal_kidnap"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nocturnal is an evasive and slippery legend fight that is the most scary when foes are split up. It can use its suite of abilities to force them to do so, or use Crippling Paranoia when it wants to really isolate someone."
+            }
+        ],
+        "chapter": 1
     }
 ]

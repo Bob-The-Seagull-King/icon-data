@@ -9360,5 +9360,376 @@
                 "content": "Characters under it when its placed take 2 damage and are removed and placed in any adjacent space as they are tossed around."
             }
         ]
+    },
+    {
+        "id": "af_general_nocturnal_cripplingparanoia",
+        "type": "Trait",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Crippling Paranoia",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Nocturnal chooses a foe.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "defiance", "id": "gl_defiance"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the round, that foe deals 6 damage to all allies in adjacent spaces and dazes them, then the nocturnal can shove them 1 in any direction.",
+                "glossary": [{"val": "dazes", "id": "gl_dazed"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_thepain",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 3,
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "The Pain",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Teleport 1",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and shove 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Teleport 1",
+                                    "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_nocturnal_theagony"
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_theagony",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 5,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "The Agony",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3 piercing damage, three times.",
+                            "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3 piercing damage, once.",
+                            "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_nocturnal_thehorror"
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_thehorror",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "The Horror",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray and shove 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + Fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals 2 damage again to the target for each of the following:"
+                                }]
+            },                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is blinded.",
+                        "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is dazed.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_bloodyslash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Bloody Slash",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the area take 2 damage once for every foe in the line, up to three times. The Nocturnal may teleport to any space in the area after this ability resolves.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_greatfellshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Great Fell Shot",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Choose two free spaces in range. Characters that enter that space or start their turn there are struck by a projectile, taking 3 piercing damage twice, and ending this effect. This area lasts until triggered.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_lostandalone",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Lost and Alone",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nocturnal swaps the places of two foes in range 3 of the Nocturnal and each other, removing and placing them. One foe is then dazed.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_assassinate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Assassinate",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nocturnal chooses a foe in range 3 that has not acted yet this round."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that foe’s turn, as long as they’re in range 3, teleport to any space adjacent to them, deal 2 damage, three times to them, and blind them. Reduce this damage to just 2 damage if they have an adjacent ally.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"},{"val": "blind", "id": "gl_blinded"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, fly 1.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_amygdala",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Amygdala",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes in range are inflicted with supernatural fear. They must save or be shoved 3 spaces in a direction of the Nocturnal’s choice, or 1 space on a successful save.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_bloodynightmare",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Bloody Nightmare",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Nocturnal supernaturally slashes all foes."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "For the rest of combat, all foes take 2 piercing damage at the start of their turns. This effect stacks.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_nocturnal_kidnap",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Kidnap",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nocturnal dashes 4. A foe adjacent to any point during its dash is removed from the battlefield, then placed adjacent when it finishes its movement. Foes can save to avoid this effect, but are dazed on a successful save.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"},{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
     }
 ]

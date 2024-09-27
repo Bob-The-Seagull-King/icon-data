@@ -1681,5 +1681,43 @@
                 ]
             }  
           ]
+    },
+    {
+        "id": "tf_general_legend_nocturnal_pickoff",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pick Off",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks gain +1 boon and can critically hit (+[D]) against foes with no allies adjacent.",
+                "glossary": [
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "critically hit", "id": "gl_criticalhit"},
+                    {"val": "[D]", "id": "gl_damagedice"}
+                ]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_legend_nocturnal_masterofthenight",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Master of the Night",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nocturnal has aura 2. It has evasion and gains stealth if there are no other characters in the aura.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }  
+          ]
     }
 ]
