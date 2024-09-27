@@ -1,5 +1,282 @@
 [
     {
+        "id": "fj_general_mob_basicmob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Basic Mob",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Weak foes that find strength and courage in numbers, fighting alongside their stronger allies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_basicmob_rabble", "af_general_basicmob_rush", "af_general_basicmob_rally"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_warrior",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Warrior",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Simple, hard-hitting melee fighter that attacks multiple foes at once."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_warrior_redondo", "af_general_warrior_cleave", "af_general_warrior_bullrush"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_soldier",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Soldier",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Basic melee fighter, controls the flow of combat with deft strikes and slashes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_soldier_slash", "af_general_soldier_bash", "af_general_soldier_valiant"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_impaler",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Impaler",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A fighter that pushes around characters and keeps them pinned and at arm’s length."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_impaler_advance", "af_general_impaler_spike"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_greatsword",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Greatsword",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Straightforward, hard hitting foe that attacks with sweeping, heavy attacks."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_greatsword_weaponvault", "af_general_greatsword_greatslice"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_brute",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brute",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Large foe that can hurl allies and enemies around."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_general_brute_backhand", "af_general_brute_bulkup", "af_general_brute_hurl"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_knuckle",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Knuckle",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Heavily armored foe that taunts opponents and can strike multiple opponents at once."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_knuckle_overpower", "af_general_knuckle_crushingadvance", "af_general_knuckle_callout"],
+        "removed_actions": [],
+        "traits": ["tf_general_knuckle_heavyarmor"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_berserker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Berserker",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A reckless fighter that becomes more powerful when taking damage."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_berserker_bloodycrescent", "af_general_berserker_furiousleap"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance", "tf_general_berserker_enrage"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_sentinel",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sentinel",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Foe that uses its reach and alert senses to defend an area."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_sentinel_trip", "af_general_sentinel_sweep", "af_general_sentinel_fortress"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_crusher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crusher",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Foe that uses its great strength to grapple or pin down its enemies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_crusher_headbutt", "af_general_crusher_mightyblow", "af_general_crusher_grapple"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_heavy_sledge",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sledge",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Hard hitting foe that inflicts stun with a heavy blow."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_sledge_chainhook", "af_general_sledge_shouldercheck"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",

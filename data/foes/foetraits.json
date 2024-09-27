@@ -168,6 +168,22 @@
         ]
     },
     {
+        
+        "id": "tf_special_sturdy",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sturdy",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has sturdy.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_folk_greatculture",
         "type": "Trait",
         "source": "core",
@@ -1562,6 +1578,51 @@
                     {"val": "pit", "id": "gl_pit"},
                     {"val": "teleport", "id": "gl_teleport"}
                 ]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_knuckle_heavyarmor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heavy Armor",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Resistant to damage from adjacent spaces.",
+                "glossary": [{"val": "Resistant", "id": "gl_resistance"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_berserker_enrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Enrage",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While bloody, gain +1 action.",
+                "glossary": [{"val": "bloody", "id": "gl_bloodied"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_sledge_bullheaded",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Enrage",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has resistance unless suffering from a status.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "status", "id": "gl_status"}]
             }  
           ]
     },

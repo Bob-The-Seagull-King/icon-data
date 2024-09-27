@@ -36,6 +36,1226 @@
         ]
     },
     {
+        "id": "af_general_basicmob_rabble",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Rabble",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "fray.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Target foe takes 2 damage once again for every other mob member in adjacent spaces to them, up to three times."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_basicmob_rush",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rush",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Up to three members in any order may dash 2, then deal 1 damage to a foe and shove them 1 space.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_basicmob_rally",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rally",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Up to three allies adjacent to a member may dash 1 space, or one ally adjacent to a member may dash 3 spaces.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_warrior_redondo",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Redondo",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with an adjacent ally, removing and placing both characters."
+            }
+        ]
+    },
+    {
+        "id": "af_general_warrior_cleave",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Cleave",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "fray.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes adjacent to the warrior or its attack target take fray damage.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_warrior_bullrush",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Bull Rush",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Warrior rushes 1. An adjacent character when it finishes its movement is either weakened or shoved 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "weakened", "id": "gl_weakened"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_soldier_slash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Slash",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "fray.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_soldier_bash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Bash",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is shoved 2.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_soldier_valiant",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Valiant",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The soldier rushes up to 4 spaces in a straight line, then may use",
+                        "glossary": [{"val": "rushes", "id": "gl_rush"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "foeability"},
+                        "content": "af_general_soldier_bash"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "as a free action"
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "af_general_impaler_advance",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Advance",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_impaler_spike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Spike",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray and shove 2.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray and shove 1.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_impaler_impale"
+            }
+        ]
+    },
+    {
+        "id": "af_general_impaler_impale",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 2,
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Impale",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray and shove 4. The Impaler rushes 3 towards the foe after shoving them.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}, {"val": "rushes", "id": "gl_rush"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray and shove 2.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed and stunned.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_greatsword_weaponvault",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Weapon Vault",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Greatsword targets a character in range 2, then removes itself from the battlefield and places itself in any space adjacent to that character. Then, it may shove that character 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_greatsword_greatslice",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "line": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Great Slice",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Rush 1.",
+                        "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Slash attack target.",
+                        "glossary": [{"val": "Slash", "id": "gl_slashed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_greatsword_whirlwind"
+            }
+        ]
+    },
+    {
+        "id": "af_general_greatsword_whirlwind",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "melee": true,
+            "type": "attack",
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Whirlwind",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Greatsword rushes 1 space, three times. After it rushes, each time, it deals 2 damage to adjacent characters.",
+                        "glossary": [{"val": "rushes", "id": "gl_rush"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_brute_backhand",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true,
+            "type": "attack",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Backhand",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_brute_backbreaker"
+            }
+        ]
+    },
+    {
+        "id": "af_general_brute_backbreaker",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Backbreaker",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Brute may rush 2 before using this ability.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_brute_bulkup",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bulk Up",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain 4 vigor, or 6 if bloodied.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_brute_hurl",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Hurl",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Brute shoves an adjacent character or object 2.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_knuckle_overpower",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Overpower",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes adjacent to the attack target take 2 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_knuckle_crushingadvance",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Crushing Advance",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Knuckle and all allies in range 2 may rush 1 space. Then, all foes adjacent to the Knuckle take 2 damage.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_knuckle_callout",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Call Out",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 3 must save or be shoved 2 towards the knuckle, then gain hatred of the knuckle. On a successful save, they are shoved 1 towards the knuckle.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "hatred", "id": "gl_hatred"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_berserker_bloodycrescent",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true,
+            "type": "attack",
+            "arc": 3,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Bloody Crescent",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_berserker_fullmoon"
+            }
+        ]
+    },
+    {
+        "id": "af_general_berserker_fullmoon",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "burst": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Full Moon",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Berserker gains 4 vigor.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_berserker_furiousleap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Furious Leap",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The berserker flies 2, then foes adjacent to the berserker take 2 damage.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sentinel_trip",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Trip",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe is shoved 1 in any direction.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sentinel_sweep",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 2,
+            "arc": 3
+        },
+        "eventtags": {},
+        "name": "Sweep",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove 1.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sentinel_fortress",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Fortress",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sentinel may rush 1, then gains aura 1 until the start of its next turn. While this aura is active:",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "aura", "id": "gl_aura"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• The Sentinel gains counter.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Allies without this ability in the aura gain resistance.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Any foe that enters the area without being shoved takes 3 damage, but no more than once a turn.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_crusher_headbutt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Headbutt",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to weakened foes.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_crusher_mightyblow",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Mighty Blow",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Crusher deals 2 damage to an adjacent foe and either shoves them 1 or creates a pit under them.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}, {"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_crusher_grapple",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Grapple",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Crusher marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency. On a failed save, it becomes unable to exit adjacency with the Crusher by any means for the rest of the current turn. On a successful save, the mark and this effect ends, but the foe is weakened.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "weakened", "id": "gl_weakened"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sledge_chainhook",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Chain Hook",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 3 is shoved 2 towards the Sledge.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sledge_shouldercheck",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Shoulder Check",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1. An adjacent foe is shoved 1.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_sledge_crushingoverhead"
+            }
+        ]
+    },
+    {
+        "id": "af_general_sledge_crushingoverhead",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "true_strike": true,
+            "type": "attack",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Crushing Overhead",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3[D] + fray and foe is stunned and shoved 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}, {"val": "shoved", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage and foe is slashed.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "slashed", "id": "gl_slashed"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to slashed or weakened characters.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",
@@ -5677,7 +6897,7 @@
                         "content": "Take 4 damage from the Jotunn."
                     }
                 ]
-            } ,                               
+            },                               
             {
                 "tags": {"desc_type" : "effect"},
                 "content": "Collide: ",
