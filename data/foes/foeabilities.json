@@ -10146,5 +10146,332 @@
                 "glossary": [{"val": "piercing", "id": "gl_piercing"}]
             }
         ]
+    },
+    {
+        "id": "af_general_razer_cataclysm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Cataclysm",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, create 2 rock spires, height 1 objects, in free space within range 2 of a foe. Foes adjacent when the spires are created take 2 piercing damage.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_scorch",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Scorch",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, choose a character in range 6. At the end of that character’s turn, the Razer shoots an energy blast at them for a medium blast explosion area effect.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters within must save. On a successful save, they take piercing fray damage. On a failed save they take [D]+fray piercing damage. Rock spires in the area are destroyed.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_raze",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 6,
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Raze",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is vulnerable.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Vulnerable foes release a burst 1 explosion centered on them, dealing 2 damage to all foes within.",
+                                    "glossary": [{"val": "Vulnerable", "id": "gl_vulnerable"},{"val": "burst", "id": "gl_burst"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_razer_resonantblast"
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_resonantblast",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 6,
+            "pierce": true,
+            "blast_size": "medium",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Resonant Blast",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deal fray damage again to all foes for every object or pit caught in the area.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "pit", "id": "gl_pit"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_swat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Swat",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range is shoved 2.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is shattered.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_aethersplit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Aether Split",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes in the area take 2 damage"
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Teleport all characters in the area 1. Teleport self 3 instead if in the area.",
+                        "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_eruption",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Eruption",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A Rock spire in range erupts. Adjacent characters take 2 damage, then the spire creates 3 spaces of difficult terrain in adjacent spaces.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_orbitalstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Orbital Strike",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Choose a space in range 5. At the end of the round, the Razer removes itself from the battlefield and lands in the space, placing itself."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes in a large blast area centered on them take [D]+fray damage as an area effect and have a pit created under them.",
+                "glossary": [{"val": "large blast", "id": "gl_blast"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_soar",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Soar",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Fly 3.",
+                "glossary": [{"val": "Fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_razer_eldenchaos",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Elden Chaos",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, the Razer fires a blast of pure ancient chaos."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The blast is a large blast area effect centered on any space in line of sight from the Razer. Foes in the area must save.",
+                "glossary": [{"val": "large blast", "id": "gl_blast"},{"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "On a failed save, they take 2[D]+fray piercing damage, twice. On a successful save, they take piercing fray damage, twice . Characters in cover automatically succeed the save. Then destroy all rock spires.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "cover", "id": "gl_cover"}]
+            }
+        ]
     }
 ]

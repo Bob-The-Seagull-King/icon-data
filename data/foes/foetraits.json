@@ -1747,5 +1747,28 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "tf_general_razer_radiance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Radiance",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "When this phase triggers, remove the Razer from the battlefield, then place them in the center of the battlefield, or as close as possible."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Razer is immobile during this phase but its abilities have no maximum range. All characters not in cover from the Razer take 4 piercing damage at the end of their turn.",
+                "glossary": [{"val": "immobile", "id": "gl_immobile"},{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     }
 ]

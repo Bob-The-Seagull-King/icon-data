@@ -731,6 +731,88 @@
             }
         ],
         "chapter": 1
+    },
+    {
+        "id": "fj_general_legend_razer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Razer",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A powerful and destructive being, such as a flying wyrm, an arch-wright, or an ancient demon."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_general_razer_cataclysm","af_general_razer_scorch","af_general_razer_raze","af_general_razer_swat","af_general_razer_aethersplit","af_general_razer_eruption"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Razer begins combat in this phase, and enters Phase II at the end of the round."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Razer has no special traits or abilities in this phase."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Razer enters this phase at the end of the round while in Phase I, and enters Phase III at the end of the round."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_general_razer_orbitalstrike","af_general_razer_soar"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Razer enters this phase at the end of the round while in Phase II, and enters Phase I at the end of the round."
+                    }
+                ],
+                "name": "Phase III",
+                "actions": ["af_general_razer_eldenchaos"],
+                "traits": ["tf_general_razer_radiance"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Razor is a destructive tempo fight in which every third round it can throw a massive attack out. Characters will want to make sure to keep Rock Spires around or make their own cover, and spread out so that the Razer becomes unable to deal maximum damage with Elden Chaos."
+            }
+        ],
+        "chapter": 1
     }
 
 ]
