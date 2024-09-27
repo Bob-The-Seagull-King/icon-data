@@ -444,5 +444,57 @@
         "blurb":  [],
         "colour": "blue",
         "limit": 2
+    },
+    {
+        "id": "sm_general_master_rallypoint",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 10,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Rally Point",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Aura 1. Minions in the aura sare immune to all damage and Press the Assault against characters in the area deals maximum damage.",
+                                    "glossary": [{"val": "Aura", "id": "gl_aura"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_general_master_rallypoint_ph2",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 10,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Rally Point",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Aura 2. Minions in the aura sare immune to all damage and Press the Assault against characters in the area deals maximum damage.",
+                                    "glossary": [{"val": "Aura", "id": "gl_aura"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
     }
 ]

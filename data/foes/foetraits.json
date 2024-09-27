@@ -1719,5 +1719,33 @@
                 ]
             }  
           ]
+    },
+    {
+        "id": "tf_general_master_horde",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "The Horde",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Master starts combat with a unique ."
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_general_mob_minions"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "mob. Minions can be placed anywhere not in range 2 of a player."
+                    }
+                ]
+            }
+        ]
     }
 ]

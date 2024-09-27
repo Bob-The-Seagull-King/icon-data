@@ -643,5 +643,94 @@
             }
         ],
         "chapter": 1
+    },
+    {
+        "id": "fj_general_mob_minions",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Minions",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This mob takes one turn a round, at the end of the round after all other characters have acted. The Minions mob is defeated if the Master is defeated."
+            }
+        ],
+        "stats": {
+            "members": 4,
+            "defense": 8
+        },
+        "actions": ["af_general_master_minion_presstheassault","af_general_master_minion_guardianstance","af_general_master_minion_skeweringwall"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_legend_master",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Master",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Master represents a monster that commands a legion of lesser minions, such as an enormous spider, a warlord, or a relict necromancer."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_general_master_aggresivetempo","af_general_master_promote","af_general_master_disablingstrike","af_general_master_barrage"],
+        "removed_actions": [],
+        "traits": ["tf_general_master_horde"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Master begins combat in this phase, and enters Phase II at the start of round 4."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_general_master_assaultwave","af_general_master_rally"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Master enters this phase at the start of round 4."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_general_master_intensifyassault","af_general_master_reinforcements","af_general_master_greatrally"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Master is a slightly more complicated basic legend that comes with its own (large) group of problems. Clearing out minions can make the fight more manageable, since many of the master’s abilities such as Assault Wave are less effective with less minions on the field."
+            }
+        ],
+        "chapter": 1
     }
+
 ]

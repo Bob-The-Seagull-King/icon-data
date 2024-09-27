@@ -9731,5 +9731,420 @@
                 "glossary": [{"val": "dashes", "id": "gl_dash"},{"val": "dazed", "id": "gl_dazed"}]
             }
         ]
+    },
+    {
+        "id": "af_general_master_minion_presstheassault",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true
+        },
+        "eventtags": {},
+        "name": "Press the Assault",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Up to four other minions can dash 2. Then, any foes adjacent to at least one minion that dashed this way take 2 piercing damage.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_minion_guardianstance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Guardian Stance",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Up to four minions take a defensive stance until the start of the mob’s next turn."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "For the duration, if the master is targeted by an ability and is adjacent to one of these minions, the minion can sacrifice themself as an interrupt, destroying them, to grant the master resistance to that ability and +1 boon on any saves.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"},{"val": "resistance", "id": "gl_resistance"},{"val": "+1 boon", "id": "gl_boon"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The mob can take this interrupt any number of times a round, but only once a turn.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"},{"val": "piercing", "id": "gl_piercing"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Each minion can only benefit from one stance at a time."
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_minion_skeweringwall",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Skewering Wall",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Up to four minions take an aggressive stance until the start of the mob’s next turn."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "For the duration, any foe that starts or ends their turn adjacent to one of these minions takes 2 piercing damage and is shoved 1.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Each minion can only benefit from one stance at a time."
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_assaultwave",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Assault Wave",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the master chooses a burst 2 (target space) area of the battlefield.",
+                "glossary": [{"val": "burst", "id": "gl_burst"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, foes in the area are charged by all minions in the area. They must save or take 3 piercing damage per minion in the area, up to a maximum of six times, or just 1 piercing damage per minion on a successful save.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_intensifyassault",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Intensify Assault",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the master chooses a foe.",
+                "glossary": [{"val": "burst", "id": "gl_burst"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, the foe is charged by all minions in range 3 of them. They must save or take 3 piercing damage per minion in the area, up to a maximum of six times, or just 1 piercing damage per minion on a successful save.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_reinforcements",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Reinforcements",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the Master summons extra reinforcements. The Minion mob is replenished by 2 new minions per player, which can be placed in any space on the battlefield not adjacent to a foe. There is no maximum on minions placed."
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_aggresivetempo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 2,
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Aggresive Tempo",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is sealed. The Master and any minions in range 2 may dash 2 before or after this attack.",
+                                    "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_general_master_defensivetempo"
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_defensivetempo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 2,
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Defensive Tempo",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Master shoves all foes in range 2 one space, then the Master gains counter until the start of its next turn, and grants counter to any adjacent minions for the same duration.",
+                                    "glossary": [{"val": "shoves", "id": "gl_shove"},{"val": "counter", "id": "gl_counter"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_promote",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Promote",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A minion gains 6 vigor and can immediately use Press the Assault, ignoring the attack limit. Damage that spills over from this vigor deals one ‘hit’ of damage as normal to the minion.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_rally",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round",
+            "summon": true,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Rally",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Master summons a Rally Point object in free space not adjacent to a foe in range 3. If using this action again with an active rally point, it moves the rally point rather than summoning a new one.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_general_master_rallypoint"
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_greatrally",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round",
+            "summon": true,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Great Rally",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Master summons a Rally Point object in free space not adjacent to a foe in range 3. If using this action again with an active rally point, it moves the rally point rather than summoning a new one.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_general_master_rallypoint_ph2"
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_disablingstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Disabling Strike",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range 3 is pacified, then shoved 1 in any direction. Pacified foes are shoved 3 instead.",
+                "glossary": [{"val": "Pacified", "id": "gl_pacified"},{"val": "pacified", "id": "gl_pacified"},{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_master_barrage",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "burst": 1
+        },
+        "eventtags": {},
+        "name": "Barrage",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes take 2 piercing damage. Allies are immune.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     }
 ]
