@@ -1627,6 +1627,51 @@
           ]
     },
     {
+        "id": "tf_general_hunter_wayfinding",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wayfinding",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has evasion while inside difficult or dangerous terrain, and ignores the effects of difficult or dangerous terrain.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_assassin_nimble",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nimble",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has evasion unless suffering from a status.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}, {"val": "status", "id": "gl_status"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_skulk_sneak",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sneak",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in stealth, has evasion and phasing.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "phasing", "id": "gl_phasing"}]
+            }  
+          ]
+    },
+    {
         "id": "tf_general_rogue_slippery",
         "type": "Trait",
         "source": "core",
