@@ -277,6 +277,206 @@
         "chapter": 1
     },
     {
+        "id": "fj_general_skirmisher_pepperbox",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pepperbox",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A mobile ranged attacker that hits multiple times with a short bow or gun."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_riddle", "af_general_skirmisher_strafe", "af_general_skirmisher_flashbomb"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_skirmisher_hunter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hunter",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A skilled ranged attacker that hunts down and eliminates single targets."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_huntershot", "af_general_skirmisher_settrap", "af_general_skirmisher_prowl", "af_general_skirmisher_hunt"],
+        "removed_actions": [],
+        "traits": ["tf_general_hunter_wayfinding"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_skirmisher_fencer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fencer",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A mobile melee fighter that is an excellent duelist."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_ironkiss", "af_general_skirmisher_skewer", "af_general_skirmisher_duel"],
+        "removed_actions": [],
+        "traits": ["tf_general_hunter_wayfinding"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_skirmisher_assassin",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Assassin",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A fighter that attacks in sweeping bursts."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_razorwind", "af_general_skirmisher_gust", "af_general_skirmisher_assassinate"],
+        "removed_actions": [],
+        "traits": ["tf_general_assassinate_nimble"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_skirmisher_hellion",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hellion",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A flying combatant that is more powerful against solitary foes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_rake", "af_general_skirmisher_pinions", "af_general_skirmisher_swoop"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_skirmisher_skulk",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skulk",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A sneaky foe that hits hard against weakened foes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_sneakystab", "af_general_skirmisher_throwingknife", "af_general_skirmisher_blindingdust"],
+        "removed_actions": [],
+        "traits": ["tf_general_skulk_sneak"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_skirmisher_shadow",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shadow",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that becomes vastly more powerful when attacking from stealth. Can cross great distances instantly."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_shadowcloak", "af_general_skirmisher_darkarts", "af_general_skirmisher_smotheringdarkness"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_skirmisher_arsonist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arsonist",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A fighter that uses bombs to disrupt the battlefield."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_skirmisher_bomb", "af_general_skirmisher_kickoff", "af_general_skirmisher_stickybomb"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",

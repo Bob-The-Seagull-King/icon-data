@@ -1256,6 +1256,779 @@
         ]
     },
     {
+        "id": "af_general_pepperbox_riddle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 4,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Riddle",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3 damage, three times."
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Against foes at exactly range 3, inflicts dazed and gains unerring.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}, {"val": "unerring", "id": "gl_unerring"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_pepperbox_strafe",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Strafe",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Pepperbox dashes 2, then deals 2 damage to a foe in range 3.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_pepperbox_flashbomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 3,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Flash Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes take 3 damage twice and are blinded.",
+                        "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If the Pepperbox catches itself or allies in the area, they gain stealth.",
+                        "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_hunter_huntershot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 4,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Hunter Shot",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Bloodied characters are shoved 1 in a direction of the Hunter’s choice and dazed.",
+                        "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "shoved", "id": "gl_shove"}, {"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_hunter_settrap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Set Trap",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hunter creates a trap dangerous terrain space in free space in range 2.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_hunter_prowl",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Prowl",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 1 and gain stealth.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}, {"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_hunter_hunt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Hunt",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range is marked. The hunter deals bonus damage to the marked character and their abilities gain unerring against them.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "unerring", "id": "gl_unerring"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_fencer_ironkiss",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Iron Kiss",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May dash 3 after the attack.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_fencer_skewer",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Skewer",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash up to 3 spaces in a straight line, then deal damage to an adjacent foe equal to the number of spaces moved +2.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_fencer_duel",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Duel",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a character in range. Gain evasion against the marked character, and when the marked character uses an ability, may dash 1 after the ability resolves. End the mark if the marked character hits the Fencer with an attack.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_assassin_razorwind",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Razor Wind",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Repeat the following effect twice: Dash 1, then",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": " area effect: ",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "burst 1(self): 2 damage.",
+                        "glossary": [{"val": "burst", "id": "gl_burst"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_assassin_gust",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Gust",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Assassin or an ally in range may fly 2.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_assassin_assassinate",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Assassinate",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Assassin chooses a foe in range. At the end of that foe’s turn, as long as they’re in range 3, teleport to any space adjacent to them, deal 2 damage, three times to them, and blind them. Reduce this damage to just 2 damage if they have an adjacent ally. Then, fly 1.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "blind", "id": "gl_blinded"}, {"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_hellion_rake",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Rake",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Hellion can fly to any point on the line after the ability resolves. Foes in the area must save or be dazed.",
+                        "glossary": [{"val": "fly", "id": "gl_flying"}, {"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_hellion_pinions",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Pinions",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deal 2 damage three times to a foe in range. Reduce this damage by one instance for every ally of that foe in range 2 of them."
+            }
+        ]
+    },
+    {
+        "id": "af_general_hellion_swoop",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Swoop",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Leave the battlefield. Return to the battlefield in a visible free space at the end of the very next player turn with stealth.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_skulk_sneakystab",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Sneaky Stab",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack deals bonus damage to and does not break stealth against bloodied or blinded foes.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "blinded", "id": "gl_blinded"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_skulk_throwingknife",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Throwing Knife",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes damage equal to its distance from the skulk."
+            }
+        ]
+    },
+    {
+        "id": "af_general_skulk_blindingdust",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Blinding Dust",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe becomes blinded. The Skulk then may dash 2 and gains stealth.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "dash", "id": "gl_dash"}, {"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_shadow_shadowcloak",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Shadow Cloak",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Shadow teleports 4, then gains stealth.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}, {"val": "stealth", "id": "gl_stealth"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_shadow_shadowscour"
+            }
+        ]
+    },
+    {
+        "id": "af_general_shadow_shadowscour",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "unerring": true,
+            "boon": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Shadow Scour",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + 2, twice.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray, once.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to bloodied or blinded foes.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "blinded", "id": "gl_blinded"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_shadow_darkarts",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Dark Arts",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a character in range, teleporting. Foes can save to avoid this effect.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_shadow_smotheringdarkness",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Smothering Darkness",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Shadow creates a darkness terrain effect in a single space in range. The area is dangerous terrain for foes, and foes inside are blinded+.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_arsonist_bomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "blast_size": "small",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If only one character is caught in the area of effect, deal 2 damage again to that character and they are dazed.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_arsonist_kickoff",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Kick Off",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Arsonist flies 1. Before they fly, they may shove an adjacent character 1 space, then deal 2 damage to them if they are a foe. If they do, they fly 3 instead.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_arsonist_stickybomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Sticky Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Arsonist sticks a bomb at a character in range. At the end of that character’s turn, the bomb explodes and they take 2 damage four times. For every adjacent foe or ally, reduce the number of times the targeted character takes damage by one, but deal 2 damage instead to that character. Then, end this effect."
+            }
+        ]
+    },
+    {
         "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",
