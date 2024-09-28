@@ -2029,6 +2029,906 @@
         ]
     },
     {
+        "id": "af_general_errant_shiningsword",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Shining Sword",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is pacified.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Damage from this ability does not break pacified.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_errant_intervention",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Intervention",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Errant gains the following interrupt until the start of its next turn. If this interrupt is unused at the start of their turn, the errant can teleport 3 instead.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}, {"val": "teleport", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_errant_intervene"
+            }
+        ]
+    },
+    {
+        "id": "af_general_errant_intervene",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Intervene",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An ally in range 3 is targeted by an ability."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The ally gains resistance against that ability and +1 boon on any saves against it. The errant may then teleport adjacent to that ally.",
+                        "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "+1 boon", "id": "gl_boon"}, {"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_errant_blinkstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Blinkstrike",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is teleported 1 space, then the errant and all its allies in range 3 of that foe can teleport 1 space towards the foe.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_priest_holy",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "blast_size": "medium",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Holy",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is pacified.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Allies in the area gain 2 vigor.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_priest_pandaemonium",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Pandaemonium",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Priest targets a large blast area in range. It may remove all characters in the area, then place them back in any other space in the area. Foes can save to avoid this effect, but are sealed on a successful save.",
+                "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}, {"val": "sealed", "id": "gl_sealed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_priest_shieldoffaith",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 2,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Shield of Faith",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Allied character in range becomes marked. When marked, the ally is cured. While marked and in range of the priest, the marked ally has resistance and +1 boon on saves.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "cured", "id": "gl_cure"}, {"val": "resistance", "id": "gl_resistance"}, {"val": "+1 boon", "id": "gl_boon"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_commander_leadersstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Leader's Strike",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Up to two allies in range 3 can dash 2 spaces and gain 2 vigor.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_commander_coordinatestrikes",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Coordinate Strikes",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage once for every ally of the commander adjacent to them, up to three times."
+            }
+        ]
+    },
+    {
+        "id": "af_general_commander_marchingorders",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Marching Orders",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When Commander takes this stance, as an action while in this stance, and at start of each of the commander’s turns, the commander and all allies in range 2 can dash 2 in the same direction, or as far as possible.",
+                "glossary": [{"val": "stance", "id": "gl_stance"}, {"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_abjurer_cleansingbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Cleansing Bolt",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Does not damage allies. Deals bonus damage for each ally caught in its area of effect.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "area of effect", "id": "gl_areaeffect"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_abjurer_cleansingcharm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Cleansing Charm",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Abjurer places a charm in a free space in range. An ally that ends their turn adjacent to the charm can consume it to cure themselves and fly 2.",
+                "glossary": [{"val": "cure", "id": "gl_cure"}, {"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_abjurer_empowershield",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Empower Shield",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Abjurer becomes immobile, but their aura of shielding increases to aura 2 and also grants cover from abilities used from outside the aura. They can exit this stance as an action.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "cover", "id": "gl_cover"}, {"val": "stance", "id": "gl_stance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_diviner_divination",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 5,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Divination",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage and the foe is marked.",
+                            "glossary": [{"val": "marked", "id": "gl_mark"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Mark:",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A card attaches to the target. The next time the target is damaged by an attack, the card explodes in a small blast area effect explosion centered on them for [D] + fray damage. Foes within must save or become sealed. Then, the mark clears.",
+                        "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "sealed", "id": "gl_sealed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_diviner_cleansingcharm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Cleansing Charm",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Diviner chooses a foe in range. That foe is either pacified (1-3) and shoved 1 away from them, or sealed (4-6) and shoved 1 towards them.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "shoved", "id": "gl_shove"}, {"val": "sealed", "id": "gl_sealed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_diviner_bendfate",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Bend Fate",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Diviner chooses an ally in range, then gambles, applying the effect:",
+                "glossary": [{"val": "gambles", "id": "gl_gamble"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "1. Ally deals fray damage to all adjacent characters.",
+                "glossary": [{"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "2. Ally may teleport 4.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "3. Ally gains flying for the rest of combat.",
+                "glossary": [{"val": "flying", "id": "gl_flying"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "4. Ally gains stealth.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "5. Ally creates 3 spaces of difficult terrain in adjacent spaces.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "6. Ally becomes unstoppable until bloodied, or until defeated if already bloodied.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_greenseer_greenwrath",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Greenwrath",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage and inflicts sealed if a character is inside dangerous or difficult terrain.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "sealed", "id": "gl_sealed"}, {"val": "dangerous", "id": "gl_dangerousterrain"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_greenseer_vinelash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Vine Lash",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range is shoved 2 in any direction. If they move into difficult terrain during this shove, they take 3 piercing damage.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_greenseer_healingspore",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Healing Spore",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Greenseer creates a spore terrain effect in range. Foes are pacified+ while adjacent to the spore, and the spore grants 2 vigor to all adjacent allies when created. Only one spore can be created at once.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_greenseer_wildgrowth",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Wild Growth",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Terrain Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a small blast area of difficult terrain. The difficult terrain provides cover for allies from abilities from the outside.",
+                        "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "cover", "id": "gl_cover"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_judge_justicefist",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Justice Fist",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is sealed. Shove 1 and deal bonus damage against sealed characters.",
+                        "glossary": [{"val": "sealed", "id": "gl_sealed"}, {"val": "Shove", "id": "gl_shove"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_judge_chastise",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Chastise",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character in range 4 takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D]+fray piercing damage again and this effect ends.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_saint_starcall",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "arc": 6
+        },
+        "eventtags": {},
+        "name": "Starcall",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and foe is pacified.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe explodes for a burst 2 (target) area effect, dealing 3 damage to all foes within and granting 3 vigor to all allies.",
+                        "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_saint_gentleness",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Gentleness",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Saint becomes immobile and gains aura 2 until the start of its next turn. While in the aura, all characters gain +1 curse on attacks and take 1 divine damage each time they deal damage to another character with an ability. Allies at 25% hp or lower than end their turn in the aura are cured.",
+                "glossary": [{"val": "immobile", "id": "gl_immobile"}, {"val": "aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "divine", "id": "gl_divine"}, {"val": "cured", "id": "gl_cure"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_saint_immaculate",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Immaculate",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 5 becomes immune to all damage until the end of its next turn.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_cantrix_discord",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 8,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Discord",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_cantrix_chantofinvestiture",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 10,
+            "mark": true,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Gentleness",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range is marked by the Cantrix and gains resistance, sturdy, and +1 boon on all attacks and saves. While in this stance, the Cantrix is immobile and must spend 1 action during their turn to maintain this stance. It ends if the Cantrix takes damage.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "resistance", "id": "gl_resistance"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "+1 boon", "id": "gl_boon"}, {"val": "stance", "id": "gl_stance"}, {"val": "immobile", "id": "gl_immobile"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_cantrix_hypnogogia",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Hypnogogia",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 8 of the Cantrix becomes pacified. If already pacified, the character becomes unable to dash, rush, or fly until the end of their next turn.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "dash", "id": "gl_dash"}, {"val": "rush", "id": "gl_rush"}, {"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_cantrix_escape",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Escape",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Cantrix swaps place with a marked ally, removing and placing both of them.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
         "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",

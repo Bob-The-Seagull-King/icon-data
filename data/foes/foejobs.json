@@ -477,6 +477,231 @@
         "chapter": 1
     },
     {
+        "id": "fj_general_leader_errant",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Errant",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A holy warrior that can intervene and save nearby allies from harm."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_errant_shiningsword", "af_general_errant_intervention", "af_general_errant_blinkstrike"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_priest",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Priest",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Divinely infused foes with the power to shield allies from harm."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_priest_holy", "af_general_priest_pandaemonium", "af_general_priest_shieldoffaith"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_commander",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Commander",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Martial leaders that are excellent at moving allies around."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_commander_leadersstrike", "af_general_commander_coordinatestrikes", "af_general_commander_marchingorders"],
+        "removed_actions": [],
+        "traits": ["tf_general_commander_commandersaura"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_abjurer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Abjurer",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A defensive expert that protects nearby allies with a powerful shield."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_abjurer_cleansingbolt", "af_general_abjurer_cleansingcharm", "af_general_abjurer_empowershield"],
+        "removed_actions": [],
+        "traits": ["tf_general_abjurer_auraofshielding"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_diviner",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Diviner",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A fortune teller that relies on allies, fate, and the power of the stars to set up attacks."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_diviner_divination", "af_general_diviner_darkfate", "af_general_diviner_bendfate"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_greenseer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Greenseer",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that draws upon the natural world to call forth overgrowth to hinder and harm their enemies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_greenseer_greenwrath", "af_general_greenseer_vinelash", "af_general_greenseer_healingspore", "af_general_greenseer_wildgrowth"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_judge",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Judge",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A tough foe that protects allies with a portable shrine and martial arts."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_judge_justicefist", "af_general_judge_chastise", "af_general_judge_shrineofsanctuary"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_saint",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Saint",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A pacifistic foe that prefers to prevent any violence from happening at all."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_saint_starcall", "af_general_saint_gentleness", "af_general_saint_immaculate"],
+        "removed_actions": [],
+        "traits": ["tf_general_saint_martyrdom"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_leader_cantrix",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cantrix",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A charismatic foe that can strongly empower a single ally with the power of their voice."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_cantrix_discord", "af_general_cantrix_chantofinvestiture", "af_general_cantrix_hypnogogia", "af_general_cantrix_escape"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",

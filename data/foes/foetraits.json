@@ -1690,6 +1690,51 @@
           ]
     },
     {
+        "id": "tf_general_commander_commandersaura",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Commander's Aura",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. Allies in the aura have +1 boon on attacks.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "+1 boon", "id": "gl_boon"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_abjurer_auraofshielding",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Shielding",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 1. The abjurer and allies in the area have dodge.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "dodge", "id": "gl_dodge"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_saint_martyrdom",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Martyrdom",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, cures all allies in range 2.",
+                "glossary": [{"val": "cures", "id": "gl_cure"}]
+            }  
+          ]
+    },
+    {
         "id": "tf_general_scion_grandiaga",
         "type": "Trait",
         "source": "core",
