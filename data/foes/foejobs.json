@@ -702,6 +702,281 @@
         "chapter": 1
     },
     {
+        "id": "fj_general_artillery_blaster",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blaster",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A fiery foe that hurls blasts that greatly harm grouped up enemies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_blaster_blast", "af_general_blaster_emberlash", "af_general_blaster_flashfire"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_seismatist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Seismatist",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that draws on earth aether to create terrain and smash enemies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_seismatist_rumble", "af_general_seismatist_seismicrumble", "af_general_seismatist_upheaval"],
+        "removed_actions": [],
+        "traits": ["tf_general_seismatist_earthbond"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_stormcaller",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Storm Caller",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that draws on water aether to summon a storm and deny a large area of the battlefield."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_stormcaller_blizzard", "af_general_stormcaller_frozenspear", "af_general_stormcaller_summonstorm"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_riftdancer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rift Dancer",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that uses lightning aether to zip around the battlefield and harass enemies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_riftdancer_dissonantbolt", "af_general_riftdancer_flashstep", "af_general_riftdancer_cracklingrift"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_chaoswright",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chaos Wright",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that can inflict a high number of blights, enabling its allies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_chaoswright_chaosshard", "af_general_chaoswright_destabilizematter", "af_general_chaoswright_chaosrift", "af_general_chaoswright_chaosstorm"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_disruptor",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Disruptor",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that relies on magnetic power to move around its enemies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_disruptor_magnetism", "af_general_disruptor_anchor", "af_general_disruptor_disrupt"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_scourer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scourer",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that uses bursts of overwhelming power to focus down one enemy and deny them shelter."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_scourer_scour", "af_general_scourer_boilingbolus"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_sapper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sapper",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that throws out arcing blasts of energy."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_sapper_chainbolt", "af_general_sapper_entrench", "af_general_sapper_fellshot"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_alchemist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Alchemist",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A foe that uses chemical power to dissolve and disrupt enemy formations."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_alchemist_spray", "af_general_alchemist_volatilemix", "af_general_alchemist_stickysolution"],
+        "removed_actions": [],
+        "traits": ["tf_general_alchemist_insulated"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_justicar",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Justicar",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A strong artillery foe that punishes its enemies for keeping their distance."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_justicar_bolt", "af_general_justicar_mightysummoning", "af_general_justicar_riven"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_general_artillery_sniper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sniper",
+        "faction_id": "fc_general",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A hard hitting, simple artillery foe that can do high damage every other turn if left alone."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_general_sniper_aim", "af_general_sniper_brace", "af_general_sniper_grapplinghook"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",

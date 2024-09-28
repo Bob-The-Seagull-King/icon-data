@@ -1735,6 +1735,35 @@
           ]
     },
     {
+        "id": "tf_general_seismatist_earthbond",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Earth Bond",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has resistance when adjacent to an object or inside a pit.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "pit", "id": "gl_pit"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_alchemist_insulated",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Insulated",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to damage from terrain and terrain effects."
+            }  
+          ]
+    },
+    {
         "id": "tf_general_scion_grandiaga",
         "type": "Trait",
         "source": "core",

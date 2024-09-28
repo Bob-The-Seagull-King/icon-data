@@ -2881,7 +2881,7 @@
             "stance": true
         },
         "eventtags": {},
-        "name": "Gentleness",
+        "name": "Chant of Investiture",
         "class_id": "green",
         "description":  [
             {
@@ -2925,6 +2925,1154 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Cantrix swaps place with a marked ally, removing and placing both of them.",
                 "glossary": [{"val": "marked", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_blaster_blast",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Blast",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deal 1 piercing damage again to all characters for each character caught in the area, up to a maximum of three times.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, increase blast to a large blast and deals bonus damage.",
+                        "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_blaster_emberflash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "blast_size": "small",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Emberflash",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 piercing damage and create a dangerous terrain space in the center, which can be placed under a character.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_blaster_flashfire",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Flash Fire",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 6 becomes vulnerable. Vulnerable foes are shoved 2 and take 1 piercing damage twice.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "shoved", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_seismatist_rumble",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "arc": 6
+        },
+        "eventtags": {},
+        "name": "Rumble",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Releases a medium blast on the attack target as an area effect, dealing 3 piercing damage again.",
+                        "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage for every object or pit in the area.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, stuns any character on an object or inside a pit in the area.",
+                        "glossary": [{"val": "stuns", "id": "gl_stunned"}, {"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_seismatist_seismicrumble",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "line": 6
+        },
+        "eventtags": {},
+        "name": "Seismic Rumble",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters are shoved 1 in the direction of the line, in any order.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is shattered and takes 1 piercing damage twice.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_seismatist_upheaval",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Upheaval",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon a height 1 boulder object or a a pit in free space in range 6.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_stormcaller_blizzard",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "small",
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Blizzard",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon a pit in a free space in the area.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_stormcaller_frozenspear",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "line": 4,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Frozen Spear",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The first character in the line takes 2 piercing damage twice and is shattered. All other foes take 2 piercing damage.",
+                "glossary": [{"val": "shattered", "id": "gl_shattered"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_stormcaller_summonstorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Summon Storm",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon a medium blast terrain effect in range. The area is difficult terrain for foes and while inside, foes are vulnerable+. Allies have flying while inside. The storm caller can redirect any of its storms with 1 action, moving them up to 3 spaces, then dealing fray damage to any characters in their area.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "+", "id": "gl_ongoing"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "flying", "id": "gl_flying"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, becomes 1 action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_riftdancer_dissonantbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "line": 6,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Dissonant Bolt",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is vulnerable.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes in the line may be teleported 1.",
+                        "glossary": [{"val": "teleported", "id": "gl_teleport"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, increase this teleport to 2 and deal 2 piercing damage again to foes teleported this way.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_riftdancer_flashstep",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Flash Step",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport 1, then either Teleport 2, or deal 2 piercing damage to a foe in range 3.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_riftdancer_cracklingrift",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Crackling Rift",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rift Dancer creates a line 3 dangerous terrain effect in range 4. Allies are immune to damage from the effect and can teleport 1 if they end their turn in the area. Foes are vulnerable+ while in the area.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "immune", "id": "gl_immune"}, {"val": "teleport", "id": "gl_teleport"}, {"val": "+", "id": "gl_ongoing"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_chaoswright_chaosshard",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 6,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Chaos Shard",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is shattered.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_chaoswright_destabilizematter",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Destabilize Matter",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chaos wright marks a character in range. While marked, the chaos wright may teleport that character 2 spaces at the start of their turn. A foe can save at the end of their turns to clear this mark.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_chaoswright_chaosrift",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Chaos Rift",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a pit in free space in range. The pit is also dangerous terrain, and characters cannot attack while inside. The Chaos wright is immune to damage and effects from its chaos rifts, and can teleport to the location of any active rift in range 3 as a free action during its turn.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "immune", "id": "gl_immune"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_chaoswright_chaosstorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Chaos Storm",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport all characters 2 spaces. Foes take 2 piercing damage as an area effect.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, becomes 1 action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_disruptor_magnetism",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Magnetism",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All characters in range 2 of the foe are shoved 1 towards or away from that character (Disruptor chooses).",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, deals bonus damage and shatters all foes targeted.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "shatters", "id": "gl_shattered"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_disruptor_anchor",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Anchor",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 6 is shoved up to 4 spaces towards the Disruptor with phasing.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "phasing", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_disruptor_disrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Chaos Rift",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 8 is marked. While marked, they are vulnerable+ and take 1 piercing damage, once, for every adjacent character every time they end their turn. If they end their turn with no characters adjacent, end this mark.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "+", "id": "gl_ongoing"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_scourer_scour",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "line": 8,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Scour",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Mark the target. Attacks against the marked target for the rest of combat gain +1 boon, deal bonus damage, ignore cover, and inflict shattered. This effect does not stack.",
+                        "glossary": [{"val": "Mark", "id": "gl_mark"}, {"val": "+1 boon", "id": "gl_boon"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "cover", "id": "gl_cover"}, {"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, this effect can mark any number of targets.",
+                        "glossary": [{"val": "mark", "id": "gl_mark"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_scourer_boilingbolus",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Boiling Bolus",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a medium blast terrain effect in range. Characters in the area take piercing fray damage as an area effect when the area is created. The area is difficult and dangerous terrain and new objects or terrain effects cannot be created in the area. The area lasts until this ability is used again.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sapper_chainbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 8,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Chain Bolt",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "One or two different foes in range 4 from the target foe also take 2 piercing damage.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sapper_entrench",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Entrench",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sapper puts down a siege rune under itself, or in an adjacent space. While standing in a siege rune, the Sapper or its allies deal bonus damage, and their attacks shove 1 and inflict vulnerable on their attack target.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "shove", "id": "gl_shove"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sapper_fellshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "terrain_effect": true,
+            "range": 8,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Fell Shot",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Choose one or two free spaces in range."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters that enter that space or start their turn there are struck by a projectile, taking 2 piercing damage twice, and ending this effect. Otherwise, it expires if the Sapper is defeated.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_alchemist_spray",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "blast_size": "large"
+        },
+        "eventtags": {},
+        "name": "Spray",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target explodes, shoving adjacent characters 1 away from them and dealing 2 piercing damage to them.",
+                        "glossary": [{"val": "shoving", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_alchemist_volatilemix",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Volatile Mix",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Alchemist chooses a foe in range. At the end of that foe’s next turn, they explode, taking 2 piercing damage and dealing 2 piercing damage in a large blast area effect centered on themselves.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_alchemist_stickysolution",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Sticky Solution",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range must save. On a successful save, they are shattered. On a failed save, they are shattered and cannot target adjacent characters or spaces with abilities until the end of their next turn.",
+                "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_justicar_bolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Bolt",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, increase area to large blast and deals bonus damage.",
+                        "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_justicar_mightysummoning",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Mighty Summoning",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 4 is removed from the battlefield, then placed in any space adjacent to the Justicar. Alternately, the Justicar can remove any adjacent ally, then place them in any space in range 4."
+            }
+        ]
+    },
+    {
+        "id": "af_general_justicar_riven",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Riven",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Choose a foe in range 8. At the end of that character’s turn, they take 3 piercing damage, once, for every 3 spaces of distance between them and the Justicar.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sniper_aim",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Aim",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sniper ends its turn.",
+                "glossary": [{"val": "ends its turn", "id": "gl_endturn"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_general_sniper_heartseeker"
+            }
+        ]
+    },
+    {
+        "id": "af_general_sniper_heartseeker",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 12,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Heart Seeker",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Cannot target characters in range 3."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, costs only 1 action and deals bonus damage.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sniper_brace",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Brace",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a 1 space terrain effect underneath the Sniper. While standing in a brace, the Sniper ignores height disadvantage and deals bonus damage.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "af_general_sniper_grapplinghook",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Grappling Hook",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sniper flies 2. It may fly 4 if it ends its turn in a brace.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}]
             }
         ]
     },
