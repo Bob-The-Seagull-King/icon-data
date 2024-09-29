@@ -717,7 +717,7 @@
             }
         ],
         "stats": {},
-        "actions": ["af_general_blaster_blast", "af_general_blaster_emberlash", "af_general_blaster_flashfire"],
+        "actions": ["af_general_blaster_blast", "af_general_blaster_emberflash", "af_general_blaster_flashfire"],
         "removed_actions": [],
         "traits": [],
         "removed_traits": [],

@@ -44,6 +44,32 @@
         "limit": 0
     },
     {
+        "id": "sm_general_judge_shrineofsanctuary",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 10,
+            "defense": 0
+        },
+        "eventtags": {},
+        "name": "Shrine of Sanctuary",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "While adjacent to the shrine, allies have resistance and gain +1 boon on attacks.",
+                                    "glossary": [{"val": "resistance", "id": "gl_resistance"},{"val": "+1 boon", "id": "gl_boon"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
         "id": "sm_relict_artillery_soulspark_ch3",
         "type": "Summon",
         "source": "core",

@@ -2484,7 +2484,7 @@
         ]
     },
     {
-        "id": "af_general_diviner_cleansingcharm",
+        "id": "af_general_diviner_darkfate",
         "type": "Ability",
         "source": "core",
         "tags": { 
@@ -2492,7 +2492,7 @@
             "range": 5
         },
         "eventtags": {},
-        "name": "Cleansing Charm",
+        "name": "Dark Fate",
         "class_id": "green",
         "description":  [
             {
@@ -2747,6 +2747,31 @@
                         "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id": "af_general_judge_shrineofsanctuary",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Shrine of Sanctuary",
+        "class_id": "green",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon a height 1 shrine destructible object in range.",
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+            },
+            
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_general_judge_shrineofsanctuary"
             }
         ]
     },
