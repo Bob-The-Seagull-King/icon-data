@@ -949,6 +949,21 @@
         ]
     },
     {
+        "id": "tf_imperial_hessian_bloodrush",
+        "type":"Trait",
+        "source":"core",
+        "tags": {},
+        "eventtags":{},
+        "name": "Blood Rush",
+        "description":[
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "May rush 2 before making any attack. If the attack triggers exceed, may rush 2 again.",
+                "glossary":[{"val":"rush", "id":"gl_rush"},{"val":"exceed", "id":"gl_exceed"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",

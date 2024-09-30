@@ -1513,6 +1513,130 @@
             }
         ],
         "chapter": 1
+    },
+    {    
+        "id": "fj_imperial_heavy_flametrooper",
+        "type" : "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Flame Trooper",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Troopers armed with black powder bombs that pack a heavy payload."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_imperial_flametrooper_flamebomb"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_heavy_buzztrooper",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{ },
+        "eventtags":{},
+        "name": "Buzz Trooper",
+        "faction_id":"fc_imperial",
+        "class_id":"cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Troopers armed with a belt-driven chain-sword. Very noisy and not particularly subtle."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_buzztrooper_chainslash"],
+        "removed_actions":["af_imperial_heavy_brutalstrike"],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_heavy_shotguntrooper",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Shotgun Trooper",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+          {
+            "tags":{"desc_type":"subeffect"},
+            "content": "Troopers armed with crude but heavy metal guns hammered together from scavenged Arkentech."
+          }
+        ],
+        "stats":{},
+        "actions":["af_imperial_shotguntrooper_doublebarrel"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_heavy_thundertrooper",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Thunder Trooper",
+        "faction_id": "fc_imperial",
+        "class_id":"cl_foe_heavy",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content":"Higher rank soldiers armed with some of the latest to come out of the imperial forges. Using blast-packs to jump into combat, they swing about with heavy arkentech force maces."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_thundertrooper_rocketboost","af_imperial_thundertrooper_groundpound"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_heavy_hessian",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Hessian",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content":"Mercenary soldiers from across Arden Eld hired on for their love of combat or bloodshed. Extremely skilled and usually kept in reserve until their talents are needed."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_hessian_bloodrush", "af_imperial_hessian_hessianlongrifle", "af_imperial_hessian_disarm"],
+        "removed_actions":[],
+        "traits":["tf_special_sturdy"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
     }
-
 ]

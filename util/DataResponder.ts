@@ -381,5 +381,4 @@ class DataResponder {
     }
 }
 
-// Indigo
 export {DataResponder}

@@ -7929,6 +7929,267 @@
         ]
     },
     {
+        "id": "af_imperial_flametrooper_flamebomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2,
+            "blast_size": "small",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Flame Bomb",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "May rush 1, then",
+                "glossary": [{"val": "rush", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area effect:",
+                "glossary": [{"val": "Area effect", "id": "gl_areaeffect"}],
+                "subcontent": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Characters are weakened.",
+                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Weakened foes take fray damage instead and must save or be stunned.",
+                "glossary": [{"val": "Weakened", "id": "gl_weakened"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_buzztrooper_chainslash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "true_strike":true,
+            "arc":3
+        },
+        "eventtags": {},
+        "name": "Chain Slash",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"subeffect"},
+                        "content":"On Hit:",
+                        "subcontent":[{
+                            "tags":{"desc_type":"desc"},
+                            "content":"[D] + fray.",
+                            "glossary":[{"val":"[D]", "id":"gl_damagedice"}, {"val":"fray", "id":"gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags":{"desc_type":"subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Effect:",
+                "subcontent": [{
+                    "tag":{"desc_type":"desc"},
+                    "content":"Attack target is slashed.",
+                    "glossary":[{"val":"slashed", "id":"gl_slashed"}]
+                }]
+            },
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Exceed:",
+                "subcontent": [{
+                    "tag":{"desc_type":"desc"},
+                    "content":"Rush 1, then repeat the area effect, which could overlap the first.",
+                    "glossary":[{"val":"Rush", "id":"gl_rush"}, {"val":"area effect", "id":"gl_areaeffect"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_shotguntrooper_doublebarrel",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Double Barrel",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "May rush 1, then",
+                "glossary": [{"val":"rush", "id":"gl_rush"}]
+            },
+            {
+                "tags": {"desc_type": "subeffect"},
+                "content":"Area effect:",
+                "glossary": [{"val":"Area Effect", "id":"gl_areaeffect"}],
+                "subcontent": [{
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"2 damage once, for every foe in the area, up to a maximum of three times."
+                }]
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "Then shove all characters 1.",
+                "glossary":[{"val":"shove","id":"gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_thundertrooper_rocketboost",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rocket Boost",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Thunder trooper rushes 4 spaces, also ignoring all terrain and height penalties while moving, then shoves all adjacent characters 1.",
+                "glossary":[{"val":"rushes", "id":"gl_rush"},{"val": "shoves", "id":"gl_shove"}]
+            },
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"This action becomes a free action if the Trooper activated an exceed effect this turn.",
+                        "glossary":[{"val":"exceed", "id":"gl_exceed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_thundertrooper_groundpound",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2,
+            "true_strike":true
+        },
+        "eventtags": {},
+        "name": "Ground Pound",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in a small blast area effect in range take 2 damage. Any foe in the center space is weakened, and that space becomes a pit.",
+                "glossary":[{"val":"small blast", "id":"gl_blast"},{"val":"weakened", "id":"gl_weakened"}, {"val":"pit","id":"gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_hessian_hessianlongrifle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 8,
+            "attack":true,
+            "true_strike":true,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Hessian Long Rifle",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "2[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"}, {"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"}, {"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Foe is slashed.",
+                        "glossary":[{"val":"slashed", "id":"gl_slashed"}]
+                    }
+                ]
+             },
+             {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Exceed:",
+                "glossary":[{"val":"Exceed", "id":"gl_exceed"}],
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Foe is also stunned.",
+                        "glossary":[{"val":"stunned", "id":"gl_stunned"}]
+                    }
+                ]
+             }
+        ]
+    },
+    {
+        "id": "af_imperial_hessian_disarm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Disarm",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe takes 3 damage and must save. On a failed save, their weapon flies out of their hands to a free space in range 2. They can re-unite with their weapon by ending their turn in that space or adjacent to it. Until they do, they cannot attack."
+            }
+        ]
+    },
+    {
         "id": "af_demon_heavy_rampage",
         "type": "Ability",
         "source": "core",
