@@ -1730,9 +1730,9 @@
             }
         ],
         "stats":{},
-        "actions":["af_imperial_hessian_bloodrush", "af_imperial_hessian_hessianlongrifle", "af_imperial_hessian_disarm"],
+        "actions":["af_imperial_hessian_hessianlongrifle", "af_imperial_hessian_disarm"],
         "removed_actions":[],
-        "traits":["tf_special_sturdy"],
+        "traits":["tf_special_sturdy","tf_imperial_hessian_bloodrush"],
         "removed_traits":[],
         "category":"job",
         "phases":[],
