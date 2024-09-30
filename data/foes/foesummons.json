@@ -1,5 +1,32 @@
 [
     {
+        "id": "sm_chronicler_bellwarden_templebell",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Temple Bell",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When summoned, or when a character collides with it, releases a massive ringing. All characters in range 2 except the Bell Warden must save or become weakened. Weakened characters take fray damage twice instead of saving. This effect can’t trigger more than once a round. Multiple bells can be summoned at once.",
+                        "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "weakened", "id": "gl_weakened"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "red",
+        "limit": 0
+    },
+    {
         "id": "sm_relict_artillery_soulspark",
         "type": "Summon",
         "source": "core",

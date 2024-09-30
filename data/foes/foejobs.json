@@ -977,6 +977,106 @@
         "chapter": 1
     },
     {
+        "id": "fj_folk_chronicler_templemonk",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Temple Monk",
+        "faction_id": "fc_folk_chronicler",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A priest of the chambers. Their knowledge of titan lore is extensive and they are capable of channeling divine power through their voice alone."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_chronicler_templemonk_pealofreckoning", "af_chronicler_templemonk_forbiddance", "af_chronicler_templemonk_prayer"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_chronicler_bellwarden",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bell Warden",
+        "faction_id": "fc_folk_chronicler",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Muscle-corded temple priests that are the ringers and guardians of the mighty bells of the Chambers, whose peal drives away evil creatures such as demons. These bells, though numerous, are holy objects, and their care and upkeep is a duty of the highest order."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_chronicler_bellwarden_fistoffury", "af_chronicler_bellwarden_roundhousekick", "af_chronicler_bellwarden_templebell"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_chronicler_yaman",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Yaman",
+        "faction_id": "fc_folk_chronicler",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Muscle-corded temple priests that are the ringers and guardians of the mighty bells of the Chambers, whose peal drives away evil creatures such as demons. These bells, though numerous, are holy objects, and their care and upkeep is a duty of the highest order."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_chronicler_yaman_axekick", "af_chronicler_yaman_roppo", "af_chronicler_yaman_hurlboulder", "af_chronicler_yaman_izunadrop"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_chronicler_inquisitor",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Inquisitor",
+        "faction_id": "fc_folk_chronicler",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lightning-wielding relic hunters of the Chroniclers, who are sent out in search of dangerous artifacts to recover and imprison in the Chambers."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_chronicler_inquisitor_lightningspear", "af_chronicler_inquisitor_reliquary", "af_chronicler_inquisitor_expurgation"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",

@@ -4102,6 +4102,544 @@
         ]
     },
     {
+        "id": "af_chronicler_templemonk_pealofreckoning",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Peal of Reckoning",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Target must save or be shoved 1 three times, or shoved 1 on a successful save. Each shove can be in a different direction.",
+                        "glossary": [{"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Range 6."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_templemonk_forbiddance",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Forbiddance",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The temple monk chooses a foe in range. That foe is sealed and until the end of their next turn, takes 2 damage after entering any space that moves them closer to the Temple Monk without being shoved.",
+                "glossary": [{"val": "sealed", "id": "gl_sealed"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_templemonk_prayer",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "delay": true
+        },
+        "eventtags": {},
+        "name": "Prayer",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The temple monk ends their turn and gains",
+                        "glossary": [{"val": "ends their turn", "id": "gl_endturn"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Delay:",
+                        "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Their next turn must be slow. At the start of that turn, this character and all adjacent allies are cured.",
+                        "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "cured", "id": "gl_cure"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_bellwarden_fistoffury",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Fist of Fury",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deal 2 damage to all adjacent foes."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_bellwarden_roundhousekick",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Roundhouse Kick",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bell Warden rushes 1, then adjacent character is shoved 1 in any direction, including diagonally.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_bellwarden_templebell",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "summon": true,
+            "end_turn": true,
+            "delay": true
+        },
+        "eventtags": {},
+        "name": "Temple Bell",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Bell Warden ends their turn and gains",
+                        "glossary": [{"val": "ends their turn", "id": "gl_endturn"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Delay:",
+                        "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Their next turn must be slow. At the start of that turn, summon a temple bell in a free adjacent space.",
+                        "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "foesummon"},
+                        "content": "sm_chronicler_bellwarden_templebell"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_yaman_axekick",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "boon": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Axe Kick",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to bloodied foes.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gains range 2 and may dash 2 before using this ability.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_yaman_roppo",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Roppo",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Yaman takes a pose and gains the following interrupt until the start of their next turn.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_chronicler_yaman_roppo_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_yaman_roppo_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Roppo",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A foe uses an ability in range 2, and the ability resolves."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Yaman may dash 2, then deal 2 damage to an adjacent foe.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_yaman_hurlboulder",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Hurl Boulder",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage, is dazed, and is shoved 1.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_yaman_izunadrop",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "delay": true
+        },
+        "eventtags": {},
+        "name": "Izuna Drop",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Yaman takes a pose, then ends their turn and gains",
+                        "glossary": [{"val": "ends their turn", "id": "gl_endturn"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Delay:",
+                        "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Their next turn must be slow. At the start of that turn, they may dash 2. Then, if a foe is adjacent the Yaman grabs them, removing both of them from the battlefield, then placing both of them back in free space adjacent to each other in range 2. The foe must save. On a successful save, they take fray damage and are dazed. On a failed save, they are stunned and take 2[D]+fray.",
+                        "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "dash", "id": "gl_dash"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_inquisitor_lightningspear",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "line": 10
+        },
+        "eventtags": {},
+        "name": "Lightning Spear",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is vulnerable.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deal 2 piercing damage again to target and to all foes in range 3 of the target.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_inquisitor_reliquary",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Reliquary",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The inquisitor marks a foe in range. While marked, all damage against the foe gains pierce, and that foe takes 1 piercing damage again after being hit or missed by any attack.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "pierce", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_chronicler_inquisitor_expurgation",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "delay": true
+        },
+        "eventtags": {},
+        "name": "Expurgation",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Inquisitor ends their turn, chooses a large blast area in range 6, and gains",
+                        "glossary": [{"val": "ends their turn", "id": "gl_endturn"}, {"val": "large blast", "id": "gl_blast"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Delay:",
+                        "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Their next turn must be slow. At the start of that turn, that area erupts with lightning.",
+                        "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters inside must save or take piercing fray damage, once, for every character in the area, or just once on a successful save.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",
