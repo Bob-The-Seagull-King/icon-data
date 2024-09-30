@@ -438,11 +438,27 @@
         "uses" : 2,
         "foe_id": "",
         "usetype": "",
-        "description": [{
-                "tags": {"desc_type" : "desc"},
-                "content": "Use this gem as an action to summon 3 Relict Husks. They fight as allied summons, acting on your turn.",
-                "glossary": [{"val": "summon", "id": "gl_summon"}]
-            }]
+        "description": [
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Use this gem as an action to summon 3 ",
+                    "glossary": [{"val": "summon", "id": "gl_summon"}]
+                },
+                {
+                    "tags": {"desc_type" : "textfoe"},
+                    "content": "fj_relict_mob_husk"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "They fight as allied summons, acting on your turn.",
+                    "glossary": [{"val": "summons", "id": "gl_summon"}]
+                }
+            ]
+        }]
     },
     {
         "id": "tp_relictarbalest",
@@ -1042,11 +1058,27 @@
         "uses" : 1,
         "foe_id": "",
         "usetype": "expedition",
-        "description": [{
-                "tags": {"desc_type" : "desc"},
-                "content": "You can don this cloak of Apex hide to show your dominance during this expedition. You deal bonus damage to beasts, and at the start of one combat, you may summon a beast pack mob with 6 members. The mob is allied to you.",
-                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "summon", "id": "gl_summon"}]
-            }]
+        "description": [
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "You can don this cloak of Apex hide to show your dominance during this expedition. You deal bonus damage to beasts, and at the start of one combat, you may summon a ",
+                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "summon", "id": "gl_summon"}]
+                },
+                {
+                    "tags": {"desc_type" : "textfoe"},
+                    "content": "fj_beast_mob_beastpack"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": " mob with 6 members. The mob is allied to you.",
+                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "summon", "id": "gl_summon"}]
+                }
+            ]
+        }]
     },
     {
         "id": "tp_apexfang",
@@ -2943,10 +2975,25 @@
         "foe_id": "",
         "usetype": "",
         "description": [
+            
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Summon an allied Sprigg mob with 3 members. The Spriggs disappear at the end of combat.",
-                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon an allied ",
+                        "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_hob_mob_sprigg"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " mob with 3 members. The Spriggs disappear at the end of combat."
+                    }
+                ]
             }
         ]
     },

@@ -1134,6 +1134,32 @@
         "chapter": 1
     },
     {
+        "id": "fj_beast_mob_beastpack",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beast Pack",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A pack of hunting beasts, such as molven, grox, or wolf lizards."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_beast_mob_packattack","af_beast_mob_huntingtactics","af_beast_mob_vicioushowl","af_beast_mob_dragdown"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_cornered"],
+        "removed_traits": ["tf_faction_beast_enrage"],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_demon_mob_natal",
         "type": "FoeJob",
         "source": "core",

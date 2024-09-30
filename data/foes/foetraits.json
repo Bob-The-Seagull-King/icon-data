@@ -338,6 +338,20 @@
                         ]
     },
     {
+        "id": "tf_faction_beast_cornered",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cornered",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When half its members are remaining or less, this pack gains +1 action."
+            }
+                        ]
+    },
+    {
         "id": "tf_faction_beast_brawlerbeast_primalstrength",
         "type": "Trait",
         "source": "core",

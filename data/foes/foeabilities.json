@@ -14123,5 +14123,123 @@
                 "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "cover", "id": "gl_cover"}]
             }
         ]
+    },
+    {
+        "id": "af_beast_mob_packattack",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack":true
+        },
+        "eventtags": {},
+        "name": "Pack Attack",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"}, {"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"Fray.",
+                            "glossary":[ {"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Up to three other members can dash 2, then deal 2 damage to the attack target.",
+                        "glossary":[{"val":"dash", "id":"gl_dash"}]
+                    }
+                ]
+             }
+        ]
+    },
+    {
+        "id": "af_beast_mob_huntingtactics",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Hunting Tactics",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"A beast in range 3 of a pack member gains stealth and can dash 2.",
+                "glossary":[{"val":"dash", "id":"gl_dash"},{"val":"stealth", "id":"gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_mob_vicioushowl",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Vicious Howl",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"A foe in range 3 of a pack member is weakened. Weakened foes take 2 piercing damage instead.",
+                "glossary":[{"val":"weakened", "id":"gl_weakened"},{"val":"Weakened", "id":"gl_weakened"},{"val":"piercing", "id":"gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_mob_dragdown",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Drag Down",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"A foe in range of a pack member is marked.",
+                "glossary":[{"val":"marked", "id":"gl_mark"}]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"While marked, they are weakened+ while adjacent to any pack members.",
+                "glossary":[{"val":"weakened", "id":"gl_weakened"},{"val":"+", "id":"gl_ongoing"}]
+            }
+        ]
     }
 ]
