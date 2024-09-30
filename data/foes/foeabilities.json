@@ -4574,7 +4574,7 @@
         ]
     },
     {
-        "id": "af_general_inquisitor_reliquary",
+        "id": "af_chronicler_inquisitor_reliquary",
         "type": "Ability",
         "source": "core",
         "tags": { 
@@ -4594,7 +4594,7 @@
         ]
     },
     {
-        "id": "af_general_inquisitor_expurgation",
+        "id": "af_chronicler_inquisitor_expurgation",
         "type": "Ability",
         "source": "core",
         "tags": { 
