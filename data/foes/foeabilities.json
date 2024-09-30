@@ -7723,7 +7723,12 @@
                     "tags": {"desc_type" : "desc"},
                     "content": "Rush 1, then",
                     "glossary": [{"val": "Rush", "id": "gl_rush"}]
-                },
+                }]
+            },
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
                 {
                     "tags": {"desc_type" : "subeffect"},
                     "content": "Area Effect:",
@@ -8510,7 +8515,7 @@
             "action": 1,
             "type": "attack",
             "true_strike":true,
-            "arc":3
+            "arc": 3
         },
         "eventtags": {},
         "name": "Chain Slash",
@@ -8542,19 +8547,19 @@
                 ]
             },
             {
-                "tags":{"desc_type":"subeffect"},
+                "tags":{"desc_type":"effect"},
                 "content": "Effect:",
                 "subcontent": [{
-                    "tag":{"desc_type":"desc"},
+                    "tags":{"desc_type":"desc"},
                     "content":"Attack target is slashed.",
                     "glossary":[{"val":"slashed", "id":"gl_slashed"}]
                 }]
             },
             {
-                "tags":{"desc_type":"subeffect"},
+                "tags":{"desc_type":"effect"},
                 "content": "Exceed:",
                 "subcontent": [{
-                    "tag":{"desc_type":"desc"},
+                    "tags":{"desc_type":"desc"},
                     "content":"Rush 1, then repeat the area effect, which could overlap the first.",
                     "glossary":[{"val":"Rush", "id":"gl_rush"}, {"val":"area effect", "id":"gl_areaeffect"}]
                 }]
@@ -8583,7 +8588,7 @@
                 "content":"Area effect:",
                 "glossary": [{"val":"Area Effect", "id":"gl_areaeffect"}],
                 "subcontent": [{
-                    "tags":{"desc_type":"subeffect"},
+                    "tags":{"desc_type":"desc"},
                     "content":"2 damage once, for every foe in the area, up to a maximum of three times."
                 }]
             },
@@ -8611,7 +8616,7 @@
                 "glossary":[{"val":"rushes", "id":"gl_rush"},{"val": "shoves", "id":"gl_shove"}]
             },
             {
-                "tags":{"desc_type":"subeffect"},
+                "tags":{"desc_type":"effect"},
                 "content":"Effect:",
                 "subcontent":[
                     {
