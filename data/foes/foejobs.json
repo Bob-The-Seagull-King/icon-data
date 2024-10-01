@@ -1102,6 +1102,268 @@
         "chapter": 1
     },
     {
+        "id": "fj_beast_unique_harpy",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Harpy",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Birdlike beasts with pale faces and soothing voices, they use their resonant throat sacs to hypnotize prey and draw them closer. They often use these talents to hypnotize cabals of other monsters to protect their nests."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_harpy_sonicscreech","af_beast_harpy_hypnogogia","af_beast_harpy_frenziedsong"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_beast_harpy_earsplittingsong"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_barghest",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Barghest",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A dog-like beast with a fleshless, skull-like face. It feeds off carrion and is drawn to the aftermath of battles. Its body is so suffused with corrupted aether from the meat it feeds on that it can flicker ghost-like in and out of reality."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_barghest_openwound","af_beast_barghest_realityflicker","af_beast_barghest_banehunter","af_beast_barghest_ironjaw"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_beast_barghest_aetherflesh"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_canopticswarm",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Canoptic Swarm",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Swarms of bats, beetles, centipedes, or other carrion-eaters that have fed upon corpses in the deep ruins and become instilled with an uncanny hunger."
+            }
+        ],
+        "stats": {"size": 2},
+        "actions": ["af_beast_canopticswarm_ahundredmaws","af_beast_canopticswarm_swarmsurge","af_beast_canopticswarm_consume"],
+        "removed_actions": [],
+        "traits": ["tf_beast_canopticswarm_amorphous"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_bicorn",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bicorn",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An equine monster with a forked, spiral horn, which it can use to channel ambient aether into deadly, reality bending bolts."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_bicorn_lightninggallop","af_beast_bicorn_destabilize","af_beast_bicorn_surgeshift"],
+        "removed_actions": [],
+        "traits": ["tf_beast_bicorn_aetherskin"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_bonabra",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bonabra",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An enormous ruin beast resembling a cross between a hippopotamus and a massive, corpulent ape. It spends most of its day sleeping, and the rest eating. Though usually content to feed on trees and local dungeon flora, it is an incredibly strong hunter capable of insane bursts of speed and aggression, as creatures that disturb its rest are capable of finding out. Many adventurers have been shocked at the sight of one of these rotund giants tearing a demon in half."
+            }
+        ],
+        "stats": {"size": 3},
+        "actions": [],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Bonabra starts combat asleep."
+                    }
+                ],
+                "name": "Sleeping",
+                "actions": ["af_beast_bonabra_rollover","af_beast_bonabra_peacefulsnore"],
+                "traits": ["tf_special_immmobile","tf_beast_bonabra_bounteousrest_action","tf_beast_bonabra_shelteringmass"],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If the Bonabra wakes up for any reason, it flies into an unstoppable rage."
+                    }
+                ],
+                "name": "Raging",
+                "actions": ["af_beast_bonabra_crimsonrampage","af_beast_bonabra_headbutt","af_beast_bonabra_gigakaiser"],
+                "traits": ["tf_special_unstoppable","tf_beast_bonabra_unstoppablerage"],
+                "stats": {}
+            }
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_megacrab",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Megacrab",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive crab with a thorny shell that has adapted to life away from water. It burrows beneath loose soil in dungeons, where it mimics boulders."
+            }
+        ],
+        "stats": {"size": 2},
+        "actions": ["af_beast_megacrab_clawslam","af_beast_megacrab_clawjab","af_beast_megacrab_waterjet"],
+        "removed_actions": [],
+        "traits": ["tf_beast_megacrab_armour","tf_beast_megacrab_flipover"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_landshark",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Landshark",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A fish that uses its spiny body and an exuded slime to burrow through loose dirt or rock between stays in underground pools."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_landshark_gnaw","af_beast_landshark_sandblast","af_beast_landshark_anklebiter"],
+        "removed_actions": [],
+        "traits": ["tf_beast_landshark_landswim","tf_beast_landshark_dart"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_floatfish",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Floatfish",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An airborne eel that uses sacs of buoyant liquid, which it can emit as a vapor, to propel itself around. It can inject this liquid into the bodies of its prey, causing them to float helplessly into the air, where it snatches them up."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_floatfish_pearlsecentbubble","af_beast_floatfish_floatingtoxin"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_beast_bicorn_aetherskin"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_doomcloak",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Doomcloak",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This terrifying batlike creature uses its leathery wings to abduct and choke creatures with a soporific acid, taking them to its nest and storing them in pods made of bone meal and spit for later digestion."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_doomcloak_chasingclaw","af_beast_doomcloak_rake","af_beast_doomcloak_acidstream","af_beast_doomcloak_choke"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_special_sturdy","tf_special_defiance","tf_special_counter"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",

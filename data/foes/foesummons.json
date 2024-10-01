@@ -549,5 +549,44 @@
         "blurb":  [],
         "colour": "blue",
         "limit": 2
+    },
+    {
+        "id": "sm_beast_floatfish_pearlsecentbubble",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Pearlsecent Bubble",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a character enters the bubble’s space, it pops, shattering them, shoving them 3 in any direction, and creating a space of difficult terrain.",
+                                    "glossary": [
+                                        {"val": "shattering", "id": "gl_shattered"},
+                                        {"val": "shoving", "id": "gl_shove"},
+                                        {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Character also takes fray damage twice.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
     }
 ]

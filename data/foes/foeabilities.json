@@ -14241,5 +14241,1273 @@
                 "glossary":[{"val":"weakened", "id":"gl_weakened"},{"val":"+", "id":"gl_ongoing"}]
             }
         ]
+    },
+    {
+        "id": "af_beast_harpy_sonicscreech",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack":true,
+            "line": 6
+        },
+        "eventtags": {},
+        "name": "Sonic Screech",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"}, {"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss or Area Effect:",
+                    "glossary":[ {"val":"Area Effect","id":"gl_areaeffect"}],
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"Fray.",
+                            "glossary":[ {"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Foe is sealed.",
+                        "glossary":[{"val":"sealed", "id":"gl_sealed"}]
+                    }
+                ]
+             }
+        ]
+    },
+    {
+        "id": "af_beast_harpy_hypnogogia",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Hypnogogia",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"A character in range of the Harpy becomes pacified.",
+                "glossary":[{"val":"pacified", "id":"gl_pacified"}]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"If already pacified, the character becomes unable to dash, fly, or teleport until the end of their next turn.",
+                "glossary":[
+                    {"val":"pacified", "id":"gl_pacified"},
+                    {"val":"dash", "id":"gl_dash"},
+                    {"val":"fly", "id":"gl_flying"},
+                    {"val":"teleport", "id":"gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_harpy_frenziedsong",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Frenzied Song",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Allies in range of the Harpy can dash 1 and immediately save against all statuses.",
+                "glossary":[{"val":"dash", "id":"gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_harpy_songofdeadlysoothing",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Song of Deadly Soothing",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"All foes in range of the harpy must save or become shoved as far as possible towards the harpy and pacified, or just shoved 1 towards it on a successful save.",
+                "glossary":[{"val":"shoved", "id":"gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_barghest_openwound",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack":true
+        },
+        "eventtags": {},
+        "name": "Open Wound",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D]",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"1 damage."
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"The character gains an open wound."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Open Wound:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"While wounded, it takes [D] again at the end of its turns. This effect does not stack, and ends instead if the character ends their turn adjacent to an ally.",
+                        "glossary":[{"val":"[D]", "id":"gl_damagedice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_barghest_realityflicker",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Reality Flicker",
+        "description":  [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barghest or an adjacent ally can teleport 3.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_barghest_banehunter",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Bane Hunter",
+        "description":  [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barghest releases an unearthly howl, marking a character in range.",
+                "glossary": [{"val": "marking", "id": "gl_mark"}]
+            },          
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "That character gains aura 2. While the Barghest is in the aura, that character takes bonus damage from all sources and cannot attack.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_barghest_ironjaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Iron Jaw",
+        "description":  [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barghest dashes 3 spaces in any direction.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}]
+            },          
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe when it starts moving must save or be dragged them with it, shoving its target towards it until its adjacent. Bloodied foes fail the save.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"},{"val": "Bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_canopticswarm_ahundredmaws",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack":true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "A Hundred Maws",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D] + fray",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"Fray.",
+                            "glossary":[{"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Deals bonus damage to characters inside its space.",
+                        "glossary":[{"val":"bonus damage","id":"gl_bonusdamage"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"All Characters inside its space take 2 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_canopticswarm_swarmsurge",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Swarm Surge",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"The Swarm rushes 2. Allies inside its space can also rush 1.",
+                "glossary":[{"val":"rushes","id":"gl_rush"},{"val":"rush","id":"gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_canopticswarm_consume",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Consume",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"A foe inside the swarm's area is marked.",
+                "glossary":[{"val":"marked","id":"gl_mark"}]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content":""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"While marked, they are slashed if they start or end their turn inside or adjacent to the swarm, and they take 2 damage if they are inside the swarm and it uses an ability.",
+                "glossary":[{"val":"marked","id":"gl_mark"},{"val":"slashed","id":"gl_slashed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_bicorn_lightninggallop",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Lightning Gallop",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Dash 2 with phasing. If this movement is in a straight line, increase to dash 4. When this dash finishes, deal 2 piercing damage to a foe in range 4.",
+                "glossary":[
+                    {"val":"Dash","id":"gl_dash"},
+                    {"val":"phasing","id":"gl_phasing"},
+                    {"val":"dash","id":"gl_dash"},
+                    {"val":"piercing","id":"gl_piercing"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"foeability"},
+                "content": "af_beast_bicorn_spiralhorn"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_bicorn_spiralhorn",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack":true,
+            "line": 8,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Spiral Horn",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D], twice.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss or Area Effect:",
+                    "glossary":[ {"val":"Area Effect","id":"gl_areaeffect"}],
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"1 damage, twice."
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Create a volatile mote, a terrain effect, next to every character in the line."
+                    }
+                ]
+             },
+             {
+                 "tags": {"desc_type":"effect"},
+                 "content":"Terrain Effect:",
+                 "subcontent":[
+                     {
+                         "tags":{"desc_type":"desc"},
+                         "content":"When the Bicorn passes through a mote, it picks it up and increases the hit and miss damage of this ability by +2 permanently. (so picking up one would make it do [D]+2, twice, and 3 damage, twice on a miss, for example).",
+                         "glossary":[{"val":"[D]","id":"gl_damagedice"}]
+                     }
+                 ]
+              }
+        ]
+    },
+    {
+        "id": "af_beast_bicorn_destabilize",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Destabilize",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"A foe in range becomes vulnerable. If that foe moves more than 1 space on its next turn, it also takes 2 damage twice.",
+                "glossary":[
+                    {"val":"vulnerable","id":"gl_vulnerable"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_bicorn_surgeshift",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Surge Shift",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Remove the Bicorn or an ally anywhere from the battlefield, then place the Bicorn or that ally in range 2 of its original location."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_bonabra_rollover",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Roll Over",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "The Bonabra removes itself from the battlefield, then places itself anywhere in 1 space of its original location."
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Characters inside its area when it returns take 4 piercing damage and are removed from the battlefield, then placed outside its space as close as possible to its original location and shoved 1.",
+                "glossary":[
+                    {"val":"piercing","id":"gl_piercing"},
+                    {"val":"shoved","id":"gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_bonabra_peacefulsnore",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Peaceful Snore",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "All allies of the Bonabra in range 2 of it can immediately save against all statuses and dash 1.",
+                "glossary":[
+                    {"val":"dash","id":"gl_dash"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Allies at 25% hp or lower are additionally cured.", 
+                "glossary":[
+                    {"val":"cured","id":"gl_cure"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_bonabra_crimsonrampage",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack":true,
+            "true_strike": true,
+            "pierce": true,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Crimson Rampage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss or Area Effect:",
+                    "glossary":[ {"val":"Area Effect","id":"gl_areaeffect"}],
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"Fray.",
+                            "glossary":[{"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Deals maximum damage against stunned characters.",
+                        "glossary":[{"val":"stunned","id":"gl_stunned"}]
+                    }
+                ]
+             }
+        ]
+    },
+    {
+        "id": "af_beast_bonabra_headbutt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Headbutt",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "A character adjacent to the Bonabra is shoved 4.",
+                "glossary":[
+                    {"val":"shoved","id":"gl_shove"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes [D]+fray and is stunned.",
+                        "glossary": [{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"},{"val":"stunned","id":"gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_bonabra_gigakaiser",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Gigakaiser",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "The Bonabra rushes 2, then an adjacent character takes fray damage and is stunned.",
+                "glossary":[
+                    {"val":"rushes","id":"gl_rush"},
+                    {"val":"fray","id":"gl_fray"},
+                    {"val":"stunned","id":"gl_stunned"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "Stunned characters must additionally sacrifice 25% of their maximum hp.",
+                "glossary":[
+                    {"val":"sacrifice","id":"gl_sacrifice"},
+                    {"val":"Stunned","id":"gl_stunned"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "Characters at 25% hp or lower are instantly defeated."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_megacrab_clawslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack":true,
+            "true_strike": true,
+            "range": 2,
+            "blast_size": "medium",
+            "curse": 1
+        },
+        "eventtags": {},
+        "name": "Claw Slam",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "3[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss or Area Effect:",
+                    "glossary":[ {"val":"Area Effect","id":"gl_areaeffect"}],
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"Fray.",
+                            "glossary":[{"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"The crab can spend additional actions on this attack. Every extra action it spends on it gives it bonus damage and +1 boon.",
+                        "glossary":[{"val":"bonus damage","id":"gl_bonusdamage"},{"val":"+1 boon","id":"gl_boon"}]
+                    }
+                ]
+             }
+        ]
+    },
+    {
+        "id": "af_beast_megacrab_clawjab",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Claw Jab",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary":[{"val":"Area Effect","id":"gl_areaeffect"}],
+                "subcontent":[{
+                    "tags":{"desc_type":"desc"},
+                    "content": "Fray.",
+                    "glossary":[{"val":"fray","id":"gl_fray"}]
+                }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_megacrab_waterjet",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Water Jet",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "The Crab creates a line 5 area effect drawn adjacent to it while in this stance.",
+                "glossary":[{"val":"area effect","id":"gl_areaeffect"},{"val":"stance","id":"gl_stance"}]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "When the crab moves, it can reposition this effect, but reduces its size by 1."
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "Characters that move into the area or start their turn there take 2 damage, are shoved 2 and must save or become weakened. Weakened foes fail this save and take 4 damage instead.",
+                "glossary":[{"val":"shoved","id":"gl_shove"},{"val":"weakened","id":"gl_weakened"},{"val":"Weakened","id":"gl_weakened"}]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "When the area reaches 0, the stance ends."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_landshark_gnaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack":true,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Gnaw",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "3 damage, three times.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss: ",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"3 damage.",
+                            "glossary":[{"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_landshark_sandblast",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable":true,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Sand Blast",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "A foe in range is blinded. Blinded foes take 3 damage.",
+                "glossary":[{"val":"blinded","id":"gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_landshark_anklebiter",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "burst": 1
+        },
+        "eventtags": {},
+        "name": "Anklebiter",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "All foes in the area not standing on an object take fray damage and must save or become dazed. Dazed foes take fray damage again on a failed save.",
+                "glossary":[
+                    {"val":"area","id":"gl_areaeffect"},
+                    {"val":"fray","id":"gl_fray"},
+                    {"val":"dazed","id":"gl_dazed"},
+                    {"val":"Dazed","id":"gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_floatfish_pearlsecentbubble",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Pearlsecent Bubble",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "The fish spits out three bubbles in range."
+            },
+            {
+                "tags":{"desc_type":"foesummon"},
+                "content": "sm_beast_floatfish_pearlsecentbubble"
+            },
+            {
+                "tags":{"desc_type":"foeability"},
+                "content": "af_beast_floatfish_slimestream"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_floatfish_slimestream",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack":true,
+            "line": 8,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Slime Stream",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "2[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss or Area Effect:",
+                    "glossary":[ {"val":"Area Effect","id":"gl_areaeffect"}],
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"[D] + Fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Shove all characters 2 spaces in the direction of the line.",
+                        "glossary":[{"val":"Shove","id":"gl_shove"}]
+                    }
+                ]
+             },
+             {
+                 "tags": {"desc_type":"effect"},
+                 "content":"Round 3+:",
+                 "subcontent":[
+                     {
+                         "tags":{"desc_type":"desc"},
+                         "content":"Deals bonus damage and shatters target.",
+                         "glossary":[{"val":"bonus damage","id":"gl_bonusdamage"},{"val":"shatters","id":"gl_shattered"}]
+                     }
+                 ]
+              }
+        ]
+    },
+    {
+        "id": "af_beast_floatfish_floatingtoxin",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Floating Toxin",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "The fish shoots a spiny dart into the bloodstream of a character in range, marking them.",
+                "glossary":[
+                    {"val":"marking","id":"gl_mark"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "While marked, the character has flying, cannot dash, rush, or teleport, cannot benefit from sturdy, and is shoved 2 in a random direction at the end of their turns.",
+                "glossary":[
+                    {"val":"marked","id":"gl_mark"},
+                    {"val":"flying","id":"gl_flying"},
+                    {"val":"dash","id":"gl_dash"},
+                    {"val":"rush","id":"gl_rush"},
+                    {"val":"teleport","id":"gl_teleport"},
+                    {"val":"sturdy","id":"gl_sturdy"},
+                    {"val":"shoved","id":"gl_shove"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "Roll 1d6 for the direction, relative to the map (from the GM's perspective)."
+            },
+            {
+                "tags":{"desc_type":"list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags":{"desc_type":"effect"},
+                        "content": "1 - ",
+                        "subcontent": [
+                            {
+                                "tags":{"desc_type":"desc"},
+                                "content": "Fish Chooses"
+                            }
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"effect"},
+                        "content": "2 - ",
+                        "subcontent": [
+                            {
+                                "tags":{"desc_type":"desc"},
+                                "content": "Up"
+                            }
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"effect"},
+                        "content": "3 - ",
+                        "subcontent": [
+                            {
+                                "tags":{"desc_type":"desc"},
+                                "content": "Down"
+                            }
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"effect"},
+                        "content": "4 - ",
+                        "subcontent": [
+                            {
+                                "tags":{"desc_type":"desc"},
+                                "content": "Left"
+                            }
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"effect"},
+                        "content": "5 - ",
+                        "subcontent": [
+                            {
+                                "tags":{"desc_type":"desc"},
+                                "content": "Right"
+                            }
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"effect"},
+                        "content": "6 - ",
+                        "subcontent": [
+                            {
+                                "tags":{"desc_type":"desc"},
+                                "content": "Character Chooses"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "A character can save against this mark after being shoved this way, ending it on a success.",
+                "glossary":[
+                    {"val":"mark","id":"gl_mark"},
+                    {"val":"shoved","id":"gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_doomcloak_chasingclaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack":true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Chasing Claw",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss: ",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"Fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Shove 1, and Doomcloak can fly 1.",
+                        "glossary":[{"val":"Shove","id":"gl_shove"},{"val":"fly","id":"gl_flying"}]
+                    }
+                ]
+             },
+             {
+                 "tags": {"desc_type":"effect"},
+                 "content":"Effect:",
+                 "subcontent":[
+                     {
+                         "tags":{"desc_type":"desc"},
+                         "content":"Deals bonus damage to choked foes.",
+                         "glossary":[{"val":"bonus damage","id":"gl_bonusdamage"}]
+                     }
+                 ]
+              }
+        ]
+    },
+    {
+        "id": "af_beast_doomcloak_rake",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Rake",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Foes in the area take fray damage.",
+                "glossary":[{"val":"fray","id":"gl_fray"}]
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"The beast may rush to any space in the area after this action resolves.",
+                "glossary":[{"val":"rush","id":"gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_doomcloak_acidstream",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Acid Stream",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Foes in the area take 2 damage and are shoved 1.",
+                "glossary":[{"val":"shoved","id":"gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_doomcloak_choke",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Choke",
+        "description":  [
+            {
+                "tags":{"desc_type":"desc"},
+                "content": "The Doomcloak gains 8 vigor, then moves into an adjacent foe’s space, sharing it, with the following effects:",
+                "glossary":[
+                    {"val":"vigor","id":"gl_vigor"}
+                ]
+            },
+            {
+                "tags":{"desc_type":"list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content": "While in this stance, both this beast and its chosen foe are immobile.",
+                        "glossary":[
+                            {"val":"stance","id":"gl_stance"},
+                            {"val":"immobile","id":"gl_immobile"}
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content": "The choked foe takes [D]+fray damage at the start of their turn, ignoring vigor, and cannot gain vigor while being smothered.",
+                        "glossary":[
+                            {"val":"[D]","id":"gl_damagedice"},
+                            {"val":"fray","id":"gl_fray"},
+                            {"val":"vigor","id":"gl_vigor"}
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content": "When the Doomcloak takes damage, the choked foe take 2 piercing damage. This effect can trigger any number of times.",
+                        "glossary":[
+                            {"val":"piercing","id":"gl_piercing"}
+                        ]
+                    },
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content": "When the Doomcloak’s vigor is broken or replaced, this stance ends, removing it, and placing it into an adjacent space.",
+                        "glossary":[
+                            {"val":"vigor","id":"gl_vigor"},
+                            {"val":"stance","id":"gl_vigor"}
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

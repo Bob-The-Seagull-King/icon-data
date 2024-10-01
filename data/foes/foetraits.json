@@ -352,6 +352,278 @@
                         ]
     },
     {
+        "id": "tf_beast_harpy_earsplittingsong",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ear Splitting Song",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Harpy has aura 2. Foes in the aura gain +1 curse on saves and do not save against statuses at the end of their turn. The aura increases to aura 3 when the Harpy is bloodied.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"},
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_barghest_aetherflesh",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherflesh",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barghest can teleport 5 instead of taking a standard move.",
+                "glossary": [
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_canopticswarm_amorphous",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can share space with other characters and objects. Any foes that end their turn inside its space take fray damage. Does not provide obstruction, but characters treat its space as difficult terrain.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_beast_bicorn_aetherskin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherskin",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When bloodied, becomes intangible until the end of its next turn.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_beast_bonabra_bounteousrest",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bounteous Rest",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra starts combat asleep."
+            }    ,                      
+            {
+                "tags": {"desc_type" : "ga["},
+                "content": ""
+            }    ,                      
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Bonabra is damaged at all by a foe’s ability, it wakes up and flies into an unstoppable rage. It also wakes up at the start of round 4. If combat ends before then, or all its allies are defeated before then, the Bonabra remains asleep and is instantly defeated."
+            }    
+        ]
+    },
+    {
+        "id": "tf_beast_bonabra_bounteousrest_action",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Resting",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra cannot act or move outside of its turn, and only takes one action on its turn."
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_bonabra_unstoppablerage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rage",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra gains 3 actions, can use its Unstoppable Rage abilities, and can only use those abilities, dash, interact, and standard move."
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_bonabra_shelteringmass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sheltering Mass",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra blocks line of sight and can be used as cover as though it was a height 3 object.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_megacrab_armour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Armour",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has armor 10.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_megacrab_flipover",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Flip Over",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When taking damage more than its armor total, loses all armor, becomes stunned, and all attacks against it deal bonus damage. These effects last until the end of its next turn.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "stunned", "id": "gl_stunned"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_landshark_landswim",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Landswim",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The shark has evasion and phasing. The shark cannot move through objects. If the shark collides with an object, it is stunned and loses this trait until the end of its next turn.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "collides", "id": "gl_collide"},
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_landshark_dart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dart",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of its turn, the land shark shoves itself as far as possible towards the closest foe, with each space of its movement moving closer to that foe.",
+                "glossary": [
+                    {"val": "shoves", "id": "gl_shove"}
+                ]
+            } ,                                 
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            } ,                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the closest foe is standing on an object, as soon as the shark would move onto the object’s space, it collides with it and stops moving.",
+                "glossary": [
+                    {"val": "collides", "id": "gl_collide"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_special_immmobile",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immobile",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains immobile.",
+                "glossary": [
+                    {"val": "immobile", "id": "gl_immobile"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "tf_special_counter",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Counter",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains counter.",
+                "glossary": [
+                    {"val": "counter", "id": "gl_counter"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "tf_special_unstoppable",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unstoppable",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains unstoppable.",
+                "glossary": [
+                    {"val": "unstoppable", "id": "gl_unstoppable"}
+                ]
+            }  
+        ]
+    },
+    {
         "id": "tf_faction_beast_brawlerbeast_primalstrength",
         "type": "Trait",
         "source": "core",
