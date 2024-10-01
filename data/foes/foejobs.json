@@ -1219,7 +1219,7 @@
         "stats": {"size": 3},
         "actions": [],
         "removed_actions": [],
-        "traits": [],
+        "traits": ["tf_beast_bonabra_bounteousrest"],
         "removed_traits": [],
         "category": "unique",
         "phases": [
