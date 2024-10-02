@@ -7113,6 +7113,174 @@
         ]
     },
     {
+        "id": "af_beast_aethertick_aetherwarp",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Aetherwarp",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aethertick and its host teleport 3.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_yellowcreeper_spore",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Spore",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Creeper puts down two terrain effects in free spaces in range."
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Characters that pass through these spaces gain spore infestation, with the following effects:"
+                                }]
+            },                               
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While they have the infestation, they are sealed+.",
+                        "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "+", "id": "gl_ongoing"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When a character with a spore infestation is defeated, they release an explosion around them, dealing [D]+fray as a medium blast area effect centered on them and pacifying all characters within. Pacified characters take maximum damage.",
+                        "glossary": [
+                            {"val": "[D]", "id": "gl_damagedice"},
+                            {"val": "fray", "id": "gl_fray"},
+                            {"val": "medium blast", "id": "gl_blast"},
+                            {"val": "area effect", "id": "gl_areaeffect"},
+                            {"val": "pacifying", "id": "gl_pacified"},
+                            {"val": "Pacified", "id": "gl_pacified"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Spore infestation can be removed if a character is cured, instead of any other of cure’s regular effects." ,
+                        "glossary": [{"val": "cured", "id": "gl_cure"},{"val": "cure’s", "id": "gl_cure"}]                    
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_yellowcreeper_puppet",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Puppet",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character with spore infestation is shoved 3 spaces in a direction of the creeper’s choosing, then may deal fray damage to an adjacent character of the Creeper’s choice.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_yellowcreeper_detonatethralls",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Detonate Thralls",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Any number of characters with spore infestation explode as if defeated, ending the infestation."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_naillascorpseflower_pacifyingspores",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 5,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Pacifying Spores",
+        "description":  [   
+            
+        {
+            "tags": [{"desc_type": "desc"}],
+            "content": "Foes are pacified, then must save or take [D]+fray, or just fray damage on a successful save.",
+            "glossary": [{"val": "pacified", "id": "gl_pacified"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+        },
+        {
+            "tags": [{"desc_type": "gap"}],
+            "content": ""
+        },
+        {
+            "tags": [{"desc_type": "desc"}],
+            "content": "Pacified foes take double damage.",
+            "glossary": [{"val": "Pacified", "id": "gl_pacified"}]
+        }
+        ]
+    },
+    {
+        "id": "af_beast_naillascorpseflower_morpheus",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Morpheus",
+        "description":  [   
+            
+        {
+            "tags": [{"desc_type": "desc"}],
+            "content": "A foe in range 6 is pacified and must save.",
+            "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+        },
+        {
+            "tags": [{"desc_type": "gap"}],
+            "content": ""
+        },
+        {
+            "tags": [{"desc_type": "desc"}],
+            "content": "On a failed save, they become so sleepy that they cannot attack, dash, fly, or teleport on their following turn, then this effect ends.",
+            "glossary": [
+                {"val": "dash", "id": "gl_dash"},
+                {"val": "fly", "id": "gl_flying"},
+                {"val": "teleport", "id": "gl_teleport"}
+            ]
+        }
+        ]
+    },
+    {
         "id": "af_beast_leader_berserk",
         "type": "Ability",
         "source": "core",

@@ -571,6 +571,94 @@
         ]
     },
     {
+        "id": "tf_beast_ruinape_maliciousscreeching",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Malicious Screeching",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Ape or its host is bloodied, it has aura 2. Foes in the aura are sealed+, take bonus damage, and take 2 piercing damage if they end their turn there.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "sealed", "id": "gl_sealed"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_bubblefish_bubblebarrier",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bubble Barrier",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the fish or its host are bloodied, the fish and its host have evasion. Any foe that starts or ends its turn adjacent to the host while the barrier is active is shoved 1 away from it.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foe is stunned.",
+                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_aethertick_turnbolts",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Turn Bolts",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Tick or its host are bloodied, it has aura 2. Attacks from outside the aura against characters in the aura gain +1 curse and deal half damage.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_naillascorpseflower_acidburst",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Acid Burst",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Flower or its host take damage, all adjacent foes take 1 piercing damage. This effect can trigger any number of times a round, and does not break pacified.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "pacified", "id": "gl_pacified"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_beast_bonabra_bounteousrest_action",
         "type": "Trait",
         "source": "core",

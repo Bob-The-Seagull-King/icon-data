@@ -1327,6 +1327,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_beast_leader_ruinape",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruin Ape",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Small and intelligent simians that form symbiotic, if slightly one-sided, relationships with other monsters."
+            }
+        ],
+        "stats": { },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_beast_ruinape_maliciousscreeching"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_leader_bubblefish",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bubble Fish",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A Lungfish that covers the head of monsters or kin, acting as a filtration system for the fetid air of dungeons."
+            }
+        ],
+        "stats": { },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_beast_bubblefish_bubblebarrier"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_leader_aethertick",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aethertick",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This slow moving bug absorbs Aether, which can tear at the life force of living beings and warp space around it. It has the uncanny ability to teleport arrows or even bolts of magic partially out of existence."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_aethertick_aetherwarp"],
+        "removed_actions": ["af_beast_leader_spur"],
+        "traits": ["tf_beast_aethertick_turnbolts"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_leader_yellowcreeper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Yellow Creeper",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This parasitic creature is a symbiotic fungus with deadly spores that it uses to control other creatures."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_yellowcreeper_spore","af_beast_yellowcreeper_puppet","af_beast_yellowcreeper_detonatethralls"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_leader_niallascorpseflower",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nialla’s Corpseflower",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A carnivorous flower that grows over fierce dungeon beasts. The flower feeds off carrion by putting its host to sleep mid-meal."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_naillascorpseflower_pacifyingspores","af_beast_naillascorpseflower_morpheus"],
+        "removed_actions": [],
+        "traits": ["tf_beast_naillascorpseflower_acidburst"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_unique_harpy",
         "type": "FoeJob",
         "source": "core",
