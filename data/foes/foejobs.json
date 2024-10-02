@@ -1102,6 +1102,106 @@
         "chapter": 1
     },
     {
+        "id": "fj_beast_heavy_halitoad",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Halitoad",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The enormous and foul-smelling Halitoad uses its long tongue to strangle and digest its prey."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_halitoad_tongueflick"],
+        "removed_actions": ["af_beast_heavy_wildtoss"],
+        "traits": ["tf_beast_halitoad_stench"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_heavy_hornedrooter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Horned Rooter",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Large omnivores that use their horns to tear up dungeon stones and get at the roots and insects within."
+            }
+        ],
+        "stats": { "size": 2 },
+        "actions": ["af_beast_hornedrooter_earthbreaker"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_heavy_howler",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Howler",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Part ape, part wolf, the Howler is a hyper aggressive monster with a bad temper."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_howler_howl","af_beast_howler_bulkup","af_beast_howler_irondriver"],
+        "removed_actions": [],
+        "traits": ["tf_special_counter"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_heavy_baggoth",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Baggoth",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous beast found in overgrown dungeons. Its long tusks, thick and shaggy coat of hair, and sword-length claws make it a formidable opponent. Though fierce in appearance and quick to anger it spends most of its day sleeping and mostly forages for carrion, berries, and roots."
+            }
+        ],
+        "stats": { "size": 3, "speed": 2, "dash": 1 },
+        "actions": ["af_beast_baggoth_terraslam"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_beast_baggoth_shaggymass","tf_beast_baggoth_rancor"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_unique_harpy",
         "type": "FoeJob",
         "source": "core",

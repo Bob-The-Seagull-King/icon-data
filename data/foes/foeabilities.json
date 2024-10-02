@@ -6365,6 +6365,110 @@
                         ]
     },
     {
+        "id": "af_beast_halitoad_tongueflick",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Tongue Flick",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The toad shoves a a character in range one space towards it, or 3 spaces if the toad or its target is bloodied.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"},{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_hornedrooter_earthbreaker",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Earth Breaker",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rooter either creates a height 1 debris object in range, or removes an object in that range. Characters adjacent to an object when it is placed or removed take 2 damage."
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_howler_howl",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Howl",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes in range 2 take 2 damage, are weakened, and must save or be stunned.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_howler_bulkup",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bulk Up",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Howler gains 4 vigor, or 6 vigor if bloodied.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_howler_irondriver",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Iron Driver",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Howler grabs an adjacent character, removing them from the battlefield, then rushes 2 spaces in any direction, placing them in a free adjacent space and slamming them into the ground repeatedly.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "That foe is slashed and must save or take 3 damage, three times or just 1 damage, three times on a successful save.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+            }
+                        ]
+    },
+    {
         "id": "af_beast_heavy_wildtoss",
         "type": "Ability",
         "source": "core",
@@ -6470,6 +6574,70 @@
                 "glossary": [{"val": "rushing", "id": "gl_rush"},{"val": "rushed", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
             }
                         ]
+    },
+    {
+        "id": "af_beast_baggoth_terraslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "true_strike": true,
+            "blast_size": "medium",
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Terraslam",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a pit under the attack target, and one or two height 1 debris object in the area.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase damage on hit or miss by +[D] against weakened or slashed foes.",
+                        "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "weakened", "id": "gl_weakened"},{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "af_beast_skirmisher_ambush",

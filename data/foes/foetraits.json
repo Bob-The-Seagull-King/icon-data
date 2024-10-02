@@ -444,6 +444,58 @@
         ]
     },
     {
+        "id": "tf_beast_halitoad_stench",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stench",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This beast has aura 1. Foes in the aura take +1 curse on attacks and saves.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_baggoth_shaggymass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shaggy Mass",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Baggoth blocks line of sight and provides cover as though it was a height 3 object.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_baggoth_rancor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rancor",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that end their turn adjacent to the Baggoth take 3 damage and are slashed.",
+                "glossary": [
+                    {"val": "slashed", "id": "gl_slashed"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_beast_bonabra_bounteousrest_action",
         "type": "Trait",
         "source": "core",
