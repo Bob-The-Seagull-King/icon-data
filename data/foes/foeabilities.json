@@ -6836,6 +6836,161 @@
         ]
     },
     {
+        "id": "af_beast_skirmisher_wailicat_pounce",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Pounce",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The cat gains stealth. Choose a foe in range.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If, at the end of that foe’s next turn, they are in range 3 of the cat, it may teleport adjacent to them and deal 6 damage, ending this effect.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_burrower_burrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Burrow",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Burrower marks a foe in range. The Burrower digs down and creates a pit under itself.",
+                "glossary": [{"val": "marks", "id": "gl_mark"},{"val": "pit", "id": "gl_pit"}]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, at the end of that foe’s turn, the beast can remove itself from the battlefield, then return in any adjacent space to them, dealing 3 damage to them.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the marked foe is not adjacent to any allies, the beast deals 3 damage three times to them, then gains stealth.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_skinnershrike_blindingspeed",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Blinding Speed",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Shrike teleports 3.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If it started this teleport adjacent to a foe, that foe is blinded.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"},{"val": "blinded", "id": "gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_skinnershrike_stalkingslasher",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Stalking Slasher",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Until the start of its next turn, the Shrike gains aura 1. Itself and allies in the aura gain evasion.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "evasion", "id": "gl_evasion"}]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When it or an ally in the aura successful evades an attack, it can daze the attacker, then self or the triggering ally gains stealth, and can teleport 2.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "daze", "id": "gl_dazed"},{"val": "stealth", "id": "gl_stealth"},{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_skirmisher_skinnershrike_fowlplay",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Fowl Play",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Teleport 4, then deal 4 damage to an adjacent foe.",
+                        "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can repeat this effect, but must choose a different foe in range each time unless a foe has already been chosen by this ability, or this effect has triggered three times."
+            }
+        ]
+    },
+    {
         "id": "af_beast_skirmisher_rake",
         "type": "Ability",
         "source": "core",
@@ -6855,6 +7010,42 @@
                 "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "phasing", "id": "gl_phasing"}]
             }
         ]
+    },
+    {
+        "id": "af_beast_skirmisher_aetherachnid_phaseshift",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Phase Shift",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport the beast and all its adjacent allies 1 space in any direction.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_beast_skirmisher_aetherachnid_teleportingpoison",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Teleporting Poison",
+        "class_id": "yellow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 2 is blinded and teleported 1. Bloodied foes are teleported 3 instead.",
+                "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "Bloodied", "id": "gl_bloodied"}]
+            }
+                        ]
     },
     {
         "id": "af_beast_leader_scrabble",

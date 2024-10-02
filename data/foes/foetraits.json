@@ -496,6 +496,81 @@
         ]
     },
     {
+        "id": "tf_beast_wailicat_leap",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Leap",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This beast ignores height movement penalties. When it ends any movement on a lower elevation than it started, it gains flying for the duration of that movement.",
+                "glossary": [
+                    {"val": "flying", "id": "gl_flying"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_dungeonjelly_auraofdistortion",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Distortion",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 1. Allies inside the aura have evasion and foes are blinded+. Becomes aura 2 when bloodied.",
+                "glossary": [
+                    {"val": "Aura", "id": "gl_aura"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "blinded", "id": "gl_blinded"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_burrower_earthglide",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Earthglide",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Burrower is at home in the earth, granting it the following beneifts:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Has phasing.",
+                        "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While inside a pit, has evasion.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "evasion", "id": "gl_evasion"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Ambush creates a pit under its target, hit or miss.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_beast_bonabra_bounteousrest_action",
         "type": "Trait",
         "source": "core",

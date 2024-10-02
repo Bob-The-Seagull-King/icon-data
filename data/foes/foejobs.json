@@ -1202,6 +1202,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_beast_skirmisher_aetherachnid",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherachnid",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A large, spider-like beast that has the uncanny ability to phase through matter."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_aetherachnid_phaseshift","af_beast_skirmisher_aetherachnid_teleportingpoison"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_skirmisher_wailicat",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wailicat",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A lithe, furred beast that leaps forth from hiding with an ear splitting yowl."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_wailicat_pounce"],
+        "removed_actions": ["af_beast_skirmisher_stalkprey"],
+        "traits": ["tf_beast_wailicat_leap"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_skirmisher_dungeonjelly",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dungeon Jelly",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A phantasmal jellyfish-like beast that is so thin and light it can float through the air. Its cloud of toxin is potent and sought after by thrill seekers."
+            }
+        ],
+        "stats": { },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_beast_dungeonjelly_auraofdistortion"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_skirmisher_burrower",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Burrower",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A heavy clawed mammal that chews up and digests raw stone into a slurry which it uses to make its lair."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_burrower_burrow"],
+        "removed_actions": ["af_beast_skirmisher_stalkprey"],
+        "traits": ["tf_beast_burrower_earthglide"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_skirmisher_skinnershrike",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skinner Shrike",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A nasty terrestrial bird that has the habit of collecting trophies of its fallen prey to impress mates."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_skinnershrike_blindingspeed","af_beast_skirmisher_skinnershrike_stalkingslasher","af_beast_skirmisher_skinnershrike_fowlplay"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_unique_harpy",
         "type": "FoeJob",
         "source": "core",
