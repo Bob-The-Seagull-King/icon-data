@@ -1077,6 +1077,106 @@
         "chapter": 1
     },
     {
+        "id": "fj_folk_churner_doorkicker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Doorkicker",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Relic thieves and scouts who specialize in breaking doors, locks, and mechanisms to get prospective adventurers deeper into dungeons."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_doorkicker_kneeintheback", "af_churner_doorkicker_blackjack", "af_churner_doorkicker_prowl", "af_churner_doorkicker_wildgamble"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_churner_deepfarmer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Farmer",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Dour Churners who make a living out of growing various rare and exotic dungeon flora - which unfortunately only grow in the warped aether of dungeons. This requires a great deal of caution, bravery, and expertise."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_deepfarmer_raze", "af_churner_deepfarmer_swingshovel", "af_churner_deepfarmer_fertilize", "af_churner_deepfarmer_pullvegetable"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_churner_guide",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guide",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Savvy and seasoned dungeon explorers with the wits not to get into the adventuring business Tend to go the other way when the action starts."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_guide_tranquilize", "af_churner_guide_grapplinghook", "af_churner_guide_doubletime"],
+        "removed_actions": [],
+        "traits": ["tf_churner_guide_auraoffreedom"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_churner_shopkeep",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shopkeep",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The most noble of Churner professions, and the most common. Though sometimes derided as price-gouging opportunists, a lot of shopkeepers come from old and honorable families and recognize the necessity of preparation for a dungeon trip as an essential part of safe expeditions, making sure their prices are fair, and their shops well-stocked."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_shopkeep_banfromtheshop", "af_churner_shopkeep_chastise", "af_churner_shopkeep_openshop"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",

@@ -227,6 +227,21 @@
         ]
     },
     {
+        "id": "tf_churner_guide_auraoffreedom",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Freedom",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Aura 1. The Guide and allies in the aura are immune to movement penalties from terrain and elevation.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "immune", "id": "gl_immune"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_folk_camaraderie",
         "type": "Trait",
         "source": "core",
