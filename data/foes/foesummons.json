@@ -27,6 +27,76 @@
         "limit": 0
     },
     {
+        "id": "sm_churner_deepfarmer_mushroom",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Mushroom",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Aura 1. Characters in the spore-filled aura other than the Deep Farmer choke and are weakened.",
+                        "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "red",
+        "limit": 0
+    },
+    {
+        "id": "sm_churner_shopkeep_shop",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "object": true,
+            "immobile": true
+        },
+        "eventtags": {},
+        "name": "Shop",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "No fighting in the shop. Aura 1. Characters in the area other than the shopkeep are pacified+.",
+                        "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"},  {"val": "+", "id": "gl_ongoing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While the shop is active, any character in the aura can use the Rummage action, which ignores pacified.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_churner_shopkeep_rummage"
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
         "id": "sm_relict_artillery_soulspark",
         "type": "Summon",
         "source": "core",

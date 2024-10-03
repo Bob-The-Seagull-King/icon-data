@@ -4640,6 +4640,464 @@
         ]
     },
     {
+        "id": "af_churner_doorkicker_kneeintheback",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Knee in the Back",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage if made from stealth.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "stealth", "id": "gl_stealth"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_doorkicker_blackjack",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Blackjack",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is dazed. If made from stealth, this action also deals fray damage.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}, {"val": "stealth", "id": "gl_stealth"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_doorkicker_prowl",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Prowl",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 1 and gain stealth.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}, {"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_doorkicker_wildgamble",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Wild Gamble",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Roll 1d6. Dash exactly that many spaces in a straight line, or as far as possible, then deal damage equal to the spaces moved to an adjacent foe. If no foes are adjacent, deal no damage.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_deepfarmer_raze",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Raze",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes in range 2 take 2 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_deepfarmer_swingshovel",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Swing Shovel",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1, then Roll 1d6. An adjacent character takes that much damage, and is shoved half that number of spaces.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_deepfarmer_fertilize",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Fertilize",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Deep Farmer chooses a space in range. At the end of their turn, this space grows into a mushroom object."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_churner_deepfarmer_mushroom"
+            }
+        ]
+    },
+    {
+        "id": "af_churner_deepfarmer_pullvegetable",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Pull Vegetable",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Deep farmer pulls out a massive vegetable by the roots. Its next attack deals bonus damage and stuns on hit. Stunned foes are critically hit (+[D]) on hit.",
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "stuns", "id": "gl_stunned"}, {"val": "critically hit", "id": "gl_criticalhit"}, {"val": "+[D]", "id": "gl_damagedice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_guide_tranquilize",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Tranquilize",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage and foe is pacified. Pacified foes take [D]+fray instead.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_guide_grapplinghook",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Grappling Hook",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Guide teleports adjacent to a summon or object in range. Alternately, it can teleport adjacent to a foe in range, then shove that foe 1.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "teleport", "id": "gl_teleport"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_guide_doubletime",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Double Time",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Roll 1d6. The Guide chooses a number of allies equal to half that number, then shoves them a number of spaces equal to that number in any direction.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_shopkeep_banfromtheshop",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Ban From the Shop",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Autohit:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Fray damage.",
+                    "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "[D]", "id": "gl_damagedice"}]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe is marked. While marked, if they end their turn in the shop’s aura, they take [D] + fray piercing damage.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_shopkeep_chastise",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Chastise",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character in range takes 1 piercing damage. If that character attacks before the end of their next turn, they take [D]+fray piercing damage and this effect ends.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_churner_shopkeep_openshop",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Open Shop",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Shopkeep opens their shop, a size 1 object, summoning it in an adjacent space. It lasts until the shopkeep is defeated or this ability is used again.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_churner_shopkeep_shop"
+            }
+        ]
+    },
+    {
+        "id": "af_churner_shopkeep_rummage",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rummage",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character rummages in the shop and throws something at a character in range 3. Roll 1d6."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "1. 10 Foot Pole:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes 2 damage and is shoved 2.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "2. Lantern:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes 4 damage and loses stealth.",
+                        "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "3. Ration:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes 1 damage. Place the ration in a free adjacent space. A character can eat it by entering its space and using 1 action to gain 5 vigor.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "4. Bomb:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Medium blast, deals [D]+fray damage.",
+                                "glossary": [{"val": "Medium blast", "id": "gl_blast"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "5. Strange Mushroom:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes fray damage and becomes sealed.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}, {"val": "sealed", "id": "gl_sealed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "6.",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Choose two."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",
