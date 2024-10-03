@@ -659,6 +659,80 @@
         ]
     },
     {
+        "id": "tf_beast_blastbeetle_explosivedemise",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Explosive Demise",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, explodes in a small blast area effect centered on it. Characters inside are shoved 1 away from the origin space and must save or take [D]+fray, or fray on a successful save.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_redworm_dig",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dig",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can phase through terrain and characters.",
+                "glossary": [
+                    {"val": "phase", "id": "gl_phasing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_redworm_dwellerindark",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dweller In Dark",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Worm has the following abilities:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Immune to blinded.",
+                        "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May use its standard move to teleport from the area of any pit to any other pit in range 4",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "teleport", "id": "gl_teleport"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Has resistance while inside a pit.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "resistance", "id": "gl_resistance"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_beast_bonabra_bounteousrest_action",
         "type": "Trait",
         "source": "core",

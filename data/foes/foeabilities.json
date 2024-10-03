@@ -7221,6 +7221,167 @@
         ]
     },
     {
+        "id": "af_beast_ruincentipede_vile",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Vile",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range becomes vulnerable, then create two dangerous terrain spaces in free adjacent spaces.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_gulper_slimespit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 6
+        },
+        "eventtags": {},
+        "name": "Slime Spit",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Gulper shoots a line 6 stream of slime. Characters caught in the area when it is created are shoved 1. Allies are shoved 2 instead, and can be shoved in any direction.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foe takes 1 piercing damage twice and is is shattered.",
+                    "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shattered", "id": "gl_shattered"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_ironfeather_featherspray",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Feather Spray",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters take 1 piercing damage twice and are shoved 1. Then, the Ironfeather may fly 2 spaces for every foe caught in the area.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "shoved", "id": "gl_shove"},{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_blastbeetle_rocketjump",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Rocket Jump",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Beetle flies 2.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_blastbeetle_acidignition",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 6,
+            "blast_size": "large",
+            "round": 3
+        },
+        "eventtags": {},
+        "name": "Acid Ignition",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to and can critical hit (+[D]) vulnerable foes.",
+                                    "glossary": [
+                                        {"val": "bonus damage", "id": "gl_bonusdamage"},
+                                        {"val": "[D]", "id": "gl_damagedice"},
+                                        {"val": "vulnerable", "id": "gl_vulnerable"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_redworm_tunnel",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Tunnel",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Red Worm creates a pit under itself, then another pit in range 6. It then removes itself from the battlefield and reemerges in the second pit. When it emerges, it deals 1 piercing damage three times to all foes in range 2 as an area effect.",
+                "glossary": [
+                    {"val": "pit", "id": "gl_pit"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "area effect", "id": "gl_areaeffect"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_beast_naillascorpseflower_pacifyingspores",
         "type": "Ability",
         "source": "core",

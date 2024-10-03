@@ -1452,6 +1452,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_beast_artillery_ruincentipede",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruin Centipede",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These huge, man sized insects are a potent symbol of bad luck in most villages."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_ruincentipede_vile"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_artillery_gulper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gulper",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This amphibian exudes a thick layer of slime when threatened, which it can spit as a weapon."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_gulper_slimespit"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_artillery_ironfeather",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ironfeather",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This greedy avian’s feathers are spine-like and can be shot like quills at range."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_ironfeather_featherspray"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_artillery_blastbeetle",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blast Beetle",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Volcanic beetles with chemical blood and spit so volatile that it ignites on contact with the air."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_blastbeetle_rocketjump","af_beast_blastbeetle_acidignition"],
+        "removed_actions": [],
+        "traits": ["tf_beast_blastbeetle_explosivedemise"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_artillery_redworm",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Red Worm",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive, muscular worm the size of a person, found only in deep dungeons. Resilient and able to tunnel through solid rock by exuding a powerful acid. Exists only to eat."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_redworm_tunnel"],
+        "removed_actions": [],
+        "traits": ["tf_beast_redworm_dig","tf_beast_redworm_dwellerindark"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_unique_harpy",
         "type": "FoeJob",
         "source": "core",
