@@ -5098,6 +5098,467 @@
         ]
     },
     {
+        "id": "af_guilder_guard_mace",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Mace",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_guard_shieldcharge",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Shield Charge",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Guard rushes 1, then adjacent foe is shoved 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_guard_getdown",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Get Down!",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Guard gains the following interrupt until the end of their next turn. If the interrupt goes unused until then, they may rush 2.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_guilder_guard_getdown_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_guard_getdown_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Get Down!",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An ally takes damage that would reduce them to 0 hp."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Guard can rush 3. If that puts them adjacent to their ally, that ally goes to 1 hp instead, and the guard sacrifices 25% of their hp.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "sacrifices", "id": "gl_sacrifice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_guard_onthespot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "On the Spot",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Guard chooses a space in range, which could be under themselves. While standing on the spot, the Guard has resistance. This effect lasts until this ability is used again.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_skyknight_oathsword",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Oath Sword",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage and slashes on hit if the knight is bloodied.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "slashes", "id": "gl_slashed"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_skyknight_strike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Strike",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is slashed. Slashed foes take fray damage.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_skyknight_stinger",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Stinger",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sky knight rushes 2 spaces in a straight line, then deals 3 damage, twice, to an adjacent foe. This action can only be taken if there are no foes adjacent.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_skyknight_greatstride",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Great Stride",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sky Knight rushes up to 6 spaces in a straight line, phasing through characters. Foes they pass through take 2 damage, and are then shoved 1 to either side, and the knight gains 2 vigor per foe passed through.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "phasing", "id": "gl_phasing"}, {"val": "shoved", "id": "gl_shove"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_aeronaut_strafeshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 4,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Strafe Shot",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 1.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 1.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_aeronaut_doubletap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Double Tap",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aeronaut flies 3 spaces in a straight line. At the start and end of their movement, they may deal 2 damage to a character in range 3, choosing different characters each time.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_aeronaut_blindinggrenade",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Blinding Grenade",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 3 is blinded. Blinded foes take 3 damage.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_aeronaut_takeoff",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Takeoff",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aeronaut launches into the air. While in this stance, they are flying and have evasion. They lose this stance if they are hit by an attack.",
+                "glossary": [{"val": "flying", "id": "gl_flying"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "stance", "id": "gl_stance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_aerothurge_highpressure",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 6,
+            "blast_size": "large",
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "High Pressure",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage, four times.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Can target one end of a portal. If so, the attack travels through the portal and is then retargeted to a new space or character within range 3 of the other end of the portal, as if by rebound.",
+                        "glossary": [{"val": "rebound", "id": "gl_rebound"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_aerothurge_whisk",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Whisk",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range becomes vulnerable, then is teleported 1. Vulnerable foes are teleported 3 instead.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "teleported", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_guilder_aerothurge_aetherportal",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Aether Portal",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aerothurge chooses any two free spaces on the battlefield and links them with glowing portals."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_guilder_aerothurge_portal"
+            }
+        ]
+    },
+    {
         "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",

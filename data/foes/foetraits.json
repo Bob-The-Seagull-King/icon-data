@@ -242,6 +242,36 @@
         ]
     },
     {
+        "id": "tf_guilder_guard_holdtheline",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hold the Line",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "If the Guard ends any turn without attacking, they gain Sturdy and Vigilance +1.",
+                "glossary": [{"val": "Sturdy", "id": "gl_sturdy"}, {"val": "Vigilance", "id": "gl_vigilance"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_guilder_aeronaut_aerialacrobat",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aerial Acrobat",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "If an attack misses the Aeronaut, they may deal 2 damage to the attacker, then fly 2.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_folk_camaraderie",
         "type": "Trait",
         "source": "core",

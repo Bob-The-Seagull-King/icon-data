@@ -97,6 +97,33 @@
         "limit": 0
     },
     {
+        "id": "sm_guilder_aerothurge_portal",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Portal",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Any character adjacent to a portal can spend 2 spaces of movement to teleport adjacent to the other linked portal, or vice versa.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
         "id": "sm_relict_artillery_soulspark",
         "type": "Summon",
         "source": "core",

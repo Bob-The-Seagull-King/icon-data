@@ -1177,6 +1177,106 @@
         "chapter": 1
     },
     {
+        "id": "fj_folk_guilder_guard",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guard",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "City militia and watchmen, sometimes on the payrolls of the Great Guilds."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_guard_mace", "af_guilder_guard_shieldcharge", "af_guilder_guard_getdown", "af_guilder_guard_onthespot"],
+        "removed_actions": [],
+        "traits": ["tf_guilder_guard_holdtheline"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_guilder_skyknight",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sky Knight",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Knights from the great guild academies. Renowned explorers and merchants that swear oaths of valor on their swords, the sky knights serve the colleges and will throw their lives down in service of progress, science, and protection."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_skyknight_stinger", "af_guilder_skyknight_oathsword", "af_guilder_skyknight_strike", "af_guilder_skyknight_greatstride"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_guilder_aeronaut",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aeronaut",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Elite crew of the airships and dwellers of the teetering city spires of Arden Eld’s great cities. Aeronauts use aether powered gear to soar, dive, and spin in midair during work and combat."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_aeronaut_strafeshot", "af_guilder_aeronaut_doubletap", "af_guilder_aeronaut_blindinggrenade", "af_guilder_aeronaut_takeoff"],
+        "removed_actions": [],
+        "traits": ["tf_guilder_aeronaut_aerialacrobat"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_guilder_aerothurge",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aerothurge",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Highly skilled wrights that are navigators of the airships. Airships fly not on air, but on currents of Aether, so only someone highly skilled and with a great degree of sensitivity can guide them safely around its surges and storms."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_aerothurge_highpressure", "af_guilder_aerothurge_whisk", "af_guilder_aerothurge_aetherportal"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",
