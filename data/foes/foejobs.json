@@ -1109,7 +1109,7 @@
         "eventtags": {},
         "name": "Deep Farmer",
         "faction_id": "fc_folk_churner",
-        "class_id": "cl_foe_skirmisher",
+        "class_id": "cl_foe_heavy",
         "description": [
             {
                 "tags": {"desc_type" : "subeffect"},
