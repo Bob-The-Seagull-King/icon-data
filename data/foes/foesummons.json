@@ -595,6 +595,21 @@
         "limit": 2
     },
     {
+        "id": "sm_beast_kinfisher_lure",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Lure",
+        "description":  [
+        ],
+        "blurb":  [],
+        "colour": "blue"
+    },
+    {
         "id": "sm_general_master_rallypoint_ph2",
         "type": "Summon",
         "source": "core",

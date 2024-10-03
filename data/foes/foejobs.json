@@ -1939,6 +1939,141 @@
         "chapter": 3
     },
     {
+        "id": "fj_beast_elite_kelpie",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Kelpie",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This horselike predator dwells in shallow pools of stagnant water that are found in blighted regions. Like a crocodile, it is an ambush predator, its slimy skin acting as an adherent. It is surprisingly intelligent and will often act injured or pass itself off as an ordinary horse in order to lure Kin close to it to attack."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2 },
+        "actions": ["af_beast_kelpie_adhere","af_beast_kelpie_savagefang","af_beast_kelpie_waterspout","af_beast_kelpie_submerge","af_beast_kelpie_sink"],
+        "removed_actions": [],
+        "traits": ["tf_beast_kelpie_curseddeeps","tf_beast_kelpie_aquatic"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_elite_hellhound",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hellhound",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A spiny dog-like creature with an incredible stomach. It is able to unhinge its jaws to gaping proportions to feed on toxic dungeon refuse, the which it boils into a fetid slurry in a special organ, swallowing and chewing into stone to help the digestion process. As an offshoot of this bizarre diet, the hellhound can belch clouds of poisonous and incredibly flammable gas."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2, "size": 2 },
+        "actions": ["af_beast_hellhound_corrosivegas","af_beast_hellhound_blast","af_beast_hellhound_hellishbreath","af_beast_hellhound_spitfire"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_elite_kinfisher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Kinfisher",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This bizarre creature is a land-dwelling lungfish the size of a draft horse, a relative of the land shark. It uses its enormous jaws to burrow through solid rock and a fleshy lure to draw in unwary travelers. At a distance, the lure can look like a wounded person, a bobbing lantern, or a fleeing spy - at least until the fish’s unlucky prey gets close enough to realize where they are standing."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2, "size": 2 },
+        "actions": ["af_beast_kinfisher_lure","af_beast_kinfisher_lurespines","af_beast_kinfisher_maw","af_beast_kinfisher_reelin","af_beast_kinfisher_acidspit","af_beast_kinfisher_submerge"],
+        "removed_actions": [],
+        "traits": ["tf_special_immmobile","tf_beast_kinfisher_perfectcamoflage"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_elite_basilisk",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Basilisk",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A pale, man-sized serpentine beast that eats and digests stone, wriggling through dungeon walls like a worm through a corpse. In order to process its prey more efficiently, its body and saliva secretes a magical toxin that can corrupt the aether of living flesh, desiccating them and turning them to stone, though the effect is reversible with treatment. Canny and older basilisks will keep gruesome ‘pantries’ of petrified statues for later consumption."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2 },
+        "actions": ["af_beast_basilisk_toxicspine","af_beast_basilisk_tailslash","af_beast_basilisk_gallstone"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_beast_basilisk_stonepantry","tf_beast_basilisk_petrification"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_elite_gigantapede",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gigantapede",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous burrowing insects that feed off livestock and large animals unlucky enough to fall into their nests. Generally ignore Kin unless provoked - then they have enough acid to melt a knight in full armor."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2 },
+        "actions": ["af_beast_gigantapede_ironscales","af_beast_gigantapede_thrash","af_beast_gigantapede_spinybody","af_beast_gigantapede_acidspray","af_beast_gigantapede_stinger","af_beast_gigantapede_burrow"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance","tf_special_sturdy","tf_beast_gigantapede_chitinouscoil"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",

@@ -712,6 +712,148 @@
         ]
     },
     {
+        "id": "tf_beast_kelpie_curseddeeps",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cursed Deeps",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, creates two terrain effects, medium blast areas of cursed deep water.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"}
+                ]
+            },                             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The center space is a pit, and all other spaces are difficult terrain. None can be placed within range 3 of each other.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_kelpie_aquatic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aquatic",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can move through all spaces of its own deep water areas normally, and has evasion in those areas.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_kinfisher_perfectcamoflage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfect Camoflage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Fisher is intangible unless there’s a foe adjacent to its Lure",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_basilisk_stonepantry",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stone Pantry",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has evasion while adjacent to an object. In addition, if this beast ends its turn adjacent to an object, it gains stealth.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_basilisk_petrification",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Petrification",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Some of the Basilisk’s abilities inflict petrification, which has the following effects:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When a character gains petrification, give them a token."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If a character reaches 3+ tokens, at the end of their turn, discard all petrification tokens, then they are defeated, removed from the battlefield, and replaced by a height 1 lifelike statue object with 10 hp. Return them to the battlefield and rescue them when the statue is destroyed. They can take a turn as normal starting with next round."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character can get rid of 1 petrification token if at the end of their turn if they have not attacked, and 1 petrification token if they have not moved."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_gigantapede_chitinouscoil",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chitinous Coil",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Gigantapede occupies an arc 6 space instead of a normal space for its size."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Only its first and last space (the head and the tail) are attackable or can be used to make attacks or abilities, but its entire body causes obstruction and engagement. Keep track of which is the head, and which is the tail."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Only one space can be hit if both are included in the area of an attack or ability (attacker chooses which)." 
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When it moves, move its head, then rearrange its body in any valid configuration."
+            }
+        ]
+    },
+    {
         "id": "tf_beast_redworm_dwellerindark",
         "type": "Trait",
         "source": "core",

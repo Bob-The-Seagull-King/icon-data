@@ -16655,5 +16655,928 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "af_beast_kelpie_adhere",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Adhere",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "When damaged by an ability from an adjacent foe."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The kelpie can force that foe to make a save or adhere to its hide."
+                }]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While adhered, the foe cannot move or be placed more than 1 space from the kelpie, and when the kelpie moves or teleports, they are removed from the battlefield, then placed adjacent to the kelpie when it stops moving.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They can save to repeat this effect at the end of their turn. A kelpie can only adhere to one character at once, and can choose which to keep or lose."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kelpie_savagefang",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Savage Fang",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[{
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "On Hit:",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content": "[D] + fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"fray","id":"gl_fray"}]
+                        }
+                    ]
+                },
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content":"Miss: ",
+                    "subcontent":[
+                        {
+                            "tags":{"desc_type":"desc"},
+                            "content":"Fray.",
+                            "glossary":[{"val":"[D]","id":"gl_damagedice"},{"val":"Fray","id":"gl_fray"}]
+                        }
+                    ]
+                }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect:",
+                "subcontent":[
+                    {
+                        "tags":{"desc_type":"desc"},
+                        "content":"Deal 3 damage to all other foes adjacent to the Kelpie."
+                    }
+                ]
+             },
+             {
+                 "tags": {"desc_type":"effect"},
+                 "content":"Effect:",
+                 "subcontent":[
+                     {
+                         "tags":{"desc_type":"desc"},
+                         "content":"Deals bonus damage to characters inside its deep water zones or characters adhered to the kelpie.",
+                         "glossary":[{"val":"bonus damage","id":"gl_bonusdamage"}]
+                     }
+                 ]
+              }
+        ]
+    },
+    {
+        "id": "af_beast_kelpie_waterspout",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Water Spout",
+        "class_id": "yellow",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Kelpie spurts fetid water, blinding a foe in range.",
+                "glossary": [{"val": "blinding", "id": "gl_blinded"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Blinded foes, or foes inside its deep water zone, take 3 damage.",
+                "glossary": [{"val": "Blinded", "id": "gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kelpie_submerge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Submerge",
+        "class_id": "yellow",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character inside one of the Kelpe’s deep water zones is teleported to any space inside one of its other zones.",
+                "glossary": [{"val": "teleported", "id": "gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes can pass a save to avoid this effect, but are dazed on a successful save.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kelpie_sink",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Sink",
+        "class_id": "yellow",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Kelpie disperses into seaweed and water and reappears in any space inside one of its deep water zones, teleporting.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_hellhound_corrosivegas",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Corrosive Gas",
+        "class_id": "blue",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Hellhound creates two terrain effect spaces in free spaces in range 6."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The area is dangerous terrain, and all damage against characters other than the hound at least partly in the space becomes piercing.",
+                "glossary": [{"val": "dangerous terrain", "id": "gl_dangerousterrain"},{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_hellhound_blast",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 6,
+            "blast_size": "small",
+            "combo": true,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Blast",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Round 4+:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The blast becomes Large."
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "foeability"}],
+                "content": "af_beast_hellhound_inferno"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_hellhound_inferno",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 4,
+            "burst": 2,
+            "combo": true,
+            "burst_target": "target"
+        },
+        "eventtags": {},
+        "name": "Inferno",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The attack target is shattered.",
+                                    "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_hellhound_hellishbreath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 4,
+            "width": 2,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Hellish Breath",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All characters take 2 piercing damage and are shoved 1.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shoved", "id": "gl_shove"}]
+            },   
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Corrosive gas clouds can also be moved 1 space towards or away from the Hellhound, which could cause them to enter characters’ spaces."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_hellhound_spitfire",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "pierce": true,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Spitfire",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Mark a character in range.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },   
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of that character’s next turn, if that character is still marked, the Hellhound shoots a fiery blast for a medium blast explosion area effect.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "medium blast", "id": "gl_blast"},{"val": "area effect", "id": "gl_areaeffect"}]
+            },   
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters within must save. On a successful save, they take fray damage. On a failed save they take [D]+fray. If the explosion would include one or more spaces of corrosive gas, it detonates the area, destroying it but dealing fray damage to all characters in the area per space detonated. Then, this effect ends.",
+                "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "[D]", "id": "gl_damagedice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kinfisher_lure",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Lure",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the Fisher puts a lure out adjacent to a foe of its choice.",
+                "glossary": [{"val": "lure", "id": "gl_summon"}]
+            },   
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_beast_kinfisher_lure"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_gigantapede_ironscales",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Iron Scales",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, either the Gigantapede’s head or tail becomes immune to all damage until the end of the round. The Gigantapede can choose which starts immune, but the effect must swap back and forth.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_gigantapede_thrash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Thrash",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe must save or be stunned. Can be made from the head or tail.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_gigantapede_spinybody",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Spiny Body",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All foes adjacent to the Gigantapede take 2 damage."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_gigantapede_stinger",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "multimark": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Stinger",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character adjacent to the Gigantapede’s tail is marked.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While marked, they are slashed+, and shoved 2 in a direction of the Gigantapede’s choice at the start of their turn.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "slashed", "id": "gl_slashed"},{"val": "+", "id": "gl_ongoing"},{"val": "shoved", "id": "gl_shove"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character can end this mark if they end their turn without moving.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_gigantapede_burrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Burrow",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All characters adjacent to the Gigantapede’s head are shoved 1, then remove it from the battlefield.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "It’s head then resurfaces in a new space in range 5, returning it to the battlefield. Place its body in any configuration."            
+            }
+        ]
+    },
+    {
+        "id": "af_beast_gigantapede_acidspray",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Acid Spray",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters inside must save or take 3 damage, damage 3 times, or just once on a successful save."
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Special:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Can only be made from the head."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kinfisher_lurespines",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Lure Spines",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "This attack can only be made from the Lure’s location instead of the Kingfisher’s main body."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kinfisher_maw",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Maw",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "3[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "[D] + fray",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe must save or be stunned.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to weakened foes.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kinfisher_reelin",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Reel In",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The fisher moves its lure up to 4 spaces towards it, then shoves all adjacent characters to the lure the same amount in the same direction.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters can pass a save to reduce this shove to 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kinfisher_acidspit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 6
+        },
+        "eventtags": {},
+        "name": "Acid Spit",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes take 3 damage and must save or be weakened.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_kinfisher_submerge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "requires": "bloodied",
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Submerge",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Kinfisher submerges into the ground, removing itself from the battlefield, then resurfaces in free space in range 4, even to an occupied area."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "When it resurfaces, characters in its area take fray damage, are removed then placed in the closest adjacent space of its choice, then shoved 1.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_basilisk_toxicspine",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "unerring": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Toxic Spine",
+        "class_id": "yellow",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "Fray",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a toxic pool difficult terrain effect space under the attack target.",
+                                    "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foes that end their turn in this space gain 1 petrification."
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "foeability"}],
+                "content": "af_beast_basilisk_toxiclash"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_basilisk_toxiclash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Toxic Lash",
+        "class_id": "yellow",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "Fray",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Inflict 1 petrification on the attack target."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_basilisk_tailslash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Tail Slash",
+        "class_id": "yellow",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range, takes 2 damage, is dazed, and infected with a petrifying poison.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of their next turn, they take 1 petrification unless they end that turn adjacent to one or more allies. Then, this effect ends. This effect does not stack."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_basilisk_gallstone",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Gall Stone",
+        "class_id": "yellow",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Basilisk spits up a height 1 object, a pillar of toxic bile, in range."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes that end their turn adjacent to one or more of these pillars gain 1 petrification per pillar."
+            }
+        ]
     }
 ]
