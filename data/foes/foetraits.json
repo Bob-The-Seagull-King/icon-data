@@ -340,6 +340,20 @@
         ]
     },
     {
+        "id": "tf_relict_legionary_legionsadvance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Death March",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Death March affects all allies in range 3."
+            }
+        ]
+    },
+    {
         "id": "tf_relict_husk_endlessdead",
         "type": "Trait",
         "source": "core",

@@ -19745,5 +19745,226 @@
                                 }]
             }
         ]
+    },
+    {
+        "id": "af_relict_tombguard",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Tomb Guard",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Tomb Guard gains aura 1 until the start of its next turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While this aura is active, the Tomb Guard gains counter, and allies without this ability in the aura gain resistance.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "counter", "id": "gl_counter"},
+                    {"val": "resistance", "id": "gl_resistance"}
+                ]
+            }
+            
+        ]
+    },
+    {
+        "id": "af_relict_impalingjab",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "true_strike": true,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Impaling Jab",
+        "description":  [  
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Servitor may rush 1 before using this ability.",
+                                    "glossary": [
+                                        {"val": "rush", "id": "gl_rush"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Area Effect:",
+                "glossary": [
+                    {"val": "Area Effect", "id": "gl_areaeffect"}
+                ],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Characters take 2 damage. Any character at the very end of the line is weakened.",
+                                    "glossary": [
+                                        {"val": "weakened", "id": "gl_weakened"}
+                                    ]
+                                }]
+            }
+            
+        ]
+    },
+    {
+        "id": "af_relict_exxecutioner_lightningaxe",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2,
+            "blast_size": "medium",
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Lightning Axe",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray and shove 2.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray and shove 1.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is weakened.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_heliolite_redondo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Redondo",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Swap places with an adjacent ally, removing and placing both characters."
+            }            
+        ]
+    },
+    {
+        "id": "af_relict_seekingjavelin",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Seeking Javelin",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is slashed.",
+                                    "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Has no maximum range and ignores cover against slashed foes.",
+                                    "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_legionary_carveapath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Carve a Path",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Repeat the following effect three times:"
+            } ,
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Either the Legionary or an adjacent ally rushes 1, then deals 2 damage to all adjacent foes and shoves them 1. This can affect the same foe more than once.",
+                                    "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+                                }]
+            }           
+        ]
     }
 ]

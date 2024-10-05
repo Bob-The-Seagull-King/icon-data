@@ -2468,6 +2468,136 @@
         "chapter": 1
     },
     {
+        "id": "fj_relict_heavy_tombguard",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tomb Guard",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Undead auxiliaries of the old legions, their shields and khopesh a common sight in the catacombs."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_tombguard"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_heavy_servitor",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Servitor",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Guards of the priest class, with wicked spears for tearing flesh and forcing obedience."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_impalingjab"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_heavy_executioner",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Executioner",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wielding heavy curved axes, these shock troops fight with little regard for their own existence."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_exxecutioner_lightningaxe"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_heavy_heliolite",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heliolite",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Skirmishers from the old legions, they fight with wicked, barbed spears and a canny malice."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_heliolite_redondo","af_relict_seekingjavelin"],
+        "removed_actions": ["af_relict_heavy_overpower"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_heavy_legionary",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Legionary",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "With interlocking shield, shortspear, and heavy helms, these soldiers made up the bulk of the arkenlords’ armies when they were still alive, trampling empires into dust."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_legionary_carveapath"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_relict_legionary_legionsadvance"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_mob_beastpack",
         "type": "FoeJob",
         "source": "core",
