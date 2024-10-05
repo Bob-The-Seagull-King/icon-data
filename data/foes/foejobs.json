@@ -2174,6 +2174,172 @@
         "chapter": 3
     },
     {
+        "id": "fj_beast_legend_chimera",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chimera",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some beasts of the blighted lands are especially susceptible to the warping energies of the arkenruins, absorbing them with such rapidity that they become enormous, multi-headed monstrosities, infused with tremendous aetheric and physical might. Occasionally these creatures are created when beasts of several types are fused by rogue aether surges. Even more rarely, these creatures are intentionally created by rogue wrights, unscrupulous lowlander clans, or ultra wealthy and morally loose guild barons looking for a pet monster. Any way they come into the world, the results are always horrifying, and the resultant beast is always a maddened, rampaging mess."
+            }
+        ],
+        "stats": { "hp": 60, "size": 2 },
+        "actions": ["af_beast_chimera_bound","af_beast_chimera_triplethreat"],
+        "removed_actions": [],
+        "traits": ["tf_beast_chimera_monstrousheads"],
+        "removed_traits": [],
+        "choices": ["tf_beast_chimera_choice_lion","tf_beast_chimera_choice_bull","tf_beast_chimera_choice_serpent","tf_beast_chimera_choice_crocodile","tf_beast_chimera_choice_toad","tf_beast_chimera_choice_baboon","tf_beast_chimera_choice_wolf","tf_beast_chimera_choice_goat","tf_beast_chimera_choice_chicken","tf_beast_chimera_choice_bear"],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Chimera begins combat in this phase, and enters Phase II when it has two heads remaining."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Chimera enters this phase when it has two heads remaining, and enters Phase III when it has one head remaining."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": [],
+                "traits": ["tf_special_sturdy"],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Chimera enters this phase when it has one head remaining, gaining +1 Action (to a total of 3)."
+                    }
+                ],
+                "name": "Phase III",
+                "actions": [],
+                "traits": ["tf_special_sturdy","tf_special_unstoppable"],
+                "stats": {"actions": 3}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chimera is a fairly simple legend fight that increases in tempo the more of its heads are defeated. Canny players may figure out that defeating all three heads at the same time can prevent some headaches, or they may choose to defeat a head that is giving their party composition particular trouble."
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_legend_apex",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Apex",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The absolute pinnacle of the ferocious wildlife that roam the blight lands, the Apexes are incredible dangerous, aggressive beasts that are the primal lords of their kind. These beasts are naturally occurring in some blight land species, but also occur when a particular beast gains unnatural power and strength from exposure to blighted food or soil. Apexes are incredibly durable, aggressive, and intelligent for beasts of their type, and display a range of incredible natural abilities, from shooting lightning from specially shaped scales, to venomous fangs, to clouds of steam generated from special glands. Thrill seekers, researchers, profiteers, and foolhardy adventurers alike pursue these beasts and seek to hunt or capture them for not only their rare and bizarre physiology, but also in hopes of curing them, studying them, or preventing them from preying on the hapless or unwary."
+            }
+        ],
+        "stats": { "size": 2 },
+        "actions": [],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "choices": ["tf_beast_apex_choice_toxic","tf_beast_apex_choice_thickhide","tf_beast_apex_choice_spines","tf_beast_apex_choice_horned","tf_beast_apex_choice_brutalstrength","tf_beast_apex_choice_burrowing","tf_beast_apex_choice_chameleonic","tf_beast_apex_choice_winged","tf_beast_apex_choice_lashingtail","tf_beast_apex_choice_carrioneater","tf_beast_apex_choice_sonicshriek","tf_beast_apex_choice_elementbreath"],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Apex begins combat in this phase, and enters Phase II at the start of round 4."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Hidden Might:",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "The apex’s third Might of the Wild ability becomes active."
+                            }
+                        ]
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Apex enters this phase at the start of round 4."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_beast_apex_terminoushowl"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex is a fairly straightforward Legend. It can stack up a lot of bonus damage with its abilities, especially using its Hunting Grounds, but players can also use these hunting grounds to temporarily disable its extra abilities. Players must be careful since they have limited hunting grounds available and their effects are erratic.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }
+        ],
+        "chapter": 2
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",

@@ -855,6 +855,603 @@
         ]
     },
     {
+        "id": "tf_beast_chimera_monstrousheads",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monstrous Heads",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chimaera has three heads, chosen or rolled for from the list of choices, each unique."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each head has 1/3 of the Chimaera’s total hp, rounded up."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When dealing damage to the Chimaera, a character must choose which head they are damaging, and can only target one head at once. Heads that are reduced to 0 hp are defeated. Damage that ‘spills over’ on one head is lost."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each head has unique set of abilities. Abilities become more powerful the less heads there are."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Statuses, marks, or other effects only affect the currently acting head.",
+                        "glossary": [{"val": "marks", "id": "gl_mark"}]
+                    }
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each time the Chimaera takes a turn, it takes a turn with only one of its heads. A different head must act from the last head that acted, unless there is only one head left. The Chimaera is only defeated when all three heads are defeated."
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_lion",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lion",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_lion_lionspride"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_lion_savagebite"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_lion_roar"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_lion_lionspride",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lion's Pride",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Lion is undefeated, reduces damage to all other heads by 2, as if from Armor.",
+                "glossary": [{"val": "Armor", "id": "gl_armor"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bull",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bull",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_bull_bullsfortitude"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bull_headbutt"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bull_rampantgalloping"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bull_bullsfortitude",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bull's Fortitude",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Bull is undefeated, the Chimaera is immune to being shoved.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_serpent",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Serpent",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_serpent_serpentsguile"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_serpent_numbingbite"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_serpent_poisonbliss"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_serpent_serpentsguile",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Serpent's Guile",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Serpent is alive and undefeated, bloodied foes deal only half damage to the Chimaera.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_crocodile",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crocodile",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_crocodile_crocodilessavagery"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_crocodile_openwound"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_crocodile_deathroll"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_crocodile_crocodilessavagery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crocodile's Savagery",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Crocodile is undefeated, the Chimaera’s attacks can critical hit (+[D]).",
+                "glossary": [{"val": "critical hit", "id": "gl_criticalhit"},{"val": "[D]", "id": "gl_damagedice"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_toad",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toad",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_toad_toadsrepulsion"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_toad_tongue"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_toad_swallowwhole"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_toad_toadsrepulsion",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toad's Repulsion",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Toad head is alive, all heads have counter.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_baboon",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Baboon",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_baboon_baboonsmalice"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_baboon_deepbreath"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_baboon_pyroclast"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_baboon_baboonsmalice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Baboon's Malice",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Baboon head is undefeated, all the Chimaera’s damage is piercing.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_wolf",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wolf",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_wolf_wolfsbrutality"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_wolf_savageclaw"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_wolf_shadowbreath"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_wolf_wolfsbrutality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wolf's Brutality",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Wolf head is undefeated, the Chimaera gains stealth if it ends its turn with no foes adjacent.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_goat",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Goat",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_goat_goatswisdom"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_goat_crossbolt"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_goat_primalmeteor"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_chicken",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chicken",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_chicken_chickensspite"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_chicken_peck"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_chicken_returntoegg"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_chicken_chickensspite",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chicken's Spite",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Chicken head is undefeated, all attacks against the Chimaera take +1 curse.",
+                "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bear",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bear",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_bear_bearsvitality"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bear_icypath"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bear_coldfeet"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bear_bearsvitality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bear's Vitality",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Bear is undefeated, the Chimaera’s Juggernaut trait triggers twice at the start of the round."
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_toxic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toxic",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_toxiccloud"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_thickhide",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thick Hide",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_harden"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_spines",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spines",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_sanguinebarb"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_horned",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Horned",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_primalcharge"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_brutalstrength",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brutal Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_stonetoss"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_burrowing",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Burrowing",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_apex_earthglide"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_seismicgeyser"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_chameleonic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chamelionic",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_apex_blendin"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_primalambush"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_winged",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Winged",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_apex_winged"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_talonsnatch"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_lashingtail",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lashing Tail",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_tailsweep"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_carrioneater",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Carrion Eater",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_carrionstash"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_sonicshriek",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sonic Shriek",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_shriek"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_elementbreath",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Element Breath",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_primalelements"
+            }
+        ]
+    },
+    {
         "id": "tf_beast_gigantapede_chitinouscoil",
         "type": "Trait",
         "source": "core",

@@ -17227,6 +17227,76 @@
         ]
     },
     {
+        "id": "af_beast_chimera_bound",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Bound",
+        "class_id": "icon",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chimaera rushes 3 or flies 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "flies", "id": "gl_flying"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then deals 2 damage to adjacent foes and shoves them 1.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_triplethreat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Triple Threat",
+        "class_id": "icon",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chimaera rushes 1, then deals 2 damage to an all adjacent foes.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Increase damage to 3."
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Also shove all foes 1.",
+                                    "glossary": [{"val": "shove", "id": "gl_shove"}]
+                                }]
+            }
+        ]
+    },
+    {
         "id": "af_beast_kelpie_waterspout",
         "type": "Ability",
         "source": "core",
@@ -18037,6 +18107,971 @@
             {
                 "tags": [{"desc_type": "desc"}],
                 "content": "Foes that end their turn adjacent to one or more of these pillars gain 1 petrification per pillar."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_lion_savagebite",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 2,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Savage Bite",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_lion_roar",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Roar",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Adjacent characters take fray damage, are shoved 1 and become slashed.",
+                "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "shoved", "id": "gl_shove"},{"val": "slashed", "id": "gl_slashed"}]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Affects foes in range 2, and slashed foes must save or be stunned.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"},{"val": "slashed", "id": "gl_slashed"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Affects all foes, everywhere, and ignores cover.",
+                                    "glossary": [{"val": "cover", "id": "gl_cover"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_bull_headbutt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Headbutt",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray and shove 1.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is weakened.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Chimaera can rush 2 spaces before making this attack.",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_bull_rampantgalloping",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rampant Galloping",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Bull rushes 1. Each time it rushes, it deals 2 damage to all adjacent foes and shoves them 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Rushes twice.",
+                                    "glossary": [{"val": "Rushes", "id": "gl_rush"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Rushes three times.",
+                                    "glossary": [{"val": "Rushes", "id": "gl_rush"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_serpent_numbingbite",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Numbing Bite",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is pacified. This attack does not break the pacified condition and deals bonus damage to pacified foes.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_serpent_poisonbliss",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Poison Bliss",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Serpent creates a small blast terrain effect in range. The area is dangerous terrain for foes and foes are pacified+ inside.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "dangerous terrain", "id": "gl_dangerousterrain"},{"val": "pacified", "id": "gl_pacified"},{"val": "+", "id": "gl_ongoing"}]
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While at least partly inside the area, the Serpent attacks and saves with +1 boon. This area lasts until used again.",
+                "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Costs 1 action."
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Serpent can have up to three of these areas active."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_crocodile_openwound",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Open Wound",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D].",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "1",
+                                            "glossary": []
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The character gains an open wound. While wounded, it takes [D] again at the end of its turns. This effect does not stack, and ends instead if the character ends their turn adjacent to an ally.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_crocodile_deathroll",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Death Roll",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Crocodile chooses a foe in range. At the end of the very next player turn, if that foe is still in range 3, the Chimaera lunges."
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },   
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "It can remove itself from the battlefield, then place itself adjacent to that foe, who must save. Foes are dazed and take 2[D] + fray on a failed save, or just fray damage on a successful save. Dazed foes fail the save.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "dazed", "id": "gl_dazed"},{"val": "Dazed", "id": "gl_dazed"}]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Range 5."
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "No maximum range."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_toad_tongue",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Tongue",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The target is shoved 2 towards the chimaera.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_toad_swallowwhole",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Swallow Hole",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A adjacent character must save or be swallowed whole. On a successful save, they are weakened. Remove them from the battlefield.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },   
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of their turn, the toad spits them out, placing them in any adjacent space to the chimaera’s current location, then shoving them 2 spaces.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Character takes [D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Weakened characters fail the save.",
+                                    "glossary": [{"val": "Weakened", "id": "gl_weakened"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Character also takes damage on being spit out equal to 25% of their maximum hp."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_baboon_deepbreath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Deep Breath",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Adjacent foes to the Chimera are shoved 1 towards or away from it.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },    
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_chimera_baboon_fierydetonation"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_baboon_fierydetonation",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 6,
+            "blast_size": "large",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Fiery Detonation",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage for every object caught in the area.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target must save or be stunned.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Does not need to combo with Deep Breath."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_baboon_pyroclast",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Pyroclast",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters in the area takes 2 piercing damage.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },   
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Summon a height 1 smoldering debris object in the area.",
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_wolf_savageclaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "arc": 3
+        },
+        "eventtags": {},
+        "name": "Savage Claw",
+        "class_id": "yellow",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to blinded foes.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "blinded", "id": "gl_blinded"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "May dash 2 after using this ability.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_wolf_shadowbreath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Shadow Breath",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Fray damage and foes must save or become blinded.",
+                "glossary": [{"val": "Fray", "id": "gl_fray"},{"val": "blinded", "id": "gl_blinded"}]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Large Blast."
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals fray damage twice instead. Bloodied foes take fray damage three times instead.",
+                                    "glossary": [{"val": "ray", "id": "gl_fray"},{"val": "Bloodied", "id": "gl_bloodied"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_goat_goatswisdom",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Goat's Wisdom",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While the goat is alive, at the start of the round, mark a visible space.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }, 
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            }, 
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, a meteor smashes into the space, inflicting fray damage twice in a large blast area effect centered on the space to all foes within and stunning any foe in the center space. Then, create a height 1 comet object anywhere in the area.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "large blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "stunning", "id": "gl_stunned"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_goat_crossbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Cross Bolt",
+        "class_id": "blue",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is vulnerable.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Shove all foes in the area 1.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_goat_primalmeteor",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Primal Meteor",
+        "class_id": "blue",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All characters not in cover from the Chimaera must save or take fray damage twice and become vulnerable, or once on a successful save.",
+                "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "vulnerable", "id": "gl_vulnerable"}]
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Then, summon a height 1 meteor object adjacent to any character affected."
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray damage three times on a failed save.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray damage five times on a failed save.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_chicken_peck",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Peck",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "AutoHit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray, twice.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray, three times.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_chicken_returntoegg",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Return To Egg",
+        "class_id": "green",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character in range becomes pacified and starts to be encased in a stone egg. If they don’t attack during their turn, the petrification effect ends. Otherwise, at the end of that turn, they must save.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "On a failed save, they are encased in stone, removing them from the battlefield and becoming replaced with a destructible (5 hp) height 1 egg object. Until the is destroyed, they cannot take a turn. When it’s destroyed, they are returned to the battlefield in the space they left and can take a turn as normal."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_bear_icypath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "arc": 6,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Icy Path",
+        "class_id": "red",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage per status affecting the target.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_chimera_bear_coldfeet",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Cold Feet",
+        "class_id": "red",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character in range 8 is slashed. Unless that character moves at least 3 spaces on their next turn, at the end of that turn they are also stunned.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"},{"val": "stunned", "id": "gl_stunned"}]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Two Heads:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Also weakens characters.",
+                                    "glossary": [{"val": "weakens", "id": "gl_weakened"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "One Head:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Also deals fray damage to a chosen character, and fray damage again if they fail to move.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_apex_terminoushowl",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Terminous Howl",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, all foes take piercing damage equal to the round number +1, ignoring cover. This damage cannot reduce a foe below 1 hp.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "cover", "id": "gl_cover"}]
             }
         ]
     }

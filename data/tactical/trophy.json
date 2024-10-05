@@ -1017,7 +1017,7 @@
         "name": "Chimaeric Ichor",
         "category": "fc_beast",
         "uses" : 2,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_chimera",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1037,7 +1037,7 @@
         "name": "Chimaeric Bile",
         "category": "fc_beast",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_chimera",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
