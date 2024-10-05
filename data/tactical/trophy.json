@@ -1056,7 +1056,7 @@
         "name": "Apex Mantle",
         "category": "fc_beast",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_apex",
         "usetype": "expedition",
         "description": [
         {
@@ -1091,7 +1091,7 @@
         "name": "Apex Fang",
         "category": "fc_beast",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_apex",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1117,7 +1117,7 @@
         "name": "Wyrm Gut",
         "category": "fc_beast",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_wyrm",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1139,7 +1139,7 @@
         "name": "Tail Sword",
         "category": "fc_beast",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_wyrm",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},

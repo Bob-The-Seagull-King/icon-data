@@ -19074,5 +19074,676 @@
                 "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "cover", "id": "gl_cover"}]
             }
         ]
+    },
+    {
+        "id": "af_beast_apex_bound",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Bound",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Apex rushes 3, then deals 2 damage to adjacent foes and shoves them 1. If it starts this movement inside a Hunting Ground, it can rush 5 or fly 3 instead.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "rush", "id": "gl_rush"},{"val": "fly", "id": "gl_flying"},{"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_apex_rearup",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "combo": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Rear Up",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Apex slams the ground in a medium blast area effect in range. Foes inside take fray damage, then it rears up. At the end of the very next turn, it lands, shoving all foes inside 3.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"},{"val": "area effect", "id": "gl_areaeffect"},{"val": "fray", "id": "gl_fray"},{"val": "shoving", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            },  
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_apex_steamingrage"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_apex_steamingrage",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Steaming Rage",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Apex shove all adjacent foes 1, then gains 10 vigor. Its next attack deals bonus damage, and gains pierce. However, after it attacks, the Apex loses any vigor it has.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"},{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "pierce", "id": "gl_piercing"},{"val": "shove", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_apex_gargantuapinch"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_apex_gargantuapinch",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Gargantua Pinch",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "An adjacent character must save. On a successful save, they take fray damage and are shoved 2 in any direction. On a failed save, the Apex picks them up in jaws or paws, removing them from the battlefield.",
+                "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of that character’s next turn, the Apex tosses them, placing them back on the battlefield in a free adjacent space to the Apex, then shoving them 2.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_apex_savageswipe",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Savage Swipe",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe and all adjacent foes to its target are slashed. Slashed foes take fray damage again.",
+                                    "glossary": [{"val": "slashed", "id": "gl_slashed"},{"val": "Slashed", "id": "gl_slashed"},{"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_apex_ram"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_apex_ram",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Ram",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray and shove 2.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray and shove 1.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Apex may dash up to 4 before making this attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_apex_primevalcrusher"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_apex_primevalcrusher",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 2,
+            "combo": true,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Primeval Crusher",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a pit under the attack target. Characters already in pits are stunned.",
+                                    "glossary": [{"val": "pits", "id": "gl_pit"},{"val": "pit", "id": "gl_pit"},{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Apex may dash 1 either before or after this attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_zetaflare",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "true_strike": true,
+            "divine": true
+        },
+        "eventtags": {},
+        "name": "Zetaflare",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Wyrm chooses a foe at the start of the round. At the end of the round, after all other effects have resolved, all foes not in range 2 of that foe take 5 divine damage, ignoring cover.",
+                "glossary": [{"val": "divine", "id": "gl_divine"},{"val": "cover", "id": "gl_cover"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_devastate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "true_strike": true,
+            "path_of_ruin": true
+        },
+        "eventtags": {},
+        "name": "Devastate",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of every round, as a path of ruin effect, the Wyrm marks out an area that extends from the entire path of ruin edge up to 4 spaces from that edge. The Wyrm can not voluntarily enter this area."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, it scours the area as a massive area effect. Foes inside must save or take 2[D]+fray damage and be stunned, or [D]+fray on a successful save.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_sirocco",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "path_of_ruin": true
+        },
+        "eventtags": {},
+        "name": "Sirocco",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of every odd numbered round, the Wyrm creates a twisting, burning tornado, a one space mobile terrain effect, in range 3. The Sirocco is difficult and dangerous terrain.",
+                "glossary": [{"val": "difficult", "id": "gl_difficultterrain"},{"val": "dangerous", "id": "gl_dangerousterrain"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, as a path of ruin effect, all Siroccos move 3 spaces towards the path of ruin. After each space of this move, they shove all adjacent foes 1 space away from them. Then, any foes shoved by at least one Sirocco during this movement are inflicted with Dragonfire. Siroccos last indefinitely.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_liquify",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Liquify",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the Wyrm liquifies the ground beneath a foe’s feet. That foe takes 2 piercing damage and becomes immobile.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "immobile", "id": "gl_immobile"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If the affected character would be inflicted with dragon fire, the rock melts and is destroyed instead of dragon fire’s normal effects. The immobilized character or an adjacent character can also chip the rock off by using the interact ability (1 action) and ending their turn. When the rock is destroyed, this effect ends.",
+                "glossary": [{"val": "immobilized", "id": "gl_immobile"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_gigabeam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Gigabeam",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Wyrm chooses a foe in range 3 that has not acted yet. At the end of that foe’s turn, the Wyrm fires a massive beam as a path of ruin effect. If that foe ends their turn within range 3 of the Wyrm, they are inflicted with dragonfire. If not, then the beam sweeps across the entire battlefield and hits all foes, inflicting dragonfire on all of them."
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_blazingwind",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round",
+            "path_of_ruin": true
+        },
+        "eventtags": {},
+        "name": "Blazing Wind",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "As a path of ruin effect, all foes must choose:"
+            },
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "Take 4 damage."
+                    },
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "Be shoved 1 towards the path of ruin.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_molteneruption",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Molten Eruption",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Wyrm creates a height 2 blight pillar object in free space in range 3. The pillar and all spaces in a small blast area centered on it are dangerous terrain, which the wyrm is immune to. When it is created, adjacent foes take 2 piercing damage.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "piercing", "id": "gl_piercing"},{"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_jawsofdeath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Jaws of Death",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Wyrm rushes 2, then an adjacent foe must choose: stand their ground or flee.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}]
+            },
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "subeffect"}],
+                        "content": "Stand Your Ground: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "Become slashed and take fray damage. Then save, or also be inflicted with dragonfire on a failed save.",
+                                "glossary": [{"val": "slashed", "id": "gl_slashed"},{"val": "fray", "id": "gl_fray"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "subeffect"}],
+                        "content": "Flee: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "Be shoved 4 spaces. The Wyrm can choose the direction of this shove, and can change directions mid-shove..",
+                                "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "shove", "id": "gl_shove"}]
+                            }
+                        ]
+                    }                    
+                ]
+            }, 
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_wyrm_seismicgeyser"
+            }            
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_seismicgeyser",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Seismic Geyser",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Wyrm chooses a foe in range that has not acted yet. At the end of that foe’s turn, a geyser erupts under them, dealing fray damage and inflicting weakened as a medium blast area effect centered on them. Weakened foes take [D] +fray instead.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "weakened", "id": "gl_weakened"},
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "Weakened", "id": "gl_weakened"},
+                    {"val": "[D]", "id": "gl_damagedice"}
+                ]
+            }           
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_ancientfury",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "combo": true,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Ancient Fury",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray and shove 2.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray and shove 1.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Wyrm may rush 1 before this attack",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                }]
+            },{
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_wyrm_gigacrush"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_gigacrush",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 3,
+            "combo": true,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Gigacrush",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_beast_wyrm_rageofarden"
+            }
+        ]
+    },
+    {
+        "id": "af_beast_wyrm_rageofarden",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 4,
+            "combo": true,
+            "path_of_ruin": true
+        },
+        "eventtags": {},
+        "name": "Rage of Arden",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Wyrm soars into the air. It removes itself from the battlefield, then as a path of ruin effect draws a line area effect 3 spaces wide straight across the battlefield, starting on the side opposite the path of ruin edge, and ending with the path of ruin edge. Foes inside take piercing fray damage. Then the Wyrm returns to the battlefield in range 2 of its original location.",
+                                    "glossary": [
+                                        {"val": "piercing", "id": "gl_piercing"},
+                                        {"val": "fray", "id": "gl_fray"}
+                                    ]
+                                }]
+            }
+        ]
     }
 ]

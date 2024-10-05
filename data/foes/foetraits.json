@@ -1517,6 +1517,94 @@
         ]
     },
     {
+        "id": "tf_beast_apex_mightofthewild",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Might of the Wild",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex has three unique abilities, depending on what type of beast it is. Choose or roll for them. The third ability only becomes usable during its second phase."
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_apex_huntinggrounds",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hunting Grounds",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Before the fight, the GM places three small blast difficult terrain areas on the map. None can be placed in range 2 of each other. Each area is a hunting ground. The Apex gains +1 boon on attacks and deals bonus damage to characters in hunting grounds.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_apex_monsterhunt",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Hunt",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe that ends their turn inside any space of a hunting ground can attempt to make a ploy against the Apex by using the natural environment, as long as the Apex is in range 3.",
+                "glossary": [
+                ]
+            },                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                                                 
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Making a ploy is a free action that ends a character’s turn.",
+                        "glossary": [
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "That player describes to the GM the impressive stunt they pull against the Apex, then rolls 1d6 and hands the die to the GM.",
+                        "glossary": [
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While the Apex has the die, it takes bonus damage and one of its Might of the Wild abilities is disabled, has no effect, and cannot be used, chosen by the player. It reduces the die by 1 at the end of each of its turns. When a die would be reduced to 0, discard it.",
+                        "glossary": [
+                            {"val": "bonus damage", "id": "gl_bonusdamage"}
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each hunting ground can only be used once to disable the Apex.",
+                        "glossary": [
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Apex can keep multiple dice at once (track which ability they are disabling) and the bonus damage effect from them stacks.",
+                        "glossary": [
+                            {"val": "bonus damage", "id": "gl_bonusdamage"}
+                        ]
+                    }
+                ]
+            }   
+        ]
+    },
+    {
         "id": "tf_beast_bonabra_bounteousrest_action",
         "type": "Trait",
         "source": "core",
@@ -1820,7 +1908,7 @@
                 "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Chapter 3:",
                 "subcontent":   [
                     {
@@ -1842,6 +1930,30 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_wyrm_pathofruin_phII",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Path of Ruin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase II:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "In Phase II all Path of Ruin effects activate twice: once directed towards where the Path of Ruin currently is, and then once where it will be next round."
+                    }
+                ]
             }
                         ]
     },

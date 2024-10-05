@@ -2272,9 +2272,9 @@
             }
         ],
         "stats": { "size": 2 },
-        "actions": [],
+        "actions": ["af_beast_apex_bound","af_beast_apex_rearup","af_beast_apex_savageswipe"],
         "removed_actions": [],
-        "traits": [],
+        "traits": ["tf_beast_apex_mightofthewild","tf_beast_apex_huntinggrounds","tf_beast_apex_monsterhunt"],
         "removed_traits": [],
         "choices": ["tf_beast_apex_choice_toxic","tf_beast_apex_choice_thickhide","tf_beast_apex_choice_spines","tf_beast_apex_choice_horned","tf_beast_apex_choice_brutalstrength","tf_beast_apex_choice_burrowing","tf_beast_apex_choice_chameleonic","tf_beast_apex_choice_winged","tf_beast_apex_choice_lashingtail","tf_beast_apex_choice_carrioneater","tf_beast_apex_choice_sonicshriek","tf_beast_apex_choice_elementbreath"],
         "category": "legend",
@@ -2338,6 +2338,102 @@
             }
         ],
         "chapter": 2
+    },
+    {
+        "id": "fj_beast_legend_wyrm",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wyrm",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "When the world was young and still scalding and steaming from the raw energies of its creation, the Wyrms were born. Massive, serpentine beasts, they emerged from the molten earth fully formed, or so the legend goes. These ancient beast gods ruled the land for a time, and then their age passed, as all ages will, and the world changed. The wyrms went into hibernation, curling up and sinking into the earth, resting in unceasing slumber. As they slept, they conserved their energy, for another age, when they could emerge and feed, growing fat and strong again."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wyrms have a primal aetherstone instead of their heart. This allows them to channel unbelievable raw energies that were present when the world was young, and spit scouring divine fire that turns nearly all matter to ash."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Occasionally, over the history of Arden Eld, a wyrm will naturally awake from its long sleep. The emergence of a wyrm is a cataclysmic event similar to a volcanic eruption or a natural disaster. The land quakes and belches forth poison gas and magma, plants wither, and wildlife flees from the eruption site. It quickly establishes a hunting grounds and rules over a massive territory as a primeval monarch, culling herds of animals (including kin) to acceptable populations to maintain its feeding stock."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "More recently, the Churn has awakened more and more Wyrms, an unfolding calamity with no easy solution and terrifying consequences."
+            }
+        ],
+        "stats": { "size": 3 },
+        "actions": ["af_beast_wyrm_devastate","af_beast_wyrm_sirocco","af_beast_wyrm_liquify","af_beast_wyrm_gigabeam","af_beast_wyrm_blazingwind","af_beast_wyrm_molteneruption","af_beast_wyrm_jawsofdeath","af_beast_wyrm_ancientfury"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_beast_wyrm_dragonfire"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Wyrm begins combat in this phase, and enters Phase II when bloodied."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": ["tf_beast_wyrm_pathofruin"],
+                "stats": {}
+            },
+            {
+                "description": [
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Wyrm enters this phase when bloodied."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_beast_wyrm_zetaflare"],
+                "traits": ["tf_beast_wyrm_pathofruin_phII"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wyrm is a ferocious foe that is capable of dealing incredible damage. Most of its effects are telegraphed, moving towards the path of ruin, so good positioning from player characters can avoid them. Characters can mostly choose between being shoved by the wyrm’s abilities (and potentially into a bad position) or taking the hurt. Canny characters might position themselves so they are shoved into objects with Blazing Wind, or figure out that Liquify can make them immune to the negative effects of Blazing Wind, Jaws of Death, and Gigabeam, since they cannot be shoved - but also makes them vulnerable to other effects, such as Zetaflare."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Map: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This fight is best on a medium or larger sized map (10x10, 12x12, 14x14, etc)."
+                    }
+                ]
+            }
+        ],
+        "chapter": 3
     },
     {
         "id": "fj_relict_mob_husk",
