@@ -20178,5 +20178,214 @@
                 "content": "If a character is defeated in the sarcophagus, it crumbles and this effect ends."
             }    
         ]
+    },
+    {
+        "id": "af_relict_wailer_shriek",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Shriek",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All adjacent foes must save or be forced to flee, shoving them 3 spaces in a direction of the Wailer’s choice, or 1 space on a successful save.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"}]
+            }  
+        ]
+    },
+    {
+        "id": "af_relict_wailer_soulshift",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Soul Shift",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ghul and any adjacent relict teleport 6. When they reappear, they must be placed adjacent if possible.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }  
+        ]
+    },
+    {
+        "id": "af_relict_twinsoul_twinstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Twin Strike",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + 2, twice.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2 damage, twice.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Twinsoul may backflip and fly 2 after this ability resolves.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_devourer_devour",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "round": 3
+        },
+        "eventtags": {},
+        "name": "Devour",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ghul gains aura 2 until the start of its next turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            }  ,
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            }  ,
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that end their turn in the aura must sacrifice 25% of their max hp and become dazed. Dazed or blinded foes must sacrifice 50% of their max hp instead.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "sacrifice", "id": "gl_sacrifice"},
+                    {"val": "dazed", "id": "gl_dazed"},
+                    {"val": "Dazed", "id": "gl_dazed"},
+                    {"val": "blinded", "id": "gl_blinded"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "af_relict_shutter_realityflicker",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Shutter",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Repeat the following effect twice:"
+            }  ,
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Stutterghast or an ally in range 2 teleports 2.",
+                        "glossary": [
+                            {"val": "teleports", "id": "gl_teleport"}
+                        ]
+                    }
+                ]
+            } 
+              
+        ]
+    },
+    {
+        "id": "af_relict_shutterghast_shutterslash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 3,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Twin Strike",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray, twice.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray, twice.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to bloodied foes.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "bloodied", "id": "gl_bloodied"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Gains unerring against foes at exactly range 3.",
+                                    "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "May teleport self and foe 2 spaces after this ability resolves.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                                }]
+            }
+        ]
     }
 ]

@@ -2728,6 +2728,136 @@
         "chapter": 3
     },
     {
+        "id": "fj_relict_skirmisher_wailer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wailer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A starving ghul that stalks the living for days at a time. Somewhat pitiable, they long for warmth."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_wailer_shriek"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_skirmisher_arcghul",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arc Ghul",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A ghul that has become unhinged from its own anguish, its body barely held together."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_wailer_soulshift"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_skirmisher_twinsoul",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Twin Soul",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A ghul that is the result of a network malfunction or the product of soul grafting, a twinsoul is a grotesque amalgam of two beings."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_twinsoul_twinstrike"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_skirmisher_devourer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Devourer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A Ghul that has collapsed in on itself, becoming a sucking void and gaining the ability to rip away the essence of the living directly."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_devourer_devour"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_skirmisher_shutterghast",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shutterghast",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A Ghul that has lived long enough and fed enough on the living that its existential anguish has begun to manifest into complete insanity. Its feral wailing cuts out periodically as it stutters throughout the network."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_shutter_realityflicker","af_relict_shutterghast_shutterslash"],
+        "removed_actions": ["af_relict_skirmisher_realityflicker"],
+        "traits": ["tf_relict_shutterghast_darkhallow"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_mob_beastpack",
         "type": "FoeJob",
         "source": "core",

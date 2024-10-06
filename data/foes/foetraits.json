@@ -368,6 +368,24 @@
         ]
     },
     {
+        "id": "tf_relict_shutterghast_darkhallow",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dark Hallow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deals bonus damage and has evasion unless there’s two or more adjacent characters.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_relict_arkivist_shepherdofthedead",
         "type": "Trait",
         "source": "core",
