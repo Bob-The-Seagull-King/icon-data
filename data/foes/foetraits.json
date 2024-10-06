@@ -386,6 +386,27 @@
         ]
     },
     {
+        "id": "tf_relict_abomination_unstable",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unstable",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, explodes in a large blast area effect explosion centered on the wraith. Characters inside take piercing fray damage, twice, as an area effect. The wraith is then removed from the battlefield. Create a pit in the area it vacated.",
+                "glossary": [
+                    {"val": "large blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_relict_arkivist_shepherdofthedead",
         "type": "Trait",
         "source": "core",

@@ -2858,6 +2858,136 @@
         "chapter": 3
     },
     {
+        "id": "fj_relict_artillery_arcspectre",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arc Spectre",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The most commonly seen wraith, held aloft by scouring arcs of lightning, with hands bound into power-amplifying gauntlets."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_arcspectre_synapticstorm"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_artillery_chainwraith",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chain Wraith",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Blasphemers boiled alive in the pit of Iz. The chains used to bind them have combined with their beings in death."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_chainwrath_bind"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_artillery_riftwrath",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rift Wraith",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some battle mages of the old world were granted the ability to tear at the walls between worlds, using the essence of the Doom itself to fight."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_riftwrath_riftstep","af_relict_riftwrath_openrift"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_artillery_abomination",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Abomination",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A wraith created in the final days of the Imperium. The extreme methods used to create them left them unstable, undead weapons that were not meant to last long."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_abomination_scouringbeam"],
+        "removed_actions": [],
+        "traits": ["tf_relict_abomination_unstable"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_artillery_blasphemy",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blasphemy",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Heretic Sorcerers who glimpsed the Black Sun. So powerful that they were entombed in specially bound iron coffins. The coffins float uncannily until broken open."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_blasphemy_ironcoffin","af_relict_blasphemy_obliterateaether"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_mob_beastpack",
         "type": "FoeJob",
         "source": "core",

@@ -20387,5 +20387,287 @@
                                 }]
             }
         ]
+    },
+    {
+        "id": "af_relict_arcspectre_synapticstorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 6,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Synaptic Storm",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Creates a massive network storm in range, which could overlap characters. The storm is a small blast terrain effect that is dangerous terrain, which relict ignore.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the storm are vulnerable+.",
+                "glossary": [
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Using this ability again with an active storm can move the storm 2 spaces instead of replacing it. If used this way, it costs 1 action."
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Round 3+:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Moving a storm is a free action."
+                                }]
+            }              
+        ]
+    },
+    {
+        "id": "af_relict_chainwrath_bind",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bind",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wraith chooses two characters anywhere in range 3 of each other, then teleports one of them adjacent to the other.",
+                "glossary": [
+                    {"val": "teleports", "id": "gl_teleport"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes must save or be shattered. Becomes a free action if it targets two allied relict.",
+                "glossary": [
+                    {"val": "shattered", "id": "gl_shattered"}
+                ]
+            }             
+        ]
+    },
+    {
+        "id": "af_relict_riftwrath_riftstep",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Rift Step",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport to the space of any pit in range.",
+                "glossary": [
+                    {"val": "Teleport", "id": "gl_teleport"},
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }            
+        ]
+    },
+    {
+        "id": "af_relict_riftwrath_openrift",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Open Rift",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a pit under any character in range.",
+                "glossary": [
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, the Wraith may teleport that character to any other pit space in range 3 of their target’s location.",
+                "glossary": [
+                    {"val": "pit", "id": "gl_pit"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }            
+        ]
+    },
+    {
+        "id": "af_relict_abomination_scouringbeam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "line": 10,
+            "width": 2,
+            "pierce": true,
+            "round": 3
+        },
+        "eventtags": {},
+        "name": "Scouring Beam",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray, twice.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray, twice.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foes in the area must save or be shattered.",
+                                    "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "All objects in the path are removed."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_blasphemy_ironcoffin",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Iron Coffin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The coffin breaks open. The Blasphemy becomes intangible until the end of its next turn.",
+                        "glossary": [{"val": "intangible", "id": "gl_intangible"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_blasphemy_obliterateaether",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 8,
+            "round": 3
+        },
+        "eventtags": {},
+        "name": "Obliterate Aether",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "3[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to characters at 50% hp or lower.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Instead of dealing damage, character targeted sacrifices hp equal to the damage that would have been dealt. If a character is at 1 hp, they are instead instantly defeated.",
+                                    "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}]
+                                }]
+            }
+        ]
     }
 ]
