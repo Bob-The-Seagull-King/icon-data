@@ -622,6 +622,35 @@
         "limit": 2
     },
     {
+        "id": "sm_relict_immortalist_sarcophagusofiz",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 10,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Sarcophagus of Iz",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Shares space with a character. While sharing space with the sarcophagus, they must sacrifice 3 at the start of their turn and are immobile, but can otherwise be targeted normally. The Sarcophagus takes no damage from Relict and only 1 damage maximum from any ability from a foe inside of it.",
+                                    "glossary": [
+                                        {"val": "sacrifice", "id": "gl_sacrifice"},
+                                        {"val": "immobile", "id": "gl_immobile"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

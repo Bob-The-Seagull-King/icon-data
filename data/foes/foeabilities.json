@@ -19966,5 +19966,217 @@
                                 }]
             }           
         ]
+    },
+    {
+        "id": "af_relict_arkivist_incantationofreclamation",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Incantation of Reclamation",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Archivist summon a ",
+                        "glossary": [{"val": "summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " in a free space in range, then deals 1 piercing damage to all foes adjacent to that summon.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "summon", "id": "gl_summon"}]
+                    }
+                ]
+            }       
+        ]
+    },
+    {
+        "id": "af_relict_grafter_sharesuffering",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Share Suffering",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Grafter gains aura 1 in this stance.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "stance", "id": "gl_stance"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each time a relict in the aura takes damage from an ability, they gain 2 vigor. This effect could trigger multiple times per ability. After that ability resolves, the Grafter sacrifices 2.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "sacrifices", "id": "gl_sacrifice"}
+                ]
+            } ,
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of its turn, the Grafter either exits this stance or sacrifices 4 to maintain it.",
+                "glossary": [
+                    {"val": "stance", "id": "gl_stance"},
+                    {"val": "sacrifices", "id": "gl_sacrifice"}
+                ]
+            }     
+        ]
+    },
+    {
+        "id": "af_relict_embalmer_necrotize",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Necrotize",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes take 2 piercing damage. Self and allies gain vigor 2.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "vigor", "id": "gl_vigor"}]
+            } ,
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Embalmer gains Aura 2 until the start of its next turn. Foes that end their turn in the aura must sacrifice 2 and have a grasping dead space created under them, as per Black Communion.",
+                                    "glossary": [{"val": "Aura", "id": "gl_aura"},{"val": "sacrifice", "id": "gl_sacrifice"}]
+                                }]
+            }           
+        ]
+    },
+    {
+        "id": "af_relict_soulflayer_soulflay",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Soul Flay",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must sacrifice 2, once for every one of its adjacent allies, then is pacified.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"},{"val": "pacified", "id": "gl_pacified"}]
+            }    
+        ]
+    },
+    {
+        "id": "af_relict_soulflayer_soulshred",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Soul Shred",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a foe in range. While marked, that foe gains Aura 2.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"},{"val": "marked", "id": "gl_mark"},{"val": "Aura", "id": "gl_aura"}]
+            }, 
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            }, 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that end their turn in the aura must sacrifice 2. A foe can save to end this mark if they end their turn with no allies in the aura.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"},{"val": "mark", "id": "gl_mark"},{"val": "aura", "id": "gl_aura"}]
+            }    
+        ]
+    },
+    {
+        "id": "af_relict_immortalist_darkredempta",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 4,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Dark Redempta",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Target defeated relict in range and remove incapacitated."
+            }, 
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            }, 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They stop being defeated and return to the battlefield with 50% hp, or 25% hp if they are an elite. They can act normally and take a turn starting next round."
+            }  , 
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            }, 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If defeated again, they disintegrate and are removed from the battlefield, and cannot be returned again."
+            }    
+        ]
+    },
+    {
+        "id": "af_relict_immortalist_entombmentofiz",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Entombment of Iz",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Immortalist entombs a character in range in a magical sarcophagus, summoning it in their space."
+            }, 
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_relict_immortalist_sarcophagusofiz"
+            }, 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a character is defeated in the sarcophagus, it crumbles and this effect ends."
+            }    
+        ]
     }
 ]

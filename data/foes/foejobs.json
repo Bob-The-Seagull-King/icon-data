@@ -2598,6 +2598,136 @@
         "chapter": 3
     },
     {
+        "id": "fj_relict_leader_arkivist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkivist",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Priests entrusted with keeping the names of the dead, they wander the halls of the arkenruins obsessively repeating the names of their wards."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_arkivist_incantationofreclamation"],
+        "removed_actions": [],
+        "traits": ["tf_relict_arkivist_shepherdofthedead"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_leader_grafter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Grafter",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Soul Surgeons skilled in the ways of soul grafting. In the final days of the doom, the empire resorted to all kinds of dark arts in an attempt to beat back the inevitable."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_grafter_sharesuffering"],
+        "removed_actions": [],
+        "traits": ["tf_special_regeneration"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_leader_embalmer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Embalmer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Priests charged with disposal of the physical form. In those days, the corpses were stacked like wheat after a harvest."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_embalmer_necrotize"],
+        "removed_actions": ["af_relict_leader_blackcommunion"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_leader_soulflayer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Soul Flayer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Dread priests that made up a secret police. In the Final Days, they forcibly conscripted the unlucky and criminal into the soul legions."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_soulflayer_soulflay","af_relict_soulflayer_soulshred"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_leader_immortalist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortalist",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The higher caste of priests, each with a fragment of the Ur-spell embedded into their very beings."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_immortalist_darkredempta","af_relict_immortalist_entombmentofiz"],
+        "removed_actions": [],
+        "traits": ["tf_relict_immortalist_eternalwar"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_mob_beastpack",
         "type": "FoeJob",
         "source": "core",
