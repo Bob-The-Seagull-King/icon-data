@@ -5559,6 +5559,1447 @@
         ]
     },
     {
+        "id": "af_islander_cook_hotgriddle",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Hot Griddle",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is sealed.",
+                        "glossary": [{"val": "sealed", "id": "gl_sealed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Critical hit (+[D]) against sealed foes.",
+                        "glossary": [{"val": "Critical hit", "id": "gl_criticalhit"}, {"val": "sealed", "id": "gl_sealed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_cook_flapjack",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Flapjack",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The cook summons a flapjack in range."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_islander_cook_flapjack"
+            }
+        ]
+    },
+    {
+        "id": "af_islander_cook_cookupastorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Cook Up a Storm",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Cook creates a burst 2 (self) terrain effect until the start of their next turn. Foes in the area are shoved until outside the of area when it is created. The area is dangerous terrain for foes, provides cover for allies, and allies in the area when it is created gain 3 vigor.",
+                "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "shoved", "id": "gl_shove"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "cover", "id": "gl_cover"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_sailor_bloodycrescent",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "arc": 3
+        },
+        "eventtags": {},
+        "name": "Bloody Crescent",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_sailor_sealegs",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Sea Legs",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shove all adjacent characters 1 space in the same direction.",
+                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "foes are slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_sailor_plunder",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Plunder",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sailor dashes 1, then deals 2 damage and shoves an adjacent foe 1.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}, {"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_sailor_sendtoerenhelion",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Send to Erenhelion",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Sailor winds up for a massive blow. An adjacent foe must save or take 3[D]+fray and become slashed, or just [D]+fray on a successful save.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "slashed", "id": "gl_slashed"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Sailor sacrifices 25% of their maximum hp after this ability resolves.",
+                        "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_doomdiver_spearslash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Spear Slash",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to and gains unerring against foes at exactly range 3.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "unerring", "id": "gl_unerring"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_doomdiver_slide",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Slide",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Diver dashes 3 with phasing, dealing 2 damage to all characters it passes through.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}, {"val": "phasing", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_doomdiver_dive",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 4,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Dive",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Diver chooses a foe in range, then removes themselves from the battlefield. At the end of that foe’s next turn, that foe must save as the Diver descends, dealing [D]+fray three times on a failed save, or just once on a successful save. Lower this damage by [D]+fray for every adjacent ally of the target, which could cause it to do no damage. Then, place the Diver in any free space in range 2.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_harpooner_spear",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "pierce": true,
+            "line": 6
+        },
+        "eventtags": {},
+        "name": "Spear",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If attacking an adjacent foe, deals bonus damage.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_harpooner_backflip",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Backflip",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Harpooner dashes 1. If there is an adjacent foe, increase this dash to 2, and shove that foe 1.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_harpooner_net",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Net",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Harpooner creates a net terrain effect in a free space range. The net space is treated as a pit and difficult terrain.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_islander_harpooner_mainharpoon",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Main Harpoon",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or take 2[D]+fray, become shattered, and be shoved towards the Harpooner until adjacent. On a success, the foe takes fray and is shoved 1 towards the harpooner instead.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shattered", "id": "gl_shattered"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_storyteller_storystaff",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Story Staff",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage and foe is pacified. Pacified foes instead take [D]+fray.",
+                            "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_storyteller_felicity",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "multimark": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Felicity",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range is marked. When marked, and at the start of the storyteller’s turn, the marked ally may dash 1.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "dash", "id": "gl_dash"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_leggio_storyteller_fleet"
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_storyteller_fleet",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Fleet",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 4 may fly 4.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_storyteller_heroism",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Heroism",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Storyteller gains aura 2. Allies in the aura gain +1 boon on all saves and may save against statuses at the start instead of end of their turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "+1 boon", "id": "gl_boon"}, {"val": "statuses", "id": "gl_status"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_monsterrider_doubleteam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Double Team",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The rider and an ally in range 3 can each dash 1, then deal 2 damage to an adjacent foe.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_monsterrider_callout",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Call Out",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 3 must save or be shoved towards the rider as far as possible, then gain hatred of the rider. On a successful save, they are shoved 1 towards the rider.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "hatred", "id": "gl_hatred"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_monsterrider_lancerssplendor",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Lancer's Splendor",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The rider takes a magnificent pose and gains aura 1. The rider and allies in the aura are sturdy and deal bonus damage with all abilities.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_acrobat_spinningkick",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Spinning Kick",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Repeat the following effect three times: Dash 1, then deal 2 damage to all adjacent foes. Must move in the same direction.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_acrobat_cartwheel",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Cartwheel",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Acrobat dashes up to 3 spaces, then deals damage to an adjacent foe equal to the number of spaces it dashed.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_acrobat_partnerwork",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Partner Work",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Acrobat marks an ally. That ally gains evasion and +1 boon on attacks while in range 3 of the Acrobat.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "+1 boon", "id": "gl_boon"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_acrobat_acrobatics",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Acrobatics",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The acrobat takes a nimble stance. While in this stance, they gain evasion, and when targeted by an ability, may dash 1 after the ability resolves.",
+                "glossary": [{"val": "stance", "id": "gl_stance"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_polefighter_poleslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Pole Slam",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove all characters 1.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_polefighter_rebound",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rebound",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Pole Fighter pushes off an adjacent character. They shove that character 1 space, then rush 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "rush", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If their target collides with an ally, that ally may also rush 1",
+                        "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_polefighter_highflyer",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "High Flyer",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Pole Fighter balances on their pole and uses it to move, ignoring all terrain damage and movement penalties, rampart, and engagement while in this stance.",
+                "glossary": [{"val": "rampart", "id": "gl_rampart"}, {"val": "stance", "id": "gl_stance"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_leggio_polefighter_divekick"
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_polefighter_divekick",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Dive Kick",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Pole fighter rushes 1, ending their High Flyer stance. An adjacent foe is stunned and must save or take 2[D]+fray, or just [D]+fray on a successful save.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "rushes", "id": "gl_rush"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_firedancer_flamedance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "pierce": true,
+            "attack": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Flame Dance",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 1, then deal piercing fray damage to a different character in range 6.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_firedancer_carnivale",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "summon": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Carnivale",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Fire dancer summons a bomb in range 4.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_leggio_firedancer_bomb"
+            }
+        ]
+    },
+    {
+        "id": "af_leggio_firedancer_juggle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Juggle",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The fire dancer starts juggling flames. While in this stance, at the start and end of their turn, they may dash 2, then deal 2 piercing damage as an area effect to all foes in range 3.",
+                "glossary": [{"val": "stance", "id": "gl_stance"}, {"val": "dash", "id": "gl_dash"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_villager_valorousstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true
+        },
+        "eventtags": {},
+        "name": "Valorous Strike",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An ally in range 3 of a villager gains 2 vigor, or 4 vigor if bloodied.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May dash 1 before the attack.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_villager_rally",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rally",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Up to three allies adjacent to a villager may dash 1 space, or one ally adjacent to a villager may dash 3 spaces.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_villager_takeheart",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Take Heart",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All allies adjacent to a villager may end a status and gain 2 vigor, or 4 vigor if they are bloodied.",
+                "glossary": [{"val": "status", "id": "gl_status"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_farmer_righteousfist",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "true_strike": true,
+            "attack": true
+        },
+        "eventtags": {},
+        "name": "Righteous Fist",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and shove 2.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray and shove 1.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to weakened foes.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_farmer_communitywatch",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Community Watch",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shove all allies in range 2 1 space towards this character, then any adjacent allies gain 2 vigor.",
+                "glossary": [{"val": "Shove", "id": "gl_shove"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_farmer_bale",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bale",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Farmer uses a pitchfork, shovel, or sheer strength and picks up an adjacent character size 1 or smaller, removing them from the battlefield and placing them in an adjacent space, then shoving them 1. Weakened foes are shoved 3 instead.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"}, {"val": "Weakened", "id": "gl_weakened"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_farmer_onthechin",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "end_turn": true,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "On the Chin",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Farmer gains aura 1. The farmer and allies in the aura are sturdy, and gain 3 vigor at the start of the farmer’s turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_barkeep_flamingcocktail",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "range": 6,
+            "blast_size": "small",
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Flaming Cocktail",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 3+: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Large blast.",
+                        "glossary": [{"val": "Large blast", "id": "gl_blast"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_barkeep_barbrawler",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Bar Brawler",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barkeep takes a fighting stance, with the following benefits:",
+                "glossary": [{"val": "stance", "id": "gl_stance"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• They gain counter and sturdy.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}, {"val": "sturdy", "id": "gl_sturdy"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Any time a foe ends their turn adjacent to the barkeep in this stance, they take 2 piercing damage and are shoved 1.",
+                "glossary": [{"val": "stance", "id": "gl_stance"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• If a foe collides with the Barkeep, they take 2 piercing damage and are shoved 1, but only once a round.",
+                "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_barkeep_barrelroll",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5,
+            "end_turn": true,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Barrel Roll",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 damage, and shove 2 away from the origin point. At round 3+, becomes a large blast and any character in the center space must save or become stunned.",
+                        "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "large blast", "id": "gl_blast"}, {"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_villagepriest_greenwrath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Greenwrath",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage and inflicts sealed if a character is inside dangerous or difficult terrain.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "sealed", "id": "gl_sealed"}, {"val": "dangerous", "id": "gl_dangerousterrain"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_villagepriest_sow",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "multimark": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Sow",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The village priest marks a foe in range. That foe takes 1 piercing damage when marked.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "piercing", "id": "gl_piercing"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_yeokin_villagepriest_reap"
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_villagepriest_reap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Reap",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes marked by Sow take 3 piercing damage once for every foe marked by Sow.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_villagepriest_sanctify",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Sanctify",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The village priest scatters salt in a medium blast area in range. Foes that end their turn in the area become pacified. Allies that end their turn in the area gain 2 vigor. This area ends if this ability is used again.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "pacified", "id": "gl_pacified"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_shinobi_whirlingblade",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "unerring": true,
+            "range": 3,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Whirling Blade",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes at exactly range 3 take 2 damage, including the attack target."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_shinobi_shadowclone",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Shadow Clone",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon a shadow clone in a free space in range.",
+                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_yeokin_shinobi_shadowclone"
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_shinobi_shadowswap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Shadow Swap",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Shinobi or an ally swaps places with a shadow clone in range 3 of them, teleporting.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_yeokin_shinobi_raiton",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Raiton",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Shinobi calls down lightning on a foe in range. At the end of that foe’s turn, they take 4 damage, five times and are blinded, then this effect ends. Reduce this damage by one time for every other adjacent character to the target, which could cause it to do no damage.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+            }
+        ]
+    },
+    {
         "id": "af_beast_apex_toxiccloud",
         "type": "Ability",
         "source": "core",

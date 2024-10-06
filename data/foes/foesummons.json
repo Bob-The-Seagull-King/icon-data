@@ -124,6 +124,114 @@
         "limit": 0
     },
     {
+        "id": "sm_islander_cook_flapjack",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "summon": true,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Flapjack",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character other than the cook moving into the flapjack’s space can pick it up, removing it. That character gains defiance. A character that already has defiance gains 6 vigor. A character with vigor becomes unstoppable until the end of their next turn.",
+                        "glossary": [{"val": "defiance", "id": "gl_defiance"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_leggio_monsterrider_tamemonster",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Tame Monster",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "During the rider’s turn, can dash 4, then either shove a character 1 space or deal 2 damage to them.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_leggio_firedancer_bomb",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Bomb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When any character enters its space, it explodes for a small blast area effect explosion. Characters within become vulnerable, then must save or take 2 piercing damage twice, or just 2 piercing damage on a successful save.",
+                        "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_yeokin_shinobi_shadowclone",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "summon": true,
+            "size": 1
+        },
+        "eventtags": {},
+        "name": "Shadow Clone",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes adjacent to a shadow clone at the start of their turn take 3 damage from the clone. The Shinobi and any of its allies may gain stealth if they end their turn adjacent to a clone. Clones disappear at the end of combat or if the Shinobi is defeated.",
+                        "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 0
+    },
+    {
         "id": "sm_relict_artillery_soulspark",
         "type": "Summon",
         "source": "core",

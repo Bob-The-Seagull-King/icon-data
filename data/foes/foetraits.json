@@ -272,6 +272,85 @@
         ]
     },
     {
+        "id": "tf_islander_sailor_salty",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Salty",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "When the Sailor sacrifices any amount, they gain 3 vigor after the triggering ability resolves.",
+                "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_islander_doomdiver_nimble",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nimble",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Has evasion unless suffering from a status.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}, {"val": "status", "id": "gl_status"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_leggio_monsterrider_monsterriding",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Riding",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "The Rider starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the rider shares space with the monster and moves when it moves, becoming unstoppable while moving this way. If the two are separated, this effect ends until the monster is remounted.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}, {"val": "status", "id": "gl_status"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"}, 
+                "content": "sm_leggio_monsterrider_tamemonster"
+            }
+        ]
+    },
+    {
+        "id": "tf_leggio_acrobat_tumbling",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tumbling",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Moving up terrain costs no movement. Can phase through characters and doing so costs a maximum of 1 movement.",
+                "glossary": [{"val": "phase", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_leggio_polefighter_slam",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Slam",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "When a character collides from the pole fighter’s moves, they are slashed. Slashed characters take fray damage instead.",
+                "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_folk_camaraderie",
         "type": "Trait",
         "source": "core",

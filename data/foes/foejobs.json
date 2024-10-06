@@ -1277,6 +1277,356 @@
         "chapter": 1
     },
     {
+        "id": "fj_folk_islander_cook",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cook",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "All self respecting islanders know how to eat and cook properly. Cooks hold an extremely high position in Islander culture, the highest of which sit next to Jarls, the rulers of the great islands."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_cook_hotgriddle", "af_islander_cook_flapjack", "af_islander_cook_cookupastorm"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_islander_sailor",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sailor",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great mass of sailors, pirates, raiders, crewmen, and pilots of the great islander fleets. The greatest sailors of the Thousand Isles are legendary in skill and have many a perilous voyage under their belt."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_sailor_bloodycrescent", "af_islander_sailor_sealegs", "af_islander_sailor_plunder", "af_islander_sailor_sendtoerenhelion"],
+        "removed_actions": [],
+        "traits": ["tf_islander_sailor_salty"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_islander_doomdiver",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Doom Diver",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Donning capes of serpent scales or sealskin, the doom divers make sport of diving for treasures, food, and pearls in monster-infested waters."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_doomdiver_spearslash", "af_islander_doomdiver_slide", "af_islander_doomdiver_dive"],
+        "removed_actions": [],
+        "traits": ["tf_islander_doomdiver_nimble"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_islander_harpooner",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Harpooner",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Sturdy hunters that sail out in search of the megafish and sea monsters that populate the deep oceans of Arden Eld. Their catch feeds the atolls, but requires entire teams to haul ashore."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_harpooner_spear", "af_islander_harpooner_backflip", "af_islander_harpooner_net", "af_islander_harpooner_mainharpoon"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_storyteller",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Storyteller",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Elders of the Caravans, who keep and carve the lore and lineage of the families that make it up into the side of the wagons."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_storyteller_storystaff", "af_leggio_storyteller_felicity", "af_leggio_storyteller_heroism"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_monsterrider",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Rider",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Braves of a family, usually young, who tame the massive beasts the Leggio must battle with during their journeys through the blights. Monster taming is a time-honored tradition and without it, many of the great wagons would lack a way to move, as most normal animals don’t have to the strength to pull them."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_monsterrider_doubleteam", "af_leggio_monsterrider_callout", "af_leggio_monsterrider_lancerssplendor"],
+        "removed_actions": [],
+        "traits": ["tf_leggio_monsterrider_monsterriding"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_acrobat",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Acrobat",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Workers who maintain the caravans while they are on the move, requiring great dexterity and agility. In town, they often perform."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_acrobat_spinningkick", "af_leggio_acrobat_cartwheel", "af_leggio_acrobat_partnerwork", "af_leggio_acrobat_acrobatics"],
+        "removed_actions": [],
+        "traits": ["tf_leggio_acrobat_tumbling"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_polefighter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pole Fighter",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The militia of the caravans, who use long poles to vault from wagon to wagon."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_polefighter_poleslam", "af_leggio_polefighter_rebound", "af_leggio_polefighter_highflyer"],
+        "removed_actions": [],
+        "traits": ["tf_leggio_polefighter_slam"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_firedancer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fire Dancer",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Fire wrights who light and keep the lanterns burning all day and night. The task is odious, the monster oil used to fuel the lanterns noxious and stinking, so when they enter a town they are happy to let loose with pyrotechnic juggling shows."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_firedancer_flamedance", "af_leggio_firedancer_carnivale", "af_leggio_firedancer_juggle"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_villager",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Villager",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The common clay of Arden Eld."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_villager_valorousstrike", "af_yeokin_villager_rally", "af_yeokin_villager_takeheart"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_farmer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Farmer",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A thick-armed commoner, sometimes acting as a local militia in times of trouble."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_farmer_righteousfist", "af_yeokin_farmer_communitywatch", "af_yeokin_farmer_bale", "af_yeokin_farmer_onthechin"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_barkeep",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Barkeep",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The taverns, inns, and way-houses of the villages are a relatively new invention as commerce returns to Arden Eld, but a welcome one. Their owners are typically stocky and no-nonsense."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_barkeep_flamingcocktail", "af_yeokin_barkeep_barbrawler", "af_yeokin_barkeep_barrelroll"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_villagepriest",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Village Priest",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Village priests of the local temples, who typically pay homage or worship to the local hobs or spirits of nature. These temples are closely tied to the land and may be built around a great tree, or a holy rock, or a sparkling waterfall."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_villagepriest_greenwrath", "af_yeokin_villagepriest_sow", "af_yeokin_villagepriest_sanctify"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_shinobi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shinobi",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Nearly all villages in the Green practic e martial arts for self defense against roving monsters (and, more recently, bandits). Many of them have secret scroll arts, some of which have produced secret warrior societies that predate the Shades."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_shinobi_whirlingblade", "af_yeokin_shinobi_shadowclone", "af_yeokin_shinobi_shadowswap", "af_yeokin_shinobi_raiton"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",
