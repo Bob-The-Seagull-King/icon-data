@@ -21608,7 +21608,7 @@
         "description":  [  
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The Immortalist entombs a character in range in a magical sarcophagus, summoning it in their space."
+                "content": "The relict entombs a character in range in a magical sarcophagus, summoning it in their space."
             }, 
             {
                 "tags": {"desc_type" : "foesummon"},
@@ -23255,6 +23255,806 @@
                 "content": "A foe in range at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they are reduced to 1 hp.",
                 "glossary": [
                 ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_royalguard_vortex",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Vortex",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All characters in range 2 of the royal guard are shoved 1 towards or away from it.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_royalguard_battalionoflimbs",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "blast_size": "medium",
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Battalion of Limbs",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Royal Guard marks their attack target. This mark can be placed more than once and stacks indefinitely.",
+                                    "glossary": [
+                                        {"val": "marks", "id": "gl_mark"},
+                                        {"val": "mark", "id": "gl_mark"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Mark:",
+                "glossary": [
+                    {"val": "Mark", "id": "gl_mark"}
+                ],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "For each stack of the mark, this attack deals +3 damage on hit or miss. A character can save against this mark at the end of their turn to clear all stacks, but only if they are not in range 2 of the royal guard.",
+                                    "glossary": [
+                                        {"val": "mark", "id": "gl_mark"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_royalguard_bladeshield",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Blade Shield",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "An ally in range is marked by the Royal Guard. While marked and adjacent to the Royal Guard, they gain +1 boon on saves and resistance.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "resistance", "id": "gl_resistance"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_royalguard_balllightning",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "blast_size": "small",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Ball Lightning",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Fray damage and characters must save or be slashed.",
+                "glossary": [
+                    {"val": "Fray", "id": "gl_fray"},
+                    {"val": "slashed", "id": "gl_slashed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_royalguard_windofobliteration",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Wind of Obliteration",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Repeat this effect three times:"
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Royal Guard rushes 1, then deals [D] to all adjacent characters, then shoves them 1. It gains phasing during this action and must take each of these dashes in the same direction. Characters can be affected multiple times.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "shoves", "id": "gl_shove"},
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "dashes", "id": "gl_dash"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_warmech_plasmabomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Plasma Bomb",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of each round, the Warmech fires a plasma bomb into the air, targeted on any visible space. The bomb marks a medium blast area visible to all characters.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area", "id": "gl_areaeffect"}
+                ]
+            },     
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, the bomb comes down as an area effect. Characters in the area take piercing fray damage and are shattered. Any character in the center must save or also be stunned.",
+                "glossary": [
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "shattered", "id": "gl_shattered"},
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            },     
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The targeted space then becomes a pit. The Warmech is immune to its own bombs.",
+                "glossary": [
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_warmech_focusbeam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "line": 6,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Focus Beam",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is shattered.",
+                                    "glossary": [
+                                        {"val": "shattered", "id": "gl_shattered"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to characters in range 3.",
+                                    "glossary": [
+                                        {"val": "bonus damage", "id": "gl_bonusdamage"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_warmech_chargeboost",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Charge Boost",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Warmech flies 3. When it lands, adjacent characters are shoved 1.",
+                "glossary": [
+                    {"val": "flies", "id": "gl_flying"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },     
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_relict_warmech_seekers"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_warmech_seekers",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true,
+            "burst": 3,
+            "burst_target": "self"
+        },
+        "eventtags": {},
+        "name": "Seekers",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes take 2 piercing damage. Foes at exactly range 3 take 2 piercing damage twice.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            },     
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_relict_warmech_fallingstars"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_warmech_fallingstars",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Falling Stars",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All foes outside of range 3 take 2 piercing damage, ignoring cover, as an area effect.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "area effect", "id": "gl_areaeffect"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_warmech_sidecannons",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "pierce": true,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Side Cannons",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes are shoved 2.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes fray damage.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_izenghast_stutter",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Stutter",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Repeat the following effect twice:"
+            }  ,
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Izenghast or an ally in range 2 teleports 1.",
+                        "glossary": [
+                            {"val": "teleports", "id": "gl_teleport"}
+                        ]
+                    }
+                ]
+            } 
+              
+        ]
+    },
+    {
+        "id": "af_relict_izenghast_soulrip",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "line": 4,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Soul Rip",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] damage.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "1 damage.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}], 
+                                    "content": "All foes in the area must sacrifice 4 after this ability resolves.",
+                                    "glossary": [
+                                        {"val": "sacrifice", "id": "gl_sacrifice"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_izenghast_horridslashing",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Horrid Slashing",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Stutterghast teleports 1, then teleports 1.",
+                "glossary": [
+                    {"val": "teleports", "id": "gl_teleport"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each time, it deals 2 damage to an adjacent foe. Bloodied foes are dazed.",
+                "glossary": [
+                    {"val": "Bloodied", "id": "gl_bloodied"}
+                ]
+            } 
+              
+        ]
+    },
+    {
+        "id": "af_relict_izenghast_shriek",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Shriek",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes in range must save or be forced to flee, shoving them 2 spaces in a direction of the Izenghast’s choice, or 1 space on a successful save.",
+                "glossary": [
+                    {"val": "shoving", "id": "gl_shove"}
+                ]
+            }              
+        ]
+    },
+    {
+        "id": "af_relict_izenghast_souldrain",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "requires": "bloodied_foe"
+        },
+        "eventtags": {},
+        "name": "Soul Drain",
+        "description":  [  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe sacrifices 25% of their maximum hp. The Izenghast or another relict in range 3 is cured.",
+                "glossary": [
+                    {"val": "sacrifices", "id": "gl_sacrifice"},
+                    {"val": "cured", "id": "gl_cure"}
+                ]
+            }              
+        ]
+    },
+    {
+        "id": "af_relict_arkitek_deepcall",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Deep Call",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}], 
+                                    "content": "The Arkitek may summon a height 1 dungeon ruin object adjacent to its target.",
+                                    "glossary": [
+                                        {"val": "summon", "id": "gl_summon"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_arkitek_reconfigure",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Reconfigure",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "The Arkitek removes and places any number of objects created by it or another character in range to any other free space in range. Characters standing on or trapped inside an object are moved and placed with it."
+            }
+        ]
+    },
+    {
+        "id": "af_relict_arkitek_pillarofiz",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Pillar of Iz",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "The Arkitek summons a Pillar of Iz in range. It can be summoned under characters.",
+                "glossary": [
+                    {"val": "summons", "id": "gl_summon"},
+                    {"val": "summoned", "id": "gl_summon"}
+                ]
+            },    
+            {
+                "tags": [{"desc_type": "foesummon"}], 
+                "content": "sm_relict_immortalist_pillarofiz"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_atrophicgrave_hungrydead",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Hungry Dead",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}], 
+                                    "content": "All characters in range 2 are shoved 1 towards the grave, which could shove them inside of it.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"},
+                                        {"val": "shove", "id": "gl_shove"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_atrophicgrave_tendrils",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Tendrils",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "Characters in range of the Grave are shoved 1 towards or away from it. The Grave can choose for each character. Bloodied characters are shoved 2 instead.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_atrophicgrave_vomitlightning",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Vomit Lightning",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "Foes take 2 damage once for each foe in the area, up to a maximum of three times.",
+                "glossary": [
+                    {"val": "area", "id": "gl_areaeffect"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_atrophicgrave_onehundredhands",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "One Hundred Hands",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "The Grave rushes 1 spaces.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"}
+                ]
+            },    
+            {
+                "tags": [{"desc_type": "foeability"}], 
+                "content": "af_relict_atrophicgrave_twohundredhands"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_atrophicgrave_twohundredhands",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Two Hundred Hands",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "The Grave rushes 2 spaces.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"}
+                ]
+            },    
+            {
+                "tags": [{"desc_type": "foeability"}], 
+                "content": "af_relict_atrophicgrave_threehundredhands"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_atrophicgrave_threehundredhands",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Three Hundred Hands",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "The Grave rushes 3 spaces.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"}
+                ]
+            },    
+            {
+                "tags": [{"desc_type": "foeability"}], 
+                "content": "af_relict_atrophicgrave_cacophonousconsumption"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_atrophicgrave_cacophonousconsumption",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Cacophonous Consumption",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}], 
+                "content": "Foes inside the Grave must save, then they take 5 damage, five times. If they succeed the save, they take 3 damage, five times instead."
             }
         ]
     }

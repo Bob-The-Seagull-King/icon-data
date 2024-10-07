@@ -449,6 +449,22 @@
         ]
     },
     {
+        "id": "tf_relict_warmech_emptyhusk",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Empty Husk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character becomes a 2x2 series of height 1 objects when defeated instead of a character, and cannot be returned to the battlefield.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_relict_fused_soulmass",
         "type": "Trait",
         "source": "core",
@@ -575,6 +591,51 @@
         ]
     },
     {
+        "id": "tf_relict_atrophicgrave_shedmass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shed Mass",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of its turn, the Grave summons a",
+                        "glossary": [
+                            {"val": "summons", "id": "gl_summon"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " in a free adjacent space. When the Grave is bloodied, it summons 2",
+                        "glossary": [
+                            {"val": "summons", "id": "gl_summon"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " instead.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
         "id": "tf_faction_relict_legionofthedead",
         "type": "Trait",
         "source": "core",
@@ -655,6 +716,40 @@
                 "glossary": [
                     {"val": "bonus damage", "id": "gl_bonusdamage"},
                     {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_izenghast_surreality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Surreality",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this character would be defeated, instead becomes intangible until the end of its next turn, then removes itself from the battlefield. It cannot return.",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_arkitek_stoneskin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stoneskin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While adjacent to an object, has resistance.",
+                "glossary": [
+                    {"val": "resistance", "id": "gl_resistance"}
                 ]
             }
         ]

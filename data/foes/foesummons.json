@@ -759,6 +759,39 @@
         "limit": 0
     },
     {
+        "id": "sm_relict_immortalist_pillarofiz",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "height": 2,
+            "hp": 5,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Sarcophagus of Iz",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Aura 1. Inside the aura, relict characters have resistance and foes are sealed+.",
+                                    "glossary": [
+                                        {"val": "Aura", "id": "gl_aura"},
+                                        {"val": "aura", "id": "gl_aura"},
+                                        {"val": "resistance", "id": "gl_resistance"},
+                                        {"val": "sealed", "id": "gl_sealed"},
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

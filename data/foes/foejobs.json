@@ -3548,6 +3548,141 @@
         "chapter": 3
     },
     {
+        "id": "fj_relict_elite_royalguard",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Royal Guard",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Multi-limbed, multi-bodied warriors fused together by dark alchemy and soul grafting at their entombing to protect the old arkenemperors in death. The four fight as one, overwhelming the defenses of even the most canny fighters."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_royalguard_vortex","af_relict_royalguard_battalionoflimbs","af_relict_royalguard_bladeshield","af_relict_royalguard_balllightning","af_relict_royalguard_windofobliteration"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_elite_warmech",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Warmech",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Multi-limbed metal war machine, powered by soul amalgamation. Kills dispassionately and with overwhelming force, using weapons that blight the land and scour the soil. Many of these machines are buried in the soil of Arden Eld, even outside the ruins, and can remain dormant for centuries."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_warmech_plasmabomb","af_relict_warmech_focusbeam","af_relict_warmech_chargeboost","af_relict_warmech_sidecannons"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_relict_automata_automata","tf_relict_warmech_emptyhusk"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_elite_izenghast",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Izenghast",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Stuttering horrors born of living souls that have been trapped in the Relict system - the remnants of adventurers or unlucky wanderers who went too deep in an arkenruin."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_izenghast_stutter","af_relict_izenghast_soulrip","af_relict_izenghast_horridslashing","af_relict_izenghast_shriek","af_relict_izenghast_souldrain"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_relict_shutterghast_darkhallow","tf_relict_izenghast_surreality"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_elite_arkitek",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkitek",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Machine-priests and designers of the deep arkenruins, the sealed library-vaults intended to let the empire wait out the Doom in undead form. Masters of the labyrinth, the mechanisms of the dungeons themselves bend and contort themselves to protect them."
+            }
+        ],
+        "stats": {
+            "vit": 8,
+            "hp": 32
+        },
+        "actions": ["af_relict_immortalist_entombmentofiz","af_relict_arkitek_deepcall","af_relict_arkitek_reconfigure","af_relict_arkitek_pillarofiz"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance","tf_relict_arkitek_stoneskin"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_elite_atrophicgrave",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Atrophic Grave",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive amalgam of souls, created when the Ur-spell reached and processed large crowds of the public, hiding for safety from the apocalyptica outside and completely unaware of their impending immortalization."
+            }
+        ],
+        "stats": {
+            "size": 3
+        },
+        "actions": ["af_relict_atrophicgrave_hungrydead","af_relict_atrophicgrave_tendrils","af_relict_atrophicgrave_vomitlightning","af_relict_atrophicgrave_onehundredhands"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_special_defiance","tf_relict_fused_soulmass","tf_relict_atrophicgrave_shedmass"],
+        "removed_traits": ["tf_class_heavy_guard"],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_mob_beastpack",
         "type": "FoeJob",
         "source": "core",
