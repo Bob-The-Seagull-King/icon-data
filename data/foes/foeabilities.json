@@ -22110,5 +22110,1152 @@
                                 }]
             }
         ]
+    },
+    {
+        "id": "af_relict_silentone_mournfulwail",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Mournful Wail",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to pacified foes and does not break the pacified condition.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is pacified.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_silentone_fear",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Fear",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Mark a foe in range 6.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While marked, that foe deals half damage unless adjacent to an ally.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If they end their turn adjacent to an ally, they can save to clear this mark.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_silentone_dreadfulsobbing",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Dreadful Sobbing",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Silent one gains aura 1 until the start of its next turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters in the aura are pacified+ and cannot be cured.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "pacified", "id": "gl_pacified"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "cured", "id": "gl_cure"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_silentone_possess",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Possess",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Silent one moves into and shares the space of an adjacent character, possessing them, with the following effects:"
+            },    
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "While possessing that character, they are intangible, share its space, and move when it moves. They can still take actions normally, but can’t leave the possessed character’s space.",
+                        "glossary": [
+                            {"val": "intangible", "id": "gl_intangible"}
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "The possessed character takes a free action at the end of its turn, which the Silent One chooses:",
+                                "glossary": [
+                                ]
+                            },
+                            {
+                                "tags": [{"desc_type": "list"}],
+                                "content": "",
+                                "subcontent": [
+                                    {
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Be shoved by the Silent one 3 spaces in any direction",
+                                        "glossary": [
+                                            {"val": "shoved", "id": "gl_shove"}
+                                        ]
+                                    },{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Deal [D] damage to an adjacent character.",
+                                        "glossary": [
+                                            {"val": "[D]", "id": "gl_damagedice"}
+                                        ]
+                                    },{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Become pacified.",
+                                        "glossary": [
+                                            {"val": "pacified", "id": "gl_pacified"}
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "A character may save to remove this effect at the end of their turns after the above effect activates. When possession ends, the silent one appears in a free adjacent space.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }    
+            
+        ]
+    },
+    {
+        "id": "af_relict_strigoi_feralfrenzy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Feral Frenzy",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2 damage, three times.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2 damage.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "May dash 2 before and after this action.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_strigoi_bloodyspit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Bloody Spit",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Deal fray damage. If a foe has vigor, deal [D] instead, and they are dazed.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "vigor", "id": "gl_vigor"},{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_strigoi_feralpounce",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Feral Pounce",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Strigoi gains stealth. Choose a foe in range 3.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If, at the end of that foe’s next turn, they are still in range 3 of the Strigoi, it may teleport adjacent to them and deal 2 damage, three times, ending this effect and stealth.",
+                "glossary": [
+                    {"val": "teleport", "id": "gl_teleport"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_automata_lightningbolter",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 6,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Lightning Botler",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "foeability"}],
+                "content": "af_relict_automata_fullauto"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_automata_fullauto",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 6,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Full Auto",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_automata_chargedshield",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Charged Shield",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Automata creates a 1 space terrain effect in range 3."
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Relict inside the terrain effect have cover, and it is dangerous and difficult terrain for foes.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "dangerous", "id": "gl_dangerousterrain"},
+                    {"val": "difficult", "id": "gl_difficultterrain"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Using this ability again replaces it.",
+                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_automata_dischargeclip",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Discharge Clip",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Automata shoots a line 5 area effect. Characters in the area take 1 piercing damage twice.",
+                "glossary": [
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If the area includes a Charged shield, deals 1 piercing damage four times instead.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_fused_crush",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "blast_size": "medium",
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Crush",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to weakened foes.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "foeability"}],
+                "content": "af_relict_fused_meldingmass"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_fused_meldingmass",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Melding Mass",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fused may rush 2 after this ability. Characters inside the fused are shoved 3 in any direction.",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"},{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Characters are stunned.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_fused_wailofterror",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Wail of Terror",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Fused releases a horrible shriek in a medium blast area effect.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"},{"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes in the area are weakened, and take 2 damage once for every foe in the area, up to a maximum of five times.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_idol_heavymace",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 2,
+            "curse": 1
+        },
+        "eventtags": {},
+        "name": "Heavy Mace",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "3[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Loses curse against slashed foes.",
+                                    "glossary": [{"val": "curse", "id": "gl_curse"},{"val": "slashed", "id": "gl_slashed"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_idol_eyebeams",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "arc": 3
+        },
+        "eventtags": {},
+        "name": "Eye Beams",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All foes are shoved 1 and take 2 damage.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_idol_bladesweep",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Blade Sweep",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All adjacent foes are shoved 1 and slashed.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "slashed", "id": "gl_slashed"}]
+            },{
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },{
+                "tags": [{"desc_type": "desc"}], 
+                "content": "Slashed foes also take fray damage.",
+                "glossary": [{"val": "Slashed", "id": "gl_slashed"},{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_idol_soulnexus",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Soul Nexus",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Idol hardens and release an aura of swirling souls, gaining aura 2 until the start of its next turn. It becomes immobile and unstoppable.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "immobile", "id": "gl_immobile"},{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },{
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },{
+                "tags": [{"desc_type": "desc"}], 
+                "content": "Relict in the aura become sturdy and gain resistance to damage from abilities used from outside the aura.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"},{"val": "resistance", "id": "gl_resistance"},{"val": "aura", "id": "gl_aura"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_lifehunter_nock",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Nock",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Life Hunter dashes 2.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"}]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_relict_lifehunter_lifeseekingarrow"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_lifehunter_lifeseekingarrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "range": 12,
+            "boon": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Life-Seeking Arrows",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Hit or miss, foe must also sacrifice 25% of their max hp.",
+                                    "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Cannot target characters in range 2."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_lifehunter_kickoff",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Kick Off",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Life Hunter flies 1. Before they fly, they may shove an adjacent character 1 space, then deal 2 damage to them if they are a foe. If they do, they fly 3 instead.",
+                "glossary": [{"val": "shove", "id": "gl_shove"},{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_lifehunter_liminaldarts",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Liminal Darts",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Mark a foe in line of sight and range 10.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },    
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },    
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of that character’s turn, it takes [D] piercing damage if it’s not in cover from the Life Hunter, or just 2 piercing damage if it is. Then this mark ends.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_revenant_bloodyhacking",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Bloody Hacking",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Fray.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Bloodied or dazed foes take 2 damage again after this ability resolves.",
+                                    "glossary": [
+                                        {"val": "Bloodied", "id": "gl_bloodied"},
+                                        {"val": "dazed", "id": "gl_dazed"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is dazed.",
+                                    "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_revenant_lifedrain",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Life Drain",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "An adjacent foe sacrifices 3. If they are bloodied, they sacrifice 6 instead, and the Revenant gains evasion until the start of its next turn.",
+                "glossary": [
+                    {"val": "sacrifices", "id": "gl_sacrifice"},
+                    {"val": "sacrifice", "id": "gl_sacrifice"},
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_revenant_horribletwitching",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Horrible Twitching",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Revenant gains aura 1.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"}
+                ]
+            },   
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },   
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes in the aura gain +1 curse on attacks. Allied Relict in the aura gain the dodge trait.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            },   
+            {
+                "tags": [{"desc_type": "foetrait"}],
+                "content": "tf_class_skirmisher_dodge"
+            },   
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },   
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Revenant loses this stance if it ends its turn with no foes in the aura.",
+                "glossary": [
+                    {"val": "stance", "id": "gl_stance"},
+                    {"val": "aura", "id": "gl_aura"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_revenant_bonechillingscream",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Bone Chilling Scream",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Revenant releases a bone chilling scream, a burst 1 area effect.",
+                "glossary": [
+                    {"val": "burst 1", "id": "gl_burst"},
+                    {"val": "area effect", "id": "gl_areaeffect"}
+                ]
+            },   
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },   
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters in the area must save or take 2[D] +fray, or [D]+fray on a successful save.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_immortal_bloodyfuller",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "range": 2,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Bloody Fuller",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + 2.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2 damage.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Shove 1.",
+                                    "glossary": [
+                                        {"val": "Shove", "id": "gl_shove"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals damage again to attack target and all foes adjacent to the attack target, hit or miss, equal to 2 times the round number",
+                                    "glossary": []
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_immortal_marchoftheimperium",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "March of the Imperium",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Repeat the following effect twice:",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Either the Immortal or an adjacent ally rushes 1, then deals 2 damage to all adjacent foes and shoves them 1. This can affect the same foe more than once.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"},
+                    {"val": "shoves", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_relict_immortal_arkenimpaler"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_immortal_arkenimpaler",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Arken Impaler",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "An adjacent foe is shoved 3.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Immortal rushes after the target, following it, ending adjacent if possible.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is also slashed and takes fray damage.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"},{"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_immortal_supremeformation",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Supreme Formation",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All allies everywhere may rush 1 space closer to this character. Bloodied allies gain 2 vigor.",
+                "glossary": [
+                    {"val": "rush", "id": "gl_rush"},
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_immortal_execute",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Execute",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they are reduced to 1 hp.",
+                "glossary": [
+                ]
+            }
+        ]
     }
 ]

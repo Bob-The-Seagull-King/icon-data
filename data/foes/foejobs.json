@@ -3338,6 +3338,216 @@
         "chapter": 3
     },
     {
+        "id": "fj_relict_unique_silentone",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Silent One",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Remnants of children, the elderly, or the mournful dead, who crave warmth and company."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_silentone_mournfulwail","af_relict_silentone_fear","af_relict_silentone_dreadfulsobbing","af_relict_silentone_possess"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance","tf_relict_silentone_ethereal"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_strigoi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Strigoi",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A ghul that has fed on enough life force to roam away from the dungeons, preying on villages and herd animals. These ghuls become feral in appearance and live in the dark holes of abandoned farmhouses, sheds, or shrines during the day, as much like other relict, they are harmed by sunlight."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_strigoi_feralfrenzy","af_relict_strigoi_bloodyspit","af_relict_strigoi_feralpounce"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_relict_strigoi_bloodhunger"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_automata",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Automata",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "War machines used to kill in the wars of the old  Imperium, powered by soul amalgams. Ruthless and cold killing machines that trampled the lands of kin in times past."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_automata_lightningbolter","af_relict_automata_chargedshield","af_relict_automata_dischargeclip"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_relict_automata_automata","tf_relict_automata_emptyhusk"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_fused",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fused",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive relict made up of multiple, fused souls, unfortunates mashed together due to network malfunction or malicious soul grafting."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_fused_crush","af_relict_fused_wailofterror"],
+        "removed_actions": [],
+        "traits": ["tf_relict_fused_soulmass","tf_relict_fused_releasepassengers"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_idol",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Idol",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Walking statues of old saints, emperors, or legends, powered by curated soul amalgams."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_idol_heavymace","af_relict_idol_eyebeams","af_relict_idol_bladesweep","af_relict_idol_soulnexus"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_general_knuckle_heavyarmor","tf_relict_automata_automata","tf_relict_automata_emptyhusk"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_lifehunter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Life Hunter",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Personal hunters of the Arkenliches, these undead monstrosities were custom crafted to hunt adventurers. Unlike other relict, they are nimble, somewhat intelligent, and independently minded."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_lifehunter_nock","af_relict_lifehunter_kickoff","af_relict_lifehunter_liminaldarts"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_general_lifehunter_handpicked"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_unique_revenant",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Revenant",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A rogue ghul that has managed to re-house its soul in flesh again, usually by killing its former occupant. Revenants never last long, as the flesh decays too quickly to be of use."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_revenant_bloodyhacking","af_relict_revenant_lifedrain","af_relict_revenant_horribletwitching","af_relict_revenant_bonechillingscream"],
+        "removed_actions": [],
+        "traits": ["tf_relict_revenant_shedflesh"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_unique_immortal",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortal",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Elite guard of the priest caste, entombed alive in their iron armor. Dark magic has sealed their armor so not even the aether of their soul can escape. Such is their undying vitality they don’t make any attempts at self-preservation. With their heavy glaives and black armor, they are a terrifying sight to even seasoned adventurers."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_immortal_bloodyfuller","af_relict_immortal_marchoftheimperium","af_relict_immortal_supremeformation","af_relict_immortal_execute"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_special_defiance","tf_relict_immortal_immortaldisregard","tf_relict_immortal_auraofimmortality"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_mob_beastpack",
         "type": "FoeJob",
         "source": "core",

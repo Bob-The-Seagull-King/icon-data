@@ -380,6 +380,201 @@
         ]
     },
     {
+        "id": "tf_relict_silentone_ethereal",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ethereal",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains phasing, and has resistance unless adjacent to a foe.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "resistance", "id": "gl_resistance"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_strigoi_bloodhunger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Hunger",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deals +2 damage with all abilities against bloodied foes.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_automata_automata",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Automata",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this character attacks the same character as last turn, it deals bonus damage and gains +1 boon. This effect stacks.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "+1 boon", "id": "gl_boon"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_automata_emptyhusk",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Empty Husk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character becomes a height 1 object when defeated instead of a character, and cannot be returned to the battlefield.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_fused_soulmass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Soul Mass",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can share space with other characters. Foes treat the space as difficult terrain, are slashed+ while inside, and have cover from the outside, but are otherwise targetable normally.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "slashed", "id": "gl_slashed"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any foes that start their turn inside its space take fray damage. Foes that attempt to leave this character’s space by any means on their turn must save or become unable to exit it until the end of the current turn.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_revenant_shedflesh",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shed Flesh",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After taking damage that bloodies it, becomes intangible until the start of its next turn as it wriggles out of its flesh.",
+                "glossary": [
+                    {"val": "bloodies", "id": "gl_bloodied"},
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "For the rest of combat, gains phasing and flying.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "flying", "id": "gl_flying"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_immortal_immortaldisregard",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortal Disregard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks never miss the Immortal (turn any miss into a hit)."
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_immortal_auraofimmortality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Immortality",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While Immortal is undefeated, it has Aura 2. Relict without this trait inside cannot be reduced past 1 HP.",
+                "glossary": [
+                    {"val": "Aura", "id": "gl_aura"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_fused_releasepassengers",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Release Passengers",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When defeated, summon 4 ",
+                        "glossary": [
+                            {"val": "summon", "id": "gl_summon"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " in or adjacent to its space.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
         "id": "tf_faction_relict_legionofthedead",
         "type": "Trait",
         "source": "core",
@@ -3255,6 +3450,20 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Resistant to damage from adjacent spaces.",
                 "glossary": [{"val": "Resistant", "id": "gl_resistance"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_lifehunter_handpicked",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hand Picked",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "There can only ever be one Life Hunter on the battlefield."
             }  
           ]
     },
