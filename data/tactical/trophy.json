@@ -654,7 +654,7 @@
         "name": "Helm of Command",
         "category": "fc_relict",
         "uses" : 2,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_vesselknight",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -675,7 +675,7 @@
         "name": "Darklight Infuser",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_vesselknight",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -716,7 +716,7 @@
         "name": "The Black Book",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_arkenlich",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -735,7 +735,7 @@
         "name": "Golden Mask",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_arkenlich",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -758,7 +758,7 @@
         "name": "Grasp of Iron",
         "category": "fc_relict",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_dreadlords",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -778,7 +778,7 @@
         "name": "Key to Iz",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_dreadlords",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -797,7 +797,7 @@
         "name": "Shivering Arrow",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_dreadlords",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},

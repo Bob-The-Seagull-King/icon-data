@@ -769,7 +769,7 @@
             "object": true
         },
         "eventtags": {},
-        "name": "Sarcophagus of Iz",
+        "name": "Pillar of Iz",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
@@ -789,6 +789,67 @@
         ],
         "blurb":  [],
         "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_relict_arkenlich_soulfragment",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "immobile": true,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Soul Fragment",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Each soul fragment is tied to a specific character. Characters adjacent to any soul fragment are vulnerable+. Additionally, fragments can be affected by the Lich’s round actions Annihilation of the Wicked and Utterances of the Crawling Dead.",
+                                    "glossary": [
+                                        {"val": "vulnerable", "id": "gl_vulnerable"},
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_relict_dreadlords_wailingsoul",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Wailing Soul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes adjacent to souls are vulnerable+ and all damage dealt to them becomes piercing. If a foe collides with a soul, they release a large blast shriek area effect centered on them, dealing 2 piercing damage to all foes inside, then removing the soul.",
+                                    "glossary": [
+                                        {"val": "vulnerable", "id": "gl_vulnerable"},
+                                        {"val": "+", "id": "gl_ongoing"},
+                                        {"val": "piercing", "id": "gl_piercing"},
+                                        {"val": "collides", "id": "gl_collide"},
+                                        {"val": "large blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
         "limit": 0
     },
     {

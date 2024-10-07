@@ -24057,5 +24057,1446 @@
                 "content": "Foes inside the Grave must save, then they take 5 damage, five times. If they succeed the save, they take 3 damage, five times instead."
             }
         ]
-    }
+    },
+    {
+        "id": "af_relict_vesselknight_darklightcleaver",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Darklight Cleaver",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + 1.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "1 damage.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}], 
+                                    "content": "The foe gains +1 Malice.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },{
+                "tags": [{"desc_type": "foeability"}], 
+                "content": "af_relict_vesselknight_darklightsplitter"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_darklightsplitter",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2,
+            "line": 5,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Darklight Splitter",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + 1 and +1 Malice.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "1 damage and +1 Malice.",
+                                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            },{
+                "tags": [{"desc_type": "foeability"}], 
+                "content": "af_relict_vesselknight_darklightcrusher"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_darklightcrusher",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2,
+            "curse": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Darklight Crusher",
+        "description":  [      
+            {
+                "tags": [{"desc_type" : "effect"}],
+                "content": "Attack:",
+                "subcontent":   [                      
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "2[D] + fray and +1 Malice.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type" : "subeffect"}],
+                        "content": "Miss:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "[D] + fray and +1 Malice.",
+                                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    }]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_darkstrength",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Dark Strength",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Rush 2, then an adjacent foe is shoved 2 spaces.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"},{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed. Slashed foes are stunned.",
+                        "glossary": [
+                            {"val": "slashed", "id": "gl_slashed"},
+                            {"val": "Slashed", "id": "gl_slashed"},
+                            {"val": "stunned", "id": "gl_stunned"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_rageofiz",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "terrain_effect": true,
+            "range": 6,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Rage of Iz",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Vessel roars, and a foe of its choice in range 6 feels the ground trembling beneath their feet."
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of that character’s turn, roll 1d6. The knight summons either a pit (1-3) or a height 1 dark light spire object (4-6) under that foe.",
+                "glossary": [{"val": "summons", "id": "gl_summon"},{"val": "pit", "id": "gl_pit"}]
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The ground erupts in a small blast area effect centered on this terrain, dealing fray damage to all characters.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_despair",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Despair",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The knight charges a character in range 3 with dark energy, creating a small blast area on them.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "area", "id": "gl_areaeffect"}]
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of that character’s next turn, they must sacrifice 3 for every space of the cross not occupied by themselves, an ally, or a summon. Then, they gain +1 Malice.",
+                "glossary": [{"val": "summon", "id": "gl_summon"},{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_damocles",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "range": 3,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Damocles",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The knight chooses a character in range."
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the very next turn, if that character is still in range of the knight, it removes itself from the battlefield, then places itself adjacent to them and may make the next of its Darklight attack series against them."
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_dispersal",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Dispersal",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The knight is damaged by an ability."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The knight may teleport up to 3 spaces.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_relict_vesselknight_soulcleaver",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "range": 2,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Soul Cleaver",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All foes in range take 2 divine damage.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Each time this ability is used again this combat, increase its damage by +1."
+            }
+        ]
+    },
+    {
+        "id": "af_relict_arkenlich_thytributeisdemanded",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Thy Tribute is Demanded",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of each round, the Lich severs part of a foe’s soul in range 4, placing it in a free space adjacent to that character."
+            },  
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_relict_arkenlich_soulfragment"
+            }
+        ]
+    },
+    {
+        "id": "af_relict_arkenlich_annihilationofthwicked",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Annihilation of the Wicked",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of each round, the Lich wreaks the battlefield with scathing ur-magic. All foes on the battlefield take 1 piercing damage, once, for every other foe or soul fragment that they share a row or column with on the battlefield grid map (imagine it like a big cross centered on each character).",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+        },
+        {
+            "id": "af_relict_arkenlich_witnessthecomingterror",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 2,
+                "range": 4,
+                "uses": 1,
+                "per": "round"
+            },
+            "eventtags": {},
+            "name": "Witness the Coming Terror",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lich reveals a glimpse of a possible dark future to a character in range. That character becomes vulnerable from the sheer stress and must save or become stunned.",
+                    "glossary": [
+                        {"val": "vulnerable", "id": "gl_vulnerable"},
+                        {"val": "stunned", "id": "gl_stunned"}
+                    ]
+                },    
+                {
+                    "tags": [{"desc_type": "gap"}],
+                    "content": ""
+                },    
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "If there are none of its allies in range 2, that character also sacrifices 25% of their maximum hp.",
+                    "glossary": [
+                        {"val": "sacrifices", "id": "gl_sacrifice"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_offerobeisancebeforethyproperlords",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "end_turn": true,
+                "uses": 1,
+                "per": "round"
+            },
+            "eventtags": {},
+            "name": "Offer Obeisance Before Thy Proper Lords",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lich releases a word of powerful Ur-magic, ordering all foes to kneel. Foes can choose:",
+                    "glossary": [
+                    ]
+                },    
+                {
+                    "tags": [{"desc_type": "list"}],
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "Kneel and become immobile for the rest of the current round.",
+                            "glossary": [
+                                {"val": "immobile", "id": "gl_immobile"}
+                            ]
+                        },
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "Be shoved 2 away from the Lich.",
+                            "glossary": [
+                                {"val": "shoved", "id": "gl_shove"}
+                            ]
+                        }
+                    ]
+                }  ,
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "Collide:",
+                    "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                    "subcontent": [
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Foe is vulnerable.",
+                            "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                        }
+                    ]
+                } 
+                
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_fear",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "range": 6,
+                "mark": true,
+                "multimark": true,
+                "uses": 1,
+                "per": "round"
+            },
+            "eventtags": {},
+            "name": "Fear",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "Mark a foe in range. While marked, that foe deals half damage unless adjacent to an ally.",
+                    "glossary": [
+                        {"val": "Mark", "id": "gl_mark"},
+                        {"val": "marked", "id": "gl_mark"}
+                    ]
+                },    
+                {
+                    "tags": [{"desc_type": "gap"}],
+                    "content": ""
+                },    
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "If they end their turn adjacent to an ally, they may save to clear this mark.",
+                    "glossary": [
+                        {"val": "mark", "id": "gl_mark"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_masterofthefourwinds",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1
+            },
+            "eventtags": {},
+            "name": "Master of the Four Winds",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lich either teleports 4, or removes itself from the battlefield, then places itself in free space in range 2.",
+                    "glossary": [
+                        {"val": "teleports", "id": "gl_teleport"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_theinevitablecorruptionofflesh",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "line": 5,
+                "combo": true
+            },
+            "eventtags": {},
+            "name": "The Inevitable Corruption of Flesh",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "Foes in the line take 2 piercing damage, then each foe deals 1 piercing damage to all its adjacent allies. Characters adjacent to more than one foe in this effect can be damaged multiple times.",
+                    "glossary": [
+                        {"val": "line", "id": "gl_areaeffect"},
+                        {"val": "piercing", "id": "gl_piercing"}
+                    ]
+                },    
+                {
+                    "tags": [{"desc_type": "foeability"}],
+                    "content": "af_relict_arkenlich_thewordofbeckoningcowards"
+                }
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_thewordofbeckoningcowards",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "line": 5,
+                "combo": true
+            },
+            "eventtags": {},
+            "name": "The Word of Beckoning Cowards",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "Foes in the line take 2 piercing damage. The first foe in the line is shoved 2 towards the Lich, or as far as possible.",
+                    "glossary": [
+                        {"val": "line", "id": "gl_areaeffect"},
+                        {"val": "piercing", "id": "gl_piercing"},
+                        {"val": "shoved", "id": "gl_shove"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_profane",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "type": "attack",
+                "pierce": true,
+                "range": 4,
+                "combo": true,
+                "blast_size": "small"
+            },
+            "eventtags": {},
+            "name": "Profane",
+            "description":  [      
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Attack:",
+                    "subcontent":   [                      
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "On Hit:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "[D] + fray.",
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": [{"desc_type" : "subeffect"}],
+                            "content": "Miss or Area Effect:",
+                            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "Fray.",
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        }]
+                },{
+                    "tags": [{"desc_type": "foeability"}],
+                    "content": "af_relict_arkenlich_bolide"
+                }
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_bolide",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "type": "attack",
+                "range": 6,
+                "combo": true,
+                "blast_size": "large"
+            },
+            "eventtags": {},
+            "name": "Bolide",
+            "description":  [      
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Attack:",
+                    "subcontent":   [                      
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "On Hit:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "[D] + fray.",
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                            }]
+                        },
+                        {
+                            "tags": [{"desc_type" : "subeffect"}],
+                            "content": "Miss or Area Effect:",
+                            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "Fray.",
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        }]
+                },
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Effect:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Character in the center space is shattered. Then create a height 1 smoking meteor object in free space adjacent to them.",
+                                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                                    }]
+                },{
+                    "tags": [{"desc_type": "foeability"}],
+                    "content": "af_relict_arkenlich_blackbladeofiz"
+                }
+            ]
+        },
+        {
+            "id": "af_relict_arkenlich_blackbladeofiz",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 2,
+                "type": "attack",
+                "range": 2,
+                "combo": true,
+                "true_strike": true
+            },
+            "eventtags": {},
+            "name": "Black Blade of Iz",
+            "description":  [      
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Attack:",
+                    "subcontent":   [                      
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "On Hit:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "[D] + fray twice and shove 1.",
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                            }]
+                        },
+                        {
+                            "tags": [{"desc_type" : "subeffect"}],
+                            "content": "Miss:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "Fray, twice.",
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        }]
+                },
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Effect:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Deals bonus damage vs shattered or vulnerable foes.",
+                                        "glossary": [
+                                            {"val": "bonus damage", "id": "gl_bonusdamage"},
+                                            {"val": "shattered", "id": "gl_shattered"},
+                                            {"val": "vulnerable", "id": "gl_vulnerable"}
+                                        ]
+                                    }]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_eternallordship",
+            "type": "Ability",
+            "source": "core",
+            "tags": { 
+                "action": "round"
+            },
+            "eventtags": {},
+            "name": "Eternal Lordship",
+            "description":  [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "At the start of the round, clear a status or mark on one of the Lords.",
+                    "glossary": [{"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_strengthofhell",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": "round"
+            },
+            "eventtags": {},
+            "name": "Strength of Hell",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Evictor prepares to strike a seismic blow. At the end of the round, they slam the battlefield, affecting all characters in range 3 from them. Characters take differing effects depending on how far away they are from the Lord Evictor:",
+                    "glossary": [
+                    ]
+                },    
+                {
+                    "tags": [{"desc_type": "list"}],
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "effect"}],
+                            "content": "Adjacent: ",
+                            "subcontent": [
+                                {
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "3 damage, three times, and shoved 3.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tags": [{"desc_type": "effect"}],
+                            "content": "2 Spaces: ",
+                            "subcontent": [
+                                {
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2 damage, twice, and shoved 2.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tags": [{"desc_type": "effect"}],
+                            "content": "3 Spaces: ",
+                            "subcontent": [
+                                {
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "1 damage, once, and shoved 1.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }   
+                
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_punishmentofheaven",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": "round"
+            },
+            "eventtags": {},
+            "name": "Punishment of Heaven",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Vexator prepares to shoot a massive flurry of bolts from a greatbow at all characters close to it. At the end of the round, they release a flurry of shots, affecting all characters in range 3 from them. Characters take differing effects depending on how far away they are to the Lord Vexator:",
+                    "glossary": [
+                    ]
+                },    
+                {
+                    "tags": [{"desc_type": "list"}],
+                    "content": "",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "effect"}],
+                            "content": "Adjacent: ",
+                            "subcontent": [
+                                {
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "1 damage, once, and shoved 1.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tags": [{"desc_type": "effect"}],
+                            "content": "2 Spaces: ",
+                            "subcontent": [
+                                {
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2 damage, twice, and shoved 2.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tags": [{"desc_type": "effect"}],
+                            "content": "3 Spaces: ",
+                            "subcontent": [
+                                {
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "3 damage, three times, and shoved 3.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }   
+                
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_musterthedead",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": "round"
+            },
+            "eventtags": {},
+            "name": "Muster The Dead",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "At the start of the round, the Lord Prelictor summons three wailing souls, in free space anywhere on the battlefield not adjacent to a foe.",
+                    "glossary": [
+                    ]
+                },    
+                {
+                    "tags": [{"desc_type": "foesummon"}],
+                    "content": "sm_relict_dreadlords_wailingsoul"
+                }   
+                
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_bloodrush",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "type": "attack",
+                "range": 2,
+                "true_strike": true
+            },
+            "eventtags": {},
+            "name": "Blood Rush",
+            "description":  [      
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Attack:",
+                    "subcontent":   [                      
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "On Hit:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "[D] + fray.",
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                            }]
+                        },
+                        {
+                            "tags": [{"desc_type" : "subeffect"}],
+                            "content": "Miss:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "Fray.",
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        }]
+                },
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Effect:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "The Lord Evictor may rush 1 before this attack.",
+                                        "glossary": [
+                                            {"val": "rush", "id": "gl_rush"}
+                                        ]
+                                    }]
+                },
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Effect:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "The Lord swings their weapon in a massive arc after this ability resolves. Foes adjacent to the Lord take 2 damage again and are shoved 1.",
+                                        "glossary": [
+                                            {"val": "shoved", "id": "gl_shove"}
+                                        ]
+                                    }]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_imperishablestar",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "type": "attack",
+                "range": 5,
+                "pierce": true,
+                "blast_size": "large"
+            },
+            "eventtags": {},
+            "name": "Imperishable Star",
+            "description":  [      
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Attack:",
+                    "subcontent":   [                      
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "On Hit:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "[D] + fray.",
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                            }]
+                        },
+                        {
+                            "tags": [{"desc_type" : "subeffect"}],
+                            "content": "Miss or Area Effect:",
+                            "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "Fray.",
+                                                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                            }]
+                        }]
+                },
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Effect:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Create a pit under the attack target.",
+                                        "glossary": [
+                                            {"val": "pit", "id": "gl_pit"}
+                                        ]
+                                    }]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_scathebarbarians",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 2,
+                "type": "attack",
+                "range": 4
+            },
+            "eventtags": {},
+            "name": "Scathe Barbarians",
+            "description":  [      
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Attack:",
+                    "subcontent":   [                      
+                        {
+                            "tags": {"desc_type" : "subeffect"},
+                            "content": "On Hit:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "2[D] + fray.",
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shove", "id": "gl_shove"}]
+                                            }]
+                        },
+                        {
+                            "tags": [{"desc_type" : "subeffect"}],
+                            "content": "Miss:",
+                            "subcontent":   [{
+                                                "tags": [{"desc_type": "desc"}],
+                                                "content": "[D] + fray.",
+                                                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                                            }]
+                        }]
+                },
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Effect:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "The Lord Evictor may rush 1 before this attack.",
+                                        "glossary": [
+                                            {"val": "rush", "id": "gl_rush"}
+                                        ]
+                                    }]
+                },
+                {
+                    "tags": [{"desc_type" : "effect"}],
+                    "content": "Effect:",
+                    "subcontent":   [{
+                                        "tags": [{"desc_type": "desc"}],
+                                        "content": "Deals bonus damage for every difference in height etween the Lord Vexator and their target. If the difference is 2+, this ability gains unerring, foe takes 2 damage twice again and is dazed.",
+                                        "glossary": [
+                                            {"val": "bonus damage", "id": "gl_bonusdamage"},
+                                            {"val": "unerring", "id": "gl_unerring"},
+                                            {"val": "dazed", "id": "gl_dazed"}
+                                        ]
+                                    }]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_dreadmarch",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": "free"
+            },
+            "eventtags": {},
+            "name": "Dread March",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Evictor rushes 1, then shoves all adjacent foes 1.",
+                    "glossary": [
+                        {"val": "rushes", "id": "gl_rush"},
+                        {"val": "shoves", "id": "gl_shove"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "The other lords can also rush 1.",
+                            "glossary": [
+                                {"val": "rush", "id": "gl_rush"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_crushpeon",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1
+            },
+            "eventtags": {},
+            "name": "Crush Peon",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "An adjacent foe is picked up and crushed by the Lord Evictor. Remove them from the battlefield as they are hurled into the air, then smashed down in any space in range 2, returning them.",
+                    "glossary": [
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "gap"}],
+                    "content": ""
+                },
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "They are slashed. Slashed characters are stunned instead.",
+                    "glossary": [
+                        {"val": "slashed", "id": "gl_slashed"},
+                        {"val": "Slashed", "id": "gl_slashed"},
+                        {"val": "stunned", "id": "gl_stunned"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "If the other one or two lords are in range 3 of the target’s landing point, they juggle the target with attacks before they land, each dealing 2 piercing damage.",
+                            "glossary": [
+                                {"val": "piercing", "id": "gl_piercing"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_breakearth",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "range": 3
+            },
+            "eventtags": {},
+            "name": "Break Earth",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Evictor smashes the ground with the hilt of their weapon, dealing fray damage to and weakening a character in range. Weakened characters are stunned.",
+                    "glossary": [
+                        {"val": "fray", "id": "gl_fray"},
+                        {"val": "weakening", "id": "gl_weakened"},
+                        {"val": "Weakened", "id": "gl_weakened"},
+                        {"val": "stunned", "id": "gl_stunned"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "If another Lord is in range 3, the Lord Evictor can cause a shockwave that creates a height 1 debris object underneath that Lord, or raises the height of such an object by 1.",
+                            "glossary": [
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_darkgrip",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "range": 4
+            },
+            "eventtags": {},
+            "name": "Dark Grip",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "A foe at or further away than range 4 must save.",
+                    "glossary": [
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "gap"}],
+                    "content": ""
+                },
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "On a successful save, they are shoved 2 spaces towards the Lord Evictor. On a failed save, they are shoved until adjacent, or as far as possible.",
+                    "glossary": [
+                        {"val": "shoved", "id": "gl_shove"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_masterofsecretplaces",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": "free"
+            },
+            "eventtags": {},
+            "name": "Master of Secret Places",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord swaps the positions of any or all of the three Lords, removing and placing them.",
+                    "glossary": [
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_yawningvoid",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "range": 3,
+                "terrain_effect": true
+            },
+            "eventtags": {},
+            "name": "Yawning Void",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "Summon a pit in a free space in range.",
+                    "glossary": [
+                        {"val": "Summon", "id": "gl_summon"},
+                        {"val": "pit", "id": "gl_pit"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "gap"}],
+                    "content": ""
+                },
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "Characters that start or end their turn in the pit can be teleported by the Lord Prelictor to any other pit created by this ability or Imperishable Star.",
+                    "glossary": [
+                        {"val": "pit", "id": "gl_pit"},
+                        {"val": "teleported", "id": "gl_teleport"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "The Lord Prelictor can then teleport another Lord in range 3 2 spaces.",
+                            "glossary": [
+                                {"val": "teleport", "id": "gl_teleport"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_drainessence",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "range": 5,
+                "blast_size": "small"
+            },
+            "eventtags": {},
+            "name": "Drain Essence",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "Foes inside take 2 piercing damage and must save or become pacified.",
+                    "glossary": [
+                        {"val": "piercing", "id": "gl_piercing"},
+                        {"val": "pacified", "id": "gl_pacified"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_darkastra",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "mark": true
+            },
+            "eventtags": {},
+            "name": "Dark Astra",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Prelictor marks itself or another Lord with a ward of energy. That Lord gains 10 vigor.",
+                    "glossary": [
+                        {"val": "marks", "id": "gl_mark"},
+                        {"val": "vigor", "id": "gl_vigor"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "gap"}],
+                    "content": ""
+                },
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "When this vigor is destroyed, or at the end of the round, the ward explodes, ending this mark. Foes in a large blast area effect centered on the targeted Lord take 2 piercing damage twice and must save or be shattered.",
+                    "glossary": [
+                        {"val": "vigor", "id": "gl_vigor"},
+                        {"val": "mark", "id": "gl_mark"},
+                        {"val": "large blast", "id": "gl_blast"},
+                        {"val": "area effect", "id": "gl_areaeffect"},
+                        {"val": "piercing", "id": "gl_piercing"},
+                        {"val": "shattered", "id": "gl_shattered"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "gap"}],
+                    "content": ""
+                },
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "A character also loses this vigor if the mark is transferred, but it doesn’t cause the ward to explode.",
+                    "glossary": [
+                        {"val": "vigor", "id": "gl_vigor"},
+                        {"val": "mark", "id": "gl_mark"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_raid",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1
+            },
+            "eventtags": {},
+            "name": "Raid",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Vexator leaps and flies up to 3 spaces.",
+                    "glossary": [
+                        {"val": "flies", "id": "gl_flying"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "If they land next to another Lord, both Lords can leap and fly up to 3 spaces again, then each can deal 2 damage to an adjacent foe after landing.",
+                            "glossary": [
+                                {"val": "fly", "id": "gl_flying"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_thelanguageofshadows",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1
+            },
+            "eventtags": {},
+            "name": "The Language of Shadows",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Vexator gains stealth, and adjacent foes must save or become blinded.",
+                    "glossary": [
+                        {"val": "stealth", "id": "gl_stealth"},
+                        {"val": "blinded", "id": "gl_blinded"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "Another Lord in range 3 gains stealth.",
+                            "glossary": [
+                                {"val": "stealth", "id": "gl_stealth"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "af_relict_dreadlords_essencearrow",
+            "type": "Ability",
+            "source": "core",
+            "tags": {
+                "action": 1,
+                "line": 6
+            },
+            "eventtags": {},
+            "name": "Essence Arrow",
+            "description":  [      
+                {
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "The Lord Vexator shoots a line 6 area effect. Foes inside take fray damage.",
+                    "glossary": [
+                        {"val": "area effect", "id": "gl_areaeffect"},
+                        {"val": "fray", "id": "gl_fray"}
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "If the Lord Evictor is caught in the area, the area gains true strike, and foes in the line are then shoved 1 towards or away from the Lord Vexator.",
+                            "glossary": [
+                                {"val": "area", "id": "gl_areaeffect"},
+                                {"val": "true strike", "id": "gl_truestrike"},
+                                {"val": "shoved", "id": "gl_shove"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tags": [{"desc_type": "effect"}],
+                    "content": "Imperium: ",
+                    "subcontent": [
+                        {
+                            "tags": [{"desc_type": "desc"}],
+                            "content": "If the Lord Prelictor is caught in the line, the arrow deals 2 piercing damage twice instead.",
+                            "glossary": [
+                                {"val": "piercing", "id": "gl_piercing"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
 ]

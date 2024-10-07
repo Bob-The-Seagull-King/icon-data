@@ -636,6 +636,204 @@
         ]
     },
     {
+        "id": "tf_relict_vesselknight_beyonddeath",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beyond Death",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defiance activates, roll a d6. On a 3+, this character immediately regains defiance. Divine damage bypasses this trait.",
+                "glossary": [
+                    {"val": "defiance", "id": "gl_defiance"},
+                    {"val": "Divine", "id": "gl_divine"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_vesselknight_spectralform",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spectral Form",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains phasing, flying, and speed 6.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "flying", "id": "gl_flying"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_arkenlich_utterancesofthecrawlingdead",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Utterances of the Crawling Dead",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the lich begins incanting. It chooses a foe, who gains aura 2, and becomes immune to being shoved by the lich’s abilities.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "immune", "id": "gl_immune"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every other part of the battlefield begins to shift with crawling darkness. At the end of the round, the battlefield erupts. All foes not in the safe zone marked by the aura must sacrifice 50% of their maximum hp. If any of a character’s soul fragments are not in the safe zone, they must additionally sacrifice 25% of their max hp per soul fragment caught outside the area.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "sacrifice", "id": "gl_sacrifice"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_dreadlords_triumvirate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Triumvirate",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This Legend is made up of three powerful undead lords. Each is a unique character and tracks statuses and effects separately, but all three share the same health pool and become bloodied when their total health is at 50%. When educed to 0 hp, all three are defeated simultaneously.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_dreadlords_imperium",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Imperium",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this legend takes a turn, it acts with one of the three Lords. It cannot take another turn with a Lord in a round until all three have acted. However, abilities with an Imperium effect grant the two lords who are not currently acting an additional effect.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_dreadlords_eternalimperium",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Eternal Imperium (Round 3, 6, Etc)",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round three, and every third round thereafter, all three Lords use their Round actions simultaneously.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_dreadlords_lordevictor_armour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Armor 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Reduce all damage taken by 2."
+            }
+                        ]
+    },
+    {
+        "id": "tf_dreadlords_lordevictor_rampart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rampart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spaces adjacent to you have Rampart.",
+                "glossary": [
+                    {"val": "Rampart", "id": "gl_rampart"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_relict_vesselknight_malice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Malice",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After they attack, the Vessel knight marks their target, granting a stack of malice.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Malice stacks indefinitely and can mark any number of characters.",
+                        "glossary": [
+                            {"val": "mark", "id": "gl_mark"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the end of their turn, a character sacrifices 3 for every stack of Malice they have.",
+                        "glossary": [
+                            {"val": "sacrifices", "id": "gl_sacrifice"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If a character suffering from Malice doesn’t attack during their turn, at the end of their turn, they reduce their stacks of Malice by 2 before sacrificing, which could clear them.",
+                        "glossary": [
+                            {"val": "sacrificing", "id": "gl_sacrifice"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It can also be cleared by anything that clears a mark, but doing so only clears one at a time.",
+                        "glossary": [
+                            {"val": "mark", "id": "gl_mark"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_relict_legionofthedead",
         "type": "Trait",
         "source": "core",

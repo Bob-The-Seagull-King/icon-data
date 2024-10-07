@@ -3683,6 +3683,241 @@
         "chapter": 3
     },
     {
+        "id": "fj_relict_legend_vesselknight",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Vessel Knight",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Black-armored conqueror knights of incredible power that were dispatched alone to lands not conquered by the Arken to conduct diplomacy - at the tip of a sword if need be. There were forty of these knights, ten for each of the cardinal directions. Each was a hero of unparalleled strength, their name recorded in the annals of the imperial muster, and blessed by the Emperor."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "While they still lived, these knights were marked by dark ritual, their very essences bound to their armor so that they could continue their duty even in death or after mortal injury. During the Doom, they all succumbed, but this did not stop them from carrying out their orders. Repeated death has stripped most of them of their sense. Now they are vaporous husks - hollow iron shells filled with dust and a sense of loathsome purpose. When the ruins rise, they rise from their graves and call forth armies, slaughtering and conquering in the name of an empire that no longer exists until they are beaten and sealed again."
+            }
+        ],
+        "stats": { "size": 2 },
+        "actions": ["af_relict_vesselknight_darklightcleaver","af_relict_vesselknight_darkstrength"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_special_defiance","tf_relict_vesselknight_beyonddeath","tf_relict_vesselknight_malice"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Vessel Knight begins combat in this phase, and enters Phase II when it is bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_relict_vesselknight_rageofiz","af_relict_vesselknight_despair","af_relict_vesselknight_damocles"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Vessel Knight enters this phase when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When bloodied, the Knight becomes intangible until the end of the current turn, then transitions into Phase II. It ignores all damage that put it into its phase transition past its bloodied value.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"},
+                            {"val": "intangible", "id": "gl_intangible"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_relict_vesselknight_dispersal","af_relict_vesselknight_soulcleaver"],
+                "traits": ["tf_relict_vesselknight_spectralform"],
+                "stats": { "speed": 6, "dash": 3}
+            }
+        ],
+        "tactics": [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Vessel Knight is a relatively straightforward and threatening legend fight. Characters must balance their own ability to attack with increasing stacks of Malice. Malice can be reduced by not attacking, but in Phase II, the knight starts to ramp up its damage output with its Soul Cleaver ability, which will become overwhelming over time."
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_legend_arkenlich",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkenlich",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Designers of the Ur-spell and arch-priests of the Dark Sun, these ancient warrior-necromancers were embalmed and entombed even before the final death of the empire, their souls bound into specially prepared vessels so they could carry out the great work of the old emperors uninterrupted by the frailties of mortality. Their bronze sarcophagi are engraved with their titles and names and their eyes are sealed with gold. Though the process left their minds largely intact, the long dark and centuries in contact with the anguished souls trapped in the Relict network have left most of them insane. Most of them lie dreaming in fitful nightmares until awakened by unlucky adventurers."
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_relict_arkenlich_thytributeisdemanded","af_relict_arkenlich_annihilationofthwicked","af_relict_arkenlich_witnessthecomingterror","af_relict_arkenlich_offerobeisancebeforethyproperlords","af_relict_arkenlich_fear","af_relict_arkenlich_masterofthefourwinds","af_relict_arkenlich_theinevitablecorruptionofflesh","af_relict_arkenlich_profane"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While not in Phase II, the Arkenlich has no special traits or abilities. The Arkenlich returns to Phase I after it uses Utterances of the Crawling Dead."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3 and every third round therafter (6, 9, etc), the Lich uses Utterances of the Crawling Dead."
+                    }
+                ],
+                "name": "Phase II (Round 3, 6, 9+)",
+                "actions": [],
+                "traits": ["tf_relict_arkenlich_utterancesofthecrawlingdead"],
+                "stats": {}
+            }
+        ],
+        "tactics": [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Arkenlich is a legend fight based on positioning. At the end of each round, all foes are pelted with magic that stacks up in nasty ways if they are lined up in the wrong way, but many of the Lich’s abilities require characters to group up to avoid. Every third round, Utterances of the Crawling dead makes the area they have to line up in even smaller. The Lich can also pull characters around itself to get them out of position."
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_legend_dreadlords",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dread Lords",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Legions of the Arken were always ruled in triumvirate, each legion headed by three of its mightiest lord commanders. At the fall of the Empire, these minor Arkenlords were entombed with their troops, buried alive under rubble, scoured by dread magics and left smoking on the battlefields, or burned alive in the smoking cities of the Arken. Their immortalization crystallized their hatred at their failure to protect the empire, honing it to a razor's edge. Now, in death, they lie dreaming, entangled in nightmares of ceaseless bloodlust and brutal conquest. The priests of the Black Sun work endlessly at their resurrection, for when the Dread Lords can be awakened, their wrath is terrible, and their ambition endless."
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_relict_dreadlords_eternallordship"],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_relict_dreadlords_triumvirate","tf_relict_dreadlords_imperium","tf_relict_dreadlords_eternalimperium"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Lord of the Center, the Black Iron Lord. Arken nobles granted this title were renowned and greatly feared generals tasked with controlling and holding the center mass of a combat, and in other times protecting the homelands of the Empire and keeping order by rooting out seditionists and rebels. In life, they crushed all before them with cold-hearted brutality. In death, there is little difference."
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of each round, one of the Dread Lords can use its Round Action, with a different Lord’s round action each round, until all three have used their Round Action. At round 3 and every three rounds thereafter, the Lords use Eternal Imperium."
+                    }
+                ],
+                "name": "Lord Evictor",
+                "actions": ["af_relict_dreadlords_strengthofhell","af_relict_dreadlords_bloodrush","af_relict_dreadlords_dreadmarch","af_relict_dreadlords_crushpeon","af_relict_dreadlords_breakearth","af_relict_dreadlords_darkgrip"],
+                "traits": ["tf_special_sturdy","tf_dreadlords_lordevictor_rampart","tf_dreadlords_lordevictor_armour"],
+                "stats": {}
+            },
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Lord of the Right Flank, the Pure Silver Lord. Arken nobles granted this title were wrights and warrior-philosophers of great power. They were master strategists and quartermasters, as skilled with the organization and upkeep of the legions as they were with scathing the battlefield with blasts of primal magic. In death, they are able to muster and catalogue the dead with the same ruthless efficiency as they did in life."
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of each round, one of the Dread Lords can use its Round Action, with a different Lord’s round action each round, until all three have used their Round Action. At round 3 and every three rounds thereafter, the Lords use Eternal Imperium."
+                    }
+                ],
+                "name": "Lord Prelictor",
+                "actions": ["af_relict_dreadlords_musterthedead","af_relict_dreadlords_imperishablestar","af_relict_dreadlords_masterofsecretplaces","af_relict_dreadlords_yawningvoid","af_relict_dreadlords_drainessence","af_relict_dreadlords_darkastra"],
+                "traits": ["tf_class_artillery_aetherwall"],
+                "stats": {}
+            },
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Lord of the Left Flank, the True Bronze Lord. Arken nobles granted this title were rangers, scouts, and vanguards tasked with scouting new lands for conquest and with the purgation and subjugation of barbarians. Their bloodlust and cruelty was unparalleled."
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of each round, one of the Dread Lords can use its Round Action, with a different Lord’s round action each round, until all three have used their Round Action. At round 3 and every three rounds thereafter, the Lords use Eternal Imperium."
+                    }
+                ],
+                "name": "Lord Vexator",
+                "actions": ["af_relict_dreadlords_punishmentofheaven","af_relict_dreadlords_scathebarbarians","af_relict_dreadlords_raid","af_relict_dreadlords_thelanguageofshadows","af_relict_dreadlords_essencearrow"],
+                "traits": ["tf_class_skirmisher_skirmisher", "tf_class_skirmisher_dodge"],
+                "stats": {}
+            }
+        ],
+        "tactics": [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This legend fight is three warriors that work in tandem with each other. The Lord Evictor and Lord Vexator are powerful fighters whose Round Actions punish players for getting close or staying away, respectively. The Lord Prelictor can use its abilities to swap around the positions of the lords or making targeting one lord less appealing, making this tricky to handle. It’s Wailing Soul summons are potent, but players might consider getting shoved into them voluntarily to clear them before they can become a problem."
+            }
+        ],
+        "chapter": 3
+    },
+    {
         "id": "fj_beast_mob_beastpack",
         "type": "FoeJob",
         "source": "core",
