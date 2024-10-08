@@ -549,5 +549,30 @@
         "blurb":  [],
         "colour": "blue",
         "limit": 2
+    },
+    {
+        "id": "sm_imperial_imperialshinobi_shadowclone",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Shadow Clone",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes adjacent to a shadow clone at the start of their turn take 3 damage from the clone. The Shinobi and any of its allies may gain stealth if they end their turn adjacent to a clone. Clones disappear at the end of combat or if the Shinobi is defeated.",
+                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 6
     }
 ]

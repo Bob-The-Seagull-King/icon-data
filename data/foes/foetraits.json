@@ -964,6 +964,21 @@
         ]
     },
     {
+        "id": "tf_imperial_informant_lowprofile",
+        "type":"Trait",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name":"Low Profile",
+        "description":[
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Has evasion against ranged attacks.",
+                "glossary":[{"val":"evasion", "id":"gl_evasion"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",

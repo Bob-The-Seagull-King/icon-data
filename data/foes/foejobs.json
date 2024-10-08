@@ -1687,7 +1687,7 @@
         "category":"job",
         "phases":[],
         "tactics":[],
-        "chapter":1
+        "chapter": 1
     },
     {
         "id": "fj_imperial_heavy_thundertrooper",
@@ -1733,6 +1733,131 @@
         "actions":["af_imperial_hessian_hessianlongrifle", "af_imperial_hessian_disarm"],
         "removed_actions":[],
         "traits":["tf_special_sturdy","tf_imperial_hessian_bloodrush"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
+    },
+    {
+        "id": "fj_imperial_skirmisher_imperialspy",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Imperial Spy",
+        "faction_id": "fc_imperial",
+        "class_id":"cl_foe_skirmisher",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content":"Top line imperial operatives, trained at a guild academy."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_imperialspy_disguise"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_skirmisher_informant",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Informant",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content": "Well paid, and well fed, informants infiltrate local populations and pass information up to imperial command."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_informant_snitch"],
+        "removed_actions":["af_imperial_skirmisher_prepdecoy"],
+        "traits":["tf_imperial_informant_lowprofile"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_skirmisher_imperialdemolitionist",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Imperial Demolitionist",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+                {
+                    "tags": {"desc_type":"subeffect"},
+                    "content": "Laden with explosives, demolitionists blow doors in ruins, gatehouses of cities, or collapse tunnels below armies."
+                }
+        ],
+        "stats":{},
+        "actions":["af_imperial_imperialdemolitionist_clampmine"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_skirmisher_groundbreaker",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Groundbreaker",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content": "Part combat engineer, part sapper, groundbreakers are sent in to set up advance positions for troops to use."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_groundbreaker_grenadejump", "af_imperial_groundbreaker_zipline"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_skirmisher_imperialshinobi",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Imperial Shinobi",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Imperial operatives trained in imitation of the Scroll Arts of the Shades. The combination of black powder, traps, and shadow magic is extremely effective at removing particularly tough ‘obstacles’ for imperial generals, sometimes including political opponents."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_imperialshinobi_shadowclone", "af_imperial_imperialshinobi_shadowswap", "af_imperial_imperialshinobi_shadowplay"],
+        "removed_actions":[],
+        "traits":[],
         "removed_traits":[],
         "category":"job",
         "phases":[],

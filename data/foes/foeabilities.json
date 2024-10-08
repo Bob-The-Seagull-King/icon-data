@@ -8796,6 +8796,220 @@
         ]
     },
     {
+        "id": "af_imperial_imperialspy_disguise",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Disguise",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a foe or ally in range, teleporting both characters. Foes can save to avoid this effect.",
+                "glossary":[{"val":"teleporting", "id":"gl_teleport"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a foe succeeds on the save, the Spy can instead dash 3.",
+                "glossary":[{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_informant_snitch",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Snitch",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The informant gains the following interrupt until the start of its next turn.",
+                "desc": [{"val":"interrupt", "id":"gl_interrupt"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_informant_snitch_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "f_imperial_informant_snitch_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "interrupt": 1,
+            "type":"interrupt"
+        },
+        "eventtags": {},
+        "name": "Gathered Intelligence",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type": "desc"},
+                        "content": "A foe anywhere starts their turn."                    
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type": "effect"},
+                "content": "Effect:",
+                "subcontent": [{
+                    "tags":{"desc_type":"desc"},
+                    "content":" Any number of allies in range 2 of that foe may dash 2, then gain stealth.",
+                    "glossary":[{"val":"dash", "id":"gl_dash"}, {"val":"stealth", "id":"gl_stealth"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_imperialdemolitionist_clampmine",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Clamp Mine",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demolitionist throws a sticky mine on to a character in range. At the end of that character’s turn, they explode with a small blast area effect centered on them. That foe and other characters in the area are dazed. If the exploding foe is the only character in the area, it ceases to become an area effect. Instead, they are dazed and take 3 damage, twice.",
+                "glossary":[{"val":"small blast", "id":"gl_blast"},{"val":"area effect", "id":"gl_areaeffect"}, {"val":"dazed", "id":"gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_groundbreaker_grenadejump",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Grenade Jump",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Groundbreaker releases a burst 1 (self) area effect for 2 damage.",
+                "glossary": [{"val":"burst", "id":"gl_burst"},{"val":"area effect", "id":"gl_areaeffect"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, it flies 4, and all other characters in the area may fly 1.",
+                "glossary": [{"val":"area effect", "id":"gl_areaeffect"},{"val":"flies", "id":"gl_flying"}, {"val":"fly", "id":"gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_groundbreaker_zipline",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Zip Line",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Groundbreaker creates a 1 space terrain effect in an adjacent space, then another 1 space terrain effect in free space in range."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags":{"desc_type" : "desc"},
+                "content": " Characters entering one of these terrain effects during their own turn can grab on to the zip line, removing them from the battlefield, then place themselves in free adjacent space to the other terrain effect, then fly 1.",
+                "glossary": [{"val":"fly","id":"gl_flying"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags":{"desc_type": "desc"},
+                "content":"This effect can interrupt abilities and other movement, but can only take place once a turn. If a new zip line is placed, the old one is removed."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_imperialshinobi_shadowclone",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Shadow Clone",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon a shadow clone in a free space in range.",
+                "glossary": [{"val":"Summon","id":"gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_imperialshinobi_shadowclone"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_imperialshinobi_shadowswap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Shadow Swap",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Shinobi or an ally swaps places with a shadow clone in range 3 of them, teleporting.",
+                "glossary":[{"val":"teleporting", "id":"gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_imperialshinobi_shadowplay",
+        "type":"Ability",
+        "source":"core",
+        "tags" :{
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Shadow Play",
+        "class_id": "yellow",
+        "description": [
+            {
+                "tags": {"desc_type":"desc"},
+                "content": "The Shinobi swaps the positions of two characters in range, teleporting them. Allies swapped gain stealth.",
+                "glossary": [{"val": "teleporting", "id":"gl_teleport"}, {"val":"stealth", "id":"gl_stealth"}]
+            }
+        ]
+    },
+    {
         "id": "af_demon_heavy_bloodfeed",
         "type": "Ability",
         "source": "core",
