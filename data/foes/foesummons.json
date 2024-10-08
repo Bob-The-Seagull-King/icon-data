@@ -27,6 +27,211 @@
         "limit": 0
     },
     {
+        "id": "sm_churner_deepfarmer_mushroom",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Mushroom",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Aura 1. Characters in the spore-filled aura other than the Deep Farmer choke and are weakened.",
+                        "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "red",
+        "limit": 0
+    },
+    {
+        "id": "sm_churner_shopkeep_shop",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "object": true,
+            "immobile": true
+        },
+        "eventtags": {},
+        "name": "Shop",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "No fighting in the shop. Aura 1. Characters in the area other than the shopkeep are pacified+.",
+                        "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"},  {"val": "+", "id": "gl_ongoing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While the shop is active, any character in the aura can use the Rummage action, which ignores pacified.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "pacified", "id": "gl_pacified"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_churner_shopkeep_rummage"
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_guilder_aerothurge_portal",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Portal",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Any character adjacent to a portal can spend 2 spaces of movement to teleport adjacent to the other linked portal, or vice versa.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_islander_cook_flapjack",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "summon": true,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Flapjack",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character other than the cook moving into the flapjack’s space can pick it up, removing it. That character gains defiance. A character that already has defiance gains 6 vigor. A character with vigor becomes unstoppable until the end of their next turn.",
+                        "glossary": [{"val": "defiance", "id": "gl_defiance"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_leggio_monsterrider_tamemonster",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "size": 1,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Tame Monster",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "During the rider’s turn, can dash 4, then either shove a character 1 space or deal 2 damage to them.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_leggio_firedancer_bomb",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Bomb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When any character enters its space, it explodes for a small blast area effect explosion. Characters within become vulnerable, then must save or take 2 piercing damage twice, or just 2 piercing damage on a successful save.",
+                        "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_yeokin_shinobi_shadowclone",
+        "type": "Summon",
+        "source": "core",
+        "tags": { 
+            "summon": true,
+            "size": 1
+        },
+        "eventtags": {},
+        "name": "Shadow Clone",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes adjacent to a shadow clone at the start of their turn take 3 damage from the clone. The Shinobi and any of its allies may gain stealth if they end their turn adjacent to a clone. Clones disappear at the end of combat or if the Shinobi is defeated.",
+                        "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 0
+    },
+    {
         "id": "sm_relict_artillery_soulspark",
         "type": "Summon",
         "source": "core",
@@ -525,6 +730,144 @@
         "limit": 2
     },
     {
+        "id": "sm_relict_immortalist_sarcophagusofiz",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 10,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Sarcophagus of Iz",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Shares space with a character. While sharing space with the sarcophagus, they must sacrifice 3 at the start of their turn and are immobile, but can otherwise be targeted normally. The Sarcophagus takes no damage from Relict and only 1 damage maximum from any ability from a foe inside of it.",
+                                    "glossary": [
+                                        {"val": "sacrifice", "id": "gl_sacrifice"},
+                                        {"val": "immobile", "id": "gl_immobile"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_relict_immortalist_pillarofiz",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "height": 2,
+            "hp": 5,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Pillar of Iz",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Aura 1. Inside the aura, relict characters have resistance and foes are sealed+.",
+                                    "glossary": [
+                                        {"val": "Aura", "id": "gl_aura"},
+                                        {"val": "aura", "id": "gl_aura"},
+                                        {"val": "resistance", "id": "gl_resistance"},
+                                        {"val": "sealed", "id": "gl_sealed"},
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_relict_arkenlich_soulfragment",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "immobile": true,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Soul Fragment",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Each soul fragment is tied to a specific character. Characters adjacent to any soul fragment are vulnerable+. Additionally, fragments can be affected by the Lich’s round actions Annihilation of the Wicked and Utterances of the Crawling Dead.",
+                                    "glossary": [
+                                        {"val": "vulnerable", "id": "gl_vulnerable"},
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_relict_dreadlords_wailingsoul",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Wailing Soul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes adjacent to souls are vulnerable+ and all damage dealt to them becomes piercing. If a foe collides with a soul, they release a large blast shriek area effect centered on them, dealing 2 piercing damage to all foes inside, then removing the soul.",
+                                    "glossary": [
+                                        {"val": "vulnerable", "id": "gl_vulnerable"},
+                                        {"val": "+", "id": "gl_ongoing"},
+                                        {"val": "piercing", "id": "gl_piercing"},
+                                        {"val": "collides", "id": "gl_collide"},
+                                        {"val": "large blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_beast_kinfisher_lure",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Lure",
+        "description":  [
+        ],
+        "blurb":  [],
+        "colour": "blue"
+    },
+    {
         "id": "sm_general_master_rallypoint_ph2",
         "type": "Summon",
         "source": "core",
@@ -543,6 +886,45 @@
                                     "tags": {"desc_type" : "desc"},
                                     "content": "Aura 2. Minions in the aura sare immune to all damage and Press the Assault against characters in the area deals maximum damage.",
                                     "glossary": [{"val": "Aura", "id": "gl_aura"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_beast_floatfish_pearlsecentbubble",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Pearlsecent Bubble",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a character enters the bubble’s space, it pops, shattering them, shoving them 3 in any direction, and creating a space of difficult terrain.",
+                                    "glossary": [
+                                        {"val": "shattering", "id": "gl_shattered"},
+                                        {"val": "shoving", "id": "gl_shove"},
+                                        {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Character also takes fray damage twice.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"}]
                                 }]
             }
         ],

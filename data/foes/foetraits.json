@@ -227,6 +227,130 @@
         ]
     },
     {
+        "id": "tf_churner_guide_auraoffreedom",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Freedom",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Aura 1. The Guide and allies in the aura are immune to movement penalties from terrain and elevation.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "immune", "id": "gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_guilder_guard_holdtheline",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hold the Line",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "If the Guard ends any turn without attacking, they gain Sturdy and Vigilance +1.",
+                "glossary": [{"val": "Sturdy", "id": "gl_sturdy"}, {"val": "Vigilance", "id": "gl_vigilance"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_guilder_aeronaut_aerialacrobat",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aerial Acrobat",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "If an attack misses the Aeronaut, they may deal 2 damage to the attacker, then fly 2.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_islander_sailor_salty",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Salty",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "When the Sailor sacrifices any amount, they gain 3 vigor after the triggering ability resolves.",
+                "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}, {"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_islander_doomdiver_nimble",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nimble",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Has evasion unless suffering from a status.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}, {"val": "status", "id": "gl_status"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_leggio_monsterrider_monsterriding",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Riding",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "The Rider starts combat riding a trained monster, and can also mount it as an action or by spending its standard move. While riding, the rider shares space with the monster and moves when it moves, becoming unstoppable while moving this way. If the two are separated, this effect ends until the monster is remounted.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}, {"val": "status", "id": "gl_status"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"}, 
+                "content": "sm_leggio_monsterrider_tamemonster"
+            }
+        ]
+    },
+    {
+        "id": "tf_leggio_acrobat_tumbling",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tumbling",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "Moving up terrain costs no movement. Can phase through characters and doing so costs a maximum of 1 movement.",
+                "glossary": [{"val": "phase", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_leggio_polefighter_slam",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Slam",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"}, 
+                "content": "When a character collides from the pole fighter’s moves, they are slashed. Slashed characters take fray damage instead.",
+                "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_folk_camaraderie",
         "type": "Trait",
         "source": "core",
@@ -238,6 +362,474 @@
                 "tags": {"desc_type" : "desc"}, 
                 "content": "+1 boon on attacks and saves for every adjacent ally.",
                 "glossary": [{"val": "+1 boon", "id": "gl_boon"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_immortalist_eternalwar",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Eternal War",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Immortalist is on the battlefield and not defeated, all relict’s Rise Again trait activates on a 3+."
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_silentone_ethereal",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ethereal",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains phasing, and has resistance unless adjacent to a foe.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "resistance", "id": "gl_resistance"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_strigoi_bloodhunger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Hunger",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deals +2 damage with all abilities against bloodied foes.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_automata_automata",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Automata",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this character attacks the same character as last turn, it deals bonus damage and gains +1 boon. This effect stacks.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "+1 boon", "id": "gl_boon"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_automata_emptyhusk",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Empty Husk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character becomes a height 1 object when defeated instead of a character, and cannot be returned to the battlefield.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_warmech_emptyhusk",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Empty Husk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character becomes a 2x2 series of height 1 objects when defeated instead of a character, and cannot be returned to the battlefield.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_fused_soulmass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Soul Mass",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can share space with other characters. Foes treat the space as difficult terrain, are slashed+ while inside, and have cover from the outside, but are otherwise targetable normally.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "slashed", "id": "gl_slashed"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any foes that start their turn inside its space take fray damage. Foes that attempt to leave this character’s space by any means on their turn must save or become unable to exit it until the end of the current turn.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_revenant_shedflesh",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shed Flesh",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After taking damage that bloodies it, becomes intangible until the start of its next turn as it wriggles out of its flesh.",
+                "glossary": [
+                    {"val": "bloodies", "id": "gl_bloodied"},
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "For the rest of combat, gains phasing and flying.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "flying", "id": "gl_flying"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_immortal_immortaldisregard",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortal Disregard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks never miss the Immortal (turn any miss into a hit)."
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_immortal_auraofimmortality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Immortality",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While Immortal is undefeated, it has Aura 2. Relict without this trait inside cannot be reduced past 1 HP.",
+                "glossary": [
+                    {"val": "Aura", "id": "gl_aura"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_fused_releasepassengers",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Release Passengers",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When defeated, summon 4 ",
+                        "glossary": [
+                            {"val": "summon", "id": "gl_summon"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " in or adjacent to its space.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "id": "tf_relict_atrophicgrave_shedmass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shed Mass",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of its turn, the Grave summons a",
+                        "glossary": [
+                            {"val": "summons", "id": "gl_summon"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " in a free adjacent space. When the Grave is bloodied, it summons 2",
+                        "glossary": [
+                            {"val": "summons", "id": "gl_summon"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " instead.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    },
+    {
+        "id": "tf_relict_vesselknight_beyonddeath",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beyond Death",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defiance activates, roll a d6. On a 3+, this character immediately regains defiance. Divine damage bypasses this trait.",
+                "glossary": [
+                    {"val": "defiance", "id": "gl_defiance"},
+                    {"val": "Divine", "id": "gl_divine"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_vesselknight_spectralform",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spectral Form",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains phasing, flying, and speed 6.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "flying", "id": "gl_flying"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_arkenlich_utterancesofthecrawlingdead",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Utterances of the Crawling Dead",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the lich begins incanting. It chooses a foe, who gains aura 2, and becomes immune to being shoved by the lich’s abilities.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "immune", "id": "gl_immune"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every other part of the battlefield begins to shift with crawling darkness. At the end of the round, the battlefield erupts. All foes not in the safe zone marked by the aura must sacrifice 50% of their maximum hp. If any of a character’s soul fragments are not in the safe zone, they must additionally sacrifice 25% of their max hp per soul fragment caught outside the area.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "sacrifice", "id": "gl_sacrifice"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_dreadlords_triumvirate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Triumvirate",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This Legend is made up of three powerful undead lords. Each is a unique character and tracks statuses and effects separately, but all three share the same health pool and become bloodied when their total health is at 50%. When educed to 0 hp, all three are defeated simultaneously.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_dreadlords_imperium",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Imperium",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this legend takes a turn, it acts with one of the three Lords. It cannot take another turn with a Lord in a round until all three have acted. However, abilities with an Imperium effect grant the two lords who are not currently acting an additional effect.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_dreadlords_eternalimperium",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Eternal Imperium (Round 3, 6, Etc)",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round three, and every third round thereafter, all three Lords use their Round actions simultaneously.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_dreadlords_lordevictor_armour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Armor 2",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Reduce all damage taken by 2."
+            }
+                        ]
+    },
+    {
+        "id": "tf_dreadlords_lordevictor_rampart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rampart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Spaces adjacent to you have Rampart.",
+                "glossary": [
+                    {"val": "Rampart", "id": "gl_rampart"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_relict_vesselknight_malice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Malice",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After they attack, the Vessel knight marks their target, granting a stack of malice.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Malice stacks indefinitely and can mark any number of characters.",
+                        "glossary": [
+                            {"val": "mark", "id": "gl_mark"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the end of their turn, a character sacrifices 3 for every stack of Malice they have.",
+                        "glossary": [
+                            {"val": "sacrifices", "id": "gl_sacrifice"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If a character suffering from Malice doesn’t attack during their turn, at the end of their turn, they reduce their stacks of Malice by 2 before sacrificing, which could clear them.",
+                        "glossary": [
+                            {"val": "sacrificing", "id": "gl_sacrifice"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It can also be cleared by anything that clears a mark, but doing so only clears one at a time.",
+                        "glossary": [
+                            {"val": "mark", "id": "gl_mark"}
+                        ]
+                    }
+                ]
             }
         ]
     },
@@ -295,6 +887,123 @@
         ]
     },
     {
+        "id": "tf_relict_legionary_legionsadvance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Death March",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Death March affects all allies in range 3."
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_shutterghast_darkhallow",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dark Hallow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deals bonus damage and has evasion unless there’s two or more adjacent characters.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_izenghast_surreality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Surreality",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When this character would be defeated, instead becomes intangible until the end of its next turn, then removes itself from the battlefield. It cannot return.",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_arkitek_stoneskin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stoneskin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While adjacent to an object, has resistance.",
+                "glossary": [
+                    {"val": "resistance", "id": "gl_resistance"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_abomination_unstable",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unstable",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, explodes in a large blast area effect explosion centered on the wraith. Characters inside take piercing fray damage, twice, as an area effect. The wraith is then removed from the battlefield. Create a pit in the area it vacated.",
+                "glossary": [
+                    {"val": "large blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_relict_arkivist_shepherdofthedead",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shepherd of the Dead",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Aura 1. ",
+                        "glossary": [{"val": "Aura", "id": "gl_aura"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_relict_mob_husk"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "are immune to all damage while in the aura.",
+                        "glossary": [{"val": "immune", "id": "gl_immune"},{"val": "aura", "id": "gl_aura"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_relict_husk_endlessdead",
         "type": "Trait",
         "source": "core",
@@ -336,6 +1045,1408 @@
                 "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
             }
                         ]
+    },
+    {
+        "id": "tf_faction_beast_cornered",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cornered",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When half its members are remaining or less, this pack gains +1 action."
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_harpy_earsplittingsong",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ear Splitting Song",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Harpy has aura 2. Foes in the aura gain +1 curse on saves and do not save against statuses at the end of their turn. The aura increases to aura 3 when the Harpy is bloodied.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"},
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_barghest_aetherflesh",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherflesh",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barghest can teleport 5 instead of taking a standard move.",
+                "glossary": [
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_canopticswarm_amorphous",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can share space with other characters and objects. Any foes that end their turn inside its space take fray damage. Does not provide obstruction, but characters treat its space as difficult terrain.",
+                "glossary": [
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_beast_bicorn_aetherskin",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherskin",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When bloodied, becomes intangible until the end of its next turn.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_beast_bonabra_bounteousrest",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bounteous Rest",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra starts combat asleep."
+            }    ,                      
+            {
+                "tags": {"desc_type" : "ga["},
+                "content": ""
+            }    ,                      
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Bonabra is damaged at all by a foe’s ability, it wakes up and flies into an unstoppable rage. It also wakes up at the start of round 4. If combat ends before then, or all its allies are defeated before then, the Bonabra remains asleep and is instantly defeated."
+            }    
+        ]
+    },
+    {
+        "id": "tf_beast_halitoad_stench",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stench",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This beast has aura 1. Foes in the aura take +1 curse on attacks and saves.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_baggoth_shaggymass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shaggy Mass",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Baggoth blocks line of sight and provides cover as though it was a height 3 object.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_baggoth_rancor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rancor",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes that end their turn adjacent to the Baggoth take 3 damage and are slashed.",
+                "glossary": [
+                    {"val": "slashed", "id": "gl_slashed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_wailicat_leap",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Leap",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This beast ignores height movement penalties. When it ends any movement on a lower elevation than it started, it gains flying for the duration of that movement.",
+                "glossary": [
+                    {"val": "flying", "id": "gl_flying"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_dungeonjelly_auraofdistortion",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Distortion",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 1. Allies inside the aura have evasion and foes are blinded+. Becomes aura 2 when bloodied.",
+                "glossary": [
+                    {"val": "Aura", "id": "gl_aura"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "blinded", "id": "gl_blinded"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_burrower_earthglide",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Earthglide",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Burrower is at home in the earth, granting it the following beneifts:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Has phasing.",
+                        "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While inside a pit, has evasion.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "evasion", "id": "gl_evasion"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Ambush creates a pit under its target, hit or miss.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_ruinape_maliciousscreeching",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Malicious Screeching",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Ape or its host is bloodied, it has aura 2. Foes in the aura are sealed+, take bonus damage, and take 2 piercing damage if they end their turn there.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "sealed", "id": "gl_sealed"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_bubblefish_bubblebarrier",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bubble Barrier",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the fish or its host are bloodied, the fish and its host have evasion. Any foe that starts or ends its turn adjacent to the host while the barrier is active is shoved 1 away from it.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foe is stunned.",
+                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_aethertick_turnbolts",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Turn Bolts",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Tick or its host are bloodied, it has aura 2. Attacks from outside the aura against characters in the aura gain +1 curse and deal half damage.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_naillascorpseflower_acidburst",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Acid Burst",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Flower or its host take damage, all adjacent foes take 1 piercing damage. This effect can trigger any number of times a round, and does not break pacified.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "pacified", "id": "gl_pacified"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_blastbeetle_explosivedemise",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Explosive Demise",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, explodes in a small blast area effect centered on it. Characters inside are shoved 1 away from the origin space and must save or take [D]+fray, or fray on a successful save.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_redworm_dig",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dig",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can phase through terrain and characters.",
+                "glossary": [
+                    {"val": "phase", "id": "gl_phasing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_kelpie_curseddeeps",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cursed Deeps",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, creates two terrain effects, medium blast areas of cursed deep water.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"}
+                ]
+            },                             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The center space is a pit, and all other spaces are difficult terrain. None can be placed within range 3 of each other.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_kelpie_aquatic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aquatic",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can move through all spaces of its own deep water areas normally, and has evasion in those areas.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_kinfisher_perfectcamoflage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfect Camoflage",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Fisher is intangible unless there’s a foe adjacent to its Lure",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_basilisk_stonepantry",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stone Pantry",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has evasion while adjacent to an object. In addition, if this beast ends its turn adjacent to an object, it gains stealth.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_basilisk_petrification",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Petrification",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Some of the Basilisk’s abilities inflict petrification, which has the following effects:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When a character gains petrification, give them a token."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If a character reaches 3+ tokens, at the end of their turn, discard all petrification tokens, then they are defeated, removed from the battlefield, and replaced by a height 1 lifelike statue object with 10 hp. Return them to the battlefield and rescue them when the statue is destroyed. They can take a turn as normal starting with next round."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character can get rid of 1 petrification token if at the end of their turn if they have not attacked, and 1 petrification token if they have not moved."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_monstrousheads",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monstrous Heads",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chimaera has three heads, chosen or rolled for from the list of choices, each unique."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each head has 1/3 of the Chimaera’s total hp, rounded up."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When dealing damage to the Chimaera, a character must choose which head they are damaging, and can only target one head at once. Heads that are reduced to 0 hp are defeated. Damage that ‘spills over’ on one head is lost."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each head has unique set of abilities. Abilities become more powerful the less heads there are."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Statuses, marks, or other effects only affect the currently acting head.",
+                        "glossary": [{"val": "marks", "id": "gl_mark"}]
+                    }
+                ]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each time the Chimaera takes a turn, it takes a turn with only one of its heads. A different head must act from the last head that acted, unless there is only one head left. The Chimaera is only defeated when all three heads are defeated."
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_lion",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lion",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_lion_lionspride"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_lion_savagebite"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_lion_roar"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_lion_lionspride",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lion's Pride",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Lion is undefeated, reduces damage to all other heads by 2, as if from Armor.",
+                "glossary": [{"val": "Armor", "id": "gl_armor"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bull",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bull",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_bull_bullsfortitude"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bull_headbutt"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bull_rampantgalloping"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bull_bullsfortitude",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bull's Fortitude",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Bull is undefeated, the Chimaera is immune to being shoved.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_serpent",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Serpent",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_serpent_serpentsguile"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_serpent_numbingbite"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_serpent_poisonbliss"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_serpent_serpentsguile",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Serpent's Guile",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Serpent is alive and undefeated, bloodied foes deal only half damage to the Chimaera.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_crocodile",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crocodile",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_crocodile_crocodilessavagery"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_crocodile_openwound"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_crocodile_deathroll"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_crocodile_crocodilessavagery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crocodile's Savagery",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Crocodile is undefeated, the Chimaera’s attacks can critical hit (+[D]).",
+                "glossary": [{"val": "critical hit", "id": "gl_criticalhit"},{"val": "[D]", "id": "gl_damagedice"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_toad",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toad",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_toad_toadsrepulsion"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_toad_tongue"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_toad_swallowwhole"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_toad_toadsrepulsion",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toad's Repulsion",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Toad head is alive, all heads have counter.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_baboon",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Baboon",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_baboon_baboonsmalice"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_baboon_deepbreath"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_baboon_pyroclast"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_baboon_baboonsmalice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Baboon's Malice",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Baboon head is undefeated, all the Chimaera’s damage is piercing.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_wolf",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wolf",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_wolf_wolfsbrutality"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_wolf_savageclaw"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_wolf_shadowbreath"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_wolf_wolfsbrutality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wolf's Brutality",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Wolf head is undefeated, the Chimaera gains stealth if it ends its turn with no foes adjacent.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_goat",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Goat",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_goat_goatswisdom"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_goat_crossbolt"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_goat_primalmeteor"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_chicken",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chicken",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_chicken_chickensspite"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_chicken_peck"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_chicken_returntoegg"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_chicken_chickensspite",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chicken's Spite",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Chicken head is undefeated, all attacks against the Chimaera take +1 curse.",
+                "glossary": [{"val": "+1 curse", "id": "gl_curse"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bear",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bear",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_chimera_choice_bear_bearsvitality"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bear_icypath"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_chimera_bear_coldfeet"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_chimera_choice_bear_bearsvitality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bear's Vitality",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the Bear is undefeated, the Chimaera’s Juggernaut trait triggers twice at the start of the round."
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_toxic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toxic",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_toxiccloud"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_thickhide",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thick Hide",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_harden"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_spines",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spines",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_sanguinebarb"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_horned",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Horned",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_primalcharge"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_brutalstrength",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brutal Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_stonetoss"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_burrowing",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Burrowing",
+        "description":  [
+            
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_apex_earthglide"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_seismicgeyser"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_chameleonic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chamelionic",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_apex_blendin"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_primalambush"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_winged",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Winged",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_beast_apex_winged"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_talonsnatch"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_lashingtail",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lashing Tail",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_tailsweep"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_carrioneater",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Carrion Eater",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_carrionstash"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_sonicshriek",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sonic Shriek",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_shriek"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_choice_elementbreath",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Element Breath",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_beast_apex_primalelements"
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_gigantapede_chitinouscoil",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chitinous Coil",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Gigantapede occupies an arc 6 space instead of a normal space for its size."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Only its first and last space (the head and the tail) are attackable or can be used to make attacks or abilities, but its entire body causes obstruction and engagement. Keep track of which is the head, and which is the tail."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Only one space can be hit if both are included in the area of an attack or ability (attacker chooses which)." 
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When it moves, move its head, then rearrange its body in any valid configuration."
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_redworm_dwellerindark",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dweller In Dark",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Worm has the following abilities:"
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Immune to blinded.",
+                        "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May use its standard move to teleport from the area of any pit to any other pit in range 4",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "teleport", "id": "gl_teleport"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Has resistance while inside a pit.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "resistance", "id": "gl_resistance"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_beast_apex_mightofthewild",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Might of the Wild",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex has three unique abilities, depending on what type of beast it is. Choose or roll for them. The third ability only becomes usable during its second phase."
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_apex_huntinggrounds",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hunting Grounds",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Before the fight, the GM places three small blast difficult terrain areas on the map. None can be placed in range 2 of each other. Each area is a hunting ground. The Apex gains +1 boon on attacks and deals bonus damage to characters in hunting grounds.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"},
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_apex_monsterhunt",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Hunt",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe that ends their turn inside any space of a hunting ground can attempt to make a ploy against the Apex by using the natural environment, as long as the Apex is in range 3.",
+                "glossary": [
+                ]
+            },                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                                                 
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Making a ploy is a free action that ends a character’s turn.",
+                        "glossary": [
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "That player describes to the GM the impressive stunt they pull against the Apex, then rolls 1d6 and hands the die to the GM.",
+                        "glossary": [
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While the Apex has the die, it takes bonus damage and one of its Might of the Wild abilities is disabled, has no effect, and cannot be used, chosen by the player. It reduces the die by 1 at the end of each of its turns. When a die would be reduced to 0, discard it.",
+                        "glossary": [
+                            {"val": "bonus damage", "id": "gl_bonusdamage"}
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each hunting ground can only be used once to disable the Apex.",
+                        "glossary": [
+                        ]
+                    },                                                
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Apex can keep multiple dice at once (track which ability they are disabling) and the bonus damage effect from them stacks.",
+                        "glossary": [
+                            {"val": "bonus damage", "id": "gl_bonusdamage"}
+                        ]
+                    }
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_bonabra_bounteousrest_action",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Resting",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra cannot act or move outside of its turn, and only takes one action on its turn."
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_bonabra_unstoppablerage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rage",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra gains 3 actions, can use its Unstoppable Rage abilities, and can only use those abilities, dash, interact, and standard move."
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_bonabra_shelteringmass",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sheltering Mass",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonabra blocks line of sight and can be used as cover as though it was a height 3 object.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_megacrab_armour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Armour",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has armor 10.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_megacrab_flipover",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Flip Over",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When taking damage more than its armor total, loses all armor, becomes stunned, and all attacks against it deal bonus damage. These effects last until the end of its next turn.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "stunned", "id": "gl_stunned"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_landshark_landswim",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Landswim",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The shark has evasion and phasing. The shark cannot move through objects. If the shark collides with an object, it is stunned and loses this trait until the end of its next turn.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "collides", "id": "gl_collide"},
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_beast_landshark_dart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dart",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of its turn, the land shark shoves itself as far as possible towards the closest foe, with each space of its movement moving closer to that foe.",
+                "glossary": [
+                    {"val": "shoves", "id": "gl_shove"}
+                ]
+            } ,                                 
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            } ,                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the closest foe is standing on an object, as soon as the shark would move onto the object’s space, it collides with it and stops moving.",
+                "glossary": [
+                    {"val": "collides", "id": "gl_collide"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_special_immmobile",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immobile",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains immobile.",
+                "glossary": [
+                    {"val": "immobile", "id": "gl_immobile"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "tf_special_counter",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Counter",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains counter.",
+                "glossary": [
+                    {"val": "counter", "id": "gl_counter"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "tf_special_unstoppable",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unstoppable",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains unstoppable.",
+                "glossary": [
+                    {"val": "unstoppable", "id": "gl_unstoppable"}
+                ]
+            }  
+        ]
     },
     {
         "id": "tf_faction_beast_brawlerbeast_primalstrength",
@@ -461,7 +2572,7 @@
                 "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
             },
             {
-                "tags": {"desc_type" : "desc"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Chapter 3:",
                 "subcontent":   [
                     {
@@ -483,6 +2594,30 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
+            }
+                        ]
+    },
+    {
+        "id": "tf_beast_wyrm_pathofruin_phII",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Path of Ruin",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase II:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "In Phase II all Path of Ruin effects activate twice: once directed towards where the Path of Ruin currently is, and then once where it will be next round."
+                    }
+                ]
             }
                         ]
     },
@@ -1623,6 +3758,20 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Resistant to damage from adjacent spaces.",
                 "glossary": [{"val": "Resistant", "id": "gl_resistance"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_lifehunter_handpicked",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hand Picked",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "There can only ever be one Life Hunter on the battlefield."
             }  
           ]
     },

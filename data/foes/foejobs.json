@@ -1077,6 +1077,556 @@
         "chapter": 1
     },
     {
+        "id": "fj_folk_churner_doorkicker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Doorkicker",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Relic thieves and scouts who specialize in breaking doors, locks, and mechanisms to get prospective adventurers deeper into dungeons."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_doorkicker_kneeintheback", "af_churner_doorkicker_blackjack", "af_churner_doorkicker_prowl", "af_churner_doorkicker_wildgamble"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_churner_deepfarmer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Farmer",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Dour Churners who make a living out of growing various rare and exotic dungeon flora - which unfortunately only grow in the warped aether of dungeons. This requires a great deal of caution, bravery, and expertise."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_deepfarmer_raze", "af_churner_deepfarmer_swingshovel", "af_churner_deepfarmer_fertilize", "af_churner_deepfarmer_pullvegetable"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_churner_guide",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guide",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Savvy and seasoned dungeon explorers with the wits not to get into the adventuring business Tend to go the other way when the action starts."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_guide_tranquilize", "af_churner_guide_grapplinghook", "af_churner_guide_doubletime"],
+        "removed_actions": [],
+        "traits": ["tf_churner_guide_auraoffreedom"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_churner_shopkeep",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shopkeep",
+        "faction_id": "fc_folk_churner",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The most noble of Churner professions, and the most common. Though sometimes derided as price-gouging opportunists, a lot of shopkeepers come from old and honorable families and recognize the necessity of preparation for a dungeon trip as an essential part of safe expeditions, making sure their prices are fair, and their shops well-stocked."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_churner_shopkeep_banfromtheshop", "af_churner_shopkeep_chastise", "af_churner_shopkeep_openshop"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_guilder_guard",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guard",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "City militia and watchmen, sometimes on the payrolls of the Great Guilds."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_guard_mace", "af_guilder_guard_shieldcharge", "af_guilder_guard_getdown", "af_guilder_guard_onthespot"],
+        "removed_actions": [],
+        "traits": ["tf_guilder_guard_holdtheline"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_guilder_skyknight",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sky Knight",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Knights from the great guild academies. Renowned explorers and merchants that swear oaths of valor on their swords, the sky knights serve the colleges and will throw their lives down in service of progress, science, and protection."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_skyknight_stinger", "af_guilder_skyknight_oathsword", "af_guilder_skyknight_strike", "af_guilder_skyknight_greatstride"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_guilder_aeronaut",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aeronaut",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Elite crew of the airships and dwellers of the teetering city spires of Arden Eld’s great cities. Aeronauts use aether powered gear to soar, dive, and spin in midair during work and combat."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_aeronaut_strafeshot", "af_guilder_aeronaut_doubletap", "af_guilder_aeronaut_blindinggrenade", "af_guilder_aeronaut_takeoff"],
+        "removed_actions": [],
+        "traits": ["tf_guilder_aeronaut_aerialacrobat"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_guilder_aerothurge",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aerothurge",
+        "faction_id": "fc_folk_guilder",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Highly skilled wrights that are navigators of the airships. Airships fly not on air, but on currents of Aether, so only someone highly skilled and with a great degree of sensitivity can guide them safely around its surges and storms."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_guilder_aerothurge_highpressure", "af_guilder_aerothurge_whisk", "af_guilder_aerothurge_aetherportal"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_islander_cook",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cook",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "All self respecting islanders know how to eat and cook properly. Cooks hold an extremely high position in Islander culture, the highest of which sit next to Jarls, the rulers of the great islands."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_cook_hotgriddle", "af_islander_cook_flapjack", "af_islander_cook_cookupastorm"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_islander_sailor",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sailor",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The great mass of sailors, pirates, raiders, crewmen, and pilots of the great islander fleets. The greatest sailors of the Thousand Isles are legendary in skill and have many a perilous voyage under their belt."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_sailor_bloodycrescent", "af_islander_sailor_sealegs", "af_islander_sailor_plunder", "af_islander_sailor_sendtoerenhelion"],
+        "removed_actions": [],
+        "traits": ["tf_islander_sailor_salty"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_islander_doomdiver",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Doom Diver",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Donning capes of serpent scales or sealskin, the doom divers make sport of diving for treasures, food, and pearls in monster-infested waters."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_doomdiver_spearslash", "af_islander_doomdiver_slide", "af_islander_doomdiver_dive"],
+        "removed_actions": [],
+        "traits": ["tf_islander_doomdiver_nimble"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_islander_harpooner",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Harpooner",
+        "faction_id": "fc_folk_islander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Sturdy hunters that sail out in search of the megafish and sea monsters that populate the deep oceans of Arden Eld. Their catch feeds the atolls, but requires entire teams to haul ashore."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_islander_harpooner_spear", "af_islander_harpooner_backflip", "af_islander_harpooner_net", "af_islander_harpooner_mainharpoon"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_storyteller",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Storyteller",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Elders of the Caravans, who keep and carve the lore and lineage of the families that make it up into the side of the wagons."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_storyteller_storystaff", "af_leggio_storyteller_felicity", "af_leggio_storyteller_heroism"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_monsterrider",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Rider",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Braves of a family, usually young, who tame the massive beasts the Leggio must battle with during their journeys through the blights. Monster taming is a time-honored tradition and without it, many of the great wagons would lack a way to move, as most normal animals don’t have to the strength to pull them."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_monsterrider_doubleteam", "af_leggio_monsterrider_callout", "af_leggio_monsterrider_lancerssplendor"],
+        "removed_actions": [],
+        "traits": ["tf_leggio_monsterrider_monsterriding"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_acrobat",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Acrobat",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Workers who maintain the caravans while they are on the move, requiring great dexterity and agility. In town, they often perform."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_acrobat_spinningkick", "af_leggio_acrobat_cartwheel", "af_leggio_acrobat_partnerwork", "af_leggio_acrobat_acrobatics"],
+        "removed_actions": [],
+        "traits": ["tf_leggio_acrobat_tumbling"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_polefighter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pole Fighter",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The militia of the caravans, who use long poles to vault from wagon to wagon."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_polefighter_poleslam", "af_leggio_polefighter_rebound", "af_leggio_polefighter_highflyer"],
+        "removed_actions": [],
+        "traits": ["tf_leggio_polefighter_slam"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_leggio_firedancer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fire Dancer",
+        "faction_id": "fc_folk_leggio",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Fire wrights who light and keep the lanterns burning all day and night. The task is odious, the monster oil used to fuel the lanterns noxious and stinking, so when they enter a town they are happy to let loose with pyrotechnic juggling shows."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_leggio_firedancer_flamedance", "af_leggio_firedancer_carnivale", "af_leggio_firedancer_juggle"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_villager",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Villager",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The common clay of Arden Eld."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_villager_valorousstrike", "af_yeokin_villager_rally", "af_yeokin_villager_takeheart"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_farmer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Farmer",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A thick-armed commoner, sometimes acting as a local militia in times of trouble."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_farmer_righteousfist", "af_yeokin_farmer_communitywatch", "af_yeokin_farmer_bale", "af_yeokin_farmer_onthechin"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_barkeep",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Barkeep",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The taverns, inns, and way-houses of the villages are a relatively new invention as commerce returns to Arden Eld, but a welcome one. Their owners are typically stocky and no-nonsense."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_barkeep_flamingcocktail", "af_yeokin_barkeep_barbrawler", "af_yeokin_barkeep_barrelroll"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_villagepriest",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Village Priest",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Village priests of the local temples, who typically pay homage or worship to the local hobs or spirits of nature. These temples are closely tied to the land and may be built around a great tree, or a holy rock, or a sparkling waterfall."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_villagepriest_greenwrath", "af_yeokin_villagepriest_sow", "af_yeokin_villagepriest_sanctify"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_folk_yeokin_shinobi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shinobi",
+        "faction_id": "fc_folk_yeokin",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Nearly all villages in the Green practic e martial arts for self defense against roving monsters (and, more recently, bandits). Many of them have secret scroll arts, some of which have produced secret warrior societies that predate the Shades."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_yeokin_shinobi_whirlingblade", "af_yeokin_shinobi_shadowclone", "af_yeokin_shinobi_shadowswap", "af_yeokin_shinobi_raiton"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
         "id": "fj_beast_heavy_stonelizard",
         "type": "FoeJob",
         "source": "core",
@@ -1100,6 +1650,1140 @@
         "phases": [],
         "tactics": [],
         "chapter": 1
+    },
+    {
+        "id": "fj_beast_heavy_halitoad",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Halitoad",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The enormous and foul-smelling Halitoad uses its long tongue to strangle and digest its prey."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_halitoad_tongueflick"],
+        "removed_actions": ["af_beast_heavy_wildtoss"],
+        "traits": ["tf_beast_halitoad_stench"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_heavy_hornedrooter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Horned Rooter",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Large omnivores that use their horns to tear up dungeon stones and get at the roots and insects within."
+            }
+        ],
+        "stats": { "size": 2 },
+        "actions": ["af_beast_hornedrooter_earthbreaker"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_heavy_howler",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Howler",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Part ape, part wolf, the Howler is a hyper aggressive monster with a bad temper."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_howler_howl","af_beast_howler_bulkup","af_beast_howler_irondriver"],
+        "removed_actions": [],
+        "traits": ["tf_special_counter"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_heavy_baggoth",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Baggoth",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous beast found in overgrown dungeons. Its long tusks, thick and shaggy coat of hair, and sword-length claws make it a formidable opponent. Though fierce in appearance and quick to anger it spends most of its day sleeping and mostly forages for carrion, berries, and roots."
+            }
+        ],
+        "stats": { "size": 3, "speed": 2, "dash": 1 },
+        "actions": ["af_beast_baggoth_terraslam"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_beast_baggoth_shaggymass","tf_beast_baggoth_rancor"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_beast_skirmisher_aetherachnid",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherachnid",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A large, spider-like beast that has the uncanny ability to phase through matter."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_aetherachnid_phaseshift","af_beast_skirmisher_aetherachnid_teleportingpoison"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_skirmisher_wailicat",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wailicat",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A lithe, furred beast that leaps forth from hiding with an ear splitting yowl."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_wailicat_pounce"],
+        "removed_actions": ["af_beast_skirmisher_stalkprey"],
+        "traits": ["tf_beast_wailicat_leap"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_skirmisher_dungeonjelly",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dungeon Jelly",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A phantasmal jellyfish-like beast that is so thin and light it can float through the air. Its cloud of toxin is potent and sought after by thrill seekers."
+            }
+        ],
+        "stats": { },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_beast_dungeonjelly_auraofdistortion"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_skirmisher_burrower",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Burrower",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A heavy clawed mammal that chews up and digests raw stone into a slurry which it uses to make its lair."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_burrower_burrow"],
+        "removed_actions": ["af_beast_skirmisher_stalkprey"],
+        "traits": ["tf_beast_burrower_earthglide"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_skirmisher_skinnershrike",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Skinner Shrike",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A nasty terrestrial bird that has the habit of collecting trophies of its fallen prey to impress mates."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_skirmisher_skinnershrike_blindingspeed","af_beast_skirmisher_skinnershrike_stalkingslasher","af_beast_skirmisher_skinnershrike_fowlplay"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_beast_leader_ruinape",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruin Ape",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Small and intelligent simians that form symbiotic, if slightly one-sided, relationships with other monsters."
+            }
+        ],
+        "stats": { },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_beast_ruinape_maliciousscreeching"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_leader_bubblefish",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bubble Fish",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A Lungfish that covers the head of monsters or kin, acting as a filtration system for the fetid air of dungeons."
+            }
+        ],
+        "stats": { },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_beast_bubblefish_bubblebarrier"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_leader_aethertick",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aethertick",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This slow moving bug absorbs Aether, which can tear at the life force of living beings and warp space around it. It has the uncanny ability to teleport arrows or even bolts of magic partially out of existence."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_aethertick_aetherwarp"],
+        "removed_actions": ["af_beast_leader_spur"],
+        "traits": ["tf_beast_aethertick_turnbolts"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_leader_yellowcreeper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Yellow Creeper",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This parasitic creature is a symbiotic fungus with deadly spores that it uses to control other creatures."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_yellowcreeper_spore","af_beast_yellowcreeper_puppet","af_beast_yellowcreeper_detonatethralls"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_leader_niallascorpseflower",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nialla’s Corpseflower",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A carnivorous flower that grows over fierce dungeon beasts. The flower feeds off carrion by putting its host to sleep mid-meal."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_naillascorpseflower_pacifyingspores","af_beast_naillascorpseflower_morpheus"],
+        "removed_actions": [],
+        "traits": ["tf_beast_naillascorpseflower_acidburst"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_beast_artillery_ruincentipede",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruin Centipede",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These huge, man sized insects are a potent symbol of bad luck in most villages."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_ruincentipede_vile"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_artillery_gulper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gulper",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This amphibian exudes a thick layer of slime when threatened, which it can spit as a weapon."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_gulper_slimespit"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_artillery_ironfeather",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ironfeather",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This greedy avian’s feathers are spine-like and can be shot like quills at range."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_ironfeather_featherspray"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_artillery_blastbeetle",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blast Beetle",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Volcanic beetles with chemical blood and spit so volatile that it ignites on contact with the air."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_blastbeetle_rocketjump","af_beast_blastbeetle_acidignition"],
+        "removed_actions": [],
+        "traits": ["tf_beast_blastbeetle_explosivedemise"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_artillery_redworm",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Red Worm",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive, muscular worm the size of a person, found only in deep dungeons. Resilient and able to tunnel through solid rock by exuding a powerful acid. Exists only to eat."
+            }
+        ],
+        "stats": { },
+        "actions": ["af_beast_redworm_tunnel"],
+        "removed_actions": [],
+        "traits": ["tf_beast_redworm_dig","tf_beast_redworm_dwellerindark"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_beast_unique_harpy",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Harpy",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Birdlike beasts with pale faces and soothing voices, they use their resonant throat sacs to hypnotize prey and draw them closer. They often use these talents to hypnotize cabals of other monsters to protect their nests."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_harpy_sonicscreech","af_beast_harpy_hypnogogia","af_beast_harpy_frenziedsong"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_beast_harpy_earsplittingsong"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_barghest",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Barghest",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A dog-like beast with a fleshless, skull-like face. It feeds off carrion and is drawn to the aftermath of battles. Its body is so suffused with corrupted aether from the meat it feeds on that it can flicker ghost-like in and out of reality."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_barghest_openwound","af_beast_barghest_realityflicker","af_beast_barghest_banehunter","af_beast_barghest_ironjaw"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_beast_barghest_aetherflesh"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_canopticswarm",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Canoptic Swarm",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Swarms of bats, beetles, centipedes, or other carrion-eaters that have fed upon corpses in the deep ruins and become instilled with an uncanny hunger."
+            }
+        ],
+        "stats": {"size": 2},
+        "actions": ["af_beast_canopticswarm_ahundredmaws","af_beast_canopticswarm_swarmsurge","af_beast_canopticswarm_consume"],
+        "removed_actions": [],
+        "traits": ["tf_beast_canopticswarm_amorphous"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_bicorn",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bicorn",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An equine monster with a forked, spiral horn, which it can use to channel ambient aether into deadly, reality bending bolts."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_bicorn_lightninggallop","af_beast_bicorn_destabilize","af_beast_bicorn_surgeshift"],
+        "removed_actions": [],
+        "traits": ["tf_beast_bicorn_aetherskin"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_unique_bonabra",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bonabra",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An enormous ruin beast resembling a cross between a hippopotamus and a massive, corpulent ape. It spends most of its day sleeping, and the rest eating. Though usually content to feed on trees and local dungeon flora, it is an incredibly strong hunter capable of insane bursts of speed and aggression, as creatures that disturb its rest are capable of finding out. Many adventurers have been shocked at the sight of one of these rotund giants tearing a demon in half."
+            }
+        ],
+        "stats": {"size": 3},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_beast_bonabra_bounteousrest"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Bonabra starts combat asleep."
+                    }
+                ],
+                "name": "Sleeping",
+                "actions": ["af_beast_bonabra_rollover","af_beast_bonabra_peacefulsnore"],
+                "traits": ["tf_special_immmobile","tf_beast_bonabra_bounteousrest_action","tf_beast_bonabra_shelteringmass"],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If the Bonabra wakes up for any reason, it flies into an unstoppable rage."
+                    }
+                ],
+                "name": "Raging",
+                "actions": ["af_beast_bonabra_crimsonrampage","af_beast_bonabra_headbutt","af_beast_bonabra_gigakaiser"],
+                "traits": ["tf_special_unstoppable","tf_beast_bonabra_unstoppablerage"],
+                "stats": {}
+            }
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_megacrab",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Megacrab",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive crab with a thorny shell that has adapted to life away from water. It burrows beneath loose soil in dungeons, where it mimics boulders."
+            }
+        ],
+        "stats": {"size": 2},
+        "actions": ["af_beast_megacrab_clawslam","af_beast_megacrab_clawjab","af_beast_megacrab_waterjet"],
+        "removed_actions": [],
+        "traits": ["tf_beast_megacrab_armour","tf_beast_megacrab_flipover"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_landshark",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Landshark",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A fish that uses its spiny body and an exuded slime to burrow through loose dirt or rock between stays in underground pools."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_landshark_gnaw","af_beast_landshark_sandblast","af_beast_landshark_anklebiter"],
+        "removed_actions": [],
+        "traits": ["tf_beast_landshark_landswim","tf_beast_landshark_dart"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_floatfish",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Floatfish",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An airborne eel that uses sacs of buoyant liquid, which it can emit as a vapor, to propel itself around. It can inject this liquid into the bodies of its prey, causing them to float helplessly into the air, where it snatches them up."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_floatfish_pearlsecentbubble","af_beast_floatfish_floatingtoxin"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_beast_bicorn_aetherskin"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_unique_doomcloak",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Doomcloak",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This terrifying batlike creature uses its leathery wings to abduct and choke creatures with a soporific acid, taking them to its nest and storing them in pods made of bone meal and spit for later digestion."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_beast_doomcloak_chasingclaw","af_beast_doomcloak_rake","af_beast_doomcloak_acidstream","af_beast_doomcloak_choke"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_special_sturdy","tf_special_defiance","tf_special_counter"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_beast_elite_kelpie",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Kelpie",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This horselike predator dwells in shallow pools of stagnant water that are found in blighted regions. Like a crocodile, it is an ambush predator, its slimy skin acting as an adherent. It is surprisingly intelligent and will often act injured or pass itself off as an ordinary horse in order to lure Kin close to it to attack."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2 },
+        "actions": ["af_beast_kelpie_adhere","af_beast_kelpie_savagefang","af_beast_kelpie_waterspout","af_beast_kelpie_submerge","af_beast_kelpie_sink"],
+        "removed_actions": [],
+        "traits": ["tf_beast_kelpie_curseddeeps","tf_beast_kelpie_aquatic"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_elite_hellhound",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hellhound",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A spiny dog-like creature with an incredible stomach. It is able to unhinge its jaws to gaping proportions to feed on toxic dungeon refuse, the which it boils into a fetid slurry in a special organ, swallowing and chewing into stone to help the digestion process. As an offshoot of this bizarre diet, the hellhound can belch clouds of poisonous and incredibly flammable gas."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2, "size": 2 },
+        "actions": ["af_beast_hellhound_corrosivegas","af_beast_hellhound_blast","af_beast_hellhound_hellishbreath","af_beast_hellhound_spitfire"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_elite_kinfisher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Kinfisher",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This bizarre creature is a land-dwelling lungfish the size of a draft horse, a relative of the land shark. It uses its enormous jaws to burrow through solid rock and a fleshy lure to draw in unwary travelers. At a distance, the lure can look like a wounded person, a bobbing lantern, or a fleeing spy - at least until the fish’s unlucky prey gets close enough to realize where they are standing."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2, "size": 2 },
+        "actions": ["af_beast_kinfisher_lure","af_beast_kinfisher_lurespines","af_beast_kinfisher_maw","af_beast_kinfisher_reelin","af_beast_kinfisher_acidspit","af_beast_kinfisher_submerge"],
+        "removed_actions": [],
+        "traits": ["tf_special_immmobile","tf_beast_kinfisher_perfectcamoflage"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_elite_basilisk",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Basilisk",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A pale, man-sized serpentine beast that eats and digests stone, wriggling through dungeon walls like a worm through a corpse. In order to process its prey more efficiently, its body and saliva secretes a magical toxin that can corrupt the aether of living flesh, desiccating them and turning them to stone, though the effect is reversible with treatment. Canny and older basilisks will keep gruesome ‘pantries’ of petrified statues for later consumption."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2 },
+        "actions": ["af_beast_basilisk_toxicspine","af_beast_basilisk_tailslash","af_beast_basilisk_gallstone"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_beast_basilisk_stonepantry","tf_beast_basilisk_petrification"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_elite_gigantapede",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gigantapede",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous burrowing insects that feed off livestock and large animals unlucky enough to fall into their nests. Generally ignore Kin unless provoked - then they have enough acid to melt a knight in full armor."
+            }
+        ],
+        "stats": { "turns": 2, "hp_mod": 2 },
+        "actions": ["af_beast_gigantapede_ironscales","af_beast_gigantapede_thrash","af_beast_gigantapede_spinybody","af_beast_gigantapede_acidspray","af_beast_gigantapede_stinger","af_beast_gigantapede_burrow"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance","tf_special_sturdy","tf_beast_gigantapede_chitinouscoil"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [
+
+        ],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_beast_legend_chimera",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chimera",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some beasts of the blighted lands are especially susceptible to the warping energies of the arkenruins, absorbing them with such rapidity that they become enormous, multi-headed monstrosities, infused with tremendous aetheric and physical might. Occasionally these creatures are created when beasts of several types are fused by rogue aether surges. Even more rarely, these creatures are intentionally created by rogue wrights, unscrupulous lowlander clans, or ultra wealthy and morally loose guild barons looking for a pet monster. Any way they come into the world, the results are always horrifying, and the resultant beast is always a maddened, rampaging mess."
+            }
+        ],
+        "stats": { "hp": 60, "size": 2 },
+        "actions": ["af_beast_chimera_bound","af_beast_chimera_triplethreat"],
+        "removed_actions": [],
+        "traits": ["tf_beast_chimera_monstrousheads"],
+        "removed_traits": [],
+        "choices": ["tf_beast_chimera_choice_lion","tf_beast_chimera_choice_bull","tf_beast_chimera_choice_serpent","tf_beast_chimera_choice_crocodile","tf_beast_chimera_choice_toad","tf_beast_chimera_choice_baboon","tf_beast_chimera_choice_wolf","tf_beast_chimera_choice_goat","tf_beast_chimera_choice_chicken","tf_beast_chimera_choice_bear"],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Chimera begins combat in this phase, and enters Phase II when it has two heads remaining."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Chimera enters this phase when it has two heads remaining, and enters Phase III when it has one head remaining."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": [],
+                "traits": ["tf_special_sturdy"],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Chimera enters this phase when it has one head remaining, gaining +1 Action (to a total of 3)."
+                    }
+                ],
+                "name": "Phase III",
+                "actions": [],
+                "traits": ["tf_special_sturdy","tf_special_unstoppable"],
+                "stats": {"actions": 3}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Chimera is a fairly simple legend fight that increases in tempo the more of its heads are defeated. Canny players may figure out that defeating all three heads at the same time can prevent some headaches, or they may choose to defeat a head that is giving their party composition particular trouble."
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_beast_legend_apex",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Apex",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The absolute pinnacle of the ferocious wildlife that roam the blight lands, the Apexes are incredible dangerous, aggressive beasts that are the primal lords of their kind. These beasts are naturally occurring in some blight land species, but also occur when a particular beast gains unnatural power and strength from exposure to blighted food or soil. Apexes are incredibly durable, aggressive, and intelligent for beasts of their type, and display a range of incredible natural abilities, from shooting lightning from specially shaped scales, to venomous fangs, to clouds of steam generated from special glands. Thrill seekers, researchers, profiteers, and foolhardy adventurers alike pursue these beasts and seek to hunt or capture them for not only their rare and bizarre physiology, but also in hopes of curing them, studying them, or preventing them from preying on the hapless or unwary."
+            }
+        ],
+        "stats": { "size": 2 },
+        "actions": ["af_beast_apex_bound","af_beast_apex_rearup","af_beast_apex_savageswipe"],
+        "removed_actions": [],
+        "traits": ["tf_beast_apex_mightofthewild","tf_beast_apex_huntinggrounds","tf_beast_apex_monsterhunt"],
+        "removed_traits": [],
+        "choices": ["tf_beast_apex_choice_toxic","tf_beast_apex_choice_thickhide","tf_beast_apex_choice_spines","tf_beast_apex_choice_horned","tf_beast_apex_choice_brutalstrength","tf_beast_apex_choice_burrowing","tf_beast_apex_choice_chameleonic","tf_beast_apex_choice_winged","tf_beast_apex_choice_lashingtail","tf_beast_apex_choice_carrioneater","tf_beast_apex_choice_sonicshriek","tf_beast_apex_choice_elementbreath"],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Apex begins combat in this phase, and enters Phase II at the start of round 4."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Hidden Might:",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "The apex’s third Might of the Wild ability becomes active."
+                            }
+                        ]
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Apex enters this phase at the start of round 4."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_beast_apex_terminoushowl"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apex is a fairly straightforward Legend. It can stack up a lot of bonus damage with its abilities, especially using its Hunting Grounds, but players can also use these hunting grounds to temporarily disable its extra abilities. Players must be careful since they have limited hunting grounds available and their effects are erratic.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_beast_legend_wyrm",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wyrm",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "When the world was young and still scalding and steaming from the raw energies of its creation, the Wyrms were born. Massive, serpentine beasts, they emerged from the molten earth fully formed, or so the legend goes. These ancient beast gods ruled the land for a time, and then their age passed, as all ages will, and the world changed. The wyrms went into hibernation, curling up and sinking into the earth, resting in unceasing slumber. As they slept, they conserved their energy, for another age, when they could emerge and feed, growing fat and strong again."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wyrms have a primal aetherstone instead of their heart. This allows them to channel unbelievable raw energies that were present when the world was young, and spit scouring divine fire that turns nearly all matter to ash."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Occasionally, over the history of Arden Eld, a wyrm will naturally awake from its long sleep. The emergence of a wyrm is a cataclysmic event similar to a volcanic eruption or a natural disaster. The land quakes and belches forth poison gas and magma, plants wither, and wildlife flees from the eruption site. It quickly establishes a hunting grounds and rules over a massive territory as a primeval monarch, culling herds of animals (including kin) to acceptable populations to maintain its feeding stock."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "More recently, the Churn has awakened more and more Wyrms, an unfolding calamity with no easy solution and terrifying consequences."
+            }
+        ],
+        "stats": { "size": 3 },
+        "actions": ["af_beast_wyrm_devastate","af_beast_wyrm_sirocco","af_beast_wyrm_liquify","af_beast_wyrm_gigabeam","af_beast_wyrm_blazingwind","af_beast_wyrm_molteneruption","af_beast_wyrm_jawsofdeath","af_beast_wyrm_ancientfury"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_beast_wyrm_dragonfire"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Wyrm begins combat in this phase, and enters Phase II when bloodied."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": ["tf_beast_wyrm_pathofruin"],
+                "stats": {}
+            },
+            {
+                "description": [
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Wyrm enters this phase when bloodied."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_beast_wyrm_zetaflare"],
+                "traits": ["tf_beast_wyrm_pathofruin_phII"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wyrm is a ferocious foe that is capable of dealing incredible damage. Most of its effects are telegraphed, moving towards the path of ruin, so good positioning from player characters can avoid them. Characters can mostly choose between being shoved by the wyrm’s abilities (and potentially into a bad position) or taking the hurt. Canny characters might position themselves so they are shoved into objects with Blazing Wind, or figure out that Liquify can make them immune to the negative effects of Blazing Wind, Jaws of Death, and Gigabeam, since they cannot be shoved - but also makes them vulnerable to other effects, such as Zetaflare."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Map: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This fight is best on a medium or larger sized map (10x10, 12x12, 14x14, etc)."
+                    }
+                ]
+            }
+        ],
+        "chapter": 3
     },
     {
         "id": "fj_relict_mob_husk",
@@ -1128,6 +2812,1132 @@
         "removed_actions": [],
         "traits": ["tf_relict_husk_endlessdead", "tf_relict_husk_fading"],
         "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_heavy_tombguard",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tomb Guard",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Undead auxiliaries of the old legions, their shields and khopesh a common sight in the catacombs."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_tombguard"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_heavy_servitor",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Servitor",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Guards of the priest class, with wicked spears for tearing flesh and forcing obedience."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_impalingjab"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_heavy_executioner",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Executioner",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wielding heavy curved axes, these shock troops fight with little regard for their own existence."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_exxecutioner_lightningaxe"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_heavy_heliolite",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heliolite",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Skirmishers from the old legions, they fight with wicked, barbed spears and a canny malice."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_heliolite_redondo","af_relict_seekingjavelin"],
+        "removed_actions": ["af_relict_heavy_overpower"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_heavy_legionary",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Legionary",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "With interlocking shield, shortspear, and heavy helms, these soldiers made up the bulk of the arkenlords’ armies when they were still alive, trampling empires into dust."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_legionary_carveapath"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_relict_legionary_legionsadvance"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_relict_leader_arkivist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkivist",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Priests entrusted with keeping the names of the dead, they wander the halls of the arkenruins obsessively repeating the names of their wards."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_arkivist_incantationofreclamation"],
+        "removed_actions": [],
+        "traits": ["tf_relict_arkivist_shepherdofthedead"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_leader_grafter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Grafter",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Soul Surgeons skilled in the ways of soul grafting. In the final days of the doom, the empire resorted to all kinds of dark arts in an attempt to beat back the inevitable."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_grafter_sharesuffering"],
+        "removed_actions": [],
+        "traits": ["tf_special_regeneration"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_leader_embalmer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Embalmer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Priests charged with disposal of the physical form. In those days, the corpses were stacked like wheat after a harvest."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_embalmer_necrotize"],
+        "removed_actions": ["af_relict_leader_blackcommunion"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_leader_soulflayer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Soul Flayer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Dread priests that made up a secret police. In the Final Days, they forcibly conscripted the unlucky and criminal into the soul legions."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_soulflayer_soulflay","af_relict_soulflayer_soulshred"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_leader_immortalist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortalist",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The higher caste of priests, each with a fragment of the Ur-spell embedded into their very beings."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_immortalist_darkredempta","af_relict_immortalist_entombmentofiz"],
+        "removed_actions": [],
+        "traits": ["tf_relict_immortalist_eternalwar"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_relict_skirmisher_wailer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wailer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A starving ghul that stalks the living for days at a time. Somewhat pitiable, they long for warmth."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_wailer_shriek"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_skirmisher_arcghul",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arc Ghul",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A ghul that has become unhinged from its own anguish, its body barely held together."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_wailer_soulshift"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_skirmisher_twinsoul",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Twin Soul",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A ghul that is the result of a network malfunction or the product of soul grafting, a twinsoul is a grotesque amalgam of two beings."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_twinsoul_twinstrike"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_skirmisher_devourer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Devourer",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A Ghul that has collapsed in on itself, becoming a sucking void and gaining the ability to rip away the essence of the living directly."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_devourer_devour"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_skirmisher_shutterghast",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shutterghast",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A Ghul that has lived long enough and fed enough on the living that its existential anguish has begun to manifest into complete insanity. Its feral wailing cuts out periodically as it stutters throughout the network."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_shutter_realityflicker","af_relict_shutterghast_shutterslash"],
+        "removed_actions": ["af_relict_skirmisher_realityflicker"],
+        "traits": ["tf_relict_shutterghast_darkhallow"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_relict_artillery_arcspectre",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arc Spectre",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The most commonly seen wraith, held aloft by scouring arcs of lightning, with hands bound into power-amplifying gauntlets."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_arcspectre_synapticstorm"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_artillery_chainwraith",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Chain Wraith",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Blasphemers boiled alive in the pit of Iz. The chains used to bind them have combined with their beings in death."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_chainwrath_bind"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_artillery_riftwrath",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rift Wraith",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some battle mages of the old world were granted the ability to tear at the walls between worlds, using the essence of the Doom itself to fight."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_riftwrath_riftstep","af_relict_riftwrath_openrift"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_artillery_abomination",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Abomination",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A wraith created in the final days of the Imperium. The extreme methods used to create them left them unstable, undead weapons that were not meant to last long."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_abomination_scouringbeam"],
+        "removed_actions": [],
+        "traits": ["tf_relict_abomination_unstable"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_artillery_blasphemy",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blasphemy",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Heretic Sorcerers who glimpsed the Black Sun. So powerful that they were entombed in specially bound iron coffins. The coffins float uncannily until broken open."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_blasphemy_ironcoffin","af_relict_blasphemy_obliterateaether"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_relict_unique_silentone",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Silent One",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Remnants of children, the elderly, or the mournful dead, who crave warmth and company."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_silentone_mournfulwail","af_relict_silentone_fear","af_relict_silentone_dreadfulsobbing","af_relict_silentone_possess"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance","tf_relict_silentone_ethereal"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_strigoi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Strigoi",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A ghul that has fed on enough life force to roam away from the dungeons, preying on villages and herd animals. These ghuls become feral in appearance and live in the dark holes of abandoned farmhouses, sheds, or shrines during the day, as much like other relict, they are harmed by sunlight."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_strigoi_feralfrenzy","af_relict_strigoi_bloodyspit","af_relict_strigoi_feralpounce"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_relict_strigoi_bloodhunger"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_automata",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Automata",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "War machines used to kill in the wars of the old  Imperium, powered by soul amalgams. Ruthless and cold killing machines that trampled the lands of kin in times past."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_automata_lightningbolter","af_relict_automata_chargedshield","af_relict_automata_dischargeclip"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_relict_automata_automata","tf_relict_automata_emptyhusk"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_fused",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fused",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive relict made up of multiple, fused souls, unfortunates mashed together due to network malfunction or malicious soul grafting."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_fused_crush","af_relict_fused_wailofterror"],
+        "removed_actions": [],
+        "traits": ["tf_relict_fused_soulmass","tf_relict_fused_releasepassengers"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_idol",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Idol",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Walking statues of old saints, emperors, or legends, powered by curated soul amalgams."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_idol_heavymace","af_relict_idol_eyebeams","af_relict_idol_bladesweep","af_relict_idol_soulnexus"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_general_knuckle_heavyarmor","tf_relict_automata_automata","tf_relict_automata_emptyhusk"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_unique_lifehunter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Life Hunter",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Personal hunters of the Arkenliches, these undead monstrosities were custom crafted to hunt adventurers. Unlike other relict, they are nimble, somewhat intelligent, and independently minded."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_lifehunter_nock","af_relict_lifehunter_kickoff","af_relict_lifehunter_liminaldarts"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_general_lifehunter_handpicked"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_unique_revenant",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Revenant",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A rogue ghul that has managed to re-house its soul in flesh again, usually by killing its former occupant. Revenants never last long, as the flesh decays too quickly to be of use."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_revenant_bloodyhacking","af_relict_revenant_lifedrain","af_relict_revenant_horribletwitching","af_relict_revenant_bonechillingscream"],
+        "removed_actions": [],
+        "traits": ["tf_relict_revenant_shedflesh"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_unique_immortal",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortal",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Elite guard of the priest caste, entombed alive in their iron armor. Dark magic has sealed their armor so not even the aether of their soul can escape. Such is their undying vitality they don’t make any attempts at self-preservation. With their heavy glaives and black armor, they are a terrifying sight to even seasoned adventurers."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_immortal_bloodyfuller","af_relict_immortal_marchoftheimperium","af_relict_immortal_supremeformation","af_relict_immortal_execute"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_special_defiance","tf_relict_immortal_immortaldisregard","tf_relict_immortal_auraofimmortality"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_relict_elite_royalguard",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Royal Guard",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Multi-limbed, multi-bodied warriors fused together by dark alchemy and soul grafting at their entombing to protect the old arkenemperors in death. The four fight as one, overwhelming the defenses of even the most canny fighters."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_royalguard_vortex","af_relict_royalguard_battalionoflimbs","af_relict_royalguard_bladeshield","af_relict_royalguard_balllightning","af_relict_royalguard_windofobliteration"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_elite_warmech",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Warmech",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Multi-limbed metal war machine, powered by soul amalgamation. Kills dispassionately and with overwhelming force, using weapons that blight the land and scour the soil. Many of these machines are buried in the soil of Arden Eld, even outside the ruins, and can remain dormant for centuries."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_relict_warmech_plasmabomb","af_relict_warmech_focusbeam","af_relict_warmech_chargeboost","af_relict_warmech_sidecannons"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_relict_automata_automata","tf_relict_warmech_emptyhusk"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_elite_izenghast",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Izenghast",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Stuttering horrors born of living souls that have been trapped in the Relict system - the remnants of adventurers or unlucky wanderers who went too deep in an arkenruin."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_relict_izenghast_stutter","af_relict_izenghast_soulrip","af_relict_izenghast_horridslashing","af_relict_izenghast_shriek","af_relict_izenghast_souldrain"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_relict_shutterghast_darkhallow","tf_relict_izenghast_surreality"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_elite_arkitek",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkitek",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Machine-priests and designers of the deep arkenruins, the sealed library-vaults intended to let the empire wait out the Doom in undead form. Masters of the labyrinth, the mechanisms of the dungeons themselves bend and contort themselves to protect them."
+            }
+        ],
+        "stats": {
+            "vit": 8,
+            "hp": 32
+        },
+        "actions": ["af_relict_immortalist_entombmentofiz","af_relict_arkitek_deepcall","af_relict_arkitek_reconfigure","af_relict_arkitek_pillarofiz"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance","tf_relict_arkitek_stoneskin"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_elite_atrophicgrave",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Atrophic Grave",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive amalgam of souls, created when the Ur-spell reached and processed large crowds of the public, hiding for safety from the apocalyptica outside and completely unaware of their impending immortalization."
+            }
+        ],
+        "stats": {
+            "size": 3
+        },
+        "actions": ["af_relict_atrophicgrave_hungrydead","af_relict_atrophicgrave_tendrils","af_relict_atrophicgrave_vomitlightning","af_relict_atrophicgrave_onehundredhands"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_special_defiance","tf_relict_fused_soulmass","tf_relict_atrophicgrave_shedmass"],
+        "removed_traits": ["tf_class_heavy_guard"],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_relict_legend_vesselknight",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Vessel Knight",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Black-armored conqueror knights of incredible power that were dispatched alone to lands not conquered by the Arken to conduct diplomacy - at the tip of a sword if need be. There were forty of these knights, ten for each of the cardinal directions. Each was a hero of unparalleled strength, their name recorded in the annals of the imperial muster, and blessed by the Emperor."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "While they still lived, these knights were marked by dark ritual, their very essences bound to their armor so that they could continue their duty even in death or after mortal injury. During the Doom, they all succumbed, but this did not stop them from carrying out their orders. Repeated death has stripped most of them of their sense. Now they are vaporous husks - hollow iron shells filled with dust and a sense of loathsome purpose. When the ruins rise, they rise from their graves and call forth armies, slaughtering and conquering in the name of an empire that no longer exists until they are beaten and sealed again."
+            }
+        ],
+        "stats": { "size": 2 },
+        "actions": ["af_relict_vesselknight_darklightcleaver","af_relict_vesselknight_darkstrength"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy","tf_special_defiance","tf_relict_vesselknight_beyonddeath","tf_relict_vesselknight_malice"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Vessel Knight begins combat in this phase, and enters Phase II when it is bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_relict_vesselknight_rageofiz","af_relict_vesselknight_despair","af_relict_vesselknight_damocles"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Vessel Knight enters this phase when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When bloodied, the Knight becomes intangible until the end of the current turn, then transitions into Phase II. It ignores all damage that put it into its phase transition past its bloodied value.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"},
+                            {"val": "intangible", "id": "gl_intangible"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_relict_vesselknight_dispersal","af_relict_vesselknight_soulcleaver"],
+                "traits": ["tf_relict_vesselknight_spectralform"],
+                "stats": { "speed": 6, "dash": 3}
+            }
+        ],
+        "tactics": [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Vessel Knight is a relatively straightforward and threatening legend fight. Characters must balance their own ability to attack with increasing stacks of Malice. Malice can be reduced by not attacking, but in Phase II, the knight starts to ramp up its damage output with its Soul Cleaver ability, which will become overwhelming over time."
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_relict_legend_arkenlich",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkenlich",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Designers of the Ur-spell and arch-priests of the Dark Sun, these ancient warrior-necromancers were embalmed and entombed even before the final death of the empire, their souls bound into specially prepared vessels so they could carry out the great work of the old emperors uninterrupted by the frailties of mortality. Their bronze sarcophagi are engraved with their titles and names and their eyes are sealed with gold. Though the process left their minds largely intact, the long dark and centuries in contact with the anguished souls trapped in the Relict network have left most of them insane. Most of them lie dreaming in fitful nightmares until awakened by unlucky adventurers."
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_relict_arkenlich_thytributeisdemanded","af_relict_arkenlich_annihilationofthwicked","af_relict_arkenlich_witnessthecomingterror","af_relict_arkenlich_offerobeisancebeforethyproperlords","af_relict_arkenlich_fear","af_relict_arkenlich_masterofthefourwinds","af_relict_arkenlich_theinevitablecorruptionofflesh","af_relict_arkenlich_profane"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While not in Phase II, the Arkenlich has no special traits or abilities. The Arkenlich returns to Phase I after it uses Utterances of the Crawling Dead."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3 and every third round therafter (6, 9, etc), the Lich uses Utterances of the Crawling Dead."
+                    }
+                ],
+                "name": "Phase II (Round 3, 6, 9+)",
+                "actions": [],
+                "traits": ["tf_relict_arkenlich_utterancesofthecrawlingdead"],
+                "stats": {}
+            }
+        ],
+        "tactics": [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Arkenlich is a legend fight based on positioning. At the end of each round, all foes are pelted with magic that stacks up in nasty ways if they are lined up in the wrong way, but many of the Lich’s abilities require characters to group up to avoid. Every third round, Utterances of the Crawling dead makes the area they have to line up in even smaller. The Lich can also pull characters around itself to get them out of position."
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_relict_legend_dreadlords",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dread Lords",
+        "faction_id": "fc_relict",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Legions of the Arken were always ruled in triumvirate, each legion headed by three of its mightiest lord commanders. At the fall of the Empire, these minor Arkenlords were entombed with their troops, buried alive under rubble, scoured by dread magics and left smoking on the battlefields, or burned alive in the smoking cities of the Arken. Their immortalization crystallized their hatred at their failure to protect the empire, honing it to a razor's edge. Now, in death, they lie dreaming, entangled in nightmares of ceaseless bloodlust and brutal conquest. The priests of the Black Sun work endlessly at their resurrection, for when the Dread Lords can be awakened, their wrath is terrible, and their ambition endless."
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_relict_dreadlords_eternallordship"],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_relict_dreadlords_triumvirate","tf_relict_dreadlords_imperium","tf_relict_dreadlords_eternalimperium"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Lord of the Center, the Black Iron Lord. Arken nobles granted this title were renowned and greatly feared generals tasked with controlling and holding the center mass of a combat, and in other times protecting the homelands of the Empire and keeping order by rooting out seditionists and rebels. In life, they crushed all before them with cold-hearted brutality. In death, there is little difference."
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of each round, one of the Dread Lords can use its Round Action, with a different Lord’s round action each round, until all three have used their Round Action. At round 3 and every three rounds thereafter, the Lords use Eternal Imperium."
+                    }
+                ],
+                "name": "Lord Evictor",
+                "actions": ["af_relict_dreadlords_strengthofhell","af_relict_dreadlords_bloodrush","af_relict_dreadlords_dreadmarch","af_relict_dreadlords_crushpeon","af_relict_dreadlords_breakearth","af_relict_dreadlords_darkgrip"],
+                "traits": ["tf_special_sturdy","tf_dreadlords_lordevictor_rampart","tf_dreadlords_lordevictor_armour"],
+                "stats": {}
+            },
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Lord of the Right Flank, the Pure Silver Lord. Arken nobles granted this title were wrights and warrior-philosophers of great power. They were master strategists and quartermasters, as skilled with the organization and upkeep of the legions as they were with scathing the battlefield with blasts of primal magic. In death, they are able to muster and catalogue the dead with the same ruthless efficiency as they did in life."
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of each round, one of the Dread Lords can use its Round Action, with a different Lord’s round action each round, until all three have used their Round Action. At round 3 and every three rounds thereafter, the Lords use Eternal Imperium."
+                    }
+                ],
+                "name": "Lord Prelictor",
+                "actions": ["af_relict_dreadlords_musterthedead","af_relict_dreadlords_imperishablestar","af_relict_dreadlords_masterofsecretplaces","af_relict_dreadlords_yawningvoid","af_relict_dreadlords_drainessence","af_relict_dreadlords_darkastra"],
+                "traits": ["tf_class_artillery_aetherwall"],
+                "stats": {}
+            },
+            {
+                "description": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Lord of the Left Flank, the True Bronze Lord. Arken nobles granted this title were rangers, scouts, and vanguards tasked with scouting new lands for conquest and with the purgation and subjugation of barbarians. Their bloodlust and cruelty was unparalleled."
+                    }
+                ],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of each round, one of the Dread Lords can use its Round Action, with a different Lord’s round action each round, until all three have used their Round Action. At round 3 and every three rounds thereafter, the Lords use Eternal Imperium."
+                    }
+                ],
+                "name": "Lord Vexator",
+                "actions": ["af_relict_dreadlords_punishmentofheaven","af_relict_dreadlords_scathebarbarians","af_relict_dreadlords_raid","af_relict_dreadlords_thelanguageofshadows","af_relict_dreadlords_essencearrow"],
+                "traits": ["tf_class_skirmisher_skirmisher", "tf_class_skirmisher_dodge"],
+                "stats": {}
+            }
+        ],
+        "tactics": [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This legend fight is three warriors that work in tandem with each other. The Lord Evictor and Lord Vexator are powerful fighters whose Round Actions punish players for getting close or staying away, respectively. The Lord Prelictor can use its abilities to swap around the positions of the lords or making targeting one lord less appealing, making this tricky to handle. It’s Wailing Soul summons are potent, but players might consider getting shoved into them voluntarily to clear them before they can become a problem."
+            }
+        ],
+        "chapter": 3
+    },
+    {
+        "id": "fj_beast_mob_beastpack",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beast Pack",
+        "faction_id": "fc_beast",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A pack of hunting beasts, such as molven, grox, or wolf lizards."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_beast_mob_packattack","af_beast_mob_huntingtactics","af_beast_mob_vicioushowl","af_beast_mob_dragdown"],
+        "removed_actions": [],
+        "traits": ["tf_faction_beast_cornered"],
+        "removed_traits": ["tf_faction_beast_enrage"],
         "category": "unique",
         "phases": [],
         "tactics": [],

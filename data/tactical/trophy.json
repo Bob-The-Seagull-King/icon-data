@@ -438,11 +438,27 @@
         "uses" : 2,
         "foe_id": "",
         "usetype": "",
-        "description": [{
-                "tags": {"desc_type" : "desc"},
-                "content": "Use this gem as an action to summon 3 Relict Husks. They fight as allied summons, acting on your turn.",
-                "glossary": [{"val": "summon", "id": "gl_summon"}]
-            }]
+        "description": [
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Use this gem as an action to summon 3 ",
+                    "glossary": [{"val": "summon", "id": "gl_summon"}]
+                },
+                {
+                    "tags": {"desc_type" : "textfoe"},
+                    "content": "fj_relict_mob_husk"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "They fight as allied summons, acting on your turn.",
+                    "glossary": [{"val": "summons", "id": "gl_summon"}]
+                }
+            ]
+        }]
     },
     {
         "id": "tp_relictarbalest",
@@ -638,7 +654,7 @@
         "name": "Helm of Command",
         "category": "fc_relict",
         "uses" : 2,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_vesselknight",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -659,7 +675,7 @@
         "name": "Darklight Infuser",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_vesselknight",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -700,7 +716,7 @@
         "name": "The Black Book",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_arkenlich",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -719,7 +735,7 @@
         "name": "Golden Mask",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_arkenlich",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -742,7 +758,7 @@
         "name": "Grasp of Iron",
         "category": "fc_relict",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_dreadlords",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -762,7 +778,7 @@
         "name": "Key to Iz",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_dreadlords",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -781,7 +797,7 @@
         "name": "Shivering Arrow",
         "category": "fc_relict",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_relict_legend_dreadlords",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1001,7 +1017,7 @@
         "name": "Chimaeric Ichor",
         "category": "fc_beast",
         "uses" : 2,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_chimera",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1021,7 +1037,7 @@
         "name": "Chimaeric Bile",
         "category": "fc_beast",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_chimera",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1040,13 +1056,29 @@
         "name": "Apex Mantle",
         "category": "fc_beast",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_apex",
         "usetype": "expedition",
-        "description": [{
-                "tags": {"desc_type" : "desc"},
-                "content": "You can don this cloak of Apex hide to show your dominance during this expedition. You deal bonus damage to beasts, and at the start of one combat, you may summon a beast pack mob with 6 members. The mob is allied to you.",
-                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "summon", "id": "gl_summon"}]
-            }]
+        "description": [
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "You can don this cloak of Apex hide to show your dominance during this expedition. You deal bonus damage to beasts, and at the start of one combat, you may summon a ",
+                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "summon", "id": "gl_summon"}]
+                },
+                {
+                    "tags": {"desc_type" : "textfoe"},
+                    "content": "fj_beast_mob_beastpack"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": " mob with 6 members. The mob is allied to you.",
+                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "summon", "id": "gl_summon"}]
+                }
+            ]
+        }]
     },
     {
         "id": "tp_apexfang",
@@ -1059,7 +1091,7 @@
         "name": "Apex Fang",
         "category": "fc_beast",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_apex",
         "usetype": "",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1085,7 +1117,7 @@
         "name": "Wyrm Gut",
         "category": "fc_beast",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_wyrm",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -1107,7 +1139,7 @@
         "name": "Tail Sword",
         "category": "fc_beast",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_beast_legend_wyrm",
         "usetype": "expedition",
         "description": [{
                 "tags": {"desc_type" : "desc"},
@@ -2943,10 +2975,25 @@
         "foe_id": "",
         "usetype": "",
         "description": [
+            
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "Summon an allied Sprigg mob with 3 members. The Spriggs disappear at the end of combat.",
-                "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon an allied ",
+                        "glossary": [{"val": "Summon", "id": "gl_summon"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_hob_mob_sprigg"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " mob with 3 members. The Spriggs disappear at the end of combat."
+                    }
+                ]
             }
         ]
     },
