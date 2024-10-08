@@ -187,8 +187,8 @@
             {
                 "chapter": 2,
                 "name": "2",
-                "actions": ["af_relict_artillery_soulspark_ch2"],
-                "removed_actions": ["af_relict_artillery_soulspark"],
+                "actions": ["af_relict_artillery_chainlightning_ch2"],
+                "removed_actions": ["af_relict_artillery_chainlightning"],
                 "traits": [],
                 "removed_traits": [],
                 "stats": {}
@@ -196,8 +196,8 @@
             {
                 "chapter": 3,
                 "name": "3",
-                "actions": ["af_relict_artillery_soulspark_ch3"],
-                "removed_actions": ["af_relict_artillery_soulspark"],
+                "actions": ["af_relict_artillery_chainlightning_ch3"],
+                "removed_actions": ["af_relict_artillery_chainlightning"],
                 "traits": [],
                 "removed_traits": [],
                 "stats": {}
