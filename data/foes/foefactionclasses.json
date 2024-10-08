@@ -170,7 +170,7 @@
             }
         ],
         "stats": {},
-        "actions": ["af_relict_artillery_chainlightning", "af_relict_artillery_soulspark", "af_relict_artillery_unstablecharge"],
+        "actions": ["af_relict_artillery_chainlightning", "af_relict_artillery_unstablecharge"],
         "removed_actions": [],
         "traits": ["tf_special_flying", "tf_special_phasing"],
         "removed_traits": [],

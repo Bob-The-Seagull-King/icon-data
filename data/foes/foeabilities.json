@@ -8276,7 +8276,8 @@
         "source": "core",
         "tags": {
             "action": 1,
-            "multimark": true
+            "range": 5,
+            "line": 4
         },
         "eventtags": {},
         "name": "Black Communion",
@@ -8531,6 +8532,10 @@
                         }]
                     }
                 ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_relict_artillery_soulspark"
             }
         ]
     },
