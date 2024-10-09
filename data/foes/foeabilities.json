@@ -11987,7 +11987,7 @@
         ]
     },
     {
-        "id": "f_imperial_informant_snitch_interrupt",
+        "id": "af_imperial_informant_snitch_interrupt",
         "type": "Ability",
         "source": "core",
         "tags": { 
