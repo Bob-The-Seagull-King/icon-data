@@ -10247,6 +10247,268 @@
         ]
     },
     {
+        "id": "af_scavenger_brawler_hurlloot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Hurl Loot",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Brawler picks up an adjacent valuables token and throws it at a foe in range 4. That foe takes 2 damage, then either picks up the token or becomes slashed.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_pitfighter_rollingcutter",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rolling Cutter",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with an adjacent foe, removing and placing both characters. That foe is slashed, then shoved 1.",
+                "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Free action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_pitfighter_goldenknuckles",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Golden Knuckles",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is shoved 1 for every valuables token the Pit Fighter is holding."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 3 damage, once for every valuables token the Pit Fighter is holding."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_brewer_throwbottle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 5,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Throw Bottle",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_brewer_battlebrew",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Battle Brew",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Brewer swigs a battle brew."
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Gamble."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The brew has random effects. This ability cannot be used again this combat until the Brewer picks up a valuables token. Duplicate results instead move the result up or down by 1 category (brewer’s choice)."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "1. Brew explodes in a small blast area effect centered on the brewer, dealing [D]+fray with true strike to everyone (including the Brewer!)",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"},{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "true strike", "id": "gl_truestrike"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "2-3. Brewer gains counter for the rest of combat. Re-roll if they already have counter.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "4- 5. Brewer become sturdy for the rest of combat and is immediately cured.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}, {"val": "cured", "id": "gl_cure"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "6. Brewer becomes unstoppable for the rest of combat and is immediately cured.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "cured", "id": "gl_cure"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_splitter_goldenarmor",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Golden Armor",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Self or an adjacent ally is targeted by ability."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Grant resistance and unstoppable against the triggering ability, then if this character has at least one valuables token, discard a valuables token, destroying it.",
+                        "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_splitter_theblock",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "true_strike": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "The Block",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The splitter chooses a foe in range. At the end of that foe’s next turn, the Splitter rushes up to 4 spaces towards them. If the splitter ends this movement adjacent to the chosen foe, they must save or take 2[D]+fray, or [D]+fray on a successful save.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay:",
+                "glossary": [{"val": "Slay", "id": "gl_slay"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gain +2 valuables."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_splitter_execute",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Execute",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 2 at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they sacrifice down to 1 hp.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
         "id": "af_scavenger_skirmisher_sliceanddice",
         "type": "Ability",
         "source": "core",

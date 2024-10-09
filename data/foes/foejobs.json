@@ -2786,6 +2786,133 @@
         "chapter": 3
     },
     {
+        "id": "fj_scavenger_heavy_bouncer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bouncer",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Thick armed ruffians who are hand picked to guard the best of the spoils. Usually picked by scrap bosses for their prodigious size."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_bouncer_guardloot"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_heavy_brawler",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brawler",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Rough and tumble street toughs, come to the ruins to turn a quick guilder."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_brawler_hurlloot"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_scrapper_streetfighter"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_heavy_pitfighter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pit Fighter",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Braggards and thrill-seekers who make a name for theirselves in blood sport."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_pitfighter_rollingcutter", "af_scavenger_pitfighter_goldenknuckles"],
+        "removed_actions": ["af_scavenger_pitfighter_uppercut"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_heavy_brewer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brewer",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Rowdy fighters that get drunk off their own custom camp brews, often found starting brawls in the local watering holes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_brewer_throwbottle", "af_scavenger_brewer_battlebrew"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_heavy_splitter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Splitter",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Executioners of the scavenger camps, enforcing the brutal justice of the Judges and the rule of the Barons. Their armor is festooned with trophies and ornaments."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_splitter_goldenarmor", "af_scavenger_splitter_theblock", "af_scavenger_splitter_execute"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy", "af_scavenger_splitter_deeppockets"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",

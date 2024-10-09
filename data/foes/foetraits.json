@@ -2774,6 +2774,50 @@
         ]
     },
     {
+        "id": "tf_scavenger_bouncer_guardloot",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Guard Loot",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Doesn’t pick up valuables tokens. Instead, counts as holding any valuables tokens it is standing on, and has resistance while standing on at least one.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_brawler_streetfighter",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Street Fighter",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has resistance while adjacent to two or more foes.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_splitter_deeppockets",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Pockets",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Starts with 1 valuables token."
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",
