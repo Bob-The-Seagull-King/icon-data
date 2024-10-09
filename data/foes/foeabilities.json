@@ -12847,6 +12847,191 @@
         ]
     },
     {
+        "id": "af_demon_screamingdemon_howlofterror",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Howl of Terror",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in range take 2 damage, or 4 if they are not adjacent to an ally."
+            }
+        ]
+    },
+    {
+        "id": "af_demon_smokedemon_corruptivecloud",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 2,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Corruptive Cloud",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The smoke demon summons a medium blast terrain effect.",
+                "glossary": [ 
+                    {"val": "summons", "id": "gl_summon"},
+                    {"val": "medium blast", "id": "gl_blast"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The cloud grants cover and the entire zone is considered part of the demon’s Aura of Terror. This zone lasts until this ability is used again.",
+                        "glossary": [{"val": "cover", "id": "gl_cover"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_warpingdemon_popbubble",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Pop Bubble",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This demon’s bubbles bulge, giving it the following interrupt until the start of its next turn:",
+                "glossary": [ {"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_warpingdemon_popbubble_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_warpingdemon_popbubble_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 2,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Warping Bubble",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "An ally in range 2 is targeted by an ability, and that ability resolves."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "That ally gains 2 vigor after that ability resolves each time they were damaged by that ability.",
+                                    "glossary": [ {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_warpingdemon_skinwarp",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Skinwarp",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Remove any ally from the battlefield, then place them anywhere else on the battlefield. If bloodied, they are also cured.",
+                "glossary": [ {"val": "bloodied", "id": "gl_bloodied"},{"val": "cured", "id": "gl_cure"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_puppeteerdemon_whitestrings",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "White Strings",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All allies in range are teleported 2 in any direction.",
+                "glossary": [ {"val": "teleported", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_puppeteerdemon_blackstrings",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Black Strings",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 5 is sealed and must save. On a failed save, they teleport up to 3 spaces. If they end this teleport adjacent to one or more or their allies, those allies take 4 damage from the target.",
+                "glossary": [ {"val": "sealed", "id": "gl_sealed"},{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_puppeteerdemon_hastenlifesthread",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Hasten Life's Thread",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A demon in range 6 is marked.",
+                "glossary": [ {"val": "marked", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, they are intangible, deal bonus damage, and gain +1 action, but unravel into multicolored string and are defeated at the end of the round.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "intangible", "id": "gl_intangible"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_demon_gapingdemon_swallowwhole",
         "type": "Ability",
         "source": "core",

@@ -4219,6 +4219,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_demon_leader_screamingdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Screaming Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is full of holes that make a high pitched screaming when it moves." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_screamingdemon_howlofterror"],
+        "removed_actions": [],
+        "traits": ["tf_demon_screamingdemon_deathshriek"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_leader_smokedemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Smoke Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is a cloud of venomous, choking smoke. Writhing images in the smoke occasionally surface in the form of screaming faces." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_smokedemon_corruptivecloud"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing", "tf_special_flying"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_leader_bulgingdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bulging Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon’s grayish skin shifts and bulges unnaturally." 
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_demon_bulgingdemon_disgorge","tf_demon_bulgingdemon_lastrevenge"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_leader_warpingdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Warping Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is a collection of bubbles with a disconcertingly skin-like texture." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_warpingdemon_popbubble","af_demon_warpingdemon_skinwarp"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_leader_puppeteerdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Puppeteer Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This silent demon is made up of woven strings, and can unweave itself to link to the vital forces of other creatures." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_puppeteerdemon_whitestrings","af_demon_puppeteerdemon_blackstrings","af_demon_puppeteerdemon_hastenlifesthread"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",

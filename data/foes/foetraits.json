@@ -3568,6 +3568,112 @@
         ]
     },
     {
+        "id": "tf_demon_screamingdemon_deathshriek",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Death Shriek",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, all foes on the battlefield take 2 piercing damage and gain +1 curse on attacks and saves for the rest of the round.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_bulgingdemon_disgorge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Disgorge",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Whenever this demon loses all vigor, create a ",
+                        "glossary": [
+                            {"val": "vigor", "id": "gl_vigor"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_demon_mob_natal"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " in range 2.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_bulgingdemon_lastrevenge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Last Revenge",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When defeated (not devoured), explodes in a medium blast area effect centered on it. Non-demons in the area take [D]+fray, then summon 2 ",
+                        "glossary": [
+                            {"val": "medium blast", "id": "gl_blast"},
+                            {"val": "area effect", "id": "gl_areaeffect"},
+                            {"val": "[D]", "id": "gl_damagedice"},
+                            {"val": "fray", "id": "gl_fray"},
+                            {"val": "summon", "id": "gl_summon"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_demon_mob_natal"
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "in free spaces in the area.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_screamingdemon_deathshriek",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Death Shriek",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, all foes on the battlefield take 2 piercing damage and gain +1 curse on attacks and saves for the rest of the round.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_amorphous",
         "type": "Trait",
         "source": "core",
