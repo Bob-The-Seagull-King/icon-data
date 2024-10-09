@@ -13032,6 +13032,250 @@
         ]
     },
     {
+        "id": "af_demon_arachniddemon_demonweb",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Demonweb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a small blast area of difficult and dangerous terrain in range. Foes in the area are vulnerable+. Demons are immune to its effects.",
+                "glossary": [ 
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "difficult", "id": "gl_difficultterrain"},
+                    {"val": "dangerous", "id": "gl_dangerousterrain"},
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_arachniddemon_deadlystrand",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Deadly Strand",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon chooses a character in range 2 of a demonweb. That character is teleported into the closest space of the demonweb. Foes can save to avoid this effect.",
+                "glossary": [ 
+                    {"val": "teleported", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_feathereddemon_shift",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Shift",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport 4.",
+                "glossary": [ 
+                    {"val": "Teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_feathereddemon_realityshift",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Reality Shift",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Feathered demon creates a line 3 terrain effect in range.",
+                "glossary": [ 
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters that enter any space of the effect may be teleported 2 by the demon. The area lasts until this ability is used again.",
+                        "glossary": [{"val": "teleported", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_colordemon_fleshwarp",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Fleshwarp",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range is torn into pieces, then teleported 3 and reassembled. That character takes 1 piercing damage, twice.",
+                "glossary": [ 
+                    {"val": "teleported", "id": "gl_teleport"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_colordemon_distortfoe",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Distort Foe",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 is marked.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, they gain the Distorted Soul trait.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_demon_colordemon_distortedsoul"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_interlinkeddemon_realitysplinter",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Reality Splinter",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon marks itself or an ally in range. While that character is marked, the Demon gains the following interrupt:",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_interlinkeddemon_breakreality"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_interlinkeddemon_breakreality",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Break Reality",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The marked character is damaged by a foe’s ability.",
+                                    "glossary": [ {"val": "marked", "id": "gl_mark"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "After the ability resolves, the foe swaps places with the demon, removing and placing both characters."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_interlinkeddemon_sacredgeometry",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Sacred Geometry",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is marked and forced into strange geometries. While marked:",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Any time they use an ability on an ally, they become unable to use abilities on allies until they use an ability on an enemy.",
+                        "glossary": [ 
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Any time they use an ability on an enemy, they become unable to use abilities on enemies until they use an ability on an ally.",
+                        "glossary": [ 
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_demon_gapingdemon_swallowwhole",
         "type": "Ability",
         "source": "core",

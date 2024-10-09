@@ -4344,6 +4344,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_demon_artillery_arachniddemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arachnid Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon’s spindly limbs end in humanlike hands, which it uses to spin acidic webs." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_arachniddemon_demonweb","af_demon_arachniddemon_deadlystrand"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_artillery_unstabledemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unstable Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is a barely controlled chaos, its very form constantly twisting and warping." 
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_demon_unstabledemon_implode"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_artillery_feathereddemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Feathered Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A bird-like demon with wet, insectile eyes that track its prey with ravenous longing." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_feathereddemon_shift","af_demon_feathereddemon_realityshift"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_artillery_colordemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Color Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is a scintillating cloud of colors that cannot be named. Looking at it too long hurts." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_colordemon_fleshwarp","af_demon_colordemon_distortfoe"],
+        "removed_actions": [],
+        "traits": ["tf_demon_colordemon_distortedsoul"],
+        "removed_traits": ["tf_class_artillery_aetherwall"],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_artillery_interlinkeddemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Interlinked Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is made of geometric shapes that look wrong to the eye. As it moves, it constantly re-assembles itself." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_interlinkeddemon_realitysplinter","af_demon_interlinkeddemon_sacredgeometry"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",

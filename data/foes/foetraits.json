@@ -3674,6 +3674,58 @@
         ]
     },
     {
+        "id": "tf_demon_unstabledemon_implode",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Implode",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round 4, this demon explodes, destroying the demon and dealing [D] +fray piercing damage as an area effect to all nondemon characters on the battlefield.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "area effect", "id": "gl_areaeffect"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_colordemon_distortedsoul",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Distorted Soul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When not bloodied, gain resistance to all abilities from adjacent spaces. However, abilities used against them from range 2 or greater gain pierce and ignore resistance.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "pierce", "id": "gl_piercing"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When bloodied, gain resistance to damage from any ability not from adjacent spaces. However, all abilities used against them from adjacent spaces gain pierce and ignore resistance.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "pierce", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_amorphous",
         "type": "Trait",
         "source": "core",
