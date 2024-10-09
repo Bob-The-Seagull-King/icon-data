@@ -2913,6 +2913,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_scavenger_skirmisher_giltfinger",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Giltfinger",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Kin that care little for what they carry out, only that it glitters."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_giltfinger_thiefcraft", "tf_scavenger_giltfinger_sneakattack"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_skirmisher_toetaker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toe-Taker",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Dust congregates under the fingernails and toes of travelers in the ruins, with predictable influences on the truly desperate."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_toetaker_toecut"],
+        "removed_actions": ["af_scavenger_skirmisher_sliceanddice"],
+        "traits": ["tf_scavenger_toetaker_goldenburden"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_skirmisher_plucker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Plucker",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Hardened fighters who have made a habit of letting everyone else do the hard work."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_plucker_goldenstep"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_skirmisher_fingercollector",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Finger Collector",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Especially cruel scavenger barons will occasionally exact a flesh price in lieu of paying a debt."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_fingercollector_serratedbolt", "af_scavenger_fingercollector_collectbounty"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_skirmisher_nightcloak",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nightcloak",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Master thieves of the scavenger bands. Their enchanted cloaks are jet black and fool the eye, blending into the shadows."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_nightcloak_jetcloak", "af_scavenger_nightcloak_blindingvenom"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",

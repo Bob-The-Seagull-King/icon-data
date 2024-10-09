@@ -10429,7 +10429,8 @@
         "source": "core",
         "tags": { 
             "type": "interrupt",
-            "interrupt": 1
+            "interrupt": 1,
+            "requires": "at least one valuables token"
         },
         "eventtags": {},
         "name": "Golden Armor",
@@ -10687,6 +10688,221 @@
                         "glossary": [{"val": "medium", "id": "gl_blast"}]
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_toetaker_toecut",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "melee": true,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Toe Cut",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The character gains an open wound. While wounded, it takes [D] again at the end of its turns. This effect does not stack, and ends instead if the character ends their turn adjacent to an ally.",
+                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_plucker_goldenstep",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Golden Step",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range can dash 3 with phasing. Any time the chosen ally picks up a valuables token during that move they deal 2 damage to all adjacent foes, then Plucker gains the token.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "phasing", "id": "gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_fingercollector_serratedbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Serrated Bolt",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deal 3 damage to a character in range."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Free action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_fingercollector_collectbounty",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 6,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Collect Bounty",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Can only be used against bloodied targets.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Slay:",
+                "glossary": [{"val": "Slay", "id": "gl_slay"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gain +2 valuables."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gains unerring.",
+                        "glossary": [{"val": "unerring", "id": "gl_unerring"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_nightcloak_jetcloak",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "requires": "a valuables token"
+        },
+        "eventtags": {},
+        "name": "Jet Cloak",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Discard a valuables token, destroying it. Remove self from the battlefield. At the start of the next player turn, return adjacent to any player character. That character takes 2 damage twice and is dazed.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_nightcloak_blindingvenom",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Blinding Venom",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is blinded+. They can end this condition by picking up a valuables token, or ending a turn adjacent to an ally.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "+", "id": "gl_ongoing"}]
             }
         ]
     },
