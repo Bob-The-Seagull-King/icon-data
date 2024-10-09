@@ -73,8 +73,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -96,8 +96,8 @@
         "class_id": "grey",
         "description":  [
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -120,8 +120,8 @@
         "class_id": "grey",
         "description":  [
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -187,8 +187,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -256,8 +256,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -479,8 +479,8 @@
         "class_id": "red",
         "description":  [
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -515,8 +515,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -571,8 +571,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -665,8 +665,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -676,8 +676,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -775,8 +775,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -786,8 +786,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -874,8 +874,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -930,8 +930,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1019,8 +1019,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1103,8 +1103,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1114,8 +1114,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1243,8 +1243,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1292,8 +1292,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1348,8 +1348,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1399,8 +1399,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1505,8 +1505,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1591,8 +1591,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1691,8 +1691,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1777,8 +1777,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1890,8 +1890,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -1980,8 +1980,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2065,8 +2065,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2076,8 +2076,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2132,8 +2132,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2201,8 +2201,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2212,8 +2212,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2300,8 +2300,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2389,8 +2389,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2589,8 +2589,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2702,8 +2702,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2738,8 +2738,8 @@
         "class_id": "green",
         "description":  [
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -2814,8 +2814,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -7624,8 +7624,8 @@
         "class_id": "grey",
         "description":  [                                
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "Dash 2, then deal 1 piercing damage to all adjacent foes.",
@@ -7633,8 +7633,8 @@
                                 }]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "Up to two other Natals may deal 1 piercing damage to an adjacent foe.",
@@ -7938,8 +7938,8 @@
         "class_id": "grey",
         "description":  [
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
                                     "content": "All husks may rush 1 space. Then foes adjacent to one or more husks take 2 piercing damage.",
@@ -9071,8 +9071,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -9082,8 +9082,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -11424,8 +11424,8 @@
                 }]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                     "tags": {"desc_type" : "desc"},
                     "content": "Grant evasion against that attack, then after it resolves the targeted character teleports 3 spaces to a free space, which is its ‘real’ location.",
@@ -11472,8 +11472,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -11483,8 +11483,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -11649,8 +11649,8 @@
                 }]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                     "tags": {"desc_type" : "desc"},
                     "content": "The Sergeant can use this interrupt to cause them to re-roll the attack with +1 boon, taking the second result as the final result instead.",
@@ -11680,8 +11680,8 @@
                 }]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                     "tags": {"desc_type" : "desc"},
                     "content": "The Sergeant can use this interrupt to cause them to re-roll the attack with +1 boon, taking the second result as the final result instead.",
@@ -11728,8 +11728,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -12177,8 +12177,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -12188,8 +12188,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -12501,8 +12501,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -12511,8 +12511,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -12620,8 +12620,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -12631,8 +12631,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -12856,7 +12856,7 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Effect: ",
                 "subcontent":   [
                     {
@@ -12867,7 +12867,7 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Effect: ",
                 "subcontent":   [
                     {
@@ -12912,7 +12912,7 @@
                 "content": "sm_demon_abyssspike"
             },
             {
-                "tags": {"desc_type" : "subeffect"},
+                "tags": {"desc_type" : "effect"},
                 "content": "Effect: ",
                 "subcontent":   [
                     {
@@ -13538,6 +13538,808 @@
         ]
     },
     {
+        "id": "af_demon_ooze_tendril",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Tendril",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_ooze_pseudopod",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Pseudopod",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range is shoved 1 in a direction of the Ooze’s choice.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_ooze_slide",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Slide",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ooze rushes 3 spaces. Foes it passes through take 1 damage.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If this ability is used again this turn, it deals +2 more damage. This effect does not stack."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_stretcheddemon_clutch",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Clutch",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to bloodied characters.",
+                        "glossary": [
+                            {"val": "bonus damage", "id": "gl_bonusdamage"},
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The demon sinks its claws into the target, grabbing them with elongated limbs. If the targeted character ends their turn within range 3 of the demon, it pulls them in, removing them from the battlefield and placing them adjacent to the demon. They then take damage equal to 25% of their maximum hp. Either way, this effect ends at the end of their turn."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_stretcheddemon_meltface",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Melt Face",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 3 takes 2 damage and is blinded.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_stretcheddemon_stretchflesh",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Stretch Flesh",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range has their flesh warped across space. The character takes 2 damage, then is shoved 1 in any direction. They must then save or be shoved 2 again in any direction. Allies and bloodied foes fail this save.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_stretcheddemon_elongate",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Elongate",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demons warps a character’s localized space, causing them to occupy an arc 3 area instead of their normal space while marked. When they move, move one space of their area and then place the rest in any valid configuration.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_succubus_fruitofdelerium",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Fruit of Delerium",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Succubus summons a fruit in range 3, a 1 space terrain effect. Only two of these fruits can be active at once.",
+                "glossary": []
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any character can consume a fruit by moving into its space. Consuming a fruit grants +1 action this turn, but also marks the character with Pleasant Haze.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_succubus_pleasanthaze",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Pleasant Haze",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 5 is marked. While at least one character marked, the Succubus has the following interrupt",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_succubus_delirium"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_succubus_delirium",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 0,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Delirium",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The marked character ends their turn.",
+                                    "glossary": [ {"val": "marked", "id": "gl_mark"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The succubus chooses one of the following effects:",
+                                    "glossary": []
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Rest Now:",
+                        "subcontent":   [{
+                                            "tags": {"desc_type" : "desc"},
+                                            "content": "Character becomes immobile until the start of its next turn.",
+                                            "glossary": [ {"val": "immobile", "id": "gl_immobile"}]
+                                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Unstoppable Giggling:",
+                        "subcontent":   [{
+                                            "tags": {"desc_type" : "desc"},
+                                            "content": "Character becomes pacified.",
+                                            "glossary": [ {"val": "pacified", "id": "gl_pacified"}]
+                                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Frolic:",
+                        "subcontent":   [{
+                                            "tags": {"desc_type" : "desc"},
+                                            "content": "Character dashes 3 in a direction of the succubus’ choice.",
+                                            "glossary": [ {"val": "dashes", "id": "gl_dash"}]
+                                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Uncontrollable Rage:",
+                        "subcontent":   [{
+                                            "tags": {"desc_type" : "desc"},
+                                            "content": "Character immediately deals fray damage to all adjacent characters, including allies.",
+                                            "glossary": [ {"val": "fray", "id": "gl_fray"}]
+                                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Nightmare:",
+                        "subcontent":   [{
+                                            "tags": {"desc_type" : "desc"},
+                                            "content": "Character loses all vigor and cannot gain vigor this turn.",
+                                            "glossary": [ {"val": "vigor", "id": "gl_vigor"}]
+                                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gain 1 use of this interrupt for each marked character.",
+                                    "glossary": []
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_succubus_flayingtentacle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Flaying Tenctacle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to characters marked by Pleasant Haze.",
+                        "glossary": [
+                            {"val": "bonus damage", "id": "gl_bonusdamage"},
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_succubus_tendthralls",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Tend Thralls",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All characters marked by Pleasant haze either gain 3 vigor or take 3 damage (the succubus may choose for each one).",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_succubus_corruptivespray",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Corruptive Spray",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Succubus creates 3 spaces of dangerous terrain in range. Characters in the area are shoved 1 outside it when it is created.",
+                "glossary": [
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mimic_surprise",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Surprise!",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The mimic is targeted by an ability, and the ability resolves."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The mimic is revealed and dashes up to 3 spaces. An adjacent foe must then save or take [D] +fray, or just fray damage on a failed save.",
+                                    "glossary": [ 
+                                        {"val": "dashes", "id": "gl_dash"},
+                                        {"val": "[D]", "id": "gl_damagedice"},
+                                        {"val": "fray", "id": "gl_fray"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mimic_bonecracker",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Bone-Cracker",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + 1, a number of times equal to the round number..",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage, a number of times equal to the round number.",
+                            "glossary": []
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The mimic may dash 2 before making this attack. Reveals the mimic. Deals half damage if the mimic is revealed before making this attack.",
+                        "glossary": [
+                            {"val": "dash", "id": "gl_dash"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mimic_prowl",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Prowl",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 2 and gain stealth.",
+                "glossary": [
+                    {"val": "Dash", "id": "gl_dash"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mimic_shellgame",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Shell Game",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a decoy, removing and placing both characters. This does not reveal the mimic.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mimic_scuttlingretreat",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Scuttling Retreat",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The mimic creates 2 decoys anywhere in ange, then secretly replaces any active decoy, swapping places with it.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_gazer_behold",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 8,
+            "pierce": true,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Behold",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Gazer rolls 1d6 and applies one of the following effects to the attack target, which last until the end of its next turn.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_gazer_behold"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_gazer_yawningvoid",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Yawning Void",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Demon creates a small blast area of nonspace, a terrain effect, which lasts until the end of combat.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the demon creates the terrain, it removes all characters inside and places them adjacent to any edge.",
+                "glossary": []
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters and effects cannot occupy the space. Any character that enters the space for any reason can be removed by the demon and placed in any adjacent space. Foes can pass a save to choose which space they end up instead. On a failed save, they take fray damage and the demon can choose anyway.",
+                "glossary": [{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_lesseremissary_decree",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Decree",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Emissary makes one of the following decrees, choosing a foe in range 6. That character must follow the decree or else take [D]+fray divine damage and become stunned.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "divine", "id": "gl_divine"},
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_lesseremissary_decree"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_lesseremissary_unholy",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 5,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Unholy",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Sealed foes must sacrifice 4. Then, attack target is sealed.",
+                        "glossary": [
+                            {"val": "Sealed", "id": "gl_sealed"},
+                            {"val": "sacrifice", "id": "gl_sacrifice"},
+                            {"val": "sealed", "id": "gl_sealed"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_lesseremissary_immaculate",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Immaculate",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range 5 becomes Intangible until the end of its next turn.",
+                "glossary": [{"val": "Intangible", "id": "gl_intangible"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_lesseremissary_liftburdens",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Lift Burdens",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Self, or an ally in range 6 may fly 2. Increase fly by +2 for each time this ability was used this turn.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
         "id": "af_demon_gapingdemon_swallowwhole",
         "type": "Ability",
         "source": "core",
@@ -13607,8 +14409,8 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -13637,8 +14439,8 @@
                 "glossary": [{"val": "summons", "id": "gl_summon"}]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -13670,8 +14472,8 @@
                 "glossary": [{"val": "summons", "id": "gl_summon"}]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -13714,8 +14516,8 @@
                 "glossary": [{"val": "summons", "id": "gl_summon"}]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -16708,8 +17510,8 @@
                 }]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                     "tags": {"desc_type" : "desc"}, 
                     "content": "Remove self from the battlefield. At the start of the Rogue’s next turn, return them to the battlefield anywhere in range 3 of a character, with stealth.",
@@ -18496,8 +19298,8 @@
                 "content": "Foes in the area take 2 damage"
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -20017,8 +20819,8 @@
                 }]
             },
             {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Effect:",
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
                 "subcontent":   [{
                     "tags": {"desc_type" : "desc"},
                     "content": "The kelpie can force that foe to make a save or adhere to its hide."

@@ -3770,6 +3770,74 @@
         ]
     },
     {
+        "id": "tf_demon_ooze_amorphous",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Phasing and can share space with other characters. Characters that end their turn in its space take fray damage.",
+                "glossary": [
+                    {"val": "Phasing", "id": "gl_phasing"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_demon_ooze_split",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Split",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of any turn that it is bloodied, the Ooze creates an ooze duplicate in an adjacent space. The duplicate is a new character that is an exact copy of the Ooze at the time this split happens, except without this trait. It may act starting next round. An ooze can create multiple copies of itself this way in a fight.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_demon_stretcheddemon_spindlylimbs",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spindly Limbs",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Ignores engagement from other character, and spends no additional movement moving up or down terrain.",
+                "glossary": [
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_demon_mimic_mimicry",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mimicry",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "In any battle with the Mimic, place 5 decoys on the battlefield at the start of the battle. Unlike other summons, they lack the intangible trait and can be destroyed.",
+                "glossary": [ ]
+            },                              
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_demon_decoy",
+                "glossary": [ ]
+            }    
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_amorphous",
         "type": "Trait",
         "source": "core",

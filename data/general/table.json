@@ -2779,5 +2779,216 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_gazer_behold",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Result", "Effect", "Description"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_gazer_behold_result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Scour Gravity"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The target gains flying, but at the end of their turn, they fall, shattering them.",
+                    "glossary": [
+                        {"val": "flying", "id": "gl_flying"},
+                        {"val": "shattering", "id": "gl_shattered"}
+                    ]
+                }]
+            },
+            {
+                "id": "ti_gazer_behold_result2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Scour Friction"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The target doubles its speed, but must move maximum speed when moving and cannot only move in one direction for each action.",
+                    "glossary": [
+                    ]
+                }]
+            },
+            {
+                "id": "ti_gazer_behold_result3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Scour Force"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The target cannot deal damage, but also becomes immune to all damage for the duration.",
+                    "glossary": [
+                        {"val": "immune", "id": "gl_immune"}
+                    ]
+                }]
+            },
+            {
+                "id": "ti_gazer_behold_result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Scour Scale"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The target increases its size to 3. It can share space with foes and objects during this effect.",
+                    "glossary": [
+                    ]
+                }]
+            },
+            {
+                "id": "ti_gazer_behold_result5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Scour Time"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The target immediately rolls a d20 and their class damage die. All of their results for any of those dice rolled during this turn become the respective rolled result (so, for example, if a 13 was rolled on the d20, all d20 rolls on their turn would be 13).",
+                    "glossary": [
+                        {"val": "class damage die", "id": "gl_damagedice"}
+                    ]
+                }]
+            },
+            {
+                "id": "ti_gazer_behold_result6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },{
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Scour Space"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The target may teleport to any space for 1 action. However, for the duration, all characters may teleport to any space adjacent to this character for 1 action.",
+                    "glossary": [
+                        {"val": "teleport", "id": "gl_teleport"}
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_lesseremissary_decree",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["Decree", "Description"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_lesseremissary_decree_result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                {
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Decree of Anger"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Attack this round.",
+                    "glossary": [
+                    ]
+                }]
+            },
+            {
+                "id": "ti_lesseremissary_decree_result2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                {
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Decree of Selfishness"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Do not use abilities that target allies this round.",
+                    "glossary": [
+                    ]
+                }]
+            },
+            {
+                "id": "ti_lesseremissary_decree_result3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                {
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Decree of Paranoia"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "End turn without being adjacent to any other characters.",
+                    "glossary": [
+                    ]
+                }]
+            },
+            {
+                "id": "ti_lesseremissary_decree_result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                {
+                    "tags": {"desc_type" : "effect"},
+                    "content": "Decree of Rashness"
+                },{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "End turn adjacent to a foe.",
+                    "glossary": [
+                    ]
+                }]
+            }
+        ]
     }
 ]

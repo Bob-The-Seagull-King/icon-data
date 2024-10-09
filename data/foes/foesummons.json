@@ -883,6 +883,34 @@
         "limit": 0
     },
     {
+        "id": "sm_demon_decoy",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "immobile": true,
+            "hp": 1,
+            "defense": 1
+        },
+        "eventtags": {},
+        "name": "Decoy",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The GM secretly picks one of the decoys that is actually the Mimic. When that decoy is targeted by an ability, before the ability is made, replace the decoy with the mimic and retarget the attack to the mimic. This reveals the mimic.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

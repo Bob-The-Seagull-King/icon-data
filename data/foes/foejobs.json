@@ -4596,6 +4596,156 @@
         "chapter": 3
     },
     {
+        "id": "fj_demon_unique_ooze",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ooze",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An amorphous demon that is more like fauna native to the demon realm. Lacks any real intelligence and survives by digesting its prey whole." 
+            }
+        ],
+        "stats": { "vit": 12, "hp": 48},
+        "actions": ["af_demon_ooze_tendril","af_demon_ooze_pseudopod","af_demon_ooze_slide"],
+        "removed_actions": [],
+        "traits": ["tf_demon_ooze_amorphous","tf_demon_ooze_split"],
+        "removed_traits": ["tf_class_heavy_guard"],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_unique_stretcheddemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stretched Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A demon that looks like a pale, hairless person as viewed through a distorted lens. Theorized to be what happens to natals that fall into parts of the abyss where space works differently." 
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_demon_stretcheddemon_clutch","af_demon_stretcheddemon_meltface","af_demon_stretcheddemon_stretchflesh","af_demon_stretcheddemon_elongate"],
+        "removed_actions": [],
+        "traits": ["tf_demon_stretcheddemon_spindlylimbs"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_unique_succubus",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Succubus",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A semi-intelligent Type VI demon made of interwoven tendrils. It exudes a cloud of soporific musk that induces hallucinations, waking dreams, and illusory fantasies in those effected. After it has a satisfactory number of thralls, it spends its time digesting them by inverting its stomach on them." 
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_demon_succubus_fruitofdelerium","af_demon_succubus_pleasanthaze","af_demon_succubus_flayingtentacle","af_demon_succubus_tendthralls","af_demon_succubus_corruptivespray"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_unique_mimic",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mimic",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A potent, formless demon with the ability to mimic ordinary objects. It has a fascination with large objects such as furniture or weaponry and will often transform into whatever is nearby." 
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_demon_mimic_surprise","af_demon_mimic_bonecracker","af_demon_mimic_prowl","af_demon_mimic_shellgame","af_demon_mimic_scuttlingretreat"],
+        "removed_actions": [],
+        "traits": ["tf_demon_mimic_mimicry"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_unique_gazer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gazer",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A type IV demon that takes the form of a floating, lidless eyeball. It has the ability to selectively unravel reality wherever its gaze lies. Theories abound that this demon is merely a protrusion of a higher entity and that most of its body is hidden, unable to be seen by mortal eyes." 
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_demon_gazer_behold","af_demon_gazer_yawningvoid"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_unique_lesseremissary",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lesser Emissary",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A lesser demon forged in imitation of a beautiful, winged kin. Speaks, but doesn’t make any sense the longer you listen to one. Theories about these creatures are they are a creation of the Abyss itself trying to entreat with its prey." 
+            }
+        ],
+        "stats": {  },
+        "actions": ["af_demon_lesseremissary_decree","af_demon_lesseremissary_unholy","af_demon_lesseremissary_immaculate","af_demon_lesseremissary_liftburdens"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",
