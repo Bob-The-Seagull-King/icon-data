@@ -3969,6 +3969,131 @@
         "chapter": 1
     },
     {
+        "id": "fj_demon_heavy_starvingdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Starving Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These skeletal demons swell to enormous size when they absorb their defeated foes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_starvingdemon_fleshhook"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_heavy_armordemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Armor Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A knight-like demon clad in armor-like carapace that fights with no sense of self preservation and crushes all before it. Seeks powerful foes in combat."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_armordemon_implacableevil","af_demon_armordemon_instillhatred"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_heavy_gapingdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gaping Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is almost all mouth, teeth, and tongue, which nearly splits its body in two."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_gapingdemon_swallowwhole"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_heavy_naildemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nail Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A demon made out of iron, pierced with long and extremely sharp nails that it can retract at will like spines."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_naildemon_impale"],
+        "removed_actions": [],
+        "traits": ["tf_demon_naildemon_powerfrompain","tf_demon_naildemon_painwrack"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_heavy_horndemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Horn Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A powerful, muscular demon crowned with curling horns. It tears the earth up with its violent strikes and exudes a mist of bloody steam from its body." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_horndemon_voidfist","af_demon_horndemon_abyssspike"],
+        "removed_actions": [],
+        "traits": ["tf_special_regeneration","tf_demon_horndemon_hurlbody"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",

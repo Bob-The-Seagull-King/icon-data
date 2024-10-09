@@ -853,6 +853,36 @@
         "limit": 0
     },
     {
+        "id": "sm_demon_abyssspike",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true,
+            "height": 2
+        },
+        "eventtags": {},
+        "name": "Abyss Spike",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The spike releases an aura 1 of dark energy while it’s active. Foes in the aura are weakened, and take 2 damage if they end their turn there.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"},
+                                        {"val": "+", "id": "gl_ongoing"},
+                                        {"val": "weakened", "id": "gl_weakened"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "red",
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

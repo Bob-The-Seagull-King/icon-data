@@ -12439,6 +12439,260 @@
         ]
     },
     {
+        "id": "af_demon_starvingdemon_fleshhook",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Flesh Hook",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range takes 2 damage and is shoved 2 towards the Demon. If they are bloodied, they are also weakened. Becomes a free action if used on an ally.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "weakened", "id": "gl_weakened"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_armordemon_implacableevil",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Implacable Evil",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1 space, shove all adjacent characters 1 space, then gain counter until the start of next turn.",
+                "glossary": [
+                    {"val": "shove", "id": "gl_shove"},
+                    {"val": "Rush", "id": "gl_rush"},
+                    {"val": "counter", "id": "gl_counter"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_armordemon_instillhatred",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Instill Hatred",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A bloodied foe in range gains hatred of the demon.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "hatred", "id": "gl_hatred"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_naildemon_impale",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Impale",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray, and shove 4. The demon rushes 3 towards the foe after shoving them.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}, {"val": "shoving", "id": "gl_shove"}, {"val": "rushes", "id": "gl_rush"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray and shove 2.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed and stunned.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_horndemon_voidfist",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "blast_size": "small",
+            "requires": "bloodied",
+            "curse": 2
+        },
+        "eventtags": {},
+        "name": "Void Fist",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May rush 2 before this attack.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is shoved 3.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [ {"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_horndemon_abyssspike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Abyss Spike",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a height 2 Abyss spike object in range. Characters adjacent take 2 damage and are shoved 1.",
+                "glossary": [ {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_demon_abyssspike"
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Becomes a free action while bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_gapingdemon_swallowwhole",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Swallow Whole",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A adjacent character must save or be swallowed whole. On a successful save, they take 2 damage and are weakened. On failed save, they are also removed from the battlefield.",
+                "glossary": [
+                    {"val": "weakened", "id": "gl_weakened"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of their turn, the demon spits them out, placing them in any adjacent space to the demon’s current location, then shoving them 3 spaces.",
+                "glossary": [
+                    {"val": "shoving", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_demon_artillery_realityrazor",
         "type": "Ability",
         "source": "core",

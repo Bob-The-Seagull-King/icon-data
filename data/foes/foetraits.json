@@ -3420,6 +3420,66 @@
         ]
     },
     {
+        "id": "tf_demon_naildemon_powerfrompain",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Power From Pain",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has counter, and grants counter to all adjacent allies. Each time counter triggers on self or adjacent allies, this demon gains 1 vigor.",
+                "glossary": [
+                    {"val": "counter", "id": "gl_counter"},
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_naildemon_painwrack",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Painwrack",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters that collide with the Nail Demon take 4 damage, but no more than once a round.",
+                "glossary": [
+                    {"val": "collide", "id": "gl_collide"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_horndemon_hurlbody",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hurl Body",
+        "description":  [         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Horn Demon devours another demon or a natal, it uses its prey’s leftover body as a weapon, hurling it at foes."
+            },     
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },     
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 4 of the demon becomes weakened and takes 4 damage if devour was used, or just 2 damage if devour natal was used.",
+                "glossary": [
+                    {"val": "weakened", "id": "gl_weakened"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_amorphous",
         "type": "Trait",
         "source": "core",
