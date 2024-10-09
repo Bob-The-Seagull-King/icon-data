@@ -4094,6 +4094,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_demon_skirmisher_hollowdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hollow Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon is barely there, a hole in reality that sucks in the air at the edges. Hands occasionally grip the edges of the hole." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_hollowdemon_voidcaller"],
+        "removed_actions": [],
+        "traits": ["tf_demon_hollowdemon_ethereal"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_skirmisher_prowlingdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Prowling Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This bestial demon has the ability to become insubstantial, retreating to the void from whence it was spawned when in danger." 
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_demon_prowlingdemon_phaseslip"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_skirmisher_cutterdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cutter Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon’s arms end in cutting blades with black, reflective edges." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_cutterdemon_cutthrough","af_demon_cutterdemon_hunt"],
+        "removed_actions": ["af_demon_skirmisher_timelock"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_skirmisher_lurkingdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lurking Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This slick demon’s skin constantly shifts to match its surroundings. It’s long, thin arms can reach out from darkness and choke the life out of its prey." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_lurkingdemon_scuttle","af_demon_lurkingdemon_strangle"],
+        "removed_actions": [],
+        "traits": ["tf_demon_lurkingdemon_lurkerinthedark"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_skirmisher_crystallinedemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crystalline Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A demon made of shimmering crystals with razor sharp edges, made to sever flesh and draw blood. The crystals are infectious and make living flesh brittle." 
+            }
+        ],
+        "stats": {},
+        "actions": ["af_demon_crystallinedemon_crystallize"],
+        "removed_actions": [],
+        "traits": ["tf_special_counter","tf_demon_crystallinedemon_crystaldagger","tf_demon_crystallinedemon_crystalburst"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",

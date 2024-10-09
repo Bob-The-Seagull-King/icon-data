@@ -3480,6 +3480,94 @@
         ]
     },
     {
+        "id": "tf_demon_hollowdemon_ethereal",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ethereal",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains phasing, and has evasion unless adjacent to a foe.",
+                "glossary": [
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_prowlingdemon_phaseslip",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phase Slip",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After being damaged for the first time on any turn, become intangible until the start of the following turn.",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_lurkingdemon_lurkerinthedark",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lurker In The Dark",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has stealth+ if no other characters are in range 2.",
+                "glossary": [
+                    {"val": "stealth", "id": "gl_stealth"},
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_crystallinedemon_crystaldagger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crystal Dagger",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the demon teleports, it may deal 1 damage to a foe in range 3.",
+                "glossary": [
+                    {"val": "teleports", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_demon_crystallinedemon_crystalburst",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crystal Burst",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the demon is destroyed or devoured, it shatters, teleporting all characters in range 2 from it 2 spaces and dazing them.",
+                "glossary": [
+                    {"val": "teleporting", "id": "gl_teleport"},
+                    {"val": "dazing", "id": "gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_amorphous",
         "type": "Trait",
         "source": "core",

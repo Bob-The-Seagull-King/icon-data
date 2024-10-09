@@ -12663,6 +12663,190 @@
         ]
     },
     {
+        "id": "af_demon_hollowdemon_voidcaller",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Void Caller",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a ",
+                        "glossary": []
+                    },
+                    {
+                        "tags": {"desc_type" : "textfoe"},
+                        "content": "fj_demon_mob_natal",
+                        "glossary": []
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": " adjacent to every Void Rift, up to six times, adding to the natal mob.",
+                        "glossary": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_cutterdemon_cutthrough",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Cut Through",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "3 damage. The Cutter Demon may teleport to any point on the line after this ability resolves.",
+                "glossary": [ {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_cutterdemon_hunt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Hunt",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Cutter Demon marks a foe in range.",
+                "glossary": [ {"val": "marks", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, the demon deals bonus damage against that foe, gains +1 boon on attack rolls against that foe, and may teleport 1 after that foe uses an ability.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A marked foe can save against this mark at the end of their turns, ending it on a success.",
+                "glossary": [ {"val": "marked", "id": "gl_mark"}, {"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_lurkingdemon_scuttle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Scuttle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon dashes 4 with phasing.",
+                "glossary": [ {"val": "dashes", "id": "gl_dash"},{"val": "phasing", "id": "gl_phasing"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If it ends this movement inside a void rift, it can teleport to the space of any other void rift as part of this action.",
+                "glossary": [ 
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_lurkingdemon_strangle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Strangle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon marks a foe in range. If that foe ends its turn in range 3 of the demon, the demon grabs and chokes the life out of them.",
+                "glossary": [ {"val": "marks", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They may shove their prey 2 spaces in any direction, and that foe sacrifices 3. A foe can save at the end of their turn if this effect doesn’t activate, ending this effect on a success.",
+                "glossary": [ 
+                    {"val": "shove", "id": "gl_shove"},
+                    {"val": "sacrifices", "id": "gl_sacrifice"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_crystallinedemon_crystallize",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Crystallize",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 4 is marked. While marked, they turn partly to crystal.",
+                "glossary": [ {"val": "marked", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, they take 3 damage after using any ability. If they miss with an attack, they take 6 damage instead. A foe can end this mark at the end of any turn they didn’t deal damage.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_demon_gapingdemon_swallowwhole",
         "type": "Ability",
         "source": "core",
