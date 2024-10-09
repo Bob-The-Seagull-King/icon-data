@@ -2818,6 +2818,51 @@
         ]
     },
     {
+        "id": "tf_scavenger_giltfinger_thiefcraft",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thiefcraft",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gains stealth at the start and end of their turn if holding a valuables token.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_giltfinger_sneakattack",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sneak Attack",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks that break stealth deal bonus damage and can critical hit (+[D]).",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "critical hit", "id": "gl_criticalhit"}, {"val": "+[D]", "id": "gl_damagedice"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_toetaker_goldenburden",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Golden Burden",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has evasion against characters holding a valuables token.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",
