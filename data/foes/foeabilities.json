@@ -14556,6 +14556,877 @@
         ]
     },
     {
+        "id": "af_demon_greatbelldemon_flattenmortal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 2,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Flatten Mortal",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "4[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is stunned.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_greatbelldemon_bellsweep",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 1,
+            "burst_target": "self"
+        },
+        "eventtags": {},
+        "name": "Bell Sweep",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "2 damage and shove 1.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_greatbelldemon_swat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Swat",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "An adjacent foe is shoved 2.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is weakened.",
+                                    "glossary": [{"val": "weakened.", "id": "gl_weakened"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_greatbelldemon_clang",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 2,
+            "burst_target": "self",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "CLANG",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "2 damage, and foes must save or be weakened.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+            },                             
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                             
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Weakened or stunned foes take 2 damage, twice.",
+                "glossary": [{"val": "Weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_painwheel_agonize",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Agonize",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] and foe is dazed.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "dazed", "id": "gl_dazed"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "1 damage."
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Wheel dashes up to 8 spaces before this attack. It deals additional damage equal to how far it traveled before it attacked.",
+                                    "glossary": [{"val": "dashes", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_demon_painwheel_exfoliate"
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_painwheel_exfoliate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Exfoliate",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Repeat the following effect three times."
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "An adjacent foe must save or take [D]+fray, or fray damage on a failed save. Bloodied foes gain +1 curse on the save.",
+                                    "glossary": [
+                                        {"val": "[D]", "id": "gl_damagedice"},
+                                        {"val": "fray", "id": "gl_fray"},
+                                        {"val": "Bloodied", "id": "gl_bloodied"}
+                                    ]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_painwheel_spitfire",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Spit Fire",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Deal 2 damage."
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The demon can spend additional actions on this ability. For every action spent, it increases the range and damage by +2.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_painwheel_spinout",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Spin Out",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Adjacent foes must save or become blinded, then the demon gains stealth.",
+                "glossary": [
+                    {"val": "blinded", "id": "gl_blinded"},
+                    {"val": "stealth", "id": "gl_stealth"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_greateremissary_holy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "combo": true,
+            "range": 4,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Holy",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Autohit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is pacified.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Allies in the area gain 2 vigor.",
+                                    "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_demon_greateremissary_refulgence"
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_greateremissary_refulgence",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Refulgence",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Center three medium blast area effects on up to three characters, one at a time, choosing different characters each time.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effects", "id": "gl_areaeffect"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "For each area, foes inside take 2 piercing damage, once, per character in the area. Allies inside gain 2 vigor, once, per character in the area.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_greateremissary_chastise",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Chastise",
+        "description":  [  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character in range 6 takes 1 piercing damage.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If that character attacks before the end of their next turn, they take [D]+fray piercing damage and this effect ends.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_judicatordemon_fairisfair",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Fair is Fair",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the Judicator demon may use one of the following effects."
+            },                              
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "Move any status from self or any ally to a foe.",
+                        "glossary": [
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "Move up to 5 vigor from a foe to self or an ally.",
+                        "glossary": [
+                            {"val": "vigor", "id": "gl_vigor"}
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "Swap the places of self or an ally with another ally in range 3, removing and placing both characters.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_demon_judicatordemon_sapstrength",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 5,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Sap Strength",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray. and foe is pacified.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "pacified", "id": "gl_pacified"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals added base damage on hit, miss, or area effect, equal to the vigor the Judicator Demon has.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_judicatordemon_cutdeal",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Cut Deal",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 sacrifices 5. That foe chooses one of their allies. That ally gains 5 vigor.",
+                "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"},{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_judicatordemon_worldrevolving",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "World Revolving",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shove all characters on the battlefield 1 spaces in the same direction.",
+                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+            },                        
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 2 damage and is sealed. Sealed or pacified foes take 4 damage instead.",
+                        "glossary": [
+                            {"val": "sealed", "id": "gl_sealed"},
+                            {"val": "Sealed", "id": "gl_sealed"},
+                            {"val": "pacified", "id": "gl_pacified"}
+                        ]
+                    }
+                ],
+                "glossary": [{"val": "Collide", "id": "gl_collide"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_judicatordemon_balancescales",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Balance Scales",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or sacrifice 25% of their max hp, or sacrifice 3 on a successful save. Self or an ally in range gains vigor equal to the amount they sacrificed.",
+                "glossary": [
+                    {"val": "sacrificed", "id": "gl_sacrifice"},
+                    {"val": "sacrifice", "id": "gl_sacrifice"},
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_paleman_lidlessgaze",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Lidless Gaze",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Pale Man gazes at a foe in range 10. Some of its abilities can only target its gaze target. It must gaze at a different foe each round from the last, if possible. If the foe breaks line of sight, the Pale Man can immediately switch its gaze to a new character as an effect.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_paleman_voidbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "blast_size": "medium",
+            "combo": true,
+            "pierce": true,
+            "requires": "gaze_target_only"
+        },
+        "eventtags": {},
+        "name": "Void Bolt",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "pacified", "id": "gl_pacified"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon a height 1 debris object in the area.",
+                        "glossary": []
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_paleman_annihilateflesh",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "af_demon_paleman_annihilateflesh",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "blast_size": "medium",
+            "combo": true,
+            "pierce": true,
+            "requires": "gaze_target_only"
+        },
+        "eventtags": {},
+        "name": "Annihilate Flesh",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Pale man chooses the target of its gaze, then focuses its eyes on them.",
+                "glossary": []
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that character’s turn, they take [D]+2 five times. Reduce the number of times this deals damage once for each other character or piece of created terrain in the area.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_paleman_fatalthaum",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 10,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Fatal Thaum",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a character in range.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that character’s turn, shoot a bolt of energy at that character, creating a medium blast area effect centered on them. Deals fray damage to that character, destroys or un-summons all created objects in the area and shoves all other characters 1 away from that character. Then, end this mark.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "fray", "id": "gl_damagedice"},
+                    {"val": "shoves", "id": "gl_shove"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_paleman_destabilize",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Destabilize",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range becomes vulnerable. If that foe moves more than 1 space on its next turn, it also releases a burst 1 area effect centered on them, dealing 1 piercing damage twice to all characters within, including that foe.",
+                "glossary": [
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "burst", "id": "gl_burst"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mazedemon_lawofthemaze",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Law of the Maze",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round, roll 1d20 and 1d10. All values of any d20 in a Dissolving Reality zone are set to the number on the d20. All values of any other die are set to the d10 number, even that number would otherwise be invalid.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mazedemon_pullofthemaze",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Pull of the Maze",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the round, the Maze Demon teleports one or two characters in range 3 of a Dissolving Reality area into that area. It may choose itself.",
+                "glossary": [
+                    {"val": "teleports", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mazedemon_disgorgemazeshard",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Disgorge Maze Shard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Maze Demon creates a height 1 object inside one of its dissolving reality zones.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters that end their turn adjacent to the object may be removed by the demon and placed in any valid space in range 2 of the demon.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_mazedemon_twistinglaw"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mazedemon_twistinglaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "blast_size": "small",
+            "combo": true,
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Twisting Law",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "pacified", "id": "gl_pacified"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is shattered.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All maze shards release a large blast area effect centered on them, dealing 3 piercing damage to all characters. Shattered characters take 6 damage instead.",
+                        "glossary": [
+                            {"val": "large blast", "id": "gl_blast"},
+                            {"val": "area effect", "id": "gl_areaeffect"},
+                            {"val": "piercing", "id": "gl_piercing"},
+                            {"val": "Shattered", "id": "gl_shattered"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mazedemon_cheatreality",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Cheat Reality",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Maze Demon fixes it’s Law of the Maze numbers to 13 (d20) and 6 (d10) for the rest of the round.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_mazedemon_rearrange",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Rearrange",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Maze Demons removes all characters in range, then places them in any valid configuration in range.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_demon_gapingdemon_swallowwhole",
         "type": "Ability",
         "source": "core",

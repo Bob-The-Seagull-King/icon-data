@@ -3883,6 +3883,116 @@
         ]
     },
     {
+        "id": "tf_demon_greatbelldemon_blacktemplebell",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Black Temple Bell",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This demon’s huge bell is so heavy it can only attack once a round.",
+                "glossary": [
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_demon_painwheel_burningwheel",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Burning Wheel",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This demon’s speed is 15. However, the demon must move in the same direction for each ability it uses, and can only move in straight lines.",
+                "glossary": [
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_demon_judicatordemon_eyeless",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Eyeless",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to blinded.",
+                "glossary": [
+                    {"val": "blinded", "id": "gl_blinded"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_demon_paleman_eyeswithineyes",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Eyes Within Eyes",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to blinded. Simply grows more eyes.",
+                "glossary": [
+                    {"val": "blinded", "id": "gl_blinded"}
+                ]
+            }    ]
+    },
+    {
+        "id": "tf_demon_paleman_ceaslessshrieking",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ceasless Shrieking",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If no foe is in line of sight of the Pale Man at the start of its turn, it spends its entire turn shrieking instead of using abilities.",
+                "glossary": [
+                ]
+            } ,                                 
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            } ,                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes take [D]+fray piercing damage and are stunned.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            }    
+        ]
+    },
+    {
+        "id": "tf_demon_mazedemon_dissolvingreality",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Dissolving Reality",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round 1, 3, and 5, the Maze demon creates a special terrain effect of Dissolving Reality anywhere on the battlefield, a medium blast zone. The zone is dangerous terrain to characters other than Demons.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+                ]
+            }   
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_amorphous",
         "type": "Trait",
         "source": "core",
