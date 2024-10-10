@@ -12631,6 +12631,165 @@
         ]
     },
     {
+        "id": "af_imperial_decurion_legshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Leg Shot",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage, then takes a shot to the leg."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During their next turn, they can only move a maximum of 3 spaces."
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After they move 3 spaces, they become immobile for the rest of the turn.",
+                "glossary":[{"val":"immobile","id":"gl_immobile"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_artillerist_scopeout",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Scope Out",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a character in range and line of sight.",
+                "glossary":[{"val":"Mark","id":"gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " While marked, that foe is sealed+ and cannot benefit from stealth, evasion, or cover.",
+                "glossary":[{"val":"marked","id":"gl_mark"}, {"val":"sealed", "id":"gl_sealed"},{"val":"+","id":"gl_ongoing"},{"val":"stealth","id":"gl_stealth"},{"val":"evasion","id":"gl_evasion"},{"val":"cover","id":"gl_cover"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This effect ends if the character moves 5 or more spaces on their turn."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_mechanist_linebreaker",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Line Breaker",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mechanist hurls an explosive charge at a medium blast area effect in range. All characters inside take 4 damage and are shoved 3 away from the center.",
+                "glossary": [{"val":"medium blast","id":"gl_blast"},{"val":"area effect","id":"gl_areaeffect"},{"val":"shoved","id":"gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_mechanist_flamehurler",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Flame Hurler",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The mechanist sprays flame in a line 3 area effect in range.",
+                "glossary": [{"val":"area effect","id":"gl_areaeffect"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type": "desc"},
+                "content": "Characters in the area take 2 damage, and one character of the Mechanist’s choice is marked.",
+                "glossary": [{"val":"marked", "id":"gl_mark"}]
+            },
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type": "desc"},
+                "content": "While marked, they are pacified+, and cannot dash, rush, teleport, or fly.",
+                "glossary":[{"val":"marked", "id":"gl_mark"}, {"val":"pacified","id":"gl_pacified"}, {"val":"+", "id":"gl_ongoing"}, {"val":"dash", "id":"gl_dash"}, {"val":"rush","id":"gl_rush"}, {"val":"teleport","id":"gl_teleport"}, {"val":"fly","id":"gl_flying"}]
+            },
+            {
+                "tags": {"desc_type":"desc"},
+                "content": "The mark ends if they end their turn adjacent to an ally.",
+                "glossary":[{"val":"mark", "id":"gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_legatus_tacticiansadvance",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Tactician's Advance",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Up to two allies anywhere on the battlefield may dash 2.",
+                "glossary":[{"val":"dash","id":"gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_legatus_ultimateweakness",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Ultimate Weakness",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Legatus marks a foe in range.",
+                "glossary": [{"val":"marks","id":"gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, every attack against the target gains +1 boon, deals bonus damage, and exceed: deal 4 damage again after this ability resolves.",
+                "glossary": [{"val":"marked","id":"gl_mark"}, {"val":"+1 boon", "id":"gl_boon"}, {"val":"bonus damage", "id":"gl_bonusdamage"}, {"val":"exceed", "id":"gl_exceed"}]
+            }
+        ]
+    },
+    {
         "id": "af_demon_heavy_bloodfeed",
         "type": "Ability",
         "source": "core",

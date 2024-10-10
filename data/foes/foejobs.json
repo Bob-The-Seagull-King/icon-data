@@ -5575,5 +5575,130 @@
         "phases":[],
         "tactics":[],
         "chapter": 3
+    },
+    {
+        "id": "fj_imperial_leader_evocatus",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Evocatus",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Retired officers that have re-enlisted for better pay. They often go into battle to complete the training of levies and legionnaires."
+            }
+        ],
+        "stats":{},
+        "actions":[],
+        "removed_actions":[],
+        "traits":["tf_imperial_evocatus_forcedmarch"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_leader_decurion",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Decurion",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "desc_type":"subeffect",
+                "content":"Officers that are better than average shots and lead by example. Tend to garner more respect than their peers, as they are promoted from within the ranks."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_decurion_legshot"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_leader_artillerist",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Artillerist",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "desc_type":"subeffect",
+                "content":"Furnished with the latest scopes and tech, Artillerists often come to the battlefield with their helmets festooned with extremely unwieldy devices that are a source of mockery for the grunts and relief for the cannoneers."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_artillerist_scopeout"],
+        "removed_actions":[],   
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_leader_mechanist",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Mechanist",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "desc_type":"subeffect",
+                "content":"Specialty officers armed to the teeth with the newest bombs and a custom arkentech flame hurler. Often boost morale through spectacular displays of pyrotechnics."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_mechanist_linebreaker","af_imperial_mechanist_flamehurler"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_leader_legatus",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Legatus",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "desc_type":"subeffect",
+                "content":"Senior tacticians that are rightly feared by the foes of the legions. Tend to be advanced in age and use their cunning as a master artisan uses the tip of a knife on a particularly juicy cut of chicken."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_legatus_tacticiansadvance","af_imperial_legatus_ultimateweakness"],
+        "removed_actions":[],
+        "traits":["tf_imperial_legatus_masterofstrategy"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
     }
 ]

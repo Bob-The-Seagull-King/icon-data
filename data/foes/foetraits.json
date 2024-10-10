@@ -3203,6 +3203,35 @@
         ]
     },
     {
+        "id": "tf_imperial_evocatus_forcedmarch",
+        "type": "Trait",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name":"Forced March",
+        "description":[
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"At the start of their turn, the Evocatus and all allies may dash 1 in the same direction.",
+                "glossary":[{"val":"dash", "id":"gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_legatus_masterofstrategy",
+        "type": "Trait",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name":"Master of Strategy",
+        "description":[
+            {
+                "tags":{"desc_type":"desc"},
+                "content":"Before combat starts, may move every character to any space up to 2 spaces in any direction from their starting location."
+            }
+        ]
+    },
+    {
         "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",
