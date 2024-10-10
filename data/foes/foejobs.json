@@ -3815,7 +3815,9 @@
             }
         ],
         "stats": {
-            "size": 2
+            "size": 2,
+            "hp_mod": 2,
+            "turns": 2
         },
         "actions": ["af_relict_royalguard_vortex","af_relict_royalguard_battalionoflimbs","af_relict_royalguard_bladeshield","af_relict_royalguard_balllightning","af_relict_royalguard_windofobliteration"],
         "removed_actions": [],
@@ -3842,7 +3844,9 @@
             }
         ],
         "stats": {
-            "size": 2
+            "size": 2,
+            "hp_mod": 2,
+            "turns": 2
         },
         "actions": ["af_relict_warmech_plasmabomb","af_relict_warmech_focusbeam","af_relict_warmech_chargeboost","af_relict_warmech_sidecannons"],
         "removed_actions": [],
@@ -3869,6 +3873,8 @@
             }
         ],
         "stats": {
+            "hp_mod": 2,
+            "turns": 2
         },
         "actions": ["af_relict_izenghast_stutter","af_relict_izenghast_soulrip","af_relict_izenghast_horridslashing","af_relict_izenghast_shriek","af_relict_izenghast_souldrain"],
         "removed_actions": [],
@@ -3896,7 +3902,9 @@
         ],
         "stats": {
             "vit": 8,
-            "hp": 32
+            "hp": 32,
+            "hp_mod": 2,
+            "turns": 2
         },
         "actions": ["af_relict_immortalist_entombmentofiz","af_relict_arkitek_deepcall","af_relict_arkitek_reconfigure","af_relict_arkitek_pillarofiz"],
         "removed_actions": [],
@@ -3923,7 +3931,9 @@
             }
         ],
         "stats": {
-            "size": 3
+            "size": 3,
+            "hp_mod": 2,
+            "turns": 2
         },
         "actions": ["af_relict_atrophicgrave_hungrydead","af_relict_atrophicgrave_tendrils","af_relict_atrophicgrave_vomitlightning","af_relict_atrophicgrave_onehundredhands"],
         "removed_actions": [],
@@ -4866,6 +4876,156 @@
         "traits": ["tf_special_flying"],
         "removed_traits": [],
         "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_demon_elite_greatbelldemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Bell Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A huge, stout demon with an enormous black iron bell. The shackles on its body seem to indicate it was imprisoned somewhere. These demons are common enough that its believed they once served some function in the Arken empire." 
+            }
+        ],
+        "stats": { "hp_mod": 2, "turns": 2, "size": 2,"damage": 8 },
+        "actions": ["af_demon_greatbelldemon_flattenmortal","af_demon_greatbelldemon_bellsweep","af_demon_greatbelldemon_swat","af_demon_greatbelldemon_clang"],
+        "removed_actions": [],
+        "traits": ["tf_demon_greatbelldemon_blacktemplebell"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_elite_painwheel",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Painwheel",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This hellish demon takes the form of a person strapped to or merged with a burning wheel, screaming in agony." 
+            }
+        ],
+        "stats": { "hp_mod": 2, "turns": 2, "hp": 32, "speed": 15, "dash": 8 },
+        "actions": ["af_demon_painwheel_agonize","af_demon_painwheel_spitfire","af_demon_painwheel_spinout"],
+        "removed_actions": [],
+        "traits": ["tf_demon_painwheel_burningwheel"],
+        "removed_traits": ["tf_class_skirmisher_skirmisher"],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_elite_geateremissary",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Greater Emissary",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A great, many winged and fair-faced demon, arger and more intelligent versions of the lesser emissaries. These demons have a mild and seemingly gentle manner and often entreat with kin, gathering followings and cults, though when provoked they are no less violent. Able to use holy wrightcraft, much to concern of scholars." 
+            }
+        ],
+        "stats": { "hp_mod": 2, "turns": 2},
+        "actions": ["af_demon_lesseremissary_decree","af_demon_lesseremissary_liftburdens","af_demon_greateremissary_holy","af_demon_greateremissary_chastise"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_demon_elite_judicatordemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Judicator Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Maleficent, and eyeless, greater demons from deep below the earth. Relatively intelligent, they delight in riddles, bargains, and technicalities." 
+            }
+        ],
+        "stats": { "hp_mod": 2, "turns": 2, "size": 2 },
+        "actions": ["af_demon_judicatordemon_fairisfair","af_demon_judicatordemon_sapstrength","af_demon_judicatordemon_cutdeal","af_demon_judicatordemon_worldrevolving","af_demon_judicatordemon_balancescales"],
+        "removed_actions": [],
+        "traits": ["tf_demon_judicatordemon_eyeless"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_elite_paleman",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pale Man",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This demon’s pallid skull is crowned with a grisly crest of eyes. It’s incredibly slow movement is punctuated by shrieking and discharges of scintillating energy from its eyes that can pulverize stone, flesh, and armor." 
+            }
+        ],
+        "stats": { "hp_mod": 2, "turns": 2, "size": 2, "speed": 2, "dash": 1 },
+        "actions": ["af_demon_paleman_lidlessgaze","af_demon_paleman_voidbolt","af_demon_paleman_fatalthaum","af_demon_paleman_destabilize"],
+        "removed_actions": [],
+        "traits": ["tf_demon_paleman_eyeswithineyes","tf_demon_paleman_ceaslessshrieking"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_demon_elite_mazedemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Maze Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A greater form of an Interlinked Demon, a demon made of interlocked plates of impossible geometries. Given time, these demons grow and stabilize, eventually becoming (horrifying and dangerous) dungeons themselves." 
+            }
+        ],
+        "stats": { "hp_mod": 2, "turns": 2, "size": 2, "speed": 2, "dash": 1 },
+        "actions": ["af_demon_mazedemon_lawofthemaze","af_demon_mazedemon_pullofthemaze","af_demon_mazedemon_disgorgemazeshard","af_demon_mazedemon_cheatreality","af_demon_mazedemon_rearrange","af_demon_interlinkeddemon_realitysplinter"],
+        "removed_actions": [],
+        "traits": ["tf_demon_mazedemon_dissolvingreality"],
+        "removed_traits": [],
+        "category": "elite",
         "phases": [],
         "tactics": [],
         "chapter": 3
