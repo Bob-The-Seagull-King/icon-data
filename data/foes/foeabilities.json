@@ -11437,6 +11437,217 @@
         ]
     },
     {
+        "id": "af_scavenger_thumper_loadscrap",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Load Scrap",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Thumper loads an adjacent valuables token into their mortar, removing the token. The next scrap storm they use deals 5 piercing damage again to all characters, creates a pit under its attack target, and its attack target must save or become stunned. Then, place a valuables token anywhere in the area.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "pit", "id": "gl_pit"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_junkmage_junkform",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Junk Form",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Junk Mage transforms into junk, then swaps places with any free valuables token in range 3, removing and placing itself."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_junkmage_animatevaluables",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Animate Valuables",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Junk Mage chooses a character in range. That character releases a burst 2 (target) area effect, which deals 2 piercing damage to them once for each loose valuables token in the area.",
+                "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_scraptrapper_hoardward",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Hoard Ward",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tinker creates a small blast area of difficult terrain in range. When the area is created, all characters inside take 2 piercing damage. Foes that pick up a valuables token in the area take 4 piercing damage. Ability cannot be used again until the scrap trapper picks up a valuables token.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_collector_rummage",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rummage",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The collector goes through their collection to find something useful."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Gamble:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Objects can be thrown at a space or character in range 6 as part of this action."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "1. Grenade:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Medium blast area effect, fray damage.",
+                        "glossary": [{"val": "Medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "2. Jar of Hornets:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes 1 piercing damage 5 times.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "3. Arkentech Cube:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Rapidly expands to creates a height 1 destructible object (10 hp). If created under a character, pushes them up."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "4. Gaudy Hat:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Put the gaudy hat on a character. A character wearing a hat is vulnerable+. If an attack hits that character, they can throw it at the attacker, forcing the attacker to wear it.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "+", "id": "gl_ongoing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "5. Demon Bone:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Creates a pit. Characters in the pit cannot draw line of sight to spaces outside the pit.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "6. Arkentech Portal Device:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Creates two spaces, both within range 6 of each other. Characters can spend 1 space of movement to teleport from one to the other, as long as the space they enter on other end is unoccupied.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_gildhandwright_goldenhand",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Golden Hand",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The wright transmutes an object in range into solid gold. Characters standing adjacent to it count as holding a valuables token."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_gildhandwright_fleshtometal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Flesh to Metal",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save. On a successful save, they are shattered, and the gildhand can use this ability again this combat. On a failed save, they begin turning into solid gold. At the end of their next turn, remove and replace their character with a size 1 destructible object with 10 hp. Until the terrain piece is destroyed, they cannot take a turn. When it’s destroyed, return them to the battlefield. Characters standing adjacent to the object count as holding a valuables token.",
+                "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+            }
+        ]
+    },
+    {
         "id": "af_imperial_heavy_brutalstrike",
         "type": "Ability",
         "source": "core",

@@ -2905,7 +2905,7 @@
         "stats": {},
         "actions": ["af_scavenger_splitter_goldenarmor", "af_scavenger_splitter_theblock", "af_scavenger_splitter_execute"],
         "removed_actions": [],
-        "traits": ["tf_special_sturdy", "tf_scavenger_splitter_deeppockets"],
+        "traits": ["tf_special_sturdy", "tf_scavenger_common_deeppockets"],
         "removed_traits": [],
         "category": "job",
         "phases": [],
@@ -3130,7 +3130,7 @@
         "stats": {},
         "actions": ["af_scavenger_spender_bribe"],
         "removed_actions": [],
-        "traits": ["tf_scavenger_spender_deeppockets", "tf_scavenger_spender_auraofwealth"],
+        "traits": ["tf_scavenger_common_deeppockets", "tf_scavenger_spender_auraofwealth"],
         "removed_traits": [],
         "category": "job",
         "phases": [],
@@ -3161,6 +3161,131 @@
         "phases": [],
         "tactics": [],
         "chapter": 3
+    },
+    {
+        "id": "fj_scavenger_artillery_thumper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thumper",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Brawny junkers who build custom made scrap mortars. Usually get a solid wage and a full belly at the camp."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_thumper_loadscrap"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_artillery_junkmage",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Junk Mage",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights that have found creative uses for earth Aether, animating their collections in times of trouble to come to their defense."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_junkmage_junkform", "af_scavenger_junkmage_animatevaluables"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_artillery_scraptrapper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scrap Trapper",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Careful junkers that ward the perimeters of scavenger camps to protect their hoards."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_scraptrapper_hoardward"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_artillery_collector",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Collector",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Scavengers with impressive collections, not all of them useful. Often come from traveling dungeon merchants who got a little too obsessed with their wares."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_collector_rummage"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_collector_greatjunkarmor"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_artillery_gildhandwright",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Gildhand Wright",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Rogue wielders of metal aether, a powerful derivative of earth aether. Usually upstart alchemists, geomancers, and guild college dropouts pursuing the Midan Apotheosis who have put their considerable talents to nefarious uses."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_gildhandwright_goldenhand", "af_scavenger_gildhandwright_fleshtometal"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_common_deeppockets"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
     },
     {
         "id": "fj_relict_mob_husk",

@@ -2804,20 +2804,6 @@
         ]
     },
     {
-        "id": "tf_scavenger_splitter_deeppockets",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Deep Pockets",
-        "description":  [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "Starts with 1 valuables token."
-            }
-        ]
-    },
-    {
         "id": "tf_scavenger_giltfinger_thiefcraft",
         "type": "Trait",
         "source": "core",
@@ -2863,7 +2849,7 @@
         ]
     },
     {
-        "id": "tf_scavenger_spender_deeppockets",
+        "id": "tf_scavenger_common_deeppockets",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -2913,6 +2899,20 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "• Whenever a character in the area sacrifices, the broker may grant 2 vigor to itself or any ally in the aura.",
                 "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}, {"val": "vigor", "id": "gl_vigilance"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_collector_greatjunkarmor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Junk Armor",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The first and second time this character is damaged by an ability in a combat, reduce all damage to 0 and summon a valuables token in spaces in range 2 from them."
             }
         ]
     },
