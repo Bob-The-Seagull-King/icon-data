@@ -911,6 +911,33 @@
         "limit": 0
     },
     {
+        "id": "sm_demon_crawlingmass",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Crawling Mass",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The mass counts as a pit and dangerous terrain to all characters but the demon. A character can destroy a crawling mass by spending the interact action while adjacent to it.",
+                                    "glossary": [
+                                        {"val": "pit", "id": "gl_pit"},
+                                        {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

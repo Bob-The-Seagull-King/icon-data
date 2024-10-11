@@ -4038,6 +4038,42 @@
             }    ]
     },
     {
+        "id": "tf_demon_limbdemon_crawlingchaos",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorphous",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Demon hits with an attack or uses certain abilities, it summons a crawling mass of loose limbs in a free space in range 3 of its location.",
+                "glossary": [
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                              
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_demon_crawlingmass"
+            }    
+        ]
+    },
+    {
+        "id": "tf_demon_limbdemon_athousandhands",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "A Thousand Hands",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon deals +1 base damage with its amorphous trait and all its abilities per crawling mass it is sharing space with.",
+                "glossary": []
+            }  
+        ]
+    },
+    {
         "id": "tf_faction_lowlander_lowlandertoxin",
         "type": "Trait",
         "source": "core",

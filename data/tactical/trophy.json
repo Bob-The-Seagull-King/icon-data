@@ -2082,7 +2082,7 @@
         "name": "White Flesh Strip",
         "category": "fc_demon",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_demon_legend_limbdemon",
         "usetype": "",
         "description": [
             {
@@ -2106,7 +2106,7 @@
         "name": "Clasped Hand Ring",
         "category": "fc_demon",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_demon_legend_limbdemon",
         "usetype": "expedition",
         "description": [
             {

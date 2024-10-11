@@ -5031,6 +5031,69 @@
         "chapter": 3
     },
     {
+        "id": "fj_demon_legend_limbdemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Limb Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A massive, worm-like demon that appears to be made up of fused rings of hands and arms. Theories abound as to how a monstrosity like this gets its start, but a common postulation is that when the population of natals becomes too high in deep areas of the Abyss, they run out of room and fuse into these larger demons, which devour and absorb their nest-mates until the new amalgamate being becomes strong enough to eat its way to the surface. Unlucky prey of the Limb demon are often stuffed into its maw still alive, where they are fused and absorbed over time. Some are rescuable - for a time."
+            }
+        ],
+        "stats": { "hp": 60, "size": 2 },
+        "actions": ["af_demon_limbdemon_controllimbs","af_limbdemon_swallowwhole","af_limbdemon_crushbody","af_limbdemon_pillarofflesh","af_limbdemon_thrash"],
+        "removed_actions": [],
+        "traits": ["tf_demon_limbdemon_amorphous","tf_demon_limbdemon_crawlingchaos","tf_demon_limbdemon_athousandhands"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Limb Demon begins combat in this phase, and enters Phase II when it becomes bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_limbdemon_flinch"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Limb Demon enters this phase when it becomes bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_limbdemon_swellflesh","af_limbdemon_limbfromlimb"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Limb demon scatters its mutated body over the battlefield, making it incredibly hard to move around safely for foes over time. Foes will have to position so that its relatively short range attacks cannot reach them without moving it out of the space of its own crawling mass spaces. In phase II, this becomes a race before the demon grows large enough to make this not an option."
+            }
+        ],
+        "chapter": 1
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",
