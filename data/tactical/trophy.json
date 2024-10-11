@@ -2170,7 +2170,7 @@
         "name": "Clasp of the Flagellant",
         "category": "fc_demon",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_demon_legend_majestydemon",
         "usetype": "",
         "description": [
             {
@@ -2194,7 +2194,7 @@
         "name": "Death XIII",
         "category": "fc_demon",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_demon_legend_majestydemon",
         "usetype": "",
         "description": [
             {

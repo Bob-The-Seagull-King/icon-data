@@ -985,6 +985,179 @@
         "limit": 0
     },
     {
+        "id": "sm_majestydemon_sycophant",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "The Sycophant",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Counts as an ally for player abilities. Projects aura 2 around it. The aura reduces all damage to to player characters to 1 while it is inside. At the end of any turn in which the aura was used to reduce damage, the Sycophant is destroyed.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_majestydemon_scepterbearer",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "flying": true,
+            "defense": 5,
+            "hp": 10
+        },
+        "eventtags": {},
+        "name": "The Scepter Bearer",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, and on each of the Majesty Demon’s turns, flies 1. Cannot move unless it’s within range 4 of a player character.",
+                                    "glossary": [
+                                        {"val": "flies", "id": "gl_flying"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When defeated, drops its scepter in its space as a terrain effect. Any character standing in the scepter space other than the Majesty Demon deals double damage with abilities (double all damage after rolling and totaling up all damage). The scepter disappears when this summon is re-summoned.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_majestydemon_shroudedlady",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "flying": true,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "The Shrouded Lady",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Teleports 4 spaces when summoned, and at the start of each round towards the closest player character.",
+                                    "glossary": [
+                                        {"val": "Teleports", "id": "gl_teleport"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At the end of the round, deals 40 damage to all adjacent characters other than the Majesty Demon.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_majestydemon_maiden",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "defense": 5,
+            "hp": 10
+        },
+        "eventtags": {},
+        "name": "The Maiden",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Has aura 2. Characters other than the Maiden in the aura are pacified+, but have resistance.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"},
+                                        {"val": "pacified", "id": "gl_pacified"},
+                                        {"val": "+", "id": "gl_ongoing"},
+                                        {"val": "resistance", "id": "gl_resistance"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_majestydemon_flagellantknight",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "defense": 5,
+            "hp": 40
+        },
+        "eventtags": {},
+        "name": "Flagellant Knight",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a round on the demon’s turn, one flagellant knight may rush 2 towards the nearest foe and and use the following ability on them:",
+                                    "glossary": [
+                                        {"val": "rush", "id": "gl_rush"}
+                                    ]
+                                }]
+            },{
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_majestydemon_flagellantknight_wickedblade"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When any character takes damage adjacent to the knight that wasn’t dealt by a knight, the knight reduces it by 5, as if by armor, then takes 5 damage.",
+                                    "glossary": [
+                                        {"val": "armor", "id": "gl_armor"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

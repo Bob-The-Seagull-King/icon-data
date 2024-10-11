@@ -2990,5 +2990,149 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_majestydemon_decree",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Decree", "Description"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_majestydemon_decree_result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "1"
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Decree of Penance"
+                    },{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes deal 10 damage twice, to themselves as an effect at the end of the round.",
+                        "glossary": []
+                    }
+                ]
+            },
+            {
+                "id": "ti_majestydemon_decree_result2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "2"
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Decree of Obeisance"
+                    },{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes must end their turn adjacent to one of the summons from Court of the Covenant, or else take 10 damage twice.",
+                        "glossary": []
+                    }
+                ]
+            },
+            {
+                "id": "ti_majestydemon_decree_result3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "3"
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Decree of Pain"
+                    },{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Player characters cannot be reduced below 1 hp this round. Player characters at exactly 1 hp when the round ends regain hp to put them at 50% of maximum. Player characters not at exactly 1 hp become pacified, sealed, and stunned at the start of next round.",
+                        "glossary": [
+                            {"val": "pacified", "id": "gl_pacified"},
+                            {"val": "sealed", "id": "gl_sealed"},
+                            {"val": "stunned", "id": "gl_stunned"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "ti_majestydemon_decree_result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "4"
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Decree of Annihilation"
+                    },{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "One foe (chosen by the demon) takes 10 damage four times as an effect at the end of the round.",
+                        "glossary": []
+                    }
+                ]
+            },
+            {
+                "id": "ti_majestydemon_decree_result5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "5"
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Decree of Glory"
+                    },{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Flagellant knights deal and take double damage this round.",
+                        "glossary": []
+                    }
+                ]
+            },
+            {
+                "id": "ti_majestydemon_decree_result6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "6"
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Decree of Haste"
+                    },{
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All movement and shoves are doubled this round.",
+                        "glossary": [
+                            {"val": "shoves", "id": "gl_shove"}
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

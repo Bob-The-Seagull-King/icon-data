@@ -29968,5 +29968,509 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "af_majestydemon_flagellantknight_wickedblade",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free",
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Wicked Blade",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "6 damage."
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove 2.",
+                        "glossary": [
+                            {"val": "Shove", "id": "gl_shove"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_declarewill_phasei",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Declare Will",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Majesty Demon makes one of the following decrees (roll 1d6).",
+                "glossary": [
+                ]
+            },                                
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_majestydemon_decree"
+            }  
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_declarewill_phaseii",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Declare Will",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Majesty Demon chooses two of the following decrees (roll 2d6 and discard duplicates).",
+                "glossary": [
+                ]
+            },                                
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_majestydemon_decree"
+            }  
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_wretched",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Wretched",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 8 must save or become weakened, slashed, dazed, blinded, vulnerable, shattered, pacified, and sealed.",
+                "glossary": [
+                    {"val": "weakened", "id": "gl_weakened"},
+                    {"val": "slashed", "id": "gl_slashed"},
+                    {"val": "dazed", "id": "gl_dazed"},
+                    {"val": "blinded", "id": "gl_blinded"},
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "shattered", "id": "gl_shattered"},
+                    {"val": "pacified", "id": "gl_pacified"},
+                    {"val": "sealed", "id": "gl_sealed"}
+                ]
+            } ,                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            } ,                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On a successful save, a character is affected by two of these statuses of the demon’s choice. On a failed save, a character additionally becomes immune to a further use of this action for the rest of combat.",
+                "glossary": [
+                    {"val": "immune", "id": "gl_immune"}
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_deathxiii",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Death XIII",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 that has not acted yet pulses with dark energy. At the end of that character’s turn, they take 20 damage. The character can reduce this damage to 10, then deal 10 damage to an adjacent character, but only if there is an adjacent character available.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_embroil",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 6,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Embroil",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage.",
+                            "glossary": [{"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals 2 piercing damage again to the target after this ability resolves, for each status the foe is affected by.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_majestydemon_effluvia"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_effluvia",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 6,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Effluvia",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is pacified. Pacified foes take 3 damage, three times.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"},{"val": "Pacified", "id": "gl_pacified"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_demon_majestydemon_ebullient"
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_ebullient",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 6,
+            "blast_size": "small",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Embullient",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Copy all statuses on the foe, then inflict them in a different foe in the area."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_foldspace",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Fold Space",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport 4 spaces.",
+                "glossary": [
+                    {"val": "Teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_cometrain",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Comet Rain",
+        "description":  [                            
+            
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Fray damage.",
+                        "glossary": [
+                            {"val": "Fray", "id": "gl_fray"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character in the center space is shattered or vulnerable (demon’s choice). Then create a height 1 smoking meteor object in free space adjacent to them.",
+                        "glossary": [
+                            {"val": "shattered", "id": "gl_shattered"},
+                            {"val": "vulnerable", "id": "gl_vulnerable"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_silence",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Silence",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon chooses a foe in range. That foe is sealed and must save.",
+                "glossary": [
+                    {"val": "sealed", "id": "gl_sealed"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On a failed save, they are marked and become unable to attack while marked. This effect ends if the mark is transferred, or at the end of their turn.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_backhand",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Backhand",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is shoved 3.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened or slashed (demon’s choice).",
+                        "glossary": [
+                            {"val": "slashed", "id": "gl_slashed"},
+                            {"val": "weakened", "id": "gl_weakened"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_waterspout",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "unerring": true,
+            "range": 4,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Waterspout",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon spurts water, blinding or dazing a foe in range. Blinded foes take 2 damage.",
+                "glossary": [
+                    {"val": "blinding", "id": "gl_blinded"},
+                    {"val": "dazing", "id": "gl_dazed"},
+                    {"val": "Blinded", "id": "gl_blinded"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_demon_majestydemon_primalmeteor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Primal Meteor",
+        "description":  [                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes not in cover from the demon must save or take fray damage twice and become vulnerable, or once on a successful save. Then, summon a height 1 meteor object adjacent to any character affected.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "summon", "id": "gl_summon"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 3+: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Fray damage three times on a failed save.",
+                        "glossary": [
+                            {"val": "Fray", "id": "gl_fray"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Round 5+: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Fray damage five times on a failed save.",
+                        "glossary": [
+                            {"val": "Fray", "id": "gl_fray"}
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

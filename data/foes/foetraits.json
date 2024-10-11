@@ -4116,6 +4116,65 @@
         ]
     },
     {
+        "id": "tf_demon_majestydemon_courtofthecovenant",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Court of the Covenant",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, or as a round action, the Majesty Demon summons until it has the following set of summons active: The Sycophant, the Scepter Bearer, the Shrouded Lady, the Maiden, and one Flagellant Knight per character.",
+                "glossary": [
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All summons are demons that must be placed within range 2 of a player character or the Majesty Demon and cannot be placed within range 2 of each other. Unlike other summons, some can be attacked and take damage, and are removed when defeated.",
+                "glossary": [
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                         
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Majesty demon cannot directly target its summons with attacks and effects unless specified. When the Majesty Demon re-summons one of these special summons, it takes damage equal to twice their maximum hp, which cannot be reduced in any way.",
+                "glossary": [
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                                
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_majestydemon_sycophant"
+            },                                
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_majestydemon_scepterbearer"
+            },                                
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_majestydemon_shroudedlady"
+            },                                
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_majestydemon_maiden"
+            },                                
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_majestydemon_flagellantknight"
+            }   
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_athousandhands",
         "type": "Trait",
         "source": "core",

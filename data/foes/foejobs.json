@@ -5165,6 +5165,77 @@
         "chapter": 2
     },
     {
+        "id": "fj_demon_legend_majestydemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Majesty Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Immensely powerful demons that take the warped imitation of earthly royalty, Majesty Demons are found deep in the pits of the ruins, where they hold court in lightless and pulsating chambers. Their influence is such that they warp the behavior of other demons, forcing them into subservience in mock ‘kingdoms’ that wage war against other dungeon inhabitants and the surface world. Though these demons appear intelligent, their proclamations are chaotic and frequently nonsensical."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "They are immensely powerful aetherwrights and supposedly capable of granting wishes. Those that take bargains from Majesty Demons enjoy a few years of prosperity before they inevitably hear the call of the ruins. As they trek slackjawed towards their doom, they find their soul and body warping until they are dragged into subservience in the Court of the Covenant."
+            }
+        ],
+        "stats": { "size": 2, "hp": 150 },
+        "actions": ["af_demon_majestydemon_deathxiii","af_demon_majestydemon_embroil","af_demon_majestydemon_foldspace","af_demon_majestydemon_cometrain","af_demon_majestydemon_silence","af_demon_majestydemon_backhand","af_demon_majestydemon_waterspout","af_demon_majestydemon_primalmeteor"],
+        "removed_actions": [],
+        "traits": ["tf_demon_majestydemon_courtofthecovenant"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Majesty Demon starts combat in this Phase, and swaps to Phase II when bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_demon_majestydemon_declarewill_phasei"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Majesty Demon enters this phase when bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_demon_majestydemon_declarewill_phaseii","af_demon_majestydemon_wretched"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Violence demon is a tempo fight that switches between a defensive mode and an aggressive mode. It can choose between letting its blades of agony build up, denying an area, or spending them for powerful effects. Player characters must overcome its relatively weak defensive tools before it can build up its stock of blades enough to split them apart."
+            }
+        ],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",
