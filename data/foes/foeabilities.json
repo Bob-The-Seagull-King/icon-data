@@ -11105,6 +11105,170 @@
         ]
     },
     {
+        "id": "af_scavenger_quickfinger_trickofthelight",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Trick of the Light",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Gain the following interrupt until the start of the next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_quickfinger_trickofthelight_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_quickfinger_trickofthelight_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Trick of the Light",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An ally anywhere is targeted by an attack."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "That ally gains evasion against that attack. After it resolves, teleport that ally 3 spaces to their ‘real’ location.",
+                        "glossary": [{"val": "evasion", "id": "gl_evasion"}, {"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_sorter_sortspoils",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Sort Spoils",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Place two valuables tokens in range, then swap the position of any number of characters in range 2 with an equivalent number of valuables tokens."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Allies swapped this way can then dash 1.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_underboss_auraofskulduggery",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Sort Spoils",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Until the start of their next turn, the underboss is immobile and gains Aura 2. The underboss and allies in the aura have evasion and counter.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "counter", "id": "gl_counter"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_spender_bribe",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Bribe",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Spender creates valuables token, then gives it to a foe in range. That foe is pacified, then must save or become unable to attack until the end of their next turn.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodbroker_bulkup",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Bulk Up",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Blood Broker gains 4 vigor, or 6 if bloodied.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodbroker_equivalentexchange",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Equivalent Exchange",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Blood Broker cures and marks an ally in range. If that ally is defeated while marked, the character that defeated them must sacrifice 25% of their maximum hp.",
+                "glossary": [{"val": "cures", "id": "gl_cure"}, {"val": "marks", "id": "gl_mark"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
         "id": "af_scavenger_artillery_scrapstorm",
         "type": "Ability",
         "source": "core",

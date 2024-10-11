@@ -2863,6 +2863,60 @@
         ]
     },
     {
+        "id": "tf_scavenger_spender_deeppockets",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Pockets",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Starts with 1 valuables token."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_spender_auraofwealth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Wealth",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. All characters inside count as holding 1 valuables token.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodbroker_bloodprice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Price",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Blood Broker has Aura 2:",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foes inside the aura that use an ability must sacrifice 2 after the ability resolves.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Whenever a character in the area sacrifices, the broker may grant 2 vigor to itself or any ally in the aura.",
+                "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}, {"val": "vigor", "id": "gl_vigilance"}]
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",
