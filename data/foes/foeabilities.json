@@ -12679,7 +12679,7 @@
             },
             {
                 "tags": {"desc_type" : "desc"},
-                "content": " While marked, that foe is sealed+ and cannot benefit from stealth, evasion, or cover.",
+                "content": "While marked, that foe is sealed+ and cannot benefit from stealth, evasion, or cover.",
                 "glossary":[{"val":"marked","id":"gl_mark"}, {"val":"sealed", "id":"gl_sealed"},{"val":"+","id":"gl_ongoing"},{"val":"stealth","id":"gl_stealth"},{"val":"evasion","id":"gl_evasion"},{"val":"cover","id":"gl_cover"}]
             },
             { "tags": {"desc_type" : "gap"}, "content": "" },

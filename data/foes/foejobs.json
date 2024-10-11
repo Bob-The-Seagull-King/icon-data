@@ -5772,7 +5772,7 @@
         "class_id": "cl_foe_leader",
         "description":[
             {
-                "desc_type":"subeffect",
+                "tags": {"desc_type":"subeffect"},
                 "content":"Officers that are better than average shots and lead by example. Tend to garner more respect than their peers, as they are promoted from within the ranks."
             }
         ],
@@ -5797,7 +5797,7 @@
         "class_id": "cl_foe_leader",
         "description":[
             {
-                "desc_type":"subeffect",
+                "tags": {"desc_type":"subeffect"},
                 "content":"Furnished with the latest scopes and tech, Artillerists often come to the battlefield with their helmets festooned with extremely unwieldy devices that are a source of mockery for the grunts and relief for the cannoneers."
             }
         ],
@@ -5822,7 +5822,7 @@
         "class_id": "cl_foe_leader",
         "description":[
             {
-                "desc_type":"subeffect",
+                "tags": {"desc_type":"subeffect"},
                 "content":"Specialty officers armed to the teeth with the newest bombs and a custom arkentech flame hurler. Often boost morale through spectacular displays of pyrotechnics."
             }
         ],
@@ -5847,7 +5847,7 @@
         "class_id": "cl_foe_leader",
         "description":[
             {
-                "desc_type":"subeffect",
+                "tags": {"desc_type":"subeffect"},
                 "content":"Senior tacticians that are rightly feared by the foes of the legions. Tend to be advanced in age and use their cunning as a master artisan uses the tip of a knife on a particularly juicy cut of chicken."
             }
         ],
