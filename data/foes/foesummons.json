@@ -938,6 +938,53 @@
         "limit": 0
     },
     {
+        "id": "sm_demon_bladeofagony",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Blade of Agony",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foes may pass through the space of a blade, but treat them as difficult terrain.",
+                                    "glossary": [
+                                        {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Whenever a blade is summoned, all blades, including the one that was just summoned, slash every space adjacent to them, dealing 1 divine damage to all foes. A character can hit by multiple blades at once.",
+                                    "glossary": [
+                                        {"val": "divine", "id": "gl_divine"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Blade Consume X:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Certain actions must consume X blades of agony to be used. Blades are consumed at the start of the action and must be in range 3 of the demon to be valid. This destroys the blades, removing them from the battlefield.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

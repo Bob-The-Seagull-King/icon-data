@@ -5094,6 +5094,77 @@
         "chapter": 1
     },
     {
+        "id": "fj_demon_legend_violencedemon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Violence Demon",
+        "faction_id": "fc_demon",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These incredibly powerful demons wield seven swords that are fused with their beings. Nobody knows what causes their appearance, but they are drawn to scenes of carnage and battle, eerily drifting in out of the darkness on spindly limbs. They appear to exist only to fight incredibly strong foes, and when they emerge they spend all day and night cutting down everything before them with complete, unrelenting brutality, finishing with all other demons, until nothing else remains. Only then do they drift on."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Their appearance in the surface world is usually treated as a calamity, and entire sealer orders are often roused to try and drive one back underground."
+            }
+        ],
+        "stats": { "speed": 5, "dash": 5 },
+        "actions": ["af_violencedemon_callblades","af_violencedemon_torturousstar","af_violencedemon_ancienthatred","af_violencedemon_sixfoldcut"],
+        "removed_actions": [],
+        "traits": ["tf_class_skirmisher_skirmisher","tf_demon_violencedemon_soulsuffering","tf_demon_violencedemon_bladeofagony","tf_demon_violencedemon_regard"],
+        "removed_traits": [],
+        "choices": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Violence Demon starts combat in this Phase, and swaps to Phase II at the start of the next round.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_violencedemon_bladepin","af_violencedemon_bladeparry","af_violencedemon_maddeningshift","af_violencedemon_huntflesh"],
+                "traits": ["tf_special_counter"],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Violence Demon enters this phase II at the start of every even round, and enters Phase I at the start of the following round.",
+                        "glossary":[]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_violencedemon_advance","af_violencedemon_vitaledge","af_violencedemon_garuda","af_violencedemon_universalviolence"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Violence demon is a tempo fight that switches between a defensive mode and an aggressive mode. It can choose between letting its blades of agony build up, denying an area, or spending them for powerful effects. Player characters must overcome its relatively weak defensive tools before it can build up its stock of blades enough to split them apart."
+            }
+        ],
+        "chapter": 2
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",

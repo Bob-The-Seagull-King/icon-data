@@ -4059,6 +4059,63 @@
         ]
     },
     {
+        "id": "tf_demon_violencedemon_soulsuffering",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Soul Suffering",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The violence demon can stack any number of marks on foes.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            }   
+        ]
+    },
+    {
+        "id": "tf_demon_violencedemon_bladeofagony",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blade of Agony",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Many actions from this legend summon a blade of agony, an incredibly sharp, bonelike demon blade. Blades can be summoned in range 3 from the demon.",
+                "glossary": [
+                    {"val": "summon", "id": "gl_summon"}
+                ]
+            },                              
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_demon_bladeofagony"
+            }    
+        ]
+    },
+    {
+        "id": "tf_demon_violencedemon_regard",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Regard",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Critically hitting the demon earns its regard until the end of the round, giving the demon hatred+ of that character for the duration. This effect can switch targets if the demon is critically hit again.",
+                "glossary": [
+                    {"val": "Critically hitting", "id": "gl_criticalhit"},
+                    {"val": "hatred", "id": "gl_hatred"},
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }   
+        ]
+    },
+    {
         "id": "tf_demon_limbdemon_athousandhands",
         "type": "Trait",
         "source": "core",

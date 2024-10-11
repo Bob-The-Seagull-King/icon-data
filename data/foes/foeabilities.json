@@ -29364,5 +29364,609 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "af_violencedemon_callblades",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Call Blades",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Summon three blades of agony from the void anywhere on the battlefield. Characters adjacent each blade when they are summoned are shoved 1.",
+                "glossary": [ 
+                    {"val": "Summon", "id": "gl_summon"},
+                    {"val": "summoned", "id": "gl_summon"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_torturousstar",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Torturous Star",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon chooses a foe in range 4 that has not acted yet, marking out the space under them.",
+                "glossary": [ 
+                    {"val": "marking", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that foe’s turn, if they are in range 4 of that space, a burning blade impales them, dealing [D]+fray damage and blinding them, then summoning a blade of agony in the chosen space. If they are further away than range 4, this effect deactivates.",
+                "glossary": [ 
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "blinding", "id": "gl_blinded"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_ancienthatred",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "multimark": true,
+            "mark": true,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Ancient Hatred",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range is filled with boiling hatred, granting them the following effects:",
+                "glossary": [ 
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "They take +1 damage from blades of agony.",
+                        "glossary": [ 
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "They deal 3 damage to themselves and all adjacent foes and allies when they end their turn.",
+                        "glossary": [ 
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This mark ends if the marked character deals damage to the violence demon, or 2 or more allies with this mark.",
+                "glossary": [ 
+                    {"val": "mark", "id": "gl_mark"},
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_sixfoldcut",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 2,
+            "combo": true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Sixfold Cut",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage, six times."
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage, three times."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 2, after this ability resolves.",
+                        "glossary": [
+                            {"val": "Dash", "id": "gl_dash"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [
+                    {"val": "Exceed", "id": "gl_exceed"}
+                ],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Damage becomes divine.",
+                        "glossary": [
+                            {"val": "divine", "id": "gl_divine"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_violencedemon_mansplitter"
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_mansplitter",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Mansplitter",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D]+fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Target is dazed.",
+                        "glossary": [
+                            {"val": "dazed", "id": "gl_dazed"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May dash 3, after this ability resolves.",
+                        "glossary": [
+                            {"val": "dash", "id": "gl_dash"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [
+                    {"val": "Exceed", "id": "gl_exceed"}
+                ],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase base damage by +[D], hit or miss.",
+                        "glossary": [
+                            {"val": "[D]", "id": "gl_damagedice"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_violencedemon_bladestorm"
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_bladestorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "combo": true,
+            "unerring": true,
+            "range": 3,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Bladestorm",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D]+fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon a blade of agony.",
+                        "glossary": [
+                            {"val": "Summon", "id": "gl_summon"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [
+                    {"val": "Exceed", "id": "gl_exceed"}
+                ],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon another blade of agony.",
+                        "glossary": [
+                            {"val": "Summon", "id": "gl_summon"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_bladepin",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "blade_consume": 1
+        },
+        "eventtags": {},
+        "name": "Blade Pin",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range from the violence demon must save or be shoved 3, or just 1 on a successful save. Then, the character is pinned down by the blade, taking piercing fray damage and becoming immobile.",
+                "glossary": [ 
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "immobile", "id": "gl_immobile"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They can break the blade by using the interact ability, or break free automatically at the end of their turn, ending this effect.",
+                "glossary": [ 
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_huntflesh",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Hunt Flesh",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The violence demon marks a foe in range.",
+                "glossary": [ 
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If that foe ends its turn out of range, the violence demon may teleport to any space adjacent to the marked foe, then the foe must save or become dazed and take 3 damage, three times, or just 3 damage on a successful save.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "teleport", "id": "gl_teleport"},
+                    {"val": "dazed", "id": "gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_maddeningshift",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Maddening Shift",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The violence demon removes itself from the battlefield, then re-appears in a space in range 3.", 
+                "glossary": [ 
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_bladeparry",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": true,
+            "blade_consume": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Blade Parry",
+        "description":  [                   
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The violence demon is targeted by an attack.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }, 
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The demon gains evasion against that attack, then teleports 2.",
+                        "glossary": [
+                            {"val": "evasion", "id": "gl_evasion"},
+                            {"val": "teleports", "id": "gl_teleport"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_advance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Advance",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The violence demon teleports up to 3 spaces, but must end adjacent to a foe.",
+                "glossary": [ 
+                    {"val": "teleports", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_vitaledge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "end_turn": true,
+            "blade_consume": 1
+        },
+        "eventtags": {},
+        "name": "Vital Edge",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The demon’s next attack gains +1 boon and deals bonus damage. This effect stacks.",
+                "glossary": [ 
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_garuda",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blade_consume": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Garuda",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 is marked and impaled by three blades.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At the start of their turn, a blade rips out of them, dealing 5 damage and summoning a blade of agony adjacent to them. Once this effect has triggered three times, it and the mark ends.",
+                        "glossary": [
+                            {"val": "summoning", "id": "gl_summon"},
+                            {"val": "mark", "id": "gl_mark"}
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If the mark is removed early, summon the remaining blades in adjacent spaces to that character.",
+                        "glossary": [
+                            {"val": "mark", "id": "gl_mark"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_violencedemon_universalviolence",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "range": 3,
+            "blade_consume": 6
+        },
+        "eventtags": {},
+        "name": "Universal Violence",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Foe takes 5 damage, six times."
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "5 damage, three times."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [
+                    {"val": "Exceed", "id": "gl_exceed"}
+                ],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Damage becomes divine.",
+                        "glossary": [
+                            {"val": "divine", "id": "gl_divine"}
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 ]

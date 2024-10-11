@@ -2129,7 +2129,7 @@
         "name": "Seventh Sword",
         "category": "fc_demon",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_demon_legend_violencedemon",
         "usetype": "",
         "description": [
             {
@@ -2150,7 +2150,7 @@
         "name": "Chakram",
         "category": "fc_demon",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_demon_legend_violencedemon",
         "usetype": "",
         "description": [
             {
