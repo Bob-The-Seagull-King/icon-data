@@ -3068,7 +3068,7 @@
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Quickfinger",
+        "name": "Sorter",
         "faction_id": "fc_scavenger",
         "class_id": "cl_foe_leader",
         "description": [
