@@ -18130,6 +18130,285 @@
         ]
     },
     {
+        "id": "af_jotunn_beastbloodjotunn_frostblast",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "blast_size": "small",
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Frost Blast",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "2 damage."
+            },                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                    
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The foe in the center space is also slashed, then summon a height 1 icicle object adjacent to them. The icicle has rampart.",
+                "glossary": [
+                    {"val": "slashed", "id": "gl_slashed"},
+                    {"val": "summon", "id": "gl_summon"},
+                    {"val": "rampart", "id": "gl_rampart"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_barbudo_greatleap",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Great Leap",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barbuda flies 3, then shoves all adjacent characters 1 spaces. Bloodied characters are shoved 3 spaces instead.",
+                "glossary": [
+                    {"val": "flies", "id": "gl_flying"},
+                    {"val": "shoves", "id": "gl_shove"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },                                
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes 2 damage. Weakened characters take 5 damage instead.",
+                        "glossary": [{"val": "Weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "af_jotunn_ettin_groundpound",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2,
+            "true_strike": true,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Ground Pound",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in a small blast area take [D]+fray and must save or become weakened. Then create a pit in the center space.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area", "id": "gl_areaeffect"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "weakened", "id": "gl_weakened"},
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_valkyrie_spareweapon",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "range": 3,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Spare Weapon",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is shoved 1 and takes 2 damage.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_valkyrie_comet",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Comet",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Jotunn hurls a spare weapon in a line 3 area, where it comes to rest as a height 1 object.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters adjacent to the weapon when it lands take fray damage and are shoved 1 space.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_valkyrie_splittheearth",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "combat",
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Split The Earth",
+        "description":  [   
+           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Jotunn creates a line 3 area, then creates pits in those spaces. These spaces can be created under characters.",
+                "glossary": [
+                    {"val": "pits", "id": "gl_pit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_bloodycompanion_counterstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Counter Strike",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Jotunn takes a defensive pose, gaining two uses of the following interrupt, which do not refresh at the start of its turn, and last until the end of the current round. It cannot use this ability again while it has uses of this interrupt remaining.",
+                "glossary": [
+                    {"val": "interrupt", "id": "gl_interrupt"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_jotunn_bloodycompanion_counterstrike_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_bloodycompanion_counterstrike_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Counter-Strike",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Jotunn or an adjacent ally is targeted by an attack.",
+                    "glossary": []
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"}, 
+                    "content": "The Jotunn grants sturdy to the attack target for the duration of the attack. Then, after it resolves, the Jotunn may rush 3. If that puts it adjacent to the attacker, the attacker takes 3 damage and is shoved 1",
+                    "glossary": [
+                        {"val": "sturdy", "id": "gl_sturdy"},
+                        {"val": "rush", "id": "gl_rush"},
+                        {"val": "shoved", "id": "gl_shove"}
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_bloodycompanion_bloodyfuller",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "True Strike": true,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Bloody Fuller",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + 2",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2 damage.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Shove 1.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals damage again to attack target and all foes adjacent to the attack target, hit or miss, equal to 2 times the round number",
+                                    "glossary": []
+                                }]
+            }
+                        ]
+    },
+    {
         "id": "af_lowlander_heavy_demolish",
         "type": "Ability",
         "source": "core",

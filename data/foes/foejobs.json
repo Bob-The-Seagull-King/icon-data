@@ -6315,5 +6315,130 @@
         "phases":[],
         "tactics":[],
         "chapter": 3
+    },
+    {
+        "id": "fj_jotunn_heavy_beastbloodjotunn",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Beastblood Jotunn",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Jotunn born of beast titans are part or at least wholly of animal form, fanged, and blessed with freezing breath."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_beastbloodjotunn_frostblast"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_heavy_barbudo",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Barbudo",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Great bearded jotunn that populate the high mountains where the air is thin, only descending to pluck the occasional herd animal for their pantry."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_barbudo_greatleap"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_heavy_ettin",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Ettin",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Two-headed slave jotunn created to build the walls of the ancient titan city Numenea. While one head slept, the other would continue the work."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_ettin_groundpound"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_ettin_twoheads"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_heavy_valkyrie",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Valkyrie",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"All-female martial Hirsinn that followed the Hundred Sword Titan, the berserker queen, collecting the weapons of worthy warriors. Now, they mostly wander the battlefields, weathered with age and continuing their grisly duty without purpose."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_valkyrie_spareweapon","af_jotunn_valkyrie_comet","af_jotunn_valkyrie_splittheearth"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_jotunn_heavy_bloodycompanion",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Bloody Companion",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Ferocious, bestial jotunn that were once in service to the Berserker Queen. Immune to the blood rage, since their own blood boils out all impurities. In modern days they have found new purpose in hunting down their maddened kin and putting them to death."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_bloodycompanion_counterstrike","af_jotunn_bloodycompanion_bloodyfuller"],
+        "removed_actions":[],
+        "traits":["tf_special_defiance", "tf_special_regeneration","tf_general_bloodycompanion_trueenrage"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
     }
 ]

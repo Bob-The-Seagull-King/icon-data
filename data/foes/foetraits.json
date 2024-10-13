@@ -4536,6 +4536,37 @@
           ]
     },
     {
+        "id": "tf_jotunn_ettin_twoheads",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Two Heads",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Saves at the start and the end of its turn to end conditions or other effects.",
+                "glossary": [
+                ]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_bloodycompanion_trueenrage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "True Enrage",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While bloody, gain +1 action and become unstoppable.",
+                "glossary": [{"val": "bloody", "id": "gl_bloodied"},{"val": "unstoppable", "id": "gl_unstoppable"}]
+            }  
+          ]
+    },
+    {
         "id": "tf_lowlander_grub_masteroftheunderway",
         "type": "Trait",
         "source": "core",
