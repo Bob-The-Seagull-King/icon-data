@@ -18597,6 +18597,269 @@
         ]
     },
     {
+        "id": "af_jotunn_porkwright_porcine",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Porcine",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range must save. On a successful save, they are pacified. Otherwise, they are transformed into a pig.",
+                "glossary": [
+                    {"val": "pacified", "id": "gl_pacified"}
+                ]
+            },  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While transformed, they cannot attack, dash, fly, or teleport but can otherwise act normally. They untransform at the end of combat, or if they end their turn adjacent to the Troll or their cauldron.",
+                "glossary": [
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "fly", "id": "gl_flying"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wildblood_sproutingbrew",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "end_turn": true,
+            "cauldron": true
+        },
+        "eventtags": {},
+        "name": "Sprouting Brew",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Troll splashes a brew that grows a 1 space wild berry vine, a 1 space terrain effect, in a space in range.",
+                "glossary": []
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foes that end their turn adjacent to the vine are pacified. Any ally that ends their turn adjacent to the fruit can pick it up, granting 4 vigor to themselves and destroying the vine.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"},{"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_gourmand_splashsoup",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "arc": 3,
+            "cauldron": true
+        },
+        "eventtags": {},
+        "name": "Splash Soup",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fray damage.",
+                "glossary": [{"val": "Fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_gourmand_healingbrew",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "burst": 2,
+            "burst_target": "self",
+            "cauldron": true
+        },
+        "eventtags": {},
+        "name": "Healing Brew",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Cure all allies, then unsummon the cauldron.",
+                "glossary": [{"val": "Cure", "id": "gl_cure"}]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_nighttroll_blackflame",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "blast_size": "small",
+            "cauldron": true
+        },
+        "eventtags": {},
+        "name": "Black Flame",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All characters take fray damage. Bloodied characters are sealed.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "Bloodied", "id": "gl_bloodied"},
+                    {"val": "sealed", "id": "gl_sealed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_nighttroll_bale",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "stance": true,
+            "end_turn": true,
+            "aura": 2
+        },
+        "eventtags": {},
+        "name": "Bale",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Night troll becomes immobile and fixes its gaze on one character in the aura.",
+                "glossary": [
+                    {"val": "immobile", "id": "gl_immobile"},
+                    {"val": "aura", "id": "gl_aura"}
+                ]
+            },                                                  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While within the aura, that character automatically misses with all attacks (turn any hit or critical hit into a miss instead). The Troll can exit this stance or change its target by spending 1 action.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "critical hit", "id": "gl_criticalhit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_hag_bendfate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Bend Fate",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hag chooses an ally in range and marks them. That ally gains defiance.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"},
+                    {"val": "defiance", "id": "gl_defiance"}
+                ]
+            },                                                  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, attacks cannot gain boons against that ally, and gain +1 curse, and that allies attacks cannot gain curses and gain +1 boon.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "boons", "id": "gl_boon"},
+                    {"val": "curses", "id": "gl_curse"},
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_hag_insideout",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 5,
+            "uses": 2,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Inside Out",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hag curses a foe in range with awful nausea. If that foe moves more than 1 space or uses any ability that costs 2 actions on their turn, they must save.",
+                "glossary": [
+                ]
+            },                                                  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On a failed save, they take damage equal to 50% of their maximum HP and are stunned. If they succeed on the save, they take damage equal to 25% of their maximum HP.",
+                "glossary": [
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_hag_rottencurse",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Rotten Curse",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or take 5 damage, once, for every condition or mark they are affected by.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            },                                                  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On a successful save, reduce each instance of this damage to 2 instead.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_lowlander_heavy_demolish",
         "type": "Ability",
         "source": "core",

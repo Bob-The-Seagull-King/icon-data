@@ -4668,6 +4668,21 @@
           ]
     },
     {
+        "id": "tf_general_hag_sweettorment",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sweet Torment",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hag has aura 2. Foes in the Hag’s aura or in the aura of their cauldron do not save against statuses at the end of their turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            }  
+          ]
+    },
+    {
         "id": "tf_lowlander_grub_masteroftheunderway",
         "type": "Trait",
         "source": "core",

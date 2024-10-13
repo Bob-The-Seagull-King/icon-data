@@ -6565,5 +6565,130 @@
         "phases":[],
         "tactics":[],
         "chapter": 3
+    },
+    {
+        "id": "fj_jotunn_leader_porkwright",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Pork Wright",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Stout trolls that are experts in rune-cunning. They keep large herds of pigs and occasionally ‘add’ to their herds temporarily to teach a lesson or as payment for services."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_porkwright_porcine"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_leader_wildblood",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Wildblood",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"This arboreal troll is more plant than kin, shaggy with leaves and bark."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_wildblood_sproutingbrew"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_leader_gourmand",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Gourmand",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Trolls, like all other jotunn, eat a tremendous amount, and their immortality allows them a long time to build up their tastes and cooking skills."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_gourmand_splashsoup","af_jotunn_gourmand_healingbrew"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_leader_nighttroll",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Night Troll",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A pale troll born of the tears or blood of the Weeper. At a distance, these jotunn look corpselike and scarily thin."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_nighttroll_blackflame","af_jotunn_nighttroll_bale"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_jotunn_leader_hag",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Hag",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Wizened trolls with little patience, rotten tempers, and a total mastery of rune-cunning. They know the language that was spoken when the world was young and can speak into being incredible curses."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_hag_bendfate","af_jotunn_hag_insideout","af_jotunn_hag_rottencurse"],
+        "removed_actions":[],
+        "traits":["tf_general_hag_sweettorment"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
     }
 ]
