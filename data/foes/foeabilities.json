@@ -18409,6 +18409,194 @@
                         ]
     },
     {
+        "id": "af_jotunn_alp_rumble",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rumble",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Alp becomes intangible, then dashes 6 spaces. One foe it passes through becomes dazed.",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"},
+                    {"val": "dashes", "id": "gl_dash"},
+                    {"val": "dazed", "id": "gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_alp_ancientgeo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "arc": 6
+        },
+        "eventtags": {},
+        "name": "Ancient Geo",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2[D] + 1",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2 damage.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target releases a medium blast explosion centered on them, dealing 2 damage to all characters within.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "If the attack target is bloody or dazed, they explode again, repeating this effect.",
+                                    "glossary": [
+                                        {"val": "bloody", "id": "gl_bloodied"},
+                                        {"val": "dazed", "id": "gl_dazed"}
+                                    ]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_ifrit_dancingflames",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Dancing Flames",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ifrit deals 2 damage to a character in range, then deals 2 damage to all marked foes.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_ifrit_ignition",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true,
+            "multimark": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Ignition",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ifrit marks a foe in range.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of that foe’s turn, or when the Jotunn hits the target with an attack, they explode for a small blast area effect centered on them, dealing 2 damage to all characters within.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_undine_waterspout",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "unerring": true,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Waterspout",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The undine spurts water, blinding or dazing a foe in range. Blinded foes take 2 damage.",
+                "glossary": [
+                    {"val": "blinding", "id": "gl_blinded"},
+                    {"val": "Blinded", "id": "gl_blinded"},
+                    {"val": "dazing", "id": "gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_mistral_sweepofthewind",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Sweep of the Wind",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mistral targets all characters in range, then removes itself and them from the battlefield, returning itself to any free space in range 4.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "It then returns all other characters to any space in range 2 of its new location and dazes them. Foes can save to avoid this effect. Dazed foes fail the save.",
+                "glossary": [
+                    {"val": "Dazed", "id": "gl_dazed"},
+                    {"val": "dazes", "id": "gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_lowlander_heavy_demolish",
         "type": "Ability",
         "source": "core",

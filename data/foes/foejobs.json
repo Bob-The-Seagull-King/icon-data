@@ -6440,5 +6440,130 @@
         "phases":[],
         "tactics":[],
         "chapter": 3
+    },
+    {
+        "id": "fj_jotunn_skirmisher_alp",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Alp",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"An earth elemental with a body of churning soil and stone. Its constant movement beneath the earth sends vibrations up through the bones that can be felt for miles around."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_alp_rumble","af_jotunn_alp_ancientgeo"],
+        "removed_actions":["af_jotunn_skirmisher_soar"],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_skirmisher_ifrit",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Ifrit",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A jotunn made of rippling flames. Outside of the boiling calderas and steaming chemical lakes where these jotunn make their homes, their flames burn weaker."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_ifrit_dancingflames","af_jotunn_ifrit_ignition"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_skirmisher_undine",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Undine",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"This Jotunn is made of the churning water of the deep ocean."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_undine_waterspout"],
+        "removed_actions":[],
+        "traits":["tf_general_undine_livingdeeps"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_skirmisher_mistral",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Mistral",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A playful but dangerous Jotunn made of swirling, freezing wind."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_mistral_sweepofthewind"],
+        "removed_actions":[],
+        "traits":["tf_special_flying","tf_general_mistral_whirlgang"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_jotunn_skirmisher_quintessent",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Quintessent",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Rare elementals made of swirling, multicolored Aether, quintessents are created from the pure energy of life itself. They are creatures of rare beauty and strong passions."
+            }
+        ],
+        "stats":{},
+        "actions":[],
+        "removed_actions":[],
+        "traits":["tf_special_flying","tf_general_quintessent_crystalperfection","tf_general_quintessent_aetherstorm"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
     }
 ]

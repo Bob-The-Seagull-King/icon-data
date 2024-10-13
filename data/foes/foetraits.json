@@ -4567,6 +4567,107 @@
           ]
     },
     {
+        "id": "tf_general_undine_livingdeeps",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Living Deeps",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Instead of a 2x2 space, this Jotunn occupies an Arc 4 space that can be placed in any configuration. When it moves, move either end space of the Arc, then re-place the Arc in any valid configuration. It can make attacks or use abilities from any of its spaces",
+                "glossary": []
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_mistral_whirlgang",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Whirlgang",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of its turn, the Mistral and all allies in range 2 may fly 1 in the same direction.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_quintessent_crystalperfection",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crystal Perfection",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This Jotunn can use the average of its damage die (6) instead of rolling for damage.",
+                "glossary": [{"val": "damage die", "id": "gl_damagedice"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_quintessent_aetherstorm",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aetherstorm",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Quintessence’s Raging Storm deals 2 divine damage to all foes inside when created, and its allies are immune to its effects. In addition, when any character starts its turn in the area, the Quintessent can apply one of following effects.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }  ,                              
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Earth:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Create a pit under the character.",
+                                            "glossary": [{"val": "pit", "id": "gl_pit"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Fire:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Character deals 2 piercing damage to all adjacent foes.",
+                                            "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Air:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Teleport character 2 spaces.",
+                                            "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Water:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "End a status on the character."
+                                        }]
+                    }
+                ]
+            }  
+          ]
+    },
+    {
         "id": "tf_lowlander_grub_masteroftheunderway",
         "type": "Trait",
         "source": "core",
