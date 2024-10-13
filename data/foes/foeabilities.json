@@ -18860,6 +18860,209 @@
         ]
     },
     {
+        "id": "af_jotunn_starblood_meteor",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "round": 3
+        },
+        "eventtags": {},
+        "name": "Meteor",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes not in cover from the Starblood must save or take fray damage three times and become vulnerable, or just fray damage once on a successful save.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "vulnerable", "id": "gl_vulnerable"}
+                ]
+            },                                                  
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, summon a height 1 meteor shard object adjacent to one character affected.",
+                "glossary": [
+                    {"val": "summon", "id": "gl_summon"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_runskin_greatwarp",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Great Warp",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range takes 2 piercing damage and is teleported 2",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "teleported", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_runskin_openrunegate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "terrain_effect": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Open Rune-Gate",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rune-Skin opens a gate in a free adjacent space, a 1 space terrain effect.",
+                "glossary": [
+                ]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Characters that enter the space are teleported 4 to a space of the Planar’s choice. Foes can save to choose the destination of their teleport instead. Using this ability again moves the gate.",
+                                    "glossary": [{"val": "teleported", "id": "gl_teleport"},{"val": "teleport", "id": "gl_teleport"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_watcher_ordeninglaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "multimark": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Ordening Law",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 is marked. While marked, they can only take use one non-basic ability per round.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They can break this restriction, but take 2 divine damage for every further action taken. They can end this mark by ending any turn in which they took only one non-basic ability.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"},
+                    {"val": "divine", "id": "gl_divine"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_carceral_torpor",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "uses": 2,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Torpor",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A bloodied character in range 8 is stunned.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"},
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_carceral_sisyphus",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Sisyphus",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark a character, putting a marker down at their current location.",
+                "glossary": [
+                    {"val": "Mark", "id": "gl_mark"}
+                ]
+            },                                                 
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                                                 
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of their turn, if they are still marked and in range 4 of that marker, remove them from the battlefield and return them to the marker (or as close possible if the area is occupied), then remove this mark.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "marker", "id": "gl_mark"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_carceral_imprisonedtime",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Imprisoned Time",
+        "description":  [                                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Carceral creates a line 5 terrain effect in free space in range.",
+                "glossary": [
+                ]
+            } ,                              
+            { "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Characters other than Tethians that exit the area immediately end their turn if it is their turn. Using this ability again moves the area rather than placing a new once.",
+                                    "glossary": []
+                                }]
+            }
+        ]
+    },
+    {
         "id": "af_lowlander_heavy_demolish",
         "type": "Ability",
         "source": "core",

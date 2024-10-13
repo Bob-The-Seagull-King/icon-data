@@ -4683,6 +4683,36 @@
           ]
     },
     {
+        "id": "tf_general_cyclopean_scouringgaze",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scouring Gaze",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Cyclopean shoots a beam of energy at any foe that ends their turn in the Dampen Time area, dealing 4 piercing damage to them. If they are blinded, foes take only 1 piercing damage instead.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "blinded", "id": "gl_blinded"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_general_watcher_timelock",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Time Lock",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "After any ability resolves that damages the Watcher, it becomes intangible until the start of the following turn, and may teleport 2.",
+                "glossary": [{"val": "intangible", "id": "gl_intangible"},{"val": "teleport", "id": "gl_teleport"}]
+            }  
+          ]
+    },
+    {
         "id": "tf_lowlander_grub_masteroftheunderway",
         "type": "Trait",
         "source": "core",

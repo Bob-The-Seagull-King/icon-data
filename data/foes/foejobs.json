@@ -6690,5 +6690,130 @@
         "phases":[],
         "tactics":[],
         "chapter": 3
+    },
+    {
+        "id": "fj_jotunn_artillery_starblood",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Starblood",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A jotunn born of the multicolored blood of the Outsider, the observer titan. Tend to be avian in appearance."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_starblood_meteor"],
+        "removed_actions":[],
+        "traits":["tf_special_flying"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_artillery_cyclopean",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Cyclopean",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Sage jotunns with a single eye in their foreheads. Tend to live as mountain hermits in places of import, keeping crude shelter and herds of goats or sheep."
+            }
+        ],
+        "stats":{},
+        "actions":[],
+        "removed_actions":[],
+        "traits":["tf_general_cyclopean_scouringgaze"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_artillery_runskin",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Rune-Skin",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A hairless jotunn with oddly colored skin covered in runes and an unflinching gaze."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_runskin_greatwarp","af_jotunn_runskin_openrunegate"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_artillery_watcher",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Watcher",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A strange, solemn jotunn with a gemlike thirdeye. In an older age, responsible for maintaining the flow of Aether itself throughout the land, repairing it as a tailor repairs a torn bolt of cloth. Increasingly few in number."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_watcher_ordeninglaw"],
+        "removed_actions":[],
+        "traits":["tf_special_phasing","tf_general_watcher_timelock"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_jotunn_artillery_carceral",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Carceral",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A living prison for an extraordinary powerful force - usually a being that the Titans wanted sealed away. Carcerals are tremendously powerful rune-wrights and live a melancholy and austere existence in ruined and forgotten temples or mountain time shrines, constantly aware of the evil presence writhing inside of them."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_carceral_torpor","af_jotunn_carceral_sisyphus","af_jotunn_carceral_imprisonedtime"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
     }
 ]
