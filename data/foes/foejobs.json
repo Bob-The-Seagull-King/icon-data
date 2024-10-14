@@ -6815,5 +6815,209 @@
         "phases":[],
         "tactics":[],
         "chapter": 3
+    },
+    {
+        "id": "fj_jotunn_unique_iresmith",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Ire Smith",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Lesser forge Jotunn that assist the Eldflame Keepers in their great subterranean workshops. Sometimes split off and serve as blacksmiths for local towns or cities. These gnarled Jotunn are bent with work and age and harbor dogmatic devotion to their work, the only thing that keeps them sane."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_iresmith_smitetheanvil","af_jotunn_iresmith_heattheforge","af_jotunn_iresmith_bellows"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_iresmith_ironscale","tf_jotunn_iresmith_quicksilver"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_unique_nilfling",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Nilfling",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Blind and blood hungry Jotunn that are born malformed from cysts in the earth where Titan blood has congealed and stagnated. The most common type of Blood Jotunn. Small compared to most Jotunn."
+            }
+        ],
+        "stats":{
+            "hp_mod": 1,
+            "turns": 1,
+            "size": 1
+        },
+        "actions":["af_jotunn_nilfling_slaveringmaw","af_jotunn_nilfling_leap","af_jotunn_nilfling_finishoff"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_nilfling_thinblood","tf_jotunn_nilfling_eyeless"],
+        "removed_traits":["tf_faction_jotunn_elite"],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_unique_vannir",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Vannir",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Especially old and Aether-wise Jotunn are known as Vannir. These sagely Jotunn wander the land disguised as travelers or old men, sometimes shape-shifted or using illusions to reduce their size and cloak themselves. They tend to view themselves as judges to lesser beings, and often given to offering advice, prophecies, or riddles."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_vannir_starshower","af_jotunn_vannir_masterofunrcunning","af_jotunn_vannir_runecurse","af_jotunn_vannir_aencraft"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_vannir_runeglamour"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_unique_aetnir",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Aetnir",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"The Storm Titan had a mighty hall called Erenhelion, where the titans would feast after doing battle. The drops of mead from that hall smoked where they hit the earth and gave rise to the Aetnir, battle Jotunn of unprecedented skill and strength, who came forth fully formed, clad and armed for battle. The Aetnir view combat as a veneration of their progenitor and wander the land looking for the strongest opponents. There are less than a hundred Aetnir left, and their numbers dwindle as the age of ancients dims."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_aetnir_exalterenhelion","af_jotunn_nilfling_leap","af_jotunn_heavy_joyouscombat","af_jotunn_heavy_stormcunning","af_general_warrior_bullrush","af_jotunn_aetnir_titancut"],
+        "removed_actions":[],
+        "traits":["tf_general_berserker_enrage"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_unique_thannir",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Thannir",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"The Thannir were born from old battlefields, places where the restless dead had no time to be buried and were given to the wilds. They are tall, beautiful jotunn born from Tsumi, the moon titan, and they carry a great sorrow and resentment in their beings. With their greatscythes, they wander old overgrown battlefields and groves that were once charnel houses, tending to the bones of the dead and the pale flowers that grow there."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_thannir_spiritscythe","af_jotunn_thannir_lonelydead","af_jotunn_thannir_fullbloom","af_jotunn_thannir_runeofthespringflower","af_jotunn_thannir_runeofthegrave","af_jotunn_thannir_execute"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_jotunn_unique_baletroll",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Bale Troll",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Some trolls abandon the ways of rune-cunning and medicine - sometimes out of necessity, sometimes out of injury. These trolls become wild and fierce, roaming a broad territory. Under duress their natural regenerative abilities become rampant and they often grow extra limbs as a shark grows teeth - hands, arms, or legs that are still able to act for a few minutes after being lopped off."
+            }
+        ],
+        "stats":{},
+        "actions":["af_general_demolisher_hurlboulder","af_jotunn_baletroll_stormofclaws","af_jotunn_baletroll_incrediblebulk","af_jotunn_baletroll_reattatchlimb"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_baletroll_wildregeneration"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_jotunn_unique_greatstormkindrid",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Great Storm Kindrid",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Former guards of the great gates of Erenhelion, these bestial Aetnir lords are armed with hammers forged of sky steel by the Storm Lord and imbued with fragments of his shattered soul aether. Bereft of purpose now that the great hall lies shattered and scattered across the land, they wander aimlessly and melancholic, looking for strong foes to challenge in battle and stave off their existential rot."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_greatstormkindred_stormhammer","af_jotunn_heavy_berserkgang","af_jotunn_heavy_stormcunning","af_jotunn_greatstormkindred_mightysmite","af_jotunn_greatstormkindred_primalspark","af_jotunn_greatstormkindred_sturmreiten"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
+    },
+    {
+        "id": "fj_jotunn_unique_greathunter",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Great Hunter",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"A wild jotunn born of Gaia, with great antlers and hooves. These jotunn speak little of the tongue of Kin, and bound through the forest at the head of great herds of animals. Their bow strings are made from the sinews of the greatest beasts of Arden Eld, and their arrows are whittled from stripped down, young trees."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_greathunter_titanforgedgreatbow","af_jotunn_greathunter_boundingleaps","af_jotunn_greathunter_hunterarrow","af_jotunn_greathunter_boltfromtheblue"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
     }
 ]

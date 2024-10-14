@@ -4612,6 +4612,112 @@
           ]
     },
     {
+        "id": "tf_jotunn_iresmith_ironscale",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Iron Scale",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Resistant to damage from adjacent spaces. Loses this trait when bloodied.",
+                "glossary": [{"val": "Resistant", "id": "gl_resistance"},{"val": "bloodied", "id": "gl_bloodied"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_jotunn_iresmith_quicksilver",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Quicksilver",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ire Smith’s abilities leave pools of quicksilver on the ground.",
+                "glossary": []
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Quicksilver is a 1 space difficult terrain effect, which the smith ignores.",
+                                    "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                                }]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_nilfling_thinblood",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thinblood",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Size 1, takes 1 point in an encounter budget, and doesn’t have the elite trait like other Jotunn.",
+                "glossary": []
+            }  
+          ]
+    },
+    {
+        "id": "tf_jotunn_nilfling_eyeless",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Eyeless",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to blinded.",
+                "glossary": [{"val": "Immune", "id": "gl_immune"},{"val": "blinded", "id": "gl_blinded"}]
+            }  
+          ]
+    },
+    {
+        "id": "tf_jotunn_vannir_runeglamour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Rune Glamour",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "May be size 1 or size 2 (choose at the start of combat).",
+                "glossary": []
+            }  
+          ]
+    },
+    {
+        "id": "tf_jotunn_baletroll_wildregeneration",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wild Regeneration",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of any turn the Bale Troll takes 10 or more damage to its hp, it gains 10 vigor, then summon a loose limbs summon in free space in range 2.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "summon", "id": "gl_summon"}
+                ]
+            }  ,                               
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_baletroll_looselimb"
+            }  
+          ]
+    },
+    {
         "id": "tf_general_quintessent_aetherstorm",
         "type": "Trait",
         "source": "core",

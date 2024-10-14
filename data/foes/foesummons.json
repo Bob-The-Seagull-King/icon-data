@@ -1158,6 +1158,61 @@
         "limit": 0
     },
     {
+        "id": "sm_thannir_lonelysoul",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Lonely Soul",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once a round on the Thannir’s turn thereafter, may move 3 spaces and deal 2 piercing damage to an adjacent foe. If that foe is sealed or marked, the soul can also then shove the foe 1.",
+                                    "glossary": [
+                                        {"val": "piercing", "id": "gl_piercing"},
+                                        {"val": "sealed", "id": "gl_sealed"},
+                                        {"val": "marked", "id": "gl_mark"},
+                                        {"val": "shove", "id": "gl_shove"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_baletroll_looselimb",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Loose Limbs",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At the start of the Troll’s turn, may rush 1 space, then deal 2 damage to an adjacent foe.",
+                                    "glossary": [
+                                        {"val": "rush", "id": "gl_rush"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

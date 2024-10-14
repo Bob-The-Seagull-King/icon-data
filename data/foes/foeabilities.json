@@ -19063,6 +19063,1216 @@
         ]
     },
     {
+        "id": "af_jotunn_iresmith_smitetheanvil",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Smite The Anvil",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Character takes 1 divine damage, or 1 divine damage twice times if it’s marked.",
+                                    "glossary": [{"val": "divine", "id": "gl_divine"},{"val": "marked", "id": "gl_mark"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a pool of quicksilver under the smith.",
+                                    "glossary": []
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_iresmith_heattheforge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Heat The Forge",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Create a pool of quicksilver under the smith. Then, all foes not in cover from the smith must save or become vulnerable and have a space of roaring flames dangerous terrain created adjacent to them.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Then, the smith deals 1 piercing damage, three times to all foes.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"},{"val": "marked", "id": "gl_mark"}]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Round 3+:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "This becomes 1 action.",
+                                    "glossary": []
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_iresmith_workmetal"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_iresmith_bellows",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Bellows",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "1 piercing damage, twice, and shove 1.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "shove", "id": "gl_shove"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_iresmith_workmetal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true,
+            "range": 6,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Work Metal",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Smith marks a foe in range.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While marked, the foe is vulnerable+ and cannot benefit from armor or resistance.",
+                "glossary": [
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "resistance", "id": "gl_resistance"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "This mark and its associate effects ends if the foe ends their turn in a pool of quicksilver, but it consumes the pool and that foe becomes stunned.",
+                "glossary": [
+                    {"val": "stunned", "id": "gl_stunned"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_nilfling_slaveringmaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Slavering Maw",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The Nilfling can rush 2 before this attack.",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_nilfling_leap",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Leap",
+        "description":  [ 
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Jotunn flies 2. When it lands, all adjacent characters are shoved 1.",
+                "glossary": [
+                    {"val": "flies", "id": "gl_flying"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If it starts this move from a higher elevation and ends on a lower one, increase the fly to 4, and all adjacent characters when it lands take 2 damage.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_nilfling_finishoff",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Finish Off",
+        "description":  [ 
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Nilfling deals a phenomenal blow to an adjacent bloodied character.",
+                "glossary": [
+                    {"val": "bloodied", "id": "gl_bloodied"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "That character must save or take 8 damage, become slashed, and become weakened. On a successful save, they only take 4 damage and are either slashed or weakened (the Nilfling can choose).",
+                "glossary": [
+                    {"val": "slashed", "id": "gl_slashed"},                    
+                    {"val": "weakened", "id": "gl_weakened"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_vannir_starshower",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "pierce": true,
+            "blast_size": "small",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Star Shower",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_vannir_masterofunrcunning",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Master of Rune-Cunning",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Vannir gains the following interrupt. It does not refresh at the start of their turn, and uses last until the end of the current round.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_vannir_runewise"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_vannir_runewise",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Rune-Wise",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The Vannir or an ally in range 2 is targeted by an attack.",
+                    "glossary": []
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"}, 
+                    "content": "The attacker must save. On a failed save, the attack automatically misses.",
+                    "glossary": []
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_vannir_runecurse",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Rune-Curse",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range becomes sealed or pacified (Vannir chooses). If they have both conditions, they also take 4 piercing damage.",
+                "glossary": [
+                    {"val": "sealed", "id": "gl_sealed"},
+                    {"val": "pacified", "id": "gl_pacified"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_vannir_aencraft",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "summon": true,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Aencraft",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Vannir marks itself or an ally in range. That character gains a d4 power die, starting at 4, and the Vannir gains the following interrupt, which it can use any number of times a round as long as the power die is 1 or greater. If the die would be reduced to 0, this mark ends.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"},
+                    {"val": "interrupt", "id": "gl_interrupt"},
+                    {"val": "power die", "id": "gl_powerdie"},
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_vannir_illusorydouble"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_vannir_illusorydouble",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": true
+        },
+        "eventtags": {},
+        "name": "Illusory Double",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The marked character is targeted by an ability.",
+                    "glossary": [
+                        {"val": "marked", "id": "gl_mark"}
+                    ]
+                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"}, 
+                    "content": "The Vannir may spend any amount of ticks on the power die to gamble, rolling one dice per tick spent. That character immediately gains vigor equal to the gamble result. If the result was 4+, they also become sturdy against the ability. After the ability resolves, they may teleport 2.",
+                    "glossary": [
+                        {"val": "power die", "id": "gl_powerdie"},
+                        {"val": "gamble", "id": "gl_gamble"},
+                        {"val": "vigor", "id": "gl_vigor"},
+                        {"val": "sturdy", "id": "gl_sturdy"},
+                        {"val": "teleport", "id": "gl_teleport"}
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_aetnir_exalterenhelion",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Exalt Erenhelion",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the Round, the Aetnir either chooses Crush Cowards or Break the Mighty. At the end of the round, the chosen effect occurs.",
+                "glossary": [
+                ]
+            },    
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Crush Cowards: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "The Aetnir raises its weapon. At the end of the round, it sweeps out with a massive slash, affecting a burst 3 (self) area effect around it, with different effects depending on how close characters are. Foes 3 spaces away take 10 damage. Foes 2 spaces away take 5 damage. Adjacent foes take 1 damage.",
+                                "glossary": [
+                                    {"val": "burst", "id": "gl_burst"},
+                                    {"val": "area effect", "id": "gl_areaeffect"}
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Break the Mighty: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "The Aetnir raises its shield. At the end of the round, it slams its shield down. Adjacent characters take 6 damage and are shoved 2 spaces away. Collide: Characters take 6 damage again and are stunned.",
+                                "glossary": [
+                                    {"val": "shoved", "id": "gl_shove"},
+                                    {"val": "Collide", "id": "gl_collide"},
+                                    {"val": "stunned", "id": "gl_stunned"}
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }   
+            
+        ]
+    },
+    {
+        "id": "af_jotunn_aetnir_titancut",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Titan Cut",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_thannir_spiritscythe",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "arc": 6
+        },
+        "eventtags": {},
+        "name": "Spirit Scythe",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "AutoHit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [ {"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is sealed and shoved 1 in any direction.",
+                                    "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_thannir_lonelydead",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "summon": true,
+            "per": "round",
+            "uses": 1
+        },
+        "eventtags": {},
+        "name": "Lonely Dead",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Thannir summons a lonely soul in range 4.",
+                "glossary": [ {"val": "summons", "id": "gl_summon"}]
+            },                          
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_thannir_lonelysoul"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_thannir_fullbloom",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "small",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Full Bloom",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "2 piercing damage. If a foe is sealed, it takes 2 piercing damage again. If a foe is also marked, it takes 2 piercing damage once more.",
+                "glossary": [ 
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "sealed", "id": "gl_sealed"},
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_thannir_runeofthespringflower",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "multimark": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Rune of the Spring Flower",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Thannir marks itself or an ally in range. After any ability that damages that ally resolves, they gain 2 vigor and may dash 2.",
+                "glossary": [ 
+                    {"val": "marks", "id": "gl_mark"},
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "dash", "id": "gl_dash"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_thannir_runeofthegrave",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Rune of the Grave",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range 6 must save or be marked. On a successful save, they are pacified instead.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "pacified", "id": "gl_pacified"}
+                ]
+            },                          
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                          
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "While marked, a character cannot benefit from defiance or effects that prevent them from being defeated, loses all vigor at the end of each turn, and cannot gain vigor.",
+                "glossary": [ 
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "defiance", "id": "gl_defiance"}
+                ]
+            },                          
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                          
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character can end this mark by spending an entire turn not attacking.",
+                "glossary": [ 
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_thannir_execute",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Execute",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range 2 at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they are reduced to 1 hp.",
+                "glossary": [ 
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_baletroll_stormofclaws",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "combo": true,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Storm of Claws",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is slashed.",
+                                    "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "All foes in range are shoved 1 towards the troll.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_baletroll_boulderfist"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_baletroll_boulderfist",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "burst": 1,
+            "burst_target": "target",
+            "combo": true,
+            "curse": 2
+        },
+        "eventtags": {},
+        "name": "Boulder Fist",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "3[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "May rush 2 before this attack.",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is shoved 3.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            } 
+                        ]
+    },
+    {
+        "id": "af_jotunn_baletroll_incrediblebulk",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Incredible Bulk",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The troll deals 10 piercing damage to itself, which cannot reduce it below 1 hp. While in this stance, it gains counter and is sturdy. All allies adjacent to the troll gain resistance.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "stance", "id": "gl_stance"},
+                    {"val": "counter", "id": "gl_counter"},
+                    {"val": "sturdy", "id": "gl_sturdy"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This stance ends at the start of its turn, but it can deal 10 piercing damage to itself again to refresh it.",
+                "glossary": [
+                    {"val": "stance", "id": "gl_stance"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_baletroll_reattatchlimb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Re-Attatch Limb",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The troll absorbs an adjacent loose limb, destroying it. It gains 4 vigor, and may remove a status affecting it.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greatstormkindred_stormhammer",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Storm Hammer",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the Jotunn slams a hammer of lightning into a small blast area, creating a terrain effect in that space. Foes in the area are weakened+, and the area has Rampart.",
+                "glossary": [
+                    {"val": "area", "id": "gl_areaeffect"},                    
+                    {"val": "small blast", "id": "gl_blast"},                    
+                    {"val": "weakened", "id": "gl_weakened"},                    
+                    {"val": "+", "id": "gl_ongoing"},                    
+                    {"val": "Rampart", "id": "gl_rampart"}
+                ]
+            }, 
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            }, 
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, the hammer is recalled. All foes in the area, and all foes adjacent to the Jotunn take 4 damage. If foes are both in the area and adjacent to the Jotunn, they take damage twice.",
+                "glossary": [
+                    {"val": "area", "id": "gl_areaeffect"}
+                ]
+            }            
+        ]
+    },
+    {
+        "id": "af_jotunn_greatstormkindred_mightysmite",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "True Strike": true,
+            "line": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Mighty Smite",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to weakened or slashed foes.",
+                                    "glossary": [
+                                        {"val": "bonus damage", "id": "gl_bonusdamage"},
+                                        {"val": "weakened", "id": "gl_weakened"},
+                                        {"val": "slashed", "id": "gl_slashed"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_greatstormkindred_thunderfury"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greatstormkindred_thunderfury",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "curse": 2,
+            "burst": 1,
+            "burst_target": "target",
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Thunder Fury",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray, three times",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "Deals bonus damage to attack target per status or allied mark they are affected by. If they are affected by three or more, they are stunned.",
+                    "glossary": [
+                        {"val": "bonus damage", "id": "gl_bonusdamage"},                        
+                        {"val": "mark", "id": "gl_mark"},                        
+                        {"val": "stunned", "id": "gl_stunned"}
+                    ]
+                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greatstormkindred_primalspark",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Primal Spark",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range takes 2 divine damage.",
+                "glossary": [
+                    {"val": "divine", "id": "gl_divine"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greatstormkindred_sturmreiten",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Sturmreiten",
+        "class_id": "red",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Jotunn flies 4 with phasing, and is intangible while flying. All characters they pass through take 2 damage.",
+                "glossary": [
+                    {"val": "flies", "id": "gl_flying"},
+                    {"val": "flying", "id": "gl_flying"},
+                    {"val": "phasing", "id": "gl_phasing"},
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greathunter_titanforgedgreatbow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Titanforged Greatbow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                    "tags": [{"desc_type": "desc"}],
+                    "content": "This weapon deals bonus damage and gains +1 boon against characters outside of cover.",
+                    "glossary": [
+                        {"val": "bonus damage", "id": "gl_bonusdamage"},                        
+                        {"val": "+1 boon", "id": "gl_boon"},                        
+                        {"val": "cover", "id": "gl_cover"}
+                    ]
+                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greathunter_boundingleaps",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bounding Leaps",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Great Hunter flies 3. If it lands on an object, it can repeat this flight once more.",
+                "glossary": [                   
+                    {"val": "flies", "id": "gl_flying"},                        
+                    {"val": "flight", "id": "gl_flying"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greathunter_hunterarrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 8,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Hunter Arrow",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Mark an unoccupied space in range. Characters that enter that space for any reason are struck by a projectile, taking 4 piercing damage and ending this effect.",
+                "glossary": [                   
+                    {"val": "Mark", "id": "gl_mark"},                        
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            },                         
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                         
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The areas last until the end of the current round. After this effect is triggered or expires, create a height 1 great arrow object in an adjacent space.",
+                "glossary": [                   
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_greathunter_boltfromtheblue",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "mark": true,
+            "multimark": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Bolt from the Blue",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Jotunn fires a sheathe of arrows into the air, marks a foe in range, then sets out a d6 power die, starting at 6, or ticks it up by 1 if it already has a die, to a maximum of 6.",
+                "glossary": [                   
+                    {"val": "marks", "id": "gl_mark"},                        
+                    {"val": "power die", "id": "gl_powerdie"}
+                ]
+            },                         
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                         
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of any turn, the Jotunn may tick the die down by 1 to deal 2 piercing damage to any target marked by this ability.",
+                "glossary": [   
+                    {"val": "marked", "id": "gl_mark"},                        
+                    {"val": "die", "id": "gl_powerdie"}   ,                        
+                    {"val": "piercing", "id": "gl_piercing"}                
+                ]
+            }
+                        ]
+    },
+    {
         "id": "af_lowlander_heavy_demolish",
         "type": "Ability",
         "source": "core",
