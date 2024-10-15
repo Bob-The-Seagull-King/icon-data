@@ -7051,7 +7051,7 @@
                 "content":"Riders are legendary, boisterous warriors that only descend to the earth for tasks of great import or to stave off their ancient melancholy with the thrill of battle, largely leaving the earthly realm alone. Stories abound of foolish and hubristic mortal heroes challenging the storm, only for the storm to answer. They are scions of destruction and the lightning is at their beck and call."
             }
         ],
-        "stats":{},
+        "stats":{"size": 2},
         "actions":["af_jotunn_rideroftheprimalstorm_lingerspark","af_jotunn_greatstormkindred_sturmreiten","af_jotunn_rideroftheprimalstorm_joyouscombat","af_jotunn_rideroftheprimalstorm_grandfulmination","af_jotunn_rideroftheprimalstorm_jolt","af_jotunn_rideroftheprimalstorm_bladeofthestormlord"],
         "removed_actions":[],
         "traits":["tf_jotunn_legend_divinepresence","tf_jotunn_rideroftheprimalstorm_staticcharge","tf_jotunn_rideroftheprimalstorm_judgementbolt"],
@@ -7098,5 +7098,84 @@
             }
         ],
         "chapter": 1
+    },
+    {
+        "id": "fj_jotunn_legend_keeperoftheeldflame",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Keeper of the Eld Flame",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_legend",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Great apprentices of the Forge Titan, Flame Keepers cultivate sparks of the Eldflame, the divine flame that was used in the making of the world. Though sputtering with age, the imperishable divine flame burns just as hot as the day it was bestowed, no matter how much it is divided."
+            },
+            {
+                "tags": {"desc_type":"gap"},
+                "content":""
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"These demigods of the forge confine themselves to their workshops deep beneath the earth, buried in mountain caverns, or perched at the edge of wind-swept precipices. There they toil endlessly, bent with work and age, trying to replicate or repair their masters’ work, largely in vain."
+            },
+            {
+                "tags": {"desc_type":"gap"},
+                "content":""
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"The Keepers are the best smiths in Arden Eld, and by themselves are responsible for forging items of tremendous power, fell objects that armies have fought and died for."
+            }
+        ],
+        "stats":{"size": 2},
+        "actions":["af_jotunn_keeperoftheeldflame_volatileember","af_jotunn_keeperoftheeldflame_smitetheanvil","af_jotunn_keeperoftheeldflame_hardheaded","af_jotunn_keeperoftheeldflame_quickening"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_legend_divinepresence","tf_jotunn_keeperoftheeldflame_quicksilver"],
+        "removed_traits":[],
+        "category":"legend",
+        "phases":[
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Keeper starts combat in this Phase, and swaps to Phase II when bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_jotunn_keeperoftheeldflame_lighttheevorforge_phi","af_jotunn_keeperoftheeldflame_forgeweapon_phi","af_jotunn_keeperoftheeldflame_forgemail_phi"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Keeper enters this phase when bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_jotunn_keeperoftheeldflame_lighttheevorforge_phii","af_jotunn_keeperoftheeldflame_forgeweapon_phii","af_jotunn_keeperoftheeldflame_forgemail_phii"],
+                "traits": ["tf_jotunn_keeperoftheeldflame_greatignition","tf_jotunn_keeperoftheeldflame_bladeofcreation"],
+                "stats": {}
+            }
+
+        ],
+        "tactics":[           
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The keeper is a tempo fight that hits extremely hard every few turns, but requires set up. Its armor abilities can be very potent if allowed to linger, but can cause explosive bursts of tempo when destroyed. In phase II, its ability to smith becomes even faster, and it gains the ability to quickly burn down player characters. Characters can gain increased power from picking up embers, but must be careful not to damage allies with Quickening, and must be wary of burning out from their damage, using quicksilver to quench if needed."
+            }
+        ],
+        "chapter": 2
     }
 ]

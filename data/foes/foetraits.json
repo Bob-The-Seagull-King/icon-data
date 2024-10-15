@@ -4845,6 +4845,162 @@
           ]
     },
     {
+        "id": "tf_jotunn_keeperoftheeldflame_quicksilver",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Quicksilver",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ire Smith’s abilities leave pools of quicksilver on the ground.",
+                "glossary": []
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Quicksilver is a 1 space difficult terrain effect, which the smith ignores. Characters that end their turn in quicksilver quench their embers, getting rid of all of them, but also consuming the quicksilver space.",
+                                    "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                                }]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_keeperoftheeldflame_greatignition",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Ignition",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the round, all embers that haven’t been picked up explode, destroying them and dealing 1 divine damage to all foes as an effect.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_keeperoftheeldflame_bladeofcreation",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blade of Creation",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Keeper gains aura 1. When the Keeper ends its turn, it draws in any quicksilver in the aura, destroying it. Track the number of pools it picks up with a power die. At the end the round, it makes the following attack:",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "power die", "id": "gl_powerdie"}
+                ]
+            },                              
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_jotunn_keeperoftheeldflame_bladeofcreation"
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_keeperoftheeldflame_shield",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Shield",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Keeper forges a massive shield, gaining cover against all abilities not used from adjacent spaces, and dodge.",
+                "glossary": [
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "dodge", "id": "gl_dodge"}
+                ]
+            },                          
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the shield is destroyed, they throw it, forcing a foe in range 8 to save or take 5 damage, become stunned and shoved 3, or just 2 damage and shoved 1 on a successful save.",
+                "glossary": [
+                    {"val": "stunned", "id": "gl_stunned"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_keeperoftheeldflame_helm",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Helm",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Keeper becomes sturdy and its Juggernaut trait triggers twice at the start of the round.",
+                "glossary": [
+                    {"val": "sturdy", "id": "gl_sturdy"}
+                ]
+            },                          
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the helmet is destroyed, the Keeper spits fire in a medium blast area effect in range 3 as an interrupt. Foes within take 1 piercing damage four times.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "interrupt", "id": "gl_interrupt"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_keeperoftheeldflame_breastplate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Breastplate",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Keeper gains armor 2 and resistance to abilities from adjacent spaces. In addition it cannot be critically hit (turn all critical hits into regular hits) or take bonus damage.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "critically hit", "id": "gl_criticalhit"},
+                    {"val": "critical hits", "id": "gl_criticalhit"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            },                          
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the armor is destroyed, it blows off the Keeper with an explosion, dealing 2 piercing damage to all foes not in cover from the Keeper as an area effect.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "cover", "id": "gl_cover"}
+                ]
+            }
+          ]
+    },
+    {
         "id": "tf_general_quintessent_aetherstorm",
         "type": "Trait",
         "source": "core",

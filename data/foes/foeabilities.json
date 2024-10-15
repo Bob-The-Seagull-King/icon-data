@@ -20588,6 +20588,597 @@
                         ]
     },
     {
+        "id": "af_jotunn_keeperoftheeldflame_volatileember",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Volatile Ember",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the Keeper creates 1 Volatile Ember in any space within range 2 of a character until there are six Embers active. A Volatile Ember is a special terrain effect that may be picked up by a character moving into its space. A character carrying at least one ember takes 3 divine damage, at the end of their turn. This damage cannot reduce a character below 1 hp. If a character is defeated while holding embers, they are snuffed out.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper’s abilities become stronger against character carrying embers. However, carrying an ember fills a character and their weapons with godly power and has the following benefits:",
+                "glossary": []
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "1+: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "All attacks gain +1 boon and deal bonus damage.",
+                                "glossary": [{"val": "+1 boon", "id": "gl_boon"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "3+: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Character’s abilities gain true strike and ignore resistance.",
+                                "glossary": [{"val": "true strike", "id": "gl_truestrike"}, {"val": "resistance", "id": "gl_resistance"}]
+                            }
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "6+: ",
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "Character’s abilities ignore vigor and deal double damage to the Keeper’s armor.",
+                                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_smitetheanvil",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Smite The Anvil",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Character gains 1 ember."
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_hardheaded",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Hard Headed",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper rushes 3. Before and after its movement, it may shove all adjacent foes 1.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"},
+                    {"val": "shove", "id": "gl_shove"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_quickening",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Quickening",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range 6 gains an ember, then has their embers stirred up.",
+                "glossary": [
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of their next turn, they explode, dealing 1 piercing damage once for every ember they are holding to all other foes in a large blast area effect centered on them (the chosen character takes no damage). They then become vulnerable and have a space of quicksilver created next to them.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "large blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "vulnerable", "id": "gl_vulnerable"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_bladeofcreation",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "attack": true,
+            "type": "attack",
+            "range": 4,
+            "true_strike": true,
+            "divine": true,
+            "line": 10
+        },
+        "eventtags": {},
+        "name": "Blade of Creation",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "5 damage, once for each quicksilver pool picked up this round."
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2 damage, once for each pool picked up this round.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_lighttheevorforge_phi",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Light the Everforge",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper gains 10 vigor and summons the Everforge.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_keeperoftheeldflame_everforge"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_lighttheevorforge_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Light the Everforge",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper gains 10 vigor and summons the Everforge.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_keeperoftheeldflame_everforge"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_forgeweapon_phi",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Forge Weapon",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper forges a godly weapon, rolling 1d6 for type, granting it a new ability. When the ability is used, the weapon is destroyed, ending this effect. Only one weapon form can be active at once until the weapon is used.",
+                "glossary": [
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "table"}],
+                "content": "tb_keeperoftheeldflame_forgeweapon"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_forgeweapon_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Forge Weapon",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper forges a godly weapon, rolling 1d6 for type, granting it a new ability. When the ability is used, the weapon is destroyed, ending this effect. Only one weapon form can be active at once until the weapon is used.",
+                "glossary": [
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "table"}],
+                "content": "tb_keeperoftheeldflame_forgeweapon"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_hammer",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 3,
+            "blast_size": "large",
+            "curse": 1
+        },
+        "eventtags": {},
+        "name": "Hammer",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "5[D]+fray and foe is stunned.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_spear",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "line": 10,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Spear",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D]+1, five times.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D]+1, twice.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_sword",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "arc": 6,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Sword",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "4[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_curvedsword",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "arc": 6,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Curved Sword",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "AutoHit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is vulnerable.",
+                                    "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_bow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 10,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Bow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "3[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Shove 5.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe is stunned and shattered.",
+                                    "glossary": [{"val": "stunned", "id": "gl_stunned"},{"val": "shattered", "id": "gl_shattered"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_axe",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Bow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "4[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2[D]+fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals +2[D], hit or miss, to bloodied characters.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "bloodied", "id": "gl_bloodied"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_forgemail_phi",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Forge Mail",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper forges itself a piece of armor, rolling 1d6 for type. The Keeper can only have one piece of armor active at once, and each have separate effects. When forged, each armor piece gains 8 hp per player character. A character can choose to damage an armor piece instead of the Keeper when damaging the Keeper. Armor pieces don’t benefit form the Keeper’s vigor, resistance, cover, or dodge. When an armor piece is destroyed, its ongoing effects end and it has an additional effect.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "dodge", "id": "gl_dodge"},
+                    {"val": "ongoing", "id": "gl_ongoing"}
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "table"}],
+                "content": "tb_keeperoftheeldflame_forgemail"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_keeperoftheeldflame_forgemail_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Forge Mail",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Keeper forges itself a piece of armor, rolling 1d6 for type. The Keeper can only have one piece of armor active at once, and each have separate effects. When forged, each armor piece gains 8 hp per player character. A character can choose to damage an armor piece instead of the Keeper when damaging the Keeper. Armor pieces don’t benefit form the Keeper’s vigor, resistance, cover, or dodge. When an armor piece is destroyed, its ongoing effects end and it has an additional effect.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "cover", "id": "gl_cover"},
+                    {"val": "dodge", "id": "gl_dodge"},
+                    {"val": "ongoing", "id": "gl_ongoing"}
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "table"}],
+                "content": "tb_keeperoftheeldflame_forgemail"
+            }
+                        ]
+    },
+    {
         "id": "af_lowlander_heavy_demolish",
         "type": "Ability",
         "source": "core",

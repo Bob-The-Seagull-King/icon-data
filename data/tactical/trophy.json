@@ -2817,7 +2817,7 @@
         "name": "Quicksilver Draught",
         "category": "fc_jotunn",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_jotunn_legend_keeperoftheeldflame",
         "usetype": "",
         "description": [
             {
@@ -2841,7 +2841,7 @@
         "name": "Star of the Creator",
         "category": "fc_jotunn",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_jotunn_legend_keeperoftheeldflame",
         "usetype": "",
         "description": [
             {

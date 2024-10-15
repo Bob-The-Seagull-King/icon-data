@@ -3134,5 +3134,164 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "tb_keeperoftheeldflame_forgeweapon",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Weapon"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_keeperoftheeldflame_forgeweapon_result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "foeability"},
+                    "content": "af_jotunn_keeperoftheeldflame_hammer"
+                }]
+            },
+            {
+                "id": "ti_keeperoftheeldflame_forgeweapon_result2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "foeability"},
+                    "content": "af_jotunn_keeperoftheeldflame_spear"
+                }]
+            },
+            {
+                "id": "ti_keeperoftheeldflame_forgeweapon_result3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "foeability"},
+                    "content": "af_jotunn_keeperoftheeldflame_sword"
+                }]
+            },
+            {
+                "id": "ti_keeperoftheeldflame_forgeweapon_result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },
+                {
+                    "tags": {"desc_type" : "foeability"},
+                    "content": "af_jotunn_keeperoftheeldflame_curvedsword"
+                }]
+            },
+            {
+                "id": "ti_keeperoftheeldflame_forgeweapon_result5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },
+                {
+                    "tags": {"desc_type" : "foeability"},
+                    "content": "af_jotunn_keeperoftheeldflame_bow"
+                }]
+            },
+            {
+                "id": "ti_keeperoftheeldflame_forgeweapon_result6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },
+                {
+                    "tags": {"desc_type" : "foeability"},
+                    "content": "af_jotunn_keeperoftheeldflame_axe"
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_keeperoftheeldflame_forgemail",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Armour"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_keeperoftheeldflame_forgemail_result12",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1-2"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_jotunn_keeperoftheeldflame_shield"
+                }]
+            },
+            {
+                "id": "ti_keeperoftheeldflame_forgemail_result34",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3-4"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_jotunn_keeperoftheeldflame_helm"
+                }]
+            },
+            {
+                "id": "ti_keeperoftheeldflame_forgemail_result56",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5-6"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_jotunn_keeperoftheeldflame_breastplate"
+                }]
+            }
+        ]
     }
 ]

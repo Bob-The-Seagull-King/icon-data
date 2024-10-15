@@ -1213,6 +1213,65 @@
         "limit": 0
     },
     {
+        "id": "sm_keeperoftheeldflame_everforge",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 2,
+            "destructable": true,
+            "height": 2
+        },
+        "eventtags": {},
+        "name": "Everforge",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon HP:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "10 + 10 Per Player",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "This massive forge sparks with godly power. Character standing on the forge when it is summoned are pushed up on top of it, and foes adjacent are shoved 1 away from it. The forge has aura 2. While in the aura, the smith is immune to being shoved, teleported, or removed from the battlefield and can use the forge actions below. When the Keeper uses a Forge action, the area on and adjacent to the forge explodes for a 2 piercing damage area effect, and the forge takes 10 damage, potentially destroying it.",
+                                    "glossary": [
+                                        {"val": "shoved", "id": "gl_shove"},
+                                        {"val": "aura", "id": "gl_aura"},
+                                        {"val": "teleported", "id": "gl_teleport"},
+                                        {"val": "piercing", "id": "gl_piercing"}
+                                    ]
+                                }]
+            },                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Keeper can only keep one of each unique effect active at once, including the forge itself."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When the Keeper uses a forge effect, it gains 10 vigor.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When a Forge effect ends, create a space of quicksilver adjacent to the Keeper."
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",
