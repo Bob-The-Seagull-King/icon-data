@@ -2862,7 +2862,7 @@
         "name": "First Key to the Gates",
         "category": "fc_jotunn",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_jotunn_legend_wardenoftheaeongate",
         "usetype": "",
         "description": [
             {
@@ -2884,7 +2884,7 @@
         "name": "Second Key to the Gates",
         "category": "fc_jotunn",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_jotunn_legend_wardenoftheaeongate",
         "usetype": "",
         "description": [
             {
@@ -2929,7 +2929,7 @@
         "name": "Third Key to the Gates",
         "category": "fc_jotunn",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_jotunn_legend_wardenoftheaeongate",
         "usetype": "",
         "description": [
             {

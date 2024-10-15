@@ -5001,6 +5001,62 @@
           ]
     },
     {
+        "id": "tf_jotunn_wardenoftheaeongate_timehealsall",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Time Heals All",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As a side effect of time distortion, after this fight, all characters heal all wounds.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "critically hit", "id": "gl_criticalhit"},
+                    {"val": "critical hits", "id": "gl_criticalhit"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_wardenoftheaeongate_tidesoftime",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tides of Time",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Many of the Warden’s abilities create a Time effect. Time effects have a Time Die, which is a d6. The die is either rolled or starts at a fixed number. At the end of any turn, including the Warden’s turns, tick all time dice down by 1. When the die is at 1 and would tick down to 0, remove the die and immediately trigger the Time Effect. Time dice and their current number are visible to all characters.",
+                "glossary": [
+                    {"val": "Time Die", "id": "gl_powerdie"}
+                ]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_wardenoftheaeongate_unmoor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unmoor",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start combat, the Warden chooses a character, which gains aura 2 for the rest of the fight. When that character ends their turn with a time effect in the aura, they may choose to re-roll any or all of those time effects. A character can willingly pass this aura to an adjacent ally as a free action on their turn, and it affects a new character (chosen by the Warden) if the currently affected character is defeated.",
+                "glossary": [
+                    {"val": "time effects", "id": "gl_powerdie"},
+                    {"val": "aura", "id": "gl_aura"}
+                ]
+            }
+          ]
+    },
+    {
         "id": "tf_general_quintessent_aetherstorm",
         "type": "Trait",
         "source": "core",

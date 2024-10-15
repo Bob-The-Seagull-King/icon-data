@@ -20747,6 +20747,605 @@
                         ]
     },
     {
+        "id": "af_jotunn_wardenoftheaeongate_severmortalthread",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Sever Mortal Thread",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of round 4, and every 2 rounds thereafter, the Warden cuts the lifespan of all characters on the battlefield, reducing their current and maximum hp and vigor by 25%.",
+                "glossary": [
+                ]
+            },                            
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "This does not stack with wounds, and takes priority over any wounds a character has taken (so a character with 1 wound wouldn’t lose any additional max hp). This HP reduction stacks (so 25%, 50%, 75%, etc). At the end of round 10, the Warden permanently severs the lifespan all characters, instantly defeating them and ending the fight.",
+                "glossary": [
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_eternalstar_phi",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Eternal Star",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of each round, the Warden summons an Eternal Star, a massive meteor. The star is a single space time effect with a d6 time die set to 6, targeted on any space. When the star comes down, all foes take divine damage depending on their distance from the star’s space.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "0 (in the space): ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "100% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "1: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "75% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "2: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "25% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "3+: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "1 HP."
+                            }
+                        ]
+                    }               
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_eternalstar_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Eternal Star",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of each round, the Warden summons two Eternal Stars, massive meteors. The star is a single space time effect with a d6 time die set to 6, targeted on any space. When the star comes down, all foes take divine damage depending on their distance from the star’s space.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "0 (in the space): ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "100% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "1: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "75% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "2: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "25% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "3+: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "1 HP."
+                            }
+                        ]
+                    }               
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_eternalstar_phiii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Eternal Star",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of each round, the Warden summons one Eternal Stars, massive meteors, per player centered on each player. The star is a single space time effect with a d6 time die set to 6, targeted on any space. When the star comes down, all foes take divine damage depending on their distance from the star’s space.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "0 (in the space): ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "100% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "1: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "75% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "2: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "25% of max HP."
+                            }
+                        ]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "3+: ",
+                        "subcontent": [
+                            {
+                                "tags": [{"desc_type": "desc"}],
+                                "content": "1 HP."
+                            }
+                        ]
+                    }               
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_keyofexistence_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Key of Existence",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Re-roll all time die.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_keyofexistence_phiii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Key of Existence",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Re-roll all time die.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_slipbetweenspace",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Slip Between Space",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Remove the Warden from the battlefield and place it in a new space in range 5.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_primalstarseed",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "summon": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Primal Starseed",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Warden chooses a foe, then summons a primal star-seed exactly 4 spaces away from them.",
+                "glossary": [
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                           
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_wardenoftheaeongate_starseed"
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_chainsoffate",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Chains of Fate",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Warden chains a foe in range 6 to an adjacent space. That foe becomes vulnerable, and if they end their turn in or adjacent to that space, they take fray damage three times and are stunned.",
+                "glossary": [
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            },                             
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                             
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of their next turn, they are shoved up to 3 spaces towards that space, ending in it if possible, then this effect ends. A character can only be affected by one set of chains at a time.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_primalmeteor",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Primal Meteor",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All foes not in cover from the jotunn must save or take fray damage twice and become vulnerable, or once on a successful save. Then, summon a height 1 meteor object adjacent to any character affected.",
+                "glossary": [
+                    {"val": "vulnerable", "id": "gl_vulnerable"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "summon", "id": "gl_summon"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Round 3+:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray damage three times on a failed save.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Round 5+:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray damage five times on a failed save.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_primalsisyphus",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Primal Sisyphus",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Mark a character with a d6 rolled time effect, and put a marker on their current location when marked. When the time effect runs out, remove them from the battlefield and return them to the marker, or as close as possible if the space is occupied. Then end this mark.",
+                "glossary": [
+                    {"val": "Mark", "id": "gl_mark"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_primalpolaris",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Primal Polaris",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Mark a visible space with a d6 time effect. Roll 1d6 for turns remaining.",
+                "glossary": [
+                    {"val": "Mark", "id": "gl_mark"}
+                ]
+            },                          
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                          
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "When the effect goes off, a meteor smashes into the space, inflicting [D]+fray divine damage in a small blast area effect centered on the space to all foes within, ending this effect. Foes in the center space are shattered.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "divine", "id": "gl_divine"},
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "shattered", "id": "gl_shattered"}
+                ]
+            },                          
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                          
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Warden can only have up to three of these spaces active at once, and can choose which to replace if it places a new one.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_staffofeternalorder",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 6,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Staff of Eternal Order",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "AutoHit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a time effect, centered on the target and moving with them. Roll 1d6 for turns remaining. The effect deals [D]+fray divine damage when it triggers to all characters other than the warden that are sharing the same row or column of the battlefield as that character.",
+                                    "glossary": [
+                                        {"val": "[D]", "id": "gl_damagedice"},
+                                        {"val": "fray", "id": "gl_fray"},
+                                        {"val": "divine", "id": "gl_divine"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_wardenoftheaeongate_comestion"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_comestion",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 6,
+            "combo": true,
+            "unerring": true,
+            "pierce": true,
+            "true_strike": true,
+            "burst": 2,
+            "burst_target": "target"
+        },
+        "eventtags": {},
+        "name": "Comestion",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Create a height 1 meteor object adjacent to the attack target.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_wardenoftheaeongate_nemesis"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_wardenoftheaeongate_nemesis",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Nemesis",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "If target is affected by one or more time effects, they take 2 damage, once, per tick on the highest time effect die, then all time die affecting them are re-rolled, taking the re-roll as the new result.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Then, that foe becomes vulnerable.",
+                                    "glossary": [
+                                        {"val": "vulnerable", "id": "gl_vulnerable"}
+                                    ]
+                                }]
+            }
+                        ]
+    },
+    {
         "id": "af_jotunn_keeperoftheeldflame_bladeofcreation",
         "type": "Ability",
         "source": "core",

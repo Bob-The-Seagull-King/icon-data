@@ -1272,6 +1272,34 @@
         "limit": 0
     },
     {
+        "id": "sm_wardenoftheaeongate_starseed",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "phasing": true
+        },
+        "eventtags": {},
+        "name": "Star Seed",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The seed is keyed to a specific character. At the start of that character’s turn, or after that character uses any ability and the ability resolves, the seed moves 1 space towards them. If the seed would enter the space of any foe, it explodes for a large blast area effect, destroying it. Foes inside must save or take 6 divine damage, twice, or just 2 divine damage twice on a successful save. The star-seed persists for the rest of combat, but if it it caught in the area of Primal Polaris or an adjacent space to an Eternal star, it fizzles out and is destroyed.",
+                                    "glossary": [
+                                        {"val": "large blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"},
+                                        {"val": "divine", "id": "gl_divine"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

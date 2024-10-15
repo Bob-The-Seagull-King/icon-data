@@ -7177,5 +7177,119 @@
             }
         ],
         "chapter": 2
+    },
+    {
+        "id": "fj_jotunn_legend_wardenoftheaeongate",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Warden of the Aeongate",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_legend",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"The rarest and most powerful Tethians in Arden Eld, beings imbued with a tiny fragment of true divine power, who guard the many-pillared gates at the high and low places of the earth. What lies beyond the gates is a matter of deep theosophical speculation. Some believe them to be a portal to great treasures. Still others believe beyond them lies the Garden of Eyoning, the place where the fruit of immortality was cultivated. Other, more pessimistic observers believe it to be a plane of deepest abyss, and the gate wardens are not guarding the gates from the outside, but defending the outside world from the gates."
+            },
+            {
+                "tags": {"desc_type":"gap"},
+                "content":""
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"The church of the Chanters believe beyond the gates is the Highest House, the seat of the Creators that sat even above the Titans, and the final (and thankfully unrealized) conquest goal of the Arken Imperium. Whether the House is empty or occupied is unknown and a frequent topic of dogma."
+            },
+            {
+                "tags": {"desc_type":"gap"},
+                "content":""
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"The point is moot anyway, as nobody, not even the Imperium, was able to fight its way past a gate warden."
+            }
+        ],
+        "stats":{"size": 2, "hp": 40},
+        "actions":["af_jotunn_wardenoftheaeongate_severmortalthread","af_jotunn_wardenoftheaeongate_slipbetweenspace","af_jotunn_wardenoftheaeongate_primalstarseed","af_jotunn_wardenoftheaeongate_chainsoffate","af_jotunn_wardenoftheaeongate_primalmeteor","af_jotunn_wardenoftheaeongate_primalsisyphus","af_jotunn_wardenoftheaeongate_primalpolaris","af_jotunn_wardenoftheaeongate_staffofeternalorder"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_legend_divinepresence","tf_jotunn_wardenoftheaeongate_timehealsall","tf_jotunn_wardenoftheaeongate_tidesoftime","tf_jotunn_wardenoftheaeongate_unmoor"],
+        "removed_traits":[],
+        "category":"legend",
+        "phases":[
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Warden starts combat in this Phase, and enters Phase II when reduced to 0 HP and defeated. It then alters time to a timeline where it wasn’t defeated, then reduces its maximum hp."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_jotunn_wardenoftheaeongate_eternalstar_phi"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Warden enters this phase after being defeated for the first time, and enters Phase III when reduced to 0 HP and defeated. It then alters time to a timeline where it wasn’t defeated, then reduces its maximum hp."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Warden is returned to 50% max and current hp."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_jotunn_wardenoftheaeongate_eternalstar_phii","af_jotunn_wardenoftheaeongate_keyofexistence_phii"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Warden enters this phase after being defeated for the second time, and is finally defeated when reduced to 0 HP in phase 3."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Warden is returned to 25% max and current hp."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "It becomes immobile for the duration of this round except for its slip between space ability.",
+                        "glossary": [
+                            {"val": "immobile", "id": "gl_immobile"}
+                        ]
+                    }
+                ],
+                "name": "Phase III",
+                "actions": ["af_jotunn_wardenoftheaeongate_eternalstar_phiii","af_jotunn_wardenoftheaeongate_keyofexistence_phiii"],
+                "traits": [],
+                "stats": {}
+            }
+
+        ],
+        "tactics":[           
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Warden is a fight that requires heavily on good turn ordering by player characters, true to its theme. Its time effects are heavily telegraphed, but hit extremely hard. It can use Primal Sisyphus and Chains of Fate to pull characters back into Polaris or Eternal Star, or yank them into a bad position for Staff of Eternal Order’s time effect. Characters can ameliorate this somewhat with the Unmoor aura, making the character bearing it very important. At phase III, characters will have very little time to burn the Warden down before it flattens them with divine meteors."
+            }
+        ],
+        "chapter": 3
     }
 ]
