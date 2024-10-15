@@ -11648,6 +11648,760 @@
         ]
     },
     {
+        "id": "af_scavenger_goons_yesboss",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Yes Boss",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray, twice.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The acting goon may rush 2 before this attack.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All other characters standing adjacent to one or more goons take 2 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_goons_yougotitboss",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "You Got it Boss",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Up to two goons can rush 1, then daze an adjacent foe. Dazed foes take 4 damage instead.",
+                "glossary": [{"val": "rush", "id": "gl_rush"}, {"val": "daze", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_goons_fillemwithdaylight",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "round": "3+",
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Fill Em with Daylight",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 4 of any goon takes 3 piercing damage, once, per Goon in range 4. This damage cannot reduce a foe past 1 hp.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_tollkin_barricadeslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Barricade Slam",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_tollkin_buildbarricade",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Barricade",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tollkin creates a line 4 terrain effect in free space, with at least one space adjacent. The effect is difficult terrain, the Tollkin deals bonus damage to characters in the area, and foes that enter or exit the area are weakened.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "weakened", "id": "gl_weakened"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_tollkin_greatgoldenknuckles",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Great Golden Knuckles",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is shoved 2 for every valuables token the Tollkin is holding.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 4 damage, then 4 damage again, once for every valuables token the Tollkin is holding."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_judge_longarmofthelaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Long Arm of the Law",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters adjacent to the Judge in the area take double damage and are shoved 3.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_judge_lock",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Lock",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The judge throws a bola at a foe in range. That foe either takes 4 damage or becomes weakened and slashed (foe chooses).",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}, {"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_judge_stock",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Stock",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The judge shoves an adjacent foe 1 and deals them 2 damage, then rushes 1.",
+                        "glossary": [{"val": "shoves", "id": "gl_shove"}, {"val": "rushes", "id": "gl_rush"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_judge_smokingbarrel",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "requires": "usable when bloodied"
+        },
+        "eventtags": {},
+        "name": "Smoking Barrel",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Repeat the following effect three times:"
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Rush 1, then ",
+                        "glossary": [{"val": "Rush", "id": "gl_rush"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Area effect: ",
+                        "glossary": [{"val": "Area effect", "id": "gl_areaeffect"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "medium blast, fray damage, and shove 1.",
+                        "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_redhand_collectbounty",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "unerring": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Collect Bounty",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Can only be used against bloodied targets or the Bounty Target.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Slay:",
+                "glossary": [{"val": "Slay", "id": "gl_slay"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gain +2 valuables."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_redhand_kickoff",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Kick Off",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Redhand flies 1. Before they fly, they may shove an adjacent character 1 space, then deal 2 damage to them if they are a foe. If they do, they fly 3 instead.",
+                        "glossary": [{"val": "flies", "id": "gl_flying"}, {"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_redhand_lasso",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Lasso",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 4 is shoved 1 towards the redhand.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Free action."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Against the bounty target, shoves them 2 instead and dazes them.",
+                        "glossary": [{"val": "shoves", "id": "gl_shove"}, {"val": "dazes", "id": "gl_dazed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_redhand_stunbomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "blast_size": "small",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Stun Bomb",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes are dazed. Dazed foes or the bounty target takes 4 damage.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_scum_ratout",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1
+        },
+        "eventtags": {},
+        "name": "Rat Out",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Scum or one of its allies in range 2 is targeted by an attack."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The attacker must save. On a successful save, the attack gains 1 curse. On a failed save, the Scum chooses a different ally other than the attacker within range 2 of the Scum. That character becomes the new target of the attack, regardless of range or line of sight.",
+                        "glossary": [{"val": "1 curse", "id": "gl_curse"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_scum_smack",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true
+        },
+        "eventtags": {},
+        "name": "Smack",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Autohit:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Fray damage.",
+                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_scum_dropscraps",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Drop Scraps",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Scum drops a valuables token in an adjacent space."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_scum_mastersteal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Master Steal",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe has something stolen. They can recover the stolen item by hitting the Scum with an attack from within range 3. The Scum can only steal one of each item, but can steal from a different character each time."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Weapon:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is pacified+.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Armor:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe cannot benefit from armor or resistance.",
+                        "glossary": [{"val": "armor", "id": "gl_armor"}, {"val": "resistance", "id": "gl_resistance"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Boots:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe cannot dash or rush.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_aurelian_takemeasure",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Take Measure",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and increase Tally by 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_aurelian_count",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Count",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Increase Tally by 1."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_aurelian_incentivize",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Incentivize",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The aurelian either puts down a valuables token in range, or allows an ally in range 3 to dash 3.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_aurelian_weightofconscience",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "multimark": true,
+            "requires": "3+ Tally, reduces Tally by 1"
+        },
+        "eventtags": {},
+        "name": "Weight of Conscience",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aurelian marks a foe in range 5. While marked, the foe can only move a maximum of 3 spaces a round, no matter their abilities or speed. A foe can end this mark by not moving at all for their entire turn.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_aurelian_liftburdens",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "multimark": true,
+            "requires": "6+ Tally, reduces Tally by 2"
+        },
+        "eventtags": {},
+        "name": "Lift Burdens",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aurelian marks an ally in range 5. While marked, the ally gains flying, evasion, dodge and their attacks deal bonus damage.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "flying", "id": "gl_flying"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "dodge", "id": "gl_dodge"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_aurelian_collect",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "multimark": true,
+            "requires": "10 Tally, resets Tally"
+        },
+        "eventtags": {},
+        "name": "Collect",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Every foe on the battlefield sacrifices down to 50% of their maximum hp. Foes at 50% hp sacrifice down to 25%. Foes at 25% hp or lower are defeated.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
         "id": "af_imperial_heavy_brutalstrike",
         "type": "Ability",
         "source": "core",

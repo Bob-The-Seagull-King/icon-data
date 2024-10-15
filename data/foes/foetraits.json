@@ -2917,6 +2917,138 @@
         ]
     },
     {
+        "id": "tf_scavenger_goons_loothauler",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Loot Hauler",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Goons can pick up valuables tokens. Allies of goons can take valuables tokens from them by entering or exiting a space adjacent to the goon holding one."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_tollkin_immovableobject",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immovable Object",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Cannot be shoved, teleported, or removed from the battlefield.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "teleported", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_tollkin_auraoftaxes",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Taxes",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. Foes that enter or exit the aura stop moving and become immobile until the end of the current turn. They can ignore this effect by immediately paying 1 valuables token to the Tollkin, which the Tollkin picks up. If they have paid the toll, they ignore this trait for the rest of combat.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "immobile", "id": "gl_immobile"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_judge_tithelaw",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tithe-Law",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can always avoid effects from the Judge by paying the Judge 1 valuables token, or sacrificing 25% of their max hp.",
+                "glossary": [{"val": "sacrificing", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_judge_heavycaliber",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heavy Caliber",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The judge’s abilities have collide: fray damage and foe is slashed.",
+                "glossary": [{"val": "collide", "id": "gl_collide"}, {"val": "fray", "id": "gl_fray"}, {"val": "slashed", "id": "gl_slashed"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_redhead_unflatteringbountyposter",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unflattering Bounty Poster",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Redhand starts combat by unveiling an unflattering poster of bounty target, chosen randomly from all player characters. The Redhand’s has evasion against that character and their abilities are stronger against them.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_scum_traitmodifications",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Trait Modifications",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "No diaga. Would not heal you if your life depended on it."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_scum_cowardlybynature",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cowardly by Nature",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Scum surrenders and ends the fight if it’s the only character left."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_aurelian_tally",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tally",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aurelian has a d10 power die and Aura 2. Whenever a foe uses an attack against the Aurelian or any of its allies in the aura, tick the die up by 1. Also tick Tally up by 1 every time the Aurelian picks up a valuables token. Certain actions require higher or lower tally.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}, {"val": "Aura", "id": "gl_aura"}]
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",

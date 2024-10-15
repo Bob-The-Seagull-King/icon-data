@@ -3285,7 +3285,159 @@
         "category": "job",
         "phases": [],
         "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_scavenger_unique_goons",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Goons",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": ""
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_goons_yesboss", "af_scavenger_goons_yougotitboss", "af_scavenger_goons_fillemwithdaylight"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_goons_loothauler"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_unique_tollkin",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tollkin",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Strong-armed and thick-bodied scavengers that have learned a more leisurely lifestyle of blocking a road, bridge, or passageway and hiring a few friends to make passing travelers’ life miserable."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_scavenger_tollkin_barricadeslam", "af_scavenger_tollkin_buildbarricade", "af_scavenger_tollkin_greatgoldenknuckles"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_tollkin_immovableobject", "tf_scavenger_tollkin_auraoftaxes"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_unique_judge",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Judge",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "What passes for lawmen among the Scavengers. Shotgun wielding and dour, answering only to the Churn Barons."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_judge_longarmofthelaw", "af_scavenger_judge_lock", "af_scavenger_judge_stock", "af_scavenger_judge_smokingbarrel"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_judge_tithelaw", "tf_scavenger_judge_heavycaliber"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_unique_redhand",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Redhand",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Roaming bounty hunters that collect from the scavenger camps, and are more than happy to hunt down the foes of the churn barons - for the right price."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_redhand_collectbounty", "af_scavenger_redhand_kickoff", "af_scavenger_redhand_lasso", "af_scavenger_redhand_stunbomb"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_redhand_unflatteringbountyposter"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
         "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_unique_scum",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scum",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Misanthropic and ill-mannered dregs of Scavenger society that get their way through a combination of bootlicking, groveling, and plain old thievery."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_scum_ratout", "af_scavenger_scum_smack", "af_scavenger_scum_coverme", "af_scavenger_scum_dropscraps", "af_scavenger_scum_mastersteal"],
+        "removed_actions": ["af_class_leader_diaga"],
+        "traits": ["tf_class_skirmisher_dodge", "tf_scavenger_scum_traitmodifications", "tf_scavenger_scum_cowardlybynature"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_unique_aurelian",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aurelian",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Esoteric Priests of the Scavengers that worship the Crimson Titan of debt and greed. As rare and occult as their power is, they are often hired as accountants by particularly enterprising Churn Barons."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_aurelian_takemeasure", "af_scavenger_aurelian_count", "af_scavenger_aurelian_incentivize", "af_scavenger_aurelian_weightofconscience", "af_scavenger_aurelian_liftburdens", "af_scavenger_aurelian_collect"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance", "tf_scavenger_aurelian_tally"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
     },
     {
         "id": "fj_relict_mob_husk",
