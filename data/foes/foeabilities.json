@@ -8784,7 +8784,7 @@
             "action": 1,
             "attack": true,
             "type": "attack",
-            "True Strike": true
+            "true_strike": true
         },
         "eventtags": {},
         "name": "Smash",
@@ -16254,7 +16254,7 @@
             "action": 1,
             "attack": true,
             "type": "attack",
-            "True Strike": true
+            "true_strike": true
         },
         "eventtags": {},
         "name": "Pummel",
@@ -17285,7 +17285,7 @@
             "action": 1,
             "attack": true,
             "type": "attack",
-            "True Strike": true,
+            "true_strike": true,
             "line": 4
         },
         "eventtags": {},
@@ -18363,7 +18363,7 @@
             "action": 1,
             "attack": true,
             "type": "attack",
-            "True Strike": true,
+            "true_strike": true,
             "range": 2
         },
         "eventtags": {},
@@ -19994,7 +19994,7 @@
             "action": 1,
             "attack": true,
             "type": "attack",
-            "True Strike": true,
+            "true_strike": true,
             "line": 4,
             "combo": true
         },
@@ -20269,6 +20269,321 @@
                     {"val": "die", "id": "gl_powerdie"}   ,                        
                     {"val": "piercing", "id": "gl_piercing"}                
                 ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_primallevin",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Primal Levin",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the Rider creates a number of small blast area effects equal to the round number anywhere on the battlefield, targeting foes if possible.",
+                "glossary": [                   
+                    {"val": "small blast", "id": "gl_blast"},                        
+                    {"val": "area effects", "id": "gl_areaeffect"}
+                ]
+            },                         
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                         
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of the round, massive bolts of lightning strike these spaces. Foes in the area of at least one bolt take divine damage equal to 2 + the round number.",
+                "glossary": [   
+                    {"val": "divine", "id": "gl_divine"}                
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_lingerspark",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Lingering Spark",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Create a Lingering Spark adjacent to the first foe that acts in the round at the start of their turn, a 1 space terrain effect.",
+                "glossary": [                   
+                ]
+            },                         
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Any foe entering the spark’s space can swap their polarity, but take 1 piercing damage. Each spark is destroyed at the end of the round it is created.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_joyouscombat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Joyous Combat",
+        "description":  [   
+            
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "All adjacent foes must choose:"
+                                }]
+            },                               
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Be shoved 2.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Take 5 damage from the Jotunn."
+                    }
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_grandfulmination",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Grand Fulmination",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A free space in range of the rider crackles with lightning.",
+                "glossary": [                   
+                ]
+            },                         
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "The next time a foe enters that space for any reason, they have their polarity flipped, then must save or take 3 damage three times and be weakened, or just once on a successful save. The space lasts until the end of combat.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_jolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Jolt",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range takes 3 damage. They must then save or become weakened and have their polarity flipped. Weakened foes fail the save.",
+                "glossary": [  
+                    {"val": "weakened", "id": "gl_weakened"},
+                    {"val": "Weakened", "id": "gl_weakened"}                 
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_bladeofthestormlord",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "arc": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Blade of the Storm Lord",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "May rush up to 2 before this attack.",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Shove all foes 1.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_rideroftheprimalstorm_greatbolt"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_greatbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "line": 10,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Great Bolt",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target crackles with a static charge. If they don’t end their next turn adjacent to another character, they take 3 piercing damage, then this effect ends.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_jotunn_rideroftheprimalstorm_cracklingbow"
+            }
+                        ]
+    },
+    {
+        "id": "af_jotunn_rideroftheprimalstorm_cracklingbow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 4,
+            "unerring": true,
+            "blast_size": "large",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Crackling Bow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target crackles with a static charge. If they end their next turn adjacent to another character they take 3 piercing damage and this effect ends. This effect is exclusive with Great Bolt.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
             }
                         ]
     },

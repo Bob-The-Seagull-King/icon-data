@@ -7019,5 +7019,84 @@
         "phases":[],
         "tactics":[],
         "chapter": 3
+    },
+    {
+        "id": "fj_jotunn_legend_rideroftheprimalstorm",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Rider of the Primal Storm",
+        "faction_id": "fc_jotunn",
+        "class_id": "cl_foe_legend",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"The Great Hall Erenhelion had among its number the most exalted Aetnir, warriors of exceptional skill and martial prowess. These demigods rode primal titan steeds born of the wind and storm, six-legged monstrous horses that could ride on their air as easily as the earth. They were bridled with gold and hitched to the Hall, as it was the Riders’ holy task to pull it through the air."
+            },
+            {
+                "tags": {"desc_type":"gap"},
+                "content":""
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Now Erenhelion is lost, shattered, and its fragments scattered across the land. The Riders are less than a dozen in number but still ride the great storms that gather over the deep oceans of Arden Eld. When such a storm sweeps over the land, the joyous war cries of a Rider and the thunder of unearthly hooves can sometimes be felt in the bones of the mortals that cower in their flimsy shelters below."
+            },
+            {
+                "tags": {"desc_type":"gap"},
+                "content":""
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Riders are legendary, boisterous warriors that only descend to the earth for tasks of great import or to stave off their ancient melancholy with the thrill of battle, largely leaving the earthly realm alone. Stories abound of foolish and hubristic mortal heroes challenging the storm, only for the storm to answer. They are scions of destruction and the lightning is at their beck and call."
+            }
+        ],
+        "stats":{},
+        "actions":["af_jotunn_rideroftheprimalstorm_lingerspark","af_jotunn_greatstormkindred_sturmreiten","af_jotunn_rideroftheprimalstorm_joyouscombat","af_jotunn_rideroftheprimalstorm_grandfulmination","af_jotunn_rideroftheprimalstorm_jolt","af_jotunn_rideroftheprimalstorm_bladeofthestormlord"],
+        "removed_actions":[],
+        "traits":["tf_jotunn_legend_divinepresence","tf_jotunn_rideroftheprimalstorm_staticcharge","tf_jotunn_rideroftheprimalstorm_judgementbolt"],
+        "removed_traits":[],
+        "category":"legend",
+        "phases":[
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider starts combat in this Phase, and swaps to Phase II when bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Rider enters this phase when bloodied.",
+                        "glossary":[{"val":"bloodied","id":"gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_jotunn_rideroftheprimalstorm_primallevin"],
+                "traits": ["tf_jotunn_rideroftheprimalstorm_callsteed"],
+                "stats": {}
+            }
+
+        ],
+        "tactics":[           
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fighting this boisterous jotunn is mostly about managing polarity. Characters that don’t position correctly can quickly be cut down by the jotunn’s numerous effects that require a character be adjacent to allies or apart from allies. Characters can ameliorate this somewhat with good positioning, by using Lingering Sparks to flip their polarity, or by walking into Grand Fulmination."
+            }
+        ],
+        "chapter": 1
     }
 ]

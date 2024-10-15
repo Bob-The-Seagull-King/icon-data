@@ -2773,7 +2773,7 @@
         "name": "Aegis of Erenhelion",
         "category": "fc_jotunn",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_jotunn_legend_rideroftheprimalstorm",
         "usetype": "expedition",
         "description": [
             {
@@ -2793,7 +2793,7 @@
         "name": "Bridle Shard",
         "category": "fc_jotunn",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_jotunn_legend_rideroftheprimalstorm",
         "usetype": "",
         "description": [
             {

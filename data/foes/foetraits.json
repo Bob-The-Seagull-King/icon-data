@@ -4718,6 +4718,133 @@
           ]
     },
     {
+        "id": "tf_jotunn_legend_divinepresence",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Divine Presence",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to stun.",
+                "glossary": [
+                    {"val": "Immune", "id": "gl_immune"},
+                    {"val": "stun", "id": "gl_stunned"}
+                ]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_rideroftheprimalstorm_staticcharge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Static Charge",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, roll 1d6 for each foe (or flip a coin). On tails, or 1-3, the foe gains a negative charge. On a 4+, the foe gains a positive charge. These charges are ongoing effects:",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If a character ends their turn adjacent to a character with the same charge as them, both characters are each shoved 2 away from each other.",
+                        "glossary": [
+                            {"val": "shoved", "id": "gl_shove"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If a character ends their turn within range 2 of a character with an opposite charge, they are shoved towards that character until adjacent and become stuck to them. While stuck:",
+                        "glossary": [
+                            {"val": "shoved", "id": "gl_shove"}
+                        ],
+                        "subcontent": [
+                            {
+                                "tags": {"desc_type" : "list"},
+                                "content": "",
+                                "subcontent": [                    
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "If either character attempts to break adjacency, or is moved by another character in a way that would break adjacency, they must first save.",
+                                        "glossary": [
+                                        ]
+                                    },                    
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "On a successful save, they can move or be moved normally.",
+                                        "glossary": [
+                                        ]
+                                    },                    
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "On a failed save, they become unable to exit adjacency with the character they are stuck to for any reason for the rest of the current turn (they can still move normally, as long as they don’t break adjacency).",
+                                        "glossary": [
+                                        ]
+                                    },                    
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Being shoved by like polarity (see above) bypasses this save and always works.",
+                                        "glossary": [
+                                            {"val": "shoved", "id": "gl_shove"}
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+          ]
+    },
+    {
+        "id": "tf_jotunn_rideroftheprimalstorm_judgementbolt",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Judgement Bolt",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round, roll 1d6. At the end of the round, all foes are hit by divine lightning, the effect of which depends on the roll.",
+                "glossary": [
+                ]
+            }  ,                              
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "(1-3) Judgement of Cowards:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Foes take 2 divine damage. Increase this to 6 divine damage if they are adjacent to one or more of their allies.",
+                                            "glossary": [{"val": "divine", "id": "gl_divine"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "(4-6) Judgement of the Brave:",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "Foes take 2 divine damage. Increase this to 6 divine damage if they are not adjacent to one or more of their allies.",
+                                            "glossary": [{"val": "divine", "id": "gl_divine"}]
+                                        }]
+                    }
+                ]
+            } 
+          ]
+    },
+    {
         "id": "tf_general_quintessent_aetherstorm",
         "type": "Trait",
         "source": "core",
