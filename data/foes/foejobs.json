@@ -3382,7 +3382,7 @@
         "stats": {},
         "actions": ["af_scavenger_redhand_collectbounty", "af_scavenger_redhand_kickoff", "af_scavenger_redhand_lasso", "af_scavenger_redhand_stunbomb"],
         "removed_actions": [],
-        "traits": ["tf_scavenger_redhand_unflatteringbountyposter"],
+        "traits": ["tf_scavenger_redhead_unflatteringbountyposter"],
         "removed_traits": [],
         "category": "unique",
         "phases": [],

@@ -12212,6 +12212,25 @@
         ]
     },
     {
+        "id": "af_scavenger_scum_coverme",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Cover Me!",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All allies in range of the Scum may dash 2 towards the Scum.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
         "id": "af_scavenger_scum_mastersteal",
         "type": "Ability",
         "source": "core",
