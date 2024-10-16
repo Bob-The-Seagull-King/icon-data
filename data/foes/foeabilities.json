@@ -14624,6 +14624,202 @@
         ]
     },
     {
+        "id": "af_imperial_sharpshooter_deploybarricade",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "Deploy Barricade",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " The sharpshooter creates a height 1 barricade object in an adjacent space."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Adjacent characters other than the sharpshooter are shoved 2 away from it when it is created.",
+                "glossary":[{"val":"shoved","id":"gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_hotshot_napalmshell",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Napalm Shell",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Gunner marks a foe in range.",
+                "glossary": [{"val":"marks", "id":"gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, at the end of their turn that foe has a dangerous terrain space created under it and any of its adjacent allies.",
+                "glossary": [{"val":"marked", "id":"gl_mark"}, {"val":"dangerous terrain", "id":"gl_dangerousterrain"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "It can save against this mark at the end of their turn, ending it on a success.",
+                "glossary": [{"val":"mark", "id":"gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_spotter_taketheshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Take The Shot",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Spotter marks a foe in range 8 for an off-battlefield sniper. They choose a side of the battlefield.",
+                "glossary": [{"val":"marks", "id":"gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that character’s turn, if they are not in cover from that side of the battlefield, they must save or take [D]+fray, or fray on a successful save.",
+                "glossary": [{"val":"[D]", "id":"gl_damagedice"}, {"val":"fray", "id":"gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Spotter can change the side of the battlefield at the start of their turn."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can end this mark by moving 5 or more spaces on their turn.",
+                "glossary": [{"val":"marks", "id":"gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_cannoneer_fullauto",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Full Auto",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in this stance, the this character is immobile, but gains the following benefits:",
+                "glossary": [{"val":"stance", "id":"gl_stance"}, {"val":"immobile", "id":"gl_immobile"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• All their attacks gain +1 boon, deal bonus damage, and deal 2 piercing damage to all foes in range 2 of their target as an area effect.",
+                "glossary": [{"val":"+1 boon", "id":"gl_boon"}, {"val":"bonus damage", "id":"gl_bonusdamage"}, {"val":"piercing", "id":"gl_piercing"}, {"val":"area effect", "id":"gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Their abilities have no maximum range."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They can only exit this stance by spending 1 action and ending their turn."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_cannoneer_collateraldamage",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "round": "3+"
+        },
+        "eventtags": {},
+        "name": "Collateral Damage",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Cannoneer blasts a character in range with a hail of bullets, dealing 2 piercing damage to them, then creates a medium blast area effect on the other side of that character.",
+                "glossary": [{"val":"piercing","id":"gl_piercing"}, {"val":"medium blast", "id":"gl_blast"}, {"val":"area effect", "id":"gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters in the area take 2 piercing damage, once, per character caught in the area.",
+                "glossary": [{"val":"piercing","id":"gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_janissary_headshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Headshot",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range at 25% HP or lower must save. On a failed save, they are defeated, ignoring all other effects. On a successful save, they are reduced to 1 hp."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_janissary_supressivefire",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 8,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Supressive Fire",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Janissary marks a foe in range 8.",
+                "glossary": [{"val":"marks", "id":"gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, that foe take 2 piercing damage after they use any ability other than their standard move.",
+                "glossary": [{"val":"marked", "id":"gl_mark"}, {"val":"piercing","id":"gl_piercing"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If they are in cover from the Janissary, they can ignore this damage."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If they don’t take this damage for their entire turn, this mark ends.",
+                "glossary": [{"val":"mark", "id":"gl_mark"}]
+            }
+        ]
+    },
+    {
         "id": "af_demon_heavy_bloodfeed",
         "type": "Ability",
         "source": "core",

@@ -7103,6 +7103,131 @@
         "chapter": 3
     },
     {
+        "id": "fj_imperial_artillery_sharpshooter",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Sharpshooter",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content": "A college-trained gunner with a pedigree in precision combat. Usually involved in some kind of betting board back at the barracks."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_sharpshooter_deploybarricade"],
+        "removed_actions":[],
+        "traits":["tf_imperial_sharpshooter_brace"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_artillery_hotshot",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Hotshot",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content": "Gunners with nasty, custom tooled chemical shells that ignite on contact."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_hotshot_napalmshell"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_artillery_spotter",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Spotter",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content": "Armed with cloaks and long ranged scopes, these gunners use colorful semaphore to signal their partners."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_spotter_taketheshot"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_artillery_cannoneer",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Cannoneer",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content": "Using heavy, multi-barrel arkentech gatling cannons, these heavy troopers can lay down hails of aether-charged bullets."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_cannoneer_fullauto","af_imperial_cannoneer_collateraldamage"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_artillery_janissary",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Jannisary",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content": "The cream of the crop, recruited from high ranking imperial guard, wielding expertly rifled long guns. Stony faced, steely-nerved, and wearing incredibly ornamental armor that is frequently laughed at by the rank and file."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_janissary_headshot", "af_imperial_janissary_supressivefire"],
+        "removed_actions":[],
+        "traits":["tf_imperial_janissary_expertoverwatch"],
+        "removed_traits":[],
+        "category":"job",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
+    },
+    {
         "id": "fj_jotunn_heavy_beastbloodjotunn",
         "type":"FoeJob",
         "source":"core",

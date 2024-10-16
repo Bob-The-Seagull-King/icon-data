@@ -3509,6 +3509,44 @@
         ]
     },
     {
+        "id": "tf_faction_sharpshooter_brace",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brace",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When adjacent to an object, increase the range of all abilities with a listed range by +4."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_janissary_expertoverwatch",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Expert Overwatch",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Janissary is a masterful gunner, granting the following benefits:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• When Overwatch’s area is created, the Janissary can deal 2 piercing damage to all foes inside as an area effect.",
+                "glossary":[{"val":"piercing","id":"gl_piercing"}, {"val":"area effect", "id":"gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Any foe entering or exiting Overwatch’s area takes 2 piercing damage from the Janissary, but no more than once a turn.",
+                "glossary":[{"val":"piercing","id":"gl_piercing"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",
