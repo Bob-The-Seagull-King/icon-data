@@ -18051,6 +18051,236 @@
         ]
     },
     {
+        "id": "af_hob_twiggan_twistingthorn",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Twisting Thorn",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Repeat the following effect twice:"
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "A foe in range 3 takes 1 damage, then is shoved 1 in any direction.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_ruddcap_poisonburst",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Poison Burst",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ruddcap releases a burst of poisonous spores that becomes a small blast blast area of difficult terrain that lasts until the hob uses this ability again.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area", "id": "gl_areaeffect"},
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foes that start or end their turn in the area are weakened and take 2 damage. Weakened foes are stunned.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"},{"val": "Weakened", "id": "gl_weakened"},{"val": "stunned", "id": "gl_stunned"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Range 4 and medium Blast.",
+                        "glossary": [
+                            {"val": "medium blast", "id": "gl_blast"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_lesserboulderhob_mudslide",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Mudslide",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob rushes 3 with phasing, then creates a terrain effect in the spaces it just passed through.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"},
+                    {"val": "phasing", "id": "gl_phasing"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Terrain Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Characters that enter the space for the first time on their turn or start their turn there must save or slip and be shoved 2 in a direction of the hob’s choice.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greatcarphob_divekick",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Dive Kick",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob rushes up to 2 spaces in a straight line, then an adjacent foe is shoved the number of spaces the hob rushed.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"},
+                    {"val": "rushed", "id": "gl_rush"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Up to 5 spaces instead.",
+                        "glossary": [
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greatcarphob_dragunder",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Drag Under",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe takes fray damage, and remove both the Hob and that foe from play as they dive into a pool of magicked water. Both return to play at the start of that foe’s next turn, in any free space in range 3 of their original location.",
+                "glossary": [
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fangedhob_tonguelash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Tongue Lash",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is shoved 1 towards the Hob.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Range 5, and shove 3.",
+                        "glossary": [
+                            {"val": "shoved", "id": "gl_shove"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fangedhob_latchon",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Latch On",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob ends its turn and clamps fangs down on an adjacent foe’s leg. The Hob becomes unstoppable, and moves into and shares their space, moving when they dash, rush, fly or teleport. After any ability resolves that damages that foe, the hob deals 2 damage to them and shoves them 1 in any direction.",
+                "glossary": [
+                    {"val": "unstoppable", "id": "gl_unstoppable"},
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "rush", "id": "gl_rush"},
+                    {"val": "fly", "id": "gl_flying"},
+                    {"val": "teleport", "id": "gl_teleport"},
+                    {"val": "shoves", "id": "gl_shove"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the Hob’s next turn, they detach, ending this effect. It also ends if the Hob and their target are separated for any reason.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_jotunn_heavy_mightysmite",
         "type": "Ability",
         "source": "core",

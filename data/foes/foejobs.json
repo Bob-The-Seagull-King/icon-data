@@ -5665,6 +5665,136 @@
         "chapter": 1
     },
     {
+        "id": "fj_hob_heavy_twiggan",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Twiggan",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This sturdy, but still diminutive Hob, is the result of a Spriggan animating a body made up of sticks and thorny branches."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_twiggan_twistingthorn"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_heavy_ruddcap",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruddcap",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These ornery, man sized mushroom spirits use rubbery fists to pummel their foes."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_ruddcap_poisonburst"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_heavy_lesserboulderhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lesser Boulderhob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lesser mountain hobs, these hobs resemble mossy boulders, and will sometimes go for weeks without moving."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_lesserboulderhob_mudslide"],
+        "removed_actions": [],
+        "traits": ["tf_general_knuckle_heavyarmor"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_heavy_greatcarphob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Carp Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This fishlike Hob abducts foes and drags them into pools of aethereal water in order to ‘rescue’ them from the air. It often forgets other creatures can’t breath underwater."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_greatcarphob_divekick","af_hob_greatcarphob_dragunder"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_heavy_fangedhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fanged Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These fuzzy, animalistic hobs are, oddly, quite friendly. Their idea of expressing happiness is chomping down on a leg with their enormous fangs and not letting go."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_fangedhob_tonguelash","af_hob_fangedhob_latchon"],
+        "removed_actions": [],
+        "traits": ["tf_special_counter"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_general_elite_archon",
         "type": "FoeJob",
         "source": "core",
