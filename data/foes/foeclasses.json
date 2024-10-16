@@ -120,5 +120,18 @@
         "traits": ["tf_class_mob_mob"],
         "actions": [],
         "class": "grey"        
+    },
+    {
+        "id": "cl_foe_unique",
+        "type": "FoeClass",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Unique",
+        "stats": {
+        },
+        "traits": [],
+        "actions": [],
+        "class": "icon"        
     }
 ]
