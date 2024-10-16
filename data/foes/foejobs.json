@@ -194,7 +194,7 @@
         "stats": {},
         "actions": ["af_general_berserker_bloodycrescent", "af_general_berserker_furiousleap"],
         "removed_actions": [],
-        "traits": ["tf_special_defiance", "tf_general_berserker_enrage"],
+        "traits": ["tf_special_defiance", "tf_faction_common_enrage"],
         "removed_traits": [],
         "category": "job",
         "phases": [],
@@ -3440,6 +3440,120 @@
         "chapter": 3
     },
     {
+        "id": "fj_scavenger_elite_mondo",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mondo",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Sometimes all you need is a really, really big guy."
+            }
+        ],
+        "stats": {
+            "hp": 80,
+            "size": 2,
+            "turns": 2
+        },
+        "actions": ["af_scavenger_mondo_mondodestroy", "af_scavenger_mondo_mondobash", "af_scavenger_mondo_mondospinninglariat", "af_scavenger_mondo_mondospiralcrusher"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy", "tf_faction_common_enrage", "tf_scavenger_mondo_ooohshiny"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_elite_hoarder",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hoarder",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Particularly savvy junk mages can amass a quite impressive collection of artifacts. Teetering under the weight of their hauls, which are often strapped to their backs, they often act as leaders, guides, or advisors to scavenger bands. Loathe to sell or part with any of their collection, they are nonetheless willing to use it to protect themselves when in danger."
+            }
+        ],
+        "stats": {
+            "hp": 64,
+            "turns": 2
+        },
+        "actions": ["af_scavenger_hoarder_scrapstorm", "af_scavenger_hoarder_pileitup", "af_scavenger_hoarder_weighdown", "af_scavenger_hoarder_greatjunkform"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_collector_greatjunkarmor", "tf_scavenger_hoarder_animatejunkgolem"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_elite_ringfinger",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ring Finger",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Master assassins and ‘problem solvers’ in the employ of Churn Barons and guild masters both. They use cloaks woven from special silk imbued with the Weeper’s Tears, a liquid collected deep underground and said to come from the eyes of the dead Night Titan. These cloaks render them completely invisible, the only traces they leave footprints in dust and stab wounds on their victims."
+            }
+        ],
+        "stats": {
+            "hp": 56,
+            "speed": 6,
+            "dash": 6,
+            "turns": 2
+        },
+        "actions": ["af_scavenger_ringfinger_paytheferryman", "af_scavenger_ringfinger_mug", "af_scavenger_ringfinger_blindingdust", "af_scavenger_ringfinger_dropcaltrops"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_ringfinger_leavetracks", "tf_scavenger_ringfinger_mastercloak"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_elite_churnbaron",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Churn Baron",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A wealthy boss or owner of a professional scavenger operation, usually incorporated as a guild or some kind of ‘legitimate’ looking enterprise. These operations work off sheer size, usually employing hundreds of underlings to explore dungeons and do everything from haul cartfuls of loot to scrap the gold off of statues. Each gets paid out very little, and the rest filters up the chain until it reaches the very well stuffed pockets of the Barons."
+            }
+        ],
+        "stats": {
+            "hp": 80
+        },
+        "actions": ["af_scavenger_churnbaron_toorichtocare", "af_scavenger_churnbaron_luckyday", "af_scavenger_churnbaron_fortunemaker", "af_scavenger_churnbaron_problemsolver", "af_scavenger_churnbaron_arkentechforcebeam", "af_scavenger_churnbaron_payoff", "af_scavenger_churnbaron_countmoney"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_churnbaron_arkentechhoverchair", "tf_scavenger_churnbaron_assets"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",
@@ -4601,7 +4715,7 @@
         "actions": ["af_beast_mob_packattack","af_beast_mob_huntingtactics","af_beast_mob_vicioushowl","af_beast_mob_dragdown"],
         "removed_actions": [],
         "traits": ["tf_faction_beast_cornered"],
-        "removed_traits": ["tf_faction_beast_enrage"],
+        "removed_traits": ["tf_faction_common_enrage"],
         "category": "unique",
         "phases": [],
         "tactics": [],
@@ -6205,7 +6319,7 @@
         },
         "actions": ["af_general_archon_blackheart","af_general_archon_ironblades","af_general_archon_greatslam","af_general_archon_greatshieldwall"],
         "removed_actions": [],
-        "traits": ["tf_faction_beast_enrage","tf_jotunn_hirsinn_sturdy"],
+        "traits": ["tf_faction_common_enrage","tf_jotunn_hirsinn_sturdy"],
         "removed_traits": [],
         "category": "elite",
         "phases": [],
@@ -6352,7 +6466,7 @@
                 ],
                 "name": "Phase II",
                 "actions": ["af_general_demolisher_lumberingcharge_phase2","af_general_demolisher_greatlash"],
-                "traits": ["tf_faction_beast_enrage","tf_general_legend_demolisher_frothingmad"],
+                "traits": ["tf_faction_common_enrage","tf_general_legend_demolisher_frothingmad"],
                 "stats": {}
             }
         ],
@@ -7585,7 +7699,7 @@
         "stats":{},
         "actions":["af_jotunn_aetnir_exalterenhelion","af_jotunn_nilfling_leap","af_jotunn_heavy_joyouscombat","af_jotunn_heavy_stormcunning","af_general_warrior_bullrush","af_jotunn_aetnir_titancut"],
         "removed_actions":[],
-        "traits":["tf_general_berserker_enrage"],
+        "traits":["tf_faction_common_enrage"],
         "removed_traits":[],
         "category":"unique",
         "phases":[],

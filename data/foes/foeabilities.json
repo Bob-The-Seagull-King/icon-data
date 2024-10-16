@@ -12421,6 +12421,692 @@
         ]
     },
     {
+        "id": "af_scavenger_mondo_mondodestroy",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "MONDO DESTROY!",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, Mondo chooses any foe. At the end of the round, Mondo rushes up to 6 spaces towards that foe, or until adjacent, with each space of the movement ending closer to the chosen foe. If Mondo ends this movement adjacent, they wallop the foe with awesome force. That foe is stunned and must save or take 2[D] + fray, twice, or just once on a successful save.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "stunned", "id": "gl_stunned"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_mondo_mondobash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "MONDO BASH",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage per valuables token Mondo or their target is holding. If 3+ tokens in total, deals an extra +[D] on hit or miss.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "+[D]", "id": "gl_damagedice"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_mondo_mondosmash"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_mondo_mondosmash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "true_strike": true,
+            "range": 2,
+            "blast_size": "medium",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "MONDO SMASH",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage per valuables token Mondo or any character in the area is holding. If 3+ tokens total, stuns all characters inside.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "stuns", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_mondo_mondospinninglariat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "MONDO SPINNING LARIAT",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mondo rushes 2, three times, in the same direction. Each time they finish a rush, they shove all adjacent characters 2.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_mondo_mondospiralcrusher",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "MONDO SPIRAL CRUSHER",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mondo flings an adjacent character high into the air, removing them from the battlefield, then chooses a space in range 3. At the start of that character’s next turn, they return to the battlefield in that space, or as close as possible if it’s occupied, dealing 5 damage to all adjacent characters. That character is weakened.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_hoarder_scrapstorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "pierce": true,
+            "blast_size": "small",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Scrapstorm",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and foe becomes vulnerable.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At Round 3+, deals bonus damage, becomes a medium blast, and also creates a valuables token in its area.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "medium blast", "id": "gl_blast"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_hoarder_pileitup",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Pile It Up",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hoarder creates a height 1 scrap pile object in a space in range. Characters adjacent to it when it is created takes 1 damage twice and are shoved 1. If created under a character, it pushes them up on top of it instead.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Greed:",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Increase damage, height and shove by +1.",
+                    "glossary": [{"val": "shove", "id": "gl_shove"}]
+                }]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_hoarder_weighdown",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Weigh Down",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hoarder causes junk to accumulate and stick to a foe of its choice in range. That foe is marked. While marked, the foe cannot dash or rush, and drops a valuables token in an adjacent space of their choice at the end of their turn. A foe can end this mark if they don’t move for their entire turn.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "dash", "id": "gl_dash"}, {"val": "rush", "id": "gl_rush"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_hoarder_greatjunkform",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Weigh Down",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hoarder transforms into junk, then swaps places with any free valuables token, removing and placing it."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_ringfinger_paytheferryman",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "boon": 1
+        },
+        "eventtags": {},
+        "name": "Pay the Ferryman",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This attack breaks Master Cloak. If this attack breaks Master Cloak, deals added base damage equal to twice the round number plus twice the number of valuables tokens the Ring Finger is holding."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Ring Finger may teleport 2 spaces before and after the attack.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_ringfinger_mug",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Mug",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is dazed. If they have a valuables token, that foe takes 3 damage, then the ring finger gains a valuables token.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_ringfinger_swindle",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Swindle",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a character in range 3, teleporting. Foes can save to avoid this effect.",
+                "glossary": [{"val": "teleporting", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_ringfinger_blindingdust",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Blinding Dust",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ring Finger throws blinding dust at a small blast location in range. Characters within take fray damage and must save or become blinded.",
+                "glossary": [{"val": "fray", "id": "gl_fray"}, {"val": "blinded", "id": "gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_ringfinger_dropcaltrops",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "terrain_effect": true,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Drop Caltrops",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Ring Finger creates a line 3 area of difficult and dangerous terrain.",
+                "glossary": [{"val": "area", "id": "gl_areaeffect"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_churnbaron_toorichtocare",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "type": "interrupt",
+            "interrupt": 1,
+            "costs": "3 Assets"
+        },
+        "eventtags": {},
+        "name": "Too Rich to Care",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Baron or an ally in range 3 is targeted by an ability."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The target gains resistance and unstoppable against the ability.",
+                        "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_churnbaron_luckyday",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "costs": "1 Assets"
+        },
+        "eventtags": {},
+        "name": "Lucky Day",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 6 gains a valuables token."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_churnbaron_fortunemaker",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "costs": "3 Assets",
+            "round": 1,
+            "range": 4,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Fortune Maker",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Baron chooses an ally in range and motivates them with promises of extreme wealth, marking them. That ally’s attacks can no longer miss and they can no longer fail saves.",
+                "glossary": [{"val": "marking", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_churnbaron_problemsolver",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "costs": "4 Assets",
+            "round": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Problem Solver",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Baron creates a Crony, a new character, in range. The Crony is an ally of the Baron that doesn’t take its turn independently, but acts on the Baron’s turn."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_scavenger_churnbaron_crony"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_crony_blunderbuss",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "range": 6,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Blunderbuss",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "5 damage."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Miss:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 damage."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "+2 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_crony_arkentechexplosives",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "range": 4,
+            "blast_size": "small",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Arkentech Explosives",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 piercing damage, shove 1.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Greed:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "+2 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_churnbaron_arkentechforcebeam",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "range": 3,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Arkentech Force Beam",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Autohit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes in range 3 of the Baron take fray damage. Shove all affected foes 1 either away from or towards the Baron.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}, {"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_churnbaron_payoff",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Pay Off",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Baron gives a foe in range a valuables token. That foe must then save or become marked. While marked and holding at least one valuables token, they are pacified+.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "+", "id": "gl_ongoing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_churnbaron_countmoney",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "end_turn": true,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Count Money",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Baron gains 6 Assets and gains resistance until the start of their next turn.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
         "id": "af_imperial_heavy_brutalstrike",
         "type": "Ability",
         "source": "core",

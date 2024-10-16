@@ -1032,7 +1032,7 @@
         ]
     },
     {
-        "id": "tf_faction_beast_enrage",
+        "id": "tf_faction_common_enrage",
         "type": "Trait",
         "source": "core",
         "tags": { },
@@ -3045,6 +3045,97 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Aurelian has a d10 power die and Aura 2. Whenever a foe uses an attack against the Aurelian or any of its allies in the aura, tick the die up by 1. Also tick Tally up by 1 every time the Aurelian picks up a valuables token. Certain actions require higher or lower tally.",
                 "glossary": [{"val": "power die", "id": "gl_powerdie"}, {"val": "Aura", "id": "gl_aura"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_mondo_ooohshiny",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Oooh, Shiny",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When Mondo enters the space of a valuables token, they stop moving and admire it, then pick it up. This stops any movement from any ability or round action and immediately halts the ability."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_hoarder_animatejunkgolem",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Animate Junk Golem",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, the Hoarder summons a Junk Golem in range 3."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_scavenger_hoarder_junkgolem"
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_ringfinger_leavetracks",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Leave Tracks",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of their turn, the Ring Finger puts down a track in their space. A character that enters that space collects the track. When a track has been collected, the Ring Finger’s Master Cloak trait deactivates until the end of the Finger’s next turn."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_ringfinger_mastercloak",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Master Cloak",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While this trait is active, the Ring Finger is unstoppable, has phasing, and cannot be directly targeted at all. Their location is not revealed on the map. Instead, the GM secretly records their location. Auras, area effects, and other effects that can target a space affect them normally (taking into account dodge). This trait deactivates until the end of the Finger’s next turn if a track is collected or the Finger attacks.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}, {"val": "phasing", "id": "gl_phasing"}, {"val": "Auras", "id": "gl_aura"}, {"val": "area effects", "id": "gl_areaeffect"}, {"val": "dodge", "id": "gl_dodge"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_churnbaron_arkentechhoverchair",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkentech Hover Chair",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Flying and Sturdy. Loses both when bloodied.",
+                "glossary": [{"val": "Flying", "id": "gl_flying"}, {"val": "Sturdy", "id": "gl_sturdy"}, {"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_churnbaron_assets",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Assets",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Baron has a d6 power die, starting at 6. They may tick the die down to spend some of their tremendous wealth to empower their abilities. The die ticks up by 1 at the start of their turn, or 2 every time they pick up a valuables token.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}]
             }
         ]
     },
@@ -5465,27 +5556,12 @@
           ]
     },
     {
-        "id": "tf_general_berserker_enrage",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Enrage",
-        "description":  [                                
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "While bloody, gain +1 action.",
-                "glossary": [{"val": "bloody", "id": "gl_bloodied"}]
-            }  
-          ]
-    },
-    {
         "id": "tf_general_sledge_bullheaded",
         "type": "Trait",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Enrage",
+        "name": "Bullheaded",
         "description":  [                                
             {
                 "tags": {"desc_type" : "desc"},

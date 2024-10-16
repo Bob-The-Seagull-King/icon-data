@@ -439,6 +439,71 @@
         "limit": 0
     },
     {
+        "id": "sm_scavenger_hoarder_junkgolem",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Junk Golem",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the hoarder’s turn, the golem can move 3 spaces, then shove an adjacent foe 1. If that foe collides, they take 2 piercing damage and are vulnerable.",
+                                    "glossary": [{"val": "shove", "id": "gl_shove"}, {"val": "collides", "id": "gl_collide"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When the golem enters the space of a valuables token, it absorbs it. It’s speed, shove, and collide damage all increase by +1 for the rest of combat.",
+                                    "glossary": [{"val": "collide", "id": "gl_collide"}, {"val": "shove", "id": "gl_shove"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 0
+    },
+    {
+        "id": "sm_scavenger_churnbaron_crony",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 10,
+            "defense": 8,
+            "speed": 4,
+            "dash": 2
+        },
+        "eventtags": {},
+        "name": "Crony",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When created, or on the baron’s turn, may use its standard move to move 4 spaces, then makes one of the following attacks:"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_crony_blunderbuss"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_crony_arkentechexplosives"
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
         "id": "sm_scavenger_twinblades_twirlingblade",
         "type": "Summon",
         "source": "core",
