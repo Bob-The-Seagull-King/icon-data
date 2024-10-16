@@ -535,9 +535,9 @@
                 }
             ]
         }],
-        "traits": ["tf_faction_beast_enrage"],
+        "traits": ["tf_faction_common_enrage"],
         "actions": [],
-        "traits_added": ["tf_faction_beast_enrage"],
+        "traits_added": ["tf_faction_common_enrage"],
         "actions_added": [],
         "stats" : {}
     },

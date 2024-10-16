@@ -3509,7 +3509,7 @@
         ]
     },
     {
-        "id": "tf_faction_sharpshooter_brace",
+        "id": "tf_imperial_sharpshooter_brace",
         "type": "Trait",
         "source": "core",
         "tags": { },
