@@ -18831,6 +18831,241 @@
                         ]
     },
     {
+        "id": "af_hob_sealspirit_sealform",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Seal Form",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The seal spirit transforms itself or character in range 4 into a seal, teleporting them 2, marking them and leaving that character’s original body as a set of clothes as a 1 space terrain effect, placed adjacent to them.",
+                "glossary": [
+                    {"val": "teleporting", "id": "gl_teleport"},
+                    {"val": "marking", "id": "gl_mark"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While a character is a seal, they cannot attack, but have evasion and phasing.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "phasing", "id": "gl_phasing"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character other than the transformed character can pick up the clothes by using the interact ability (1 action) while standing on the space, ending this effect. The marked character is removed from the battlefield and placed adjacent to the space.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_bonfirespirit_fireworks",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 3,
+            "burst_target": "self"
+        },
+        "eventtags": {},
+        "name": "Fireworks",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "As an area effect, all foes in range 2 take 2 damage. Foes at exactly range 3 are sealed.",
+                "glossary": [
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "sealed", "id": "gl_sealed"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_bonfirespirit_bonfirefestival",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "terrain_effect": true,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Bonfire Festival",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Bonfire spirit creates a height 1 bonfire object.",
+                "glossary": [
+                ]
+            },                             
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_bonfirespirit_bonfire"
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_barkspirit_curseofbounty",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Curse of Bounty",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range from the Bark Spirit is cursed. At the end of that foe’s next turn, they grant 4 vigor to all hobs in range 2, then this effect ends.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_pixie_toad",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "uses": 2,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Toad",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range is transformed into a frog.",
+                "glossary": [
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While a frog, a character has defense 20 and dodge, but cannot deal damage or inflict statuses.",
+                "glossary": [
+                    {"val": "dodge", "id": "gl_dodge"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can save against this effect at the end of their turn, ending it on a success and becoming immune to it for the rest of combat.",
+                "glossary": [
+                    {"val": "immune", "id": "gl_immune"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_floatingpetalaesi_donkey",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "mark": true,
+            "uses": 2,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Donkey",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi marks a character in range. They grow donkey ears on the top of their head.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, they are pacified+, and after they use any non-basic ability, the Aesi may shove them 2 in any direction.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "pacified", "id": "gl_pacified"},
+                    {"val": "+", "id": "gl_ongoing"},
+                    {"val": "shove", "id": "gl_shove"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of their turn, they may save to end this mark, ending it on a success.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_floatingpetalaesi_lovestruck",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Love-Struck",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe of the Aesi’s choice in range4 must save. On a successful save, the foe is pacified.",
+                "glossary": [
+                    {"val": "pacified", "id": "gl_pacified"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On a failed save, the Aesi chooses itself or one of its allies. Until the end of their next turn, all other characters than the chosen character are immune to all damage and effects from the chosen foe.",
+                "glossary": [
+                    {"val": "immune", "id": "gl_immune"}
+                ]
+            }
+                        ]
+    },
+    {
         "id": "af_jotunn_heavy_mightysmite",
         "type": "Ability",
         "source": "core",

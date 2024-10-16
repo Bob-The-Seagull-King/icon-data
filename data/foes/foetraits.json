@@ -4723,6 +4723,44 @@
         ]
     },
     {
+        "id": "tf_hob_pixie_pixiedust",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pixie Dust",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. Allies that start their turn in the aura gain flying until the end of their turn.",
+                "glossary": [
+                    {"val": "Aura", "id": "gl_aura"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "flying", "id": "gl_flying"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_floatingpetalaesi_amorousaura",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Amorous Aura",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. Characters in the aura reduce all damage from pacified foes to 1.",
+                "glossary": [
+                    {"val": "Aura", "id": "gl_aura"},
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "pacified", "id": "gl_pacified"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_jotunn_hirsinn_sturdy",
         "type": "Trait",
         "source": "core",

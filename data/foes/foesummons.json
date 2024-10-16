@@ -1328,6 +1328,34 @@
         "limit": 0
     },
     {
+        "id": "sm_bonfirespirit_bonfire",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "height": 1
+        },
+        "eventtags": {},
+        "name": "Bonfire",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The area on top of the object is dangerous terrain, and the object emits aura 1. Allies in the aura gain the charged effects of all abilities, even on normal turns.",
+                                    "glossary": [
+                                        {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
+                                        {"val": "aura", "id": "gl_aura"},
+                                        {"val": "charged", "id": "gl_charge"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

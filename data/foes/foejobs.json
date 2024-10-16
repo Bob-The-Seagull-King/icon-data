@@ -6055,6 +6055,136 @@
         "chapter": 3
     },
     {
+        "id": "fj_hob_leader_sealspirit",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Seal Spirit",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Seal-like hobs that can transform into kin-shape by stealing clothing. They often abuse this power to cavort in seaside towns, party, and rack up wild debts, only to slip away in the morning."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_sealspirit_sealform"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_leader_bonfirespirit",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bonfire Spirit",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These jubilant festival spirits delight in the summer celebrations of outlying villages. Their exuberance does not help them realize how flammable most people are."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_bonfirespirit_fireworks","af_hob_bonfirespirit_bonfirefestival"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_leader_barkspirit",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bark Spirit",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Hobs that inhabit the stumps of old trees and roots. They are older and wiser than other hobs, and can sometimes speak the tongue of kin, acting as intermediaries."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_barkspirit_curseofbounty"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_leader_pixie",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pixie",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A diminutive, fast talking, foul mouthed hob with a manic attitude and a powerful knack with the old magic."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_pixie_toad"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_hob_pixie_pixiedust"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_leader_floatingpetalaesi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Floating Petal Aesi",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "One of the greater Hobs, that takes a long time to coalesce. These slender and coy Aesi are born from the amorous feelings of spring, the beautiful petals of blooming trees, and flowers floating on water. These spring hobs are numerous - the least powerful but the most amicable of their kin."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_floatingpetalaesi_donkey","af_hob_floatingpetalaesi_lovestruck"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_hob_floatingpetalaesi_amorousaura"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_general_elite_archon",
         "type": "FoeJob",
         "source": "core",
