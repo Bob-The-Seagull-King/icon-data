@@ -5925,6 +5925,136 @@
         "chapter": 3
     },
     {
+        "id": "fj_hob_skirmisher_fennehob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fennehob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A suspicious, raccoon-like hob that takes pleasure in illusions."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_fennehob_displacement"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_skirmisher_spinhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Spinhob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This arachnoid hob lives in cellars, abandoned furnaces, and workshops, where it makes trinkets and weaves odd clothing out of nearly any available material."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_spinhob_weavegarment"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_skirmisher_middenhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Midden Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This stinking toad-like hob draws its essence from the mud in cart tracks, fallow fields, or the pits dug in outhouses. It has the attitude to match."
+            }
+        ],
+        "stats": {
+        },
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_hob_middenjob_overwhelmingstench"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_skirmisher_garberhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Garberhob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A long fingered hob that is born out of the aether of lost objects. It’s fond of stealing anything it finds fascinating."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_garberhob_stealskill","af_hob_garberhob_lostobject"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_skirmisher_eaveshob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Eaves Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A powerful crow-like hob that lives in the eaves of houses. Brings good luck on families that feed it well, and pokes holes in the roofs of those that don’t."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_eaveshob_boundingleaps","af_hob_eaveshob_pilferluck","af_hob_eaveshob_crowstorm"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying","tf_hob_eaveshob_luckyfeather"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_general_elite_archon",
         "type": "FoeJob",
         "source": "core",

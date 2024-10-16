@@ -4683,6 +4683,46 @@
         ]
     },
     {
+        "id": "tf_hob_middenjob_overwhelmingstench",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Overwhelming Stench",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob has aura 1. Attackers in the aura gain +1 curse on attacks, and characters in aura that end their turn there are dazed. Dazed characters take 4 damage instead.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "+1 curse", "id": "gl_curse"},
+                    {"val": "dazed", "id": "gl_dazed"},
+                    {"val": "Dazed", "id": "gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_eaveshob_luckyfeather",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lucky Feather",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When taking damage that would reduce the hob to 0 hp, gamble. On a 3+, become immune to all damage from the triggering ability. True strike bypasses this effect.",
+                "glossary": [
+                    {"val": "gamble", "id": "gl_gamble"},
+                    {"val": "immune", "id": "gl_immune"},
+                    {"val": "dazed", "id": "gl_dazed"},
+                    {"val": "True strike", "id": "gl_truestrike"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_jotunn_hirsinn_sturdy",
         "type": "Trait",
         "source": "core",

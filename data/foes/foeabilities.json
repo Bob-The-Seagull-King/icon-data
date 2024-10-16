@@ -18507,6 +18507,330 @@
         ]
     },
     {
+        "id": "af_hob_fennehob_displacement",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Displacement",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob marks itself or an ally in range.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "That character gains evasion and dodge, and may teleport whenever it would move any number of spaces.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "dodge", "id": "gl_dodge"},
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "These mark effects turn off if the marked character is adjacent to a foe.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_spinhob_weavegarment",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Weave Garment",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Spinhob weaves an incredibly odd or ugly garment, placing it on a character in range 3.",
+                "glossary": [
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While under this effect, the character fails all saves. After the character fails a save, they may transfer this mark and effect to a new character in range 3, including a foe.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If there are no characters in range, this effect ends.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_garberhob_stealskill",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Steal Skill",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob chooses a foe in range, marking them.",
+                "glossary": [
+                    {"val": "marking", "id": "gl_mark"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, they treat all foes as having evasion and dodge.",
+                "glossary": [
+                    {"val": "evasion", "id": "gl_evasion"},
+                    {"val": "dodge", "id": "gl_dodge"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character ends this mark if they hit with an attack.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_garberhob_lostobject",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Lost Object",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob produces and throws a lost object at a foe in range. Roll 1d6."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "1. Elixer:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe gains 4 vigor.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "2. Kettle full of Tea:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Hot tea inflicts 5 damage and blinds the character.",
+                        "glossary": [{"val": "blinds", "id": "gl_blinded"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "3. Portable Hole:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a pit under the foe.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "4. Old Sandwich:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is dazed, then must save or lose all vigor.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}, {"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "5. Spare Sword:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes [D]+fray damage.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}, {"val": "[D]", "id": "gl_damagedice"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "6. Bag of Hammers:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe must save or take 3 damage five times, or just once on a successful save."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_eaveshob_boundingleaps",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bounding Leaps",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Hob flies 3. If it lands on an object, it can repeat this flight once more.",
+                "glossary": [                   
+                    {"val": "flies", "id": "gl_flying"},                        
+                    {"val": "flight", "id": "gl_flying"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_eaveshob_pilferluck",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Pilfer Luck",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob marks a foe in range.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked the foe cannot gain boons, and the Hob gains +1 boon on all its attacks and saves.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "boons", "id": "gl_boon"},
+                    {"val": "+1 boon", "id": "gl_boon"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe can end this mark by choosing to roll all attacks and saves with +1 curse for their entire turn. The mark then ends.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_eaveshob_crowstorm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Crow Storm",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob chooses a foe in range.",
+                "glossary": [
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that foe’s next turn, a huge storm of crows descends on their location for a medium blast area effect centered on them.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "That foe takes 4 damage six times. Reduce this damage once for each other character in the area of effect.",
+                "glossary": [
+                ]
+            }
+                        ]
+    },
+    {
         "id": "af_jotunn_heavy_mightysmite",
         "type": "Ability",
         "source": "core",
