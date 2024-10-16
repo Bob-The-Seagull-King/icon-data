@@ -5795,6 +5795,136 @@
         "chapter": 3
     },
     {
+        "id": "fj_hob_artillery_nixie",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nixie",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An ill tempered hob with a colorful array of curses and hexes it is fond of using."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_nixie_spirittrickery"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_artillery_banshee",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Banshee",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This mournful, birdlike hob is drawn to locations that carrion birds frequent, like graveyards or battlefields. Its shrieking cry is incredibly potent."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_banshee_horrificscreech"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_artillery_mayflyspirit",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mayfly Spirit",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These playful, insect-winged hobs are fond of stirring up barbed plants and watching mortals do a silly dance."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_mayflyspirit_thornythicket"],
+        "removed_actions": [],
+        "traits": ["tf_hob_mayflyspirit_thicketdance"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_artillery_wisp",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wisp",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This dancing light is the spirit of deep swamps and the dark spaces between trees."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_wisp_dancinglight"],
+        "removed_actions": [],
+        "traits": ["tf_hob_wisp_leadastray"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_artillery_misthob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mist Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A wispy, hob made of morning mist and the breath of dying travelers. Its breath can chill the bones."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_misthob_greatslip","af_hob_misthob_flashfreeze"],
+        "removed_actions": [],
+        "traits": ["tf_hob_misthob_mistform"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_general_elite_archon",
         "type": "FoeJob",
         "source": "core",

@@ -1300,6 +1300,34 @@
         "limit": 0
     },
     {
+        "id": "sm_wisp_dancinglight",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Dancing Light",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a foe starts or ends a turn adjacent to the light, it explodes in a medium blast area effect centered on it. Characters inside must save or take fray damage twice, or once on a successful save. If the light is destroyed, it fizzles out without exploding.",
+                                    "glossary": [
+                                        {"val": "medium blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"},
+                                        {"val": "fray", "id": "gl_fray"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_beast_kinfisher_lure",
         "type": "Summon",
         "source": "core",

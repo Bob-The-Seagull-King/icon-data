@@ -4634,6 +4634,55 @@
         ]
     },
     {
+        "id": "tf_hob_mayflyspirit_thicketdance",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thicket Dance",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of its turn, before any delay effects activate, the Mayfly spirit and all characters in range 2 teleport 1 space in a direction of the spirit’s choice.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"},{"val": "delay", "id": "gl_delay"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_wisp_leadastray",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lead Astray",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wisp has aura 2. The wisp may teleport any character that ends their turn in the aura 2 spaces in any direction.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"},{"val": "aura", "id": "gl_aura"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_misthob_mistform",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mist Form",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob is a character and also a space of dangerous and difficult terrain. Characters can share space with it, and it has resistance against any character inside of its space.",
+                "glossary": [
+                    {"val": "dangerous", "id": "gl_dangerousterrain"},
+                    {"val": "difficult", "id": "gl_difficultterrain"},
+                    {"val": "resistance", "id": "gl_resistance"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_jotunn_hirsinn_sturdy",
         "type": "Trait",
         "source": "core",

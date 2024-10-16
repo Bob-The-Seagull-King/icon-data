@@ -18281,6 +18281,232 @@
         ]
     },
     {
+        "id": "af_hob_nixie_spirittrickery",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Spirit Trickery",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nixie gains the following interrupt until the start of its next turn.",
+                "glossary": [
+                    {"val": "interrupt", "id": "gl_interrupt"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_nixie_spirittrickery_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_nixie_spirittrickery_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 2,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Spirit Trickery",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The nixie or an ally in range 2 is damaged by a foe’s ability, and the ability resolves."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The triggering foe, the nixie, and their ally (if applicable) are all teleported 2.",
+                                    "glossary": [{"val": "teleported", "id": "gl_teleport"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_banshee_horrificscreech",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Horrific Screech",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Banshee gains the following interrupt until the start of its next turn.",
+                "glossary": [
+                    {"val": "interrupt", "id": "gl_interrupt"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_banshee_horrificscreech_interrupt"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_banshee_horrificscreech_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Screech",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A foe in range 6 of the Banshee rolls a save, and the result is determined."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The triggering foe, re-rolls their save with +1 curse, taking the new result as final. If they fail the save, they also become vulnerable.",
+                                    "glossary": [
+                                        {"val": "+1 curse", "id": "gl_curse"},
+                                        {"val": "vulnerable", "id": "gl_vulnerable"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_mayflyspirit_thornythicket",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Thorny Thicket",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The spirit creates a line 3 area of dangerous terrain in range.",
+                "glossary": [
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_wisp_dancinglight",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "end_turn": true,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Dancing Light",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Hob summons a dancing light in range in any space not adjacent to a character.",
+                "glossary": [
+                    {"val": "summons", "id": "gl_summon"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_wisp_dancinglight"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge:",
+                "glossary": [{"val": "Charge", "id": "gl_charge"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summons two lights.",
+                        "glossary": [
+                            {"val": "Summons", "id": "gl_summon"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_misthob_greatslip",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Great Slip",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Remove the Hob from the battlefield, then place it in any space in range 4.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_misthob_flashfreeze",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Flash Freeze",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range has an encasing of ice cover them. While encased, the targeted foe is immobile until they take any amount of damage.",
+                "glossary": [
+                    {"val": "immobile", "id": "gl_immobile"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They or an adjacent ally can also use the interact ability to break them out, dealing 6 piercing damage to them but ending this effect.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "af_jotunn_heavy_mightysmite",
         "type": "Ability",
         "source": "core",
