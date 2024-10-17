@@ -7277,200 +7277,7 @@
                     {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
                     {"val": "pit", "id": "gl_pit"}]
             }
-                        ]
-    },
-    {
-        "id": "af_scavenger_bloodboundband_boots_theboot",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": "free"
-        },
-        "eventtags": {},
-        "name": "The Boot",
-        "class_id": "cl_stalwart",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "An adjacent foe is shoved 1. If they’re bloody, they are instead shoved 3.",
-            "glossary": [{"val": "bloody", "id": "gl_bloodied"},{"val": "shoved", "id": "gl_shove"}]
-        },                               
-        {
-            "tags": {"desc_type" : "effect"},
-            "content": "Collide: ",
-            "glossary": [{"val": "Collide", "id": "gl_collide"}],
-            "subcontent": [
-                {
-                    "tags": {"desc_type" : "desc"},
-                    "content": "Foe is weakened.",
-                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
-                }
-            ]
-        }                              
-        
-                        ]
-    },
-    {
-        "id": "af_scavenger_bloodboundband_fixer_grapple",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": 1,
-            "mark": true
-        },
-        "eventtags": {},
-        "name": "Grapple",
-        "class_id": "cl_stalwart",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "Fixer marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency the first time in a round. On a failed save, it becomes unable to exit adjacency with Fixer by any means for the rest of the current round. On a successful save, the mark and this effect ends, but the foe is weakened.",
-            "glossary": [{"val": "weakened", "id": "gl_weakened"}]
-        }                      
-        
-                        ]
-    },
-    {
-        "id": "af_scavenger_bloodboundband_cats_felinefelicity",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": "free"
-        },
-        "eventtags": {},
-        "name": "Feline Felicity",
-        "class_id": "cl_vagabond",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "Teleport 3, then may deal 2 damage to an adjacent foe. Bloodied foes take 2 damage twice.",
-            "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
-        }                      
-        
-                        ]
-    },
-    {
-        "id": "af_scavenger_bloodboundband_sharkie_greatswindle",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": "free"
-        },
-        "eventtags": {},
-        "name": "Great Swindle",
-        "class_id": "cl_mendicant",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "foe in range 3 is sealed, then must save or swap places with Sharkie, teleporting. Bloodied characters fail the save.",
-            "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "teleporting", "id": "gl_teleport"}]
-        }                      
-        
-                        ]
-    },
-    {
-        "id": "af_scavenger_bloodboundband_sharp_ricochetshot",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": 1,
-            "attack": true,
-            "type": "attack",
-            "pierce": true,
-            "range": 10
-        },
-        "eventtags": {},
-        "name": "Ricochet Shot",
-        "class_id": "cl_wright",
-        "description":  [                               
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Attack:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "subeffect"},
-                                    "content": "On Hit:",
-                                    "subcontent":   [{
-                                                        "tags": [{"desc_type": "desc"}],
-                                                        "content": "[D] + fray and the foe is shattered",
-                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shattered", "id": "gl_shattered"}]
-                                                    }]
-                                },
-                                {
-                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
-                                    "content": "Miss:",
-                                    "subcontent":   [{
-                                                        "tags": [{"desc_type": "desc"}],
-                                                        "content": "Fray",
-                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
-                                                    }]
-                                }]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Effect:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "A different foe in range 3 from the original target takes fray damage."
-                                }],
-                "glossary": [{"val": "fray", "id": "gl_fray"}]
-            } ,
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Effect:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "Deals bonus damage agaist bloodied foes."
-                                }],
-                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},
-                {"val": "bloodied", "id": "gl_bloodied"}]
-            }             
-        
-                        ]
-    },
-    {
-        "id": "af_scavenger_bloodboundband_fanatic_spark",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": "free"
-        },
-        "eventtags": {},
-        "name": "Spark",
-        "class_id": "cl_wright",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "Choose a foe in range 6 that has not acted this round. At the end of that foe’s next turn, they explode in a small blast area effect for [D]+fray piercing damage, dealing damage to all foes other than them in the area. Summon a pit under them. If they are standing in a pit when the explosion happens, they are stunned and also take damage.",
-            "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "piercing", "id": "gl_piercing"},{"val": "stunned", "id": "gl_stunned"}]
-        }                      
-        
-                        ]
-    },
-    {
-        "id": "af_scavenger_bloodboundband_monger_bountyhunt",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": 1,
-            "mark": true
-        },
-        "eventtags": {},
-        "name": "Bounty Hunt",
-        "class_id": "green",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "A foe in range 6 is marked. While marked, abilities against the target gain true strike, and allies gain +1 boon to attack the foe. Using this mark again transfers it. A foe can end this mark by ending their turn more than 2 spaces away from any Brother.",
-            "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "true strike", "id": "gl_truestrike"},{"val": "+1 boon", "id": "gl_boon"},{"val": "stunned", "id": "gl_stunned"}]
-        }                      
-        
-                        ]
+        ]
     },
     {
         "id": "af_imperial_crimsonweapon_hadescannon",
@@ -13103,6 +12910,1471 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Baron gains 6 Assets and gains resistance until the start of their next turn.",
                 "glossary": [{"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_juggernaut",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Juggernaut",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Clear a status or mark on one of the twins.",
+                "glossary": [{"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_knifejuggling",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Knife Juggling",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the twins choose a character in range 3 of one of the twins. At the end of the round, each twin flings a knife at that character. Each knife deals 4 piercing damage if the chosen character is in range 3, or just 1 piercing damage if they are further away.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_twirlingblade",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Twirling Blade",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the twins summon a twirling blade in range 3 of one of the twins. The blade is a summon. Foes that collide with a blade or start their turn adjacent to a blade take 2 piercing damage. If a blade collides with a character, it also deals 2 piercing damage to them. Characters can be damaged by multiple blades at once.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "collides", "id": "gl_collide"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_scavenger_twinblades_twirlingblade"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_twirlingblade_phase2",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Twirling Blade",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the twins summon a twirling blade in range 3 of one of the twins. The blade is a summon. Foes that collide with a blade or start their turn adjacent to a blade take 2 piercing damage. If a blade collides with a character, it also deals 2 piercing damage to them. Characters can be damaged by multiple blades at once.",
+                "glossary": [{"val": "summon", "id": "gl_summon"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "collides", "id": "gl_collide"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase 2:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summons two blades instead of one."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_scavenger_twinblades_twirlingblade"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_turnabout",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Turnabout",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If both twins are in range 5 of each other, they remove themselves from the battlefield, then switch places, placing them back in each other’s positions. When they land, they deal 2 damage to all adjacent foes."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_gemini",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Gemini",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Both twins can dash 3 before the attack is made. If both twins are then adjacent to the target, the target takes bonus damage from this attack.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_twinblades_twistknife"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_twistknife",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Twist Knife",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage, five times."
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is dazed.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If both twins are 3 spaces away from each other, they deal 2 piercing damage again to all adjacent foes.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_twinblades_mortalwound"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_mortalwound",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Mortal Wound",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deeply wounds the target. While suffering from this effect, they must sacrifice 3 after using any ability. This effect ends when they are defeated, or they can remove it by ending their turn without attacking.",
+                        "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_kickoff",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Kick Off",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The twin flies 3, kicking off an adjacent character, with different effects depending on that character:",
+                "glossary": [{"val": "flies", "id": "gl_flying"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "• Foe:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 2 damage and is shoved 2.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "• Other Twin:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Other twin can fly 3.",
+                        "glossary": [{"val": "fly", "id": "gl_flying"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "• Twirling Blade:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Blade is shoved 2.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_twinblades_spin"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_spin",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Spin",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Both twins deal 2 damage to all adjacent foes as an area effect. Any Twirling Blades adjacent to a twin spin again, dealing 2 piercing damage to all adjacent foes.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "piercing", "id": "gl_piercing"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_twinblades_venomcloud"
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_twinblades_venomcloud",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Venom Cloud",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All adjacent foes to a twin must save or become blinded. The twins gain evasion until the end of the current round.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}, {"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_strengthinblood",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Strength in Blood",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, this legend may clear a status or mark affecting one of the Brothers.",
+                "glossary": [{"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_bloodbond",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Blood Bond",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Swap places with a Blood Brother in range 3, removing and placing both characters."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_setup",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Setup",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 3, then any brother gains stealth. That brother’s next ability treats all targets as bloodied.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"},{"val": "Dash", "id": "gl_dash"},{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_serratedknife",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Serrated Knife",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range 4 takes 2 damage. If they’re bloodied, they take 3 damage twice instead.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_firstblood",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "First Blood",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May dash 1 before and after attack.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack gains +1 dash and deals +2 damage on hit or miss per fallen brother.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_boots_theboot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "The Boot",
+        "class_id": "cl_stalwart",
+        "description":  [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe is shoved 1. If they’re bloody, they are instead shoved 3.",
+                "glossary": [{"val": "bloody", "id": "gl_bloodied"},{"val": "shoved", "id": "gl_shove"}]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }                              
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_boots_flyingdropkick",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Flying Dropkick",
+        "class_id": "cl_stalwart",
+        "description":  [            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Boots rushes 3 towards a foe. Then, if they are adjacent to that foe, that foe takes take [D]+fray and is shoved 3.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "shoved", "id": "gl_shove"}]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }                              
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_fixer_grapple",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Grapple",
+        "class_id": "cl_stalwart",
+        "description":  [          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fixer marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency the first time in a round. On a failed save, it becomes unable to exit adjacency with Fixer by any means for the rest of the current round. On a successful save, the mark and this effect ends, but the foe is weakened.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+            }                      
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_filth_poisongas",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Poison Gas",
+        "class_id": "cl_vagabond",
+        "description":  [            
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "small blast. Characters in the area take 6 damage. Then, they must save or take 6 damage again and become blinded. Blinded characters fail this save.",
+                        "glossary": [{"val": "small blast", "id": "gl_blast"}, {"val": "blinded", "id": "gl_blinded"}]
+                    }
+                ]
+            }                            
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_cats_felinefelicity",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Feline Felicity",
+        "class_id": "cl_vagabond",
+        "description":  [                       
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Teleport 3, then may deal 2 damage to an adjacent foe. Bloodied foes take 2 damage twice.",
+                "glossary": [{"val": "Teleport", "id": "gl_teleport"}]
+            }                      
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_cats_fanofnyaives",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Fan of Nya-ives",
+        "class_id": "cl_vagabond",
+        "description":  [            
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Medium blast.",
+                        "glossary": [{"val": "Medium blast", "id": "gl_blast"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes take 3 damage. Bloodied foes take 3 damage twice. Then, Cats may teleport 2.",
+                        "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }                            
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_sharkie_greatauraofskulduggery",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Great Aura of Skulduggery",
+        "class_id": "cl_mendicant",
+        "description":  [                        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Until the start of their next turn, Sharkie is immobile and gains Aura 2. Sharkie and allies in the aura have evasion and counter. Foes that trigger counter or evasion are also shoved 2 after the triggering ability resolves.",
+                "glossary": [{"val": "immobile", "id": "gl_immobile"},{"val": "Aura", "id": "gl_aura"},{"val": "evasion", "id": "gl_evasion"},{"val": "counter", "id": "gl_counter"},{"val": "shoved", "id": "gl_shove"}]
+            }                      
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_sharkie_greatswindle",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Great Swindle",
+        "class_id": "cl_mendicant",
+        "description":  [                        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "foe in range 3 is sealed, then must save or swap places with Sharkie, teleporting. Bloodied characters fail the save.",
+                "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "teleporting", "id": "gl_teleport"}]
+            }                      
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_pale_nighthaunt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "end_turn": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Nighthaunt",
+        "class_id": "cl_vagabond",
+        "description":  [                        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Pale teleports 3, then becomes intangible and gains phasing until the start of their next turn. This action grants evasion instead if they are the only Brother active.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"},{"val": "intangible", "id": "gl_intangible"},{"val": "phasing", "id": "gl_phasing"},{"val": "evasion", "id": "gl_evasion"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_pale_midnightblade"
+            }               
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_pale_midnightblade",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Midnight Blade",
+        "class_id": "cl_vagabond",
+        "description":  [                        
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals half damage if foe has any amount of vigor. Deals bonus damage if foe is bloodied.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }                     
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_sharp_ricochetshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "pierce": true,
+            "range": 10
+        },
+        "eventtags": {},
+        "name": "Ricochet Shot",
+        "class_id": "cl_wright",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray and the foe is shattered",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shattered", "id": "gl_shattered"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A different foe in range 3 from the original target takes fray damage."
+                                }],
+                "glossary": [{"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deals bonus damage agaist bloodied foes."
+                                }],
+                "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},
+                {"val": "bloodied", "id": "gl_bloodied"}]
+            }             
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_fanatic_spark",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Spark",
+        "class_id": "cl_wright",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Choose a foe in range 6 that has not acted this round. At the end of that foe’s next turn, they explode in a small blast area effect for [D]+fray piercing damage, dealing damage to all foes other than them in the area. Summon a pit under them. If they are standing in a pit when the explosion happens, they are stunned and also take damage.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"},{"val": "fray", "id": "gl_fray"},{"val": "piercing", "id": "gl_piercing"},{"val": "stunned", "id": "gl_stunned"}]
+            }                      
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_fanatic_bloodpyre",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 6,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Blood Pyre",
+        "class_id": "cl_wright",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon a pit under every bloodied character in the area. Deals bonus damage to characters inside pits.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }                   
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_broker_bloodybond",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Bloody Bond",
+        "class_id": "green",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Mark an ally in range 4. While marked and in range, that ally has resistance to all damage, but Broker must sacrifice 3 at the end of that ally’s turn.",
+                "glossary": [{"val": "Mark", "id": "gl_mark"},{"val": "resistance", "id": "gl_resistance"},{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_monger_bountyhunt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Bounty Hunt",
+        "class_id": "green",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 is marked. While marked, abilities against the target gain true strike, and allies gain +1 boon to attack the foe. Using this mark again transfers it. A foe can end this mark by ending their turn more than 2 spaces away from any Brother.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "true strike", "id": "gl_truestrike"},{"val": "+1 boon", "id": "gl_boon"},{"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_bloodboundband_monger_weakeningvenom",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Weakening Venom",
+        "class_id": "green",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 is pacified+. They can purge the venom from their system at the end of any turn they attack, ending this effect.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"},{"val": "+", "id": "gl_ongoing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_thepriceisright",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "The Price is Right",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Midan shows the characters three golden caskets (a left, right, and center casket)."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The GM secretly assigns a number to each casket, from 1 to 3. They must then tell the players what each number does, but not which numbers have been assigned to each casket - that’s up to the players to find out!"
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters must choose a casket (left, right, center), and must decide which casket to choose at the start of the round."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, the Midan hides the caskets. At the end of the round, they return the caskets and open them, showing the numbers, in order, applying the effects to all characters that chose that casket, then hiding the caskets again."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Casket #1:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Increase net worth by 1, then receive 1 dust."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Casket #2:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Reduce net worth to 0."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Casket #3:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Double net worth."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_grandtransmutation",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Grand Transmutation",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, all foes gain 1 net worth."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_halcyonworld",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Halcyon World",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Midan creates a height 3 golden pillar in free space anywhere on the battlefield. At the end of the round, a foe increases their net worth by 1 for each of these pillars they are adjacent to."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_glitteringworld",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Glittering World",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan injects the closest foe to them with powerful metal aether. If there are foes at an equal distance, it can choose. This has the following effects:"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Increase that character’s net worth by 1d6. Even if that character would go to 10 net worth, they are not defeated."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "• Instead, at the end of the round, the affected character explodes, dealing piercing damage equal to twice their net worth to all allies and destructible objects in a large blast area effect explosion centered on them with true strike and increasing allies’ net worth in the area by 2. Then, they reduce their net worth by 4 and end this effect.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "true strike", "id": "gl_truestrike"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_moltencreation",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 10,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Molten Creation",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan blasts a line 10 area effect drawn from its position. Foes in the area increase their net worth by 1. The Midan can then duplicate any of its terrain effects or objects in the area, creating exact copies in a free adjacent space to the original effect.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_marketevaluation",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Market Evaluation",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan chooses a burst 2 (target space) in range. It may swap the positions of any characters or objects in the area, including itself, removing and placing them. It may then swap the net worth of two characters in the area.",
+                "glossary": [{"val": "burst", "id": "gl_burst"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_moltenshell",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Molten Shell",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan surrounds itself with a molten gold shell, gaining a d6 power die with 1 charge per player (max 6). The Midan becomes resistant to all damage and unstoppable while the metal shell is active. However, when it would take damage, reduce the metal shell power die by 1, then increase the net worth of whoever dealt the damage by 2. When the die reaches 0, the shell cracks and this effect ends.",
+                "glossary": [{"val": "power die", "id": "gl_powerdie"}, {"val": "resistant", "id": "gl_resistance"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_melt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Melt",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan removes itself from the battlefield, then places itself in free space in range 3."
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_theweight",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 6,
+            "blast_size": "small",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "The Weight",
+        "class_id": "icon",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + twice net worth.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Twice net worth."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All characters in the area are shoved 1 and have their net worth increased by 1.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_midan_goldenglove"
+            }                
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_goldenglove",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "boon": 1,
+            "true_strike": true,
+            "type": "attack",
+            "attack": true,
+            "range": 3,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Golden Glove",
+        "class_id": "icon",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe must save or be shoved 1 for every 2 net worth they have, or just 1 space on a successful space. Then, they gain 1 net worth.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_midan_takemeasure"
+            }                
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_takemeasure",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "pierce": true,
+            "type": "attack",
+            "attack": true,
+            "range": 4,
+            "blast_size": "medium",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Take Measure",
+        "class_id": "icon",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + twice net worth.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Twice net worth."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is shattered.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes in the area gain 1 net worth. Bloodied foes gain 2.",
+                        "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }               
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_scatterwealth",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Scatter Wealth",
+        "class_id": "icon",
+        "description":  [                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Create a coin pile difficult terrain space in any space in range. The Midan is not slowed by these spaces, and when it takes this action, it may dive into the ground, then appear inside the coin space. When it emerges, deal 2 piercing damage to all adjacent foes.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_glimmer",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "end_turn": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Glimmer",
+        "class_id": "icon",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a coin pile difficult terrain space in any space in range. The Midan is not slowed by these spaces, and when it takes this action, it may dive into the ground, then appear inside the coin space. When it emerges, deal 2 piercing damage to all adjacent foes.",
+                        "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "sm_scavenger_midan_volatilegem"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_midan_crystallize"
+            } 
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_crystallize",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Crystallize",
+        "class_id": "icon",
+        "description":  [                      
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan creates a geode in free space underneath any foe. The geodes are pits, and foes inside are vulnerable+. Foes that end their turn inside a geode increase their net worth by +1 and become vulnerable.",
+                "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "+", "id": "gl_ongoing"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "sm_scavenger_midan_volatilegem"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_midan_aurelianbomb"
+            } 
+        ]
+    },
+    {
+        "id": "af_scavenger_midan_aurelianbomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Aurelian Bomb",
+        "class_id": "icon",
+        "description":  [                      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Terrain Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Midan creates a bomb of molten gold in range."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "sm_scavenger_midan_aurelianbomb"
             }
         ]
     },

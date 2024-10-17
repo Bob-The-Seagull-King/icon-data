@@ -3140,6 +3140,122 @@
         ]
     },
     {
+        "id": "tf_scavenger_twinblades_twins",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Twins",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This legend is two separate size 1 characters, with the following features:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Each track effects and hp separately."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• However, combos and uses of per round abilities are tracked between both twins.",
+                "glossary": [{"val": "combos", "id": "gl_combo"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• When this legend takes a turn, only one twin acts at a time, alternating if possible."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_twinblades_fatebound",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fatebound",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a twin is reduced to 0 hp, they become defeated as normal. However, starting at the end of the next player turn, and at the end of every player turn past that, if the other twin has at least 1 hp and is in range 5, the defeated twin returns from defeated and heals to 25% of their max hp."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_twinblades_seekingblades",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Seeking Blades",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All twirling blades deal piercing damage equal to the round number instead of just 2. In addition, all twirling blades can be shoved 1 space in any direction by the twins at the start of the round.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_bloodbrother",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Brother",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This legend is made up of four Brothers. Each Brother is a separate character, tracking hp and effects separately. The Band is only defeated when all Brothers are defeated. On each of the Band’s turns, the Band acts with a different brother, until all have acted at least once. Each Brother has unique actions and a Blood-bound Blessing."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Roll a d10 4 times, reroll repeats, or pick 4 different brothers."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_bloodboundblessing",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Bound Blessing",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each time a Blood Brother is defeated, all active brothers immediately gain the Blood-bound Blessing of the fallen brother, empowering them."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_boots",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Boots",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_heavy_guard"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_boots_theboot"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_boots_flyingdropkick"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_boots"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",
@@ -3161,6 +3277,33 @@
           ]
     },
     {
+        "id": "tf_scavenger_bloodboundband_choice_fixer",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fixer",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_heavy_guard"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_fixer_ironblade"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fixer_grapple"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_fixer"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_fixer",
         "type": "Trait",
         "source": "core",
@@ -3175,7 +3318,54 @@
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_fixer_grapple"
-            }       ]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_fixer_ironblade",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Iron Blade",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks against bloodied foes gain true strike and slash them.",
+                "glossary": [{"val": "true strike", "id": "gl_truestrike"}, {"val": "slash", "id": "gl_slashed"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_filth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Filth",
+        "class": "yellow",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_skirmisher"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_dodge"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_filth_drippingblade"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_filth_poisongas"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_filth"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_filth",
@@ -3192,7 +3382,8 @@
             {
                 "tags": {"desc_type" : "foetrait"},
                 "content": "tf_scavenger_bloodboundband_filth_drippingblade"
-            }     ]
+            }     
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_filth_drippingblade",
@@ -3205,10 +3396,40 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Attacks force the attack target to sacrifice 3 after dealing damage.",
-                "glossary": [
-                    {"val": "sacrifice", "id": "gl_sacrifice"}
-                ]
-            }       ]
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_cats",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cats",
+        "class": "yellow",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_skirmisher"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_dodge"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_cats_felinefelicity"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_cats_fanofnyaives"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_cats"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_cats",
@@ -3228,6 +3449,33 @@
             }   ]
     },
     {
+        "id": "tf_scavenger_bloodboundband_choice_sharkie",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sharkie",
+        "class": "green",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_class_leader_diaga"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharkie_greatauraofskulduggery"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharkie_greatswindle"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_sharkie"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_sharkie",
         "type": "Trait",
         "source": "core",
@@ -3245,6 +3493,33 @@
             }      ]
     },
     {
+        "id": "tf_scavenger_bloodboundband_choice_pale",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pale",
+        "class": "yellow",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_skirmisher"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_dodge"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_pale_nighthaunt"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_pale"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_pale",
         "type": "Trait",
         "source": "core",
@@ -3255,10 +3530,40 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "All Brothers go to speed 5 and gain phasing.",
-                "glossary": [
-                    {"val": "phasing", "id": "gl_phasing"}
-                ]
-            }       ]
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_sharp",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sharp",
+        "class": "blue",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_aetherwall"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_slip"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_sharp_keeneye"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharp_ricochetshot"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_sharp"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_sharp_keeneye",
@@ -3271,11 +3576,9 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "All attacks can critical hit (+[D]).",
-                "glossary": [
-                    {"val": "critical hit", "id": "gl_criticalhit"},
-                    {"val": "+[D]", "id": "gl_damagedice"}
-                ]
-            }       ]
+                "glossary": [{"val": "critical hit", "id": "gl_criticalhit"}, {"val": "+[D]", "id": "gl_damagedice"}]
+            }       
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_sharp",
@@ -3296,7 +3599,39 @@
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_sharp_ricochetshot"
-            }        ]
+            }        
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_fanatic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fanatic",
+        "class": "blue",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_aetherwall"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_slip"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fanatic_spark"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fanatic_bloodpyre"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_fanatic"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_fanatic",
@@ -3313,7 +3648,54 @@
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_fanatic_spark"
-            }      ]
+            }      
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_broker",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Broker",
+        "class": "green",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_class_leader_diaga"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_special_defiance"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_broker_auraofbloodletting"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_broker_bloodybond"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_broker"
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_broker_auraofbloodletting",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Bloodletting",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. All foes that use an ability in the area, including basic abilities, must sacrifice 2 after the ability resolves. Bloodied foes sacrifice 5 instead.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "Bloodied", "id": "gl_bloodied"}]
+            }       
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_broker",
@@ -3326,10 +3708,36 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "All Brothers gain Defiance.",
-                "glossary": [
-                    {"val": "Defiance", "id": "gl_defiance"}
-                ]
-            }       ]
+                "glossary": [{"val": "Defiance", "id": "gl_defiance"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_monger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monger",
+        "class": "green",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_class_leader_diaga"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_monger_bountyhunt"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_monger_weakeningvenom"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_monger"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_monger",
@@ -3341,12 +3749,40 @@
         "description":  [                                  
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "All foes are marked by Bounty Hunt"
+                "content": "All foes are marked by Bounty Hunt."
             },                       
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_monger_bountyhunt"
             }     
+        ]
+    },
+    {
+        "id": "tf_scavenger_midan_networth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Net Worth",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan’s pernicious metal aether slowly turns everything on the battlefield into gold and precious jewels. Their abilities have more effects and deal more damage to foes according to their net worth. A foe’s net worth is tracked with a d10, for each character."
+            }   
+        ]
+    },
+    {
+        "id": "tf_scavenger_midan_perfection",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfection",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a foe has 10 net worth at the end of their turn, they are fully encased in precious metals and jewels. Their net worth is reduced to 0, then they are defeated, removed from the battlefield, and replaced by a height 1 golden statue object with 10 hp. Return them to the battlefield, still defeated, when the statue is destroyed."
+            }   
         ]
     },
     {

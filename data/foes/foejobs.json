@@ -3554,6 +3554,230 @@
         "chapter": 3
     },
     {
+        "id": "fj_scavenger_legend_twinblades",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Twinblades",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Good things come in pairs, or so they say."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Splitting the loot can be a tenuous and tedious process, and often involves a lot of backstabbing. Some exceptionally well resourced mercenaries have found it very useful, and even preferable, to use blood magic to solve this common problem. By entangling their soul aether in a powerful ritual, they become unable to die as long as the other one lives. That way, there’s no way for them to cut and run - or for anyone else to pull a fast one without taking their soul bound partner down at nearly exactly the same time - a difficult prospect."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "People that are ‘twinned’ this way tend to grow very close to their twin, and even come to resemble them in their mannerism and sometimes physical appearance, a side effect of the wrightcraft used to bond them together."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Twinblades are often found guarding the leaders of scavenger bands, acting as enforcers, and collecting the lion’s share of the loot. After all, there’s few enterprising barons out there that wouldn’t pass on a pair of nigh-immortal bodyguards."
+            }
+        ],
+        "stats": {
+            "hp": 25,
+            "hp_per": "per Player for each Twin (min 50)"
+        },
+        "actions": ["af_scavenger_twinblades_juggernaut"],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_class_skirmisher_skirmisher", "tf_scavenger_twinblades_twins", "tf_scavenger_twinblades_fatebound"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The twins enter Phase II at the start of round 4."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_scavenger_twinblades_knifejuggling","af_scavenger_twinblades_twirlingblade","af_scavenger_twinblades_turnabout","af_scavenger_twinblades_gemini","af_scavenger_twinblades_kickoff"],
+                "traits": []
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The twins enter Phase II at the start of round 4. As Phase I, but Twirling Blades summons two blades instead of one, and gain Seeking Blades."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_scavenger_twinblades_twirlingblade_phase2", "af_scavenger_twinblades_knifejuggling","af_scavenger_twinblades_turnabout","af_scavenger_twinblades_gemini","af_scavenger_twinblades_kickoff"],
+                "traits": ["tf_scavenger_twinblades_seekingblades"]
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Twinblades are a dynamic duo that can put out a lot of pressure and damage on the characters, especially in phase II where their whirling blades becomes more mobile and start dealing more damage. They can use turnabout to confuse characters that think they have gotten it all figured out, and benefit from good positioning. A good strategy for players will be to damage them both down at the same time, so that they can’t use the opportunity to resurrect each other, or else split them up."
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_legend_bloodboundband",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Bound Band",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Mercenaries, ex-churners, and veteran fortune seekers congregate together around the Arkenruins like scum on a pond. Occasionally, the scum rises to the top."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "When some scavenger bands have been together a long time, they undergo an old and ill-reputed ritual, from the old days before the Doom. Writing up a contract, they inscribe runes of binding into their very flesh, using their blood to seal the contract. The agreements within govern everything from share of the loot to proper conduct to appropriate shaving. Violating them repeatedly causes deep and wracking pain, worse than a bad hangover, until the rune-spell is broken."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The bond has another benefit, however. Those bound by the blood contract grow closer to each other, and gain supernatural abilities, able to fight together like one deadly being."
+            }
+        ],
+        "stats": {
+            "hp": 13,
+            "hp_per": "per Player for each Brother (min 26)"
+        },
+        "actions": ["af_scavenger_bloodboundband_strengthinblood", "af_scavenger_bloodboundband_setup", "af_scavenger_bloodboundband_serratedknife", "af_scavenger_bloodboundband_firstblood"],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_scavenger_bloodboundband_bloodbrother", "tf_scavenger_bloodboundband_bloodboundblessing"],
+        "removed_traits": [],
+        "choices": ["tf_scavenger_bloodboundband_choice_boots","tf_scavenger_bloodboundband_choice_fixer","tf_scavenger_bloodboundband_choice_filth","tf_scavenger_bloodboundband_choice_cats","tf_scavenger_bloodboundband_choice_sharkie","tf_scavenger_bloodboundband_choice_pale","tf_scavenger_bloodboundband_choice_sharp","tf_scavenger_bloodboundband_choice_fanatic","tf_scavenger_bloodboundband_choice_broker","tf_scavenger_bloodboundband_choice_monger"],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When only one brother is remaining, the band goes into Phase II."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": []
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If only one Brother is remaining, they become unstoppable and gain +1 action for the rest of combat.",
+                        "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": [],
+                "traits": []
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The band are a bunch of nasty fighters that may seem unassuming at first, but become very dangerous when foes are bloodied. They are a fairly straightforward fight, but can benefit from looking at what each brother can do to combo their abilities together. Characters might try to defeat them all in the same round to limit the effects of their blessings, or pick off a particularly troublesome brother early."
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_legend_midan",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Midan",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Gildhand wrights and Aurelian priests find their uses in the Scavenger bands, to tally, account, and transmute in the name of the pursuit of profit. In the end though, the rogue mage- wrights who hunger for the secrets of metal aether all desire one thing - the Midan Apotheosis, the ability to transmute matter into pure gold. Temporary transmutation - enough to trick a merchant or impress a crowd - is simple enough. The real thing requires mastery of metal aether so twisted, so maddening in its complexity, that most who pursue it are broken from exhaustion.Gildhand wrights and Aurelian priests find their uses in the Scavenger bands, to tally, account, and transmute in the name of the pursuit of profit. In the end though, the rogue mage- wrights who hunger for the secrets of metal aether all desire one thing - the Midan Apotheosis, the ability to transmute matter into pure gold. Temporary transmutation - enough to trick a merchant or impress a crowd - is simple enough. The real thing requires mastery of metal aether so twisted, so maddening in its complexity, that most who pursue it are broken from exhaustion."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Those with the fortitude to achieve the Apotheosis are terrifying metalwrights. They no longer pursue wealth, but have become wealth itself. The process draws down their life aether so fast that most of them die within a few years, living out their shortened lifespans in massive, unbelievable opulence."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_midan_grandtransmutation", "af_scavenger_midan_halcyonworld", "af_scavenger_midan_glitteringworld", "af_scavenger_midan_moltencreation", "af_scavenger_midan_marketevaluation", "af_scavenger_midan_moltenshell", "af_scavenger_midan_melt", "af_scavenger_midan_theweight", "af_scavenger_midan_scatterwealth", "af_scavenger_midan_glimmer"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_midan_networth", "tf_scavenger_midan_perfection"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3, and every third round thereafter, the Midan uses The Price is Right."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": []
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Round 3, 6, 9, etc."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_scavenger_midan_thepriceisright"],
+                "traits": [""]
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fighting the Midan is all about managing a characters’ net worth. Certain effects, like the Midan’s molten shell, can rack it up very quickly on unprepared characters. The Midan can blow up its own volatile gems and swap characters into bad positions in order to maximize wealth gain, also using Molten Creation to double up on powerful terrain effects or objects such as Aurelian Bomb. The amount of objects and terrain can get overwhelming for players very quickly if it’s not dealt with!"
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Canny players may figure out that Glittering World can be used to destroy the Midan’s objects or free characters that have been turned to gold, and also safely reset the net worth of characters that are too high."
+            }
+        ],
+        "chapter": 3
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",

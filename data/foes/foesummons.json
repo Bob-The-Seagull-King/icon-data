@@ -538,6 +538,58 @@
         "limit": 1
     },
     {
+        "id": "sm_scavenger_midan_volatilegem",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true,
+            "hp": 1
+        },
+        "eventtags": {},
+        "name": "Volatile Gem",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Explodes when taking damage from any ability (including the Midan’s), destroying them. When destroyed, each object deals 1 piercing damage, once, to all adjacent foes for every net worth, then increases their net worth by 1.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_scavenger_midan_aurelianbomb",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true,
+            "hp": 10
+        },
+        "eventtags": {},
+        "name": "Aurelian Bomb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When the Midan summons a bomb, it may choose to detonate any Aurelian bombs that it didn’t place this turn. Bombs explode with a medium blast area effect centered on them, shattering all foes inside, dealing piercing fray damage four times to all foes and objects inside, then increasing all foes net worth by 2 in the area.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shattering", "id": "gl_shattered"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
         "id": "sm_imperial_veridianweapon_combatautomaton",
         "type": "Summon",
         "source": "core",
