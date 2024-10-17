@@ -6529,6 +6529,169 @@
         "chapter": 3
     },
     {
+        "id": "fj_hob_unique_beastspirit",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beast Spirit",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_unique",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Many hobs take beast form, becoming like the animals giving them their essence. In this form, they are majestic, specimens of their kind, able to run along on air as easily as ground. Other hobs such as the Aesi occasionally ride them."
+            }
+        ],
+        "stats": {
+            "vit": 10,
+            "hp": 40,
+            "speed": 4,
+            "dash": 2,
+            "defense": 5,
+            "fray": 3,
+            "damage": 6
+        },
+        "actions": ["af_hob_beastspirit_wildrage","af_hob_beastspirit_majesticgalloping","af_hob_beastspirit_rampage"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_faction_common_enrage","tf_hob_beastspirit_saddleup"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_unique_faun",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Faun",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Goat-headed hobs fond of drink and skilled with the pipes. Fierce fighters when provoked."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_faun_marchingpipes","af_hob_faun_dancingcurse","af_hob_faun_hotfoot","af_hob_faun_swirlingleaves"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_unique_kappa",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Kappa",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A strong, scaly hob that is the essence of powerful rivers and streams. Emerges with the snowmelt, and obsessed with contests of strength."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_kappa_bodyslam","af_hob_kappa_tidepool","af_hob_kappa_greatsuplex","af_hob_kappa_spinninggeyser"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_unique_nymph",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nymph",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A spring hob that coalesces from the essences of reflections in pools. They appear at a distance to be comely kin - different depending on who is looking at them. This appearance is a glamour, and upon getting closer, their true form, of shifting water, is revealed."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_nymph_yewbow","af_hob_nymph_enthrall","af_hob_nymph_riven","af_hob_nymph_greenpath"],
+        "removed_actions": [],
+        "traits": ["tf_hob_nymph_auraofglamour"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_unique_greenkeeper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Greenkeeper",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A enormous tree-like Hob that has coalesced from an old oak tree that has stood alone for fifty years or more. Greenkeepers are slow moving and thinking, and consider themselves shepherds of the forest. Plant life around them bends and ripples at their beck and call."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_hob_greenkeeper_hungryforest","af_hob_greenkeeper_bloom","af_hob_greenkeeper_ancientheal","af_hob_greenkeeper_overgrow"],
+        "removed_actions": [],
+        "traits": ["tf_hob_greenkeeper_livingroot"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_unique_changeling",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Changeling",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A strange hob that has coalesced from the unsettling sensation of meeting a stranger on the road or in the woods. It is capable of imitating kin and transforming its shape. Most changelings don’t seem to have any great malice, but a great deal of amoral curiosity."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_hob_changeling_snapshot","af_hob_changeling_blindingdust","af_hob_changeling_warpedreflection"],
+        "removed_actions": [],
+        "traits": ["tf_hob_changeling_lessermortalmockery"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_general_elite_archon",
         "type": "FoeJob",
         "source": "core",

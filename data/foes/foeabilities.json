@@ -21216,6 +21216,806 @@
                         ]
     },
     {
+        "id": "af_hob_beastspirit_wildrage",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Wild Rage",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Shove 1.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Shove 3.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_beastspirit_majesticgalloping",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Majestic Galloping",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beast spirit flies 3. If it has a rider, it can then fly 3 again.",
+                "glossary": [{"val": "flies", "id": "gl_flying"},{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_beastspirit_rampage",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Rampage",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beast spirit dashes up to 2 spaces. When it ends this movement, adjacent foes take 2 damage and are shoved 1.",
+                "glossary": [{"val": "dashes", "id": "gl_dash"},{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_faun_marchingpipes",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Marching Pipes",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Faun and a single ally in range 2 may dash 2 before this attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Repeat the effect."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_faun_dancingcurse",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "mark": true,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Dancing Curse",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The faun curses a foe in range, marking them.",
+                "glossary": [{"val": "marking", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked, after any ability resolves that allows that character to dash, fly, or teleport, all the faun’s allies everywhere may dash 2, and that foe becomes dazed.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "fly", "id": "gl_flying"},
+                    {"val": "teleport", "id": "gl_teleport"},
+                    {"val": "dazed", "id": "gl_dazed"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_faun_hotfoot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Hot Foot",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The faun chooses a foe in range. That foe must move at least 5 spaces during its next turn, or else sacrifice 5. Then, this effect ends.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At least 8 spaces."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_faun_swirlingleaves",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Swirling Leaves",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Faun puts down a terrain effect in range."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terrain Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Characters that enter the space can fly 3 spaces as an effect, but only once a turn.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_kappa_bodyslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Body Slam",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray, twice",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe is weakened.",
+                                    "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_kappa_tidepool",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Tidepool",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Shove all characters in range 1 space toward the Kappa.",
+                "glossary": [{"val": "Shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_kappa_greatsuplex",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Great Suplex",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Kappa grabs an adjacent foe, the removes both the Kappa and them from the battlefield.",
+                "glossary": []
+            },                            
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },                            
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Return them in free space within range 3, adjacent to each other. The foe takes fray damage, is slashed, and then shoved 1.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "slashed", "id": "gl_slashed"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_kappa_spinninggeyser",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true,
+            "delay": true,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Spinning Geyser",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Kappa ends their turn and gains",
+                        "glossary": [{"val": "ends their turn", "id": "gl_endturn"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Delay:",
+                        "glossary": [{"val": "Delay", "id": "gl_delay"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Their next turn must be slow. At the start of that turn, it summons a massive geyser underneath it. Adjacent characters are shoved 3. The Geyser becomes a pit space terrain effect for the rest of combat.",
+                        "glossary": [{"val": "next turn must be slow", "id": "gl_slowturn"}, {"val": "shoved", "id": "gl_shove"}, {"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is stunned and takes [D]+fray.",
+                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Whenever the Kappa uses this ability again, repeat the shove effect on all active geysers. The Kappa can choose whether or not to be shoved by this effect, and is immune to the pit space.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "immune", "id": "gl_immune"}, {"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_nymph_yewbow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "pierce": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Yew Bow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deals bonus damage for every character adjacent to the target.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Range 12."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_nymph_enthrall",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Enthrall",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Nymph chooses a foe in range 6. That foe must save. On a successful save, they are vulnerable.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "On a failed save, they are vulnerable and Nymph controls their standard movement on their next turn. Already vulnerable characters fail the save.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_nymph_riven",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "round": 3
+        },
+        "eventtags": {},
+        "name": "Riven",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Nymph chooses a character in range 8.",
+                "glossary": []
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the end of that character’s turn, they take 5 piercing damage once for every 3 spaces of distance between them and the Nymph. Then, end this effect.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_nymph_greenpath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Greenpath",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Remove the Nymph from play, then place them anywhere on the battlefield in free space. Clear all statuses from them.",
+                "glossary": []
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greenkeeper_hungryforest",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "blast_size": "medium",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Hungry Forest",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "AutoHit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray and foe is sealed.",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "sealed", "id": "gl_sealed"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Area Effect: ",
+                                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Delay: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Greenkeeper’s next turn must be slow. At the start of that turn, the area erupts again. Foes in the area take fray damage twice. Allies in the area are cured.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "cured", "id": "gl_cure"}]
+                                }],
+                "glossary": [{"val": "Delay", "id": "gl_delay"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greenkeeper_bloom",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Bloom",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Greenkeeper creates a space of difficult terrain in the area. Allies in the area when it is created gain 2 vigor.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"},{"val": "vigor", "id": "gl_vigor"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Small blast.",
+                                    "glossary": [{"val": "Small blast", "id": "gl_blast"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greenkeeper_ancientheal",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Ancient Heal",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Greenkeeper gains aura 2 until the start of their next turn. All characters in the aura that start their turn there gain 2 vigor.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greenkeeper_overgrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Overgrow",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Greenkeeper chooses a foe in range."
+            },                          
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that foe’s turn, if they have not moved at least 4 spaces at the start of their turn, they become immobile as the undergrowth grows over their feet.",
+                "glossary": [{"val": "immobile", "id": "gl_immobile"}]
+            },                          
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                          
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This effect ends when they take any amount of damage, or they or an adjacent character can hack the growth away with the interact ability (1 action), dealing 4 piercing damage to them but ending the effect.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_changeling_snapshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "unerring": true,
+            "range": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Snap Shot",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "May dash up to 2 before this attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Gain stealth.",
+                                    "glossary": [{"val": "stealth", "id": "gl_stealth"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_changeling_warpingshot"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_changeling_warpingshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Warping Shot",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe warps and stretches, swapping places with another character in range 2 from them, then becoming dazed.",
+                                    "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Increase all ranges by +2."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_changeling_blindingdust",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Blinding Dust",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 2 is blinded, then the changeling gains stealth.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"},{"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_changeling_warpedreflection",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Warped Reflection",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Changeling’s appearance and that of those around them ripples disconcertingly. The Changeling gains aura 2 until the start of its next turn. All characters in the aura gain evasion and dodge.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "evasion", "id": "gl_evasion"},{"val": "dodge", "id": "gl_dodge"}]
+            }
+        ]
+    },
+    {
         "id": "af_jotunn_heavy_mightysmite",
         "type": "Ability",
         "source": "core",

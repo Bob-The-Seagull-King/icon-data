@@ -5326,6 +5326,144 @@
         ]
     },
     {
+        "id": "tf_hob_beastspirit_saddleup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Saddle Up",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Hobs can mount or dismount the Beast Spirit by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Hobs can start the battle mounted.",
+                        "glossary": [
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While mounted, place characters inside a free space on the spirit. They share its space, move when it moves, and have cover. While moving with the spirit, characters are unstoppable.",
+                        "glossary": [
+                            {"val": "cover", "id": "gl_cover"},
+                            {"val": "unstoppable", "id": "gl_unstoppable"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters mounting the spirit when it is defeated are placed in any free adjacent space of the spirit’s choice and take 3 damage.",
+                        "glossary": [
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The rider benefits from the Beast Spirit's phasing.",
+                        "glossary": [
+                            {"val": "phasing", "id": "gl_phasing"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_nymph_auraofglamour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Glamour",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nymph has aura 2. Foes outside the aura cannot directly target the Nymph with abilities.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_greenkeeper_livingroot",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Living Root",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, becomes a height 2 object.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_changeling_lessermortalmockery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lesser Mortal Mockery",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of its turn, the changeling transforms its physical form into a brief mockery of the closest foe. The effects depend on the foe’s class. If multiple foes are equidistant, it can choose."
+            }  ,                              
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Stalwart: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling becomes sturdy until the start of its next turn.",
+                                            "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Vagabond: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling gains evasion until the start of its next turn.",
+                                            "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Mendicant: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling may cure itself.",
+                                            "glossary": [{"val": "cure", "id": "gl_cure"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Wright: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling creates a height 1 aethershard object in range 3, then may teleport on top of it.",
+                                            "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                                        }]
+                    }
+                ]
+            }  
+          ]
+    },
+    {
         "id": "tf_jotunn_hirsinn_sturdy",
         "type": "Trait",
         "source": "core",
