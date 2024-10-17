@@ -3587,7 +3587,7 @@
             "hp": 25,
             "hp_per": "per Player for each Twin (min 50)"
         },
-        "actions": ["af_scavenger_twinblades_juggernaut"],
+        "actions": ["af_scavenger_twinblades_juggernaut", "af_scavenger_twinblades_knifejuggling","af_scavenger_twinblades_turnabout","af_scavenger_twinblades_gemini","af_scavenger_twinblades_kickoff"],
         "removed_actions": ["af_class_legend_juggernaut"],
         "traits": ["tf_class_skirmisher_skirmisher", "tf_scavenger_twinblades_twins", "tf_scavenger_twinblades_fatebound"],
         "removed_traits": [],
@@ -3602,8 +3602,9 @@
                     }
                 ],
                 "name": "Phase I",
-                "actions": ["af_scavenger_twinblades_knifejuggling","af_scavenger_twinblades_twirlingblade","af_scavenger_twinblades_turnabout","af_scavenger_twinblades_gemini","af_scavenger_twinblades_kickoff"],
-                "traits": []
+                "actions": ["af_scavenger_twinblades_twirlingblade"],
+                "traits": [],
+                "stats": {}
             },
             {
                 "description": [],
@@ -3614,8 +3615,9 @@
                     }
                 ],
                 "name": "Phase II",
-                "actions": ["af_scavenger_twinblades_twirlingblade_phase2", "af_scavenger_twinblades_knifejuggling","af_scavenger_twinblades_turnabout","af_scavenger_twinblades_gemini","af_scavenger_twinblades_kickoff"],
-                "traits": ["tf_scavenger_twinblades_seekingblades"]
+                "actions": ["af_scavenger_twinblades_twirlingblade_phase2"],
+                "traits": ["tf_scavenger_twinblades_seekingblades"],
+                "stats": {}
             }
         ],
         "tactics": [
@@ -3680,20 +3682,22 @@
                 ],
                 "name": "Phase I",
                 "actions": [],
-                "traits": []
+                "traits": [],
+                "stats": {}
             },
             {
                 "description": [],
                 "trigger": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "If only one Brother is remaining, they become unstoppable and gain +1 action for the rest of combat.",
+                        "content": "If only one Brother is remaining, they become unstoppable and gain +1 action (to a total of 3) for the rest of combat.",
                         "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
                     }
                 ],
                 "name": "Phase II",
                 "actions": [],
-                "traits": []
+                "traits": [],
+                "stats": {"actions": 3}
             }
         ],
         "tactics": [
@@ -3749,7 +3753,8 @@
                 ],
                 "name": "Phase I",
                 "actions": [],
-                "traits": []
+                "traits": [],
+                "stats": {}
             },
             {
                 "description": [],
@@ -3761,7 +3766,8 @@
                 ],
                 "name": "Phase II",
                 "actions": ["af_scavenger_midan_thepriceisright"],
-                "traits": [""]
+                "traits": [],
+                "stats": {}
             }
         ],
         "tactics": [

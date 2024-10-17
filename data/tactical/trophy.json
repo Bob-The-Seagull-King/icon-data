@@ -1389,7 +1389,7 @@
         "name": "Twinblade Charm",
         "category": "fc_scavenger",
         "uses" : 5,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_twinblades",
         "usetype": "",
         "description": [
             {
@@ -1410,7 +1410,7 @@
         "name": "Battle Blade",
         "category": "fc_scavenger",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_twinblades",
         "usetype": "",
         "description": [
             {
@@ -1435,7 +1435,7 @@
         "name": "Blood Rune",
         "category": "fc_scavenger",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_bloodboundband",
         "usetype": "",
         "description": [
             {
@@ -1459,7 +1459,7 @@
         "name": "Boot's Boots",
         "category": "fc_scavenger",
         "uses" : 5,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_bloodboundband",
         "usetype": "",
         "description": [
             {
@@ -1484,7 +1484,7 @@
         "name": "Gilthand",
         "category": "fc_scavenger",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_midan",
         "usetype": "",
         "description": [
             {
@@ -1504,7 +1504,7 @@
         "name": "Crystallized Greed",
         "category": "fc_scavenger",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_midan",
         "usetype": "",
         "description": [
             {

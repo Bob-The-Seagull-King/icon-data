@@ -14314,7 +14314,7 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "foeability"},
+                "tags": {"desc_type" : "foesummon"},
                 "content": "sm_scavenger_midan_volatilegem"
             },
             {
@@ -14339,10 +14339,6 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Midan creates a geode in free space underneath any foe. The geodes are pits, and foes inside are vulnerable+. Foes that end their turn inside a geode increase their net worth by +1 and become vulnerable.",
                 "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "vulnerable", "id": "gl_vulnerable"}, {"val": "+", "id": "gl_ongoing"}]
-            },
-            {
-                "tags": {"desc_type" : "foeability"},
-                "content": "sm_scavenger_midan_volatilegem"
             },
             {
                 "tags": {"desc_type" : "foeability"},
@@ -14373,7 +14369,7 @@
                 ]
             },
             {
-                "tags": {"desc_type" : "foeability"},
+                "tags": {"desc_type" : "foesummon"},
                 "content": "sm_scavenger_midan_aurelianbomb"
             }
         ]
