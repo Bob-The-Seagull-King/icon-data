@@ -590,6 +590,81 @@
         "limit": 0
     },
     {
+        "id": "sm_hob_wissan_deeproot",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true,
+            "immobile": true
+        },
+        "eventtags": {},
+        "name": "Deep Root",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The roots have aura 1. Foes in the aura are vulnerable+. All roots must be accessible to characters and placed within range 6 of another root.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}, 
+                                        {"val": "vulnerable", "id": "gl_vulnerable"}, 
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Roots are considered to be the Wissan for purposes of targeting and each has 25% of its max hp. When a root is destroyed, remove it."
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_wissan_lesseroot",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Lesser Root",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The root emits aura 1 around it. Foes in the aura are vulnerable+.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}, 
+                                        {"val": "vulnerable", "id": "gl_vulnerable"}, 
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a root is summoned, deal 1 damage, once, to one foe in range 2 for every lesser root or deep root in range 2 of that character, including this one."
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
         "id": "sm_imperial_veridianweapon_combatautomaton",
         "type": "Summon",
         "source": "core",

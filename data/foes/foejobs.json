@@ -6692,6 +6692,156 @@
         "chapter": 3
     },
     {
+        "id": "fj_hob_elite_greatboulderhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Boulder Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Great spirits of the mountains, these colossal hobs are peaceful and animalistic, but terrifying when enraged. Their tendency to startle, combined with their tendency to look like a regular rocky hillside, does not help this situation."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2,
+            "size": 2
+        },
+        "actions": ["af_hob_greatboulderhob_ancientgeo","af_hob_greatboulderhob_greatstonetoss","af_hob_greatboulderhob_earthforce","af_hob_greatboulderhob_hurlself"],
+        "removed_actions": [],
+        "traits": ["tf_hob_greatboulderhob_lumbering","tf_hob_greatboulderhob_crumblingbody"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_elite_banderhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Banderhob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous, shaggy hobs that are surprisingly light on their feet, able to soar through the air with just a touch. They tend to be rotund and relatively relaxed, so are often underestimated by unlucky travelers. Surprisingly intelligent despite their lack of speech and bestial form, they are extremely protective of children of all kinds, and have a habit of unintentionally abducting them for long stretches of time. They often become confused, and due to their large size, see most Kin as lost children, which can lead to unfortunate incidents."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2
+        },
+        "actions": ["af_hob_banderhob_savageswipes","af_hob_banderhob_boundingleaps","af_hob_banderhob_pounce"],
+        "removed_actions": [],
+        "traits": ["tf_hob_banderhob_protectthechild"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_elite_geryan",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Geryan",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A hob appearing in the shape of an elderly Kin, dressed for travel. There’s little way to see through this hob’s disguise, but they often wear cloaks and hats, and smoke a fragrant pipe. These hobs are the spirits of well-traveled roads and therefore can move about the land quite freely. They often feign illness or weakness, and reward kindness or charity. They have a great knowledge of the ancient healing arts and are fond of striking bargains."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2
+        },
+        "actions": ["af_hob_geryan_wish","af_jotunn_hag_insideout","af_hob_greenkeeper_ancientheal","af_hob_geryan_pilferluck","af_general_judge_chastise","af_hob_geryan_oldstaff"],
+        "removed_actions": [],
+        "traits": ["tf_hob_geryan_bargain"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_elite_wissan",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wissan",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Spirits that inhabit and embody very ancient, powerful, or aether-rich trees. When a tree reaches a hundred years old, it is said a Wissan always appears. Wissan can appear in the shape of Kin and speak their tongue. They know many old and ancient magical arts, and are studious for Hobs, hoarding many secrets and treasures in their cavernous root networks. Particularly ambitious Wrights will sometimes head into the old woods to try and study with one."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wissan may appear anywhere where their spirit tree has roots, which gives them a surprising reach."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2
+        },
+        "actions": ["af_hob_wissan_ancientbolt","af_hob_wissan_rootlash","af_hob_wissan_ancientrime","af_hob_wissan_summonroot"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_hob_wissan_deeprooted","tf_hob_wissan_tiedtothetree"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_elite_whitebeast",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "White Beast",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A rare, enormous beast-like hob with spiraling horns that is the essence of the primal forests of Arden Eld. Often take the forms of stags, but also boars, wolves, or other creatures of the wild. These ancient hobs are older than all civilizations and have existed since the days of creation. Herds of animals follow in their wake. They are largely peaceful, and flighty - unless hunted, as their blood is said to cure all ailments. Then, they can drive animals into a frenzy and become hostile to all kin for many years. As the forests of Arden Eld wither and shrink, these beautiful and majestic hobs are increasingly rare, or sometimes turn up ill and sickly."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2,
+            "size": 2
+        },
+        "actions": ["af_hob_greenkeeper_overgrow","af_hob_whitebeast_wildhunt","af_hob_whitebeast_prance","af_hob_whitebeast_hornsmash","af_hob_whitebeast_pollenhaze","af_hob_whitebeast_primalstars"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_general_elite_archon",
         "type": "FoeJob",
         "source": "core",

@@ -5464,6 +5464,135 @@
           ]
     },
     {
+        "id": "tf_hob_greatboulderhob_lumbering",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lumbering",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Cannot dash. Only takes slow turns.",
+                "glossary": [
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "slow turns", "id": "gl_slowturn"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_greatboulderhob_crumblingbody",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crumbling Body",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has 12 armor. After any ability damages the hob, permanently reduce its armor by 1 for the rest of combat, even if that damage is reduced to 0. If it's armor is 0, all attacks against it become critical hits on hit.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "critical hits", "id": "gl_criticalhit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_banderhob_protectthechild",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Protect The Child",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, the Banderhobb chooses a foe, deciding it’s a child to be protected. It gains three uses of the following interrupt, which carry over between turns and only refresh at the start of each round.",
+                "glossary": [
+                    {"val": "interrupt", "id": "gl_interrupt"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_banderhob_protectthechild"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_geryan_bargain",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bargain",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once per round, as an interrupt, the Geryan can strike one of the following bargains with any foe. The bargain interrupts anything that’s currently going on, and resolves immediately. Accepting a bargain is voluntary. If a character refuses a bargain, the Geryan or an ally of its choice gains 4 vigor.",
+                "glossary": [
+                    {"val": "interrupt", "id": "gl_interrupt"},
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_luck"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_immortality"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_wealth"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_beauty"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_wissan_deeprooted",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Rooted",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of any combat, place 4 deep roots on the map.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_hob_wissan_deeproot"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_wissan_tiedtothetree",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tied to the Tree",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wissan’s body is intangible. When all four roots are destroyed, it is instantly defeated and disappears. It can teleport to any space adjacent to a root as a free action.",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"},                    
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_jotunn_hirsinn_sturdy",
         "type": "Trait",
         "source": "core",

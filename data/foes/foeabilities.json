@@ -21822,7 +21822,7 @@
         "description":  [                               
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The Greenkeeper gains aura 2 until the start of their next turn. All characters in the aura that start their turn there gain 2 vigor.",
+                "content": "The Hob gains aura 2 until the start of their next turn. All characters in the aura that start their turn there gain 2 vigor.",
                 "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "vigor", "id": "gl_vigor"}]
             }
         ]
@@ -21840,7 +21840,7 @@
         "description":  [                               
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The Greenkeeper chooses a foe in range."
+                "content": "The Hob chooses a foe in range."
             },                          
             {
                 "tags": {"desc_type" : "gap"},
@@ -22012,6 +22012,874 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Changeling’s appearance and that of those around them ripples disconcertingly. The Changeling gains aura 2 until the start of its next turn. All characters in the aura gain evasion and dodge.",
                 "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "evasion", "id": "gl_evasion"},{"val": "dodge", "id": "gl_dodge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greatboulderhob_ancientgeo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "arc": 4
+        },
+        "eventtags": {},
+        "name": "Ancient Geo",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2[D] + 1",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss or Area Effect:",
+                                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2 damage",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Attack target releases a medium blast explosion centered on them, dealing 2 damage to all characters within.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If the attack target is bloody or dazed, they explode again, repeating this effect.",
+                                    "glossary": [{"val": "bloody", "id": "gl_bloodied"},{"val": "dazed", "id": "gl_dazed"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Repeat the effect."
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greatboulderhob_greatstonetoss",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "arc": 4
+        },
+        "eventtags": {},
+        "name": "Great Stone Toss",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage and is shoved 1, then create a height 1 boulder object next to them.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greatboulderhob_earthforce",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Earth Force",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent object is shoved 3. Characters in its path are shoved 1 to either side and become slashed.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "slashed", "id": "gl_slashed"}]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters also take 4 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_greatboulderhob_hurlself",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Hurl Self",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Boulder hob sacrifices 25% of its maximum hp, hurling part of itself at a foe. A foe in range 5 must save or take 3[D]+fray, be shoved 3, and become stunned. On a successful save, they are shoved 1, slashed, and take [D]+fray.",
+                "glossary": [
+                    {"val": "sacrifices", "id": "gl_sacrifice"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "stunned", "id": "gl_stunned"},
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "slashed", "id": "gl_slashed"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, create a height 1 boulder object adjacent to that foe. If the hob is at 1 hp, it defeats itself with this move."
+            }
+        ]
+    },
+    {
+        "id": "af_hob_banderhob_protectthechild",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 3,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Protect The Child",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A character ends their turn adjacent to the chosen character, or deals damage with an ability to that character."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Hob teleports to an adjacent space as an effect, then swipes that character Other hobs are shoved 1 and take no damage. All other characters take [D]+fray damage. This effect ends if the Banderhobb’s target deals damage to it in any way. If the effect ends, the Banderhobb can immediately choose a new character to protect, but can’t choose any target it’s already chosen this combat.",
+                                    "glossary": [
+                                        {"val": "teleports", "id": "gl_teleport"},
+                                        {"val": "shoved", "id": "gl_shove"},
+                                        {"val": "[D]", "id": "gl_damagedice"},
+                                        {"val": "fray", "id": "gl_fray"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_banderhob_savageswipes",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "burst": 2,
+            "burst_target": "self"
+        },
+        "eventtags": {},
+        "name": "Savage Swipes",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss or Area Effect:",
+                                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If there’s only one valid character in range, deals bonus damage.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Charge: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Burst 3.",
+                                    "glossary": [{"val": "Burst", "id": "gl_burst"}]
+                                }],
+                "glossary": [{"val": "Charge", "id": "gl_charge"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_banderhob_boundingleaps",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bounding Leaps",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Banderhob flies 4. If it lands on an object or adjacent to a character, it can repeat this flight once more.",
+                "glossary": [                   
+                    {"val": "flies", "id": "gl_flying"},                        
+                    {"val": "flight", "id": "gl_flying"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_banderhob_pounce",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Pounce",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The hob flies 4, then an adjacent foe is dazed and must save or take [D]+fray, twice, or fray on a successful save.",
+                "glossary": [                   
+                    {"val": "flies", "id": "gl_flying"},                        
+                    {"val": "dazed", "id": "gl_dazed"},                        
+                    {"val": "[D]", "id": "gl_damagedice"},                        
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_geryan_bargain_luck",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": true,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Luck",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe started their turn.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe gains +1 boon on all attacks and saves this turn.",
+                                    "glossary": [
+                                        {"val": "+1 boon", "id": "gl_boon"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terms:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Geryan gains another use of one of its 1/combat abilities.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_geryan_bargain_immortality",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": true,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Immortality",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Foe just took a wound.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The character can ignore the wound.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terms:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Geryan grants a vigor surge to itself and an ally in range 6.",
+                                    "glossary": [
+                                        {"val": "vigor", "id": "gl_vigor"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_geryan_bargain_wealth",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": true,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Wealth",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe’s turn started.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Place a wealth token in a free space of the Geryan’s choice in range 6. The wealth token is an intangible summon. It can be picked up if any character ends its turn adjacent with no other characters adjacent to the token, and is dropped in an adjacent space if a character is defeated. If a character ends combat with the wealth token, they gain 1 dust.",
+                                    "glossary": [
+                                        {"val": "intangible", "id": "gl_intangible"},
+                                        {"val": "summon", "id": "gl_summon"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_geryan_bargain_beauty",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": true,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Beauty",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe just took damage.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The foe reduces all that damage to 1. Their skin and hair/fur become clean and look amazing.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Terms:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Every ally of the Geryan in range 3 of that foe gains hatred of them and they become sealed and pacified.",
+                                    "glossary": [
+                                        {"val": "hatred", "id": "gl_hatred"},
+                                        {"val": "sealed", "id": "gl_sealed"},
+                                        {"val": "pacified", "id": "gl_pacified"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_geryan_wish",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt",
+            "uses": 1,
+            "per": "combat"
+        },
+        "eventtags": {},
+        "name": "Wish",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "An ally in range 6 is reduced to 0 hp.",
+                                    "glossary": [
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "That ally returns to 25% hp instead, then the the Geryan sacrifices 25% of its maximum hp.",
+                                    "glossary": [
+                                        {"val": "sacrifices", "id": "gl_sacrifice"}
+                                    ]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_geryan_pilferluck",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "mark": true,
+            "multimark": true
+        },
+        "eventtags": {},
+        "name": "Pilfer Luck",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The hob marks a foe in range.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While marked the foe cannot gain boons, and the Hob gains +1 boon on all its attacks and saves.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "boons", "id": "gl_boon"},
+                    {"val": "+1 boon", "id": "gl_boon"}
+                ]
+            },                           
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                           
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe can end this mark by choosing to roll all attacks and saves with +1 curse for their entire turn. The mark then ends.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"},
+                    {"val": "+1 curse", "id": "gl_curse"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_geryan_oldstaff",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Old Staff",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss or Area Effect:",
+                                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Attack target is pacified.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_wissan_ancientbolt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "pierce": true,
+            "line": 8
+        },
+        "eventtags": {},
+        "name": "Ancient Bolt",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D] + fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss or Area Effect:",
+                                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Attack target takes 2 damage, once, for every adjacent foe or ally."
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_wissan_rootlash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Root Lash",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A character in range 4 from a root summon or a deep root takes 3 damage, then must save or be shoved as far as possible towards that root, or 1 space on a successful save.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_wissan_ancientrime",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "pierce": true,
+            "line": 6,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Ancient Rime",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Characters in the area take fray damage.",
+                "glossary": [{"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Delay: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The hob’s next turn must be slow but at the start of that turn, a freezing weapon made of water coalesces at the end of the line, repeating the area. Characters in the area effect take [D]+fray. Then this effect ends.",
+                                    "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "[D]", "id": "gl_damagedice"}]
+                                }],
+                "glossary": [{"val": "Delay", "id": "gl_delay"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_wissan_summonroot",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Summon Root",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Wissan creates a lesser root in a free space in range."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_hob_wissan_lesseroot"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_whitebeast_wildhunt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Wild Hunt",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the beast can choose an edge of the map. At the end of that round, a huge stampede of animals sweeps across the map from that end to the next."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes take 2 damage, three times. However, characters that are standing on the other side of objects or terrain as if they were in cover from this effect are immune to it.",
+                "glossary": [{"val": "cover", "id": "gl_cover"},{"val": "immune", "id": "gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_whitebeast_prance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Prance",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "At the start of the round, the beast flies 3 spaces, then creates a height 3 blooming tree object in any space it vacated.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_whitebeast_hornsmash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Horn Smash",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "A foe in range 2 is shattered. Shattered foes are shoved 2.",
+                "glossary": [{"val": "shattered", "id": "gl_shattered"},{"val": "Shattered", "id": "gl_shattered"},{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_whitebeast_pollenhaze",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Pollen Haze",
+        "description":  [                               
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Foes in the area take 1 damage twice. A foe in the center spaces then becomes vulnerable. If the area catches a tree in the area, foes take 1 piercing damage three times instead.",
+                "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "area", "id": "gl_areaeffect"},{"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_whitebeast_primalstars",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "burst": 3,
+            "pierce": true,
+            "type": "attack",
+            "attack": true,
+            "burst_target": "target",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Primal Stars",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "AutoHit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2 damage, twice"
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Area Effect:",
+                                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "2 damage, twice"
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_whitebeast_breathofthewild"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_whitebeast_breathofthewild",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "blast_size": "small",
+            "pierce": true,
+            "type": "attack",
+            "attack": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Breath of the Wild",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "subeffect"},
+                                    "content": "On Hit:",
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "[D]+fray",
+                                                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                                    }]
+                                },
+                                {
+                                    "tags": [{"tag_name": "desc_type", "val": "subeffect"}],
+                                    "content": "Miss or Area Effect:",
+                                    "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                                    "subcontent":   [{
+                                                        "tags": [{"desc_type": "desc"}],
+                                                        "content": "Fray.",
+                                                        "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                                    }]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Deals bonus damage and increase to large blast if it catches a tree in the area. Doesn’t affect allies.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "large blast", "id": "gl_blast"}]
+                                }]
             }
         ]
     },
@@ -23550,7 +24418,7 @@
         "description":  [                                                  
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "The Hag curses a foe in range with awful nausea. If that foe moves more than 1 space or uses any ability that costs 2 actions on their turn, they must save.",
+                "content": "The Foe curses a foe in range with awful nausea. If that foe moves more than 1 space or uses any ability that costs 2 actions on their turn, they must save.",
                 "glossary": [
                 ]
             },                                                  
