@@ -6047,7 +6047,7 @@
             }
         ],
         "stats": {},
-        "actions": ["af_lowlander_canker_blightlandsbrawn"],
+        "actions": [],
         "removed_actions": [],
         "traits": ["tf_lowlander_canker_stench", "tf_lowlander_canker_toxicrevenge"],
         "removed_traits": [],
