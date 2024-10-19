@@ -5006,6 +5006,160 @@
         ]
     },
     {
+        "id": "tf_lowlander_mule_blightlandsbrawn",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blightlands Brawn",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When bloodied, becomes sturdy, kidnap goes +2 more spaces, and kidnap also slashes foes.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "slashes", "id": "gl_slashed"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_canker_stench",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stench",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character has aura 1. Foes in the aura take +1 curse on attacks and saves.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_canker_toxicrevenge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toxic Revenge",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When defeated, explodes with venom, inflicting [D]+fray damage as a burst 1 (self) area effect.",
+                        "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "tf_lowlander_snork_entrenched",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Entrenched",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Unstoppable while in a pit.",
+                "glossary": [{"val": "Unstoppable", "id": "gl_unstoppable"}, {"val": "pit", "id": "gl_pit"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_slaughterer_bloodwhetter",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bloodwhetter",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Slaughterer is damaged by an ability they may deal 2 damage to an adjacent foe, each time they are damaged."
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_tick_lickknife",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lick Knife",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Tick’s abilities all have "
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Slay: ",
+                        "glossary": [{"val": "Slay", "id": "gl_slay"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "gain +1 action. This trait can only trigger once a turn."
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "tf_lowlander_priestofthenettle_noxiouscenser",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Noxious Censer",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The priest has Aura 2. Characters in the aura have cover against abilities used from the outside, and foes in the aura get +1 curse on attacks.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "cover", "id": "gl_cover"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_mycowright_auraofrot",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Rot",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mycowright has aura 2. Foes that start or end their turn in the aura lose all vigor, then take 2 piercing damage.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "piercing", "id": "gl_piercing"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_swarmwright_swarmshroud",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Swarm Shroud",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. Attacks against the wright and allies in the aura gain +1 curse, and foes that start their turn in the area take 1 piercing damage.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "piercing", "id": "gl_piercing"}]
+            }    
+        ]
+    },
+    {
         "id": "tf_faction_jotunn_elite",
         "type": "Trait",
         "source": "core",

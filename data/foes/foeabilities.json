@@ -7567,115 +7567,6 @@
                         ]
     },
     {
-        "id": "af_lowlander_fetididol_manifestations",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": "round"
-        },
-        "eventtags": {},
-        "name": "Manifestations",
-        "class_id": "icon",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active."
-        } ,               
-        {
-            "tags": {"desc_type" : "table"},
-            "content": "tb_lowlander_fetididol_manifestations"
-        }        
-                        ]
-    },
-    {
-        "id": "af_lowlander_fetididol_manifestations_spewinggrowth_disorientingvomit",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": "free",
-            "range": 6,
-            "unerring": true
-        },
-        "eventtags": {},
-        "name": "Disorienting Vomit",
-        "class_id": "icon",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "3 damage and shove 2."
-        }        
-                        ]
-    },
-    {
-        "id": "af_lowlander_headlopper_demonpankration",
-        "type": "Ability",
-        "source": "core",
-        "tags": {
-            "action": 1,
-            "range": 3,
-            "end_turn": true,
-            "uses": 2,
-            "per": "round"
-        },
-        "eventtags": {},
-        "name": "Demon Pankration",
-        "class_id": "icon",
-        "description":  [        
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "The head lopper attempts to grab foe of its choice in range. At the of the very next player turn, if that foe is still in range 3, the Head Lopper removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:"
-        },                            
-        {
-            "tags": {"desc_type" : "list"},
-            "content": "",
-            "subcontent": [                                            
-                {
-                    "tags": {"desc_type" : "subeffect"},
-                    "content": "DDT: ",
-                    "subcontent": [                                            
-                        {
-                            "tags": {"desc_type" : "desc"},
-                            "content": "The foe is stunned, weakened, slashed, and shoved 1.",
-                            "glossary": [{"val": "stunned", "id": "gl_stunned"},
-                            {"val": "weakened", "id": "gl_weakened"},
-                            {"val": "slashed", "id": "gl_slashed"},
-                            {"val": "shoved", "id": "gl_shove"}]
-                        }     
-                    ]
-                },                                          
-                {
-                    "tags": {"desc_type" : "subeffect"},
-                    "content": "Spinning Piledriver: ",
-                    "subcontent": [                                            
-                        {
-                            "tags": {"desc_type" : "desc"},
-                            "content": "The Head Lopper and the foe rush 2 together, then the foe takes piercing fray damage again and has a pit created underneath them.",
-                            "glossary": [
-                                {"val": "rush", "id": "gl_rush"},
-                                {"val": "piercing", "id": "gl_piercing"},
-                                {"val": "fray", "id": "gl_fray"},
-                                {"val": "pit", "id": "gl_pit"}
-                            ]
-                        }     
-                    ]
-                },                                          
-                {
-                    "tags": {"desc_type" : "subeffect"},
-                    "content": "Backbreaker: ",
-                    "subcontent": [                                            
-                        {
-                            "tags": {"desc_type" : "desc"},
-                            "content": "The foe becomes immobile for their next turn.",
-                            "glossary": [{"val": "immobile", "id": "gl_immobile"}]
-                        }     
-                    ]
-                }  
-            ]
-        }]
-    },
-    {
         "id": "af_hob_fallingleafaesi_swirlingleaves",
         "type": "Ability",
         "source": "core",
@@ -28839,7 +28730,168 @@
                     }
                 ]
             }
-                        ]
+        ]
+    },
+    {
+        "id": "af_lowlander_butcher_furystrikes",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "true_strike": true,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Fury Strikes",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May mark the foe after the attack resolves. While marked, the butcher’s attacks cannot miss the marked foe (turn any miss into a hit) and deal bonus damage.",
+                        "glossary": [{"val": "mark", "id": "gl_mark"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_snork_intimidate",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Intimidate",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Snork marks a foe outside of range 6. After the marked foe uses an ability, the Snork may rush 2 spaces towards the foe, shoving characters in their path 1 space out of the way. If the marked character starts their turn adjacent to the Snork, they take fray damage twice, become stunned and this mark ends.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "rush", "id": "gl_rush"}, {"val": "shoving", "id": "gl_shove"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_snork_flameblast",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "true_strike": true,
+            "blast_size": "large"
+        },
+        "eventtags": {},
+        "name": "Flame Blast",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters take 3 damage twice and are shoved 1 in any direction.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_slaughterer_cull",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Cull",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deal 3 damage, once to an adjacent foe for each of the following that is true:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foe is weakened or slashed.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}, {"val": "slashed", "id": "gl_slashed"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foe is bloodied.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Foe is in a pit.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_slaughterer_grapple",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Grapple",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Slab marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency. On a failed save, it becomes unable to exit adjacency with the Slab by any means for the rest of the current turn. On a successful save, the mark and this effect ends, but the foe is weakened.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "weakened", "id": "gl_weakened"}]
+            }
+        ]
     },
     {
         "id": "af_lowlander_skirmisher_razorshot",
@@ -28921,7 +28973,7 @@
             "content": "Foes can pass a save to avoid this effect, but are dazed on a successful save. Can’t use if unable to teleport.",
             "glossary": [{"val": "dazed", "id": "gl_dazed"},{"val": "teleport", "id": "gl_teleport"}]
         }
-                        ]
+        ]
     },
     {
         "id": "af_lowlander_skirmisher_revealpit",
@@ -28954,7 +29006,7 @@
             "content": "Dazed foes cannot avoid the pit and take 3 damage.",
             "glossary": [{"val": "Dazed", "id": "gl_dazed"},{"val": "pit", "id": "gl_pit"}]
         }
-                        ]
+        ]
     },
     {
         "id": "af_lowlander_skirmisher_revealpit_ch2",
@@ -28987,7 +29039,7 @@
             "content": "Dazed foes cannot avoid the pit and take 3 damage.",
             "glossary": [{"val": "Dazed", "id": "gl_dazed"},{"val": "pit", "id": "gl_pit"}]
         }
-                        ]
+        ]
     },
     {
         "id": "af_lowlander_skirmisher_revealpit_ch3",
@@ -29026,10 +29078,199 @@
             "content": "After this ability is used, the Grub may teleport to the space of any free pit, then deal 2 damage to all adjacent foes.",
             "glossary": [{"val": "teleport", "id": "gl_teleport"},{"val": "pit", "id": "gl_pit"}]
         }
-                        ]
+        ]
     },
     {
-        "id": "af_lowlander_leader_toxoin",
+        "id": "af_lowlander_thresher_callpitworm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combat": 2
+        },
+        "eventtags": {},
+        "name": "Call Pit Worm",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Thresher chooses a pit space in range 4 and summons a pit worm in it.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_lowlander_thresher_pitworm"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_scab_track",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Track",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 5 is marked. While marked, that foe cannot benefit from cover and the Scab may dash up to 3 spaces towards that foe at the end of their turn.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "summons", "id": "gl_summon"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_scab_razorshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Razor Shot",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage. If that foe is bloodied, they take 3 damage twice instead.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_darter_blowdart",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Blowdart",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Darter shoots a toxic dart at a foe in range, marking them. Whiled marked, the foe is inflicted with a maddening toxin and must save at the start of their turn. On successful save, a foe is shoved 1 in a direction on the Darter’s choice. On a failed save, instead of taking a standard move that turn, the Darter may shove that character 3.",
+                "glossary": [{"val": "marking", "id": "gl_mark"}, {"val": "shove", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_mole_collapsetunnel",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Collapse Tunnel",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mole creates a line 4 area effect of difficult terrain. Characters standing in the area when it is created are dazed. If a pit is caught in the space, it explodes with a medium blast area effect, dealing 6 damage to characters within but removing the pit.",
+                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "dazed", "id": "gl_dazed"}, {"val": "pit", "id": "gl_pit"}, {"val": "medium blast", "id": "gl_blast"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_mole_digtunnel",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Dig Tunnel",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mole chooses two pit spaces on the battlefield and connects them with a tunnel. Any character can use a free action to teleport from one end of the tunnel to the next, as long as the other end of the tunnel is unoccupied.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_tick_scuttleaway",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Scuttle Away",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tick gains the following interrupt until the start of its next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_tick_scuttle"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_tick_scuttle",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Scuttle",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Trigger:",
+                "subcontent":   {
+                    "tags": {"desc_type": "desc"},
+                    "content": "A foe moves adjacent to the Tick."
+                }
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect:",
+                "subcontent":   {
+                    "tags": {"desc_type": "desc"},
+                    "content": "The Tick deals 2 damage to that foe, then may dash 3. If they move into a pit, they may also then teleport to any other pit space.",
+                    "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "pit", "id": "gl_pit"}, {"val": "teleport", "id": "gl_teleport"}]
+                }
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_tick_legtrap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Leg Trap",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Tick chooses a foe in a pit anywhere. That foe becomes immobile. That foe can choose to sacrifice 6 to break themselves out of this effect as a free action on their turn, or else can save against this effect at the end of their turn, ending it on a success. If the foe is removed from the space, they also take [D]+fray, but this effect ends.",
+                "glossary": [{"val": "immobile", "id": "gl_immobile"}, {"val": "pit", "id": "gl_pit"}, {"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_leader_toxion",
         "type": "Ability",
         "source": "core",
         "tags": {
@@ -29039,7 +29280,7 @@
             "range": 5
         },
         "eventtags": {},
-        "name": "Toxoin",
+        "name": "Toxion",
         "description":  [                               
             {
                 "tags": {"desc_type" : "subeffect"},
@@ -29116,7 +29357,7 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Boil creates a choking cloud, a small blast terrain effect, in free space in range with the following effects:",
                 "glossary": [{"val": "small blast", "id": "gl_blast"}]
-            } ,                                      
+            },                                      
             {
                 "tags": {"desc_type" : "list"},
                 "content": "",
@@ -29197,6 +29438,144 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "An ally in range is marked and may dash 3. When marked, they gain +2 speed, they gain defiance, and while marked they gain increased from noxious cloud",
                 "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "dash", "id": "gl_dash"}, {"val": "defiance", "id": "gl_defiance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_viper_toxiccoating",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Toxic Coating",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The viper puts out a 1 space terrain effect in range. The abilities of allies inside this effect gain pierce and deal bonus damage.",
+                "glossary": [{"val": "pierce", "id": "gl_piercing"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_priestoftheherb_purifyingcenser",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Purifying Censer",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Apothecary summons a censer in range.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_lowlander_priestoftheherb_herbalcenser"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_mycowright_moxiousgarden",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Noxious Garden",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mycowright creates up to two mushroom summons in range.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_lowlander_mycowright_mushroom"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_scionofpollution_acidrain",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Acid Rain",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, the priest creates a medium blast terrain effect in free space in range 6. Characters that end their turn inside the terrain effect take piercing damage equal to the round number +2. The scion can redirect the terrain effect as part of this round action, moving it 3 spaces in any direction.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_scionofpollution_fetidwind",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Fetid Wind",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes are shoved 1 in the same direction.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes fray damage.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_scionofpollution_dissolution",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Dissolution",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "An ally in range 3 is dissolved into poisonous gas. That ally sacrifices 15, but gains flying and becomes intangible until the start of their next turn.",
+                        "glossary": [{"val": "sacrifices", "id": "gl_sacrifice"}, {"val": "flying", "id": "gl_flying"}, {"val": "intangible", "id": "gl_intangible"}]
+                    }
+                ]
             }
         ]
     },
@@ -29317,7 +29696,7 @@
                 "tags": [{"desc_type": "foesummon"}],
                 "content": "sm_lowlander_artillery_attackinsect"
             }
-                        ]
+        ]
     },
     {
         "id": "af_lowlander_artillery_attackinsect_ch2",
@@ -29340,7 +29719,7 @@
                 "tags": [{"desc_type": "foesummon"}],
                 "content": "sm_lowlander_artillery_attackinsect_ch3"
             }
-                        ]
+        ]
     },
     {
         "id": "af_lowlander_artillery_attackinsect_ch3",
@@ -29363,7 +29742,303 @@
                 "tags": [{"desc_type": "foesummon"}],
                 "content": "sm_lowlander_artillery_attackinsect_ch3"
             }
+        ]
+    },
+    {
+        "id": "af_lowlander_initiate_maddeningstinging",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Maddening Stinging",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The initiate marks a foe in range with pheromones that attract stinging and biting insects. While marked, after using any ability on their turn, the Initiate may shove the marked foe 1 in any direction. An adjacent ally, but not the marked character, can deal 4 piercing damage to and use the interact ability on the marked character to dislodge the insects, ending this mark.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}, {"val": "shove", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_monsterhunter_huntingglaive",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "range": 6,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Hunting Glaive",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage for each ally adjacent to the target. All allies or allied summons in range 2 of the target may dash 2.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "summons", "id": "gl_summon"}, {"val": "dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_centipedetamer_agonizingbite",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Agonizing Bite",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The tamer calls centipedes out of the earth to bite a foe, targeting a medium blast area. For every pit in the area, a foe in the area takes 2 piercing damage, once. A shattered or vulnerable foe can be damaged multiple times by one use of this ability, otherwise it may only affect each foe once.",
+                        "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}, {"val": "pit", "id": "gl_pit"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "shattered", "id": "gl_shattered"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_blackmeadbrewer_blackhoneyvial",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Black Honey Vial",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The brewer throws a black honey vial at a free space in range, a 1 space terrain effect, drawing in swarms of insects. The area is difficult and dangerous terrain, and characters inside are vulnerable+. At the start of the Brewer’s next turn, the area increases to a large blast.",
+                "glossary": [{"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "+", "id": "gl_ongoing"}, {"val": "large blast", "id": "gl_blast"}, {"val": "vulnerable", "id": "gl_vulnerable"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_swarmwright_burrowingswarm",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Burrowing Swarm",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Swarm Wright gains the following interrupt until the start of its next turn:",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_swarmwright_skitteringretreat",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2
+        },
+        "eventtags": {},
+        "name": "Skittering Retreat",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Swarm Wright is damaged by an ability and the ability resolves."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Teleport 3, then create a pit under the space vacated.",
+                        "glossary": [{"val": "Teleport", "id": "gl_teleport"}, {"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_swarmwright_thousandmaws",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Thousand Maws",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Swarm Wright becomes intangible, then dashes 6 spaces in a straight line, then ends this effect. Foes they pass through take 1 damage five times. This damage becomes piercing against foes inside pits.",
+                "glossary": [{"val": "intangible", "id": "gl_intangible"}, {"val": "dashes", "id": "gl_dash"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "pits", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetididol_manifestations",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Manifestations",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active."
+        } ,               
+        {
+            "tags": {"desc_type" : "table"},
+            "content": "tb_lowlander_fetididol_manifestations"
+        }        
                         ]
+    },
+    {
+        "id": "af_lowlander_fetididol_manifestations_spewinggrowth_disorientingvomit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "range": 6,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Disorienting Vomit",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "3 damage and shove 2."
+        }        
+                        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_demonpankration",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "end_turn": true,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Demon Pankration",
+        "class_id": "icon",
+        "description":  [        
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The head lopper attempts to grab foe of its choice in range. At the of the very next player turn, if that foe is still in range 3, the Head Lopper removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:"
+        },                            
+        {
+            "tags": {"desc_type" : "list"},
+            "content": "",
+            "subcontent": [                                            
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "DDT: ",
+                    "subcontent": [                                            
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The foe is stunned, weakened, slashed, and shoved 1.",
+                            "glossary": [{"val": "stunned", "id": "gl_stunned"},
+                            {"val": "weakened", "id": "gl_weakened"},
+                            {"val": "slashed", "id": "gl_slashed"},
+                            {"val": "shoved", "id": "gl_shove"}]
+                        }     
+                    ]
+                },                                          
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "Spinning Piledriver: ",
+                    "subcontent": [                                            
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The Head Lopper and the foe rush 2 together, then the foe takes piercing fray damage again and has a pit created underneath them.",
+                            "glossary": [
+                                {"val": "rush", "id": "gl_rush"},
+                                {"val": "piercing", "id": "gl_piercing"},
+                                {"val": "fray", "id": "gl_fray"},
+                                {"val": "pit", "id": "gl_pit"}
+                            ]
+                        }     
+                    ]
+                },                                          
+                {
+                    "tags": {"desc_type" : "subeffect"},
+                    "content": "Backbreaker: ",
+                    "subcontent": [                                            
+                        {
+                            "tags": {"desc_type" : "desc"},
+                            "content": "The foe becomes immobile for their next turn.",
+                            "glossary": [{"val": "immobile", "id": "gl_immobile"}]
+                        }     
+                    ]
+                }  
+            ]
+        }]
     },
     {
         "id": "af_general_archon_blackheart",

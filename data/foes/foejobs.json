@@ -5982,6 +5982,506 @@
         "chapter": 3
     },
     {
+        "id": "fj_lowlander_heavy_butcher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Butcher",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lowlanders tasked with the ritual task of carving and carefully preparing monster meat for consumption, an important task in every clan, leaving their frames corded with muscle."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_butcher_furystrikes"],
+        "removed_actions": ["af_lowlander_heavy_demolish"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_heavy_mule",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mule",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Strong or burly lowlanders that carry supplies through dangerous terrain over a long distance. They can do the same with captives."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_mule_blightlandsbrawn"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_heavy_canker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Canker",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Clan members that spend too long without protective gear or who have consumed a little too much monster meat often develop tough hides and a rank stench."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_canker_blightlandsbrawn"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_canker_stench", "tf_lowlander_canker_toxicrevenge"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_heavy_snork",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Snork",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Clanners with heavy, woven environmental suits that are tasked with cleaning up the worst of the clan’s refuse and keeping the peace."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_snork_intimidate", "af_lowlander_snork_flameblast"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_snork_entrenched"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_heavy_slaughterer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Slaughterer",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Axe-wielding Lowlanders tasked with the ritual slaughter of livestock and captive monsters. The strength required to swing their heavy, pitted iron blades is tremendous."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_slaughterer_grapple", "af_lowlander_slaughterer_cull"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_slaughterer_bloodwhetter"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_skirmisher_thresher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thresher",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Threshers are tasked with cleaning the pits and tunnels of dangerous wildlife and often form uncanny bonds with them."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_thresher_callpitworm"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_skirmisher_scab",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scab",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Unsavory scouts that are tasked with patrolling the edges of Lowlander territory, reporting on the movements of travelers and dealing with them if necessary."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_scab_track", "af_lowlander_scab_razorshot"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_skirmisher_darter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Darter",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Curating noxious, hallucinogenic toxins from the alien plant and wildlife of the blights, Darters become experts with the tiny bone darts that they throw or shoot from a blowgun."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_darter_blowdart"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_skirmisher_mole",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mole",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Pale, gangly clanners that spend more time below ground than aboveground."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_mole_collapsetunnel", "af_lowlander_mole_digtunnel"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_skirmisher_tick",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tick",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exiles of exiles, Ticks are clanners so reviled that they have been banished from the clan grounds. Nevertheless, their labor cannot be wasted, so they are assigned permanent patrol duty and occasionally left food and supplies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_tick_scuttleaway", "af_lowlander_tick_legtrap"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_tick_lickknife"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_leader_priestofthenettle",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Priest of the Nettle",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Clanners that learn their ways around the various poisons and noxious wastes of the blight lands eventually join the priesthood to pass on their knowledge."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_priestofthenettle_noxiouscenser"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_leader_viper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sacb",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Scarred lowlanders that dip the blades and arrows of their allies in the pure toxic ground of the blights."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_viper_toxiccoating"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_leader_priestoftheherb",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Priest of the Herb",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The healers of the Lowlanders, potent in their knowledge to ease sicknesses and ills - but equally potent in their ability to inflict them."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_priestoftheherb_purifyingcenser"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_leader_mycowright",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mycowright",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "More mycelium than person, mycowrights use water and earth aether to cultivate the various toxic mushroom species that grow out in the wastes, learning how to prepare them for food and medicine."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_mycowright_noxiousgarden"],
+        "removed_actions": [],
+        "traits": ["tf_special_regeneration", "tf_lowlander_mycowright_auraofrot"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_leader_scionofpollution",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scion of Pollution",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights that have learned to master the corrupted air and water aether of the blight lands. In a twisted imitation of the storm benders, they call the poisonous winds of the wastes to their bidding."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_scionofpollution_acidrain", "af_lowlander_scionofpollution_fetidwind", "af_lowlander_scionofpollution_dissolution"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_artillery_initiate",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Initiate",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Apiarists of low rank and influence, who have not partaken of the Black Mead and must resort to pheromones to control insects."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_initiate_maddeningstinging"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_artillery_monsterhunter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Hunter",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights and hunters that use their swarms to track and hunt down monsters for the clan’s safety or sustenance. They fight with great- glaives, spinning blades that return to their wielder."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_monsterhunter_huntingglaive"],
+        "removed_actions": ["af_lowlander_artillery_summontheswarm"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_artillery_centipedetamer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Centipede Tamer",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Especially bold or foolish Apiarists who apply their chitin-lore to taming enormous and extremely venomous Ruin Centipedes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_centipedetamer_agonizingbite"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_artillery_blackmeadbrewer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Black Mead Brewer",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Brewers of the potent drink that the apiarists partake of to control their swarms (and occasionally for leisure)"
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_blackmeadbrewer_blackhoneyvial"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance", "tf_special_regeneration"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_artillery_swarmwright",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Swarm Wright",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The highest ranks of the Apiarists, who have forsaken their flesh to fuse with their swarms, becoming one gestalt being."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_swarmwright_burrowingswarm", "af_lowlander_swarmwright_thousandmaws"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying", "tf_special_phasing", "tf_lowlander_swarmwright_swarmshroud"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",

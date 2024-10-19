@@ -837,6 +837,175 @@
         "limit": 0
     },
     {
+        "id": "sm_lowlander_thresher_pitworm",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Pit Worm",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or during the Thresher’s turn, the worm can teleport to any free pit space, then deal 3 damage to a foe in range 3.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "pit", "id": "gl_pit"}, {"val": "+", "id": "gl_ongoing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_priestoftheherb_herbalcenser",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Herbal Censer",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The censer has aura 1. Allies that end their turn inside the censer’s aura may end a status or mark of their choice.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_lowlander_mycowright_mushroom",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "immobile": true,
+            "hp": 1
+        },
+        "eventtags": {},
+        "name": "Mushroom",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a character collides with a mushroom, it explodes for a small blast blast area effect. Characters inside must save or become pacified, then take [D]+fray piercing damage, or just fray damage on a successful save. The character that collided automatically fails the save.",
+                                    "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect_ch2",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect_ch3",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe, or 2 piercing damage, twice, if the foe is bloodied.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"},{"val": "bloodied", "id": "gl_bloodied"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
         "id": "sm_lowlander_fetididol_spewinggrowth",
         "type": "Summon",
         "source": "core",
@@ -944,99 +1113,6 @@
         "blurb":  [],
         "colour": "green",
         "limit": 0
-    },
-    {
-        "id": "sm_lowlander_artillery_attackinsect",
-        "type": "Summon",
-        "source": "core",
-        "tags": {
-            "size": 1,
-            "Intangible": true
-        },
-        "eventtags": {},
-        "name": "Attack Insect",
-        "description":  [
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Ability:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
-                                }]
-            }
-        ],
-        "blurb":  [],
-        "colour": "blue",
-        "limit": 2
-    },
-    {
-        "id": "sm_lowlander_artillery_attackinsect_ch2",
-        "type": "Summon",
-        "source": "core",
-        "tags": {
-            "size": 1,
-            "Intangible": true
-        },
-        "eventtags": {},
-        "name": "Attack Insect",
-        "description":  [
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Ability:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
-                                }]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Effect:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
-                                }]
-            }
-        ],
-        "blurb":  [],
-        "colour": "blue",
-        "limit": 2
-    },
-    {
-        "id": "sm_lowlander_artillery_attackinsect_ch3",
-        "type": "Summon",
-        "source": "core",
-        "tags": {
-            "size": 1,
-            "Intangible": true
-        },
-        "eventtags": {},
-        "name": "Attack Insect",
-        "description":  [
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Ability:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe, or 2 piercing damage, twice, if the foe is bloodied.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"},{"val": "bloodied", "id": "gl_bloodied"}]
-                                }]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Effect:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
-                                }]
-            }
-        ],
-        "blurb":  [],
-        "colour": "blue",
-        "limit": 2
     },
     {
         "id": "sm_general_master_rallypoint",
