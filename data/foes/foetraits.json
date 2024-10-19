@@ -5593,6 +5593,377 @@
         ]
     },
     {
+        "id": "tf_hob_summerflameaesi_divineambrosia",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Divine Ambrosia",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aegis’s mere presence envelops the battlefield in a drunken haze. At the start of combat, give a d6 to all characters, representing their level of intoxication.",
+                "glossary": [
+                    {"val": "d6", "id": "gl_powerdie"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Certain abilities Intoxicate foes, ticking the die up by 1. If a die would become 6, a character can’t take any more.",
+                "glossary": [
+                    {"val": "die", "id": "gl_powerdie"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The must save or sacrifice 25% of their maximum hp and spend their entire next turn incapacitated and throwing up, resetting the die to 1. On a successful save, lower the die by 2 and take no other negative effects.",
+                "glossary": [
+                    {"val": "sacrifice", "id": "gl_sacrifice"},                    
+                    {"val": "die", "id": "gl_powerdie"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sober Up",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can sober up at the start of their turn by rolling 1d6, taking one of the following effects and reducing their intoxication by 3, to a minimum of 1. Effects with a duration last until the start of the character’s next turn.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_summerflameaesi_soberup"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockstalwart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Stalwart",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains armor 2 and rampart. In addition, Leaf dance and Cutting Wit gain true strike.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "rampart", "id": "gl_rampart"},
+                    {"val": "true strike", "id": "gl_truestrike"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockvagabond",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Vagabond",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi may split up all its movement with actions. In addition, Leaf dance and Cutting Wit gain unerring and the ability to critically hit, dealing +[D] on a crit.",
+                "glossary": [
+                    {"val": "unerring", "id": "gl_unerring"},
+                    {"val": "critically hit", "id": "gl_criticalhit"},
+                    {"val": "crit", "id": "gl_criticalhit"},
+                    {"val": "[D]", "id": "gl_damagedice"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockmendicant",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Mendicant",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains regeneration. In addition, Leaf Dance and Cutting Wit deal bonus damage.",
+                "glossary": [
+                    {"val": "regeneration", "id": "gl_regeneration"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockwright",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Wright",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains the Aetherwall trait. In addition, Leaf Dance and Cutting Wit gain pierce.",
+                "glossary": [
+                    {"val": "pierce", "id": "gl_piercing"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_aetherwall"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_immortalthievery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortal Thievery",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Some of the Aesi’s abilities have the thievery tag. When an ability with this tag is used, the Aesi creates a memory as a summon in any free space within range 4 of that character.",
+                "glossary": [
+                    {"val": "summon", "id": "gl_summon"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_hob_fallingleafaesi_memory"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_friendship",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Friendship",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe’s abilities can't target allies and treat all allies as immune to their effects, including any active marks, stances, auras, etc.",
+                "glossary": [
+                    {"val": "immune", "id": "gl_immune"},
+                    {"val": "marks", "id": "gl_mark"},
+                    {"val": "stances", "id": "gl_stance"},
+                    {"val": "auras", "id": "gl_aura"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_sight",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sight",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe is blinded+",
+                "glossary": [
+                    {"val": "blinded", "id": "gl_blinded"},
+                    {"val": "+", "id": "gl_blinded"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_luck",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Luck",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe makes all attacks and saves with +1 curse, cannot gain boons, and cannot critical hit.",
+                "glossary": [
+                    {"val": "+1 curse", "id": "gl_curse"},
+                    {"val": "boons", "id": "gl_boon"},
+                    {"val": "critical hit", "id": "gl_criticalhit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_heart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe cannot gain vigor or benefit from defiance.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "defiance", "id": "gl_defiance"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_grace",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Grace",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aesi cannot miss this foe with attacks, and they cannot reduce damage from the Aesi in any way.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_youth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Youth",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe cannot dash and is dazed+.",
+                "glossary": [
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "dazed", "id": "gl_dazed"},
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_nonstopsinging",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nonstop Singing",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character gains aura 1. Allies in the aura are weakened+.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},                    
+                    {"val": "weakened", "id": "gl_weakened"},                    
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_stagger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stagger",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi shoves the character 2.",
+                "glossary": [
+                    {"val": "shoves", "id": "gl_shove"}
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 5 damage."
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_standandblink",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stand and Blink",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character becomes immobile.",
+                "glossary": [
+                    {"val": "immobile", "id": "gl_immobile"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_clingy",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Clingy",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character can only use non-basic abilities if adjacent to an ally.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_takeanap",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Take a Nap",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character is weakened. If already weakened, they are stunned.",
+                "glossary": [
+                    {"val": "stunned", "id": "gl_stunned"},                    
+                    {"val": "weakened", "id": "gl_weakened"}
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_jotunn_hirsinn_sturdy",
         "type": "Trait",
         "source": "core",

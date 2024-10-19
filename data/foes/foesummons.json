@@ -665,6 +665,149 @@
         "limit": 0
     },
     {
+        "id": "sm_hob_summerflameaesi_keg",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Keg",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The object has aura 1. Characters in the aura are weakened+, and if they start their turn there, they increase their  intoxication by +1.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}, 
+                                        {"val": "weakened", "id": "gl_weakened"}, 
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_fallingleafaesi_memory",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Memory",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Can share space with all characters. Characters can end any thievery effects on them by passing over and picking up a memory (any memory will do). This consumes the memory, removing it.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_fallingleafaesi_thornywall",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Thorny Wall",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The wall is considered dangerous terrain, but only for foes. Foes that collide with it take 2 piercing damage.",
+                                    "glossary": [
+                                        {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
+                                        {"val": "collide", "id": "gl_collide"},
+                                        {"val": "piercing", "id": "gl_piercing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_deepsnowaesi_icicle",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "destructable": true,
+            "hp": 8
+        },
+        "eventtags": {},
+        "name": "Icicle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The icicle has aura 1. The aura has the following effects:",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}
+                                    ]
+                                }]
+            },                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes that start their turn in the aura take 2 piercing damage.",
+                        "glossary": [
+                            {"val": "aura", "id": "gl_aura"},
+                            {"val": "piercing", "id": "gl_piercing"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes are vulnerable+ while in the aura.",
+                        "glossary": [
+                            {"val": "aura", "id": "gl_aura"},
+                            {"val": "vulnerable", "id": "gl_vulnerable"},
+                            {"val": "+", "id": "gl_ongoing"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The aura is difficult terrain.",
+                        "glossary": [
+                            {"val": "aura", "id": "gl_aura"},
+                            {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                        ]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_imperial_veridianweapon_combatautomaton",
         "type": "Summon",
         "source": "core",

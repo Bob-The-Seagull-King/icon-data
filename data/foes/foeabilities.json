@@ -7702,7 +7702,7 @@
             "action": "round"
         },
         "eventtags": {},
-        "name": "Swirling Leaves",
+        "name": "Creeping Cold",
         "class_id": "icon",
         "description":  [                               
                                          
@@ -7730,6 +7730,74 @@
             "tags": {"desc_type" : "desc"},
             "content": "At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces."
         }         
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_creepingcold_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Creeping Cold",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of combat, the Aesi creates a Creeping Cold effect in every space along the edge of the map, a creeping black frost terrain effect. The Aesi ignores its effects, but cannot voluntarily enter the area and must end its turn outside it if possible."
+        },                                
+        {
+            "tags": {"desc_type" : "list"},
+            "content": "",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The area is difficult terrain, even for flying characters",
+                    "glossary": [ {"val": "flying", "id": "gl_flying"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foes that either start or end their turn in Creeping Cold sacrifice 50% of their maximum hp. Foes at 1 hp are defeated instantly, and removed from the battlefield as they freeze solid and replaced with a frozen statue object with 10 hp. When the statue is destroyed, return that foe to the battlefield, in its space, still defeated.",
+                    "glossary": [ {"val": "sacrifice", "id": "gl_sacrifice"}]
+                } 
+            ]
+        },                                
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces."
+        },                                
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Phase II: ",
+            "subcontent": [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "The sacrifice increases to 50% of max hp.",
+                    "glossary": [ {"val": "sacrifice", "id": "gl_sacrifice"}]
+                }
+            ]
+        }         
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_icydeath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Icy Death",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "A wind begins blowing from one side of the map, which the Aesi chooses at the start of each around. After using any ability, a foe is shoved 1 in the direction of the wind.",
+            "glossary": [{"val": "shoved", "id": "gl_shove"}]
+        }       
                         ]
     },
     {
@@ -22880,6 +22948,1141 @@
                                     "content": "Deals bonus damage and increase to large blast if it catches a tree in the area. Doesn’t affect allies.",
                                     "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "large blast", "id": "gl_blast"}]
                                 }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_hazeofambrosia",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Haze of Ambrosia",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "All foes increase their intoxication by +1.",
+                "glossary": [
+                ]
+            }           
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_ignite",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Ignite",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi shows off its fire breathing. A foe in range 4 must save or take 4 piercing damage, once, (reduced to 2 piercing, once, on a successful save) for every stack of intoxication they have, but then clears all intoxication, resetting the die to 1.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }           
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_duelofflagons",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Duel of Flagons",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi chooses a foe in range and tosses them a flagon.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            } ,     
+            {
+                "tags": [{"desc_type": "list"}],
+                "content": "",
+                "subcontent": [                         
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "If that character chooses not to drink, the Aesi gains 10 vigor and clears all statuses.",
+                        "glossary": [
+                            {"val": "vigor", "id": "gl_vigor"}
+                        ]
+                    },                        
+                    {
+                        "tags": [{"desc_type": "desc"}],
+                        "content": "If that character chooses to drink, they increase their intoxication by 2. The foe rolls 1d6 and the Aesi rolls 1d8. The loser of the contest becomes weakened and sacrifices 4. If they were already weakened, they sacrifice 6 instead. If a character wins, they can repeat the challenge, repeating this effect.",
+                        "glossary": [
+                            {"val": "sacrifices", "id": "gl_sacrifice"},
+                            {"val": "sacrifice", "id": "gl_sacrifice"},
+                            {"val": "weakened", "id": "gl_weakened"}
+                        ]
+                    } 
+                ]
+            }           
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_firepit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Fire Pit",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi creates a pit space that is also dangerous terrain.",
+                "glossary": [
+                    {"val": "pit", "id": "gl_pit"},
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+                ]
+            }          
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_stiffdrink",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Stiff Drink",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi implores an adjacent character to drink before giving them a stiff whack.",
+                "glossary": [
+                    {"val": "pit", "id": "gl_pit"},
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+                ]
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If the character drinks, they gain a vigor surge but increase their intoxication by 2.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            },  
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },  
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Then, they must save or take 2[D]+fray damage from the Aesi and become slashed, or [D]+fray on a successful save. Slashed foes fail the save.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "slashed", "id": "gl_slashed"},
+                    {"val": "Slashed", "id": "gl_slashed"}
+                ]
+            }          
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_brewsmash",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "true_strike": true,
+            "attack": true,
+            "type": "attack",
+            "blast_size": "small",
+            "range": 3,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Brew Smash",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "All affected foes take +1 intoxication if they have less than 4.",
+                                    "glossary": []
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals bonus damage to weakened foes.",
+                                    "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "weakened", "id": "gl_weakened"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_hob_summerflameaesi_wildblow"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_wildblow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "blast_size": "small",
+            "curse": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Wild Blow",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "May rush 2 before this attack.",
+                                    "glossary": [{"val": "rush", "id": "gl_rush"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals 1 damage again to the target, once, hit or miss, for each level of intoxication.",
+                                    "glossary": []
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_uncork",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Uncork",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi summons a height 1 keg object in range.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_hob_summerflameaesi_keg"
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_hob_summerflameaesi_stealsip"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_stealsip",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Steal Sip",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi drinks from all adjacent kegs, gaining 2 vigor per keg. If it drinks from 3 or more kegs, its next attack deals maximum damage.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_raucousdance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 2,
+            "burst_target": "self"
+        },
+        "eventtags": {},
+        "name": "Raucous Dance",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi implores all foes in the area to dance, shoving them 2 spaces. Characters can choose the direction by taking +1 intoxication, otherwise the Aesi chooses the direction.",
+                "glossary": [{"val": "shoving", "id": "gl_shove"}]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is 5 damage."
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "af_hob_summerflameaesi_wanderinghaze",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Wandering Haze",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi rushes 3, then shoves all adjacent foes 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "shoves", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_mortalmockery",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Mortal Mockery",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi transforms its physical form into a mockery of the closest foe. The effects depend on the foe’s class. If the same effect would be chosen twice, the Aesi can choose a different one of its choice to apply.",
+                "glossary": []
+            } ,     
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },     
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Naturally, all of these effects stack if the Aesi is allowed to use them again. Why be one class when you can be all of them?",
+                "glossary": []
+            }           
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_stealability",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "type": "interrupt",
+            "interrupt": 2,
+            "thievery": true
+        },
+        "eventtags": {},
+        "name": "Steal Ability",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A foe in range 2 uses an ability and the ability resolves."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The foe loses the memory of that ability, becoming unable to use it until they pick up a memory."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_greenpath",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Greenpath",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Remove the Aesi from play, then place them anywhere on the battlefield in free space. Clear all statuses from them.",
+                "glossary": []
+            }         
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_wallofthorns",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Wall of Thorns",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi creates a line 3 area of height 1 thorny wall objects.",
+                "glossary": []
+            }, 
+            {
+                "tags": [{"desc_type": "foesummon"}],
+                "content": "sm_hob_fallingleafaesi_thornywall"
+            }   
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_faetheif",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round",
+            "thievery": true
+        },
+        "eventtags": {},
+        "name": "Fae Thief",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi steals something from a foe in range 5, marking them. Roll 1d6 to see what. Picking up a memory ends this effect. Re-roll repeat effects.",
+                "glossary": []
+            }, 
+            {
+                "tags": [{"desc_type": "table"}],
+                "content": "tb_fallingleafaesi_faethief"
+            }   
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_guststrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Gust Strike",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "The Aesi flies exactly 3 spaces in a straight line, dealing 2 damage to all foes it passes over.",
+                "glossary": [
+                    {"val": "flies", "id": "gl_flying"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "If it lands on an object height 1 or higher, it may repeat this effect, but only once a turn, and may only damage foes once per use of this ability.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_whirlingbranches",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Whirling Branches",
+        "description":  [      
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Teleport 1, then deal 1 damage to all adjacent foes and shove all adjacent foes and memories 1.",
+                "glossary": [
+                    {"val": "Teleport", "id": "gl_teleport"},
+                    {"val": "shove", "id": "gl_shove"}
+                ]
+            },
+            {
+                "tags": [{"desc_type": "gap"}],
+                "content": ""
+            },
+            {
+                "tags": [{"desc_type": "desc"}],
+                "content": "Repeat this effect three times.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_leafdance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "boon": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Leaf Dance",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Aesi may dash 2 spaces before this attack.",
+                                    "glossary": [{"val": "dash", "id": "gl_dash"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_hob_fallingleafaesi_cuttingwit"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_cuttingwit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "boon": 1,
+            "combo": true,
+            "range": 2,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Cutting Wit",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "All foes are dazed. Shove all memories outside of the area.",
+                                    "glossary": [{"val": "dazed", "id": "gl_dazed"},{"val": "Shove", "id": "gl_shove"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_hob_fallingleafaesi_arterycut"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_fallingleafaesi_arterycut",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "mark": true,
+            "combo": true,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Artery Cut",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Attack target is marked and gains an open wound. While marked, it takes [D] again at the end of its turns. This mark ends instead if the character ends their turn adjacent to an ally.",
+                                    "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "mark", "id": "gl_mark"},{"val": "[D]", "id": "gl_damagedice"}]
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_frozenimpaler_phi",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Frozen Impaler",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi chooses a character in range 6. At the end of that character’ turn, an icicle coalesces and falls on that character for a small blast area effect centered on them. Characters inside take 2 piercing damage, then create the icicle adjacent to the targeted character.",
+                "glossary": [
+                    {"val": "small blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            },    
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_hob_deepsnowaesi_icicle"
+            }       
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_frozenimpaler_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 6,
+            "uses": 3,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Frozen Impaler",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi chooses a character in range 6. At the end of that character’ turn, an icicle coalesces and falls on that character for a large blast area effect centered on them. Characters inside take 2 piercing damage, then create the icicle adjacent to the targeted character.",
+                "glossary": [
+                    {"val": "large blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            },    
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_hob_deepsnowaesi_icicle"
+            }       
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_stiffenlimbs",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Stiffen Limbs",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi chooses a foe in range. During their next turn, that foe must move at least 5 spaces, or else take 5 piercing damage and become stunned. Then, this effect ends.",
+                "glossary": [
+                    {"val": "stunned", "id": "gl_stunned"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }      
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_freezesolid",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Freeze Solid",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range becomes shattered. At the end of that character’s next turn, they must save.",
+                "glossary": [
+                    {"val": "shattered", "id": "gl_shattered"}
+                ]
+            } ,                            
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            } ,                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "On a failed save, they are encased in ice, removing them from the battlefield and becoming replaced with a destructible (10 hp) height 1 frozen statue object. Until the statue is destroyed, they cannot take a turn.",
+                "glossary": [
+                ]
+            },                            
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            } ,                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When it’s destroyed, they are returned to the battlefield in the space they left and can take a turn as normal.",
+                "glossary": [
+                ]
+            }      
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_bitingcold",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4,
+            "mark": true,
+            "multimark": true,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Biting Cold",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi marks a foe in range. While marked, that foe cannot benefit from sturdy or unstoppable.",
+                "glossary": [
+                    {"val": "marks", "id": "gl_mark"},
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "sturdy", "id": "gl_sturdy"},
+                    {"val": "unstoppable", "id": "gl_unstoppable"}
+                ]
+            } ,                            
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            } ,                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This mark ends if this foe starts their turn adjacent to an ally.",
+                "glossary": [
+                    {"val": "mark", "id": "gl_mark"}
+                ]
+            }    
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_northernwinds",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Northern Winds",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi flies 2. It becomes intangible while moving.",
+                "glossary": [
+                    {"val": "flies", "id": "gl_flying"},
+                    {"val": "intangible", "id": "gl_intangible"}
+                ]
+            } 
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_scatterfrost",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Scatterfrost",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi shoves up to three foes 1 space. Foes in difficult terrain are shoved 2 in any direction instead.",
+                "glossary": [
+                    {"val": "shoves", "id": "gl_shove"},
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                ]
+            } ,                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 2 damage."
+                    }
+                ]
+            } 
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_howlingblizzard",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "stance": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Howling Blizzard",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains aura 2 while in this stance, gaining resistance to damage from foes in the aura and unstoppable against their abilities. This aura cancels out Whipping Winds.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "stance", "id": "gl_stance"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "unstoppable", "id": "gl_unstoppable"}
+                ]
+            } ,                               
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_deepsnowaesi_whippingwinds"
+            } 
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_whippingwinds",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "stance": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Whipping Winds",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains aura 2, gaining resistance to damage from foes outside the aura, and unstoppable against their abilities. This aura cancels out Howling Blizzard.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},
+                    {"val": "resistance", "id": "gl_resistance"},
+                    {"val": "unstoppable", "id": "gl_unstoppable"}
+                ]
+            }
+                        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_stormwhip",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "blast_size": "small",
+            "combo": true,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Storm Whip",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Shove all foes 1 away from the center space.",
+                                    "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                                }]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is vulnerable.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"}]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_hob_deepsnowaesi_diamonddust"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_diamonddust",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "blast_size": "large",
+            "combo": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Diamond Storm",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "2[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Deals 1 piercing damage, again, to all foes for every foe or object in the area.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_hob_deepsnowaesi_crystallinelance"
+            }
+        ]
+    },
+    {
+        "id": "af_hob_deepsnowaesi_crystallinelance",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "unerring": true,
+            "combo": true,
+            "line": 10
+        },
+        "eventtags": {},
+        "name": "Crystalline Lance",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "On Hit:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "[D] + fray",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "subeffect"}],
+                "content": "Miss or Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Fray",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+            },
+            {
+                "tags": [{"desc_type": "effect"}],
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": [{"desc_type": "desc"}],
+                                    "content": "Foe must save or be shoved 4, or shoved 1 on a successful save.",
+                                    "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                                }]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 5 damage and is shattered.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
             }
         ]
     },

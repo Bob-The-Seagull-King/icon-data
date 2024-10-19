@@ -6842,6 +6842,254 @@
         "chapter": 3
     },
     {
+        "id": "fj_hob_legend_summerflameaesi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Summer Flame Aesi",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Great hobs of the summer that are the spirits of midsummer festivals and the raucous partying that usually accompanies them. These horned goat-like Aesi can often speak the tongue of kin. During summer festivals in the green, it is not uncommon for a midsummer Aesi to ramble in from the forest to join in and patronize the festivities, brining hob-spirit with them, the divine alcohol Ambrosia. Such spirits are treated with great respect and must be fed and watered well before their journey back into the forest."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Good treatment of these minor forest gods brings good harvests and wealth to the village, however, courting them is not without risk. These Aesi, though they have a jovial temperament, are wild and unrestrained in their passions, as the beasts they draw their essence from. They have tremendous appetites, and in the throes of drink they go into a rage and rile up partygoers into great (and often dangerous) acts of debauchery and stupor. Without care, villages often end up half on fire, sodden with alcohol, and strewn with unconscious partygoers. A common strategy is to spike the Aesi’s drink, so they calmly fall asleep and disappear with the morning mist."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_hob_summerflameaesi_firepit","af_hob_summerflameaesi_stiffdrink","af_hob_summerflameaesi_brewsmash","af_hob_summerflameaesi_uncork","af_hob_summerflameaesi_raucousdance","af_hob_summerflameaesi_wanderinghaze"],
+        "removed_actions": [],
+        "traits": ["tf_hob_summerflameaesi_divineambrosia","tf_hob_summerflameaesi_soberup"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi begins combat in this phase, and enters Phase II when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi has no special traits or abilities in this phase.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi enters this phase when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_hob_summerflameaesi_hazeofambrosia","af_hob_summerflameaesi_ignite","af_hob_summerflameaesi_duelofflagons"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fighting this drunken brawler is a matter of timing sober up so that it doesn’t put you in a bad spot. There might be times it is better to indulge, such as with Stiff Drink and Duel of Flagons. After all, characters that save successfully against Ambrosia intoxication take no ill effects, and can gamble on their good fortune. Keeping intoxication high can still be risky due to moves like Ignite and Wild Blow.",
+                "glossary": [
+                ]
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_legend_fallingleafaesi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Falling Leaf Aesi",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A greater hob formed from the essence of dancing leaves in autumn. The Aesi take a long time to coalesce, and therefore are quite powerful and ancient. These hobs are shaped more like Kin than their more animalistic brethren and are extremely skilled in the ways of sword craft and stealth. They are master thieves and can steal anything: a moment, an essence, a thought, or even a memory. Though they eventually return what they stole, they are indiscriminate in their fascination with the habits and skills of Kin. Legends abound of them stealing the skills of master tradesman on a whim for a fortnight, leading to their poor victim’s financial ruin, or stealing the tongue of a bride for a year and a day, leading her groom to run away out of shame."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_fallingleafaesi_swirlingleaves","af_hob_fallingleafaesi_stealability","af_hob_fallingleafaesi_greenpath","af_hob_fallingleafaesi_wallofthorns","af_hob_fallingleafaesi_faetheif","af_hob_fallingleafaesi_guststrike","af_hob_fallingleafaesi_whirlingbranches","af_hob_fallingleafaesi_leafdance"],
+        "removed_actions": [],
+        "traits": ["tf_hob_fallingleafaesi_immortalthievery"],
+        "removed_traits": [],
+        "category": "legend",
+        "choices": ["tf_hob_fallingleafaesi_mortalmockery_mockstalwart","tf_hob_fallingleafaesi_mortalmockery_mockvagabond","tf_hob_fallingleafaesi_mortalmockery_mockmendicant","tf_hob_fallingleafaesi_mortalmockery_mockwright"],
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi begins combat in this phase, and enters Phase II at round 3 and every 2 round thereafter."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi has no special traits or abilities in this phase.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi enters this phase on rounds 3, 5, 7, etc and uses Mortal Mockery"
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_hob_fallingleafaesi_mortalmockery"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters fighting this Aesi will find themselves scrambling to recover memories as they have their abilities quite literally blown out of them. The Aesi can make this difficult by knocking memories around, isolating them with Wall of Thorns, and forcing them to group up with Artery Cut. In phase II, characters must make quick work of the Aesi, or find themselves overwhelmed.",
+                "glossary": [
+                ]
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_legend_deepsnowaesi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Snow Aesi",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Aesi of Deep Winter. Each takes seventy seasons to coalesce. During that time, their essence slowly condenses, taking in the sorrow of frozen death, the withering of plant life, and the landscapes of barren snow. Unlike their kin, they are somber, solitary, and melancholy beings with an air of gravitas about them. They can only be glimpsed during the deep cold, or in the dead of night. Their benediction can allow villages to survive the winter - with unexplained warm spells, mysterious hidden caches of crops, or respite from storms and blizzards. When enraged, however, their wrath is terrible, and they will freeze entire towns solid just to avenge the most minor slight."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_deepsnowaesi_stiffenlimbs","af_hob_deepsnowaesi_freezesolid","af_hob_deepsnowaesi_bitingcold","af_hob_deepsnowaesi_northernwinds","af_hob_deepsnowaesi_scatterfrost","af_hob_deepsnowaesi_howlingblizzard","af_hob_deepsnowaesi_stormwhip"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi begins combat in this phase, and enters Phase II when bloodied or at the start of round 4.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi has no special traits or abilities in this phase.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_hob_deepsnowaesi_creepingcold","af_hob_deepsnowaesi_frozenimpaler_phi"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi enters this phase when bloodied or at the start of round 4.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_hob_deepsnowaesi_creepingcold_phii","af_hob_deepsnowaesi_icydeath","af_hob_deepsnowaesi_frozenimpaler_phii"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi of Winter is fought in a gradually shrinking arena, which will eventually become a death trap due to its Frozen Impaler, Stiffen Limbs abilities, and numerous AoE attacks. It can alternate between Whipping Winds and Howling Blizzard depending on its positioning. Characters can try to cancel out its shove options by leaving the icicles from Frozen Impaler up and the frozen statues of their allies, but may also want to destroy the icicles to stop the build up of their powerful auras, and the objects to free their allies.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Map: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This legend is best fought in a battlefield that is 12x12 or a little larger."
+                    }
+                ]
+            }
+        ],
+        "chapter": 3
+    },
+    {
         "id": "fj_general_elite_archon",
         "type": "FoeJob",
         "source": "core",
