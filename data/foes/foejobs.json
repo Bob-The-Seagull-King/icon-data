@@ -6482,6 +6482,222 @@
         "chapter": 3
     },
     {
+        "id": "fj_lowlander_unique_zombiemob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Zombie Mob",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The head borer is a cooperative beetle swarm that feeds on carrion - and is able to puppet it using the shredded remnants of its nervous system, to walk to new feeding grounds, and to protect the swarm if need be. Lowlanders are able to tame and control these beetles with the use of pheromones, and therefore are able to use a scarce but precious resource - corpses - for labor and defense."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_zombiemob_dragalong", "af_lowlander_zombiemob_swarmrelease"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_zombiemob_walkingdead", "tf_lowlander_zombiemob_swarmdetonation"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_ridinginsect",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Riding Insect",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_unique",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lowlanders ride many varieties of enormous insects or arachnids - usually beetles, but occasionally formics, spiders, or land-bound hound flies."
+            }
+        ],
+        "stats": {
+            "vit": 10,
+            "hp": 40,
+            "speed": 6,
+            "dash": 3,
+            "fray": 3,
+            "damage": 6,
+            "size": 2
+        },
+        "actions": ["af_lowlander_ridinginsect_bite", "af_lowlander_ridinginsect_acidspit", "af_lowlander_ridinginsect_leap"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_ridinginsect_saddleup"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_boilslug",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Boil Slug",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An enormous species of guard slug that can be trained like a loyal, cuddly, and particularly malodorous dog. It shoots boiling slime in a stream that can melt metal."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_boilslug_bubbleup", "af_lowlander_boilslug_suckingmire", "af_lowlander_boilslug_slimespit"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_clot",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Clot",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Simple golems made from the sucking white mud of the blight lands. Lack intelligence and fall apart quickly once on firm ground."
+            }
+        ],
+        "stats": {
+            "speed": 2,
+            "dash": 1
+        },
+        "actions": ["af_lowlander_clot_slap", "af_lowlander_clot_mudspray", "af_lowlander_clot_mudslide"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance", "tf_lowlander_clot_mudbody", "tf_lowlander_clot_harden"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_mantidwarrior",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mantid Warrior",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous and extremely intelligent fighting insects that can be trained as capable war beasts. Their extreme speed makes them formidable opponents but they eat a lot - making it hard for a clan to retain one for long."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_mantidwarrior_windslash", "af_lowlander_mantidwarrior_leafdance", "af_lowlander_mantidwarrior_cutthrough"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_mantidwarrior_camouflage"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_unique_sagesnail",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sage Snail",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Great snails that roam the blight lands, having developed a powerful slime barrier as a defense mechanism against its corruption. They are relatively intelligent for animals, can use the aetheric arts, and often follow around lowlander bands in exchange for food and the occasional shell-cleaning."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_lowlander_sagesnail_bubblestream", "af_lowlander_sagesnail_sudsspray", "af_lowlander_sagesnail_bubbleshield", "af_lowlander_sagesnail_pearlescentbubble"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_unique_pariah",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pariah",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lowlanders that through a combination of misfortune, exposure, or time have become mutated to the point of unrecognizable by the terrifying forces and strange radiations of the Blightlands. Their flesh crawls over itself and reforms, strange energies pour out of their eyes, and they shed multicolored skin. Pariahs are usually outcast from lowlander communities but kept in a hermitage or tent far from the main camp where they live out their warped existence, clinging to shreds of sanity."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_pariah_fleshwarp", "af_lowlander_pariah_chaosbeam", "af_lowlander_pariah_warpingblast"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_pariah_mutate"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_unique_battlebeetle",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Battle Beetle",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Massive beetles with iron-hard shells that are chiefly used for transportation or war. These beetles, once tamed, can live for hundreds of years and sport watch towers, howdahs, ramshackle residences, or even gardens on their back. Capturing these beetles is a common reason that clans sometimes go to war with each other."
+            }
+        ],
+        "stats": {
+            "hp": 60,
+            "size": 3
+        },
+        "actions": ["af_lowlander_battlebeetle_beetlehorn", "af_lowlander_battlebeetle_sideharpoons", "af_lowlander_battlebeetle_beetlerampage", "af_lowlander_battlebeetle_mainharpoon"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy", "tf_faction_common_enrage", "tf_lowlander_battlebeetle_battleplatform", "tf_lowlander_battlebeetle_ziplinedismount"],
+        "removed_traits": ["tf_class_heavy_guard"],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",
