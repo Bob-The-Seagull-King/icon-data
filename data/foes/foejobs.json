@@ -8701,8 +8701,69 @@
         "traits": ["tf_imperial_veridianweapon_airship","tf_imperial_veridianweapon_arkentechmegabomb","tf_imperial_veridianweapon_phases","tf_imperial_veridianweapon_sections","tf_imperial_azurianweapon_automata"],
         "removed_traits": [],
         "category": "legend",
-        "choices": ["tf_imperial_veridianweapon_airshipengine","tf_imperial_veridianweapon_forwardturret","tf_imperial_veridianweapon_aftturret"],
-        "phases": [],
+        "choices": [],
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Destruction:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "If this section is destroyed, all remaining sections gain Lurch as a 1/round free action.",
+                                "glossary": []
+                            }
+                        ]
+                    }
+                ],
+                "name": "Airship Engine",
+                "actions": ["af_imperial_veridianweapon_engine_lurch","af_imperial_veridianweapon_engine_overclockpiston","af_imperial_veridianweapon_engine_repairautomaton","af_imperial_veridianweapon_engine_steamvent"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Destruction:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "If this section is destroyed, all remaining sections gain Collateral Damage as a 1/round free action.",
+                                "glossary": []
+                            }
+                        ]
+                    }
+                ],
+                "name": "Forward Turret",
+                "actions": ["af_imperial_veridianweapon_forwardturret_decksweeper","af_imperial_veridianweapon_forwardturret_megagunturret","af_imperial_veridianweapon_forwardturret_popupturret"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Destruction:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "If this section is destroyed, remaining sections gain the ability to summon Combat Automaton as a 1/round free action.",
+                                "glossary": []
+                            }
+                        ]
+                    }
+                ],
+                "name": "Aft Turret",
+                "actions": ["af_imperial_veridianweapon_aftturret_gatlingcannons","af_imperial_veridianweapon_aftturret_shieldautmaton"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
         "tactics": [
             {
                 "tags": {"desc_type" : "desc"},
