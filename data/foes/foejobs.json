@@ -7368,9 +7368,9 @@
             }
         ],
         "stats":{},
-        "actions":["af_imperial_warballoon_sideguns", 	"af_imperial_warballoon_flarebomb", "af_imperial_warballoon_dropsupplies", "af_imperial_warballoon_highaltitude"],
+        "actions":["af_imperial_warballoon_sideguns", "af_imperial_warballoon_flarebomb", "af_imperial_warballoon_dropsupplies", "af_imperial_warballoon_highaltitude"],
         "removed_actions":[],
-        "traits":["tf_special_flying", "tf_special_sturdy", "tf_imperial_warballoon_hovering", "tf_imperial_warballoon_deflate","tf_imperial_warballoon_battleplatform", "tf_imperial_warballoon_vantage point"],
+        "traits":["tf_special_flying", "tf_special_sturdy", "tf_imperial_warballoon_hovering", "tf_imperial_warballoon_deflate","tf_imperial_warballoon_battleplatform", "tf_imperial_warballoon_vantagepoint"],
         "removed_traits":[],
         "category":"unique",
         "phases":[],
