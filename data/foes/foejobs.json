@@ -3554,6 +3554,236 @@
         "chapter": 3
     },
     {
+        "id": "fj_scavenger_legend_twinblades",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Twinblades",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Good things come in pairs, or so they say."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Splitting the loot can be a tenuous and tedious process, and often involves a lot of backstabbing. Some exceptionally well resourced mercenaries have found it very useful, and even preferable, to use blood magic to solve this common problem. By entangling their soul aether in a powerful ritual, they become unable to die as long as the other one lives. That way, there’s no way for them to cut and run - or for anyone else to pull a fast one without taking their soul bound partner down at nearly exactly the same time - a difficult prospect."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "People that are ‘twinned’ this way tend to grow very close to their twin, and even come to resemble them in their mannerism and sometimes physical appearance, a side effect of the wrightcraft used to bond them together."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Twinblades are often found guarding the leaders of scavenger bands, acting as enforcers, and collecting the lion’s share of the loot. After all, there’s few enterprising barons out there that wouldn’t pass on a pair of nigh-immortal bodyguards."
+            }
+        ],
+        "stats": {
+            "hp": 25,
+            "hp_per": "per Player for each Twin (min 50)"
+        },
+        "actions": ["af_scavenger_twinblades_juggernaut", "af_scavenger_twinblades_knifejuggling","af_scavenger_twinblades_turnabout","af_scavenger_twinblades_gemini","af_scavenger_twinblades_kickoff"],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_class_skirmisher_skirmisher", "tf_scavenger_twinblades_twins", "tf_scavenger_twinblades_fatebound"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The twins enter Phase II at the start of round 4."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_scavenger_twinblades_twirlingblade"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The twins enter Phase II at the start of round 4. As Phase I, but Twirling Blades summons two blades instead of one, and gain Seeking Blades."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_scavenger_twinblades_twirlingblade_phase2"],
+                "traits": ["tf_scavenger_twinblades_seekingblades"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Twinblades are a dynamic duo that can put out a lot of pressure and damage on the characters, especially in phase II where their whirling blades becomes more mobile and start dealing more damage. They can use turnabout to confuse characters that think they have gotten it all figured out, and benefit from good positioning. A good strategy for players will be to damage them both down at the same time, so that they can’t use the opportunity to resurrect each other, or else split them up."
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_scavenger_legend_bloodboundband",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Bound Band",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Mercenaries, ex-churners, and veteran fortune seekers congregate together around the Arkenruins like scum on a pond. Occasionally, the scum rises to the top."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "When some scavenger bands have been together a long time, they undergo an old and ill-reputed ritual, from the old days before the Doom. Writing up a contract, they inscribe runes of binding into their very flesh, using their blood to seal the contract. The agreements within govern everything from share of the loot to proper conduct to appropriate shaving. Violating them repeatedly causes deep and wracking pain, worse than a bad hangover, until the rune-spell is broken."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The bond has another benefit, however. Those bound by the blood contract grow closer to each other, and gain supernatural abilities, able to fight together like one deadly being."
+            }
+        ],
+        "stats": {
+            "hp": 13,
+            "hp_per": "per Player for each Brother (min 26)"
+        },
+        "actions": ["af_scavenger_bloodboundband_strengthinblood", "af_scavenger_bloodboundband_setup", "af_scavenger_bloodboundband_serratedknife", "af_scavenger_bloodboundband_firstblood"],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_scavenger_bloodboundband_bloodbrother", "tf_scavenger_bloodboundband_bloodboundblessing"],
+        "removed_traits": [],
+        "choices": ["tf_scavenger_bloodboundband_choice_boots","tf_scavenger_bloodboundband_choice_fixer","tf_scavenger_bloodboundband_choice_filth","tf_scavenger_bloodboundband_choice_cats","tf_scavenger_bloodboundband_choice_sharkie","tf_scavenger_bloodboundband_choice_pale","tf_scavenger_bloodboundband_choice_sharp","tf_scavenger_bloodboundband_choice_fanatic","tf_scavenger_bloodboundband_choice_broker","tf_scavenger_bloodboundband_choice_monger"],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When only one brother is remaining, the band goes into Phase II."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If only one Brother is remaining, they become unstoppable and gain +1 action (to a total of 3) for the rest of combat.",
+                        "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": [],
+                "traits": [],
+                "stats": {"actions": 3}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The band are a bunch of nasty fighters that may seem unassuming at first, but become very dangerous when foes are bloodied. They are a fairly straightforward fight, but can benefit from looking at what each brother can do to combo their abilities together. Characters might try to defeat them all in the same round to limit the effects of their blessings, or pick off a particularly troublesome brother early."
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_scavenger_legend_midan",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Midan",
+        "faction_id": "fc_scavenger",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Gildhand wrights and Aurelian priests find their uses in the Scavenger bands, to tally, account, and transmute in the name of the pursuit of profit. In the end though, the rogue mage- wrights who hunger for the secrets of metal aether all desire one thing - the Midan Apotheosis, the ability to transmute matter into pure gold. Temporary transmutation - enough to trick a merchant or impress a crowd - is simple enough. The real thing requires mastery of metal aether so twisted, so maddening in its complexity, that most who pursue it are broken from exhaustion.Gildhand wrights and Aurelian priests find their uses in the Scavenger bands, to tally, account, and transmute in the name of the pursuit of profit. In the end though, the rogue mage- wrights who hunger for the secrets of metal aether all desire one thing - the Midan Apotheosis, the ability to transmute matter into pure gold. Temporary transmutation - enough to trick a merchant or impress a crowd - is simple enough. The real thing requires mastery of metal aether so twisted, so maddening in its complexity, that most who pursue it are broken from exhaustion."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Those with the fortitude to achieve the Apotheosis are terrifying metalwrights. They no longer pursue wealth, but have become wealth itself. The process draws down their life aether so fast that most of them die within a few years, living out their shortened lifespans in massive, unbelievable opulence."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_scavenger_midan_grandtransmutation", "af_scavenger_midan_halcyonworld", "af_scavenger_midan_glitteringworld", "af_scavenger_midan_moltencreation", "af_scavenger_midan_marketevaluation", "af_scavenger_midan_moltenshell", "af_scavenger_midan_melt", "af_scavenger_midan_theweight", "af_scavenger_midan_scatterwealth", "af_scavenger_midan_glimmer"],
+        "removed_actions": [],
+        "traits": ["tf_scavenger_midan_networth", "tf_scavenger_midan_perfection"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3, and every third round thereafter, the Midan uses The Price is Right."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This phase has no special effects, abilities, or traits."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Round 3, 6, 9, etc."
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_scavenger_midan_thepriceisright"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fighting the Midan is all about managing a characters’ net worth. Certain effects, like the Midan’s molten shell, can rack it up very quickly on unprepared characters. The Midan can blow up its own volatile gems and swap characters into bad positions in order to maximize wealth gain, also using Molten Creation to double up on powerful terrain effects or objects such as Aurelian Bomb. The amount of objects and terrain can get overwhelming for players very quickly if it’s not dealt with!"
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Canny players may figure out that Glittering World can be used to destroy the Midan’s objects or free characters that have been turned to gold, and also safely reset the net worth of characters that are too high."
+            }
+        ],
+        "chapter": 3
+    },
+    {
         "id": "fj_relict_mob_husk",
         "type": "FoeJob",
         "source": "core",
@@ -5752,6 +5982,722 @@
         "chapter": 3
     },
     {
+        "id": "fj_lowlander_heavy_butcher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Butcher",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lowlanders tasked with the ritual task of carving and carefully preparing monster meat for consumption, an important task in every clan, leaving their frames corded with muscle."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_butcher_furystrikes"],
+        "removed_actions": ["af_lowlander_heavy_demolish"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_heavy_mule",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mule",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Strong or burly lowlanders that carry supplies through dangerous terrain over a long distance. They can do the same with captives."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_mule_blightlandsbrawn"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_heavy_canker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Canker",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Clan members that spend too long without protective gear or who have consumed a little too much monster meat often develop tough hides and a rank stench."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_canker_stench", "tf_lowlander_canker_toxicrevenge"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_heavy_snork",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Snork",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Clanners with heavy, woven environmental suits that are tasked with cleaning up the worst of the clan’s refuse and keeping the peace."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_snork_intimidate", "af_lowlander_snork_flameblast"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_snork_entrenched"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_heavy_slaughterer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Slaughterer",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Axe-wielding Lowlanders tasked with the ritual slaughter of livestock and captive monsters. The strength required to swing their heavy, pitted iron blades is tremendous."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_slaughterer_grapple", "af_lowlander_slaughterer_cull"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_slaughterer_bloodwhetter"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_skirmisher_thresher",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Thresher",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Threshers are tasked with cleaning the pits and tunnels of dangerous wildlife and often form uncanny bonds with them."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_thresher_callpitworm"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_skirmisher_scab",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scab",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Unsavory scouts that are tasked with patrolling the edges of Lowlander territory, reporting on the movements of travelers and dealing with them if necessary."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_scab_track", "af_lowlander_scab_razorshot"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_skirmisher_darter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Darter",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Curating noxious, hallucinogenic toxins from the alien plant and wildlife of the blights, Darters become experts with the tiny bone darts that they throw or shoot from a blowgun."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_darter_blowdart"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_skirmisher_mole",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mole",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Pale, gangly clanners that spend more time below ground than aboveground."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_mole_collapsetunnel", "af_lowlander_mole_digtunnel"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_skirmisher_tick",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tick",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Exiles of exiles, Ticks are clanners so reviled that they have been banished from the clan grounds. Nevertheless, their labor cannot be wasted, so they are assigned permanent patrol duty and occasionally left food and supplies."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_tick_scuttleaway", "af_lowlander_tick_legtrap"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_tick_lickknife"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_leader_priestofthenettle",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Priest of the Nettle",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Clanners that learn their ways around the various poisons and noxious wastes of the blight lands eventually join the priesthood to pass on their knowledge."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_priestofthenettle_noxiouscenser"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_leader_viper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sacb",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Scarred lowlanders that dip the blades and arrows of their allies in the pure toxic ground of the blights."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_viper_toxiccoating"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_leader_priestoftheherb",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Priest of the Herb",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The healers of the Lowlanders, potent in their knowledge to ease sicknesses and ills - but equally potent in their ability to inflict them."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_priestoftheherb_purifyingcenser"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_leader_mycowright",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mycowright",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "More mycelium than person, mycowrights use water and earth aether to cultivate the various toxic mushroom species that grow out in the wastes, learning how to prepare them for food and medicine."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_mycowright_noxiousgarden"],
+        "removed_actions": [],
+        "traits": ["tf_special_regeneration", "tf_lowlander_mycowright_auraofrot"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_leader_scionofpollution",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Scion of Pollution",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights that have learned to master the corrupted air and water aether of the blight lands. In a twisted imitation of the storm benders, they call the poisonous winds of the wastes to their bidding."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_scionofpollution_acidrain", "af_lowlander_scionofpollution_fetidwind", "af_lowlander_scionofpollution_dissolution"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_artillery_initiate",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Initiate",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Apiarists of low rank and influence, who have not partaken of the Black Mead and must resort to pheromones to control insects."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_initiate_maddeningstinging"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_artillery_monsterhunter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monster Hunter",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wrights and hunters that use their swarms to track and hunt down monsters for the clan’s safety or sustenance. They fight with great- glaives, spinning blades that return to their wielder."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_monsterhunter_huntingglaive"],
+        "removed_actions": ["af_lowlander_artillery_summontheswarm"],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_artillery_centipedetamer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Centipede Tamer",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Especially bold or foolish Apiarists who apply their chitin-lore to taming enormous and extremely venomous Ruin Centipedes."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_centipedetamer_agonizingbite"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_artillery_blackmeadbrewer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Black Mead Brewer",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Brewers of the potent drink that the apiarists partake of to control their swarms (and occasionally for leisure)"
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_blackmeadbrewer_blackhoneyvial"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance", "tf_special_regeneration"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_artillery_swarmwright",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Swarm Wright",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The highest ranks of the Apiarists, who have forsaken their flesh to fuse with their swarms, becoming one gestalt being."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_swarmwright_burrowingswarm", "af_lowlander_swarmwright_thousandmaws"],
+        "removed_actions": [],
+        "traits": ["tf_special_flying", "tf_special_phasing", "tf_lowlander_swarmwright_swarmshroud"],
+        "removed_traits": [],
+        "category": "job",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_unique_zombiemob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Zombie Mob",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The head borer is a cooperative beetle swarm that feeds on carrion - and is able to puppet it using the shredded remnants of its nervous system, to walk to new feeding grounds, and to protect the swarm if need be. Lowlanders are able to tame and control these beetles with the use of pheromones, and therefore are able to use a scarce but precious resource - corpses - for labor and defense."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_zombiemob_dragalong", "af_lowlander_zombiemob_swarmrelease"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_zombiemob_walkingdead", "tf_lowlander_zombiemob_swarmdetonation"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_ridinginsect",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Riding Insect",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_unique",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lowlanders ride many varieties of enormous insects or arachnids - usually beetles, but occasionally formics, spiders, or land-bound hound flies."
+            }
+        ],
+        "stats": {
+            "vit": 10,
+            "hp": 40,
+            "speed": 6,
+            "dash": 3,
+            "fray": 3,
+            "damage": 6,
+            "size": 2
+        },
+        "actions": ["af_lowlander_ridinginsect_bite", "af_lowlander_ridinginsect_acidspit", "af_lowlander_ridinginsect_leap"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_ridinginsect_saddleup"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_boilslug",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Boil Slug",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "An enormous species of guard slug that can be trained like a loyal, cuddly, and particularly malodorous dog. It shoots boiling slime in a stream that can melt metal."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_boilslug_bubbleup", "af_lowlander_boilslug_suckingmire", "af_lowlander_boilslug_slimespit"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_clot",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Clot",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Simple golems made from the sucking white mud of the blight lands. Lack intelligence and fall apart quickly once on firm ground."
+            }
+        ],
+        "stats": {
+            "speed": 2,
+            "dash": 1
+        },
+        "actions": ["af_lowlander_clot_slap", "af_lowlander_clot_mudspray", "af_lowlander_clot_mudslide"],
+        "removed_actions": [],
+        "traits": ["tf_special_defiance", "tf_lowlander_clot_mudbody", "tf_lowlander_clot_harden"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_unique_mantidwarrior",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mantid Warrior",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous and extremely intelligent fighting insects that can be trained as capable war beasts. Their extreme speed makes them formidable opponents but they eat a lot - making it hard for a clan to retain one for long."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_mantidwarrior_windslash", "af_lowlander_mantidwarrior_leafdance", "af_lowlander_mantidwarrior_cutthrough"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_mantidwarrior_camouflage"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_unique_sagesnail",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sage Snail",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Great snails that roam the blight lands, having developed a powerful slime barrier as a defense mechanism against its corruption. They are relatively intelligent for animals, can use the aetheric arts, and often follow around lowlander bands in exchange for food and the occasional shell-cleaning."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_lowlander_sagesnail_bubblestream", "af_lowlander_sagesnail_sudsspray", "af_lowlander_sagesnail_bubbleshield", "af_lowlander_sagesnail_pearlescentbubble"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_unique_pariah",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pariah",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Lowlanders that through a combination of misfortune, exposure, or time have become mutated to the point of unrecognizable by the terrifying forces and strange radiations of the Blightlands. Their flesh crawls over itself and reforms, strange energies pour out of their eyes, and they shed multicolored skin. Pariahs are usually outcast from lowlander communities but kept in a hermitage or tent far from the main camp where they live out their warped existence, clinging to shreds of sanity."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_lowlander_pariah_fleshwarp", "af_lowlander_pariah_chaosbeam", "af_lowlander_pariah_warpingblast"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_pariah_mutate"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_unique_battlebeetle",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Battle Beetle",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Massive beetles with iron-hard shells that are chiefly used for transportation or war. These beetles, once tamed, can live for hundreds of years and sport watch towers, howdahs, ramshackle residences, or even gardens on their back. Capturing these beetles is a common reason that clans sometimes go to war with each other."
+            }
+        ],
+        "stats": {
+            "hp": 60,
+            "size": 3
+        },
+        "actions": ["af_lowlander_battlebeetle_beetlehorn", "af_lowlander_battlebeetle_sideharpoons", "af_lowlander_battlebeetle_beetlerampage", "af_lowlander_battlebeetle_mainharpoon"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy", "tf_faction_common_enrage", "tf_lowlander_battlebeetle_battleplatform", "tf_lowlander_battlebeetle_ziplinedismount"],
+        "removed_traits": ["tf_class_heavy_guard"],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",
@@ -6296,6 +7242,567 @@
         "category": "job",
         "phases": [],
         "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_hob_unique_beastspirit",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beast Spirit",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_unique",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Many hobs take beast form, becoming like the animals giving them their essence. In this form, they are majestic, specimens of their kind, able to run along on air as easily as ground. Other hobs such as the Aesi occasionally ride them."
+            }
+        ],
+        "stats": {
+            "vit": 10,
+            "hp": 40,
+            "speed": 4,
+            "dash": 2,
+            "defense": 5,
+            "fray": 3,
+            "damage": 6
+        },
+        "actions": ["af_hob_beastspirit_wildrage","af_hob_beastspirit_majesticgalloping","af_hob_beastspirit_rampage"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_faction_common_enrage","tf_hob_beastspirit_saddleup"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_unique_faun",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Faun",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Goat-headed hobs fond of drink and skilled with the pipes. Fierce fighters when provoked."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_faun_marchingpipes","af_hob_faun_dancingcurse","af_hob_faun_hotfoot","af_hob_faun_swirlingleaves"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_unique_kappa",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Kappa",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A strong, scaly hob that is the essence of powerful rivers and streams. Emerges with the snowmelt, and obsessed with contests of strength."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_kappa_bodyslam","af_hob_kappa_tidepool","af_hob_kappa_greatsuplex","af_hob_kappa_spinninggeyser"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_unique_nymph",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nymph",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A spring hob that coalesces from the essences of reflections in pools. They appear at a distance to be comely kin - different depending on who is looking at them. This appearance is a glamour, and upon getting closer, their true form, of shifting water, is revealed."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_nymph_yewbow","af_hob_nymph_enthrall","af_hob_nymph_riven","af_hob_nymph_greenpath"],
+        "removed_actions": [],
+        "traits": ["tf_hob_nymph_auraofglamour"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_unique_greenkeeper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Greenkeeper",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A enormous tree-like Hob that has coalesced from an old oak tree that has stood alone for fifty years or more. Greenkeepers are slow moving and thinking, and consider themselves shepherds of the forest. Plant life around them bends and ripples at their beck and call."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_hob_greenkeeper_hungryforest","af_hob_greenkeeper_bloom","af_hob_greenkeeper_ancientheal","af_hob_greenkeeper_overgrow"],
+        "removed_actions": [],
+        "traits": ["tf_hob_greenkeeper_livingroot"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_unique_changeling",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Changeling",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A strange hob that has coalesced from the unsettling sensation of meeting a stranger on the road or in the woods. It is capable of imitating kin and transforming its shape. Most changelings don’t seem to have any great malice, but a great deal of amoral curiosity."
+            }
+        ],
+        "stats": {},
+        "actions": ["af_hob_changeling_snapshot","af_hob_changeling_blindingdust","af_hob_changeling_warpedreflection"],
+        "removed_actions": [],
+        "traits": ["tf_hob_changeling_lessermortalmockery"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_hob_elite_greatboulderhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Great Boulder Hob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Great spirits of the mountains, these colossal hobs are peaceful and animalistic, but terrifying when enraged. Their tendency to startle, combined with their tendency to look like a regular rocky hillside, does not help this situation."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2,
+            "size": 2
+        },
+        "actions": ["af_hob_greatboulderhob_ancientgeo","af_hob_greatboulderhob_greatstonetoss","af_hob_greatboulderhob_earthforce","af_hob_greatboulderhob_hurlself"],
+        "removed_actions": [],
+        "traits": ["tf_hob_greatboulderhob_lumbering","tf_hob_greatboulderhob_crumblingbody"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_elite_banderhob",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Banderhob",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Enormous, shaggy hobs that are surprisingly light on their feet, able to soar through the air with just a touch. They tend to be rotund and relatively relaxed, so are often underestimated by unlucky travelers. Surprisingly intelligent despite their lack of speech and bestial form, they are extremely protective of children of all kinds, and have a habit of unintentionally abducting them for long stretches of time. They often become confused, and due to their large size, see most Kin as lost children, which can lead to unfortunate incidents."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2
+        },
+        "actions": ["af_hob_banderhob_savageswipes","af_hob_banderhob_boundingleaps","af_hob_banderhob_pounce"],
+        "removed_actions": [],
+        "traits": ["tf_hob_banderhob_protectthechild"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_elite_geryan",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Geryan",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A hob appearing in the shape of an elderly Kin, dressed for travel. There’s little way to see through this hob’s disguise, but they often wear cloaks and hats, and smoke a fragrant pipe. These hobs are the spirits of well-traveled roads and therefore can move about the land quite freely. They often feign illness or weakness, and reward kindness or charity. They have a great knowledge of the ancient healing arts and are fond of striking bargains."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2
+        },
+        "actions": ["af_hob_geryan_wish","af_jotunn_hag_insideout","af_hob_greenkeeper_ancientheal","af_hob_geryan_pilferluck","af_general_judge_chastise","af_hob_geryan_oldstaff"],
+        "removed_actions": [],
+        "traits": ["tf_hob_geryan_bargain"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_elite_wissan",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wissan",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Spirits that inhabit and embody very ancient, powerful, or aether-rich trees. When a tree reaches a hundred years old, it is said a Wissan always appears. Wissan can appear in the shape of Kin and speak their tongue. They know many old and ancient magical arts, and are studious for Hobs, hoarding many secrets and treasures in their cavernous root networks. Particularly ambitious Wrights will sometimes head into the old woods to try and study with one."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Wissan may appear anywhere where their spirit tree has roots, which gives them a surprising reach."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2
+        },
+        "actions": ["af_hob_wissan_ancientbolt","af_hob_wissan_rootlash","af_hob_wissan_ancientrime","af_hob_wissan_summonroot"],
+        "removed_actions": [],
+        "traits": ["tf_special_phasing","tf_hob_wissan_deeprooted","tf_hob_wissan_tiedtothetree"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_elite_whitebeast",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "White Beast",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A rare, enormous beast-like hob with spiraling horns that is the essence of the primal forests of Arden Eld. Often take the forms of stags, but also boars, wolves, or other creatures of the wild. These ancient hobs are older than all civilizations and have existed since the days of creation. Herds of animals follow in their wake. They are largely peaceful, and flighty - unless hunted, as their blood is said to cure all ailments. Then, they can drive animals into a frenzy and become hostile to all kin for many years. As the forests of Arden Eld wither and shrink, these beautiful and majestic hobs are increasingly rare, or sometimes turn up ill and sickly."
+            }
+        ],
+        "stats": {
+            "turns": 2,
+            "hp_mod": 2,
+            "size": 2
+        },
+        "actions": ["af_hob_greenkeeper_overgrow","af_hob_whitebeast_wildhunt","af_hob_whitebeast_prance","af_hob_whitebeast_hornsmash","af_hob_whitebeast_pollenhaze","af_hob_whitebeast_primalstars"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_hob_legend_summerflameaesi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Summer Flame Aesi",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Great hobs of the summer that are the spirits of midsummer festivals and the raucous partying that usually accompanies them. These horned goat-like Aesi can often speak the tongue of kin. During summer festivals in the green, it is not uncommon for a midsummer Aesi to ramble in from the forest to join in and patronize the festivities, brining hob-spirit with them, the divine alcohol Ambrosia. Such spirits are treated with great respect and must be fed and watered well before their journey back into the forest."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Good treatment of these minor forest gods brings good harvests and wealth to the village, however, courting them is not without risk. These Aesi, though they have a jovial temperament, are wild and unrestrained in their passions, as the beasts they draw their essence from. They have tremendous appetites, and in the throes of drink they go into a rage and rile up partygoers into great (and often dangerous) acts of debauchery and stupor. Without care, villages often end up half on fire, sodden with alcohol, and strewn with unconscious partygoers. A common strategy is to spike the Aesi’s drink, so they calmly fall asleep and disappear with the morning mist."
+            }
+        ],
+        "stats": {
+            "size": 2
+        },
+        "actions": ["af_hob_summerflameaesi_firepit","af_hob_summerflameaesi_stiffdrink","af_hob_summerflameaesi_brewsmash","af_hob_summerflameaesi_uncork","af_hob_summerflameaesi_raucousdance","af_hob_summerflameaesi_wanderinghaze"],
+        "removed_actions": [],
+        "traits": ["tf_hob_summerflameaesi_divineambrosia","tf_hob_summerflameaesi_soberup"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi begins combat in this phase, and enters Phase II when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi has no special traits or abilities in this phase.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi enters this phase when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_hob_summerflameaesi_hazeofambrosia","af_hob_summerflameaesi_ignite","af_hob_summerflameaesi_duelofflagons"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Fighting this drunken brawler is a matter of timing sober up so that it doesn’t put you in a bad spot. There might be times it is better to indulge, such as with Stiff Drink and Duel of Flagons. After all, characters that save successfully against Ambrosia intoxication take no ill effects, and can gamble on their good fortune. Keeping intoxication high can still be risky due to moves like Ignite and Wild Blow.",
+                "glossary": [
+                ]
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_hob_legend_fallingleafaesi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Falling Leaf Aesi",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A greater hob formed from the essence of dancing leaves in autumn. The Aesi take a long time to coalesce, and therefore are quite powerful and ancient. These hobs are shaped more like Kin than their more animalistic brethren and are extremely skilled in the ways of sword craft and stealth. They are master thieves and can steal anything: a moment, an essence, a thought, or even a memory. Though they eventually return what they stole, they are indiscriminate in their fascination with the habits and skills of Kin. Legends abound of them stealing the skills of master tradesman on a whim for a fortnight, leading to their poor victim’s financial ruin, or stealing the tongue of a bride for a year and a day, leading her groom to run away out of shame."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_fallingleafaesi_swirlingleaves","af_hob_fallingleafaesi_stealability","af_hob_fallingleafaesi_greenpath","af_hob_fallingleafaesi_wallofthorns","af_hob_fallingleafaesi_faetheif","af_hob_fallingleafaesi_guststrike","af_hob_fallingleafaesi_whirlingbranches","af_hob_fallingleafaesi_leafdance"],
+        "removed_actions": [],
+        "traits": ["tf_hob_fallingleafaesi_immortalthievery"],
+        "removed_traits": [],
+        "category": "legend",
+        "choices": ["tf_hob_fallingleafaesi_mortalmockery_mockstalwart","tf_hob_fallingleafaesi_mortalmockery_mockvagabond","tf_hob_fallingleafaesi_mortalmockery_mockmendicant","tf_hob_fallingleafaesi_mortalmockery_mockwright"],
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi begins combat in this phase, and enters Phase II at round 3 and every 2 round thereafter."
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi has no special traits or abilities in this phase.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": [],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi enters this phase on rounds 3, 5, 7, etc and uses Mortal Mockery"
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_hob_fallingleafaesi_mortalmockery"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters fighting this Aesi will find themselves scrambling to recover memories as they have their abilities quite literally blown out of them. The Aesi can make this difficult by knocking memories around, isolating them with Wall of Thorns, and forcing them to group up with Artery Cut. In phase II, characters must make quick work of the Aesi, or find themselves overwhelmed.",
+                "glossary": [
+                ]
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_hob_legend_deepsnowaesi",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Snow Aesi",
+        "faction_id": "fc_hob",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The Aesi of Deep Winter. Each takes seventy seasons to coalesce. During that time, their essence slowly condenses, taking in the sorrow of frozen death, the withering of plant life, and the landscapes of barren snow. Unlike their kin, they are somber, solitary, and melancholy beings with an air of gravitas about them. They can only be glimpsed during the deep cold, or in the dead of night. Their benediction can allow villages to survive the winter - with unexplained warm spells, mysterious hidden caches of crops, or respite from storms and blizzards. When enraged, however, their wrath is terrible, and they will freeze entire towns solid just to avenge the most minor slight."
+            }
+        ],
+        "stats": {
+        },
+        "actions": ["af_hob_deepsnowaesi_stiffenlimbs","af_hob_deepsnowaesi_freezesolid","af_hob_deepsnowaesi_bitingcold","af_hob_deepsnowaesi_northernwinds","af_hob_deepsnowaesi_scatterfrost","af_hob_deepsnowaesi_howlingblizzard","af_hob_deepsnowaesi_stormwhip"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi begins combat in this phase, and enters Phase II when bloodied or at the start of round 4.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi has no special traits or abilities in this phase.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_hob_deepsnowaesi_creepingcold","af_hob_deepsnowaesi_frozenimpaler_phi"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Aesi enters this phase when bloodied or at the start of round 4.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_hob_deepsnowaesi_creepingcold_phii","af_hob_deepsnowaesi_icydeath","af_hob_deepsnowaesi_frozenimpaler_phii"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi of Winter is fought in a gradually shrinking arena, which will eventually become a death trap due to its Frozen Impaler, Stiffen Limbs abilities, and numerous AoE attacks. It can alternate between Whipping Winds and Howling Blizzard depending on its positioning. Characters can try to cancel out its shove options by leaving the icicles from Frozen Impaler up and the frozen statues of their allies, but may also want to destroy the icicles to stop the build up of their powerful auras, and the objects to free their allies.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Map: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This legend is best fought in a battlefield that is 12x12 or a little larger."
+                    }
+                ]
+            }
+        ],
         "chapter": 3
     },
     {
@@ -7400,6 +8907,262 @@
         "category":"unique",
         "phases":[],
         "tactics":[],
+        "chapter": 3
+    },
+    {
+        "id": "fj_imperial_legend_crimsonweapon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crimson Weapon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The pinnacle of imperial engineering, Weapons are achievements of reverse-engineering of arkentech - towering clockwork and steam titans of the battlefield, and often the equivalent of using a steam-powered sledgehammer to crack a walnut."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Crimson Weapons are heavily armored and piloted automata, often bipedal, built specifically by Imperials to fight individuals of exceptional skill, ability, divine providence, or talent that could otherwise cause the legions problems - in other words ‘heroes’."
+            }
+        ],
+        "stats": {
+            "size": 2,
+            "hp": 60
+        },
+        "actions": ["af_imperial_crimsonweapon_hadescannon","af_imperial_crimsonweapon_mortar","af_imperial_crimsonweapon_dropbarricade","af_imperial_crimsonweapon_ashurablitz","af_imperial_crimsonweapon_pressureblade"],
+        "removed_actions": [],
+        "traits": ["tf_imperial_crimsonweapon_hellforged"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Crimson Weapon begins combat in this phase, and enters Phase II when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_imperial_crimsonweapon_arkentechmunition"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Crimson Weapon enters this phase when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_imperial_crimsonweapon_arkentechmunition_phii","af_imperial_crimsonweapon_hellscape"],
+                "traits": ["tf_imperial_crimsonweapon_phaseii"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Crimson Weapon is all about the Hades cannon. This cannon can deal brutal damage - for free! - but its targeting is random. Players that spread out in diagonal spaces around the weapon will be mostly safe from it - mostly. They can also choose to voluntarily stand so that the weapon might blow up its own munitions and damage itself - potentially a worthy sacrifice. Munitions will be eventually too much for players (and the weapon) to handle, so the fight should move quickly in phase II.",
+                "glossary": [
+                ]
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_legend_azurianweapon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Azurian Weapon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Massive landships, Azurian weapons are steambelching monstrosities that use a combination of prow-mounted drill and tracked locomotion to plow through the earth, causing completely impractical amounts of destruction in their wake. They mount heavy arktentech artillery that can pound an entire town to dust in short order. Like other Weapons, they are part automata, and can function without a crew - though they often have one and are used to transport imperial regiments long distances."
+            }
+        ],
+        "stats": {
+            "size": 999,
+            "speed": 0,
+            "dash": 0
+        },
+        "actions": ["af_imperial_azurianweapon_chasmcollapse","af_imperial_azurianweapon_broadside","af_imperial_azurianweapon_torpedo","af_imperial_azurianweapon_arkentechsupermine","af_imperial_azurianweapon_turretfire"],
+        "removed_actions": [],
+        "traits": ["tf_imperial_azurianweapon_advancedscopes","tf_imperial_azurianweapon_landship"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Azurian Weapon begins combat in this phase, and enters Phase II at the start of round 4.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_imperial_azurianweapon_arkentechartillery","af_imperial_azurianweapon_rotarycannon","af_imperial_azurianweapon_submerge"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Azurian Weapon enters this phase at the start of round 4.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_imperial_azurianweapon_arkentechartillery_phii","af_imperial_azurianweapon_rotarycannon_phii","af_imperial_azurianweapon_submerge_phii"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Azurian weapon can put out withering amounts of firepower, eventually culminating in carpet bombing the entire map if players don’t defeat it fast enough. It can use Broadside to shove foes into the mines and seismic thumpers it puts down, as well as put them out of position and into the artillery fire. Foes can avoid the torpedoes it can fire out if they are quick enough by standing on the debris it put out, or even the mines or thumpers created by its abilities.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Map: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This fight is best on an 8x8 or 12x12 map."
+                    }
+                ]
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_legend_veridianweapon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Veridian Weapon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "When a lord, baron, or dictator really wants to show off, they will undertake the construction of one of these massive, armored airships, a project that typically takes months to complete and the manpower of a small nation. Festooned with the latest armaments, scopes, and automata technology, Veridian Weapons take to the skies as an embodiment of imperial might, splendor, and prestige. Each one carries a super-weapon, an arkentech mega bomb, or energy beam, or something similarly as inventive as it is terrifying in effect, to blow away any ideas of opposition before they manifest."
+            }
+        ],
+        "stats": {
+            "size": 999,
+            "speed": 0,
+            "dash": 0,
+            "hp": 60
+        },
+        "actions": ["af_imperial_veridianweapon_underdeckrumbling","af_imperial_veridianweapon_trackingmissile","af_imperial_veridianweapon_antiboardernapalmflood"],
+        "removed_actions": [],
+        "traits": ["tf_imperial_veridianweapon_airship","tf_imperial_veridianweapon_arkentechmegabomb","tf_imperial_veridianweapon_phases","tf_imperial_veridianweapon_sections","tf_imperial_azurianweapon_automata"],
+        "removed_traits": [],
+        "category": "legend",
+        "choices": [],
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Destruction:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "If this section is destroyed, all remaining sections gain Lurch as a 1/round free action.",
+                                "glossary": []
+                            }
+                        ]
+                    }
+                ],
+                "name": "Airship Engine",
+                "actions": ["af_imperial_veridianweapon_engine_lurch","af_imperial_veridianweapon_engine_overclockpiston","af_imperial_veridianweapon_engine_repairautomaton","af_imperial_veridianweapon_engine_steamvent"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Destruction:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "If this section is destroyed, all remaining sections gain Collateral Damage as a 1/round free action.",
+                                "glossary": []
+                            }
+                        ]
+                    }
+                ],
+                "name": "Forward Turret",
+                "actions": ["af_imperial_veridianweapon_forwardturret_decksweeper","af_imperial_veridianweapon_forwardturret_megagunturret","af_imperial_veridianweapon_forwardturret_popupturret"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Destruction:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "If this section is destroyed, remaining sections gain the ability to summon Combat Automaton as a 1/round free action.",
+                                "glossary": []
+                            }
+                        ]
+                    }
+                ],
+                "name": "Aft Turret",
+                "actions": ["af_imperial_veridianweapon_aftturret_gatlingcannons","af_imperial_veridianweapon_aftturret_shieldautmaton"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Veridian weapon is a chaotic fight that is a straight race between destroying ship sections to delay the bomb counter, and destroying the numerous automata it spits out before they become too overwhelming. Characters may want to keep some of these sections and automata alive, however, due to abilities like tracking missile, deck sweeper, and anti-boarder napalm flood, which can more easily be avoided if there are more objects and automata around.",
+                "glossary": [
+                ]
+            }
+        ],
         "chapter": 3
     },
     {

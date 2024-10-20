@@ -1618,7 +1618,7 @@
             }
         ],
         "stats": {},
-        "actions": ["af_lowlander_leader_toxoin","af_lowlander_leader_deepwellpoison","af_lowlander_leader_noxiouscloud"],
+        "actions": ["af_lowlander_leader_toxion","af_lowlander_leader_deepwellpoison","af_lowlander_leader_noxiouscloud"],
         "removed_actions": [],
         "traits": [],
         "removed_traits": [],

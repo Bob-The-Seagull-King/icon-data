@@ -3140,6 +3140,122 @@
         ]
     },
     {
+        "id": "tf_scavenger_twinblades_twins",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Twins",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This legend is two separate size 1 characters, with the following features:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Each track effects and hp separately."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• However, combos and uses of per round abilities are tracked between both twins.",
+                "glossary": [{"val": "combos", "id": "gl_combo"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• When this legend takes a turn, only one twin acts at a time, alternating if possible."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_twinblades_fatebound",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fatebound",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a twin is reduced to 0 hp, they become defeated as normal. However, starting at the end of the next player turn, and at the end of every player turn past that, if the other twin has at least 1 hp and is in range 5, the defeated twin returns from defeated and heals to 25% of their max hp."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_twinblades_seekingblades",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Seeking Blades",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All twirling blades deal piercing damage equal to the round number instead of just 2. In addition, all twirling blades can be shoved 1 space in any direction by the twins at the start of the round.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_bloodbrother",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Brother",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This legend is made up of four Brothers. Each Brother is a separate character, tracking hp and effects separately. The Band is only defeated when all Brothers are defeated. On each of the Band’s turns, the Band acts with a different brother, until all have acted at least once. Each Brother has unique actions and a Blood-bound Blessing."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Roll a d10 4 times, reroll repeats, or pick 4 different brothers."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_bloodboundblessing",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blood Bound Blessing",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each time a Blood Brother is defeated, all active brothers immediately gain the Blood-bound Blessing of the fallen brother, empowering them."
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_boots",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Boots",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_heavy_guard"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_boots_theboot"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_boots_flyingdropkick"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_boots"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_boots",
         "type": "Trait",
         "source": "core",
@@ -3161,6 +3277,33 @@
           ]
     },
     {
+        "id": "tf_scavenger_bloodboundband_choice_fixer",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fixer",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_heavy_guard"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_fixer_ironblade"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fixer_grapple"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_fixer"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_fixer",
         "type": "Trait",
         "source": "core",
@@ -3175,7 +3318,54 @@
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_fixer_grapple"
-            }       ]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_fixer_ironblade",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Iron Blade",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Attacks against bloodied foes gain true strike and slash them.",
+                "glossary": [{"val": "true strike", "id": "gl_truestrike"}, {"val": "slash", "id": "gl_slashed"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_filth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Filth",
+        "class": "yellow",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_skirmisher"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_dodge"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_filth_drippingblade"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_filth_poisongas"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_filth"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_filth",
@@ -3192,7 +3382,8 @@
             {
                 "tags": {"desc_type" : "foetrait"},
                 "content": "tf_scavenger_bloodboundband_filth_drippingblade"
-            }     ]
+            }     
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_filth_drippingblade",
@@ -3205,10 +3396,40 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Attacks force the attack target to sacrifice 3 after dealing damage.",
-                "glossary": [
-                    {"val": "sacrifice", "id": "gl_sacrifice"}
-                ]
-            }       ]
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_cats",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cats",
+        "class": "yellow",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_skirmisher"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_dodge"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_cats_felinefelicity"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_cats_fanofnyaives"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_cats"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_cats",
@@ -3228,6 +3449,33 @@
             }   ]
     },
     {
+        "id": "tf_scavenger_bloodboundband_choice_sharkie",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sharkie",
+        "class": "green",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_class_leader_diaga"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharkie_greatauraofskulduggery"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharkie_greatswindle"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_sharkie"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_sharkie",
         "type": "Trait",
         "source": "core",
@@ -3245,6 +3493,33 @@
             }      ]
     },
     {
+        "id": "tf_scavenger_bloodboundband_choice_pale",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Pale",
+        "class": "yellow",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_skirmisher"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_skirmisher_dodge"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_pale_nighthaunt"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_pale"
+            }
+        ]
+    },
+    {
         "id": "tf_scavenger_bloodboundband_blessing_pale",
         "type": "Trait",
         "source": "core",
@@ -3255,10 +3530,40 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "All Brothers go to speed 5 and gain phasing.",
-                "glossary": [
-                    {"val": "phasing", "id": "gl_phasing"}
-                ]
-            }       ]
+                "glossary": [{"val": "phasing", "id": "gl_phasing"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_sharp",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sharp",
+        "class": "blue",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_aetherwall"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_slip"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_sharp_keeneye"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_sharp_ricochetshot"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_sharp"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_sharp_keeneye",
@@ -3271,11 +3576,9 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "All attacks can critical hit (+[D]).",
-                "glossary": [
-                    {"val": "critical hit", "id": "gl_criticalhit"},
-                    {"val": "+[D]", "id": "gl_damagedice"}
-                ]
-            }       ]
+                "glossary": [{"val": "critical hit", "id": "gl_criticalhit"}, {"val": "+[D]", "id": "gl_damagedice"}]
+            }       
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_sharp",
@@ -3296,7 +3599,39 @@
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_sharp_ricochetshot"
-            }        ]
+            }        
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_fanatic",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fanatic",
+        "class": "blue",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_aetherwall"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_slip"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fanatic_spark"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_fanatic_bloodpyre"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_fanatic"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_fanatic",
@@ -3313,7 +3648,54 @@
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_fanatic_spark"
-            }      ]
+            }      
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_broker",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Broker",
+        "class": "green",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_class_leader_diaga"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_special_defiance"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_broker_auraofbloodletting"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_broker_bloodybond"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_broker"
+            }
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_broker_auraofbloodletting",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Bloodletting",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. All foes that use an ability in the area, including basic abilities, must sacrifice 2 after the ability resolves. Bloodied foes sacrifice 5 instead.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "sacrifice", "id": "gl_sacrifice"}, {"val": "Bloodied", "id": "gl_bloodied"}]
+            }       
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_broker",
@@ -3326,10 +3708,36 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "All Brothers gain Defiance.",
-                "glossary": [
-                    {"val": "Defiance", "id": "gl_defiance"}
-                ]
-            }       ]
+                "glossary": [{"val": "Defiance", "id": "gl_defiance"}]
+            }       
+        ]
+    },
+    {
+        "id": "tf_scavenger_bloodboundband_choice_monger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Monger",
+        "class": "green",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_class_leader_diaga"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_monger_bountyhunt"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_scavenger_bloodboundband_monger_weakeningvenom"
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_scavenger_bloodboundband_blessing_monger"
+            }
+        ]
     },
     {
         "id": "tf_scavenger_bloodboundband_blessing_monger",
@@ -3341,12 +3749,40 @@
         "description":  [                                  
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "All foes are marked by Bounty Hunt"
+                "content": "All foes are marked by Bounty Hunt."
             },                       
             {
                 "tags": {"desc_type" : "foeability"},
                 "content": "af_scavenger_bloodboundband_monger_bountyhunt"
             }     
+        ]
+    },
+    {
+        "id": "tf_scavenger_midan_networth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Net Worth",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Midan’s pernicious metal aether slowly turns everything on the battlefield into gold and precious jewels. Their abilities have more effects and deal more damage to foes according to their net worth. A foe’s net worth is tracked with a d10, for each character."
+            }   
+        ]
+    },
+    {
+        "id": "tf_scavenger_midan_perfection",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Perfection",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If a foe has 10 net worth at the end of their turn, they are fully encased in precious metals and jewels. Their net worth is reduced to 0, then they are defeated, removed from the battlefield, and replaced by a height 1 golden statue object with 10 hp. Return them to the battlefield, still defeated, when the statue is destroyed."
+            }   
         ]
     },
     {
@@ -3726,6 +4162,182 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "Has counter against all abilities used from a range of 3 or greater. Damage from counter ignores cover.",
                 "glossary":[{"val":"counter","id":"gl_counter"}, {"val":"cover","id":"gl_cover"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_crimsonweapon_hellforged",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hellforged",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to its own terrain effects.",
+                "glossary":[{"val":"Immune","id":"gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_crimsonweapon_phaseii",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phase II",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any dangerous terrain the Weapon creates also becomes difficult terrain.",
+                "glossary":[{"val":"dangerous terrain","id":"gl_dangerousterrain"},{"val":"difficult terrain","id":"gl_difficultterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_azurianweapon_advancedscopes",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Advanced Scopes",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to blinded, and abilities have no maximum range.",
+                "glossary":[{"val":"Immune","id":"gl_immune"},{"val":"blinded","id":"gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_azurianweapon_landship",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Landship",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The weapon is immobile. It occupies 1 space along the entire edge of one side of the battlefield (imagine it lined up along the edge). Characters and objects cannot share space with the weapon. If it is removed from the battlefield, it always returns in the same spot.",
+                "glossary":[{"val":"immobile","id":"gl_immobile"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_azurianweapon_automata",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Automata",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sections can summon Automata. Automata are summons without intangible, so they can be attacked and damaged regularly. They otherwise abide by the regular summon rules. Automata have a defense of 5 and 5 hp. When created, they can be created in any free space in range 4 of the section that created them.",
+                "glossary":[{"val":"summons","id":"gl_summon"},{"val":"intangible","id":"gl_intangible"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_airship",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Airship",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This Weapon fight takes place on the Weapon, an airship that could be any shape, but is better run on a smaller, rectangular map of no more than 10 or 12 spaces on its longest side. The deck of the airship is treated as basic terrain and not a character (it’s too heavily armored), but its three sections can be attacked to deal damage to it."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_arkentechmegabomb",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkentech Megabomb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Weapon has a massive Arkentech weapon that is constantly charging. If it is allowed to fire it, it ends the fight, resulting in a player loss. Usually the weapon firing will result in some massive loss of life, like a town being wiped out, but you can decide what the stakes are for your game."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Track the bomb's energy charge with a d6. It starts at 1, and ticks up by 1 at the start of each round past the first. If the Veridian Weapon ends a round with its charge at 6 or higher, the fight is over. Players can deplete the charge by destroying sections, and the weapon can increase it with certain abilities."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_sections",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sections",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The targetable parts of the Weapon are three separate sections: the Engine, the Forward Turret, and the Aft Turret."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each section is a separate size 2 character that is immobile and has 1/3 of the Weapon’s total HP. If removed from the battlefield, can only be placed in the same space.",
+                        "glossary":[{"val":"immobile","id":"gl_immobile"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Sections cannot be placed within range 2 of each other."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Sections also count as height 2 objects. Other characters can move on them or use them as cover.",
+                        "glossary":[{"val":"cover","id":"gl_cover"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When acting, the Weapon acts with only one of its sections at a time. It must take a turn with each of its sections in a round before taking a turn with a different section.",
+                        "glossary":[]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When a section is reduced to 0 hp, it is destroyed and removed from the battlefield."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When all three are destroyed, the Weapon is defeated."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_phases",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phases",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When a section is destroyed, lower the Megabomb counter by 1. Each remaining section gains an ability depending on which section was destroyed."
             }
         ]
     },
@@ -4753,6 +5365,321 @@
         ]
     },
     {
+        "id": "tf_lowlander_mule_blightlandsbrawn",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Blightlands Brawn",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When bloodied, becomes sturdy, kidnap goes +2 more spaces, and kidnap also slashes foes.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "sturdy", "id": "gl_sturdy"}, {"val": "slashes", "id": "gl_slashed"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_canker_stench",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stench",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character has aura 1. Foes in the aura take +1 curse on attacks and saves.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_canker_toxicrevenge",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Toxic Revenge",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When defeated, explodes with venom, inflicting [D]+fray damage as a burst 1 (self) area effect.",
+                        "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "tf_lowlander_snork_entrenched",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Entrenched",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Unstoppable while in a pit.",
+                "glossary": [{"val": "Unstoppable", "id": "gl_unstoppable"}, {"val": "pit", "id": "gl_pit"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_slaughterer_bloodwhetter",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bloodwhetter",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Slaughterer is damaged by an ability they may deal 2 damage to an adjacent foe, each time they are damaged."
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_tick_lickknife",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lick Knife",
+        "description":  [      
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Tick’s abilities all have "
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Slay: ",
+                        "glossary": [{"val": "Slay", "id": "gl_slay"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "gain +1 action. This trait can only trigger once a turn."
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "tf_lowlander_priestofthenettle_noxiouscenser",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Noxious Censer",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The priest has Aura 2. Characters in the aura have cover against abilities used from the outside, and foes in the aura get +1 curse on attacks.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "cover", "id": "gl_cover"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_mycowright_auraofrot",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Rot",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mycowright has aura 2. Foes that start or end their turn in the aura lose all vigor, then take 2 piercing damage.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "piercing", "id": "gl_piercing"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_swarmwright_swarmshroud",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Swarm Shroud",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aura 2. Attacks against the wright and allies in the aura gain +1 curse, and foes that start their turn in the area take 1 piercing damage.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "piercing", "id": "gl_piercing"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_zombiemob_walkingdead",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Walking Dead",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Disintegrates and is defeated if all other foes are defeated."
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_zombiemob_swarmdetonation",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Swarm Detonation",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When any zombie is defeated, it deals 2 piercing damage to all adjacent foes.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_ridinginsect_saddleup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Saddle Up",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Lowlanders can mount or dismount the Riding Insect by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Lowlanders can start the battle mounted."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• While mounted, place characters inside a free space on the insect (so the insect has space for 4 size 1 characters). They share its space, move when it moves, and have cover. While moving with the insect, characters are unstoppable.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters mounting the insect when it is defeated are placed in any free adjacent space of the insect’s choice and take 3 damage."
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_clot_mudbody",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mud Body",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has resistance while inside difficult or dangerous terrain, or pits. If outside those terrain areas, takes bonus damage and +1 curse on attacks and saves.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "pits", "id": "gl_pit"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_clot_harden",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Harden",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Clot hardens over time, and increases all damage it deals by an amount equal to twice the round number. At the end of round 6, it finally petrifies and is defeated."
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_mantidwarrior_camouflage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Camouflage",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this character ends its turn adjacent to an object or or inside difficult or dangerous terrain, it gains stealth.",
+                "glossary": [{"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "stealth", "id": "gl_stealth"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_pariah_mutate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mutate",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When bloodied, the Pariah deals bonus damage and becomes unstoppable.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_battlebeetle_battleplatform",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Battle Platform",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can mount or dismount the Beetle by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Lowlanders can start the battle mounted on the Beetle."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• While mounted, place characters inside a free space in the beetle (so the beetle has space for 9 size 1 characters). They share its space, move when it moves, and have cover. While moving with the beetle, characters are unstoppable.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters hostile to the beetle must pass a save to mount it."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters mounting the beetle when it is defeated are placed in any free adjacent space of the beetle’s choice and take 3 damage."
+            }      
+        ]
+    },
+    {
+        "id": "tf_lowlander_battlebeetle_ziplinedismount",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Zipline Dismount",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters mounted on the beetle can fly 3 and dismount it as free action ability.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }    
+        ]
+    },
+    {
         "id": "tf_faction_jotunn_elite",
         "type": "Trait",
         "source": "core",
@@ -5068,6 +5995,644 @@
                     {"val": "Aura", "id": "gl_aura"},
                     {"val": "aura", "id": "gl_aura"},
                     {"val": "pacified", "id": "gl_pacified"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_beastspirit_saddleup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Saddle Up",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Hobs can mount or dismount the Beast Spirit by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Hobs can start the battle mounted.",
+                        "glossary": [
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While mounted, place characters inside a free space on the spirit. They share its space, move when it moves, and have cover. While moving with the spirit, characters are unstoppable.",
+                        "glossary": [
+                            {"val": "cover", "id": "gl_cover"},
+                            {"val": "unstoppable", "id": "gl_unstoppable"}
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters mounting the spirit when it is defeated are placed in any free adjacent space of the spirit’s choice and take 3 damage.",
+                        "glossary": [
+                        ]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The rider benefits from the Beast Spirit's phasing.",
+                        "glossary": [
+                            {"val": "phasing", "id": "gl_phasing"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_nymph_auraofglamour",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Glamour",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Nymph has aura 2. Foes outside the aura cannot directly target the Nymph with abilities.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_greenkeeper_livingroot",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Living Root",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When defeated, becomes a height 2 object.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_changeling_lessermortalmockery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lesser Mortal Mockery",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of its turn, the changeling transforms its physical form into a brief mockery of the closest foe. The effects depend on the foe’s class. If multiple foes are equidistant, it can choose."
+            }  ,                              
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Stalwart: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling becomes sturdy until the start of its next turn.",
+                                            "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Vagabond: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling gains evasion until the start of its next turn.",
+                                            "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Mendicant: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling may cure itself.",
+                                            "glossary": [{"val": "cure", "id": "gl_cure"}]
+                                        }]
+                    },
+                    {
+                        "tags": [{"desc_type": "effect"}],
+                        "content": "Wright: ",
+                        "subcontent":   [{
+                                            "tags": [{"desc_type": "desc"}],
+                                            "content": "The Changeling creates a height 1 aethershard object in range 3, then may teleport on top of it.",
+                                            "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                                        }]
+                    }
+                ]
+            }  
+          ]
+    },
+    {
+        "id": "tf_hob_greatboulderhob_lumbering",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lumbering",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Cannot dash. Only takes slow turns.",
+                "glossary": [
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "slow turns", "id": "gl_slowturn"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_greatboulderhob_crumblingbody",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crumbling Body",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has 12 armor. After any ability damages the hob, permanently reduce its armor by 1 for the rest of combat, even if that damage is reduced to 0. If it's armor is 0, all attacks against it become critical hits on hit.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "critical hits", "id": "gl_criticalhit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_banderhob_protectthechild",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Protect The Child",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, the Banderhobb chooses a foe, deciding it’s a child to be protected. It gains three uses of the following interrupt, which carry over between turns and only refresh at the start of each round.",
+                "glossary": [
+                    {"val": "interrupt", "id": "gl_interrupt"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_banderhob_protectthechild"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_geryan_bargain",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Bargain",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Once per round, as an interrupt, the Geryan can strike one of the following bargains with any foe. The bargain interrupts anything that’s currently going on, and resolves immediately. Accepting a bargain is voluntary. If a character refuses a bargain, the Geryan or an ally of its choice gains 4 vigor.",
+                "glossary": [
+                    {"val": "interrupt", "id": "gl_interrupt"},
+                    {"val": "vigor", "id": "gl_vigor"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_luck"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_immortality"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_wealth"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_hob_geryan_bargain_beauty"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_wissan_deeprooted",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deep Rooted",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of any combat, place 4 deep roots on the map.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_hob_wissan_deeproot"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_wissan_tiedtothetree",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tied to the Tree",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wissan’s body is intangible. When all four roots are destroyed, it is instantly defeated and disappears. It can teleport to any space adjacent to a root as a free action.",
+                "glossary": [
+                    {"val": "intangible", "id": "gl_intangible"},                    
+                    {"val": "teleport", "id": "gl_teleport"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_divineambrosia",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Divine Ambrosia",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aegis’s mere presence envelops the battlefield in a drunken haze. At the start of combat, give a d6 to all characters, representing their level of intoxication.",
+                "glossary": [
+                    {"val": "d6", "id": "gl_powerdie"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Certain abilities Intoxicate foes, ticking the die up by 1. If a die would become 6, a character can’t take any more.",
+                "glossary": [
+                    {"val": "die", "id": "gl_powerdie"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The must save or sacrifice 25% of their maximum hp and spend their entire next turn incapacitated and throwing up, resetting the die to 1. On a successful save, lower the die by 2 and take no other negative effects.",
+                "glossary": [
+                    {"val": "sacrifice", "id": "gl_sacrifice"},                    
+                    {"val": "die", "id": "gl_powerdie"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sober Up",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character can sober up at the start of their turn by rolling 1d6, taking one of the following effects and reducing their intoxication by 3, to a minimum of 1. Effects with a duration last until the start of the character’s next turn.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_summerflameaesi_soberup"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockstalwart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Stalwart",
+        "class": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains armor 2 and rampart. In addition, Leaf dance and Cutting Wit gain true strike.",
+                "glossary": [
+                    {"val": "armor", "id": "gl_armor"},
+                    {"val": "rampart", "id": "gl_rampart"},
+                    {"val": "true strike", "id": "gl_truestrike"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockvagabond",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Vagabond",
+        "class": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi may split up all its movement with actions. In addition, Leaf dance and Cutting Wit gain unerring and the ability to critically hit, dealing +[D] on a crit.",
+                "glossary": [
+                    {"val": "unerring", "id": "gl_unerring"},
+                    {"val": "critically hit", "id": "gl_criticalhit"},
+                    {"val": "crit", "id": "gl_criticalhit"},
+                    {"val": "[D]", "id": "gl_damagedice"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockmendicant",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Mendicant",
+        "class": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains regeneration. In addition, Leaf Dance and Cutting Wit deal bonus damage.",
+                "glossary": [
+                    {"val": "regeneration", "id": "gl_regeneration"},
+                    {"val": "bonus damage", "id": "gl_bonusdamage"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_mortalmockery_mockwright",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mock Wright",
+        "class": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi gains the Aetherwall trait. In addition, Leaf Dance and Cutting Wit gain pierce.",
+                "glossary": [
+                    {"val": "pierce", "id": "gl_piercing"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foetrait"},
+                "content": "tf_class_artillery_aetherwall"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_immortalthievery",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Immortal Thievery",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Some of the Aesi’s abilities have the thievery tag. When an ability with this tag is used, the Aesi creates a memory as a summon in any free space within range 4 of that character.",
+                "glossary": [
+                    {"val": "summon", "id": "gl_summon"}
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_hob_fallingleafaesi_memory"
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_friendship",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Friendship",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe’s abilities can't target allies and treat all allies as immune to their effects, including any active marks, stances, auras, etc.",
+                "glossary": [
+                    {"val": "immune", "id": "gl_immune"},
+                    {"val": "marks", "id": "gl_mark"},
+                    {"val": "stances", "id": "gl_stance"},
+                    {"val": "auras", "id": "gl_aura"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_sight",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sight",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe is blinded+",
+                "glossary": [
+                    {"val": "blinded", "id": "gl_blinded"},
+                    {"val": "+", "id": "gl_blinded"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_luck",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Luck",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe makes all attacks and saves with +1 curse, cannot gain boons, and cannot critical hit.",
+                "glossary": [
+                    {"val": "+1 curse", "id": "gl_curse"},
+                    {"val": "boons", "id": "gl_boon"},
+                    {"val": "critical hit", "id": "gl_criticalhit"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_heart",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heart",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe cannot gain vigor or benefit from defiance.",
+                "glossary": [
+                    {"val": "vigor", "id": "gl_vigor"},
+                    {"val": "defiance", "id": "gl_defiance"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_grace",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Grace",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Aesi cannot miss this foe with attacks, and they cannot reduce damage from the Aesi in any way.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_fallingleafaesi_faethief_youth",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Youth",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foe cannot dash and is dazed+.",
+                "glossary": [
+                    {"val": "dash", "id": "gl_dash"},
+                    {"val": "dazed", "id": "gl_dazed"},
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_nonstopsinging",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Nonstop Singing",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character gains aura 1. Allies in the aura are weakened+.",
+                "glossary": [
+                    {"val": "aura", "id": "gl_aura"},                    
+                    {"val": "weakened", "id": "gl_weakened"},                    
+                    {"val": "+", "id": "gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_stagger",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stagger",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Aesi shoves the character 2.",
+                "glossary": [
+                    {"val": "shoves", "id": "gl_shove"}
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 5 damage."
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_standandblink",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Stand and Blink",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character becomes immobile.",
+                "glossary": [
+                    {"val": "immobile", "id": "gl_immobile"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_clingy",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Clingy",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character can only use non-basic abilities if adjacent to an ally.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_hob_summerflameaesi_soberup_takeanap",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Take a Nap",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character is weakened. If already weakened, they are stunned.",
+                "glossary": [
+                    {"val": "stunned", "id": "gl_stunned"},                    
+                    {"val": "weakened", "id": "gl_weakened"}
                 ]
             }
         ]

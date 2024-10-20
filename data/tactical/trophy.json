@@ -648,7 +648,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Vessel Knight"
+            "legend": "Vessel_Knight"
         },
         "eventtags": {},
         "name": "Helm of Command",
@@ -667,7 +667,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Vessel Knight",
+            "legend": "Vessel_Knight",
             "divine": true,
             "cure": true
         },
@@ -752,7 +752,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Dread Lords"
+            "legend": "Dread_Lords"
         },
         "eventtags": {},
         "name": "Grasp of Iron",
@@ -771,7 +771,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Dread Lords",
+            "legend": "Dread_Lords",
             "terrain": "pit"
         },
         "eventtags": {},
@@ -791,7 +791,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Dread Lords"
+            "legend": "Dread_Lords"
         },
         "eventtags": {},
         "name": "Shivering Arrow",
@@ -1389,7 +1389,7 @@
         "name": "Twinblade Charm",
         "category": "fc_scavenger",
         "uses" : 5,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_twinblades",
         "usetype": "",
         "description": [
             {
@@ -1410,7 +1410,7 @@
         "name": "Battle Blade",
         "category": "fc_scavenger",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_twinblades",
         "usetype": "",
         "description": [
             {
@@ -1429,13 +1429,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Blood Bound Band"
+            "legend": "Blood_Bound_Band"
         },
         "eventtags": {},
         "name": "Blood Rune",
         "category": "fc_scavenger",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_bloodboundband",
         "usetype": "",
         "description": [
             {
@@ -1453,13 +1453,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Blood Bound Band"
+            "legend": "Blood_Bound_Band"
         },
         "eventtags": {},
         "name": "Boot's Boots",
         "category": "fc_scavenger",
         "uses" : 5,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_bloodboundband",
         "usetype": "",
         "description": [
             {
@@ -1484,7 +1484,7 @@
         "name": "Gilthand",
         "category": "fc_scavenger",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_midan",
         "usetype": "",
         "description": [
             {
@@ -1504,7 +1504,7 @@
         "name": "Crystallized Greed",
         "category": "fc_scavenger",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_scavenger_legend_midan",
         "usetype": "",
         "description": [
             {
@@ -1733,13 +1733,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Crimson Weapon"
+            "legend": "Crimson_Weapon"
         },
         "eventtags": {},
         "name": "Hellforged Armor",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_crimsonweapon",
         "usetype": "expedition",
         "description": [
             {
@@ -1754,18 +1754,22 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Crimson Weapon"
+            "legend": "Crimson_Weapon"
         },
         "eventtags": {},
         "name": "Hades Cannon",
         "category": "fc_imperial",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_crimsonweapon",
         "usetype": "",
         "description": [
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Spend a charge of this ability and one action to immediately use the Hades Cannon, as per the Round action."
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_crimsonweapon_hadescannon"
             }
         ]
     },
@@ -1774,13 +1778,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Azurian Weapon"
+            "legend": "Azurian_Weapon"
         },
         "eventtags": {},
         "name": "Targeting Flare",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_azurianweapon",
         "usetype": "",
         "description": [
             {
@@ -1801,14 +1805,14 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Azurian Weapon",
+            "legend": "Azurian_Weapon",
             "action": 1
         },
         "eventtags": {},
         "name": "Landship Drill",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_azurianweapon",
         "usetype": "expedition",
         "description": [
             {
@@ -1823,14 +1827,14 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Veridian Weapon",
+            "legend": "Veridian_Weapon",
             "action": 1
         },
         "eventtags": {},
         "name": "Retooled Combat Automaton",
         "category": "fc_imperial",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_veridianweapon",
         "usetype": "",
         "description": [
             {
@@ -1848,13 +1852,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Veridian Weapon"
+            "legend": "Veridian_Weapon"
         },
         "eventtags": {},
         "name": "Doom Key",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_veridianweapon",
         "usetype": "expedition",
         "description": [
             {
@@ -2076,7 +2080,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Limb Demon"
+            "legend": "Limb_Demon"
         },
         "eventtags": {},
         "name": "White Flesh Strip",
@@ -2100,7 +2104,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Limb Demon"
+            "legend": "Limb_Demon"
         },
         "eventtags": {},
         "name": "Clasped Hand Ring",
@@ -2123,7 +2127,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Violence Demon"
+            "legend": "Violence_Demon"
         },
         "eventtags": {},
         "name": "Seventh Sword",
@@ -2144,7 +2148,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Violence Demon"
+            "legend": "Violence_Demon"
         },
         "eventtags": {},
         "name": "Chakram",
@@ -2164,7 +2168,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Majesty Demon"
+            "legend": "Majesty_Demon"
         },
         "eventtags": {},
         "name": "Clasp of the Flagellant",
@@ -2188,7 +2192,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Majesty Demon"
+            "legend": "Majesty_Demon"
         },
         "eventtags": {},
         "name": "Death XIII",
@@ -2399,7 +2403,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Fetid Cult"
+            "legend": "Fetid_Cult"
         },
         "eventtags": {},
         "name": "Corruptive Ichor",
@@ -2422,7 +2426,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Fetid Cult"
+            "legend": "Fetid_Cult"
         },
         "eventtags": {},
         "name": "Icon of the Pit",
@@ -2446,7 +2450,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Head Lopper"
+            "legend": "Head_Lopper"
         },
         "eventtags": {},
         "name": "Cataclysm Weapon",
@@ -2470,7 +2474,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Head Lopper"
+            "legend": "Head_Lopper"
         },
         "eventtags": {},
         "name": "Belt of the Champion",
@@ -2494,7 +2498,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Hurian Worm Rider"
+            "legend": "Hurian_Worm_Rider"
         },
         "eventtags": {},
         "name": "Lesser Wormspore",
@@ -2514,7 +2518,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Hurian Worm Rider",
+            "legend": "Hurian_Worm_Rider",
             "action": "free"
         },
         "eventtags": {},
@@ -2767,7 +2771,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Rider of the Primal Storm"
+            "legend": "Rider_of_the_Primal_Storm"
         },
         "eventtags": {},
         "name": "Aegis of Erenhelion",
@@ -2787,7 +2791,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Rider of the Primal Storm"
+            "legend": "Rider_of_the_Primal_Storm"
         },
         "eventtags": {},
         "name": "Bridle Shard",
@@ -2811,7 +2815,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Keeper of the Eldflame"
+            "legend": "Keeper_of_the_Eldflame"
         },
         "eventtags": {},
         "name": "Quicksilver Draught",
@@ -2834,7 +2838,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Keeper of the Eldflame",
+            "legend": "Keeper_of_the_Eldflame",
             "action": "free"
         },
         "eventtags": {},
@@ -2856,7 +2860,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Warden of the Aeongate"
+            "legend": "Warden_of_the_Aeongate"
         },
         "eventtags": {},
         "name": "First Key to the Gates",
@@ -2876,7 +2880,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Warden of the Aeongate",
+            "legend": "Warden_of_the_Aeongate",
             "interrupt": 1,
             "type": "interrupt"
         },
@@ -2921,7 +2925,7 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Warden of the Aeongate",
+            "legend": "Warden_of_the_Aeongate",
             "interrupt": 1,
             "type": "interrupt"
         },
@@ -3196,13 +3200,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Summer Flame Aesi"
+            "legend": "Summer_Flame_Aesi"
         },
         "eventtags": {},
         "name": "Mask of Summer",
         "category": "fc_hob",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_hob_legend_summerflameaesi",
         "usetype": "expedition",
         "description": [
             {
@@ -3217,14 +3221,14 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Summer Flame Aesi",
+            "legend": "Summer_Flame_Aesi",
             "action": "free"
         },
         "eventtags": {},
         "name": "Pure Ambrosia",
         "category": "fc_hob",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_hob_legend_summerflameaesi",
         "usetype": "",
         "description": [
             {
@@ -3239,13 +3243,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Falling Leaf Aesi"
+            "legend": "Falling_Leaf_Aesi"
         },
         "eventtags": {},
         "name": "Mask of Autumn",
         "category": "fc_hob",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_hob_legend_fallingleafaesi",
         "usetype": "expedition",
         "description": [
             {
@@ -3264,23 +3268,19 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Falling Leaf Aesi"
+            "legend": "Falling_Leaf_Aesi"
         },
         "eventtags": {},
         "name": "Wind Cloak",
         "category": "fc_hob",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_hob_legend_fallingleafaesi",
         "usetype": "",
         "description": [
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Wrap this swirling cloak of leaves around yourself to remove yourself from the battlefield, then place yourself anywhere in range 4. When you land, all allies in range 3 may fly 2.",
                 "glossary": [{"val": "fly", "id": "gl_flying"}]
-            },
-            {
-                "tags": {"desc_type" : "foeability"},
-                "content": "af_hob_fallingleafaesi_swirlingleaves"
             }
         ]
     },
@@ -3289,14 +3289,14 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Deep Snow Aesi",
+            "legend": "Deep_Snow_Aesi",
             "action": "round"
         },
         "eventtags": {},
         "name": "Frozen Fetish",
         "category": "fc_hob",
         "uses" : 2,
-        "foe_id": "",
+        "foe_id": "fj_hob_legend_deepsnowaesi",
         "usetype": "",
         "description": [
             {
@@ -3314,13 +3314,13 @@
         "type": "Trophy",
         "source": "core",
         "tags": {
-            "legend": "Deep Snow Aesi"
+            "legend": "Deep_Snow_Aesi"
         },
         "eventtags": {},
         "name": "Mask of Winter",
         "category": "fc_hob",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_hob_legend_deepsnowaesi",
         "usetype": "expedition",
         "description": [
             {

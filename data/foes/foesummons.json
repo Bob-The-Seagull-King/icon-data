@@ -538,6 +538,276 @@
         "limit": 1
     },
     {
+        "id": "sm_scavenger_midan_volatilegem",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true,
+            "hp": 1
+        },
+        "eventtags": {},
+        "name": "Volatile Gem",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Explodes when taking damage from any ability (including the Midan’s), destroying them. When destroyed, each object deals 1 piercing damage, once, to all adjacent foes for every net worth, then increases their net worth by 1.",
+                                    "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_scavenger_midan_aurelianbomb",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true,
+            "hp": 10
+        },
+        "eventtags": {},
+        "name": "Aurelian Bomb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When the Midan summons a bomb, it may choose to detonate any Aurelian bombs that it didn’t place this turn. Bombs explode with a medium blast area effect centered on them, shattering all foes inside, dealing piercing fray damage four times to all foes and objects inside, then increasing all foes net worth by 2 in the area.",
+                                    "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shattering", "id": "gl_shattered"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_wissan_deeproot",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true,
+            "immobile": true
+        },
+        "eventtags": {},
+        "name": "Deep Root",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The roots have aura 1. Foes in the aura are vulnerable+. All roots must be accessible to characters and placed within range 6 of another root.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}, 
+                                        {"val": "vulnerable", "id": "gl_vulnerable"}, 
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Roots are considered to be the Wissan for purposes of targeting and each has 25% of its max hp. When a root is destroyed, remove it."
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_wissan_lesseroot",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Lesser Root",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The root emits aura 1 around it. Foes in the aura are vulnerable+.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}, 
+                                        {"val": "vulnerable", "id": "gl_vulnerable"}, 
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a root is summoned, deal 1 damage, once, to one foe in range 2 for every lesser root or deep root in range 2 of that character, including this one."
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_summerflameaesi_keg",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Keg",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The object has aura 1. Characters in the aura are weakened+, and if they start their turn there, they increase their  intoxication by +1.",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}, 
+                                        {"val": "weakened", "id": "gl_weakened"}, 
+                                        {"val": "+", "id": "gl_ongoing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_fallingleafaesi_memory",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Memory",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Can share space with all characters. Characters can end any thievery effects on them by passing over and picking up a memory (any memory will do). This consumes the memory, removing it.",
+                                    "glossary": [
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_fallingleafaesi_thornywall",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Thorny Wall",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The wall is considered dangerous terrain, but only for foes. Foes that collide with it take 2 piercing damage.",
+                                    "glossary": [
+                                        {"val": "dangerous terrain", "id": "gl_dangerousterrain"},
+                                        {"val": "collide", "id": "gl_collide"},
+                                        {"val": "piercing", "id": "gl_piercing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_hob_deepsnowaesi_icicle",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "destructable": true,
+            "hp": 8
+        },
+        "eventtags": {},
+        "name": "Icicle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The icicle has aura 1. The aura has the following effects:",
+                                    "glossary": [
+                                        {"val": "aura", "id": "gl_aura"}
+                                    ]
+                                }]
+            },                                      
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes that start their turn in the aura take 2 piercing damage.",
+                        "glossary": [
+                            {"val": "aura", "id": "gl_aura"},
+                            {"val": "piercing", "id": "gl_piercing"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes are vulnerable+ while in the aura.",
+                        "glossary": [
+                            {"val": "aura", "id": "gl_aura"},
+                            {"val": "vulnerable", "id": "gl_vulnerable"},
+                            {"val": "+", "id": "gl_ongoing"}
+                        ]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The aura is difficult terrain.",
+                        "glossary": [
+                            {"val": "aura", "id": "gl_aura"},
+                            {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                        ]
+                    }
+                ]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
         "id": "sm_imperial_veridianweapon_combatautomaton",
         "type": "Summon",
         "source": "core",
@@ -564,6 +834,200 @@
         ],
         "blurb":  [],
         "colour": "icon",
+        "limit": 0
+    },
+    {
+        "id": "sm_lowlander_thresher_pitworm",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Pit Worm",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or during the Thresher’s turn, the worm can teleport to any free pit space, then deal 3 damage to a foe in range 3.",
+                                    "glossary": [{"val": "teleport", "id": "gl_teleport"}, {"val": "pit", "id": "gl_pit"}, {"val": "+", "id": "gl_ongoing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_priestoftheherb_herbalcenser",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "height": 1,
+            "object": true
+        },
+        "eventtags": {},
+        "name": "Herbal Censer",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Object Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The censer has aura 1. Allies that end their turn inside the censer’s aura may end a status or mark of their choice.",
+                                    "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_lowlander_mycowright_mushroom",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "immobile": true,
+            "hp": 1
+        },
+        "eventtags": {},
+        "name": "Mushroom",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a character collides with a mushroom, it explodes for a small blast blast area effect. Characters inside must save or become pacified, then take [D]+fray piercing damage, or just fray damage on a successful save. The character that collided automatically fails the save.",
+                                    "glossary": [{"val": "collides", "id": "gl_collide"}, {"val": "small blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "pacified", "id": "gl_pacified"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect_ch2",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_artillery_attackinsect_ch3",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Attack Insect",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Ability:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe, or 2 piercing damage, twice, if the foe is bloodied.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"},{"val": "bloodied", "id": "gl_bloodied"}]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
+                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "blue",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_sagesnail_pearlescentbubble",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Pearlescent Bubble",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a character enters the bubble’s space for any reason, it pops, destroying it. Foes are pacified then, shoved 3 in any direction. Allies gain vigor 3.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "shoved", "id": "gl_shove"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
         "limit": 0
     },
     {
@@ -674,99 +1138,6 @@
         "blurb":  [],
         "colour": "green",
         "limit": 0
-    },
-    {
-        "id": "sm_lowlander_artillery_attackinsect",
-        "type": "Summon",
-        "source": "core",
-        "tags": {
-            "size": 1,
-            "Intangible": true
-        },
-        "eventtags": {},
-        "name": "Attack Insect",
-        "description":  [
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Ability:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
-                                }]
-            }
-        ],
-        "blurb":  [],
-        "colour": "blue",
-        "limit": 2
-    },
-    {
-        "id": "sm_lowlander_artillery_attackinsect_ch2",
-        "type": "Summon",
-        "source": "core",
-        "tags": {
-            "size": 1,
-            "Intangible": true
-        },
-        "eventtags": {},
-        "name": "Attack Insect",
-        "description":  [
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Ability:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"}]
-                                }]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Effect:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
-                                }]
-            }
-        ],
-        "blurb":  [],
-        "colour": "blue",
-        "limit": 2
-    },
-    {
-        "id": "sm_lowlander_artillery_attackinsect_ch3",
-        "type": "Summon",
-        "source": "core",
-        "tags": {
-            "size": 1,
-            "Intangible": true
-        },
-        "eventtags": {},
-        "name": "Attack Insect",
-        "description":  [
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Ability:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When summoned, or once on the Apiarist’s turn thereafter, the insect may fly up to 3 spaces, then deal 1 piercing damage, twice, to an adjacent foe, or 2 piercing damage, twice, if the foe is bloodied.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "piercing", "id": "gl_piercing"},{"val": "bloodied", "id": "gl_bloodied"}]
-                                }]
-            },
-            {
-                "tags": {"desc_type" : "effect"},
-                "content": "Summon Effect:",
-                "subcontent":   [{
-                                    "tags": {"desc_type" : "desc"},
-                                    "content": "When an attack insect flies, the Apiarist or an ally can latch on and fly with it, mirroring its movement.",
-                                    "glossary": [{"val": "fly", "id": "gl_flying"},{"val": "flies", "id": "gl_flying"}]
-                                }]
-            }
-        ],
-        "blurb":  [],
-        "colour": "blue",
-        "limit": 2
     },
     {
         "id": "sm_general_master_rallypoint",
@@ -1524,5 +1895,304 @@
         "blurb":  [],
         "colour": "yellow",
         "limit": 6
+    },
+    {
+        "id": "sm_imperial_crimsonweapon_munition",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Munition",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "If a foe ends their turn adjacent to a munition, it explodes for a large blast area effect. Characters inside, including the weapon, must save or take 2[D]+fray and be stunned, or just [D]+fray on a successful save.",
+                                    "glossary": [
+                                        {"val": "large blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"},
+                                        {"val": "[D]", "id": "gl_damagedice"},
+                                        {"val": "fray", "id": "gl_fray"},
+                                        {"val": "stunned", "id": "gl_stunned"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_azurianweapon_targetingreticle",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Targeting Reticle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The reticle can share space with other characters. It moves 1 space towards the chosen character at the start of that character’s turn, then 1 space after they use any ability, including their standard move and interrupts. When the reticle enters any foe’s space, the Weapon deals 3 piercing damage to that character a number of times equal to the round number.",
+                                    "glossary": [
+                                        {"val": "interrupts", "id": "gl_interrupt"},
+                                        {"val": "piercing", "id": "gl_piercing"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_azurianweapon_torpedo",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "Intangible": true
+        },
+        "eventtags": {},
+        "name": "Torpedo",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At the end of the next player turn, the torpedo submerges, burrows, and detonates under the closest foe for a medium blast area effect, destroying it. If multiple foes are equidistant, the Weapon can choose. Foes in the area must save or take [D] +fray and become stunned, or just fray damage on a successful save. Then, create a pit under the foe. Foes standing on an object succeed the save automatically, but all objects under them are removed instead of creating a pit. Foes standing in a pit fail the save automatically.",
+                                    "glossary": [
+                                        {"val": "medium blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"},
+                                        {"val": "[D]", "id": "gl_damagedice"},
+                                        {"val": "fray", "id": "gl_fray"},
+                                        {"val": "stunned", "id": "gl_stunned"},
+                                        {"val": "pit", "id": "gl_pit"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_azurianweapon_arkentechsupermine",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Arkentech Super Mine",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The mine arms at the the end of the next player turn, after all other Weapon abilities and effects have resolved. If any foe ends their turn adjacent to the mine while armed or collides with it, it explodes in a burst 1 (self) area effect, dealing 3 piercing damage to foes within and shattering them. If destroyed or removed, the mine fizzles out.",
+                                    "glossary": [
+                                        {"val": "collides", "id": "gl_collide"},
+                                        {"val": "area effect", "id": "gl_areaeffect"},
+                                        {"val": "burst", "id": "gl_burst"},
+                                        {"val": "piercing", "id": "gl_piercing"},
+                                        {"val": "shattering", "id": "gl_shattered"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_azurianweapon_seismicthumper",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 10
+        },
+        "eventtags": {},
+        "name": "Seismic Thumper",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Adjacent spaces to the thumper are difficult terrain. Foes that start their turn there take 4 damage.",
+                                    "glossary": [
+                                        {"val": "difficult terrain", "id": "gl_difficultterrain"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_veridianweapon_overclockpiston",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 10
+        },
+        "eventtags": {},
+        "name": "Overclock Piston",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "All engine sections and automata gain +1 boon on all attacks per overlock piston active. If three or more are active at the end of the round, also increase the Megabomb counter by 1.",
+                                    "glossary": [
+                                        {"val": "+1 boon", "id": "gl_boon"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_veridianweapon_repairautomaton",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Repair Automaton",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At the end of the round, the engine grants 3 vigor to any section per active repair automata. It can only repair one section at a time this way.",
+                                    "glossary": [
+                                        {"val": "vigor", "id": "gl_vigor"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_veridianweapon_turretautomaton",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Turret Automaton",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "While undefeated, also counts as a height 1 object and can be moved on or used as cover by other characters",
+                                    "glossary": [
+                                        {"val": "cover", "id": "gl_cover"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a round on the forward turret’s turn, including when summoned, the automaton can deal 2 damage twice to a character in range 4"
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_veridianweapon_shieldautomaton",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Shield Automaton",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The automata has aura 1. Foes in the aura gain cover from all directions, but automata in the aura reduce all damage taken to 1.",
+                                    "glossary": [
+                                        {"val": "cover", "id": "gl_cover"},
+                                        {"val": "aura", "id": "gl_aura"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a round, during the Aft Turret’s turn (including when summoned) the automaton can move 3 spaces."
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_veridianweapon_combatautomaton",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "object": true,
+            "hp": 5
+        },
+        "eventtags": {},
+        "name": "Combat Automaton",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Action:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Once a round, during the Aft Turret’s turn (including when summoned) the automaton can move 3 spaces, then make the following attack:"
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_aftturret_automatongun"
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
     }
 ]

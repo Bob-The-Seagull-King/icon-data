@@ -3293,5 +3293,209 @@
                 }]
             }
         ]
+    },
+    {
+        "id": "tb_summerflameaesi_soberup",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Effect"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_summerflameaesi_soberup_result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_summerflameaesi_soberup_nonstopsinging"
+                }]
+            },
+            {
+                "id": "ti_summerflameaesi_soberup_result2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_summerflameaesi_soberup_stagger"
+                }]
+            },
+            {
+                "id": "ti_summerflameaesi_soberup_result3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_summerflameaesi_soberup_standandblink"
+                }]
+            },
+            {
+                "id": "ti_summerflameaesi_soberup_result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_summerflameaesi_soberup_clingy"
+                }]
+            },
+            {
+                "id": "ti_summerflameaesi_soberup_result5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_summerflameaesi_soberup_takeanap"
+                }]
+            },
+            {
+                "id": "ti_summerflameaesi_soberup_result6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "No extra effects."
+                }]
+            }
+        ]
+    },
+    {
+        "id": "tb_fallingleafaesi_faethief",
+        "type": "Table",
+        "source": "core",
+        "tags": {},
+        "eventtags": {},
+        "colnames": ["D6", "Effect"],
+        "description": [
+        ],
+        "items": [
+            {
+                "id": "ti_fallingleafaesi_faethief_result1",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "1"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_fallingleafaesi_faethief_friendship"
+                }]
+            },
+            {
+                "id": "ti_fallingleafaesi_faethief_result2",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "2"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_fallingleafaesi_faethief_sight"
+                }]
+            },
+            {
+                "id": "ti_fallingleafaesi_faethief_result3",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "3"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_fallingleafaesi_faethief_luck"
+                }]
+            },
+            {
+                "id": "ti_fallingleafaesi_faethief_result4",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "4"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_fallingleafaesi_faethief_heart"
+                }]
+            },
+            {
+                "id": "ti_fallingleafaesi_faethief_result5",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "5"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_fallingleafaesi_faethief_grace"
+                }]
+            },
+            {
+                "id": "ti_fallingleafaesi_faethief_result6",
+                "type": "TableItem",
+                "source": "core",
+                "tags": {},
+                "eventtags": {},
+                "description": [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "6"
+                },
+                {
+                    "tags": {"desc_type" : "foetrait"},
+                    "content": "tf_hob_fallingleafaesi_faethief_youth"
+                }]
+            }
+        ]
     }
 ]
