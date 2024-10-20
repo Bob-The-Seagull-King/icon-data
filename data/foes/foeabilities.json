@@ -16047,6 +16047,1332 @@
         ]
     },
     {
+        "id": "af_imperial_crimsonweapon_arkentechmunition",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Arkentech Munition",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of the round, the Weapon fires a slow burning munition that lands in a space adjacent to any foe."
+        },                               
+        {
+            "tags": {"desc_type" : "foesummon"},
+            "content": "sm_imperial_crimsonweapon_munition"
+        }                      
+        
+                        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_arkentechmunition_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Arkentech Munition",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of the round, the Weapon fires a slow burning munition that lands in a space adjacent to any foe."
+        },                               
+        {
+            "tags": {"desc_type" : "foesummon"},
+            "content": "sm_imperial_crimsonweapon_munition"
+        }  ,
+        {
+            "tags": {"desc_type" : "effect"},
+            "content": "Phase II: ",
+            "subcontent":   [
+                {
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Summon two Munitions."
+                }
+            ]
+        }                    
+        
+                        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_hellscape",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Hellscape",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "At the start of the round, the Crimson Weapon creates a small blast terrain effect of searing fire in free space in range 3.",
+            "glossary": [
+                {"val": "small blast", "id": "gl_blast"}
+            ]
+        },                              
+        {
+            "tags": {"desc_type" : "gap"},
+            "content": ""
+        } ,                              
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The flames are dangerous terrain. Munitions cannot be created in the area, and if they enter the area for any reason, they immediately explode. The areas last until the end of the fight.",
+            "glossary": [
+                {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+            ]
+        }                    
+        
+                        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_mortar",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "true_strike": true,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Mortar",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The weapon chooses a character in range 6 and creates a burst 2 (target) area effect centered on them. At the end of that character’s turn, the shell lands in the area. Foes within the area take 3 damage once for each foe in the area. Then, all munitions in the area detonate, and this effect ends.",
+            "glossary": [
+                {"val": "burst", "id": "gl_burst"},
+                {"val": "area effect", "id": "gl_areaeffect"}
+            ]
+        }                  
+        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_dropbarricade",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Drop Barricade",
+        "class_id": "icon",
+        "description":  [                               
+                                         
+        {
+            "tags": {"desc_type" : "desc"},
+            "content": "The Weapon drops a height 1 barricade in an adjacent space. The Barricade is a destructible object with 5 hp. Spaces adjacent to the Barricade have rampart.",
+            "glossary": [
+                {"val": "rampart", "id": "gl_rampart"}
+            ]
+        }                  
+        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_ashurablitz",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Ashura Blitz",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Weapon rushes 2. If it ends this move adjacent to a foe or munition, it shoves all adjacent foes and munitions 1 space, then rushes 2 again.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"},
+                    {"val": "shoves", "id": "gl_shove"}
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_crimsonweapon_pressurerush"
+            }                  
+        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_pressurerush",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Pressure Rush",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Weapon chooses a foe in range that has not acted yet. At the end of that foe’s turn, it rushes up to 4 spaces towards that foe, ending adjacent if possible. Then, that foe takes fray damage three times, or just once if it’s adjacent to an ally.",
+                "glossary": [
+                    {"val": "rushes", "id": "gl_rush"},
+                    {"val": "fray", "id": "gl_fray"}
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_crimsonweapon_ashuraburst"
+            }                  
+        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_ashuraburst",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "unerring": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Ashura Burst",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The weapon fires two arcing shells into the air, choosing two free spaces in range 3. The spaces last until activated.",
+                "glossary": [
+                ]
+            },       
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },       
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When a foe enters the space for any reason, they take fray damage and are weakened, then shoved 1 in any direction. Then create a space of burning dangerous terrain in the area.",
+                "glossary": [
+                    {"val": "shoved", "id": "gl_shove"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "dangerous terrain", "id": "gl_dangerousterrain"}
+                ]
+            }                 
+        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_pressureblade",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "arc": 3,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Pressure Blade",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is slashed. Deals bonus damage to already stunned, or slashed characters.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes take 2 damage again.",
+                        "glossary": []
+                    }
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_crimsonweapon_chestcannon"
+            }                  
+        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_chestcannon",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "unerring": true,
+            "range": 5,
+            "blast_size": "small",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Chest Cannon",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a pit under the target.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All munitions in the area explode.",
+                        "glossary": []
+                    }
+                ]
+            },                               
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_crimsonweapon_pilebunker"
+            }                  
+        ]
+    },
+    {
+        "id": "af_imperial_crimsonweapon_pilebunker",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Pile Bunker",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray and shove 3.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and shove 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Then, rush 2.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            }                 
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_arkentechartillery",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "unerring": true,
+            "pierce": true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Arkentech Artillery",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, divide the map into four equal size quadrants, then number each one. At the start of each round, roll 1d4. The Weapon shoots an artillery barrage into the air that comes down at the end of the round, affecting all foes in the rolled quadrant."
+            },                            
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the area at the end of the round must save or take 2[D]+fray piercing damage, or [D]+fray on a successful save. Then create two height 1 debris objects in free space in the area.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_arkentechartillery_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round",
+            "unerring": true,
+            "pierce": true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Arkentech Artillery",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, divide the map into two equal size quadrants, then number each one. At the start of each round, roll 1d2 or flip a coin (1 is heads, 2 is tails). The Weapon shoots an artillery barrage into the air that comes down at the end of the round, affecting all foes in the rolled quadrant."
+            },                            
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the area at the end of the round must save or take 2[D]+fray piercing damage, or [D]+fray on a successful save. Then create two height 1 debris objects in free space in the area.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            },                            
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of round 7, this ability will cover the entire map instead of one section."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_rotarycannon",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Rotary Cannon",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, the weapon chooses a character, then summons a targeting reticle at exactly range 3 from them. The Weapon can only have one of these reticles active at once but either place a new one or retarget the reticle by using this Round Action again on subsequent rounds, changing which character it chases."
+            },                            
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_azurianweapon_targetingreticle"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_rotarycannon_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Rotary Cannon",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, the weapon chooses a character, then summons a targeting reticle at exactly range 3 from them. The Weapon can only have one of these reticles active at once but either place a new one or retarget the reticle by using this Round Action again on subsequent rounds, changing which character it chases."
+            },                            
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_azurianweapon_targetingreticle"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase II: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The weapon can summon a second Targeting Reticle."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_submerge",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Submerge",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Weapon moves clockwise to the next side of the battlefield. When it emerges, it shoves all adjacent foes 1, then deals 3 damage to all foes in range 3 as an area effect.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"},{"val": "area effect", "id": "gl_areaeffect"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_submerge_phii",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Submerge",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Weapon moves clockwise to the next side of the battlefield. When it emerges, it shoves all adjacent foes 1, then deals 3 damage to all foes in range 3 as an area effect.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"},{"val": "area effect", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase II: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The first time this ability is used in a round, it becomes a Free Action."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_chasmcollapse",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Chasm Collapse",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The weapon creates a 1 space chasm terrain effect anywhere in free space on the map. Foes adjacent to the area when it is created are shoved 1 away from it.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },                        
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },                        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The area is a pit, and any foe that attempts to exit the space by any means must pass a save. On a successful save, they can move as normal. On a failed save, remove them and place them adjacent to the pit. They are immobile for the rest of the current turn.",
+                "glossary": [{"val": "pit", "id": "gl_pit"},{"val": "immobile", "id": "gl_immobile"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_broadside",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Broadside",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes must save. On a successful save, they are shoved 1 away from the Weapon. On a failed save, they are shoved 3.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "They also take 4 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_torpedo",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round",
+            "range": "6_minimum"
+        },
+        "eventtags": {},
+        "name": "Torpedo",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Weapon summons a burrowing torpedo in a free space.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_azurianweapon_torpedo"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_arkentechsupermine",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Arekentech Super Mine",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The weapon fires a mine at a free space in range.",
+                "glossary": [{"val": "fires", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_azurianweapon_arkentechsupermine"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_turretfire",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "pierce": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Turret Fire",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and shove 3.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Weapon may move its targeting reticle 1 space in any direction."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_azurianweapon_seismicthumper"
+            }                
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_seismicthumper",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "unerring": true,
+            "combo": true,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Seismic Thumper",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a Seismic Thumper destructible object in free space in the area."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_azurianweapon_seismicthumper"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_azurianweapon_flakblast"
+            }                
+        ]
+    },
+    {
+        "id": "af_imperial_azurianweapon_flakblast",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Flak Blast",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is vulnerable. All foes adjacent to the targeted foe take 1 piercing damage three times.",
+                        "glossary": [{"val": "vulnerable", "id": "gl_vulnerable"},{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }              
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_underdeckrumbling",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Under-Deck Rumbling",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, as long as the Engine is intact, create a medium blast area anywhere on the battlefield. At the end of the round, the area explodes. Characters still standing in the area take fray damage three times and are shoved 2 away from the center. Automata in the area are destroyed.",
+                "glossary": [
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area", "id": "gl_areaeffect"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "shoved", "id": "gl_shove"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_trackingmissile",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Tracking Missile",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, as long as the Forward Turret is intact, it fires a tracking missile at a foe. At the end of that foe’s turn, they take 20 damage and must save or be stunned. If they are adjacent to any other foes or automata, this damage is reduced by 5 for each of those characters, and each of those characters takes 5 damage instead.",
+                "glossary": [
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_antiboardernapalmflood",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Anti-Boarder Napalm Flood",
+        "class_id": "icon",
+        "description":  [                               
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the round, as long as the Aft Turret is intact, all non automata characters not standing on an object take piercing damage equal to the round number.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_engine_steamvent",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 4,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Steam Vent",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is pacified.",
+                        "glossary": [{"val": "pacified", "id": "gl_pacified"}]
+                    }
+                ]
+            }              
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_engine_lurch",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Lurch",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All characters, including Automata, are shoved 1 in the same direction as the ship speeds up or slows down.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Collide: ",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes take 2 piercing damage.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }           
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_engine_overclockpiston",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 1,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Overclock Piston",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Engine pops a piston out of the deck.",
+                "glossary": [{"val": "pops", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_veridianweapon_overclockpiston"
+            }           
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_engine_repairautomaton",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "uses": 2,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Repair Automaton",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Engine releases a repair Automaton.",
+                "glossary": [{"val": "releases", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_veridianweapon_repairautomaton"
+            }           
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_forwardturret_megagunturret",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 8,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Mega Gun Turret",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is sealed and shoved 1.",
+                        "glossary": [{"val": "sealed", "id": "gl_sealed"},{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            }              
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_forwardturret_decksweeper",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "true_strike": true,
+            "uses": 8,
+            "per": "round"
+        },
+        "eventtags": {},
+        "name": "Deck Sweeper",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Deal damage equal to the current round number+1 to all foes. Foes in cover from the turret take no damage.",
+                "glossary": [{"val": "cover", "id": "gl_cover"}]
+            }           
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_forwardturret_popupturret",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "summon": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Pop-Up Turret",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Turret summons an automaton turret anywhere on the battlefield.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },       
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_veridianweapon_turretautomaton"
+            },       
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_forwardturret_collateraldamage"
+            }           
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_forwardturret_collateraldamage",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "summon": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Collateral Damage",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Forward Turret blasts a character in range with a hail of bullets, dealing 2 piercing damage to them, then creates a medium blast area effect on the other side of that character. Characters in the area, including automata, take 2 piercing damage, once, per character caught in the area.",
+                "glossary": [
+                    {"val": "piercing", "id": "gl_piercing"},
+                    {"val": "medium blast", "id": "gl_blast"},
+                    {"val": "area effect", "id": "gl_areaeffect"}
+                ]
+            }          
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_aftturret_gatlingcannons",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Gatling Cannons",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "AutoHit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3 piercing damage.",
+                            "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "All foes in range 6 take 3 piercing damage.",
+                            "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                        }]
+                    }
+                ]
+            }            
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_aftturret_automatongun",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "free",
+            "attack": true,
+            "type": "attack",
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Automaton Gun",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "5 damage."
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2 damage."
+                        }]
+                    }
+                ]
+            }            
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_aftturret_shieldautmaton",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Shield Automaton",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The section summons a shield automaton.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },            
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_veridianweapon_shieldautomaton"
+            },            
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_aftturret_combatautmaton"
+            }          
+        ]
+    },
+    {
+        "id": "af_imperial_veridianweapon_aftturret_combatautmaton",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Combat Automaton",
+        "class_id": "icon",
+        "description":  [             
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The section summons a combat automaton.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },            
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_veridianweapon_combatautomaton"
+            }        
+        ]
+    },
+    {
         "id": "af_demon_heavy_bloodfeed",
         "type": "Ability",
         "source": "core",

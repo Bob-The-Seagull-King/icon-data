@@ -3983,6 +3983,281 @@
         ]
     },
     {
+        "id": "tf_imperial_crimsonweapon_hellforged",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hellforged",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to its own terrain effects.",
+                "glossary":[{"val":"Immune","id":"gl_immune"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_crimsonweapon_phaseii",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phase II",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any dangerous terrain the Weapon creates also becomes difficult terrain.",
+                "glossary":[{"val":"dangerous terrain","id":"gl_dangerousterrain"},{"val":"difficult terrain","id":"gl_difficultterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_azurianweapon_advancedscopes",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Advanced Scopes",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to blinded, and abilities have no maximum range.",
+                "glossary":[{"val":"Immune","id":"gl_immune"},{"val":"blinded","id":"gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_azurianweapon_landship",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Landship",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The weapon is immobile. It occupies 1 space along the entire edge of one side of the battlefield (imagine it lined up along the edge). Characters and objects cannot share space with the weapon. If it is removed from the battlefield, it always returns in the same spot.",
+                "glossary":[{"val":"immobile","id":"gl_immobile"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_azurianweapon_automata",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Automata",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Sections can summon Automata. Automata are summons without intangible, so they can be attacked and damaged regularly. They otherwise abide by the regular summon rules. Automata have a defense of 5 and 5 hp. When created, they can be created in any free space in range 4 of the section that created them.",
+                "glossary":[{"val":"summons","id":"gl_summon"},{"val":"intangible","id":"gl_intangible"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_airship",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Airship",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This Weapon fight takes place on the Weapon, an airship that could be any shape, but is better run on a smaller, rectangular map of no more than 10 or 12 spaces on its longest side. The deck of the airship is treated as basic terrain and not a character (it’s too heavily armored), but its three sections can be attacked to deal damage to it."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_arkentechmegabomb",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkentech Megabomb",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Weapon has a massive Arkentech weapon that is constantly charging. If it is allowed to fire it, it ends the fight, resulting in a player loss. Usually the weapon firing will result in some massive loss of life, like a town being wiped out, but you can decide what the stakes are for your game."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Track the bomb's energy charge with a d6. It starts at 1, and ticks up by 1 at the start of each round past the first. If the Veridian Weapon ends a round with its charge at 6 or higher, the fight is over. Players can deplete the charge by destroying sections, and the weapon can increase it with certain abilities."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_sections",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Sections",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The targetable parts of the Weapon are three separate sections: the Engine, the Forward Turret, and the Aft Turret."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Each section is a separate size 2 character that is immobile and has 1/3 of the Weapon’s total HP. If removed from the battlefield, can only be placed in the same space.",
+                        "glossary":[{"val":"immobile","id":"gl_immobile"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Sections cannot be placed within range 2 of each other."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Sections also count as height 2 objects. Other characters can move on them or use them as cover.",
+                        "glossary":[{"val":"cover","id":"gl_cover"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When acting, the Weapon acts with only one of its sections at a time. It must take a turn with each of its sections in a round before taking a turn with a different section.",
+                        "glossary":[]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When a section is reduced to 0 hp, it is destroyed and removed from the battlefield."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When all three are destroyed, the Weapon is defeated."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_phases",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Phases",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When a section is destroyed, lower the Megabomb counter by 1. Each remaining section gains an ability depending on which section was destroyed."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_airshipengine",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Airship Engine",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_engine_lurch"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_engine_overclockpiston"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_engine_repairautomaton"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_engine_steamvent"
+            },            
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Destruction:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If this section is destroyed, all remaining sections gain Lurch as a 1/round free action.",
+                        "glossary": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_forwardturret",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Forward Turret",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_forwardturret_decksweeper"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_forwardturret_megagunturret"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_forwardturret_popupturret"
+            },           
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Destruction:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If this section is destroyed, all remaining sections gain Collateral Damage as a 1/round free action.",
+                        "glossary": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_veridianweapon_aftturret",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aft Turret",
+        "description":  [
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_aftturret_gatlingcannons"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_veridianweapon_aftturret_shieldautmaton"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Destruction:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If this section is destroyed, remaining sections gain the ability to summon Combat Automaton as a 1/round free action.",
+                        "glossary": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",

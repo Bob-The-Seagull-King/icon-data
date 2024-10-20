@@ -1739,7 +1739,7 @@
         "name": "Hellforged Armor",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_crimsonweapon",
         "usetype": "expedition",
         "description": [
             {
@@ -1760,12 +1760,16 @@
         "name": "Hades Cannon",
         "category": "fc_imperial",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_crimsonweapon",
         "usetype": "",
         "description": [
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "Spend a charge of this ability and one action to immediately use the Hades Cannon, as per the Round action."
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_crimsonweapon_hadescannon"
             }
         ]
     },
@@ -1780,7 +1784,7 @@
         "name": "Targeting Flare",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_azurianweapon",
         "usetype": "",
         "description": [
             {
@@ -1808,7 +1812,7 @@
         "name": "Landship Drill",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_azurianweapon",
         "usetype": "expedition",
         "description": [
             {
@@ -1830,7 +1834,7 @@
         "name": "Retooled Combat Automaton",
         "category": "fc_imperial",
         "uses" : 3,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_veridianweapon",
         "usetype": "",
         "description": [
             {
@@ -1854,7 +1858,7 @@
         "name": "Doom Key",
         "category": "fc_imperial",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_imperial_legend_veridianweapon",
         "usetype": "expedition",
         "description": [
             {

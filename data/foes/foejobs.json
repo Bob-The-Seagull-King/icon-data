@@ -8519,6 +8519,201 @@
         "chapter": 3
     },
     {
+        "id": "fj_imperial_legend_crimsonweapon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Crimson Weapon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "The pinnacle of imperial engineering, Weapons are achievements of reverse-engineering of arkentech - towering clockwork and steam titans of the battlefield, and often the equivalent of using a steam-powered sledgehammer to crack a walnut."
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Crimson Weapons are heavily armored and piloted automata, often bipedal, built specifically by Imperials to fight individuals of exceptional skill, ability, divine providence, or talent that could otherwise cause the legions problems - in other words ‘heroes’."
+            }
+        ],
+        "stats": {
+            "size": 2,
+            "hp": 60
+        },
+        "actions": ["af_imperial_crimsonweapon_hadescannon","af_imperial_crimsonweapon_mortar","af_imperial_crimsonweapon_dropbarricade","af_imperial_crimsonweapon_ashurablitz","af_imperial_crimsonweapon_pressureblade"],
+        "removed_actions": [],
+        "traits": ["tf_imperial_crimsonweapon_hellforged"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Crimson Weapon begins combat in this phase, and enters Phase II when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_imperial_crimsonweapon_arkentechmunition"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Crimson Weapon enters this phase when bloodied.",
+                        "glossary": [
+                            {"val": "bloodied", "id": "gl_bloodied"}
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_imperial_crimsonweapon_arkentechmunition_phii","af_imperial_crimsonweapon_hellscape"],
+                "traits": ["tf_imperial_crimsonweapon_phaseii"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Crimson Weapon is all about the Hades cannon. This cannon can deal brutal damage - for free! - but its targeting is random. Players that spread out in diagonal spaces around the weapon will be mostly safe from it - mostly. They can also choose to voluntarily stand so that the weapon might blow up its own munitions and damage itself - potentially a worthy sacrifice. Munitions will be eventually too much for players (and the weapon) to handle, so the fight should move quickly in phase II.",
+                "glossary": [
+                ]
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_legend_azurianweapon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Azurian Weapon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Massive landships, Azurian weapons are steambelching monstrosities that use a combination of prow-mounted drill and tracked locomotion to plow through the earth, causing completely impractical amounts of destruction in their wake. They mount heavy arktentech artillery that can pound an entire town to dust in short order. Like other Weapons, they are part automata, and can function without a crew - though they often have one and are used to transport imperial regiments long distances."
+            }
+        ],
+        "stats": {
+            "size": 999,
+            "speed": 0,
+            "dash": 0
+        },
+        "actions": ["af_imperial_azurianweapon_chasmcollapse","af_imperial_azurianweapon_broadside","af_imperial_azurianweapon_torpedo","af_imperial_azurianweapon_arkentechsupermine","af_imperial_azurianweapon_turretfire"],
+        "removed_actions": [],
+        "traits": ["tf_imperial_azurianweapon_advancedscopes","tf_imperial_azurianweapon_landship"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Azurian Weapon begins combat in this phase, and enters Phase II at the start of round 4.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_imperial_azurianweapon_arkentechartillery","af_imperial_azurianweapon_rotarycannon","af_imperial_azurianweapon_submerge"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Azurian Weapon enters this phase at the start of round 4.",
+                        "glossary": [
+                        ]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_imperial_azurianweapon_arkentechartillery_phii","af_imperial_azurianweapon_rotarycannon_phii","af_imperial_azurianweapon_submerge_phii"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Azurian weapon can put out withering amounts of firepower, eventually culminating in carpet bombing the entire map if players don’t defeat it fast enough. It can use Broadside to shove foes into the mines and seismic thumpers it puts down, as well as put them out of position and into the artillery fire. Foes can avoid the torpedoes it can fire out if they are quick enough by standing on the debris it put out, or even the mines or thumpers created by its abilities.",
+                "glossary": [
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Map: ",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "This fight is best on an 8x8 or 12x12 map."
+                    }
+                ]
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_legend_veridianweapon",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Veridian Weapon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "When a lord, baron, or dictator really wants to show off, they will undertake the construction of one of these massive, armored airships, a project that typically takes months to complete and the manpower of a small nation. Festooned with the latest armaments, scopes, and automata technology, Veridian Weapons take to the skies as an embodiment of imperial might, splendor, and prestige. Each one carries a super-weapon, an arkentech mega bomb, or energy beam, or something similarly as inventive as it is terrifying in effect, to blow away any ideas of opposition before they manifest."
+            }
+        ],
+        "stats": {
+            "size": 999,
+            "speed": 0,
+            "dash": 0,
+            "hp": 60
+        },
+        "actions": ["af_imperial_veridianweapon_underdeckrumbling","af_imperial_veridianweapon_trackingmissile","af_imperial_veridianweapon_antiboardernapalmflood"],
+        "removed_actions": [],
+        "traits": ["tf_imperial_veridianweapon_airship","tf_imperial_veridianweapon_arkentechmegabomb","tf_imperial_veridianweapon_phases","tf_imperial_veridianweapon_sections","tf_imperial_azurianweapon_automata"],
+        "removed_traits": [],
+        "category": "legend",
+        "choices": ["tf_imperial_veridianweapon_airshipengine","tf_imperial_veridianweapon_forwardturret","tf_imperial_veridianweapon_aftturret"],
+        "phases": [],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Veridian weapon is a chaotic fight that is a straight race between destroying ship sections to delay the bomb counter, and destroying the numerous automata it spits out before they become too overwhelming. Characters may want to keep some of these sections and automata alive, however, due to abilities like tracking missile, deck sweeper, and anti-boarder napalm flood, which can more easily be avoided if there are more objects and automata around.",
+                "glossary": [
+                ]
+            }
+        ],
+        "chapter": 3
+    },
+    {
         "id": "fj_jotunn_heavy_beastbloodjotunn",
         "type":"FoeJob",
         "source":"core",
