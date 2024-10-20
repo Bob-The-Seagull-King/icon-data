@@ -16215,7 +16215,7 @@
                 ]
             },
             {
-                "tags": {"desc_type":"subeffect"},
+                "tags": {"desc_type":"effect"},
                 "content":"Effect: ",
                 "subcontent":[
                     {
@@ -16227,8 +16227,8 @@
             },
             {
                 "tags": {"desc_type":"subeffect"},
-                "content":"Excel: ",
-                "glossary":[{"val":"Excel","id":"gl_excel"}],
+                "content":"Exceed: ",
+                "glossary":[{"val":"Exceed","id":"gl_exceed"}],
                 "subcontent":[
                     {
                         "tags": {"desc_type":"desc"},
@@ -16913,7 +16913,7 @@
             "end_turn": true
         },
         "eventtags": {},
-        "name": "Showdow",
+        "name": "Showdown",
         "class_id": "blue",
         "description":  [
             {
@@ -16975,6 +16975,10 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Gunwright gains the following interrupt until the start of their next turn. At round 3+, Counter fire becomes a free action.",
                 "glossary": [ {"val": "interrupt", "id": "gl_interrupt"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_gunwright_counterfire_interrupt"
             }
         ]
     },
@@ -17002,12 +17006,8 @@
                 "content": "Effect:",
                 "subcontent":   [{
                                     "tags": {"desc_type" : "desc"},
-                                    "content": "The triggering character must save. On successful save, they dive out of the way and are shoved 1 in a direction of the Gunwright’s choice.",
-                                    "glossary": [ {"val": "shove", "id": "gl_shove"}]
-                                },
-                                {
-                                    "content": "On a failed save, they take 2 damage twice, ignoring cover. If their ability was an attack, it also gains +1 curse.",
-                                    "glossary": [ {"val": "cover", "id": "gl_cover"}, {"val":"curse","id":"gl_curse"}]
+                                    "content": "The triggering character must save. On successful save, they dive out of the way and are shoved 1 in a direction of the Gunwright’s choice. On a failed save, they take 2 damage twice, ignoring cover. If their ability was an attack, it also gains +1 curse.",
+                                    "glossary": [ {"val": "shoved", "id": "gl_shove"},{"val": "cover", "id": "gl_cover"},{"val": "+1 curse", "id": "gl_curse"}]
                                 }]
             }
         ]

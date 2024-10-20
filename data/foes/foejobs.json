@@ -8874,7 +8874,15 @@
                 "content": "A colorful flying machine, lifted by hot gas and acting as a mobile battle platform for imperial soldiers."
             }
         ],
-        "stats":{},
+        "stats":{
+            "vit": 10,
+            "hp": 40,
+            "speed": 4,
+            "dash": 2,
+            "fray": 3,
+            "damage": 8,
+            "size": 2
+        },
         "actions":["af_imperial_warballoon_sideguns", "af_imperial_warballoon_flarebomb", "af_imperial_warballoon_dropsupplies", "af_imperial_warballoon_highaltitude"],
         "removed_actions":[],
         "traits":["tf_special_flying", "tf_special_sturdy", "tf_imperial_warballoon_hovering", "tf_imperial_warballoon_deflate","tf_imperial_warballoon_battleplatform", "tf_imperial_warballoon_vantagepoint"],
