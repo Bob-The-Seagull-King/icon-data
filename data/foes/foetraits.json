@@ -5436,6 +5436,21 @@
         ]
     },
     {
+        "id": "tf_lowlander_pariah_mutate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mutate",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When bloodied, the Pariah deals bonus damage and becomes unstoppable.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+            }    
+        ]
+    },
+    {
         "id": "tf_lowlander_battlebeetle_battleplatform",
         "type": "Trait",
         "source": "core",
