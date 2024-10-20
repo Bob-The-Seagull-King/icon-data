@@ -1006,6 +1006,31 @@
         "limit": 2
     },
     {
+        "id": "sm_lowlander_sagesnail_pearlescentbubble",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "summon": true
+        },
+        "eventtags": {},
+        "name": "Pearlescent Bubble",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "When a character enters the bubble’s space for any reason, it pops, destroying it. Foes are pacified then, shoved 3 in any direction. Allies gain vigor 3.",
+                                    "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "shoved", "id": "gl_shove"}, {"val": "vigor", "id": "gl_vigor"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "green",
+        "limit": 0
+    },
+    {
         "id": "sm_lowlander_fetididol_spewinggrowth",
         "type": "Summon",
         "source": "core",

@@ -31124,7 +31124,7 @@
                         "subcontent":   [{
                             "tags": {"desc_type" : "desc"},
                             "content": "Fray.",
-                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "Fray", "id": "gl_fray"}]
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
                         }]
                     }
                 ]
@@ -31254,6 +31254,890 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "The Swarm Wright becomes intangible, then dashes 6 spaces in a straight line, then ends this effect. Foes they pass through take 1 damage five times. This damage becomes piercing against foes inside pits.",
                 "glossary": [{"val": "intangible", "id": "gl_intangible"}, {"val": "dashes", "id": "gl_dash"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "pits", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_zombiemob_dragalong",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Drag Along",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove 1 in any direction. If a character ends this shove adjacent to another zombie, shove them 2 again.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_zombiemob_swarmrelease",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Swarm Release",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Each zombie releases an aura 1, with one of the following effects:",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "• Swarm Frenzy:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foes that end their turns in the aura take 2 piercing damage and must save or become dazed.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "• Swarm Synchronized:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attacks against allies in the aura take +1 curse, and allies gain cover against abilities not used from adjacent spaces.",
+                        "glossary": [{"val": "aura", "id": "gl_aura"}, {"val": "+1 curse", "id": "gl_curse"}, {"val": "cover", "id": "gl_cover"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_ridinginsect_bite",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Bite",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and the foe is weakened.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "weakened", "id": "gl_weakened"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_ridinginsect_acidspit",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "burst": 1,
+            "burst_target": "target"
+        },
+        "eventtags": {},
+        "name": "Acid Spit",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 piercing damage.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_ridinginsect_leap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Leap",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Insect flies 3. If it moves from a higher elevation to a lower one, increase this flight to 6.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_boilslug_bubbleup",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "stance": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Bubble Up",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Slug becomes sturdy, gains 5 vigor, and gains counter. It loses all these effects at the start of its next turn.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}, {"val": "vigor", "id": "gl_vigor"}, {"val": "counter", "id": "gl_counter"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_boilslug_slimestream"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_boilslug_slimestream",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "line": 8,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Slime Stream",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove all characters 2 spaces in the direction of the line.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "At round 3+, deals bonus damage and shatters target.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "shatters", "id": "gl_shattered"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_boilslug_suckingmire",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Sucking Mire",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The slug creates a slimy pit in range. It can be created underneath bloodied foes. Foes that start their turn in the pit must save or be unable to dash, fly, or teleport for the remainder of their turn.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "bloodied", "id": "gl_bloodied"}, {"val": "dash", "id": "gl_dash"}, {"val": "fly", "id": "gl_flying"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_boilslug_slimespit",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Slime Spit",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Slug shoots a line 6 stream of slime. Characters caught in the area when it is created are shoved 1. Allies are shoved 2 instead, and can be shoved in any direction.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 1 piercing damage twice and is shattered.",
+                        "glossary": [{"val": "piercing", "id": "gl_piercing"}, {"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_clot_slap",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Slap",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage."
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May rush 1 before the attack.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_clot_mudspray",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Mud Spray",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range is weakened. Weakened foes take 4 damage.",
+                "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_clot_mudslide",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "terrain_effect": true
+        },
+        "eventtags": {},
+        "name": "Mudslide",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Clot rushes 3, then creates a terrain effect in the spaces it just passed through. The effect is difficult terrain, and characters other than clots that enter the space for the first time on their turn or start their turn there must save or slip and be shoved 2 in a direction of the clot’s choice.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "shoved", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes 3 damage, twice."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_mantidwarrior_windslash",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Wind Slash",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mantid deals 2 damage to all adjacent characters, then teleports 2, then gains stealth.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}, {"val": "stealth", "id": "gl_stealth"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_mantidwarrior_blightrazor"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_mantidwarrior_blightrazor",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "arc": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Blight Razor",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If only one character is caught in the area they are dazed and take bonus damage.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_mantidwarrior_leafdance",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "stance": true
+        },
+        "eventtags": {},
+        "name": "Leaf Dance",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Mantid gains counter and evasion. After each time counter activates, it may teleport 1. This stance ends when the Mantid is hit by an attack.",
+                "glossary": [{"val": "counter", "id": "gl_counter"}, {"val": "evasion", "id": "gl_evasion"}, {"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_mantidwarrior_cutthrough",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Cut Through",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Area effect:",
+                "glossary": [{"val": "Area effect", "id": "gl_areaeffect"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "3 damage. The Mantid may teleport to any point on the line after this ability resolves.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_sagesnail_bubblestream",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "line": 8
+        },
+        "eventtags": {},
+        "name": "Bubble Stream",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If only one foe is caught in the line, creates a large blast area effect centered on them. All characters are shoved 1 away from that character. Foes in the area take 2 piercing damage, and allies gain 2 vigor.",
+                        "glossary": [{"val": "large blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shoved", "id": "gl_shove"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "vigor", "id": "gl_vigor"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_sagesnail_sudsspray",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Suds Spray",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Snail sprays a medium blast area effect with slippery liquid. Characters in the area are shoved 1, then the snail creates up to two spaces of difficult terrain in the area.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "shoved", "id": "gl_shove"}, {"val": "difficult terrain", "id": "gl_difficultterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_sagesnail_bubbleshield",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Bubble Shield",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Snail gains Aura 2 until the start of its next turn and becomes immobile for the duration. Characters in the aura gain resistance to abilities from outside the aura.",
+                "glossary": [{"val": "Aura", "id": "gl_aura"}, {"val": "immobile", "id": "gl_immobile"}, {"val": "resistance", "id": "gl_resistance"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_sagesnail_pearlescentbubble",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Pearlsecent Bubble",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Snail spits out three bubbles in range."
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_lowlander_sagesnail_pearlescentbubble"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_pariah_fleshwarp",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Flesh Warp",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Pariah rips itself apart, then reassembles. It teleports 2, then teleports 2. It can split up these teleports with another action.",
+                "glossary": [{"val": "teleports", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_pariah_chaosbeam",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "line": 10
+        },
+        "eventtags": {},
+        "name": "Chaos Beam",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Roll 1d6 and apply the following effects to all characters within. Effects, except vigor and statuses, last until the end of the round.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "statuses", "id": "gl_status"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters may teleport when they move.",
+                        "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters cannot attack."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters that end their turn adjacent to at least one other character take 5 damage per adjacent character, then grant 5 vigor to each adjacent character.",
+                        "glossary": [{"val": "vigor", "id": "gl_vigor"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters are shattered and shoved 1.",
+                        "glossary": [{"val": "shattered", "id": "gl_shattered"}, {"val": "shoved", "id": "gl_shove"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters are removed from the battlefield, then returned to play at the start of their next turn anywhere within range 2 of their original space."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters are reduced to 50% max hp if above 50% max hp. Bloodied characters gain a vigor surge.",
+                        "glossary": [{"val": "vigor surge", "id": "gl_vigorsurge"}, {"val": "Bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_pariah_warpingblast",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Warping Blast",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Remove all characters in the area from the battlefield, then place them in any space within range 3 of their original location."
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_battlebeetle_beetlehorn",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true,
+            "attack": true,
+            "type": "attack",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Beetle Horn",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage against foes at exactly range 2.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_battlebeetle_sideharpoons",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4
+        },
+        "eventtags": {},
+        "name": "Side Harpoons",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Beetle deals 3 damage to a foe in range once for each mounted ally. A foe can only be damaged once by this ability."
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_battlebeetle_beetlerampage",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Beetle Rampage",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The beetle rushes up to 2 spaces. When it ends this movement, all adjacent foes take 2 damage and are shoved 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_battlebeetle_mainharpoon",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "range": 6,
+            "requires":"usable when bloodied"
+        },
+        "eventtags": {},
+        "name": "Main Harpoon",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range must save or take 2[D]+fray, become slashed, and be shoved until adjacent to the beetle. On a success, the foe takes [D]+fray and is shoved 2 towards the beetle instead.",
+                "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "slashed", "id": "gl_slashed"}, {"val": "shoved", "id": "gl_shove"}]
             }
         ]
     },

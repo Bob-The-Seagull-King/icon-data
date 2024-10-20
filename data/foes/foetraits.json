@@ -5435,6 +5435,152 @@
         ]
     },
     {
+        "id": "tf_lowlander_zombiemob_walkingdead",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Walking Dead",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Disintegrates and is defeated if all other foes are defeated."
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_zombiemob_swarmdetonation",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Swarm Detonation",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When any zombie is defeated, it deals 2 piercing damage to all adjacent foes.",
+                "glossary": [{"val": "piercing", "id": "gl_piercing"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_ridinginsect_saddleup",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Saddle Up",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Lowlanders can mount or dismount the Riding Insect by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Lowlanders can start the battle mounted."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• While mounted, place characters inside a free space on the insect (so the insect has space for 4 size 1 characters). They share its space, move when it moves, and have cover. While moving with the insect, characters are unstoppable.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters mounting the insect when it is defeated are placed in any free adjacent space of the insect’s choice and take 3 damage."
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_clot_mudbody",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Mud Body",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has resistance while inside difficult or dangerous terrain, or pits. If outside those terrain areas, takes bonus damage and +1 curse on attacks and saves.",
+                "glossary": [{"val": "resistance", "id": "gl_resistance"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "pits", "id": "gl_pit"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "+1 curse", "id": "gl_curse"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_clot_harden",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Harden",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Clot hardens over time, and increases all damage it deals by an amount equal to twice the round number. At the end of round 6, it finally petrifies and is defeated."
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_mantidwarrior_camouflage",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Camouflage",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this character ends its turn adjacent to an object or or inside difficult or dangerous terrain, it gains stealth.",
+                "glossary": [{"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "stealth", "id": "gl_stealth"}]
+            }    
+        ]
+    },
+    {
+        "id": "tf_lowlander_battlebeetle_battleplatform",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Battle Platform",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can mount or dismount the Beetle by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Lowlanders can start the battle mounted on the Beetle."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• While mounted, place characters inside a free space in the beetle (so the beetle has space for 9 size 1 characters). They share its space, move when it moves, and have cover. While moving with the beetle, characters are unstoppable.",
+                "glossary": [{"val": "unstoppable", "id": "gl_unstoppable"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters hostile to the beetle must pass a save to mount it."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters mounting the beetle when it is defeated are placed in any free adjacent space of the beetle’s choice and take 3 damage."
+            }      
+        ]
+    },
+    {
+        "id": "tf_lowlander_battlebeetle_ziplinedismount",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Zipline Dismount",
+        "description":  [                                  
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters mounted on the beetle can fly 3 and dismount it as free action ability.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }    
+        ]
+    },
+    {
         "id": "tf_faction_jotunn_elite",
         "type": "Trait",
         "source": "core",
