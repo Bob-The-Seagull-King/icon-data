@@ -8918,6 +8918,154 @@
         "chapter": 3
     },
     {
+        "id": "fj_imperial_elite_praetorian",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Praetorian",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "These imperial troopers are walking fortresses of iron and custom-forged arkentech. More machine than kin, their heavy power armor bristles with the newest weaponry, and they loom over their foes and allies alike, inspiring dread in equal measure."
+            }
+        ],
+        "stats":{
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions":["af_imperial_praetorian_heavymace","af_imperial_praetorian_rocketjump","af_imperial_praetorian_shieldjumper","af_imperial_praetorian_arkentechrepulsershield"],
+        "removed_actions":[],
+        "traits":["tf_general_knuckle_heavyarmor","tf_imperial_praetorian_auraofdread"],
+        "removed_traits":[],
+        "category":"elite",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_elite_steamwright",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Steam Wright",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Engineer-wrights that have attuned to the water aether of steam, the fire aether of burning coals, and the earth aether of metal gears. Their power allows them to attune with machinery of all kinds and maintain the automata necessary to run and manage the largest imperial war machines."
+            }
+        ],
+        "stats":{
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions":["af_imperial_steamwright_steamhammer","af_imperial_steamwright_acrobatics","af_imperial_steamwright_revhammer","af_imperial_steamwright_steamshroud","af_imperial_steamwright_steamblast"],
+        "removed_actions":[],
+        "traits":["tf_imperial_steamwright_boilingshroud"],
+        "removed_traits":[],
+        "category":"elite",
+        "phases":[],
+        "tactics":[],
+        "chapter": 1
+    },
+    {
+        "id": "fj_imperial_elite_swordmaster",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Sword Master",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Master duelists, trained at imperial war academies. Usually the product of a privileged or pampered upbringing, but not less deadly."
+            }
+        ],
+        "stats":{
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions":["af_imperial_swordmaster_masamune","af_imperial_swordmaster_hone","af_imperial_swordmaster_cutthrough","af_imperial_swordmaster_duelistsfavour"],
+        "removed_actions":[],
+        "traits":[],
+        "removed_traits":[],
+        "category":"elite",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_elite_battlewagon",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Battle Wagon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Slow, ponderous, and fuel-hungry, these massive imperial war machines crawl across the battlefield on metal tracks, belching smoke. Their thick armor turns aside even the most powerful attacks, and their heavy cannons can blow asunder walls, towers, and infantry alike."
+            }
+        ],
+        "stats":{
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions":["af_imperial_battlewagon_maincannon","af_imperial_battlewagon_lumber","af_imperial_battlewagon_flakcannon","af_imperial_battlewagon_torpedo"],
+        "removed_actions":[],
+        "traits":["tf_special_sturdy","tf_general_knuckle_heavyarmor","tf_imperial_battlwagon_allterrainvehicle","tf_imperial_battlewagon_battleplatform"],
+        "removed_traits":[],
+        "category":"elite",
+        "phases":[],
+        "tactics":[],
+        "chapter": 2
+    },
+    {
+        "id": "fj_imperial_elite_centurion",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Centurion",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_leader",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Commanders of the legions, festooned with medals and accolades from past battles. Fearsome tacticians. Each commands a hundred kin, has personal servants, and their own private mess tent. A recent trend in helmet height and adornment had to be kept under control by high command as it was causing morale problems."
+            },
+            {
+                "tags":{"desc_type":"gap"},
+                "content": ""
+            },
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Centurions are tasked with keeping the company standard, a fearsome sight and magnificent emblem that the company will throw their lives into defending."
+            }
+        ],
+        "stats":{
+            "hp_mod": 2,
+            "turns": 2
+        },
+        "actions":["af_imperial_centurion_giveorders","af_imperial_centurion_cannonstrike","af_imperial_centurion_tacticiansgambit","af_imperial_centurion_tacticiansadvance","af_imperial_centurion_spearsweep","af_imperial_centurion_flaregun","af_imperial_centurion_supremestandard"],
+        "removed_actions":[],
+        "traits":["tf_imperial_legatus_masterofstrategy","tf_general_commander_commandersaura"],
+        "removed_traits":[],
+        "category":"elite",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
+    },
+    {
         "id": "fj_imperial_legend_crimsonweapon",
         "type": "FoeJob",
         "source": "core",

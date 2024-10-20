@@ -17013,6 +17013,888 @@
         ]
     },
     {
+        "id": "af_imperial_praetorian_heavymace",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Heavy Mace",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss: ",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Foe is weakened. Deals fray damage to all adjacent characters to the foe.",
+                        "glossary":[{"val":"weakened", "id":"gl_weakened"},{"val":"fray", "id":"gl_fray"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage and foe is stunned.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "af_imperial_praetorian_rocketjump",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rocket Jump",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Praetorian rushes 3 spaces in a straight line, ignoring terrain and movement penalties. All adjacent foes when it finishes this movement are shoved 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"},{"val": "shoved", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_praetorian_shieldjumper",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Shield Jumper",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent ally to the Praetorian uses its shield as a springboard and can fly 3.",
+                "glossary": [{"val": "fly", "id": "gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_praetorian_arkentechrepulsershield",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "requires": "bloodied"
+        },
+        "eventtags": {},
+        "name": "Arkentech Repulser Shield",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Praetorian becomes immobile and gains aura 2 until the end of its next turn.",
+                "glossary": [{"val": "immobile", "id": "gl_immobile"},{"val": "aura", "id": "gl_aura"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Praetorian and any of its allies inside the aura have resistance against abilities originating from characters inside the aura.",
+                "glossary": [{"val": "aura", "id": "gl_aura"},{"val": "resistance", "id": "gl_resistance"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes entering the aura must first pass a save, or become unable to enter the area by any means on a failed save until the start of their next turn.",
+                "glossary": [{"val": "aura", "id": "gl_aura"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_steamwright_steamhammer",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2,
+            "attack": true,
+            "type": "attack",
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Steam Hammer",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage, dazes foe, and gain +1 action",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "dazes", "id": "gl_dazed"}]
+                    }
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "af_imperial_steamwright_acrobatics",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Acrobatics",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 2. This action can interrupt and split up other actions or movement.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}]
+            }  
+        ]
+    },
+    {
+        "id": "af_imperial_steamwright_revhammer",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Rev Hammer",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Steam Wright revs the steam hammer, granting it +1 boon, increasing its range by 1, granting it unerring, and causing a secondary explosion as an area effect after the ability resolves, dealing 3 damage to all foes inside the area.",
+                "glossary": [
+                    {"val": "+1 boon", "id": "gl_boon"},
+                    {"val": "unerring", "id": "gl_vulnerable"},
+                    {"val": "area effect", "id": "gl_areaeffect"},
+                    {"val": "area", "id": "gl_areaeffect"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "af_imperial_steamwright_steamshroud",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "mark": true,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Steam Shroud",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An ally in range is marked. While marked, they gain stealth at the start of their turns, and have evasion if there are no other characters adjacent.",
+                "glossary": [
+                    {"val": "marked", "id": "gl_mark"},
+                    {"val": "stealth", "id": "gl_stealth"},
+                    {"val": "evasion", "id": "gl_evasion"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "af_imperial_steamwright_steamblast",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Steam Blast",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters take 3 damage. Blinded characters take 3 damage twice instead.",
+                "glossary": [
+                    {"val": "Blinded", "id": "gl_blinded"}
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "af_imperial_swordmaster_masamune",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2,
+            "attack": true,
+            "type": "attack",
+            "unerring": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Masamune",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Slash foe with a mortal wound. If they attack during their next turn, they take 6 damage."
+                    }
+                ]
+            } ,
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Also apply Muramasa’s effect to the foe."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_swordmaster_muramasa"
+            } 
+        ]
+    },
+    {
+        "id": "af_imperial_swordmaster_muramasa",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2,
+            "attack": true,
+            "type": "attack",
+            "unerring": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Muramasa",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D].",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "1 damage.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect: ",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Slash foe with a mortal wound. If they move during their next turn, they take 6 damage."
+                    }
+                ]
+            } ,
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Also apply Masamune's effect to the foe."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_swordmaster_hone",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Hone",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The next attack from this character deals maximum damage and triggers all exceed effects.",
+                "glossary": [{"val": "exceed", "id": "gl_exceed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_swordmaster_cutthrough",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Cut Through",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "3 damage. The Swordmaster may teleport to any point on the line after this ability resolves.",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_swordmaster_duelistsfavour",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Duelist's Favour",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Swordmaster marks a foe in range 3.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While the foe is marked and in range 2, the Swordmaster has evasion and deals bonus damage with all abilities against that foe.",
+                "glossary": [{"val": "marked", "id": "gl_mark"},{"val": "evasion", "id": "gl_evasion"},{"val": "bonus damage", "id": "gl_bonusdamage"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The foe can end this mark by hitting the Swordmaster with an attack.",
+                "glossary": [{"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_battlewagon_maincannon",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Main Cannon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or Area Effect:",
+                        "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"All foes in the area are shoved 1.",
+                        "glossary":[{"val":"shoved", "id":"gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage. The wagon, all its passengers, and all adjacent characters to the wagon are shoved 1 from the back blast away from the attack target.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"},{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            }  
+        ]
+    },
+    {
+        "id": "af_imperial_battlewagon_lumber",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Lumber",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 3, then shove all adjacent foes 1.",
+                "glossary": [{"val": "Rush", "id": "gl_rush"},{"val": "shove", "id": "gl_shove"}]
+            } 
+        ]
+    },
+    {
+        "id": "af_imperial_battlewagon_flakcannon",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "true_strike": true,
+            "repeatable": true,
+            "line": 3
+        },
+        "eventtags": {},
+        "name": "Flak Cannon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Rush 1, then:",
+                "glossary": [{"val": "Rush", "id": "gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect: ",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters are shoved 1 and take 2 damage. If only one character is caught in the area, they are slashed.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"},{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "id": "af_imperial_battlewagon_torpedo",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "uses": 1,
+            "per": "round",
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Torpedo",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wagon summons a burrowing torpedo in a free space in range 6.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_battlewagon_torpedo"
+            } 
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_giveorders",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Give Orders",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the the start of each round, may give an orders token to any other Imperial."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_cannonstrike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Cannon Strike",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round, may designate a small blast area to be hit by off-battlefield artillery.",
+                "glossary": [{"val": "small blast", "id": "gl_blast"},{"val": "area", "id": "gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the round, any characters in the area must save or take 2[D]+fray, or fray damage on a successful save. Any character standing in the center space is also stunned on a failed save.",
+                "glossary": [
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "stunned", "id": "gl_stunned"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_tacticiansgambit",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Tactician's Gambit",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "A character is about to make a save or attack roll."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Centurion also rolls a d20 and may replace the final result with the Centurion’s roll instead of the original d20 roll.",
+                                    "glossary": []
+                                }]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_tacticiansadvance",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "free"
+        },
+        "eventtags": {},
+        "name": "Tactician's Advance",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Up to two allies anywhere on the battlefield may dash 2.",
+                "glossary": [{"val": "dash", "id": "gl_dash"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_spearsweep",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 2,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Spear Sweep",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Shove 1.",
+                        "glossary":[{"val":"Shove", "id":"gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect: ",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All foes in range 2 take fray damage and are shoved 1.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"},{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 1, then repeat the area effect.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"},{"val": "area effect", "id": "gl_areaeffect"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_centurion_vitaltusk"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_vitaltusk",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Vital Tusk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"effect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Attack target must save. On a successful save, they are shoved 1. On a failed save, they are removed from the battlefield, then placed in any free adjacent space, then shoved 3.",
+                        "glossary":[{"val":"shoved", "id":"gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Exceed: ",
+                "glossary": [{"val": "Exceed", "id": "gl_exceed"}],
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character fails the save."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_flaregun",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Flare Gun",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Ignores stealth. A foe in range 6 is sealed and loses stealth. Sealed foes also take fray damage.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"},{"val": "sealed", "id": "gl_sealed"},{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_centurion_supremestandard",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2
+        },
+        "eventtags": {},
+        "name": "Supreme Standard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Centurion plants a banner in an adjacent space.",
+                "glossary": [{"val": "plants", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_imperial_centurion_imperialstandard"
+            }
+        ]
+    },
+    {
         "id": "af_imperial_crimsonweapon_arkentechmunition",
         "type": "Ability",
         "source": "core",
