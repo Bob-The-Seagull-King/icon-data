@@ -14820,6 +14820,972 @@
         ]
     },
     {
+        "id": "af_imperial_warbeast_crushingjaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Crushing Jaw",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                            }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Exceed: ",
+                "glossary":[{"val":"Exceed","id":"gl_exceed"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Gain +1 action."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Deals bonus damage agaist bloodied foes.",
+                        "glossary":[{"val":"bonus damage","id":"gl_bonusdamage"}, {"val":"bloodied", "id":"gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_warbeast_shouldercheck",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Shoulder Check",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent character takes 2 damage and is shoved 1.",
+                "glossary":[{"val":"shoved", "id":"gl_shove"}]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Collide: ",
+                "glossary":[{"val":"Collide","id":"gl_collide"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Character is stunned.",
+                        "glossary":[{"val":"stunned","id":"gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"The War beast may spend additional actions on this ability. For every action spent, increase the shove and damage by +2.",
+                        "glossary":[{"val":"shove", "id":"gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_warbeast_steeljaw",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Steel Jaw",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The War Beast rushes 3 spaces in any direction.",
+                "glossary":[{"val":"rushes", "id":"gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "An adjacent foe when it starts moving takes 2 damage and must save or be shoved 2 towards it.",
+                "glossary":[{"val":"shoved", "id":"gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Bloodied foes fail the save.",
+                "glossary":[{"val":"bloodied", "id":"gl_bloodied"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_ironsoldat_chaingun",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "true_strike":true,
+            "attack":true
+        },
+        "eventtags": {},
+        "name": "Chain Gun",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":
+                [{
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                    }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Foe is weakened. Deals fray damage to all adjacent characters to the foe.",
+                        "glossary":[{"val":"weakened", "id":"gl_weakened"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Excel: ",
+                "glossary":[{"val":"Excel","id":"gl_excel"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Deals bonus damage and foe is stunned.",
+                        "glossary": [{"val":"bonus damage","id":"gl_bonusdamage"}, {"val":"stunned","id":"gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_ironsoldat_lumberingcharge",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Lumbering Charge",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Soldat rushes 1, then shoves an adjacent foe or ally 2 spaces. ",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val":"shoves", "id":"gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_ironsoldat_mortar",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Mortar",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Soldat chooses a character in range and creates a medium blast area effect centered on them that moves with them.",
+                "glossary":[{"val":"medium blast", "id":"gl_blast"}, {"val":"area effect", "id":"gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that character’s turn, the shell lands in the area."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes within the area take 4 damage once for each foe in the area."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_clank_thumpergun",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 4,
+            "attack": true,
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Thumper Gun",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and shove 1.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val":"shove", "id":"gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                            }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Exceed: ",
+                "glossary":[{"val":"Exceed","id":"gl_exceed"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"A different foe in range 3 takes fray damage and is shoved 1.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}, {"val":"shoved", "id":"gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Collide: ",
+                "glossary":[{"val":"Collide","id":"gl_collide"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Foe is weakened.",
+                        "glossary":[{"val":"weakened","id":"gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_clank_bulletspray",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 2,
+            "repeatable":true,
+            "blast_size":"medium"
+        },
+        "eventtags": {},
+        "name": "Bulletspray",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Area Effect: ",
+                "glossary":[{"val":"Area Effect","id":"gl_areaeffect"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"2 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_clank_shieldmode",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Shield Mode",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Clank retracts its systems and turns into a walking shield."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While in this stance, it is immobile but can be used as cover as though it was a height 1 object, and attacks against adjacent allies gain +1 curse.",
+                "glossary":[{"val":"immobile", "id":"gl_immobile"}, {"val":"cover", "id":"gl_cover"}, {"val":"curse", "id":"gl_curse"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_clank_selfdestruct",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Self Destruct",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Clank begins shuddering."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the next round, or if it is defeated before then, it explodes, instantly defeating it and creating a medium blast area effect on its location.",
+                "glossary":[{"val":"medium blast","id":"gl_blast"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters inside must save or take 2[D]+fray damage and be stunned, or [D]+fray on a successful save.",
+                "glossary":[{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_biker_chariot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "melee": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Chariot",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D]",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D]",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Effect: ",
+                "subcontent":   [{
+                    "tags": {"desc_type" : "desc"},
+                    "content": "Foe is dazed.",
+                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}]
+                }]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Exceed: ",
+                "glossary":[{"val":"Exceed","id":"gl_exceed"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Foe is knocked into the air, removing them, then placing them in any space in range 3."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"The Biker dashes up to 2 spaces before and after this attack. This attack deals added base damage on hit or miss based on how far the Biker moved with this ability before making the attack.",
+                        "glossary":[{"val":"dashes","id":"gl_dash"}]
+                    }
+                ]
+            },
+            {
+                "tags": [{"desc_type": "foeability"}],
+                "content": "af_imperial_biker_spinout"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_biker_spinout",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Spin Out",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Deal 3 damage to all foes in range 2."
+                    },
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"The Biker gains evasion until the start of its next turn.",
+                        "glossary":[{"val":"evasion","id":"gl_evasion"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_biker_throwknife",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "unerring": true
+        },
+        "eventtags": {},
+        "name": "Throw Knife",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes damage equal to the range from the biker."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_biker_rev",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Rev",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Biker gains stealth, then increases its speed and the distance moved by Chariot by 2 for the rest of combat.",
+                "glossary": [{"val":"stealth", "id":"gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gearwalker_boltgun",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "attack": true
+        },
+        "eventtags": {},
+        "name": "Bolt Gun",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":" Foe is shoved 1, then must save. On a failed save, they are shoved 2 more spaces.",
+                        "glossary":[{"val":"shoved", "id":"gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Collide or Exceed: ",
+                "glossary":[{"val":"Collide","id":"gl_collide"}, {"val":"Exceed", "id":"gl_exceed"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"All movement values during the foe’s next turn are reduced to 1."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gearwalker_deploybarricade",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Deploy Barricade",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": " The walker drops a height 1 barricade object in an adjacent space."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Barricade is a destructible object with 5 hp. Spaces adjacent to the Barricade have rampart.",
+                "glossary": [{"val":"rampart", "id":"gl_rampart"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The barricade lasts until this ability is used again."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gearwalker_ashurablitz",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Ashura Blitz",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The walker rushes 2.",
+                "glossary":[{"val":"rushes","id":"gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If it ends this move adjacent to a foe, it shoves all adjacent foes 1 space, then rushes 2 again.",
+                "glossary":[{"val":"shoves", "id":"gl_shove"}, {"val":"rushes","id":"gl_rush"}]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_imperial_gearwalker_pressurerush"
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gearwalker_pressurerush",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Pressure Rush",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The walker chooses a foe in range that has not acted yet."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that foe’s turn, it rushes up to 4 spaces towards that foe, ending adjacent if possible."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Then, that foe takes fray damage three times, or just once if it’s adjacent to an ally."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_warballoon_sideguns",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "attack": true,
+            "blast_size": "small"
+        },
+        "eventtags": {},
+        "name": "Side Guns",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Exceed: ",
+                "glossary":[{"val":"Exceed", "id":"gl_exceed"}],
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Repeat the area effect, targeting the same or a new area in range."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_warballoon_flarebomb",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Flare Bomb",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Balloon flies 5 in a straight line.",
+                "glossary": [{"val":"flies","id":"gl_flying"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "It drops a small blast area effect below it over any space it moved over.",
+                "glossary": [{"val":"small blast","id":"gl_blast"}, {"val":"area effect","id":"gl_areaeffect"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters in the area take 3 damage."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The character in the center space must save or become stunned.",
+                "glossary": [{"val":"stunned","id":"gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_warballoon_dropsupplies",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Drop Supplies",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Balloon drops a supply crate, a height 1 destructible object (5 hp), in a free adjacent space."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Any ally adjacent to the supply crate gains +1 boon on attacks and saves, and may cure themselves by spending 1 action.",
+                "glossary": [{"val":"+1 boon", "id":"gl_boon"},{"val":"cure", "id":"gl_cure"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Balloon can have two of these crates active at once."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_warballoon_highaltitude",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "combat": 1
+        },
+        "eventtags": {},
+        "name": "High Altitude",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Balloon and any of its passengers drift high up, removing them from the battlefield."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "They all return in any valid space on the battlefield at the start of the balloon’s next turn."
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gunwright_strafeshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "attack": true
+        },
+        "eventtags": {},
+        "name": "Strafe Shot",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type":"subeffect"},
+                "content":"Effect: ",
+                "subcontent":[
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"The Gunwright may dash 1 before and after this attack.",
+                        "glossary":[{"val":"dash", "id":"gl_dash"}]
+                    },
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":"Each time, they may deal 2 damage to a foe in range 3, ignoring cover.",
+                        "glossary":[{"val":"cover", "id":"gl_cover"}]
+                    },
+                    {
+                        "tags": {"desc_type":"desc"},
+                        "content":" They must choose different foes each time and cannot choose the attack target."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gunwright_showdown",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Showdow",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The gunwright chooses a foe in range."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Until the end of that foe’s next turn, the Gunwright cannot move or be moved by allies in any way."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of that turn if the chosen foe is in range 3, dash 1, and the effect ends.",
+                "glossary":[{"val":"dash", "id":"gl_dash"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If they’re at range 4 or higher, they take 2 damage three times, ignoring cover.",
+                "glossary":[{"val":"cover", "id":"gl_cover"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gunwright_tacticalreload",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Tactical Reload",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Shove an adjacent foe 1, then dash 1.",
+                "glossary":[{"val":"shove", "id":"gl_shove"}, {"val":"dash", "id":"gl_dash"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The next ability used by the Gunwright causes them to erupt with a hail of fire, dealing 2 unerring damage as an area effect to all foes in range 3.",
+                "glossary":[{"val":"unerring", "id":"gl_unerring"}, {"val":"area effect", "id":"gl_areaeffect"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gunwright_counterfire",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Counter Fire",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Gunwright gains the following interrupt until the start of their next turn. At round 3+, Counter fire becomes a free action.",
+                "glossary": [ {"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
+    },
+    {
+        "id": "af_imperial_gunwright_counterfire_interrupt",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "interrupt": 1,
+            "type": "interrupt"
+        },
+        "eventtags": {},
+        "name": "Fiery Retort",
+        "description":  [   
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Trigger:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The Gunwright or an ally adjacent to it is targeted by a character’s ability, and that character is 2 or more spaces away."
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "The triggering character must save. On successful save, they dive out of the way and are shoved 1 in a direction of the Gunwright’s choice.",
+                                    "glossary": [ {"val": "shove", "id": "gl_shove"}]
+                                },
+                                {
+                                    "content": "On a failed save, they take 2 damage twice, ignoring cover. If their ability was an attack, it also gains +1 curse.",
+                                    "glossary": [ {"val": "cover", "id": "gl_cover"}, {"val":"curse","id":"gl_curse"}]
+                                }]
+            }
+        ]
+    },
+    {
         "id": "af_demon_heavy_bloodfeed",
         "type": "Ability",
         "source": "core",

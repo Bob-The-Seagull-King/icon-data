@@ -7228,6 +7228,181 @@
         "chapter": 3
     },
     {
+        "id": "fj_imperial_unique_warbeast",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "War Beast",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content":"This large, bear-like imperial beasts are bred for war and fitted with spiked armor."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_warbeast_crushingjaw","af_imperial_warbeast_shouldercheck","af_imperial_warbeast_steeljaw"],
+        "removed_actions":[],
+        "traits":["tf_special_counter", "tf_faction_common_enrage"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_unique_ironsoldat",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Iron Soldat",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "An imperial soldier that has been fitted with a heavy arkentech power armor. The armor makes them cumbersome but powerful opponents."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_ironsoldat_chaingun","af_imperial_ironsoldat_lumberingcharge","af_imperial_ironsoldat_mortar"],
+        "removed_actions":[],
+        "traits":["tf_special_sturdy","tf_imperial_ironsoldat_heavyarkentecharmor"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_unique_clank",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Clank",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content":"Steam and clockwork-driven automata, made in imitation of the arkentech automata that populate the ruins. Crude, noisy, and tend to break down at the worst times."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_clank_thumpergun", "af_imperial_clank_bulletspray", "af_imperial_clank_shieldmode", "af_imperial_clank_selfdestruct"],
+        "removed_actions":[],
+        "traits":["tf_imperial_clank_automata", "tf_imperial_clank_emptyhusk"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_unique_biker",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Biker",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_skirmisher",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content":"Imperials with helio-bikes, powered by a combination of steam and solar power. Though fragile the bikes can move incredibly fast over rough terrain."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_biker_chariot", "af_imperial_biker_throwknife", "af_imperial_biker_rev"],
+        "removed_actions":[],
+        "traits":["tf_imperial_biker_arkentechbike"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter":1
+    },
+    {
+        "id": "fj_imperial_unique_gearwalker",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Gear Walker",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_heavy",
+        "description":[
+                {
+                    "tags":{"desc_type":"subeffect"},
+                    "content": "Repurposed gendarme units from imperial cores, used to suppress rebellions and police newly acquired territories. Gear walkers are part power armor, part vehicle, with long stilts that allow them to clamber over barricades, buildings, vehicles, and unlucky rebels."
+                }
+        ],
+        "stats":{},
+        "actions":["af_imperial_gearwalker_boltgun", "af_imperial_gearwalker_deploybarricade", "af_imperial_gearwalker_ashurablitz"],
+        "removed_actions":[],
+        "traits":["tf_special_sturdy", "tf_imperial_gearwalker_longlegs"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter":2
+    },
+    {
+        "id": "fj_imperial_unique_warballoon",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "War Balloon",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_unique",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "A colorful flying machine, lifted by hot gas and acting as a mobile battle platform for imperial soldiers."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_warballoon_sideguns", 	"af_imperial_warballoon_flarebomb", "af_imperial_warballoon_dropsupplies", "af_imperial_warballoon_highaltitude"],
+        "removed_actions":[],
+        "traits":["tf_special_flying", "tf_special_sturdy", "tf_imperial_warballoon_hovering", "tf_imperial_warballoon_deflate","tf_imperial_warballoon_battleplatform", "tf_imperial_warballoon_vantage point"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter":2
+    },
+    {
+        "id": "fj_imperial_unique_gunwright",
+        "type":"FoeJob",
+        "source":"core",
+        "tags":{},
+        "eventtags":{},
+        "name": "Gunwright",
+        "faction_id": "fc_imperial",
+        "class_id": "cl_foe_artillery",
+        "description":[
+            {
+                "tags":{"desc_type":"subeffect"},
+                "content": "Wielding six-barreled guns in imitation of the Freelancers, these wrights have honed their aether sensitivity to attune to the fire aether of black powder, gun smoke, and bullet ignitions. They are masterful shots and skilled in firearms of all kinds."
+            }
+        ],
+        "stats":{},
+        "actions":["af_imperial_gunwright_strafeshot", "af_imperial_gunwright_showdown", "af_imperial_gunwright_tacticalreload", "af_imperial_gunwright_counterfire"],
+        "removed_actions":[],
+        "traits":["tf_imperial_gunwright_masterofgun"],
+        "removed_traits":[],
+        "category":"unique",
+        "phases":[],
+        "tactics":[],
+        "chapter": 3
+    },
+    {
         "id": "fj_jotunn_heavy_beastbloodjotunn",
         "type":"FoeJob",
         "source":"core",

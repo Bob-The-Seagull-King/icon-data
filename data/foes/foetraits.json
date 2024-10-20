@@ -3547,6 +3547,189 @@
         ]
     },
     {
+        "id": "tf_imperial_ironsoldat_heavyarkentecharmor",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Heavy Arkentech Armor",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Soldat is fitted with heavy power armor that is only strong from the front, with the following effects:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• They cannot dash, fly, or teleport.",
+                "glossary":[{"val":"dash", "id":"gl_dash"},{"val":"fly", "id":"gl_flying"},{"val":"teleport", "id":"gl_teleport"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• They can be used for cover by allies as if a height 1 object.",
+                "glossary":[{"val":"cover", "id":"gl_cover"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the end of the Soldat’s turn, decide which character they are facing towards. They become resistant to all damage from that character and unstoppable against any of their abilities. It can instead choose to grant these benefits to an adjacent ally. It must choose a different character each turn from the last.",
+                "glossary":[{"val":"resistant", "id":"gl_resistance"}, {"val":"unstoppable", "id":"gl_unstoppable"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_clank_automata",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Automata",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If this character attacks the same character as last turn, it deals bonus damage and gains +1 boon. This effect stacks.",
+                "glossary": [
+                    {"val": "bonus damage", "id": "gl_bonusdamage"},
+                    {"val": "+1 boon", "id": "gl_boon"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_clank_emptyhusk",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Empty Husk",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character becomes a height 1 object when defeated.",
+                "glossary": [
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_biker_arkentechbike",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Arkentech Bike",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Biker ignores difficult terrain. It can only move in straight lines, but has phasing. Any character it passes through takes 2 damage, but no more than once a turn.",
+                "glossary":[{"val":"difficult terrain","id":"gl_difficultterrain"}, {"val":"phasing","id":"gl_phasing"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_gearwalker_longlegs",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Long Legs",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Ignores all obstruction and terrain movement penalties."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_warballoon_hovering",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hovering",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Immune to rampart",
+                "glossary":[{"val":"rampart","id":"gl_rampart"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_warballoon_deflate",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Deflate",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the War Balloon is prevented from flying, it becomes immobile until it can fly again.",
+                "glossary":[{"val":"flying","id":"gl_flying"},{"val":"immobile","id":"gl_immobile"},{"val":"fly","id":"gl_flying"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_warballoon_battleplatform",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Battle Platform",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can mount or dismount the War Balloon by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:"
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Imperials can start the battle mounted on the balloon."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• While mounted, place characters inside a free space in the balloon (so the balloon has space for 4 size 1 characters). They share its space, move when it moves, and have cover. While moving with the balloon, characters are unstoppable.",
+                "glossary":[{"val":"unstoppable","id":"gl_unstoppable"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters hostile to the balloon must pass a save to mount it."
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• Characters mounting it the balloon when it is defeated are placed in any free adjacent space of the balloon’s choice and take 3 damage."
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_warballoon_vantagepoint",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Vantage Point",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters mounted on the War Balloon ignore height disadvantage, have +1 boon on attacks and increase the range of all their abilities with a listed range by +4.",
+                "glossary":[{"val":"+1 boon", "id":"gl_boon"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_gunwright_masterofgun",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Brace",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Has counter against all abilities used from a range of 3 or greater. Damage from counter ignores cover.",
+                "glossary":[{"val":"counter","id":"gl_counter"}, {"val":"cover","id":"gl_cover"}]
+            }
+        ]
+    },
+    {
         "id": "tf_faction_demon_legion",
         "type": "Trait",
         "source": "core",
