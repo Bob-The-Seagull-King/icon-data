@@ -2504,7 +2504,7 @@
         "name": "Lesser Wormspore",
         "category": "fc_lowlander",
         "uses" : 1,
-        "foe_id": "",
+        "foe_id": "fj_lowlander_legend_hurianwormrider",
         "usetype": "expedition",
         "description": [
             {
@@ -2525,7 +2525,7 @@
         "name": "Hurian Spear",
         "category": "fc_lowlander",
         "uses" : 6,
-        "foe_id": "",
+        "foe_id": "fj_lowlander_legend_hurianwormrider",
         "usetype": "",
         "description": [
             {

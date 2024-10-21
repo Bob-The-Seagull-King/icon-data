@@ -36079,7 +36079,8 @@
         "type": "Ability",
         "source": "core",
         "tags": {
-            "action": "round"
+            "action": "round",
+            "round": 4
         },
         "eventtags": {},
         "name": "Crumbling Earth",
@@ -36088,7 +36089,7 @@
             {
                 "tags": {"desc_type" : "desc"},
                 "content": "All foes in pits take 3 piercing damage.",
-                "glossary": [{"val": "pits", "id": "gl_pits"}, {"val": "piercing", "id": "gl_piercing"}]
+                "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "piercing", "id": "gl_piercing"}]
             }
         ]
     },

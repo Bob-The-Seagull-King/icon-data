@@ -6895,11 +6895,11 @@
         "actions": ["af_lowlander_fetidcult_lesserclot_fetidgrasp"],
         "removed_actions": [],
         "traits": ["tf_lowlander_fetidcult_lesserclot_filthbody"],
-        "removed_traits": [],
+        "removed_traits": ["tf_faction_lowlander_lowlandertoxin", "tf_faction_lowlander_pitexpert", "tf_faction_lowlander_suddenly"],
         "category": "unique",
         "phases": [],
         "tactics": [],
-        "chapter": 1
+        "chapter": 0
     },
     {
         "id": "fj_lowlander_fetidcult_cultist",
@@ -6924,11 +6924,11 @@
         "actions": ["af_lowlander_fetidcult_cultist_bloodspiller", "af_lowlander_fetidcult_cultist_draghook"],
         "removed_actions": [],
         "traits": [],
-        "removed_traits": [],
+        "removed_traits": ["tf_faction_lowlander_lowlandertoxin", "tf_faction_lowlander_pitexpert", "tf_faction_lowlander_suddenly"],
         "category": "unique",
         "phases": [],
         "tactics": [],
-        "chapter": 1
+        "chapter": 0
     },
     {
         "id": "fj_lowlander_fetidcult_viledarter",
@@ -6953,11 +6953,11 @@
         "actions": ["af_lowlander_fetidcult_viledarter_blowdart"],
         "removed_actions": [],
         "traits": [],
-        "removed_traits": [],
+        "removed_traits": ["tf_faction_lowlander_lowlandertoxin", "tf_faction_lowlander_pitexpert", "tf_faction_lowlander_suddenly"],
         "category": "unique",
         "phases": [],
         "tactics": [],
-        "chapter": 1
+        "chapter": 0
     },
     {
         "id": "fj_lowlander_fetidcult_giantinsect",
@@ -6982,11 +6982,11 @@
         "actions": ["af_lowlander_fetidcult_giantinsect_crush", "af_lowlander_fetidcult_giantinsect_pound"],
         "removed_actions": [],
         "traits": [],
-        "removed_traits": [],
+        "removed_traits": ["tf_faction_lowlander_lowlandertoxin", "tf_faction_lowlander_pitexpert", "tf_faction_lowlander_suddenly"],
         "category": "unique",
         "phases": [],
         "tactics": [],
-        "chapter": 1
+        "chapter": 0
     },
     {
         "id": "fj_lowlander_legend_headlopper",
@@ -7004,7 +7004,7 @@
             }
         ],
         "stats": {},
-        "actions": [],
+        "actions": ["af_lowlander_headlopper_walkingcataclysm", "af_lowlander_headlopper_havoc", "af_lowlander_headlopper_earthbreaker", "af_lowlander_headlopper_spinninglariat", "af_lowlander_headlopper_jotunncrusher", "af_lowlander_headlopper_demonpankration"],
         "removed_actions": [],
         "traits": [],
         "removed_traits": [],
@@ -7029,7 +7029,7 @@
                     }
                 ],
                 "name": "Phase I",
-                "actions": ["af_lowlander_headlopper_walkingcataclysm", "af_lowlander_headlopper_havoc", "af_lowlander_headlopper_earthbreaker", "af_lowlander_headlopper_spinninglariat", "af_lowlander_headlopper_jotunncrusher", "af_lowlander_headlopper_demonpankration"],
+                "actions": [],
                 "traits": [],
                 "stats": {}
             },
@@ -7038,7 +7038,17 @@
                 "trigger": [
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "As Phase I, but gains:"
+                        "content": "Changes phases when bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When changing phases, becomes immune to all damage and unstoppable until the start of its next turn.",
+                        "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
                     }
                 ],
                 "name": "Phase II",
@@ -7056,20 +7066,15 @@
         "chapter": 2
     },
     {
-        "id": "fj_lowlander_legend_hurianwormrider_rider",
+        "id": "fj_lowlander_legend_hurianwormrider",
         "type": "FoeJob",
         "source": "core",
         "tags": { },
         "eventtags": {},
-        "name": "Hurian Worm Rider - Rider",
+        "name": "Hurian Worm Rider",
         "faction_id": "fc_lowlander",
         "class_id": "cl_foe_legend",
         "description": [
-            {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "This is the Rider's stat block. See Hurian Worm Rider - Worm for the Worm's stat block."
-            },
-            {   "tags": {"desc_type" : "gap"}, "content": "" },
             {
                 "tags": {"desc_type" : "subeffect"},
                 "content": "Master warriors, also called Hurians, that tame and ride Great Red Worms through the underways of the Blightlands. Taming such a powerful beast is an extremely dangerous and ritualistic endeavor that takes many years of deprivation and preparation, including the grafting of wormspore, a process which, when survived by its recipient, grants a mild form of immortality. These legendary hunters tend to have high rank within the clans, if not as leaders themselves. With hookspear and javelin they are also accomplished acrobats, pole-vaulting into the sky to swing down with terrifying force."
@@ -7079,9 +7084,9 @@
             "hp": 25,
             "hp_per": "per Player for each partner (min 50)"
         },
-        "actions": ["af_lowlander_hurianwormrider_lifebond"],
+        "actions": ["af_lowlander_hurianwormrider_lifebond","af_lowlander_hurianwormrider_crumblingearth"],
         "removed_actions": ["af_class_legend_juggernaut"],
-        "traits": ["tf_class_skirmisher_skirmisher", "tf_class_skirmisher_dodge", "tf_lowlander_hurianwormrider_wormandrider", "tf_lowlander_hurianwormrider_wormsporebond", "tf_lowlander_hurianwormrider_deepriders"],
+        "traits": ["tf_lowlander_hurianwormrider_wormandrider", "tf_lowlander_hurianwormrider_wormsporebond", "tf_lowlander_hurianwormrider_deepriders"],
         "removed_traits": [],
         "category": "legend",
         "phases": [
@@ -7093,10 +7098,10 @@
                         "content": "The phase changes at round 4 and later."
                     }
                 ],
-                "name": "Phase I",
+                "name": "Rider - Phase I",
                 "actions": ["af_lowlander_hurianwormrider_wormlure", "af_lowlander_hurianwormrider_rider_burrow", "af_lowlander_hurianwormrider_huriandive","af_lowlander_hurianwormrider_wormhunterspear", "af_lowlander_hurianwormrider_slicingshuriken"],
-                "traits": ["tf_lowlander_hurianwormrider_wormriding"],
-                "stats": {}
+                "traits": ["tf_lowlander_hurianwormrider_wormriding","tf_class_skirmisher_skirmisher", "tf_class_skirmisher_dodge"],
+                "stats": { "size": 1 }
             },
             {
                 "description": [],
@@ -7106,51 +7111,11 @@
                         "content": "Round 4 or higher. As Phase I, but gains:"
                     }
                 ],
-                "name": "Phase II",
-                "actions": ["af_lowlander_hurianwormrider_crumblingearth"],
-                "traits": ["tf_lowlander_hurianwormrider_lawoftheworm"],
-                "stats": {}
-            }
-        ],
-        "tactics": [
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "This double team fight is all about staying out of pits for player characters - something that will become increasingly hard to do over time. The worm and rider work together with many of their moves, with the worm able to shove foes into bad positions for the rider to pick them off with Artery Cut and Hurian Dive. You can use this to your advantage in phase II, when they can do this both on the same turn. Defeating one at a time is not an option, with each partner able to resurrect the other. Characters that stick together will have a better time in this fight, but also risk getting hit by a huge devour the land or massive jaws."
-            }
-        ],
-        "chapter": 3
-    },
-    {
-        "id": "fj_lowlander_legend_hurianwormrider_worm",
-        "type": "FoeJob",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Hurian Worm Rider - Worm",
-        "faction_id": "fc_lowlander",
-        "class_id": "cl_foe_legend",
-        "description": [
-            {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "This is the Worm's stat block. See Hurian Worm Rider - Rider for the Rider's stat block."
+                "name": "Rider - Phase II",
+                "actions": ["af_lowlander_hurianwormrider_wormlure", "af_lowlander_hurianwormrider_rider_burrow", "af_lowlander_hurianwormrider_huriandive","af_lowlander_hurianwormrider_wormhunterspear", "af_lowlander_hurianwormrider_slicingshuriken"],
+                "traits": ["tf_lowlander_hurianwormrider_wormriding","tf_class_skirmisher_skirmisher", "tf_class_skirmisher_dodge", "tf_lowlander_hurianwormrider_lawoftheworm"],
+                "stats": { "size": 1 }
             },
-            {   "tags": {"desc_type" : "gap"}, "content": "" },
-            {
-                "tags": {"desc_type" : "subeffect"},
-                "content": "Master warriors, also called Hurians, that tame and ride Great Red Worms through the underways of the Blightlands. Taming such a powerful beast is an extremely dangerous and ritualistic endeavor that takes many years of deprivation and preparation, including the grafting of wormspore, a process which, when survived by its recipient, grants a mild form of immortality. These legendary hunters tend to have high rank within the clans, if not as leaders themselves. With hookspear and javelin they are also accomplished acrobats, pole-vaulting into the sky to swing down with terrifying force."
-            }
-        ],
-        "stats": {
-            "hp": 25,
-            "hp_per": "per Player for each partner (min 50)",
-            "size": 2
-        },
-        "actions": ["af_lowlander_hurianwormrider_lifebond"],
-        "removed_actions": [],
-        "traits": ["tf_special_sturdy", "tf_lowlander_hurianwormrider_wormandrider", "tf_lowlander_hurianwormrider_wormsporebond", "tf_lowlander_hurianwormrider_deepriders"],
-        "removed_traits": [],
-        "category": "legend",
-        "phases": [
             {
                 "description": [],
                 "trigger": [
@@ -7159,10 +7124,12 @@
                         "content": "The phase changes at round 4 and later."
                     }
                 ],
-                "name": "Phase I",
+                "name": "Worm - Phase I",
                 "actions": ["af_lowlander_hurianwormrider_devourtheland", "af_lowlander_hurianwormrider_massivejaws", "af_lowlander_hurianwormrider_spitrock", "af_lowlander_hurianwormrider_bodyslam","af_lowlander_hurianwormrider_worm_burrow", "af_lowlander_hurianwormrider_swallowwhole"],
-                "traits": [],
-                "stats": {}
+                "traits": ["tf_special_sturdy"],
+                "stats": {
+                    "size": 2
+                }
             },
             {
                 "description": [],
@@ -7172,10 +7139,12 @@
                         "content": "Round 4 or higher. As Phase I, except Devour the Land triggers twice, and:"
                     }
                 ],
-                "name": "Phase II",
-                "actions": ["af_lowlander_hurianwormrider_devourtheland_phase2", "af_lowlander_hurianwormrider_crumblingearth"],
-                "traits": ["tf_lowlander_hurianwormrider_lawoftheworm"],
-                "stats": {}
+                "name": "Worm - Phase II",
+                "actions": ["af_lowlander_hurianwormrider_devourtheland_phase2","af_lowlander_hurianwormrider_massivejaws", "af_lowlander_hurianwormrider_spitrock", "af_lowlander_hurianwormrider_bodyslam","af_lowlander_hurianwormrider_worm_burrow", "af_lowlander_hurianwormrider_swallowwhole"],
+                "traits": ["tf_lowlander_hurianwormrider_lawoftheworm","tf_special_sturdy"],
+                "stats": {                    
+                    "size": 2
+                }
             }
         ],
         "tactics": [

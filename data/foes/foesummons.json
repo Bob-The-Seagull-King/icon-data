@@ -1040,7 +1040,7 @@
             "hp": 20
         },
         "eventtags": {},
-        "name": "Trained Beasts",
+        "name": "Trained Beast",
         "description":  [
             {
                 "tags": {"desc_type" : "effect"},
@@ -1053,8 +1053,7 @@
             }
         ],
         "blurb":  [],
-        "colour": "yellow",
-        "limit": 2
+        "limit": 3
     },
     {
         "id": "sm_lowlander_fetididol_choice",
