@@ -4166,6 +4166,95 @@
         ]
     },
     {
+        "id": "tf_imperial_praetorian_auraofdread",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Dread",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Praetorian has aura 2. Foes inside the aura take +1 curse on saves. Any foe that fails a save inside the area must sacrifice 3.",
+                "glossary":[{"val":"aura","id":"gl_aura"}, {"val":"sacrifice","id":"gl_sacrifice"}, {"val":"+1 curse","id":"gl_curse"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_steamwright_boilingshroud",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Boiling Shroud",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "While bloodied, the steam wright has permanent stealth and gains aura 1. All other characters inside the aura are blinded+ while inside.",
+                "glossary":[
+                    {"val":"aura","id":"gl_aura"},
+                    {"val":"bloodied","id":"gl_bloodied"},
+                    {"val":"stealth","id":"gl_stealth"},
+                    {"val":"blinded","id":"gl_blinded"},
+                    {"val":"+","id":"gl_ongoing"}
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_battlwagon_allterrainvehicle",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "All Terrain Vehicle",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Unaffected by terrain and height movement penalties.",
+                "glossary":[
+                ]
+            }
+        ]
+    },
+    {
+        "id": "tf_imperial_battlewagon_battleplatform",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Battle Platform",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Characters can mount or dismount the Wagon by spending 1 space of movement, placing them adjacent when dismounting, with the following rules:"
+            } ,
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Imperials can start the battle mounted on the wagon."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While mounted, place characters inside a free space in the wagon (so the wagon has space for 4 size 1 characters). They share its space, move when it moves, and have cover. While moving with the wagon, characters are unstoppable.",
+                        "glossary":[{"val":"unstoppable","id":"gl_unstoppable"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters hostile to the wagon must pass a save to mount it, and cannot attempt to mount it for the rest of the turn on a failed save."
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters mounting the wagon when it is defeated are placed in any free adjacent space of the wagon's choice and take 3 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "tf_imperial_crimsonweapon_hellforged",
         "type": "Trait",
         "source": "core",

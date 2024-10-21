@@ -1949,6 +1949,80 @@
         "limit": 6
     },
     {
+        "id": "sm_imperial_battlewagon_torpedo",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Torpedo",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "At the end of the next player turn, the torpedo submerges, burrows, and detonates under the closest foe for a small blast area effect, destroying it. If multiple foes are equidistant, the wagon can choose.",
+                                    "glossary": [
+                                        {"val": "small blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"}
+                                    ]
+                                }]
+            },
+            {
+                "tags": {"desc_type" : "gap"},
+                "content": ""
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the area must save or take [D]+fray, or fray damage on a successful save. Then, create a pit under the foe. Foes standing on an object succeed the save automatically, but all objects under them are removed instead of creating a pit.",
+                "glossary": [
+                    {"val": "area", "id": "gl_areaeffect"},
+                    {"val": "[D]", "id": "gl_damagedice"},
+                    {"val": "fray", "id": "gl_fray"},
+                    {"val": "pit", "id": "gl_pit"}
+                ]
+            }
+        ],
+        "blurb":  [],
+        "limit": 0
+    },
+    {
+        "id": "sm_imperial_centurion_imperialstandard",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "intangible": true
+        },
+        "eventtags": {},
+        "name": "Imperial Standard",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Aura 1. Self and Allies in the aura gain +1 boon on attacks and saves, and if they start their turn in the aura they are cured. Foes in the aura gain +1 curse on attacks and saves, and if they start their turn in the area, they lose all vigor. The centurion can only plant one of these banners at a time.",
+                                    "glossary": [
+                                        {"val": "small blast", "id": "gl_blast"},
+                                        {"val": "area effect", "id": "gl_areaeffect"},
+                                        {"val": "Aura", "id": "gl_aura"},
+                                        {"val": "aura", "id": "gl_aura"},
+                                        {"val": "+1 boon", "id": "gl_boon"},
+                                        {"val": "cured", "id": "gl_cure"},
+                                        {"val": "+1 curse", "id": "gl_curse"},
+                                        {"val": "vigor", "id": "gl_vigor"}
+                                    ]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "limit": 1
+    },
+    {
         "id": "sm_imperial_crimsonweapon_munition",
         "type": "Summon",
         "source": "core",
