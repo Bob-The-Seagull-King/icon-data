@@ -6528,6 +6528,7 @@
             "dash": 3,
             "fray": 3,
             "damage": 6,
+            "defense": 5,
             "size": 2
         },
         "actions": ["af_lowlander_ridinginsect_bite", "af_lowlander_ridinginsect_acidspit", "af_lowlander_ridinginsect_leap"],
@@ -9338,6 +9339,7 @@
             "speed": 4,
             "dash": 2,
             "fray": 3,
+            "defense": 5,
             "damage": 8,
             "size": 2
         },
