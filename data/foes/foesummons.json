@@ -1031,6 +1031,58 @@
         "limit": 0
     },
     {
+        "id": "sm_lowlander_wrangler_trainedbeasts",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "defense": 5,
+            "hp": 20
+        },
+        "eventtags": {},
+        "name": "Trained Beasts",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Unlike other summons, these summons have defense and health and lack intangible (so they can take damage and effects). When defeated, the summons disappear as normal, and they do not cause obstruction or engagement.",
+                                    "glossary": [{"val": "intangible", "id": "gl_intangible"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 2
+    },
+    {
+        "id": "sm_lowlander_fetididol_choice",
+        "type": "Summon",
+        "source": "core",
+        "tags": {
+            "size": 1,
+            "defense": 5,
+            "hp": 20
+        },
+        "eventtags": {},
+        "name": "Trained Beasts",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Summon Effect:",
+                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Unlike other summons, these summons have defense and health and lack intangible (so they can take damage and effects). When defeated, the summons disappear as normal, and they do not cause obstruction or engagement.",
+                                    "glossary": [{"val": "intangible", "id": "gl_intangible"}]
+                                }]
+            }
+        ],
+        "blurb":  [],
+        "colour": "yellow",
+        "limit": 2
+    },
+    {
         "id": "sm_lowlander_fetididol_spewinggrowth",
         "type": "Summon",
         "source": "core",

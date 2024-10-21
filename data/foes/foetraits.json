@@ -5680,6 +5680,264 @@
         ]
     },
     {
+        "id": "tf_lowlander_ruinspeaker_ruinlord",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruin Lord",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Can stack up to two marks on characters.",
+                "glossary": [{"val": "marks", "id": "gl_mark"}]
+            }  
+        ]
+    },
+    {
+        "id": "tf_lowlander_grub_masteroftheunderway",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Master of the Underway",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This character gains stealth if they start or end their turn in a pit and can use 2 spaces of movement to teleport from any pit space to any other free pit space.",
+                "glossary": [{"val": "stealth", "id": "gl_stealth"}, {"val": "pit", "id": "gl_pit"}, {"val": "teleport", "id": "gl_teleport"}]
+            }  
+        ]
+    },
+    {
+        "id": "tf_lowlander_borer_tunnel",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Tunnel",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Borer ends its turn, create a pit underneath it.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }  
+        ]
+    },
+    {
+        "id": "tf_lowlander_wrangler_beastmaster",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Beastmaster",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wrangler starts combat with 3 unique trained beast summons. Place them within range 3.",
+                "glossary": [{"val": "summons", "id": "gl_summon"}]
+            },
+            {
+                "tags": {"desc_type" : "foesummon"},
+                "content": "sm_lowlander_wrangler_trainedbeasts"
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_larderspider_huntinghorror",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hunting Horror",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Larder Spider has evasion unless there are two or more adjacent foes.",
+                "glossary": [{"val": "evasion", "id": "gl_evasion"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_fetididol_theidol",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "The Idol",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Idol is a 2x2 height 3 immobile object on the map that is not a character and is immune to all damage and effects except from its own worshippers. It cannot be removed for any reason.",
+                "glossary": [{"val": "immobile", "id": "gl_immobile"}, {"val": "immune", "id": "gl_immune"}]
+            }  
+        ]
+    },
+    {
+        "id": "tf_lowlander_fetididol_auraofsacrifice",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Aura of Sacrifice",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Damage deal to characters adjacent to the idol becomes divine.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            }  
+        ]
+    },
+    {
+        "id": "tf_lowlander_fetididol_worshippers",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Worshippers",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat and the start of every round, the Idol creates worshippers. It always has a mob of lesser clots, and a number of total worshippers (including the mob) equal to twice the number of players. Worshippers use the idol’s damage die (d8) and fray damage (3).",
+                "glossary": [{"val": "damage die", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Worshippers are new characters that only act on the idol’s turn. When created, they can be created in range 3 of the idol or any of its terrain effects."
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "On each of the Idol’s turns, it chooses a different worshipper to act, including the clot mob. A worshipper may use their standard move, dash, or use the abilities in their profile."
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Worshippers can act again in a round, but only when all worshippers have acted at least once."
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When defeated, worshippers other than Clots deal damage to the idol equal to their maximum hp. This is only way to damage the idol."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "textfoe"},
+                "content": "fj_lowlander_fetidcult_lesserclot"
+            },
+            {
+                "tags": {"desc_type" : "textfoe"},
+                "content": "fj_lowlander_fetidcult_cultist"
+            },
+            {
+                "tags": {"desc_type" : "textfoe"},
+                "content": "fj_lowlander_fetidcult_viledarter"
+            },
+            {
+                "tags": {"desc_type" : "textfoe"},
+                "content": "fj_lowlander_fetidcult_giantinsect"
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_fetidcult_lesserclot_filthbody",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Filth Body",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Lesser Clots are immune to all damage while inside difficult or dangerous terrain or adjacent to the Idol.",
+                "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }  
+        ]
+    },
+    {
+        "id": "tf_lowlander_hurianwormrider_wormandrider",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Worm and Rider",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This fight is made of two characters, the worm and the rider. Each is separately targetable, has its own hp, and tracks statuses and effects separately. When this legend acts, it alternates turns between the Worm and Rider if possible (if both of them are active and on the battlefield - the Rider might not be from Hurian Dive).",
+                "glossary": [{"val": "statuses", "id": "gl_status"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• The Worm is size 2 and sturdy.",
+                "glossary": [{"val": "sturdy", "id": "gl_sturdy"}]
+            },
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "• The Rider is size 1 and has the skirmisher and dodge traits."
+            } 
+        ]
+    },
+    {
+        "id": "tf_lowlander_hurianwormrider_wormsporebond",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wormspore Bond",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "If the Worm or Rider is defeated, at the end of the round, if their partner is active, undefeated, and within range 4, they return to 25% maximum hp and return from being defeated. The legend is only fully defeated if both worm and rider are defeated in the same round."
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_hurianwormrider_deepriders",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wormspore Bond",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Both these characters ignore movement and height penalties from pits. Attacks against characters in pits deal bonus damage and can critical hit (+[D]).",
+                "glossary": [{"val": "pits", "id": "gl_pit"}, {"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "critically hit", "id": "gl_criticalhit"}, {"val": "+[D]", "id": "gl_damagedice"}]
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_hurianwormrider_wormriding",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Worm Riding",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "When the Worm enters or exits any space within range 2 of the Rider, the rider can hitch along. Remove the Rider from play as it hops on the worm. At the end of the current turn, place the Rider adjacent to the worm."
+            }
+        ]
+    },
+    {
+        "id": "tf_lowlander_hurianwormrider_lawoftheworm",
+        "type": "Trait",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Law of the Worm",
+        "description":  [                                
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This legend gains +1 action. The extra action must be used to take a Rider action on the Worm’s turn, or vice-versa, though the per-turn attack limit must still be obeyed."
+            }
+        ]
+    },
+    {
         "id": "tf_faction_jotunn_elite",
         "type": "Trait",
         "source": "core",
@@ -7290,25 +7548,6 @@
                 "tags": {"desc_type" : "desc"},
                 "content": "After any ability resolves that damages the Watcher, it becomes intangible until the start of the following turn, and may teleport 2.",
                 "glossary": [{"val": "intangible", "id": "gl_intangible"},{"val": "teleport", "id": "gl_teleport"}]
-            }  
-          ]
-    },
-    {
-        "id": "tf_lowlander_grub_masteroftheunderway",
-        "type": "Trait",
-        "source": "core",
-        "tags": { },
-        "eventtags": {},
-        "name": "Master of the Underway",
-        "description":  [                                
-            {
-                "tags": {"desc_type" : "desc"},
-                "content": "The grub gains stealth if they start or end their turn in a pit and can use 2 spaces of movement to teleport from any pit space to any other free pit space.",
-                "glossary": [
-                    {"val": "stealth", "id": "gl_stealth"},
-                    {"val": "pit", "id": "gl_pit"},
-                    {"val": "teleport", "id": "gl_teleport"}
-                ]
             }  
           ]
     },

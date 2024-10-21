@@ -6698,6 +6698,495 @@
         "chapter": 3
     },
     {
+        "id": "fj_lowlander_elite_ruinspeaker",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Ruin Speaker",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Some superstitious lowlanders are changed by spending too much time in the Blightlands. This can manifest in strange powers, a connection to the ruins themselves that sometimes manifests as a voice that only the Speakers can hear - and call to if need be."
+            }
+        ],
+        "stats": {
+            "hp": 64,
+            "turns": 2
+        },
+        "actions": ["af_lowlander_ruinspeaker_callruin", "af_lowlander_ruinspeaker_landwrack", "af_lowlander_ruinspeaker_entropus", "af_lowlander_ruinspeaker_earthglide"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_ruinspeaker_ruinlord"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_elite_borer",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Borer",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Pale and solitary lowlanders that spend more time below the earth than on top of it. Some prefer to move this way to avoid the strange energies and roaming monsters of the surface. Others recognize the strange madness that creeps in to someone that lives this way for a long time. Often hired as mercenaries by camps, these subterranean hermits can be helpful or even friendly, but are also equally as likely to abduct a ‘sun-lander’ captive to trade for food or metal later."
+            }
+        ],
+        "stats": {
+            "hp": 56,
+            "turns": 2
+        },
+        "actions": ["af_lowlander_borer_razorhook", "af_lowlander_borer_grapnelpick", "af_lowlander_borer_gutshot", "af_lowlander_borer_subterraneanabduction"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_grub_masteroftheunderway", "tf_lowlander_borer_tunnel"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_elite_wrangler",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Wrangler",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_leader",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Those among the outcast with the patience, bravery, or lack of survival instinct often become master monster tamers. In larger Lowlander clans they act as bounty hunters and brutal dispensers of justice, enforcing the laws of the clan and collecting tithe. Their trained hound- flies, insects the size of an arm, can track a quarry for miles."
+            }
+        ],
+        "stats": {
+            "hp": 80,
+            "turns": 2
+        },
+        "actions": ["af_lowlander_wrangler_sic", "af_lowlander_wrangler_crackthewhip", "af_lowlander_wrangler_weakeningtoxin"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_wrangler_beastmaster"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_elite_larderspider",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Larder Spider",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Massive, burrowing arachnids that keep gruesome ‘larders’ of food in subterranean caverns. Its toxin has a paralyzing venom that puts its foes into a paralytic sleep for as long as a week, slowing their metabolism to a crawl so they stay living and fresh, requiring neither food nor water. Lowlanders cultivate these spiders as mounts, border guards, and jailers. Their venom also has a wide use as a medical reagent and has saved the life of many clanners."
+            }
+        ],
+        "stats": {
+            "hp": 56,
+            "turns": 2
+        },
+        "actions": ["af_lowlander_larderspider_subterraneanhunter", "af_lowlander_larderspider_toxicfang", "af_lowlander_larderspider_webswing", "af_lowlander_larderspider_venomspike", "af_lowlander_larderspider_revealpit"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_larderspider_huntinghorror"],
+        "removed_traits": [],
+        "category": "elite",
+        "phases": [],
+        "tactics": [],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_legend_fetididol",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Fetid Idol",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Especially zealous or desperate lowlander clans raise idols to the blight lands themselves, in some hope of relief from the hostile environment they live in. Occasionally, their prayers are answered and the idols are inhabited by some corrupt and animating force drawn up from the ruins, something ancient and unknowable from the Doom or the deep dungeons. The land itself boils and sucks in all the venoms of the blight lands, the corruption spilling forth in unholy manifestations of pollution."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "These idol cults are dangerous, and often shunned by other lowlanders, as they take captives and eschew the codes of hospitality and contract followed so strictly by the clans. Offerings to the idol are hurled into pits of sucking mud and buried alive."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_lowlander_fetididol_theidol", "tf_lowlander_fetididol_auraofsacrifice", "tf_lowlander_fetididol_worshippers"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Idol changes phases when bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_lowlander_fetididol_worshippers", "af_lowlander_fetididol_manifestations"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Idol changes phases when bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_lowlander_fetididol_worshippers_phase2", "af_lowlander_fetididol_manifestations_phase2", "af_lowlander_fetididol_unholyvapors"],
+                "traits": [],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Fetid Idol itself is not the focus of this fight, but its worshippers, who will vastly outnumber the players. Players that can dish out a lot of damage to an area will find success in this fight, as clearing the idol’s corrupted flock is the only way to defeat it, a fact that becomes especially relevant in phase II when players are racing the clock. Characters should be especially wary of standing near or adjacent to the idol, where they take double damage, but can use this to their advantage - it does not discriminate!"
+            }
+        ],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_fetidcult_lesserclot",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Lesser Clot",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_mob",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A member of the Fetid Cult."
+            }
+        ],
+        "stats": {
+            "defense": 5,
+            "speed": 4
+        },
+        "actions": ["af_lowlander_fetidcult_lesserclot_fetidgrasp"],
+        "removed_actions": [],
+        "traits": ["tf_lowlander_fetidcult_lesserclot_filthbody"],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_fetidcult_cultist",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Cultist",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_skirmisher",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A member of the Fetid Cult. D6: 1-2."
+            }
+        ],
+        "stats": {
+            "hp": 15,
+            "defense": 10,
+            "speed": 4
+        },
+        "actions": ["af_lowlander_fetidcult_cultist_bloodspiller", "af_lowlander_fetidcult_cultist_draghook"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_fetidcult_viledarter",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Vile Darter",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_artillery",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A member of the Fetid Cult. D6: 3-4."
+            }
+        ],
+        "stats": {
+            "hp": 15,
+            "defense": 8,
+            "speed": 4
+        },
+        "actions": ["af_lowlander_fetidcult_viledarter_blowdart"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_fetidcult_giantinsect",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Giant Insect",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_heavy",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "A member of the Fetid Cult. D6: 5-6."
+            }
+        ],
+        "stats": {
+            "hp": 20,
+            "defense": 6,
+            "speed": 4
+        },
+        "actions": ["af_lowlander_fetidcult_giantinsect_crush", "af_lowlander_fetidcult_giantinsect_pound"],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "unique",
+        "phases": [],
+        "tactics": [],
+        "chapter": 1
+    },
+    {
+        "id": "fj_lowlander_legend_headlopper",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Head Lopper",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Legendary warriors of the clans and monster hunters of wide repute. They carry a bevy of weapons captured from fallen warriors and a string of trophy monster heads attached to their belts. Often, Head Loppers are exiled Colossi who cannot restrain or master their bloodlust. They come from a certain cast of hero or adventurer who cannot find any thrill in regular battle and travel to the blight lands seeking only the strongest battles: blight beasts, demons, or blood-crazed Jotunn. They act as mercenaries and sometimes leaders for Lowlander clans, but will only show up for exceptionally powerful opponents. They respect only prowess in battle and have become totally consumed with their obsession with strength."
+            }
+        ],
+        "stats": {},
+        "actions": [],
+        "removed_actions": [],
+        "traits": [],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Changes phases when bloodied.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "gap"},
+                        "content": ""
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When changing phases, becomes immune to all damage and unstoppable until the start of its next turn.",
+                        "glossary": [{"val": "immune", "id": "gl_immune"}, {"val": "unstoppable", "id": "gl_unstoppable"}]
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_lowlander_headlopper_walkingcataclysm", "af_lowlander_headlopper_havoc", "af_lowlander_headlopper_earthbreaker", "af_lowlander_headlopper_spinninglariat", "af_lowlander_headlopper_jotunncrusher", "af_lowlander_headlopper_demonpankration"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "As Phase I, but gains:"
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_lowlander_headlopper_gigakaiser", "af_lowlander_headlopper_godwaster"],
+                "traits": ["tf_faction_common_enrage"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "During this fight, the Head Lopper tears up the battlefield with its insane strength, transforming it into a scarred wasteland. Over time, it will become tough for characters to avoid colliding, and avoid its powerful Demon Pankration moves and its massive Havoc dive. In phase II, characters must take note of the elevation of the battlefield, which could be the difference between life and death. Characters can build their own refuges to escape God Waster, or position themselves so it becomes hard for the Head Lopper to knock them into bad positions with Tornado kick and Demon Pankration."
+            }
+        ],
+        "chapter": 2
+    },
+    {
+        "id": "fj_lowlander_legend_hurianwormrider_rider",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hurian Worm Rider - Rider",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This is the Rider's stat block. See Hurian Worm Rider - Worm for the Worm's stat block."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Master warriors, also called Hurians, that tame and ride Great Red Worms through the underways of the Blightlands. Taming such a powerful beast is an extremely dangerous and ritualistic endeavor that takes many years of deprivation and preparation, including the grafting of wormspore, a process which, when survived by its recipient, grants a mild form of immortality. These legendary hunters tend to have high rank within the clans, if not as leaders themselves. With hookspear and javelin they are also accomplished acrobats, pole-vaulting into the sky to swing down with terrifying force."
+            }
+        ],
+        "stats": {
+            "hp": 25,
+            "hp_per": "per Player for each partner (min 50)"
+        },
+        "actions": ["af_lowlander_hurianwormrider_lifebond"],
+        "removed_actions": ["af_class_legend_juggernaut"],
+        "traits": ["tf_class_skirmisher_skirmisher", "tf_class_skirmisher_dodge", "tf_lowlander_hurianwormrider_wormandrider", "tf_lowlander_hurianwormrider_wormsporebond", "tf_lowlander_hurianwormrider_deepriders"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The phase changes at round 4 and later."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_lowlander_hurianwormrider_wormlure", "af_lowlander_hurianwormrider_rider_burrow", "af_lowlander_hurianwormrider_huriandive","af_lowlander_hurianwormrider_wormhunterspear", "af_lowlander_hurianwormrider_slicingshuriken"],
+                "traits": ["tf_lowlander_hurianwormrider_wormriding"],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Round 4 or higher. As Phase I, but gains:"
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_lowlander_hurianwormrider_crumblingearth"],
+                "traits": ["tf_lowlander_hurianwormrider_lawoftheworm"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This double team fight is all about staying out of pits for player characters - something that will become increasingly hard to do over time. The worm and rider work together with many of their moves, with the worm able to shove foes into bad positions for the rider to pick them off with Artery Cut and Hurian Dive. You can use this to your advantage in phase II, when they can do this both on the same turn. Defeating one at a time is not an option, with each partner able to resurrect the other. Characters that stick together will have a better time in this fight, but also risk getting hit by a huge devour the land or massive jaws."
+            }
+        ],
+        "chapter": 3
+    },
+    {
+        "id": "fj_lowlander_legend_hurianwormrider_worm",
+        "type": "FoeJob",
+        "source": "core",
+        "tags": { },
+        "eventtags": {},
+        "name": "Hurian Worm Rider - Worm",
+        "faction_id": "fc_lowlander",
+        "class_id": "cl_foe_legend",
+        "description": [
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "This is the Worm's stat block. See Hurian Worm Rider - Rider for the Rider's stat block."
+            },
+            {   "tags": {"desc_type" : "gap"}, "content": "" },
+            {
+                "tags": {"desc_type" : "subeffect"},
+                "content": "Master warriors, also called Hurians, that tame and ride Great Red Worms through the underways of the Blightlands. Taming such a powerful beast is an extremely dangerous and ritualistic endeavor that takes many years of deprivation and preparation, including the grafting of wormspore, a process which, when survived by its recipient, grants a mild form of immortality. These legendary hunters tend to have high rank within the clans, if not as leaders themselves. With hookspear and javelin they are also accomplished acrobats, pole-vaulting into the sky to swing down with terrifying force."
+            }
+        ],
+        "stats": {
+            "hp": 25,
+            "hp_per": "per Player for each partner (min 50)",
+            "size": 2
+        },
+        "actions": ["af_lowlander_hurianwormrider_lifebond"],
+        "removed_actions": [],
+        "traits": ["tf_special_sturdy", "tf_lowlander_hurianwormrider_wormandrider", "tf_lowlander_hurianwormrider_wormsporebond", "tf_lowlander_hurianwormrider_deepriders"],
+        "removed_traits": [],
+        "category": "legend",
+        "phases": [
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The phase changes at round 4 and later."
+                    }
+                ],
+                "name": "Phase I",
+                "actions": ["af_lowlander_hurianwormrider_devourtheland", "af_lowlander_hurianwormrider_massivejaws", "af_lowlander_hurianwormrider_spitrock", "af_lowlander_hurianwormrider_bodyslam","af_lowlander_hurianwormrider_worm_burrow", "af_lowlander_hurianwormrider_swallowwhole"],
+                "traits": [],
+                "stats": {}
+            },
+            {
+                "description": [],
+                "trigger": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Round 4 or higher. As Phase I, except Devour the Land triggers twice, and:"
+                    }
+                ],
+                "name": "Phase II",
+                "actions": ["af_lowlander_hurianwormrider_devourtheland_phase2", "af_lowlander_hurianwormrider_crumblingearth"],
+                "traits": ["tf_lowlander_hurianwormrider_lawoftheworm"],
+                "stats": {}
+            }
+        ],
+        "tactics": [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "This double team fight is all about staying out of pits for player characters - something that will become increasingly hard to do over time. The worm and rider work together with many of their moves, with the worm able to shove foes into bad positions for the rider to pick them off with Artery Cut and Hurian Dive. You can use this to your advantage in phase II, when they can do this both on the same turn. Defeating one at a time is not an option, with each partner able to resurrect the other. Characters that stick together will have a better time in this fight, but also risk getting hit by a huge devour the land or massive jaws."
+            }
+        ],
+        "chapter": 3
+    },
+    {
         "id": "fj_hob_mob_sprigg",
         "type": "FoeJob",
         "source": "core",

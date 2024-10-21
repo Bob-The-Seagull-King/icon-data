@@ -15,7 +15,7 @@
                 "content": "An ally in range 4 is cured.",
                 "glossary": [{"val": "cured", "id": "gl_cure"}]
             }
-                        ]
+        ]
     },
     {
         "id": "af_class_legend_juggernaut",
@@ -12948,7 +12948,7 @@
             },
             {
                 "tags": {"desc_type" : "effect"},
-                "content": "Phase 2:",
+                "content": "Phase II:",
                 "subcontent": [
                     {
                         "tags": {"desc_type" : "desc"},
@@ -33108,6 +33108,1035 @@
         ]
     },
     {
+        "id": "af_lowlander_ruinspeaker_callruin",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Call Ruin",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Ruin speaker chooses a space in range 6. At the end of the round, a ruin chunk surfaces in that space, a height 3 object. Spaces next to this terrain are difficult terrain. Any character occupying the space is pushed up on top of the ruin chunk but also takes piercing fray damage and is stunned.",
+                "glossary": [{"val": "difficult terrain", "id": "gl_difficultterrain"}, {"val": "fray", "id": "gl_fray"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_ruinspeaker_landwrack",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "type": "attack",
+            "attack": true,
+            "arc": 8,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Landwrack",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Summon a height 1 ruin object adjacent to the character. Deals bonus damage for each object it passed through before the attack target.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_ruinspeaker_sinkhole"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_ruinspeaker_sinkhole",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "mark": true,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Sinkhole",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 6 is marked and has a pit created under them. At the end of their turn, that character creates another pit underneath them. If that character is already standing a pit when one is created by this ability, they take 4 piercing damage instead. At the end of their turn, this mark ends.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "pit", "id": "gl_pit"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_ruinspeaker_entropus",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 6,
+            "multimark": true,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Entropus",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A character in range of the ruin speaker is marked and starts to petrify. While marked, they are shattered and take 5 piercing damage at the end of their turns if they end their turn adjacent to or inside an object, pit, difficult, or dangerous terrain. A character can clear this mark by not moving for their entire turn.",
+                "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "shattered", "id": "gl_shattered"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "pit", "id": "gl_pit"}, {"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_ruinspeaker_earthglide",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Earthglide",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 3. Gain phasing and become intangible while moving.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}, {"val": "phasing", "id": "gl_phasing"}, {"val": "intangible", "id": "gl_intangible"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_borer_razorhook",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Razor Hook",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If made from inside a pit, the Borer can fly 3 before the attack, and this attack deals bonus damage and blinds its target.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "fly", "id": "gl_flying"},{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "blinds", "id": "gl_blinded"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_borer_grapnelpick",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Grapnel Pick",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 3 damage. If the Borer is standing in a pit, that foe also must save or swap places with the Borer, teleporting.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "teleporting", "id": "gl_teleport"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_borer_gutshot",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3,
+            "mark": true
+        },
+        "eventtags": {},
+        "name": "Gut Shot",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 5 is dazed and marked.",
+                "glossary": [{"val": "daze", "id": "gl_dazed"}, {"val": "marked", "id": "gl_mark"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While marked, the character gains an open wound. While wounded, it takes [D] again at the end of its turns. This marks ends if that character ends their turn adjacent to an ally.",
+                        "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "[D]", "id": "gl_damagedice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_borer_subterraneanabduction",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Subterranean Abduction",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Borer chooses a foe inside a pit anywhere, then removes both the Borer and them from the battlefield. The Borer and its victim both gamble, re-rolling ties. If the victim rolls higher, at the start of their turn they take 3 damage and may re-emerge from any pit of their choice at the start of their turn. If they lose the roll-off, they take 3 damage three times instead, and the Borer chooses which pit they emerge from at the start of their turn. The Borer returns to any open pit of its choice at the start of its turn.",
+                        "glossary": [{"val": "gamble", "id": "gl_gamble"}, {"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_wrangler_sic",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Sic",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The Wrangler makes one of the following attacks, from the position and location of one of its beast summons, from the following list. If the Wrangler is bloodied, these attacks deal bonus damage. It must activate a different summon from the last each turn.",
+                        "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "bonus damage", "id": "gl_bonusdamage"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_wrangler_houndfly"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_wrangler_gorebeast"
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_wrangler_spitter"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_wrangler_houndfly",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "attack": true,
+            "type": "attack",
+            "unerring": true,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Hound Fly",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Fly 3, then ",
+                        "glossary": [{"val": "Fly", "id": "gl_flying"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Attack:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "On Hit:",
+                                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "[D] + fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+                            },
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "Miss or area effect:",
+                                "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_wrangler_gorebeast",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Gorebeast",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Sturdy. May rush 2, then ",
+                        "glossary": [{"val": "Sturdy", "id": "gl_sturdy"}, {"val": "rush", "id": "gl_rush"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Attack:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "On Hit:",
+                                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "[D] + fray.",
+                                    "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                                }]
+                            },
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "Miss:",
+                                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Fray.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove 2.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_wrangler_spitter",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "attack": true,
+            "type": "attack",
+            "range": 8,
+            "pierce": true
+        },
+        "eventtags": {},
+        "name": "Spitter",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "paragraph"},
+                "content": "",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May move 2, then "
+                    },
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Attack:",
+                        "subcontent":   [
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "On Hit:",
+                                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Fray damage 3 times.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+                            },
+                            {
+                                "tags": {"desc_type" : "subeffect"},
+                                "content": "Miss:",
+                                "subcontent":   [{
+                                    "tags": {"desc_type" : "desc"},
+                                    "content": "Fray damage.",
+                                    "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                                }]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_wrangler_crackthewhip",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 3
+        },
+        "eventtags": {},
+        "name": "Crack the Whip",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Wrangler shoves all summons (hostile and allied) in range 3 spaces in any direction.",
+                "glossary": [{"val": "shoves", "id": "gl_shove"}, {"val": "summons", "id": "gl_summon"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_wrangler_weakeningtoxin",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "range": 5
+        },
+        "eventtags": {},
+        "name": "Weakening Toxin",
+        "class_id": "green",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range 5 is pacified. Pacified foes take 4 piercing damage, which doesn’t break pacified.",
+                "glossary": [{"val": "pacified", "id": "gl_pacified"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_larderspider_subterraneanhunter",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Subterranean Hunter",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the spider can choose to burrow into the ground. If so:"
+            },
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Remove it from the battlefield. The GM secretly places a spider’s burrow marker within range 3 of a player character."
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A foe can reveal the spider by entering or exiting a space adjacent to the marker."
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Otherwise, the spider is revealed at the start of its turn."
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "When revealed, the spider is placed on the map on the marker, removing the marker, and may dash 3 as an interrupt.",
+                        "glossary": [{"val": "dash", "id": "gl_dash"}, {"val": "interrupt", "id": "gl_interrupt"}]
+                    },
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "While burrowed, every time a player turn passes, the spider may gain a d6 power die or may tick the die up by 1 if it already has one. Discard the die if the spider is revealed by a foe.",
+                        "glossary": [{"val": "power die", "id": "gl_powerdie"}]
+                    },                    
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "The spider may spend this power die when attacking with Toxic Fang. If they do, it deals 4 damage, once, on hit or miss to its target after the ability resolves for every charge on the die."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_larderspider_toxicfang",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Toxic Fang",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is blinded.",
+                        "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Special Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Gains a massive damage boost if burrowed."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_larderspider_webswing",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1
+        },
+        "eventtags": {},
+        "name": "Web Swing",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The spider flies 3, then gains stealth.",
+                "glossary": [{"val": "flies", "id": "gl_flying"}, {"val": "stealth", "id": "gl_stealth"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_larderspider_venomspike",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "unerring": true,
+            "range": 4,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Venom Spike",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage. If that foe is bloodied, they take 3 damage instead and are also dazed.",
+                "glossary": [{"val": "bloodied", "id": "gl_bloodied"}, {"val": "dazed", "id": "gl_dazed"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_larderspider_revealpit",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "terrain_effect": true,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Reveal Pit",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The spider chooses a foe in range 4, then creates a pit underneath them. The chosen character can avoid the pit by becoming dazed instead, shoving them 1 space out of the way in a direction of the spider’s choice. Dazed foes cannot avoid the pit and take 3 damage.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "dazed", "id": "gl_dazed"}, {"val": "shoving", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetidcult_lesserclot_fetidgrasp",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 2
+        },
+        "eventtags": {},
+        "name": "Fetid Grasp",
+        "class_id": "grey",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove foe 1 space towards the acting clot.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "All other clots may shove a foe in range 2 one space towards them, then all foes that were shoved this way take 2 damage.",
+                        "glossary": [{"val": "shove", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetidcult_cultist_bloodspiller",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack"
+        },
+        "eventtags": {},
+        "name": "Blood Spiller",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals fray damage again to bloodied characters, or fray damage twice again to characters at 25% hp or lower.",
+                        "glossary": [{"val": "fray", "id": "gl_fray"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dash 2 before or after the attack.",
+                        "glossary": [{"val": "Dash", "id": "gl_dash"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetidcult_cultist_draghook",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "end_turn": true,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Drag Hook",
+        "class_id": "yellow",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "A character in range 5 takes 2 damage, is dazed and shoved 1 in any direction. Bloodied characters are shoved 3 instead.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}, {"val": "shoved", "id": "gl_shove"}, {"val": "Bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetidcult_viledarter_blowdart",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "range": 8
+        },
+        "eventtags": {},
+        "name": "Blowdart",
+        "class_id": "blue",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Deals bonus damage to bloodied foes.",
+                        "glossary": [{"val": "bonus damage", "id": "gl_bonusdamage"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "If foe is standing adjacent to the idol or in difficult or dangerous terrain, they are shattered.",
+                        "glossary": [{"val": "difficult", "id": "gl_difficultterrain"}, {"val": "dangerous terrain", "id": "gl_dangerousterrain"}, {"val": "shattered", "id": "gl_shattered"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetidcult_giantinsect_crush",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true
+        },
+        "eventtags": {},
+        "name": "Crush",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove 1, or shove 3 if foe is bloodied.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}, {"val": "bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character is weakened.",
+                        "glossary": [{"val": "weakened", "id": "gl_weakened"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetidcult_giantinsect_pound",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "blast_size": "medium"
+        },
+        "eventtags": {},
+        "name": "Pound",
+        "class_id": "red",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Dash 2 spaces.",
+                "glossary": [{"val": "Dash", "id": "gl_dash"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Characters take 2 damage and are shoved 1.",
+                        "glossary": [{"val": "shoved", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_fetididol_worshippers",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Worshippers",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, then at the start of each round, the Idol creates clots until it has 1 clot per player, adding to the clot mob. Then it creates other worshippers randomly, rolling d6 for each one, until it has a total number of worshippers equal to twice the number of players (the mob always counts as 1 worshipper)."
+            }      
+        ]
+    },
+    {
+        "id": "af_lowlander_fetididol_worshippers_phase2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Worshippers",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of combat, then at the start of each round, the Idol creates clots until it has 1 clot per player, adding to the clot mob. Then it creates other worshippers randomly, rolling d6 for each one, until it has a total number of worshippers equal to twice the number of players (the mob always counts as 1 worshipper)."
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase II:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "As phase I, but once a round, may act with an extra worshipper during a turn (so two worshippers act at once, in any order)."
+                    }
+                ]
+            }   
+        ]
+    },
+    {
         "id": "af_lowlander_fetididol_manifestations",
         "type": "Ability",
         "source": "core",
@@ -33117,17 +34146,58 @@
         "eventtags": {},
         "name": "Manifestations",
         "class_id": "icon",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active."
-        } ,               
-        {
-            "tags": {"desc_type" : "table"},
-            "content": "tb_lowlander_fetididol_manifestations"
-        }        
-                        ]
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active."
+            },               
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_lowlander_fetididol_manifestations"
+            }        
+        ]
+    },
+    {
+        "id": "af_lowlander_fetididol_manifestations_phase2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Manifestations",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active."
+            },               
+            {
+                "tags": {"desc_type" : "table"},
+                "content": "tb_lowlander_fetididol_manifestations"
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase II:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "As phase I, but in addition to its regular manifestations, creates the following:"
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Pit of Sacrifice:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a pit. Damage dealt to characters in the pit becomes divine.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "divine", "id": "gl_divine"}]
+                    }
+                ]
+            }
+        ]
     },
     {
         "id": "af_lowlander_fetididol_manifestations_spewinggrowth_disorientingvomit",
@@ -33141,13 +34211,333 @@
         "eventtags": {},
         "name": "Disorienting Vomit",
         "class_id": "icon",
-        "description":  [                               
-                                         
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "3 damage and shove 2."
-        }        
-                        ]
+        "description":  [              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "3 damage and shove 2.",
+                "glossary": [{"val": "shove", "id": "gl_shove"}]
+            }        
+        ]
+    },
+    {
+        "id": "af_lowlander_fetididol_unholyvapors",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Unholy Vapors",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round, non-lowlander characters must save or sacrifice down to 50% of their max hp, if higher. If the round is 6 or later, they must sacrifice down to 25% hp instead.",
+                "glossary": [{"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_walkingcataclysm",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Walking Cataclysm",
+        "class_id": "icon",
+        "description":  [                              
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of each round, the Head Lopper chooses two spaces, each within range 3 of a different foe. At the end of the round, a height 3 dungeon spire object bursts forth from the earth in the first space, and a pit in the second. Each creates a medium blast area effect centered on them when they emerge that weakens and deals fray damage to foes within. Foes standing on the space when it is created must save or also become stunned.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}, {"val": "medium blast", "id": "gl_blast"}, {"val": "area effect", "id": "gl_areaeffect"}, {"val": "weakens", "id": "gl_weakened"}, {"val": "fray", "id": "gl_fray"}, {"val": "stunned", "id": "gl_stunned"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_havoc",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Havoc",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Head Lopper chooses any foe. At the end of the round, they remove themselves from the battlefield, flying high into the air, then land on top of the foe, dealing a massive impact. As an effect, the foe takes 6 damage. For every other character, pit, or object adjacent, this effect deals 6 damage again. Then, the Head Lopper lands, placing them in a free space adjacent to that character.",
+                "glossary": [{"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_earthbreaker",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "true_strike": true,
+            "burst_target": "target",
+            "burst": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Earth Breaker",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray and foe is weakened.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "weakened", "id": "gl_weakened"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a height 1 boulder object under the attack target. Increase the height of any existing objects in the area by +1, to a max of 3."
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_headlopper_massiveoverhead"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_massiveoverhead",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "curse": 2,
+            "range": 2,
+            "type": "attack",
+            "attack": true,
+            "burst_target": "target",
+            "burst": 1,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Massive Overhead",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "3[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May rush 2 before this attack.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target must save or be stunned.",
+                        "glossary": [{"val": "stunned", "id": "gl_stunned"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Create a pit under the attack space. Lower all objects in the area by 1 space, or remove all height 1 objects.",
+                        "glossary": [{"val": "pit", "id": "gl_pit"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_headlopper_tornadokick"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_tornadokick",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "type": "attack",
+            "attack": true,
+            "unerring": true,
+            "line": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Tornado Kick",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "May rush 1 before and after this attack.",
+                        "glossary": [{"val": "rush", "id": "gl_rush"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Shove 2 to all foes.",
+                        "glossary": [{"val": "Shove", "id": "gl_shove"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "4 damage."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_spinninglariat",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Spinning Lariat",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Head Lopper rushes 3. All foes that are adjacent during any part of this movement are shoved 1.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "shoved", "id": "gl_shove"}]
+            },                            
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe takes 2 damage and is slashed.",
+                        "glossary": [{"val": "slashed", "id": "gl_slashed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_jotunncrusher",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "repeatable": true
+        },
+        "eventtags": {},
+        "name": "Jotunn Crusher",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Head Lopper rips up the earth and throws a boulder at a character in range 5. That character takes fray damage, then create a height 1 boulder object adjacent to them.",
+                "glossary": [{"val": "fray", "id": "gl_fray"}]
+            }
+        ]
     },
     {
         "id": "af_lowlander_headlopper_demonpankration",
@@ -33164,57 +34554,661 @@
         "name": "Demon Pankration",
         "class_id": "icon",
         "description":  [        
-        {
-            "tags": {"desc_type" : "desc"},
-            "content": "The head lopper attempts to grab foe of its choice in range. At the of the very next player turn, if that foe is still in range 3, the Head Lopper removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:"
-        },                            
-        {
-            "tags": {"desc_type" : "list"},
-            "content": "",
-            "subcontent": [                                            
-                {
-                    "tags": {"desc_type" : "subeffect"},
-                    "content": "DDT: ",
-                    "subcontent": [                                            
-                        {
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The head lopper attempts to grab foe of its choice in range. At the of the very next player turn, if that foe is still in range 3, the Head Lopper removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:"
+            },                            
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                                            
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "DDT: ",
+                        "subcontent": [                                            
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "The foe is stunned, weakened, slashed, and shoved 1.",
+                                "glossary": [{"val": "stunned", "id": "gl_stunned"},
+                                {"val": "weakened", "id": "gl_weakened"},
+                                {"val": "slashed", "id": "gl_slashed"},
+                                {"val": "shoved", "id": "gl_shove"}]
+                            }     
+                        ]
+                    },                                          
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Spinning Piledriver: ",
+                        "subcontent": [                                            
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "The Head Lopper and the foe rush 2 together, then the foe takes piercing fray damage again and has a pit created underneath them.",
+                                "glossary": [
+                                    {"val": "rush", "id": "gl_rush"},
+                                    {"val": "piercing", "id": "gl_piercing"},
+                                    {"val": "fray", "id": "gl_fray"},
+                                    {"val": "pit", "id": "gl_pit"}
+                                ]
+                            }     
+                        ]
+                    },                                          
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Backbreaker: ",
+                        "subcontent": [                                            
+                            {
+                                "tags": {"desc_type" : "desc"},
+                                "content": "The foe becomes immobile for their next turn.",
+                                "glossary": [{"val": "immobile", "id": "gl_immobile"}]
+                            }     
+                        ]
+                    }  
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_gigakaiser",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Jotunn Crusher",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Head Lopper rushes 2, then an adjacent character is stunned. Stunned characters must additionally sacrifice 25% of their maximum hp. Stunned characters at 25% hp or lower are instantly defeated.",
+                "glossary": [{"val": "rushes", "id": "gl_rush"}, {"val": "stunned", "id": "gl_stunned"}, {"val": "sacrifice", "id": "gl_sacrifice"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_headlopper_godwaster",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "God Waster",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Head Lopper either chooses Raze Hell or Raze Heaven. Whichever they choose, they must choose the opposite next round, alternating each round. At the end of the round, they unleash a massive storm of violence. As an effect, all foes take divine damage depending on a character’s elevation, which cannot reduce them below 1 hp.",
+                "glossary": [{"val": "divine", "id": "gl_divine"}]
+            },                            
+            {
+                "tags": {"desc_type" : "list"},
+                "content": "",
+                "subcontent": [                                            
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Raze Hell: ",
+                        "subcontent": [                                            
+                            {
+                                "tags": {"desc_type" : "list"},
+                                "content": "",
+                                "subcontent": [                                            
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Pits: 100% of max hp."
+                                    },                                          
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Ground: 50% of max hp."
+                                    },
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Height 1: 25% of max hp."
+                                    },
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Height 2 or higher: No effect."
+                                    }
+                                ]
+                            }     
+                        ]
+                    },                                          
+                    {
+                        "tags": {"desc_type" : "effect"},
+                        "content": "Raze Heaven: ",
+                        "subcontent": [                                            
+                            {
+                                "tags": {"desc_type" : "list"},
+                                "content": "",
+                                "subcontent": [                                            
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Pits: No effect."
+                                    },                                          
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Ground: 25% of max hp."
+                                    },
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Height 1: 50% of max hp."
+                                    },
+                                    {
+                                        "tags": {"desc_type" : "desc"},
+                                        "content": "Height 2 or higher: 100% of max hp."
+                                    }
+                                ]
+                            }     
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_lifebond",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Life Bond",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, this character may clear a status or mark affecting either the worm or the rider.",
+                "glossary": [{"val": "status", "id": "gl_status"}, {"val": "mark", "id": "gl_mark"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_wormlure",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "range": 3,
+            "terrain_effect": true,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Wormlure",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rider puts out a worm lure, a 1 space terrain effect, in range. If any foe ends its turn adjacent to the worm lure, if the Worm is active it may immediately remove and place itself adjacent to the lure, destroying it, then use its Massive Jaws attack as an interrupt, ignoring the attack limit. The lure remains action until triggered.",
+                "glossary": [{"val": "interrupt", "id": "gl_interrupt"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_rider_burrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "round": 2
+        },
+        "eventtags": {},
+        "name": "Burrow (Rider)",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rider removes itself from the battlefield, then gains 3 vigor and places itself adjacent to the Worm, creating a pit in the space it left.",
+                "glossary": [{"val": "vigor", "id": "gl_vigor"}, {"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_huriandive",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 2,
+            "range": 6,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Hurian Dive",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "The Rider chooses a foe in range, then removes themselves from the battlefield. At the end of that foe’s next turn, that foe must save as the Rider descends, dealing 6 damage four times on a failed save, or twice on a successful save. Lower this damage by one instance for every adjacent ally of the target, which could cause it to do no damage. Then, place the Rider in any free space in range 2."
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_wormhunterspear",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "boon": 1,
+            "unerring": true,
+            "range": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Wormhunter Spear",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
                             "tags": {"desc_type" : "desc"},
-                            "content": "The foe is stunned, weakened, slashed, and shoved 1.",
-                            "glossary": [{"val": "stunned", "id": "gl_stunned"},
-                            {"val": "weakened", "id": "gl_weakened"},
-                            {"val": "slashed", "id": "gl_slashed"},
-                            {"val": "shoved", "id": "gl_shove"}]
-                        }     
-                    ]
-                },                                          
-                {
-                    "tags": {"desc_type" : "subeffect"},
-                    "content": "Spinning Piledriver: ",
-                    "subcontent": [                                            
-                        {
+                            "content": "[D] + fray and shove 2.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss:",
+                        "subcontent":   [{
                             "tags": {"desc_type" : "desc"},
-                            "content": "The Head Lopper and the foe rush 2 together, then the foe takes piercing fray damage again and has a pit created underneath them.",
-                            "glossary": [
-                                {"val": "rush", "id": "gl_rush"},
-                                {"val": "piercing", "id": "gl_piercing"},
-                                {"val": "fray", "id": "gl_fray"},
-                                {"val": "pit", "id": "gl_pit"}
-                            ]
-                        }     
-                    ]
-                },                                          
-                {
-                    "tags": {"desc_type" : "subeffect"},
-                    "content": "Backbreaker: ",
-                    "subcontent": [                                            
-                        {
+                            "content": "Fray and shove 1.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}, {"val": "shove", "id": "gl_shove"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is dazed.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_hurianwormrider_shurikenspray"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_shurikenspray",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "range": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Shuriken Spray",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
                             "tags": {"desc_type" : "desc"},
-                            "content": "The foe becomes immobile for their next turn.",
-                            "glossary": [{"val": "immobile", "id": "gl_immobile"}]
-                        }     
-                    ]
-                }  
-            ]
-        }]
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Release a burst 2 (target) area effect, dealing 2 piercing damage to all other foes.",
+                        "glossary": [{"val": "burst", "id": "gl_burst"}, {"val": "piercing", "id": "gl_piercing"}, {"val": "area effect", "id": "gl_areaeffect"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "foeability"},
+                "content": "af_lowlander_hurianwormrider_arterycut"
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_arterycut",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 2,
+            "attack": true,
+            "type": "attack",
+            "mark": true,
+            "line": 4,
+            "combo": true
+        },
+        "eventtags": {},
+        "name": "Artery Cut",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "2[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Attack target is marked and gains an open wound. While marked, it takes [D] again at the end of its turns. This effect ends instead if the character ends their turn adjacent to an ally.",
+                        "glossary": [{"val": "marked", "id": "gl_mark"}, {"val": "[D]", "id": "gl_damagedice"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_slicingshuriken",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "burst": 3,
+            "burst_target": "self"
+        },
+        "eventtags": {},
+        "name": "Slicing Shuriken",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Area Effect:",
+                "glossary": [{"val": "Area Effect", "id": "gl_areaeffect"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "2 damage. Bloodied foes take 4 damage instead.",
+                        "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_devourtheland",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Devour the Land",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Worm chooses a medium blast area of the battlefield. At the end of the round, the worm burrows, removing itself from the battlefield, and devours the earth in that area, creating a massive hole for the rest of combat. Foes in the area when it is devoured are stunned and must save or take 2[D]+fray damage, or just fray damage on a successful save. The entire area counts as a connected pit. Place the worm in the area or as close as possible after this trait resolves.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}, {"val": "stunned", "id": "gl_stunned"}, {"val": "pit", "id": "gl_pit"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_devourtheland_phase2",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Devour the Land",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "At the start of the round, the Worm chooses a medium blast area of the battlefield. At the end of the round, the worm burrows, removing itself from the battlefield, and devours the earth in that area, creating a massive hole for the rest of combat. Foes in the area when it is devoured are stunned and must save or take 2[D]+fray damage, or just fray damage on a successful save. The entire area counts as a connected pit. Place the worm in the area or as close as possible after this trait resolves.",
+                "glossary": [{"val": "medium blast", "id": "gl_blast"}, {"val": "area", "id": "gl_areaeffect"}, {"val": "stunned", "id": "gl_stunned"}, {"val": "pit", "id": "gl_pit"}, {"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Phase II:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "As Phase I, except Devour the Land triggers twice."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_massivejaws",
+        "type": "Ability",
+        "source": "core",
+        "tags": { 
+            "action": 1,
+            "attack": true,
+            "type": "attack",
+            "true_strike": true,
+            "range": 2,
+            "burst": 1,
+            "burst_target": "target"
+        },
+        "eventtags": {},
+        "name": "Massive Jaws",
+        "class_id": "icon",
+        "description":  [
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Attack:",
+                "subcontent":   [
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "On Hit:",
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "[D] + fray.",
+                            "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                        }]
+                    },
+                    {
+                        "tags": {"desc_type" : "subeffect"},
+                        "content": "Miss or area effect:",
+                        "glossary": [{"val": "area effect", "id": "gl_areaeffect"}],
+                        "subcontent":   [{
+                            "tags": {"desc_type" : "desc"},
+                            "content": "Fray.",
+                            "glossary": [{"val": "Fray", "id": "gl_fray"}]
+                        }]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Foe is dazed.",
+                        "glossary": [{"val": "dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Bloodied foes in the area are flung into the air, shoving them 2 in any direction.",
+                        "glossary": [{"val": "Bloodied", "id": "gl_bloodied"}, {"val": "shoving", "id": "gl_shove"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_spitrock",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "unerring": true,
+            "range": 6
+        },
+        "eventtags": {},
+        "name": "Spit Rock",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A foe in range takes 2 damage and is blinded. Blinded foes take 2 damage, twice instead.",
+                "glossary": [{"val": "blinded", "id": "gl_blinded"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_bodyslam",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "line": 4
+        },
+        "eventtags": {},
+        "name": "Body Slam",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Foes in the area must save or take fray damage twice and be shoved 2 to either side of the line. On a successful save, they only take fray damage and are shoved 1.",
+                "glossary": [{"val": "area", "id": "gl_areaeffect"}, {"val": "fray", "id": "gl_fray"}, {"val": "shvoed", "id": "gl_shove"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_worm_burrow",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "end_turn": true
+        },
+        "eventtags": {},
+        "name": "Burrow (Worm)",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "Remove the worm from play, then place it back in any free space. Foes adjacent when it emerges are shoved 1. Create a pit in one of the spaces it left.",
+                "glossary": [{"val": "shoved", "id": "gl_shove"}, {"val": "pit", "id": "gl_pit"}]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_swallowwhole",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": 1,
+            "round": 1
+        },
+        "eventtags": {},
+        "name": "Swallow Whole",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "A adjacent character must save or be swallowed whole. On a successful save, they are dazed. Remove them from the battlefield. At the start of their turn, the worm spits them out, placing them in any adjacent space to the worm’s current location, then shoving them 2 spaces.",
+                "glossary": [{"val": "dazed", "id": "gl_dazed"}, {"val": "shoving", "id": "gl_shove"}]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Collide:",
+                "glossary": [{"val": "Collide", "id": "gl_collide"}],
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Character takes [D]+fray.",
+                        "glossary": [{"val": "[D]", "id": "gl_damagedice"}, {"val": "fray", "id": "gl_fray"}]
+                    }
+                ]
+            },
+            {
+                "tags": {"desc_type" : "effect"},
+                "content": "Effect:",
+                "subcontent": [
+                    {
+                        "tags": {"desc_type" : "desc"},
+                        "content": "Dazed characters fail the save.",
+                        "glossary": [{"val": "Dazed", "id": "gl_dazed"}]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "af_lowlander_hurianwormrider_crumblingearth",
+        "type": "Ability",
+        "source": "core",
+        "tags": {
+            "action": "round"
+        },
+        "eventtags": {},
+        "name": "Crumbling Earth",
+        "class_id": "icon",
+        "description":  [        
+            {
+                "tags": {"desc_type" : "desc"},
+                "content": "All foes in pits take 3 piercing damage.",
+                "glossary": [{"val": "pits", "id": "gl_pits"}, {"val": "piercing", "id": "gl_piercing"}]
+            }
+        ]
     },
     {
         "id": "af_general_archon_blackheart",
