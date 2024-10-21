@@ -31636,7 +31636,7 @@
         "description":  [                               
             {
                 "tags": [{"desc_type": "desc"}],
-                "content": "The Keeper forges itself a piece of armor, rolling 1d6 for type. The Keeper can only have one piece of armor active at once, and each have separate effects. When forged, each armor piece gains 8 hp per player character. A character can choose to damage an armor piece instead of the Keeper when damaging the Keeper. Armor pieces don’t benefit form the Keeper’s vigor, resistance, cover, or dodge. When an armor piece is destroyed, its ongoing effects end and it has an additional effect.",
+                "content": "The Keeper forges itself a piece of armor, choosing which one to forge. The Keeper can wear up to one of each piece at once, and each have separate effects. When forged, each armor piece gains 8 hp per player character. A character can choose to damage an armor piece instead of the Keeper when damaging the Keeper. Armor pieces don’t benefit form the Keeper’s vigor, resistance, cover, or dodge. When an armor piece is destroyed, its ongoing effects end and it has an additional effect.",
                 "glossary": [
                     {"val": "vigor", "id": "gl_vigor"},
                     {"val": "resistance", "id": "gl_resistance"},
