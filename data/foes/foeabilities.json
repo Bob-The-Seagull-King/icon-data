@@ -27892,7 +27892,7 @@
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Cannot use 2 interrupts.",
+                        "content": "Cannot use interrupts.",
                         "glossary": [{"val": "interrupts", "id": "gl_interrupt"}]
                     }
                 ]
@@ -27929,17 +27929,17 @@
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Cannot use 2 interrupts.",
+                        "content": "Cannot use interrupts.",
                         "glossary": [{"val": "interrupts", "id": "gl_interrupt"}]
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Cannot active vigilance.",
+                        "content": "Cannot activate vigilance.",
                         "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Cannot active rampart.",
+                        "content": "Cannot activate rampart.",
                         "glossary": [{"val": "rampart", "id": "gl_rampart"}]
                     }
                 ]
@@ -27976,17 +27976,17 @@
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Cannot use 2 interrupts.",
+                        "content": "Cannot use interrupts.",
                         "glossary": [{"val": "interrupts", "id": "gl_interrupt"}]
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Cannot active vigilance.",
+                        "content": "Cannot activate vigilance.",
                         "glossary": [{"val": "vigilance", "id": "gl_vigilance"}]
                     },
                     {
                         "tags": {"desc_type" : "desc"},
-                        "content": "Cannot active rampart.",
+                        "content": "Cannot activate rampart.",
                         "glossary": [{"val": "rampart", "id": "gl_rampart"}]
                     },
                     {
@@ -28834,7 +28834,7 @@
         "description":  [                                                  
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "A foe in range 6 is marked. While marked, they can only take use one non-basic ability per round.",
+                "content": "A foe in range 6 is marked. While marked, they can only use one non-basic ability per round.",
                 "glossary": [
                     {"val": "marked", "id": "gl_mark"}
                 ]
