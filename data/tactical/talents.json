@@ -1882,8 +1882,8 @@
         "description":  [
             {
                 "tags": {"desc_type" : "desc"},
-                "content": "You mark your foe with a dire seal. Shadowy tendrils reach out from an unknown space and jerk them like a puppet.",
-                "glossary": [{"val": "mark", "id": "gl_mark"}]
+                "content": "At the start of your turn, you may teleport to any space in range 2 of your target",
+                "glossary": [{"val": "teleport", "id": "gl_teleport"}]
             }
         ]
     },
